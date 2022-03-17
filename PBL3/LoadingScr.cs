@@ -16,7 +16,7 @@ namespace PBL3
     public partial class LoadingScr : Form
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        private static extern IntPtr CreateRoundRectRgn
+        public static extern IntPtr CreateRoundRectRgn
             (
                 int nLeft,
                 int nTop,
@@ -47,18 +47,21 @@ namespace PBL3
             this.dots.Visible = true;
             this.BaNaLabel.Visible = true;
             this.blurBg.Visible = true;
-            this.lbExplore.Visible = true;
             //custom bgImage of form
             this.BackgroundImage = global::PBL3.Properties.Resources.Ba_Na_Hills_Blur;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             timer1.Stop();
         }
 
-        private void lbExplore_Click(object sender, EventArgs e)
+        
+        private void blurBg_Click(object sender, EventArgs e)
         {
-            //Link to another form
-            //custom bgImage of form
-            this.BackgroundImage = global::PBL3.Properties.Resources.LinhUngPagoda;
+            //Link to another form: . When calling this.Close(), current form is disposed together with form2.
+            //Therefore you need to hide it and set form2.Closed event to call this.Close().
+            this.Hide();
+            LoginScr f = new LoginScr();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
     }
 }

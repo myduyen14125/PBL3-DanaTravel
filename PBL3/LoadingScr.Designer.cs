@@ -32,7 +32,6 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.BaNaLabel = new System.Windows.Forms.Label();
-            this.lbExplore = new System.Windows.Forms.Label();
             this.pictureInside = new System.Windows.Forms.PictureBox();
             this.dots = new System.Windows.Forms.PictureBox();
             this.logoBox = new System.Windows.Forms.PictureBox();
@@ -64,22 +63,6 @@
             this.BaNaLabel.TabIndex = 4;
             this.BaNaLabel.Text = "BA NA HILLS";
             this.BaNaLabel.Visible = false;
-            // 
-            // lbExplore
-            // 
-            this.lbExplore.AutoSize = true;
-            this.lbExplore.BackColor = System.Drawing.Color.Transparent;
-            this.lbExplore.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbExplore.Font = new System.Drawing.Font("Yu Gothic UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbExplore.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lbExplore.Image = global::PBL3.Properties.Resources.blurBg;
-            this.lbExplore.Location = new System.Drawing.Point(673, 367);
-            this.lbExplore.Name = "lbExplore";
-            this.lbExplore.Size = new System.Drawing.Size(265, 41);
-            this.lbExplore.TabIndex = 6;
-            this.lbExplore.Text = "EXPLORE THE TRIP";
-            this.lbExplore.Visible = false;
-            this.lbExplore.Click += new System.EventHandler(this.lbExplore_Click);
             // 
             // pictureInside
             // 
@@ -139,14 +122,16 @@
             // 
             // blurBg
             // 
-            this.blurBg.Image = global::PBL3.Properties.Resources.blurBg;
-            this.blurBg.Location = new System.Drawing.Point(668, 356);
+            this.blurBg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.blurBg.Image = global::PBL3.Properties.Resources.exploreQuote;
+            this.blurBg.Location = new System.Drawing.Point(526, 398);
             this.blurBg.Name = "blurBg";
-            this.blurBg.Size = new System.Drawing.Size(337, 65);
+            this.blurBg.Size = new System.Drawing.Size(394, 79);
             this.blurBg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.blurBg.TabIndex = 7;
             this.blurBg.TabStop = false;
             this.blurBg.Visible = false;
+            this.blurBg.Click += new System.EventHandler(this.blurBg_Click);
             // 
             // LoadingScr
             // 
@@ -154,15 +139,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(221)))), ((int)(((byte)(236)))));
             this.ClientSize = new System.Drawing.Size(1032, 565);
-            this.Controls.Add(this.lbExplore);
+            this.Controls.Add(this.blurBg);
             this.Controls.Add(this.pictureInside);
             this.Controls.Add(this.BaNaLabel);
             this.Controls.Add(this.dots);
             this.Controls.Add(this.logoBox);
             this.Controls.Add(this.loadingBox);
             this.Controls.Add(this.frameBox);
-            this.Controls.Add(this.blurBg);
             this.Name = "LoadingScr";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DanaTravel";
             this.Load += new System.EventHandler(this.LoginForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureInside)).EndInit();
@@ -186,7 +171,6 @@
         private System.Windows.Forms.PictureBox pictureInside;
         private System.Windows.Forms.Label BaNaLabel;
         private System.Windows.Forms.PictureBox dots;
-        private System.Windows.Forms.Label lbExplore;
         private System.Windows.Forms.PictureBox blurBg;
     }
 }
