@@ -49,6 +49,7 @@
             this.loginBtn.TabIndex = 2;
             this.loginBtn.Text = "Login";
             this.loginBtn.UseVisualStyleBackColor = false;
+            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
             // signupBtn
             // 
@@ -92,10 +93,10 @@
             this.screwRightPic.TabIndex = 0;
             this.screwRightPic.TabStop = false;
             // 
-            // LoginForm
+            // LoginScr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(221)))), ((int)(((byte)(236)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1032, 565);
@@ -104,7 +105,7 @@
             this.Controls.Add(this.loginBtn);
             this.Controls.Add(this.logo);
             this.Controls.Add(this.screwRightPic);
-            this.Name = "LoginForm";
+            this.Name = "LoginScr";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DanaTravel";
             ((System.ComponentModel.ISupportInitialize)(this.quoteBox)).EndInit();

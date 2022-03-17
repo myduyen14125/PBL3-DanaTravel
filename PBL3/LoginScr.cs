@@ -18,6 +18,14 @@ namespace PBL3
         {
             InitializeComponent();
         }
+
+        private void loginBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginForm f = new LoginForm();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
         //private static extern IntPtr CreateRoundRectRgn
         //    (
         //        int nLeft,

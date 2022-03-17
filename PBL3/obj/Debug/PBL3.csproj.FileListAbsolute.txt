@@ -10,3 +10,4 @@ E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.exe
 E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.pdb
 E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.LoadingScr.resources
 E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.LoginScr.resources
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.LoginForm.resources
