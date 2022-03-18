@@ -26,6 +26,14 @@ namespace PBL3
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
+
+        private void signupBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SignupForm f = new SignupForm();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
         //private static extern IntPtr CreateRoundRectRgn
         //    (
         //        int nLeft,

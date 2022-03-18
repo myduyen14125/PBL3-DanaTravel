@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.LinkLabel signupLink;
-            this.bgPicBox = new System.Windows.Forms.PictureBox();
             this.lbUsername = new System.Windows.Forms.Label();
             this.usernameInput = new System.Windows.Forms.TextBox();
             this.lbPasswd = new System.Windows.Forms.Label();
@@ -37,30 +36,35 @@
             this.loginBtn = new System.Windows.Forms.Button();
             this.lbTitle = new System.Windows.Forms.Label();
             this.forgotPassLink = new System.Windows.Forms.LinkLabel();
+            this.bgPicBox = new System.Windows.Forms.PictureBox();
             signupLink = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.bgPicBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // bgPicBox
+            // signupLink
             // 
-            this.bgPicBox.Image = global::PBL3.Properties.Resources.BienMyKheScrew;
-            this.bgPicBox.Location = new System.Drawing.Point(-2, -1);
-            this.bgPicBox.Name = "bgPicBox";
-            this.bgPicBox.Size = new System.Drawing.Size(587, 570);
-            this.bgPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bgPicBox.TabIndex = 0;
-            this.bgPicBox.TabStop = false;
+            signupLink.AutoSize = true;
+            signupLink.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            signupLink.Font = new System.Drawing.Font("Yu Gothic UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            signupLink.LinkColor = System.Drawing.Color.Black;
+            signupLink.Location = new System.Drawing.Point(867, 386);
+            signupLink.Name = "signupLink";
+            signupLink.Size = new System.Drawing.Size(68, 25);
+            signupLink.TabIndex = 9;
+            signupLink.TabStop = true;
+            signupLink.Text = "Signup";
+            signupLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.signupLink_LinkClicked);
             // 
             // lbUsername
             // 
             this.lbUsername.AutoSize = true;
             this.lbUsername.BackColor = System.Drawing.Color.Transparent;
             this.lbUsername.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUsername.Location = new System.Drawing.Point(616, 198);
+            this.lbUsername.Location = new System.Drawing.Point(617, 198);
             this.lbUsername.Name = "lbUsername";
-            this.lbUsername.Size = new System.Drawing.Size(109, 28);
+            this.lbUsername.Size = new System.Drawing.Size(99, 28);
             this.lbUsername.TabIndex = 1;
-            this.lbUsername.Text = "* username";
+            this.lbUsername.Text = "Username";
             // 
             // usernameInput
             // 
@@ -82,9 +86,9 @@
             this.lbPasswd.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPasswd.Location = new System.Drawing.Point(617, 291);
             this.lbPasswd.Name = "lbPasswd";
-            this.lbPasswd.Size = new System.Drawing.Size(108, 28);
+            this.lbPasswd.Size = new System.Drawing.Size(94, 28);
             this.lbPasswd.TabIndex = 3;
-            this.lbPasswd.Text = "* password";
+            this.lbPasswd.Text = "Password";
             // 
             // passwdInput
             // 
@@ -95,6 +99,7 @@
             this.passwdInput.ForeColor = System.Drawing.Color.White;
             this.passwdInput.Location = new System.Drawing.Point(621, 322);
             this.passwdInput.Name = "passwdInput";
+            this.passwdInput.PasswordChar = '*';
             this.passwdInput.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.passwdInput.Size = new System.Drawing.Size(314, 38);
             this.passwdInput.TabIndex = 4;
@@ -102,7 +107,7 @@
             // loginBtn
             // 
             this.loginBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
-            this.loginBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginBtn.ForeColor = System.Drawing.Color.White;
             this.loginBtn.Location = new System.Drawing.Point(731, 459);
             this.loginBtn.Name = "loginBtn";
@@ -110,6 +115,7 @@
             this.loginBtn.TabIndex = 5;
             this.loginBtn.Text = "Login";
             this.loginBtn.UseVisualStyleBackColor = false;
+            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
             // lbTitle
             // 
@@ -129,25 +135,22 @@
             this.forgotPassLink.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.forgotPassLink.Font = new System.Drawing.Font("Yu Gothic UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.forgotPassLink.LinkColor = System.Drawing.Color.Black;
-            this.forgotPassLink.Location = new System.Drawing.Point(617, 396);
+            this.forgotPassLink.Location = new System.Drawing.Point(617, 386);
             this.forgotPassLink.Name = "forgotPassLink";
             this.forgotPassLink.Size = new System.Drawing.Size(147, 25);
             this.forgotPassLink.TabIndex = 8;
             this.forgotPassLink.TabStop = true;
             this.forgotPassLink.Text = "Forgot pasword?";
             // 
-            // signupLink
+            // bgPicBox
             // 
-            signupLink.AutoSize = true;
-            signupLink.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            signupLink.Font = new System.Drawing.Font("Yu Gothic UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            signupLink.LinkColor = System.Drawing.Color.Black;
-            signupLink.Location = new System.Drawing.Point(867, 396);
-            signupLink.Name = "signupLink";
-            signupLink.Size = new System.Drawing.Size(68, 25);
-            signupLink.TabIndex = 9;
-            signupLink.TabStop = true;
-            signupLink.Text = "Signup";
+            this.bgPicBox.Image = global::PBL3.Properties.Resources.BienMyKheScrew;
+            this.bgPicBox.Location = new System.Drawing.Point(-2, -1);
+            this.bgPicBox.Name = "bgPicBox";
+            this.bgPicBox.Size = new System.Drawing.Size(587, 570);
+            this.bgPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bgPicBox.TabIndex = 0;
+            this.bgPicBox.TabStop = false;
             // 
             // LoginForm
             // 

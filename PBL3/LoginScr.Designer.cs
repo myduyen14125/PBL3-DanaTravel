@@ -62,6 +62,7 @@
             this.signupBtn.TabIndex = 3;
             this.signupBtn.Text = "Create account";
             this.signupBtn.UseVisualStyleBackColor = false;
+            this.signupBtn.Click += new System.EventHandler(this.signupBtn_Click);
             // 
             // quoteBox
             // 
@@ -95,7 +96,6 @@
             // 
             // LoginScr
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(221)))), ((int)(((byte)(236)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;

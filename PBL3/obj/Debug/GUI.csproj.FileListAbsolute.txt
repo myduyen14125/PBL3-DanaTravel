@@ -1,0 +1,14 @@
+E:\PBL3-DanaTravel\PBL3\bin\Debug\PBL3.exe.config
+E:\PBL3-DanaTravel\PBL3\bin\Debug\PBL3.exe
+E:\PBL3-DanaTravel\PBL3\bin\Debug\PBL3.pdb
+E:\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.LoadingScr.resources
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.LoginForm.resources
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.LoginScr.resources
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.Properties.Resources.resources
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.SignupForm.resources
+E:\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.GenerateResource.cache
+E:\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.exe
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.pdb
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.Homepage.resources
