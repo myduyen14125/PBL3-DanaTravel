@@ -12,6 +12,7 @@ E:\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.exe
 E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.pdb
 E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.Homepage.resources
+<<<<<<< HEAD
 F:\PBL\PBL3-DanaTravel\PBL3\bin\Debug\PBL3.exe.config
 F:\PBL\PBL3-DanaTravel\PBL3\bin\Debug\PBL3.exe
 F:\PBL\PBL3-DanaTravel\PBL3\bin\Debug\PBL3.pdb
@@ -39,3 +40,20 @@ F:\PBL\PBL3-DanaTravel\PBL3\bin\Debug\DAO.pdb
 F:\PBL\PBL3-DanaTravel\PBL3\bin\Debug\DAO.exe.config
 F:\PBL\PBL3-DanaTravel\PBL3\bin\Debug\DTO.pdb
 F:\PBL\PBL3-DanaTravel\PBL3\bin\Debug\DTO.exe.config
+=======
+C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\PBL3\bin\Debug\PBL3.exe.config
+C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\PBL3\bin\Debug\PBL3.exe
+C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\PBL3\bin\Debug\PBL3.pdb
+C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.Homepage.resources
+C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.LoadingScr.resources
+C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.LoginForm.resources
+C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.LoginScr.resources
+C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.Properties.Resources.resources
+C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.SignupForm.resources
+C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.exe
+C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.pdb
+>>>>>>> 879b36b4621184a241264f74f34bd2be411f60d8

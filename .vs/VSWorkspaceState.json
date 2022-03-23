@@ -3,6 +3,10 @@
     "",
     "\\PBL3"
   ],
+<<<<<<< HEAD
   "SelectedNode": "\\PBL3",
+=======
+  "SelectedNode": "\\PBL3\\LoginForm.cs",
+>>>>>>> 879b36b4621184a241264f74f34bd2be411f60d8
   "PreviewInSolutionExplorer": false
 }
