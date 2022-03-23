@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BUS;
+using DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,18 +14,58 @@ namespace PBL3
 {
     public partial class SignupForm : Form
     {
+        private SignupBUS signupBUS = new SignupBUS();
         public SignupForm()
         {
             InitializeComponent();
         }
 
-        private void loginBtn_Click(object sender, EventArgs e)
+        private void signupBtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Signup success!");
-            this.Hide();
-            Homepage f = new Homepage();
-            f.Closed += (s, args) => this.Close();
-            f.Show();
+            string username = usernameInput.Text;
+            string password = passInput.Text;
+            string confirmPassword = confirmPassInput.Text;
+
+            if(string.IsNullOrEmpty(username))
+            {
+                MessageBox.Show("Please enter email");
+                usernameInput.Focus();
+                return;
+            }
+
+            if (string.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("Please enter password");
+                passInput.Focus();
+                return;
+            }
+
+            if (string.IsNullOrEmpty(confirmPassword)) 
+            {
+                MessageBox.Show("Please enter confirm password");
+                confirmPassInput.Focus();
+                return;
+            }
+
+            if(!password.Equals(confirmPassword))
+            {
+                MessageBox.Show("Password didn't match. Try again");
+                confirmPassInput.Focus();
+                return;
+            }
+
+            AccountDTO account = new AccountDTO(username, password);
+            bool success = signupBUS.Register(account);
+            if(success)
+            {
+                LoginForm loginForm = new LoginForm();
+                this.Hide();
+                loginForm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Email already exists");
+            }
         }
 
         private void loginLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -33,5 +75,6 @@ namespace PBL3
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
+
     }
 }

@@ -155,5 +155,23 @@
   <ItemGroup>
     <None Include="Resources\BgCreateAcc.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{0bb2a3d9-3a8d-41b5-b4d5-50b91ba4f868}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAO\DAO.csproj">
+      <Project>{58bf882b-4a01-46f2-8e4b-5a4a253faa6c}</Project>
+      <Name>DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{9edc7802-f90e-4c28-8d58-28ca3bcb5387}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Util.csproj">
+      <Project>{e65cd94b-50e7-42d9-96f3-0c996456dad4}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
