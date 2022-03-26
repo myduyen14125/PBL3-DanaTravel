@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ForgetPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgetPass.Designer.cs">
+      <DependentUpon>ForgetPass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Homepage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +85,9 @@
     <Compile Include="SignupForm.Designer.cs">
       <DependentUpon>SignupForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ForgetPass.resx">
+      <DependentUpon>ForgetPass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Homepage.resx">
       <DependentUpon>Homepage.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,6 +182,21 @@
       <Project>{e65cd94b-50e7-42d9-96f3-0c996456dad4}</Project>
       <Name>Util</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgForgetPass.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgSignup.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgSignup1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgSignup2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roundedInput.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -93,6 +93,46 @@ namespace PBL3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bgForgetPass {
+            get {
+                object obj = ResourceManager.GetObject("bgForgetPass", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bgSignup {
+            get {
+                object obj = ResourceManager.GetObject("bgSignup", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bgSignup1 {
+            get {
+                object obj = ResourceManager.GetObject("bgSignup1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bgSignup2 {
+            get {
+                object obj = ResourceManager.GetObject("bgSignup2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BienMyKheScrew {
             get {
                 object obj = ResourceManager.GetObject("BienMyKheScrew", resourceCulture);
@@ -186,6 +226,16 @@ namespace PBL3.Properties {
         internal static System.Drawing.Bitmap Quote {
             get {
                 object obj = ResourceManager.GetObject("Quote", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap roundedInput {
+            get {
+                object obj = ResourceManager.GetObject("roundedInput", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

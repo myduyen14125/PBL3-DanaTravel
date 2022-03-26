@@ -75,5 +75,13 @@ namespace PBL3
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
+
+        private void forgotPassLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            ForgetPass f = new ForgetPass();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
     }
 }

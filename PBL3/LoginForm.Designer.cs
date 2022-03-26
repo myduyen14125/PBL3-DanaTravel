@@ -141,6 +141,7 @@
             this.forgotPassLink.TabIndex = 8;
             this.forgotPassLink.TabStop = true;
             this.forgotPassLink.Text = "Forgot pasword?";
+            this.forgotPassLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.forgotPassLink_LinkClicked);
             // 
             // bgPicBox
             // 

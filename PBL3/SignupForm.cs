@@ -66,6 +66,9 @@ namespace PBL3
             {
                 MessageBox.Show("Email already exists");
             }
+            //frontend
+            OTPbox.Visible = true;
+            txtOTP.Visible = true;
         }
 
         private void loginLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -76,5 +79,21 @@ namespace PBL3
             f.Show();
         }
 
+        private void usernameInput_Click(object sender, EventArgs e)
+        {
+            usernameInput.Text = "";
+        }
+
+        private void passInput_Click(object sender, EventArgs e)
+        {
+            passInput.Text = "";
+            passInput.PasswordChar = '*';
+        }
+
+        private void confirmPassInput_Click(object sender, EventArgs e)
+        {
+            confirmPassInput.Text = "";
+            confirmPassInput.PasswordChar = '*';
+        }
     }
 }
