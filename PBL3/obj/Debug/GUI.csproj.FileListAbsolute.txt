@@ -27,3 +27,7 @@ E:\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.CopyComplete
 E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.exe
 E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.pdb
 E:\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.AssemblyReference.cache
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.AdManagement.resources
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.BookTour.resources
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.HumanResource.resources
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.TourManagement.resources

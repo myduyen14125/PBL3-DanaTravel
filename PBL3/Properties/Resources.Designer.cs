@@ -63,6 +63,16 @@ namespace PBL3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _56986749_694943527575452_6002140096634028032_n {
+            get {
+                object obj = ResourceManager.GetObject("56986749_694943527575452_6002140096634028032_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Ba_Na_Hills {
             get {
                 object obj = ResourceManager.GetObject("Ba Na Hills", resourceCulture);
@@ -96,6 +106,16 @@ namespace PBL3.Properties {
         internal static System.Drawing.Bitmap bgForgetPass {
             get {
                 object obj = ResourceManager.GetObject("bgForgetPass", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bgNavbar {
+            get {
+                object obj = ResourceManager.GetObject("bgNavbar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

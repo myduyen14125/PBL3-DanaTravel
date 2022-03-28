@@ -47,6 +47,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdManagement.Designer.cs">
+      <DependentUpon>AdManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookTour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookTour.Designer.cs">
+      <DependentUpon>BookTour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBTour.cs" />
     <Compile Include="ForgetPass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +71,12 @@
     </Compile>
     <Compile Include="Homepage.Designer.cs">
       <DependentUpon>Homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HumanResource.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HumanResource.Designer.cs">
+      <DependentUpon>HumanResource.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -85,11 +104,27 @@
     <Compile Include="SignupForm.Designer.cs">
       <DependentUpon>SignupForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tour.cs" />
+    <Compile Include="TourManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TourManagement.Designer.cs">
+      <DependentUpon>TourManagement.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdManagement.resx">
+      <DependentUpon>AdManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookTour.resx">
+      <DependentUpon>BookTour.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ForgetPass.resx">
       <DependentUpon>ForgetPass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Homepage.resx">
       <DependentUpon>Homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HumanResource.resx">
+      <DependentUpon>HumanResource.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoadingScr.resx">
       <DependentUpon>LoadingScr.cs</DependentUpon>
@@ -112,6 +147,9 @@
     </Compile>
     <EmbeddedResource Include="SignupForm.resx">
       <DependentUpon>SignupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TourManagement.resx">
+      <DependentUpon>TourManagement.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -197,6 +235,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\roundedInput.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgNavbar.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\56986749_694943527575452_6002140096634028032_n.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
