@@ -12,7 +12,20 @@ F:\PBL\PBL3-DanaTravel\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 F:\PBL\PBL3-DanaTravel\DTO\obj\Debug\DTO.csproj.CopyComplete
 F:\PBL\PBL3-DanaTravel\DTO\obj\Debug\DTO.exe
 F:\PBL\PBL3-DanaTravel\DTO\obj\Debug\DTO.pdb
+<<<<<<< HEAD
 F:\PBL\PBL3-DanaTravel\DTO\obj\Debug\DTO.Form1.resources
 F:\PBL\PBL3-DanaTravel\DTO\bin\Debug\Util.exe
 F:\PBL\PBL3-DanaTravel\DTO\bin\Debug\Util.pdb
 F:\PBL\PBL3-DanaTravel\DTO\bin\Debug\Util.exe.config
+=======
+F:\PBL\PBL3-DanaTravel\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+E:\PBL3-DanaTravel\DTO\bin\Debug\DTO.exe.config
+E:\PBL3-DanaTravel\DTO\bin\Debug\DTO.exe
+E:\PBL3-DanaTravel\DTO\bin\Debug\DTO.pdb
+E:\PBL3-DanaTravel\DTO\obj\Debug\DTO.csproj.SuggestedBindingRedirects.cache
+E:\PBL3-DanaTravel\DTO\obj\Debug\DTO.Properties.Resources.resources
+E:\PBL3-DanaTravel\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
+E:\PBL3-DanaTravel\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\PBL3-DanaTravel\DTO\obj\Debug\DTO.exe
+E:\PBL3-DanaTravel\DTO\obj\Debug\DTO.pdb
+>>>>>>> 1f610b108cb2bcdb6e5e00232094a61663f2281c

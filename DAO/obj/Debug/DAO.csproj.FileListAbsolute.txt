@@ -19,3 +19,37 @@ F:\PBL\PBL3-DanaTravel\DAO\obj\Debug\DAO.pdb
 F:\PBL\PBL3-DanaTravel\DAO\bin\Debug\Util.exe
 F:\PBL\PBL3-DanaTravel\DAO\bin\Debug\Util.pdb
 F:\PBL\PBL3-DanaTravel\DAO\bin\Debug\Util.exe.config
+E:\PBL3-DanaTravel\DAO\bin\Debug\DAO.exe.config
+E:\PBL3-DanaTravel\DAO\bin\Debug\DAO.exe
+E:\PBL3-DanaTravel\DAO\bin\Debug\DAO.pdb
+E:\PBL3-DanaTravel\DAO\bin\Debug\DTO.exe
+E:\PBL3-DanaTravel\DAO\bin\Debug\Util.exe
+E:\PBL3-DanaTravel\DAO\bin\Debug\DTO.pdb
+E:\PBL3-DanaTravel\DAO\bin\Debug\DTO.exe.config
+E:\PBL3-DanaTravel\DAO\bin\Debug\Util.pdb
+E:\PBL3-DanaTravel\DAO\bin\Debug\Util.exe.config
+E:\PBL3-DanaTravel\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+E:\PBL3-DanaTravel\DAO\obj\Debug\DAO.csproj.SuggestedBindingRedirects.cache
+E:\PBL3-DanaTravel\DAO\obj\Debug\DAO.Properties.Resources.resources
+E:\PBL3-DanaTravel\DAO\obj\Debug\DAO.csproj.GenerateResource.cache
+E:\PBL3-DanaTravel\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+E:\PBL3-DanaTravel\DAO\obj\Debug\DAO.csproj.CopyComplete
+E:\PBL3-DanaTravel\DAO\obj\Debug\DAO.exe
+E:\PBL3-DanaTravel\DAO\obj\Debug\DAO.pdb
+E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\DAO\bin\Debug\DAO.exe.config
+E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\DAO\bin\Debug\DAO.exe
+E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\DAO\bin\Debug\DAO.pdb
+E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\DAO\bin\Debug\DTO.exe
+E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\DAO\bin\Debug\Util.exe
+E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\DAO\bin\Debug\DTO.pdb
+E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\DAO\bin\Debug\DTO.exe.config
+E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\DAO\bin\Debug\Util.pdb
+E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\DAO\bin\Debug\Util.exe.config
+E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\DAO\obj\Debug\DAO.csproj.SuggestedBindingRedirects.cache
+E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\DAO\obj\Debug\DAO.Properties.Resources.resources
+E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\DAO\obj\Debug\DAO.csproj.GenerateResource.cache
+E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\DAO\obj\Debug\DAO.csproj.CopyComplete
+E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\DAO\obj\Debug\DAO.exe
+E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\DAO\obj\Debug\DAO.pdb

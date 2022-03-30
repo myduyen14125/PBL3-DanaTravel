@@ -69,6 +69,9 @@ namespace PBL3
             {
                 MessageBox.Show("Email already exists");
             }
+            //frontend
+            OTPbox.Visible = true;
+            txtOTP.Visible = true;
         }
 
         private void loginLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -95,6 +98,7 @@ namespace PBL3
             confirmPassInput.Text = "";
             confirmPassInput.PasswordChar = '*';
         }
+<<<<<<< HEAD
         private void txtOTP_Click(object sender, EventArgs e)
         {
             confirmPassInput.Text = "";
@@ -128,5 +132,7 @@ namespace PBL3
             send.SendCodeToEmail(username, "DanaTravel send your code for register account");
             code = send.GetCode();
         }
+=======
+>>>>>>> 1f610b108cb2bcdb6e5e00232094a61663f2281c
     }
 }

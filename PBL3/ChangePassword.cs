@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 ﻿using BUS;
 using DTO;
 using System;
+=======
+﻿using System;
+>>>>>>> 1f610b108cb2bcdb6e5e00232094a61663f2281c
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,12 +13,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< HEAD
 using Util;
+=======
+>>>>>>> 1f610b108cb2bcdb6e5e00232094a61663f2281c
 
 namespace PBL3
 {
     public partial class ChangePassword : Form
     {
+<<<<<<< HEAD
         private string email;
         private int code;
         public ChangePassword(string email, int code)
@@ -22,6 +30,11 @@ namespace PBL3
             InitializeComponent();
             this.email = email;
             this.code = code;
+=======
+        public ChangePassword()
+        {
+            InitializeComponent();
+>>>>>>> 1f610b108cb2bcdb6e5e00232094a61663f2281c
         }
 
         private void newPassword_Click(object sender, EventArgs e)
@@ -41,6 +54,7 @@ namespace PBL3
             txtCode.Text = "";
         
         }
+<<<<<<< HEAD
 
         private void btnChange_Click(object sender, EventArgs e)
         {
@@ -77,5 +91,7 @@ namespace PBL3
                 f.Show();
             }
         }
+=======
+>>>>>>> 1f610b108cb2bcdb6e5e00232094a61663f2281c
     }
 }

@@ -65,6 +65,7 @@ E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.CopyCo
 E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.exe
 E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.pdb
 E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.ChangePassword.resources
+<<<<<<< HEAD
 F:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csprojAssemblyReference.cache
 F:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.AdManagement.resources
 F:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.BookTour.resources
@@ -100,3 +101,5 @@ F:\PBL\PBL3-DanaTravel\PBL3\bin\Debug\Util.pdb
 F:\PBL\PBL3-DanaTravel\PBL3\bin\Debug\Util.exe.config
 F:\PBL\PBL3-DanaTravel\PBL3\bin\Debug\EntityFramework.xml
 F:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.CopyComplete
+=======
+>>>>>>> 1f610b108cb2bcdb6e5e00232094a61663f2281c

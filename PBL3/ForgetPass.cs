@@ -7,7 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< HEAD
 using Util;
+=======
+>>>>>>> 1f610b108cb2bcdb6e5e00232094a61663f2281c
 
 namespace PBL3
 {
@@ -33,6 +36,7 @@ namespace PBL3
 
         private void btnReset_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             Validate validate = new Validate();
             SendEmailHelper sendEmail = new SendEmailHelper();
             string email = txtEmail.Text.Trim();
@@ -52,6 +56,11 @@ namespace PBL3
             {
                 MessageBox.Show("Email not found !!!");
             }
+=======
+            this.Hide();
+            ChangePassword f= new ChangePassword();
+            f.Show();
+>>>>>>> 1f610b108cb2bcdb6e5e00232094a61663f2281c
         }
     }
 }

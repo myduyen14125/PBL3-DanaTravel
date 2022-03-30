@@ -35,7 +35,10 @@
             this.confirmPassInput = new System.Windows.Forms.TextBox();
             this.OTPbox = new System.Windows.Forms.PictureBox();
             this.txtOTP = new System.Windows.Forms.TextBox();
+<<<<<<< HEAD
             this.btnGetOTP = new System.Windows.Forms.Button();
+=======
+>>>>>>> 1f610b108cb2bcdb6e5e00232094a61663f2281c
             loginLink = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.OTPbox)).BeginInit();
             this.SuspendLayout();
@@ -126,10 +129,18 @@
             this.OTPbox.Image = global::PBL3.Properties.Resources.roundedInput;
             this.OTPbox.Location = new System.Drawing.Point(160, 361);
             this.OTPbox.Name = "OTPbox";
+<<<<<<< HEAD
             this.OTPbox.Size = new System.Drawing.Size(205, 55);
             this.OTPbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.OTPbox.TabIndex = 16;
             this.OTPbox.TabStop = false;
+=======
+            this.OTPbox.Size = new System.Drawing.Size(348, 55);
+            this.OTPbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.OTPbox.TabIndex = 16;
+            this.OTPbox.TabStop = false;
+            this.OTPbox.Visible = false;
+>>>>>>> 1f610b108cb2bcdb6e5e00232094a61663f2281c
             // 
             // txtOTP
             // 
@@ -142,6 +153,7 @@
             this.txtOTP.Location = new System.Drawing.Point(179, 372);
             this.txtOTP.Name = "txtOTP";
             this.txtOTP.RightToLeft = System.Windows.Forms.RightToLeft.No;
+<<<<<<< HEAD
             this.txtOTP.Size = new System.Drawing.Size(173, 27);
             this.txtOTP.TabIndex = 17;
             this.txtOTP.Text = "Input OTP";
@@ -157,6 +169,12 @@
             this.btnGetOTP.Text = "Get OTP";
             this.btnGetOTP.UseVisualStyleBackColor = false;
             this.btnGetOTP.Click += new System.EventHandler(this.btnGetOTP_Click);
+=======
+            this.txtOTP.Size = new System.Drawing.Size(314, 27);
+            this.txtOTP.TabIndex = 17;
+            this.txtOTP.Text = "Input OTP";
+            this.txtOTP.Visible = false;
+>>>>>>> 1f610b108cb2bcdb6e5e00232094a61663f2281c
             // 
             // SignupForm
             // 
@@ -165,7 +183,10 @@
             this.BackgroundImage = global::PBL3.Properties.Resources.bgSignup2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1032, 565);
+<<<<<<< HEAD
             this.Controls.Add(this.btnGetOTP);
+=======
+>>>>>>> 1f610b108cb2bcdb6e5e00232094a61663f2281c
             this.Controls.Add(this.txtOTP);
             this.Controls.Add(this.OTPbox);
             this.Controls.Add(this.confirmPassInput);
@@ -190,6 +211,9 @@
         private System.Windows.Forms.TextBox confirmPassInput;
         private System.Windows.Forms.PictureBox OTPbox;
         private System.Windows.Forms.TextBox txtOTP;
+<<<<<<< HEAD
         private System.Windows.Forms.Button btnGetOTP;
+=======
+>>>>>>> 1f610b108cb2bcdb6e5e00232094a61663f2281c
     }
 }

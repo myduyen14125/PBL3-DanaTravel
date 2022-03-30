@@ -40,9 +40,15 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tsmenu = new System.Windows.Forms.ToolStripMenuItem();
+<<<<<<< HEAD
             this.choiceAdmin = new System.Windows.Forms.ToolStripMenuItem();
             this.gHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.choiceLogout = new System.Windows.Forms.ToolStripMenuItem();
+=======
+            this.aDMINToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lOGOUTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+>>>>>>> 1f610b108cb2bcdb6e5e00232094a61663f2281c
             this.pbPrice = new System.Windows.Forms.PictureBox();
             this.pbTour = new System.Windows.Forms.PictureBox();
             this.pbLocation = new System.Windows.Forms.PictureBox();
@@ -134,7 +140,11 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
             this.label2.Location = new System.Drawing.Point(28, 194);
             this.label2.Name = "label2";
+<<<<<<< HEAD
             this.label2.Size = new System.Drawing.Size(89, 24);
+=======
+            this.label2.Size = new System.Drawing.Size(72, 18);
+>>>>>>> 1f610b108cb2bcdb6e5e00232094a61663f2281c
             this.label2.TabIndex = 4;
             this.label2.Text = "PLACES";
             // 
@@ -146,7 +156,11 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
             this.label3.Location = new System.Drawing.Point(27, 388);
             this.label3.Name = "label3";
+<<<<<<< HEAD
             this.label3.Size = new System.Drawing.Size(173, 24);
+=======
+            this.label3.Size = new System.Drawing.Size(142, 18);
+>>>>>>> 1f610b108cb2bcdb6e5e00232094a61663f2281c
             this.label3.TabIndex = 5;
             this.label3.Text = "RECOMMENDED";
             // 
@@ -166,18 +180,27 @@
             this.menuStrip1.BackColor = System.Drawing.Color.RoyalBlue;
             this.menuStrip1.BackgroundImage = global::PBL3.Properties.Resources.Menustrip;
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
+<<<<<<< HEAD
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmenu});
             this.menuStrip1.Location = new System.Drawing.Point(769, 67);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(192, 28);
+=======
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmenu});
+            this.menuStrip1.Location = new System.Drawing.Point(925, 67);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(36, 24);
+>>>>>>> 1f610b108cb2bcdb6e5e00232094a61663f2281c
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // tsmenu
             // 
             this.tsmenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+<<<<<<< HEAD
             this.choiceAdmin,
             this.gHToolStripMenuItem,
             this.choiceLogout});
@@ -195,6 +218,25 @@
             this.choiceAdmin.Size = new System.Drawing.Size(224, 26);
             this.choiceAdmin.Text = "Admin";
             this.choiceAdmin.Click += new System.EventHandler(this.choiceAdmin_Click);
+=======
+            this.aDMINToolStripMenuItem,
+            this.gHToolStripMenuItem,
+            this.lOGOUTToolStripMenuItem});
+            this.tsmenu.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.tsmenu.Image = global::PBL3.Properties.Resources.Menu;
+            this.tsmenu.Name = "tsmenu";
+            this.tsmenu.Size = new System.Drawing.Size(28, 20);
+            // 
+            // aDMINToolStripMenuItem
+            // 
+            this.aDMINToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
+            this.aDMINToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.aDMINToolStripMenuItem.Image = global::PBL3.Properties.Resources.Admin;
+            this.aDMINToolStripMenuItem.Name = "aDMINToolStripMenuItem";
+            this.aDMINToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.aDMINToolStripMenuItem.Text = "Admin";
+            this.aDMINToolStripMenuItem.Click += new System.EventHandler(this.aDMINToolStripMenuItem_Click);
+>>>>>>> 1f610b108cb2bcdb6e5e00232094a61663f2281c
             // 
             // gHToolStripMenuItem
             // 
@@ -202,6 +244,7 @@
             this.gHToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.gHToolStripMenuItem.Image = global::PBL3.Properties.Resources.Settingicon;
             this.gHToolStripMenuItem.Name = "gHToolStripMenuItem";
+<<<<<<< HEAD
             this.gHToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.gHToolStripMenuItem.Text = "Setting";
             // 
@@ -214,6 +257,19 @@
             this.choiceLogout.Size = new System.Drawing.Size(224, 26);
             this.choiceLogout.Text = "Log out";
             this.choiceLogout.Click += new System.EventHandler(this.choiceLogout_Click);
+=======
+            this.gHToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.gHToolStripMenuItem.Text = "Setting";
+            // 
+            // lOGOUTToolStripMenuItem
+            // 
+            this.lOGOUTToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
+            this.lOGOUTToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lOGOUTToolStripMenuItem.Image = global::PBL3.Properties.Resources.LogOut;
+            this.lOGOUTToolStripMenuItem.Name = "lOGOUTToolStripMenuItem";
+            this.lOGOUTToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.lOGOUTToolStripMenuItem.Text = "Log out";
+>>>>>>> 1f610b108cb2bcdb6e5e00232094a61663f2281c
             // 
             // pbPrice
             // 
@@ -266,7 +322,11 @@
             this.txtSearch.ForeColor = System.Drawing.Color.Gray;
             this.txtSearch.Location = new System.Drawing.Point(321, 160);
             this.txtSearch.Name = "txtSearch";
+<<<<<<< HEAD
             this.txtSearch.Size = new System.Drawing.Size(494, 23);
+=======
+            this.txtSearch.Size = new System.Drawing.Size(494, 19);
+>>>>>>> 1f610b108cb2bcdb6e5e00232094a61663f2281c
             this.txtSearch.TabIndex = 15;
             this.txtSearch.Text = "Search place";
             this.txtSearch.Click += new System.EventHandler(this.txtSearch_Click);
@@ -325,9 +385,15 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem tsmenu;
+<<<<<<< HEAD
         private System.Windows.Forms.ToolStripMenuItem choiceAdmin;
         private System.Windows.Forms.ToolStripMenuItem gHToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem choiceLogout;
+=======
+        private System.Windows.Forms.ToolStripMenuItem aDMINToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gHToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lOGOUTToolStripMenuItem;
+>>>>>>> 1f610b108cb2bcdb6e5e00232094a61663f2281c
         private System.Windows.Forms.PictureBox pbPrice;
         private System.Windows.Forms.PictureBox pbTour;
         private System.Windows.Forms.PictureBox pbLocation;
