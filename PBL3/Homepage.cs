@@ -17,6 +17,15 @@ namespace PBL3
             InitializeComponent();
         }
 
-        
+        private void txtSearch_Click(object sender, EventArgs e)
+        {
+            txtSearch.Text = "";
+        }
+
+        private void aDMINToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AdManagement f = new AdManagement();
+            f.ShowDialog();
+        }
     }
 }

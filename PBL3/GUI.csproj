@@ -242,5 +242,56 @@
   <ItemGroup>
     <None Include="Resources\56986749_694943527575452_6002140096634028032_n.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\culao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaNaHills.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thanhdiamyson.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MySon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HoiAn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Transports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Price.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Locations.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settingicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menustrip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
