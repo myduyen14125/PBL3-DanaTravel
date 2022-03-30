@@ -191,7 +191,7 @@
             this.aDMINToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.aDMINToolStripMenuItem.Image = global::PBL3.Properties.Resources.Admin;
             this.aDMINToolStripMenuItem.Name = "aDMINToolStripMenuItem";
-            this.aDMINToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aDMINToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.aDMINToolStripMenuItem.Text = "Admin";
             this.aDMINToolStripMenuItem.Click += new System.EventHandler(this.aDMINToolStripMenuItem_Click);
             // 
@@ -201,7 +201,7 @@
             this.gHToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.gHToolStripMenuItem.Image = global::PBL3.Properties.Resources.Settingicon;
             this.gHToolStripMenuItem.Name = "gHToolStripMenuItem";
-            this.gHToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gHToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.gHToolStripMenuItem.Text = "Setting";
             // 
             // lOGOUTToolStripMenuItem
@@ -210,7 +210,7 @@
             this.lOGOUTToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lOGOUTToolStripMenuItem.Image = global::PBL3.Properties.Resources.LogOut;
             this.lOGOUTToolStripMenuItem.Name = "lOGOUTToolStripMenuItem";
-            this.lOGOUTToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.lOGOUTToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.lOGOUTToolStripMenuItem.Text = "Log out";
             // 
             // pbPrice
@@ -259,11 +259,12 @@
             // 
             // txtSearch
             // 
+            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSearch.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.Color.Gray;
-            this.txtSearch.Location = new System.Drawing.Point(321, 156);
+            this.txtSearch.Location = new System.Drawing.Point(321, 160);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(494, 26);
+            this.txtSearch.Size = new System.Drawing.Size(494, 19);
             this.txtSearch.TabIndex = 15;
             this.txtSearch.Text = "Search place";
             this.txtSearch.Click += new System.EventHandler(this.txtSearch_Click);

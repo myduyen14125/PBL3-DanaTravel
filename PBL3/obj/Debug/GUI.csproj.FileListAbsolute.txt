@@ -64,3 +64,4 @@ E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.CoreCo
 E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.CopyComplete
 E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.exe
 E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.pdb
+E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.ChangePassword.resources

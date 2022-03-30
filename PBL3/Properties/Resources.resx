@@ -118,9 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="LinhUngPagoda" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LinhUngPagoda.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Quote" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Quote.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,8 +130,14 @@
   <data name="BienMyKheScrew" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BienMyKheScrew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Thanhdiamyson" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thanhdiamyson.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="56986749_694943527575452_6002140096634028032_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\56986749_694943527575452_6002140096634028032_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MySon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MySon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -144,9 +147,6 @@
   </data>
   <data name="HoiAn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HoiAn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LinhUngPagodaCut" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LinhUngPagodaCut.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Transports" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Transports.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -165,6 +165,9 @@
   </data>
   <data name="User icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\User icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bgNavbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bgNavbar.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BgCreateAcc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BgCreateAcc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,8 +199,8 @@
   <data name="culao" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\culao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bgNavbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bgNavbar.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LinhUngPagoda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LinhUngPagoda.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bgSignup" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bgSignup.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,8 +211,8 @@
   <data name="Admin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Admin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="56986749_694943527575452_6002140096634028032_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\56986749_694943527575452_6002140096634028032_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LinhUngPagodaCut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LinhUngPagodaCut.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Settingicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Settingicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,7 +229,7 @@
   <data name="Tour" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tour.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ChangePassword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChangePassword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -29,5 +29,12 @@ namespace PBL3
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ChangePassword f= new ChangePassword();
+            f.Show();
+        }
     }
 }
