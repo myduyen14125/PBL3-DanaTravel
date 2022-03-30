@@ -3,6 +3,7 @@ F:\PBL\PBL3-DanaTravel\BUS\bin\Debug\BUS.exe
 F:\PBL\PBL3-DanaTravel\BUS\bin\Debug\BUS.pdb
 F:\PBL\PBL3-DanaTravel\BUS\bin\Debug\DAO.exe
 F:\PBL\PBL3-DanaTravel\BUS\bin\Debug\DTO.exe
+F:\PBL\PBL3-DanaTravel\BUS\bin\Debug\EntityFramework.dll
 F:\PBL\PBL3-DanaTravel\BUS\bin\Debug\DAO.pdb
 F:\PBL\PBL3-DanaTravel\BUS\bin\Debug\DAO.exe.config
 F:\PBL\PBL3-DanaTravel\BUS\bin\Debug\DTO.pdb
@@ -14,6 +15,7 @@ F:\PBL\PBL3-DanaTravel\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
 F:\PBL\PBL3-DanaTravel\BUS\obj\Debug\BUS.csproj.CopyComplete
 F:\PBL\PBL3-DanaTravel\BUS\obj\Debug\BUS.exe
 F:\PBL\PBL3-DanaTravel\BUS\obj\Debug\BUS.pdb
+F:\PBL\PBL3-DanaTravel\BUS\bin\Debug\EntityFramework.SqlServer.dll
 F:\PBL\PBL3-DanaTravel\BUS\bin\Debug\Util.exe
 F:\PBL\PBL3-DanaTravel\BUS\bin\Debug\Util.pdb
 F:\PBL\PBL3-DanaTravel\BUS\bin\Debug\Util.exe.config

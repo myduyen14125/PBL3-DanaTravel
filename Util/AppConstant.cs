@@ -8,7 +8,6 @@ namespace Util
 {
     public class AppConstant
     {
-        public static string PathConnectDatabase = "Data Source=MSI\\DAITOAN;Initial Catalog=DanaTravel;Integrated Security=True";
         public static string ValidateEmail = "^([\\w\\.\\-]+)@([\\w\\-]+)((\\.(\\w){2,3})+)$";
     }
 }

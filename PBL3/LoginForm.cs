@@ -1,4 +1,5 @@
-﻿using DAO;
+﻿using BUS;
+using DAO;
 using DTO;
 using System;
 using System.Collections.Generic;
@@ -16,7 +17,6 @@ namespace PBL3
     public partial class LoginForm : Form
     {
         private Validate validate = new Validate();
-        private LoginDAO loginDAO = new LoginDAO();
 
 
         public LoginForm()
@@ -26,8 +26,8 @@ namespace PBL3
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            string username = usernameInput.Text;
-            string password = passwdInput.Text;
+            string username = usernameInput.Text.Trim();
+            string password = passwdInput.Text.Trim();
 
             // Nếu chưa nhập email
             if (string.IsNullOrEmpty(username))
@@ -42,6 +42,7 @@ namespace PBL3
                 usernameInput.Focus();
                 return;
             }
+
             // Nếu chưa nhập password
             if (string.IsNullOrEmpty(password))
             {
@@ -49,10 +50,9 @@ namespace PBL3
                 passwdInput.Focus();
                 return;
             }
-            username = username.Trim();
-            password = password.Trim();
-            AccountDTO account = new AccountDTO(username, password);
-            account = loginDAO.checkAccount(account);
+
+            Account account = new Account(username, HashPassword.GetHash(password));
+            account = AccountBUS.Instance.CheckAccount(account);
             if (account != null)
             {
                 if (!account.status)
@@ -60,11 +60,13 @@ namespace PBL3
                     MessageBox.Show("Your account has been lock");
                     return;
                 }
-                Homepage homepage = new Homepage();
-                homepage.Show();
+
                 this.Hide();
+                Homepage f = new Homepage(account);
+                f.Closed += (s, args) => this.Close();
+                f.Show();
             }
-            else   MessageBox.Show("Please re-enter your email and password !!!");
+            else   MessageBox.Show("Email or Password incorrect");
             
         }
 
@@ -72,6 +74,14 @@ namespace PBL3
         {
             this.Hide();
             SignupForm f = new SignupForm();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void forgotPassLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            ForgetPass f = new ForgetPass();
             f.Closed += (s, args) => this.Close();
             f.Show();
         }

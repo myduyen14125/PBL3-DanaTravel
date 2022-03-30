@@ -9,12 +9,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Util;
 
 namespace PBL3
 {
     public partial class SignupForm : Form
     {
-        private SignupBUS signupBUS = new SignupBUS();
+        private int code;
+        private string username;
+        private string pass;
         public SignupForm()
         {
             InitializeComponent();
@@ -22,41 +25,41 @@ namespace PBL3
 
         private void signupBtn_Click(object sender, EventArgs e)
         {
-            string username = usernameInput.Text;
-            string password = passInput.Text;
-            string confirmPassword = confirmPassInput.Text;
+            username = usernameInput.Text.Trim();
+            pass = passInput.Text.Trim();
+            string confirmPassword = confirmPassInput.Text.Trim();
 
-            if(string.IsNullOrEmpty(username))
+            if (string.IsNullOrEmpty(username))
             {
                 MessageBox.Show("Please enter email");
                 usernameInput.Focus();
                 return;
             }
 
-            if (string.IsNullOrEmpty(password))
+            if (string.IsNullOrEmpty(pass))
             {
                 MessageBox.Show("Please enter password");
                 passInput.Focus();
                 return;
             }
 
-            if (string.IsNullOrEmpty(confirmPassword)) 
+            if (string.IsNullOrEmpty(confirmPassword))
             {
                 MessageBox.Show("Please enter confirm password");
                 confirmPassInput.Focus();
                 return;
             }
 
-            if(!password.Equals(confirmPassword))
+            if (!pass.Equals(confirmPassword))
             {
                 MessageBox.Show("Password didn't match. Try again");
                 confirmPassInput.Focus();
                 return;
             }
 
-            AccountDTO account = new AccountDTO(username, password);
-            bool success = signupBUS.Register(account);
-            if(success)
+            Account account = new Account(username, HashPassword.GetHash(pass), true);
+            bool success = AccountBUS.Instance.RegisterAccount(account);
+            if (success)
             {
                 LoginForm loginForm = new LoginForm();
                 this.Hide();
@@ -76,5 +79,54 @@ namespace PBL3
             f.Show();
         }
 
+        private void usernameInput_Click(object sender, EventArgs e)
+        {
+            usernameInput.Text = "";
+        }
+
+        private void passInput_Click(object sender, EventArgs e)
+        {
+            passInput.Text = "";
+            passInput.PasswordChar = '*';
+        }
+
+        private void confirmPassInput_Click(object sender, EventArgs e)
+        {
+            confirmPassInput.Text = "";
+            confirmPassInput.PasswordChar = '*';
+        }
+        private void txtOTP_Click(object sender, EventArgs e)
+        {
+            confirmPassInput.Text = "";
+        }
+
+        private void btnGetCode_Click(object sender, EventArgs e)
+        {
+            username = usernameInput.Text.Trim();
+            if (string.IsNullOrEmpty(username))
+            {
+                MessageBox.Show("Please enter email");
+                usernameInput.Focus();
+                return;
+            }
+            SendEmailHelper send = new SendEmailHelper();
+            send.SendCodeToEmail(username, "DanaTravel send your code for register account");
+            code = send.GetCode();
+        }
+
+
+        private void btnGetOTP_Click(object sender, EventArgs e)
+        {
+            username = usernameInput.Text.Trim();
+            if (string.IsNullOrEmpty(username))
+            {
+                MessageBox.Show("Please enter email");
+                usernameInput.Focus();
+                return;
+            }
+            SendEmailHelper send = new SendEmailHelper();
+            send.SendCodeToEmail(username, "DanaTravel send your code for register account");
+            code = send.GetCode();
+        }
     }
 }

@@ -16,5 +16,10 @@ namespace DTO
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = (from p in EntityManager.Instance.Accounts select p).ToList();
+        }
     }
 }
