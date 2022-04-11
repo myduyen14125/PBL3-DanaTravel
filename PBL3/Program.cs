@@ -17,7 +17,7 @@ namespace PBL3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ChangePassword("daitoan2000@gmail.com", 982));
+            Application.Run(new LoadingScr());
         }
     }
 }
