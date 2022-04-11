@@ -22,7 +22,6 @@ namespace DAO
                 }
                 return _Instance;
             }
-            private set { }
         }
 
         public Account CheckAccount(Account ac)
@@ -31,16 +30,16 @@ namespace DAO
             var result = from a in db.Accounts
                          from r in db.Roles
                          where a.username == ac.username && a.password == ac.password
-                         select new { a.account_id, a.username, a.password, a.status, r.role_id, r.role_name };
+                         select new { a.id, a.username, a.password, a.status, role_id = r.id, r.name };
             var firstRow = result.FirstOrDefault();
             if (firstRow == null) return null;
 
             List<Role> roles = new List<Role>();
-            foreach (var i in result) roles.Add(new Role { role_id = i.role_id, role_name = i.role_name });
+            foreach (var i in result) roles.Add(new Role { id = i.role_id, name = i.name });
 
             return new Account
             {
-                account_id = firstRow.account_id,
+                id = firstRow.id,
                 username = firstRow.username,
                 password = firstRow.password,
                 status = firstRow.status,
@@ -62,14 +61,40 @@ namespace DAO
             EntityManager db = EntityManager.Instance;
             try
             {
+                var result = db.Accounts.Where(a => a.username == ac.username).FirstOrDefault();
+                if (result != null)
+                {
+                    return false;
+                }
                 db.Accounts.Add(ac);
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return false;
             }
             db.SaveChanges();
             return true;
+        }
+
+        public bool DeleteAccount(string username)
+        {
+            try
+            {
+                EntityManager db = EntityManager.Instance;
+                var result = db.Accounts.Single(ac => ac.username == username);
+                db.Accounts.Remove(result);
+                db.SaveChanges();
+            }
+            catch(Exception)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public Account GetAccountByUsername(string username)
+        {
+            return EntityManager.Instance.Accounts.Where(a => a.username == username).FirstOrDefault();
         }
     }
 }

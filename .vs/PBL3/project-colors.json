@@ -5,12 +5,7 @@
       "ProjectGuid": "1fa13dd0-772f-485c-8c95-d00486c7af89",
       "DisplayName": "PBL3",
       "ColorIndex": 0
-    },
-    "58bf882b-4a01-46f2-8e4b-5a4a253faa6c": {
-      "ProjectGuid": "58bf882b-4a01-46f2-8e4b-5a4a253faa6c",
-      "DisplayName": "DAO",
-      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 1
 }

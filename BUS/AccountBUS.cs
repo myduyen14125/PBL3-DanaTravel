@@ -22,7 +22,6 @@ namespace BUS
                 }
                 return _Instance;
             }
-            private set { }
         }
 
         public Account CheckAccount(Account ac)
@@ -38,6 +37,16 @@ namespace BUS
         public bool RegisterAccount(Account ac)
         {
             return AccountDAO.Instance.RegisterAccount(ac);
+        }
+
+        public bool DeleteAccount(string username)
+        {
+            return AccountDAO.Instance.DeleteAccount(username);
+        }
+
+        public Account GetAccountByUsername(string username)
+        {
+            return AccountDAO.Instance.GetAccountByUsername(username);
         }
     }
 }

@@ -11,7 +11,17 @@ namespace Util
     {
         public bool ValidateEmail(string email)
         {
-            return Regex.IsMatch(email, AppConstant.ValidateEmail);
+            return Regex.IsMatch(email, AppConstant.regexEmail);
+        }
+
+        public bool ValidatePhone(string phone)
+        {
+            return Regex.IsMatch(phone, AppConstant.regexPhone);
+        }
+
+        public bool ValidateIdCard(string idCard)
+        {
+            return Regex.IsMatch(idCard, AppConstant.regexIdCard);
         }
     }
 }

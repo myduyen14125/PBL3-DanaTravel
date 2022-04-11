@@ -22,11 +22,6 @@ namespace DAO
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = (from a in db.Accounts
-                                         from r in db.Roles
-                                         from p in db.Permissions
-                                         where a.username == "daitoan2000@gmail.com" && a.password == "123456"
-                                         select new { r.role_id, r.role_name, p.per_name }).ToList();
         }
     }
 }

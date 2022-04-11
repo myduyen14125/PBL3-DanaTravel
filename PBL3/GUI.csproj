@@ -47,53 +47,64 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdManagement.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdManagement.Designer.cs">
-      <DependentUpon>AdManagement.cs</DependentUpon>
-    </Compile>
     <Compile Include="BookTour.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BookTour.Designer.cs">
       <DependentUpon>BookTour.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChangePassword.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChangePassword.Designer.cs">
-      <DependentUpon>ChangePassword.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DBTour.cs" />
-    <Compile Include="ForgetPass.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ForgetPass.Designer.cs">
-      <DependentUpon>ForgetPass.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Homepage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Homepage.Designer.cs">
-      <DependentUpon>Homepage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="HumanResource.cs">
+    <Compile Include="View\admin\EmployeeManagement.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="HumanResource.Designer.cs">
-      <DependentUpon>HumanResource.cs</DependentUpon>
+    <Compile Include="View\admin\EmployeeManagement.Designer.cs">
+      <DependentUpon>EmployeeManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginForm.cs">
+    <Compile Include="View\admin\AdminManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
+    <Compile Include="View\admin\AdminManagement.Designer.cs">
+      <DependentUpon>AdminManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\admin\FormAddEditEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\admin\FormAddEditEmployee.Designer.cs">
+      <DependentUpon>FormAddEditEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\admin\FormAddRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\admin\FormAddRole.Designer.cs">
+      <DependentUpon>FormAddRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\login\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\login\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\login\ForgetPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\login\ForgetPass.Designer.cs">
+      <DependentUpon>ForgetPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\homepage\Homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\homepage\Homepage.Designer.cs">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\login\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\login\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginScr.cs">
+    <Compile Include="View\login\LoginScr.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginScr.Designer.cs">
+    <Compile Include="View\login\LoginScr.Designer.cs">
       <DependentUpon>LoginScr.cs</DependentUpon>
     </Compile>
     <Compile Include="LoadingScr.cs">
@@ -104,44 +115,43 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SignupForm.cs">
+    <Compile Include="View\login\SignupForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SignupForm.Designer.cs">
+    <Compile Include="View\login\SignupForm.Designer.cs">
       <DependentUpon>SignupForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tour.cs" />
-    <Compile Include="TourManagement.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="TourManagement.Designer.cs">
-      <DependentUpon>TourManagement.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="AdManagement.resx">
-      <DependentUpon>AdManagement.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="BookTour.resx">
       <DependentUpon>BookTour.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChangePassword.resx">
+    <EmbeddedResource Include="View\admin\EmployeeManagement.resx">
+      <DependentUpon>EmployeeManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\admin\AdminManagement.resx">
+      <DependentUpon>AdminManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\admin\FormAddEditEmployee.resx">
+      <DependentUpon>FormAddEditEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\admin\FormAddRole.resx">
+      <DependentUpon>FormAddRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\login\ChangePassword.resx">
       <DependentUpon>ChangePassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ForgetPass.resx">
+    <EmbeddedResource Include="View\login\ForgetPass.resx">
       <DependentUpon>ForgetPass.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Homepage.resx">
+    <EmbeddedResource Include="View\homepage\Homepage.resx">
       <DependentUpon>Homepage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HumanResource.resx">
-      <DependentUpon>HumanResource.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoadingScr.resx">
       <DependentUpon>LoadingScr.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
+    <EmbeddedResource Include="View\login\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginScr.resx">
+    <EmbeddedResource Include="View\login\LoginScr.resx">
       <DependentUpon>LoginScr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -154,11 +164,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SignupForm.resx">
+    <EmbeddedResource Include="View\login\SignupForm.resx">
       <DependentUpon>SignupForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TourManagement.resx">
-      <DependentUpon>TourManagement.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -305,5 +312,6 @@
   <ItemGroup>
     <None Include="Resources\ChangePassword.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
