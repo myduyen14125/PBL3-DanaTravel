@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="CodeFirstDB\Account.cs" />
     <Compile Include="CodeFirstDB\CreateDB.cs" />
+    <Compile Include="CodeFirstDB\Customer.cs" />
     <Compile Include="CodeFirstDB\Division.cs" />
     <Compile Include="CodeFirstDB\Education_degree.cs" />
     <Compile Include="CodeFirstDB\Employee.cs" />

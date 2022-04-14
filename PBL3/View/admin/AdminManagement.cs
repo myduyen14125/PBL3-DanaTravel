@@ -16,7 +16,28 @@ namespace PBL3.View.admin
         public AdminManagement()
         {
             InitializeComponent();
+            Load += AdminManagement_Load;
+        }
+        public void SetActivePanel(UserControl control)
+        {
+            //set all usercontrol false
+            employeeManagement1.Visible = false;
+            control.Visible = true;
         }
 
+        private void AdminManagement_Load(object sender, EventArgs e)
+        {
+            SetActivePanel(employeeManagement1);
+        }
+
+        private void btnEmployee_Click(object sender, EventArgs e)
+        {
+            SetActivePanel(employeeManagement1);
+        }
+
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            SetActivePanel(employeeManagement1);
+        }
     }
 }

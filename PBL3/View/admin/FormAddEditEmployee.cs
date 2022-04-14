@@ -40,7 +40,7 @@ namespace PBL3.View.admin
             dataGridViewPer.Columns["STT"].Width = 50;
             dataGridViewPer.Columns["Permission"].Width = 175;
         }
-
+        
         private void ShowForm()
         {
             SetListCheckBoxRole();

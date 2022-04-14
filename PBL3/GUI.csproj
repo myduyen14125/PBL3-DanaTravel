@@ -53,6 +53,12 @@
     <Compile Include="BookTour.Designer.cs">
       <DependentUpon>BookTour.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\admin\Customer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\admin\Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\admin\EmployeeManagement.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </Compile>
     <EmbeddedResource Include="BookTour.resx">
       <DependentUpon>BookTour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\admin\Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\admin\EmployeeManagement.resx">
       <DependentUpon>EmployeeManagement.cs</DependentUpon>
