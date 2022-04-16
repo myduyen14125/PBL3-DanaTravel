@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +17,16 @@ namespace PBL3
     public partial class SignupForm : Form
     {
         private int code = 0;
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+            (
+                int nLeft,
+                int nTop,
+                int nRight,
+                int nBottom,
+                int nWidthEclipse,
+                int nHeightEclipse
+            );
 
         public SignupForm()
         {
@@ -209,6 +220,12 @@ namespace PBL3
                 return false;
             }
             return true;
+        }
+
+        private void SignupForm_Load(object sender, EventArgs e)
+        {
+            btnGetOTP.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnGetOTP.Width, btnGetOTP.Height, 30, 30));
+            signupBtn.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, signupBtn.Width, signupBtn.Height, 30, 30));
         }
     }
 }

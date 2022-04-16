@@ -70,9 +70,9 @@ namespace PBL3.View.admin
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(69, 46);
+            this.label1.Location = new System.Drawing.Point(73, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 17);
+            this.label1.Size = new System.Drawing.Size(44, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Name";
             // 
@@ -81,7 +81,7 @@ namespace PBL3.View.admin
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(69, 105);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 17);
+            this.label2.Size = new System.Drawing.Size(56, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Birthday";
             // 
@@ -90,7 +90,7 @@ namespace PBL3.View.admin
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(71, 154);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 17);
+            this.label3.Size = new System.Drawing.Size(52, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Gender";
             // 
@@ -99,7 +99,7 @@ namespace PBL3.View.admin
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(71, 206);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 17);
+            this.label4.Size = new System.Drawing.Size(50, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "Id Card";
             // 
@@ -108,7 +108,7 @@ namespace PBL3.View.admin
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(71, 254);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 17);
+            this.label5.Size = new System.Drawing.Size(46, 16);
             this.label5.TabIndex = 4;
             this.label5.Text = "Phone";
             // 
@@ -117,7 +117,7 @@ namespace PBL3.View.admin
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(69, 305);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 17);
+            this.label6.Size = new System.Drawing.Size(0, 16);
             this.label6.TabIndex = 5;
             // 
             // label7
@@ -125,7 +125,7 @@ namespace PBL3.View.admin
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(69, 373);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 17);
+            this.label7.Size = new System.Drawing.Size(58, 16);
             this.label7.TabIndex = 6;
             this.label7.Text = "Address";
             // 
@@ -148,7 +148,7 @@ namespace PBL3.View.admin
             this.radioMale.AutoSize = true;
             this.radioMale.Location = new System.Drawing.Point(197, 154);
             this.radioMale.Name = "radioMale";
-            this.radioMale.Size = new System.Drawing.Size(59, 21);
+            this.radioMale.Size = new System.Drawing.Size(58, 20);
             this.radioMale.TabIndex = 10;
             this.radioMale.TabStop = true;
             this.radioMale.Text = "Male";
@@ -159,7 +159,7 @@ namespace PBL3.View.admin
             this.radioFemale.AutoSize = true;
             this.radioFemale.Location = new System.Drawing.Point(304, 152);
             this.radioFemale.Name = "radioFemale";
-            this.radioFemale.Size = new System.Drawing.Size(75, 21);
+            this.radioFemale.Size = new System.Drawing.Size(74, 20);
             this.radioFemale.TabIndex = 11;
             this.radioFemale.TabStop = true;
             this.radioFemale.Text = "Female";
@@ -215,7 +215,7 @@ namespace PBL3.View.admin
             this.lbDivison.AutoSize = true;
             this.lbDivison.Location = new System.Drawing.Point(538, 44);
             this.lbDivison.Name = "lbDivison";
-            this.lbDivison.Size = new System.Drawing.Size(57, 17);
+            this.lbDivison.Size = new System.Drawing.Size(55, 16);
             this.lbDivison.TabIndex = 19;
             this.lbDivison.Text = "Division";
             // 
@@ -224,7 +224,7 @@ namespace PBL3.View.admin
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(538, 91);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(58, 17);
+            this.label10.Size = new System.Drawing.Size(55, 16);
             this.label10.TabIndex = 20;
             this.label10.Text = "Position";
             // 
@@ -241,7 +241,7 @@ namespace PBL3.View.admin
             this.lbEducation.AutoSize = true;
             this.lbEducation.Location = new System.Drawing.Point(538, 139);
             this.lbEducation.Name = "lbEducation";
-            this.lbEducation.Size = new System.Drawing.Size(122, 17);
+            this.lbEducation.Size = new System.Drawing.Size(116, 16);
             this.lbEducation.TabIndex = 22;
             this.lbEducation.Text = "Education Degree";
             // 
@@ -258,7 +258,7 @@ namespace PBL3.View.admin
             this.lbRole.AutoSize = true;
             this.lbRole.Location = new System.Drawing.Point(538, 197);
             this.lbRole.Name = "lbRole";
-            this.lbRole.Size = new System.Drawing.Size(37, 17);
+            this.lbRole.Size = new System.Drawing.Size(36, 16);
             this.lbRole.TabIndex = 24;
             this.lbRole.Text = "Role";
             // 
@@ -288,7 +288,7 @@ namespace PBL3.View.admin
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(69, 496);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(59, 17);
+            this.label9.Size = new System.Drawing.Size(55, 16);
             this.label9.TabIndex = 28;
             this.label9.Text = "Account";
             // 
@@ -297,7 +297,7 @@ namespace PBL3.View.admin
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(68, 548);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(69, 17);
+            this.label12.Size = new System.Drawing.Size(67, 16);
             this.label12.TabIndex = 29;
             this.label12.Text = "Password";
             // 
@@ -345,7 +345,7 @@ namespace PBL3.View.admin
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(71, 310);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(42, 17);
+            this.label11.Size = new System.Drawing.Size(41, 16);
             this.label11.TabIndex = 5;
             this.label11.Text = "Email";
             // 
@@ -354,7 +354,7 @@ namespace PBL3.View.admin
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(69, 435);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(48, 17);
+            this.label13.Size = new System.Drawing.Size(46, 16);
             this.label13.TabIndex = 7;
             this.label13.Text = "Salary";
             // 

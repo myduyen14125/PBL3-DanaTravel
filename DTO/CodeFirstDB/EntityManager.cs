@@ -34,10 +34,11 @@ namespace DTO
         public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<Permission> Permissions { get; set; }
         public virtual DbSet<Account> Accounts { get; set; }
-
         public virtual DbSet<Division> Divisions { get; set; }
         public virtual DbSet<Position> Positions { get; set; }
         public virtual DbSet<Education_degree> Education_degrees { get; set; }
         public virtual DbSet<Employee> Employees { get; set; }
+        public virtual DbSet<Customer> Customers { get; set; }
+        public virtual DbSet<CustomerType> CustomerTypes { get; set; }
     }
 }

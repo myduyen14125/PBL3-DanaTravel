@@ -93,6 +93,8 @@
             this.signupBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
             this.signupBtn.CausesValidation = false;
             this.signupBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.signupBtn.FlatAppearance.BorderSize = 0;
+            this.signupBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.signupBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signupBtn.ForeColor = System.Drawing.Color.White;
             this.signupBtn.Location = new System.Drawing.Point(243, 446);
@@ -151,6 +153,8 @@
             // 
             this.btnGetOTP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
             this.btnGetOTP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGetOTP.FlatAppearance.BorderSize = 0;
+            this.btnGetOTP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGetOTP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnGetOTP.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnGetOTP.Location = new System.Drawing.Point(382, 363);
@@ -180,6 +184,7 @@
             this.Name = "SignupForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DanaTravel";
+            this.Load += new System.EventHandler(this.SignupForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.OTPbox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

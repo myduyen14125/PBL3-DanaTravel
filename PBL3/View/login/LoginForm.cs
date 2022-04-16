@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,7 +19,16 @@ namespace PBL3
     {
         private Validate validate = new Validate();
 
-
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+            (
+                int nLeft,
+                int nTop,
+                int nRight,
+                int nBottom,
+                int nWidthEclipse,
+                int nHeightEclipse
+            );
         public LoginForm()
         {
             InitializeComponent();
@@ -92,6 +102,11 @@ namespace PBL3
                 return false;
             }
             return true;
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            loginBtn.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, loginBtn.Width, loginBtn.Height, 30, 30));
         }
     }
 }

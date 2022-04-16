@@ -53,11 +53,17 @@
     <Compile Include="BookTour.Designer.cs">
       <DependentUpon>BookTour.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\admin\Customer.cs">
+    <Compile Include="FormAddEditCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddEditCustomer.Designer.cs">
+      <DependentUpon>FormAddEditCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\admin\CustomerManagement.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\admin\Customer.Designer.cs">
-      <DependentUpon>Customer.cs</DependentUpon>
+    <Compile Include="View\admin\CustomerManagement.Designer.cs">
+      <DependentUpon>CustomerManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="View\admin\EmployeeManagement.cs">
       <SubType>UserControl</SubType>
@@ -130,8 +136,11 @@
     <EmbeddedResource Include="BookTour.resx">
       <DependentUpon>BookTour.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\admin\Customer.resx">
-      <DependentUpon>Customer.cs</DependentUpon>
+    <EmbeddedResource Include="FormAddEditCustomer.resx">
+      <DependentUpon>FormAddEditCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\admin\CustomerManagement.resx">
+      <DependentUpon>CustomerManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\admin\EmployeeManagement.resx">
       <DependentUpon>EmployeeManagement.cs</DependentUpon>

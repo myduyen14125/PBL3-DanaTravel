@@ -94,8 +94,6 @@ namespace DAO
             }
             return employeeDTOs;
         }
-
-
         public EmployeeDTO GetEmployeeDTOById(int id)
         {
             EntityManager db = EntityManager.Instance;
@@ -149,9 +147,6 @@ namespace DAO
                 roles = dataRoles
             };
         }
-
-
-
         public void Save(Employee e)
         {
             EntityManager db = EntityManager.Instance;
@@ -183,7 +178,7 @@ namespace DAO
             EntityManager db = EntityManager.Instance;
             foreach (int id in listId)
             {
-                var result = db.Employees.Single(e => e.id == id);
+                var result = db.Employees.Single(c => c.id == id);
                 db.Employees.Remove(result);
                 AccountDAO.Instance.DeleteAccount(result.email);
             }

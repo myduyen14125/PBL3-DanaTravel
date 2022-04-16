@@ -32,17 +32,20 @@ namespace PBL3.View.admin
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.fileSystemWatcher2 = new System.IO.FileSystemWatcher();
             this.name = new System.Windows.Forms.Label();
-            this.btnStatistic = new System.Windows.Forms.Button();
             this.navbar = new System.Windows.Forms.Panel();
             this.btnCustomer = new System.Windows.Forms.Button();
             this.avtFrame = new System.Windows.Forms.PictureBox();
+            this.btnStatistic = new System.Windows.Forms.Button();
             this.btnEmployee = new System.Windows.Forms.Button();
             this.btnTour = new System.Windows.Forms.Button();
+            this.panelContent = new System.Windows.Forms.Panel();
             this.employeeManagement1 = new PBL3.EmployeeManagement();
+            this.customer1 = new PBL3.View.admin.CustomerManagement();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher2)).BeginInit();
             this.navbar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.avtFrame)).BeginInit();
+            this.panelContent.SuspendLayout();
             this.SuspendLayout();
             // 
             // fileSystemWatcher1
@@ -67,26 +70,6 @@ namespace PBL3.View.admin
             this.name.TabIndex = 27;
             this.name.Text = "Admin Yuu";
             // 
-            // btnStatistic
-            // 
-            this.btnStatistic.BackColor = System.Drawing.Color.Transparent;
-            this.btnStatistic.CausesValidation = false;
-            this.btnStatistic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnStatistic.FlatAppearance.BorderSize = 0;
-            this.btnStatistic.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
-            this.btnStatistic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStatistic.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStatistic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
-            this.btnStatistic.Location = new System.Drawing.Point(0, 443);
-            this.btnStatistic.Name = "btnStatistic";
-            this.btnStatistic.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnStatistic.Size = new System.Drawing.Size(189, 48);
-            this.btnStatistic.TabIndex = 26;
-            this.btnStatistic.TabStop = false;
-            this.btnStatistic.Text = "Statistic";
-            this.btnStatistic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStatistic.UseVisualStyleBackColor = false;
-            // 
             // navbar
             // 
             this.navbar.BackgroundImage = global::PBL3.Properties.Resources.bgNavbar;
@@ -98,7 +81,7 @@ namespace PBL3.View.admin
             this.navbar.Dock = System.Windows.Forms.DockStyle.Left;
             this.navbar.Location = new System.Drawing.Point(0, 0);
             this.navbar.Name = "navbar";
-            this.navbar.Size = new System.Drawing.Size(199, 681);
+            this.navbar.Size = new System.Drawing.Size(199, 567);
             this.navbar.TabIndex = 28;
             // 
             // btnCustomer
@@ -132,6 +115,26 @@ namespace PBL3.View.admin
             this.avtFrame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.avtFrame.TabIndex = 20;
             this.avtFrame.TabStop = false;
+            // 
+            // btnStatistic
+            // 
+            this.btnStatistic.BackColor = System.Drawing.Color.Transparent;
+            this.btnStatistic.CausesValidation = false;
+            this.btnStatistic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStatistic.FlatAppearance.BorderSize = 0;
+            this.btnStatistic.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.btnStatistic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStatistic.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStatistic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.btnStatistic.Location = new System.Drawing.Point(0, 443);
+            this.btnStatistic.Name = "btnStatistic";
+            this.btnStatistic.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnStatistic.Size = new System.Drawing.Size(189, 48);
+            this.btnStatistic.TabIndex = 26;
+            this.btnStatistic.TabStop = false;
+            this.btnStatistic.Text = "Statistic";
+            this.btnStatistic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStatistic.UseVisualStyleBackColor = false;
             // 
             // btnEmployee
             // 
@@ -175,19 +178,39 @@ namespace PBL3.View.admin
             this.btnTour.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTour.UseVisualStyleBackColor = false;
             // 
+            // panelContent
+            // 
+            this.panelContent.Controls.Add(this.employeeManagement1);
+            this.panelContent.Controls.Add(this.customer1);
+            this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContent.Location = new System.Drawing.Point(199, 0);
+            this.panelContent.Name = "panelContent";
+            this.panelContent.Size = new System.Drawing.Size(867, 567);
+            this.panelContent.TabIndex = 30;
+            // 
             // employeeManagement1
             // 
-            this.employeeManagement1.Location = new System.Drawing.Point(196, -36);
-            this.employeeManagement1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.employeeManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.employeeManagement1.Location = new System.Drawing.Point(0, 0);
+            this.employeeManagement1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.employeeManagement1.Name = "employeeManagement1";
-            this.employeeManagement1.Size = new System.Drawing.Size(1165, 801);
+            this.employeeManagement1.Size = new System.Drawing.Size(867, 567);
             this.employeeManagement1.TabIndex = 0;
+            // 
+            // customer1
+            // 
+            this.customer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customer1.Location = new System.Drawing.Point(0, 0);
+            this.customer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.customer1.Name = "customer1";
+            this.customer1.Size = new System.Drawing.Size(867, 567);
+            this.customer1.TabIndex = 1;
             // 
             // AdminManagement
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1381, 681);
-            this.Controls.Add(this.employeeManagement1);
+            this.ClientSize = new System.Drawing.Size(1066, 567);
+            this.Controls.Add(this.panelContent);
             this.Controls.Add(this.name);
             this.Controls.Add(this.navbar);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -199,6 +222,7 @@ namespace PBL3.View.admin
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher2)).EndInit();
             this.navbar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.avtFrame)).EndInit();
+            this.panelContent.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,6 +239,8 @@ namespace PBL3.View.admin
         private System.Windows.Forms.Button btnEmployee;
         private System.Windows.Forms.Button btnTour;
         private System.Windows.Forms.Button btnCustomer;
+        private System.Windows.Forms.Panel panelContent;
         private EmployeeManagement employeeManagement1;
+        private CustomerManagement customer1;
     }
 }

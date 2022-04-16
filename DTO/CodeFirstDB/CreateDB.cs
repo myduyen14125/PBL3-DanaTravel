@@ -86,6 +86,16 @@ namespace DTO
             };
             context.Employees.Add(employee);
             context.SaveChanges();
+
+            // Customer
+            List<CustomerType> customerTypes = new List<CustomerType>();
+            customerTypes.Add(new CustomerType { id = 1, name = "Standard" });
+            customerTypes.Add(new CustomerType { id = 2, name = "Silver" });
+            customerTypes.Add(new CustomerType { id = 3, name = "Gold" });
+            customerTypes.Add(new CustomerType { id = 4, name = "Platinum" });
+            customerTypes.Add(new CustomerType { id = 5, name = "Diamond" });
+            context.CustomerTypes.AddRange(customerTypes);
+            context.SaveChanges();
         }
     }
 }

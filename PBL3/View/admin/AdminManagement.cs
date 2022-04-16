@@ -22,6 +22,7 @@ namespace PBL3.View.admin
         {
             //set all usercontrol false
             employeeManagement1.Visible = false;
+            customer1.Visible = false;
             control.Visible = true;
         }
 
@@ -37,7 +38,7 @@ namespace PBL3.View.admin
 
         private void btnCustomer_Click(object sender, EventArgs e)
         {
-            SetActivePanel(employeeManagement1);
+            SetActivePanel(customer1);
         }
     }
 }
