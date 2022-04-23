@@ -41,6 +41,7 @@ namespace PBL3.View.admin
             this.panelContent = new System.Windows.Forms.Panel();
             this.employeeManagement1 = new PBL3.EmployeeManagement();
             this.customer1 = new PBL3.View.admin.CustomerManagement();
+            this.tourManagement1 = new PBL3.View.TourManagement();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher2)).BeginInit();
             this.navbar.SuspendLayout();
@@ -177,9 +178,11 @@ namespace PBL3.View.admin
             this.btnTour.Text = "Tour";
             this.btnTour.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTour.UseVisualStyleBackColor = false;
+            this.btnTour.Click += new System.EventHandler(this.btnTour_Click);
             // 
             // panelContent
             // 
+            this.panelContent.Controls.Add(this.tourManagement1);
             this.panelContent.Controls.Add(this.employeeManagement1);
             this.panelContent.Controls.Add(this.customer1);
             this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -205,6 +208,14 @@ namespace PBL3.View.admin
             this.customer1.Name = "customer1";
             this.customer1.Size = new System.Drawing.Size(867, 567);
             this.customer1.TabIndex = 1;
+            // 
+            // tourManagement1
+            // 
+            this.tourManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tourManagement1.Location = new System.Drawing.Point(0, 0);
+            this.tourManagement1.Name = "tourManagement1";
+            this.tourManagement1.Size = new System.Drawing.Size(867, 567);
+            this.tourManagement1.TabIndex = 2;
             // 
             // AdminManagement
             // 
@@ -242,5 +253,6 @@ namespace PBL3.View.admin
         private System.Windows.Forms.Panel panelContent;
         private EmployeeManagement employeeManagement1;
         private CustomerManagement customer1;
+        private TourManagement tourManagement1;
     }
 }

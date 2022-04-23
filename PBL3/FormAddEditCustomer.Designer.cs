@@ -29,13 +29,15 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.radioMale = new System.Windows.Forms.RadioButton();
             this.radioFemale = new System.Windows.Forms.RadioButton();
@@ -43,8 +45,6 @@
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
             this.cbbCustomerType = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
@@ -56,6 +56,33 @@
             this.label1.Size = new System.Drawing.Size(44, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Name";
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(293, 32);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(174, 22);
+            this.txtName.TabIndex = 7;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(153, 539);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(101, 38);
+            this.btnSave.TabIndex = 15;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(438, 539);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(110, 38);
+            this.btnCancel.TabIndex = 16;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // label2
             // 
@@ -110,13 +137,6 @@
             this.label7.Size = new System.Drawing.Size(58, 16);
             this.label7.TabIndex = 6;
             this.label7.Text = "Address";
-            // 
-            // txtName
-            // 
-            this.txtName.Location = new System.Drawing.Point(293, 32);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(174, 22);
-            this.txtName.TabIndex = 7;
             // 
             // dateTimePicker1
             // 
@@ -175,26 +195,6 @@
             this.txtAddress.Size = new System.Drawing.Size(179, 22);
             this.txtAddress.TabIndex = 14;
             // 
-            // btnSave
-            // 
-            this.btnSave.Location = new System.Drawing.Point(153, 539);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(101, 38);
-            this.btnSave.TabIndex = 15;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Location = new System.Drawing.Point(438, 539);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(110, 38);
-            this.btnCancel.TabIndex = 16;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
             // cbbCustomerType
             // 
             this.cbbCustomerType.FormattingEnabled = true;
@@ -237,13 +237,15 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.RadioButton radioMale;
         private System.Windows.Forms.RadioButton radioFemale;
@@ -251,8 +253,6 @@
         private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtAddress;
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.ComboBox cbbCustomerType;
     }
 }

@@ -40,5 +40,6 @@ namespace DTO
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<Customer> Customers { get; set; }
         public virtual DbSet<CustomerType> CustomerTypes { get; set; }
+        public virtual DbSet<Tour> Tour { get; set; }
     }
 }

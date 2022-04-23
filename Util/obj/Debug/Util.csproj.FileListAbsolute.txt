@@ -17,3 +17,12 @@ C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.Generate
 C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.CoreCompileInputs.cache
 C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\Util\obj\Debug\Util.exe
 C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\Util\obj\Debug\Util.pdb
+E:\PBL3-DanaTravel\Util\bin\Debug\Util.exe.config
+E:\PBL3-DanaTravel\Util\bin\Debug\Util.exe
+E:\PBL3-DanaTravel\Util\bin\Debug\Util.pdb
+E:\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.SuggestedBindingRedirects.cache
+E:\PBL3-DanaTravel\Util\obj\Debug\Util.Properties.Resources.resources
+E:\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.GenerateResource.cache
+E:\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.CoreCompileInputs.cache
+E:\PBL3-DanaTravel\Util\obj\Debug\Util.exe
+E:\PBL3-DanaTravel\Util\obj\Debug\Util.pdb

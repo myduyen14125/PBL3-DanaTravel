@@ -27,10 +27,7 @@ E:\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.CopyComplete
 E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.exe
 E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.pdb
 E:\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.AssemblyReference.cache
-E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.AdManagement.resources
 E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.BookTour.resources
-E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.HumanResource.resources
-E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.TourManagement.resources
 E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\PBL3\bin\Debug\PBL3.exe.config
 E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\PBL3\bin\Debug\PBL3.exe
 E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3-DanaTravel\PBL3\bin\Debug\PBL3.pdb
@@ -140,3 +137,14 @@ C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.exe
 C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.pdb
 C:\Users\Laptop\source\repos\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.admin.CustomerManagement.resources
 C:\Users\Laptop\source\repos\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.FormAddEditCustomer.resources
+E:\PBL3-DanaTravel\PBL3\bin\Debug\EntityFramework.dll
+E:\PBL3-DanaTravel\PBL3\bin\Debug\EntityFramework.xml
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.FormAddEditCustomer.resources
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.admin.CustomerManagement.resources
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.EmployeeManagement.resources
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.admin.AdminManagement.resources
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.admin.FormAddEditEmployee.resources
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.admin.FormAddRole.resources
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.ChangePassword.resources
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.TourManagement.resources
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.FormAddEditTour.resources
