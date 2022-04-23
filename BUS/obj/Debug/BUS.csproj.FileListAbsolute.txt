@@ -39,3 +39,23 @@ C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\BUS\obj\Debug\BUS.csproj.CoreCompil
 C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\BUS\obj\Debug\BUS.exe
 C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\BUS\obj\Debug\BUS.pdb
+E:\Nam 2\NET_WF\PBL3-DanaTravel\BUS\bin\Debug\BUS.exe.config
+E:\Nam 2\NET_WF\PBL3-DanaTravel\BUS\bin\Debug\BUS.exe
+E:\Nam 2\NET_WF\PBL3-DanaTravel\BUS\bin\Debug\BUS.pdb
+E:\Nam 2\NET_WF\PBL3-DanaTravel\BUS\bin\Debug\DAO.exe
+E:\Nam 2\NET_WF\PBL3-DanaTravel\BUS\bin\Debug\DTO.exe
+E:\Nam 2\NET_WF\PBL3-DanaTravel\BUS\bin\Debug\Util.exe
+E:\Nam 2\NET_WF\PBL3-DanaTravel\BUS\bin\Debug\DAO.pdb
+E:\Nam 2\NET_WF\PBL3-DanaTravel\BUS\bin\Debug\DAO.exe.config
+E:\Nam 2\NET_WF\PBL3-DanaTravel\BUS\bin\Debug\DTO.pdb
+E:\Nam 2\NET_WF\PBL3-DanaTravel\BUS\bin\Debug\DTO.exe.config
+E:\Nam 2\NET_WF\PBL3-DanaTravel\BUS\bin\Debug\Util.pdb
+E:\Nam 2\NET_WF\PBL3-DanaTravel\BUS\bin\Debug\Util.exe.config
+E:\Nam 2\NET_WF\PBL3-DanaTravel\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+E:\Nam 2\NET_WF\PBL3-DanaTravel\BUS\obj\Debug\BUS.csproj.SuggestedBindingRedirects.cache
+E:\Nam 2\NET_WF\PBL3-DanaTravel\BUS\obj\Debug\BUS.Properties.Resources.resources
+E:\Nam 2\NET_WF\PBL3-DanaTravel\BUS\obj\Debug\BUS.csproj.GenerateResource.cache
+E:\Nam 2\NET_WF\PBL3-DanaTravel\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+E:\Nam 2\NET_WF\PBL3-DanaTravel\BUS\obj\Debug\BUS.csproj.CopyComplete
+E:\Nam 2\NET_WF\PBL3-DanaTravel\BUS\obj\Debug\BUS.exe
+E:\Nam 2\NET_WF\PBL3-DanaTravel\BUS\obj\Debug\BUS.pdb

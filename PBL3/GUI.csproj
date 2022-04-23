@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MyLibrary">
+      <HintPath>..\..\MyLibrary\MyLibrary\bin\Debug\MyLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
@@ -330,6 +333,29 @@
   <ItemGroup>
     <None Include="Resources\ChangePassword.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\BGedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bgcrudemployee %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 1404.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 1400.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 1401.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 1402.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 1403.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 1405.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

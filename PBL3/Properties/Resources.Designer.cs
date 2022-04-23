@@ -123,6 +123,26 @@ namespace PBL3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Bgcrudemployee__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Bgcrudemployee (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BGedit {
+            get {
+                object obj = ResourceManager.GetObject("BGedit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bgForgetPass {
             get {
                 object obj = ResourceManager.GetObject("bgForgetPass", resourceCulture);
@@ -226,6 +246,66 @@ namespace PBL3.Properties {
         internal static System.Drawing.Bitmap exploreQuote {
             get {
                 object obj = ResourceManager.GetObject("exploreQuote", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_1400 {
+            get {
+                object obj = ResourceManager.GetObject("Group 1400", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_1401 {
+            get {
+                object obj = ResourceManager.GetObject("Group 1401", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_1402 {
+            get {
+                object obj = ResourceManager.GetObject("Group 1402", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_1403 {
+            get {
+                object obj = ResourceManager.GetObject("Group 1403", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_1404 {
+            get {
+                object obj = ResourceManager.GetObject("Group 1404", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_1405 {
+            get {
+                object obj = ResourceManager.GetObject("Group 1405", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
