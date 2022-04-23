@@ -1,5 +1,4 @@
-﻿
-namespace PBL3.View.admin
+﻿namespace PBL3.View.admin
 {
     partial class AdminManagement
     {
@@ -33,8 +32,6 @@ namespace PBL3.View.admin
             this.fileSystemWatcher2 = new System.IO.FileSystemWatcher();
             this.name = new System.Windows.Forms.Label();
             this.panelContent = new System.Windows.Forms.Panel();
-            this.employeeManagement1 = new PBL3.EmployeeManagement();
-            this.customer1 = new PBL3.View.admin.CustomerManagement();
             this.btnTour = new System.Windows.Forms.Button();
             this.btnEmployee = new System.Windows.Forms.Button();
             this.btnStatistic = new System.Windows.Forms.Button();
@@ -45,6 +42,9 @@ namespace PBL3.View.admin
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tourManagement1 = new PBL3.View.TourManagement();
+            this.employeeManagement1 = new PBL3.EmployeeManagement();
+            this.customer1 = new PBL3.View.admin.CustomerManagement();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher2)).BeginInit();
             this.panelContent.SuspendLayout();
@@ -74,12 +74,13 @@ namespace PBL3.View.admin
             this.name.ForeColor = System.Drawing.Color.White;
             this.name.Location = new System.Drawing.Point(56, 178);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(94, 21);
+            this.name.Size = new System.Drawing.Size(115, 28);
             this.name.TabIndex = 27;
             this.name.Text = "Admin Yuu";
             // 
             // panelContent
             // 
+            this.panelContent.Controls.Add(this.tourManagement1);
             this.panelContent.Controls.Add(this.employeeManagement1);
             this.panelContent.Controls.Add(this.customer1);
             this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -87,24 +88,6 @@ namespace PBL3.View.admin
             this.panelContent.Name = "panelContent";
             this.panelContent.Size = new System.Drawing.Size(867, 567);
             this.panelContent.TabIndex = 30;
-            // 
-            // employeeManagement1
-            // 
-            this.employeeManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.employeeManagement1.Location = new System.Drawing.Point(0, 0);
-            this.employeeManagement1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.employeeManagement1.Name = "employeeManagement1";
-            this.employeeManagement1.Size = new System.Drawing.Size(867, 567);
-            this.employeeManagement1.TabIndex = 0;
-            // 
-            // customer1
-            // 
-            this.customer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customer1.Location = new System.Drawing.Point(0, 0);
-            this.customer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.customer1.Name = "customer1";
-            this.customer1.Size = new System.Drawing.Size(867, 567);
-            this.customer1.TabIndex = 1;
             // 
             // btnTour
             // 
@@ -124,6 +107,7 @@ namespace PBL3.View.admin
             this.btnTour.TabStop = false;
             this.btnTour.Text = "Tour";
             this.btnTour.UseVisualStyleBackColor = false;
+            this.btnTour.Click += new System.EventHandler(this.btnTour_Click_1);
             // 
             // btnEmployee
             // 
@@ -258,6 +242,33 @@ namespace PBL3.View.admin
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // tourManagement1
+            // 
+            this.tourManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tourManagement1.Location = new System.Drawing.Point(0, 0);
+            this.tourManagement1.Name = "tourManagement1";
+            this.tourManagement1.Size = new System.Drawing.Size(867, 567);
+            this.tourManagement1.TabIndex = 2;
+            // 
+            // employeeManagement1
+            // 
+            this.employeeManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.employeeManagement1.Location = new System.Drawing.Point(0, 0);
+            this.employeeManagement1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.employeeManagement1.Name = "employeeManagement1";
+            this.employeeManagement1.Size = new System.Drawing.Size(867, 567);
+            this.employeeManagement1.TabIndex = 0;
+            // 
+            // customer1
+            // 
+            this.customer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
+            this.customer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customer1.Location = new System.Drawing.Point(0, 0);
+            this.customer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.customer1.Name = "customer1";
+            this.customer1.Size = new System.Drawing.Size(867, 567);
+            this.customer1.TabIndex = 1;
+            // 
             // AdminManagement
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -301,5 +312,6 @@ namespace PBL3.View.admin
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private TourManagement tourManagement1;
     }
 }

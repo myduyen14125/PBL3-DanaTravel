@@ -92,6 +92,12 @@
     <Compile Include="View\admin\FormAddRole.Designer.cs">
       <DependentUpon>FormAddRole.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\admin\FormAddEditTour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\admin\FormAddEditTour.Designer.cs">
+      <DependentUpon>FormAddEditTour.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\login\ChangePassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,12 @@
     <Compile Include="View\login\SignupForm.Designer.cs">
       <DependentUpon>SignupForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\TourManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\TourManagement.Designer.cs">
+      <DependentUpon>TourManagement.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BookTour.resx">
       <DependentUpon>BookTour.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\admin\FormAddRole.resx">
       <DependentUpon>FormAddRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\admin\FormAddEditTour.resx">
+      <DependentUpon>FormAddEditTour.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\login\ChangePassword.resx">
       <DependentUpon>ChangePassword.cs</DependentUpon>
@@ -187,6 +202,9 @@
     </Compile>
     <EmbeddedResource Include="View\login\SignupForm.resx">
       <DependentUpon>SignupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TourManagement.resx">
+      <DependentUpon>TourManagement.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
