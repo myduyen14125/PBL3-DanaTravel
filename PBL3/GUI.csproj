@@ -56,10 +56,10 @@
     <Compile Include="BookTour.Designer.cs">
       <DependentUpon>BookTour.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAddEditCustomer.cs">
+    <Compile Include="View\admin\FormAddEditCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAddEditCustomer.Designer.cs">
+    <Compile Include="View\admin\FormAddEditCustomer.Designer.cs">
       <DependentUpon>FormAddEditCustomer.cs</DependentUpon>
     </Compile>
     <Compile Include="View\admin\CustomerManagement.cs">
@@ -151,7 +151,7 @@
     <EmbeddedResource Include="BookTour.resx">
       <DependentUpon>BookTour.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAddEditCustomer.resx">
+    <EmbeddedResource Include="View\admin\FormAddEditCustomer.resx">
       <DependentUpon>FormAddEditCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\admin\CustomerManagement.resx">

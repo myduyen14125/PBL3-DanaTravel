@@ -68,6 +68,37 @@ namespace DAO
             }
             return data;
         }
+        public TourDTO GetTourDTOById(int id)
+        {
+            EntityManager db = EntityManager.Instance;
+            var result = from c in db.Tour
+                         where c.id == id
+                         select new
+                         {
+                             c.id,
+                             c.namePlace,
+                             c.photo,
+                             c.departureDay,
+                             c.returnDay,
+                             c.transport,
+                             c.quantity,
+                             c.tourGuide,
+                             c.totalPrice,
+                         };
+            var i = result.FirstOrDefault();
+            return new TourDTO
+            {
+                id = i.id,
+                namePlace = i.namePlace,
+                photo = i.photo,
+                departureDay = i.departureDay,
+                returnDay = i.returnDay,
+                transport = i.transport,
+                quantity = i.quantity,
+                tourGuide = i.tourGuide,
+                totalPrice = i.totalPrice,
+            };
+        }
         public void Save(Tour t)
         {
             EntityManager db = EntityManager.Instance;

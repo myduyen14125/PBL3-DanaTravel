@@ -3,12 +3,12 @@
   "ProjectMap": {
     "1fa13dd0-772f-485c-8c95-d00486c7af89": {
       "ProjectGuid": "1fa13dd0-772f-485c-8c95-d00486c7af89",
-      "DisplayName": "PBL3",
+      "DisplayName": "GUI",
       "ColorIndex": 0
     },
-    "d6e5e04f-9589-416b-a95d-eb767740d1f2": {
-      "ProjectGuid": "d6e5e04f-9589-416b-a95d-eb767740d1f2",
-      "DisplayName": "DTO",
+    "ed015a15-6b8d-47be-9d11-a1610cdbc498": {
+      "ProjectGuid": "ed015a15-6b8d-47be-9d11-a1610cdbc498",
+      "DisplayName": "BUS",
       "ColorIndex": 1
     },
     "559ccb36-86f7-4d0f-9e44-261565a696a3": {
@@ -16,23 +16,15 @@
       "DisplayName": "DAO",
       "ColorIndex": 2
     },
-    "ed015a15-6b8d-47be-9d11-a1610cdbc498": {
-      "ProjectGuid": "ed015a15-6b8d-47be-9d11-a1610cdbc498",
-      "DisplayName": "BUS",
+    "d6e5e04f-9589-416b-a95d-eb767740d1f2": {
+      "ProjectGuid": "d6e5e04f-9589-416b-a95d-eb767740d1f2",
+      "DisplayName": "DTO",
       "ColorIndex": 3
     },
     "e65cd94b-50e7-42d9-96f3-0c996456dad4": {
       "ProjectGuid": "e65cd94b-50e7-42d9-96f3-0c996456dad4",
       "DisplayName": "Util",
       "ColorIndex": 4
-<<<<<<< HEAD
-    },
-    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
-      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
-      "DisplayName": "Miscellaneous Files",
-      "ColorIndex": -1
-=======
->>>>>>> Yuu
     }
   },
   "NextColorIndex": 5

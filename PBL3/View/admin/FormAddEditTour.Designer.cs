@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtQuantity = new System.Windows.Forms.TextBox();
             this.lbQuantity = new System.Windows.Forms.Label();
             this.cbbTransport = new System.Windows.Forms.ComboBox();
             this.lbTransport = new System.Windows.Forms.Label();
@@ -36,28 +36,28 @@
             this.lbReturnDay = new System.Windows.Forms.Label();
             this.dateTimePickerStart = new System.Windows.Forms.DateTimePicker();
             this.lbDepartureDay = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPhoto = new System.Windows.Forms.TextBox();
             this.lbPhoto = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtNamePlace = new System.Windows.Forms.TextBox();
             this.lbName = new System.Windows.Forms.Label();
             this.lbTourguide = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rbNo = new System.Windows.Forms.RadioButton();
             this.rbYes = new System.Windows.Forms.RadioButton();
             this.btnCalTotal = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnTotal = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox2
+            // txtQuantity
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(658, 200);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(289, 29);
-            this.textBox2.TabIndex = 40;
+            this.txtQuantity.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuantity.Location = new System.Drawing.Point(658, 200);
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.Size = new System.Drawing.Size(289, 29);
+            this.txtQuantity.TabIndex = 40;
             // 
             // lbQuantity
             // 
@@ -130,19 +130,19 @@
             this.lbDepartureDay.TabIndex = 33;
             this.lbDepartureDay.Text = "Ngày khởi hành";
             // 
-            // textBox1
+            // txtPhoto
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(178, 105);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(242, 29);
-            this.textBox1.TabIndex = 32;
+            this.txtPhoto.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhoto.Location = new System.Drawing.Point(178, 149);
+            this.txtPhoto.Name = "txtPhoto";
+            this.txtPhoto.Size = new System.Drawing.Size(242, 29);
+            this.txtPhoto.TabIndex = 32;
             // 
             // lbPhoto
             // 
             this.lbPhoto.AutoSize = true;
             this.lbPhoto.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPhoto.Location = new System.Drawing.Point(38, 105);
+            this.lbPhoto.Location = new System.Drawing.Point(38, 155);
             this.lbPhoto.Name = "lbPhoto";
             this.lbPhoto.Size = new System.Drawing.Size(82, 23);
             this.lbPhoto.TabIndex = 31;
@@ -157,6 +157,7 @@
             this.btnCancel.TabIndex = 30;
             this.btnCancel.Text = "Hủy ";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
@@ -167,20 +168,21 @@
             this.btnSave.TabIndex = 29;
             this.btnSave.Text = "Xác nhận";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // txtName
+            // txtNamePlace
             // 
-            this.txtName.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(178, 10);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(242, 29);
-            this.txtName.TabIndex = 28;
+            this.txtNamePlace.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNamePlace.Location = new System.Drawing.Point(178, 42);
+            this.txtNamePlace.Name = "txtNamePlace";
+            this.txtNamePlace.Size = new System.Drawing.Size(242, 29);
+            this.txtNamePlace.TabIndex = 28;
             // 
             // lbName
             // 
             this.lbName.AutoSize = true;
             this.lbName.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName.Location = new System.Drawing.Point(38, 13);
+            this.lbName.Location = new System.Drawing.Point(38, 48);
             this.lbName.Name = "lbName";
             this.lbName.Size = new System.Drawing.Size(115, 23);
             this.lbName.TabIndex = 27;
@@ -240,27 +242,28 @@
             this.btnCalTotal.TabIndex = 43;
             this.btnCalTotal.Text = "Tổng chi phí";
             this.btnCalTotal.UseVisualStyleBackColor = false;
+            this.btnCalTotal.Click += new System.EventHandler(this.btnCalTotal_Click);
             // 
-            // button2
+            // btnTotal
             // 
-            this.button2.BackColor = System.Drawing.Color.Yellow;
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(713, 387);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(172, 53);
-            this.button2.TabIndex = 44;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnTotal.BackColor = System.Drawing.Color.Yellow;
+            this.btnTotal.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTotal.Location = new System.Drawing.Point(713, 387);
+            this.btnTotal.Name = "btnTotal";
+            this.btnTotal.Size = new System.Drawing.Size(172, 53);
+            this.btnTotal.TabIndex = 44;
+            this.btnTotal.UseVisualStyleBackColor = false;
             // 
             // FormAddEditTour
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(997, 568);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnTotal);
             this.Controls.Add(this.btnCalTotal);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lbTourguide);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtQuantity);
             this.Controls.Add(this.lbQuantity);
             this.Controls.Add(this.cbbTransport);
             this.Controls.Add(this.lbTransport);
@@ -268,15 +271,16 @@
             this.Controls.Add(this.lbReturnDay);
             this.Controls.Add(this.dateTimePickerStart);
             this.Controls.Add(this.lbDepartureDay);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPhoto);
             this.Controls.Add(this.lbPhoto);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.txtNamePlace);
             this.Controls.Add(this.lbName);
             this.Name = "FormAddEditTour";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAddEditTour";
+            this.Load += new System.EventHandler(this.FormAddEditTour_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -286,7 +290,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtQuantity;
         private System.Windows.Forms.Label lbQuantity;
         private System.Windows.Forms.ComboBox cbbTransport;
         private System.Windows.Forms.Label lbTransport;
@@ -294,17 +298,17 @@
         private System.Windows.Forms.Label lbReturnDay;
         private System.Windows.Forms.DateTimePicker dateTimePickerStart;
         private System.Windows.Forms.Label lbDepartureDay;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPhoto;
         private System.Windows.Forms.Label lbPhoto;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtNamePlace;
         private System.Windows.Forms.Label lbName;
         private System.Windows.Forms.Label lbTourguide;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rbNo;
         private System.Windows.Forms.RadioButton rbYes;
         private System.Windows.Forms.Button btnCalTotal;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnTotal;
     }
 }

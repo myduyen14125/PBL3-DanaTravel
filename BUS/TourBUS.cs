@@ -57,6 +57,10 @@ namespace BUS
         {
             return TourDAO.Instance.GetAllTransport();
         }
+        public TourDTO GetTourDTOById(int id)
+        {
+            return TourDAO.Instance.GetTourDTOById(id);
+        }
 
         public void Save(Tour e)
         {

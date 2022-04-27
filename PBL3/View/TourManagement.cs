@@ -28,7 +28,7 @@ namespace PBL3.View
             btnEdit.Enabled = false;
             btnDelete.Enabled = false;
         }
-        private void ShowDataTour(string txt = "")
+        private void ShowDataTour()
         {
             string searchKey = txtSearch.Text;
             dataGridViewCustomer.DataSource = TourBUS.Instance.GetDataTableTour(TourBUS.Instance.GetListTours(searchKey));
@@ -48,14 +48,14 @@ namespace PBL3.View
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            FormAddEditTour f = new FormAddEditTour("");
+            FormAddEditTour f = new FormAddEditTour();
             f.myDel = new FormAddEditTour.MyDel(ShowDataTour);
             f.Show();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            string id = dataGridViewCustomer.CurrentRow.Cells[0].Value.ToString();
+            int id = Convert.ToInt32(dataGridViewCustomer.CurrentRow.Cells[0].Value.ToString());
             FormAddEditTour f = new FormAddEditTour(id);
             f.myDel = new FormAddEditTour.MyDel(ShowDataTour);
             f.Show();
