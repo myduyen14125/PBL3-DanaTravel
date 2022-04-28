@@ -27,22 +27,26 @@ namespace DAO
         public Account CheckAccount(Account ac)
         {
             EntityManager db = EntityManager.Instance;
-            var result = from a in db.Accounts
-                         from r in db.Roles
-                         where a.username == ac.username && a.password == ac.password
-                         select new { a.id, a.username, a.password, a.status, role_id = r.id, r.name };
-            var firstRow = result.FirstOrDefault();
-            if (firstRow == null) return null;
+            var resultAccount = (from a in db.Accounts
+                                where a.username == ac.username && a.password == ac.password
+                                select a).FirstOrDefault();
 
-            List<Role> roles = new List<Role>();
-            foreach (var i in result) roles.Add(new Role { id = i.role_id, name = i.name });
+            if (resultAccount == null) return null;
+
+            var resultRole = from r in db.Roles
+                             where r.Accounts.Any(t => t.username == resultAccount.username)
+                             select r;
+
+
+            List < Role > roles = new List<Role>();
+            foreach (var i in resultRole)   roles.Add(new Role { id = i.id, name = i.name });
 
             return new Account
             {
-                id = firstRow.id,
-                username = firstRow.username,
-                password = firstRow.password,
-                status = firstRow.status,
+                id = resultAccount.id,
+                username = resultAccount.username,
+                password = resultAccount.password,
+                status = resultAccount.status,
                 Roles = roles
             };
         }

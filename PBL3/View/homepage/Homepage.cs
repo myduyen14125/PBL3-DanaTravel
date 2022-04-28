@@ -19,6 +19,12 @@ namespace PBL3
         {
             InitializeComponent();
             this.account = ac;
+            if(account.Roles.FirstOrDefault().name.ToLower() == "customer")
+            {
+                // Customer
+                choiceAdmin.Visible = false;
+            }
+            else choiceAdmin.Visible = true;
         }
 
         private void txtSearch_Click(object sender, EventArgs e)

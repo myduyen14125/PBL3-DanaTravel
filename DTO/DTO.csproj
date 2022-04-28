@@ -56,15 +56,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CodeFirstDB\Account.cs" />
+    <Compile Include="CodeFirstDB\Service.cs" />
+    <Compile Include="CodeFirstDB\BaseClass.cs" />
     <Compile Include="CodeFirstDB\CreateDB.cs" />
     <Compile Include="CodeFirstDB\Division.cs" />
     <Compile Include="CodeFirstDB\Education_degree.cs" />
     <Compile Include="CodeFirstDB\Employee.cs" />
     <Compile Include="CodeFirstDB\EntityManager.cs" />
+    <Compile Include="CodeFirstDB\Hotel.cs" />
     <Compile Include="CodeFirstDB\Person.cs" />
     <Compile Include="CodeFirstDB\Customer.cs" />
     <Compile Include="CodeFirstDB\CustomerType.cs" />
+    <Compile Include="CodeFirstDB\Site.cs" />
     <Compile Include="CodeFirstDB\Tour.cs" />
+    <Compile Include="CodeFirstDB\TourCategory.cs" />
+    <Compile Include="CodeFirstDB\TourPrice.cs" />
+    <Compile Include="CodeFirstDB\TourStatus.cs" />
+    <Compile Include="CodeFirstDB\Transport.cs" />
     <Compile Include="CustomerDTO.cs" />
     <Compile Include="EmployeeDTO.cs" />
     <Compile Include="Form1.cs">

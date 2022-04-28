@@ -135,7 +135,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
             this.label2.Location = new System.Drawing.Point(28, 194);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 18);
+            this.label2.Size = new System.Drawing.Size(89, 24);
             this.label2.TabIndex = 4;
             this.label2.Text = "PLACES";
             // 
@@ -147,7 +147,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
             this.label3.Location = new System.Drawing.Point(27, 388);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(142, 18);
+            this.label3.Size = new System.Drawing.Size(173, 24);
             this.label3.TabIndex = 5;
             this.label3.Text = "RECOMMENDED";
             // 
@@ -171,9 +171,9 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmenu});
-            this.menuStrip1.Location = new System.Drawing.Point(935, 67);
+            this.menuStrip1.Location = new System.Drawing.Point(783, 67);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(20, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(172, 28);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -187,7 +187,7 @@
             this.choiceLogout});
             this.tsmenu.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.tsmenu.Name = "tsmenu";
-            this.tsmenu.Size = new System.Drawing.Size(12, 20);
+            this.tsmenu.Size = new System.Drawing.Size(14, 24);
             this.tsmenu.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             // 
             // choiceAdmin
@@ -196,7 +196,7 @@
             this.choiceAdmin.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.choiceAdmin.Image = global::PBL3.Properties.Resources.Admin;
             this.choiceAdmin.Name = "choiceAdmin";
-            this.choiceAdmin.Size = new System.Drawing.Size(184, 26);
+            this.choiceAdmin.Size = new System.Drawing.Size(224, 26);
             this.choiceAdmin.Text = "Admin";
             this.choiceAdmin.Click += new System.EventHandler(this.choiceAdmin_Click);
             // 
@@ -206,7 +206,7 @@
             this.gHToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.gHToolStripMenuItem.Image = global::PBL3.Properties.Resources.Settingicon;
             this.gHToolStripMenuItem.Name = "gHToolStripMenuItem";
-            this.gHToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.gHToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.gHToolStripMenuItem.Text = "Setting";
             // 
             // choiceLogout
@@ -215,7 +215,7 @@
             this.choiceLogout.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.choiceLogout.Image = global::PBL3.Properties.Resources.LogOut;
             this.choiceLogout.Name = "choiceLogout";
-            this.choiceLogout.Size = new System.Drawing.Size(184, 26);
+            this.choiceLogout.Size = new System.Drawing.Size(224, 26);
             this.choiceLogout.Text = "Log out";
             this.choiceLogout.Click += new System.EventHandler(this.choiceLogout_Click);
             // 
@@ -270,7 +270,7 @@
             this.txtSearch.ForeColor = System.Drawing.Color.Gray;
             this.txtSearch.Location = new System.Drawing.Point(321, 160);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(494, 19);
+            this.txtSearch.Size = new System.Drawing.Size(494, 23);
             this.txtSearch.TabIndex = 15;
             this.txtSearch.Text = "Search place";
             this.txtSearch.Click += new System.EventHandler(this.txtSearch_Click);
@@ -292,7 +292,7 @@
             this.myTextBox1.PasswordChar = false;
             this.myTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.myTextBox1.PlaceholderText = "";
-            this.myTextBox1.Size = new System.Drawing.Size(607, 31);
+            this.myTextBox1.Size = new System.Drawing.Size(607, 35);
             this.myTextBox1.TabIndex = 16;
             this.myTextBox1.Texts = "Search places";
             this.myTextBox1.UnderlinedStyle = false;

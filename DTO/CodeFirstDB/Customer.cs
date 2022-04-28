@@ -11,8 +11,12 @@ namespace DTO
     public class Customer : DTO.CodeFirstDB.Person
     {
         public int customer_type_id { get; set; }
+        public int? account_id { get; set; }
 
         [ForeignKey("customer_type_id")]
         public virtual CustomerType CustomerType { get; set; }
+
+        [ForeignKey("account_id")]
+        public virtual Account Account { get; set; }
     }
 }

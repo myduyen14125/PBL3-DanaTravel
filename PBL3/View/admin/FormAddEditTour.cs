@@ -23,14 +23,14 @@ namespace PBL3.View
         {
             InitializeComponent();
             tourID = id;
-            if (id != 0) tour = TourBUS.Instance.GetTourDTOById(tourID);
+            //if (id != 0) tour = TourBUS.Instance.GetTourDTOById(tourID);
         }
         public void AddCbbTransportValue()
         {
-            foreach (string i in TourBUS.Instance.GetAllTransport().Distinct())
-            {
-                cbbTransport.Items.Add(i);
-            }
+            //foreach (string i in TourBUS.Instance.GetAllTransport().Distinct())
+            //{
+            //    cbbTransport.Items.Add(i);
+            //}
             cbbTransport.Items.Add("Motorbike");
             cbbTransport.Items.Add("Plane");
             cbbTransport.Items.Add("Train");
@@ -101,17 +101,17 @@ namespace PBL3.View
             // Add tour
             Tour tou = new Tour
             {
-                id = tourID,
-                namePlace = txtNamePlace.Text,
-                photo = txtPhoto.Text,
-                departureDay = dateTimePickerStart.Value,
-                returnDay = dateTimePickerEnd.Value,
-                transport = cbbTransport.SelectedItem.ToString(),
-                quantity = Convert.ToInt32(txtQuantity.Text),
-                tourGuide = rbYes.Checked,
-                totalPrice = Convert.ToInt32(btnTotal.Text),
+                //id = tourID,
+                //namePlace = txtNamePlace.Text,
+                //photo = txtPhoto.Text,
+                //departureDay = dateTimePickerStart.Value,
+                //returnDay = dateTimePickerEnd.Value,
+                //transport = cbbTransport.SelectedItem.ToString(),
+                //quantity = Convert.ToInt32(txtQuantity.Text),
+                //tourGuide = rbYes.Checked,
+                //totalPrice = Convert.ToInt32(btnTotal.Text),
             };
-            TourBUS.Instance.Save(tou);
+            //TourBUS.Instance.Save(tou);
 
             MessageBox.Show("Successfully add tour");
             myDel();

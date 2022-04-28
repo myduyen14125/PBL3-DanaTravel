@@ -9,7 +9,7 @@ using Util;
 
 namespace DTO
 {
-    class CreateDB : DropCreateDatabaseAlways<EntityManager>
+    class CreateDB : CreateDatabaseIfNotExists<EntityManager>
     {
         protected override void Seed(EntityManager context)
         {
@@ -35,8 +35,11 @@ namespace DTO
             context.Permissions.AddRange(permissions);
 
             Role role = new Role { id = 1, name = "Admin" };
+            Role roleCustomer = new Role { id = 2, name = "Customer" };
+
             foreach (Permission permission in permissions) role.Permissions.Add(permission);
             context.Roles.Add(role);
+            context.Roles.Add(roleCustomer);
 
             var account = new Account { id = 1, username = "daitoan2000@gmail.com", password = HashPassword.GetHash("admin"), status = true };
             account.Roles.Add(role);
@@ -57,6 +60,7 @@ namespace DTO
             positions.Add(new Position { id = 3, name = "Quản lý" });
             positions.Add(new Position { id = 4, name = "Chuyên viên" });
             positions.Add(new Position { id = 5, name = "Nhân viên" });
+            positions.Add(new Position { id = 6, name = "Hướng dẫn viên" });
             context.Positions.AddRange(positions);
 
             List<Education_degree> education_Degrees = new List<Education_degree>();
@@ -76,7 +80,7 @@ namespace DTO
                 gender = true,
                 address = "Đà Nẵng",
                 email = "daitoan2000@gmail.com",
-                idCard = "201857426",
+                idCard = "201857426123",
                 phone = "0967492536",
                 salary = 9999,
                 division_id = 1,

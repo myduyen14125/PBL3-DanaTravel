@@ -30,11 +30,11 @@ namespace PBL3.View
         }
         private void ShowDataTour()
         {
-            string searchKey = txtSearch.Text;
-            dataGridViewCustomer.DataSource = TourBUS.Instance.GetDataTableTour(TourBUS.Instance.GetListTours(searchKey));
-            txtTotal.Text = (dataGridViewCustomer.Rows.Count - 1).ToString();
-            btnEdit.Enabled = false;
-            btnDelete.Enabled = false;
+            //string searchKey = txtSearch.Text;
+            //dataGridViewCustomer.DataSource = TourBUS.Instance.GetDataTableTour(TourBUS.Instance.GetListTours(searchKey));
+            //txtTotal.Text = (dataGridViewCustomer.Rows.Count - 1).ToString();
+            //btnEdit.Enabled = false;
+            //btnDelete.Enabled = false;
         }
         private void btnShow_Click(object sender, EventArgs e)
         {
@@ -48,17 +48,17 @@ namespace PBL3.View
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            FormAddEditTour f = new FormAddEditTour();
-            f.myDel = new FormAddEditTour.MyDel(ShowDataTour);
-            f.Show();
+            //FormAddEditTour f = new FormAddEditTour();
+            //f.myDel = new FormAddEditTour.MyDel(ShowDataTour);
+            //f.Show();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt32(dataGridViewCustomer.CurrentRow.Cells[0].Value.ToString());
-            FormAddEditTour f = new FormAddEditTour(id);
-            f.myDel = new FormAddEditTour.MyDel(ShowDataTour);
-            f.Show();
+            //int id = Convert.ToInt32(dataGridViewCustomer.CurrentRow.Cells[0].Value.ToString());
+            //FormAddEditTour f = new FormAddEditTour(id);
+            //f.myDel = new FormAddEditTour.MyDel(ShowDataTour);
+            //f.Show();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -72,7 +72,7 @@ namespace PBL3.View
                 {
                     list.Add(Convert.ToInt32(row.Cells["ID"].Value));
                 }
-                TourBUS.Instance.Delete(list);
+                //TourBUS.Instance.Delete(list);
                 ShowDataTour();
             }
         }

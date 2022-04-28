@@ -1,3 +1,4 @@
+using DTO.CodeFirstDB;
 using System;
 using System.Data.Entity;
 using System.Linq;
@@ -30,7 +31,7 @@ namespace DTO
             base.OnModelCreating(modelBuilder);
         }
 
-        //tu tao role
+        // rent table in database
         public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<Permission> Permissions { get; set; }
         public virtual DbSet<Account> Accounts { get; set; }
@@ -40,6 +41,12 @@ namespace DTO
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<Customer> Customers { get; set; }
         public virtual DbSet<CustomerType> CustomerTypes { get; set; }
-        public virtual DbSet<Tour> Tour { get; set; }
+        public virtual DbSet<Tour> Tours { get; set; }
+        public virtual DbSet<Hotel> Hotels { get; set; }
+        public virtual DbSet<Service> Services { get; set; }
+        public virtual DbSet<Transport> Transports { get; set; }
+        public virtual DbSet<TourCategory> TourCategories { get; set; }
+        public virtual DbSet<TourPrice> TourPrices { get; set; }
+        public virtual DbSet<TourStatus> TourStatuses { get; set; }
     }
 }
