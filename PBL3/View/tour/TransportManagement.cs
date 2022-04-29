@@ -18,7 +18,10 @@ namespace PBL3.View.tour
 
         private void TransportManagement_Load(object sender, EventArgs e)
         {
-            ShowList();
+            if(!this.DesignMode)
+            {
+                ShowList();
+            }
         }
 
         public void ShowList()

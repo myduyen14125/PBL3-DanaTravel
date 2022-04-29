@@ -37,6 +37,7 @@
             this.btnStatistic = new System.Windows.Forms.Button();
             this.btnCustomer = new System.Windows.Forms.Button();
             this.navbar = new System.Windows.Forms.Panel();
+            this.btnTransport = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -45,6 +46,7 @@
             this.tourManagement1 = new PBL3.View.TourManagement();
             this.employeeManagement1 = new PBL3.EmployeeManagement();
             this.customer1 = new PBL3.View.admin.CustomerManagement();
+            this.transportManagement1 = new PBL3.View.tour.TransportManagement();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher2)).BeginInit();
             this.panelContent.SuspendLayout();
@@ -80,6 +82,7 @@
             // 
             // panelContent
             // 
+            this.panelContent.Controls.Add(this.transportManagement1);
             this.panelContent.Controls.Add(this.tourManagement1);
             this.panelContent.Controls.Add(this.employeeManagement1);
             this.panelContent.Controls.Add(this.customer1);
@@ -172,6 +175,7 @@
             // navbar
             // 
             this.navbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
+            this.navbar.Controls.Add(this.btnTransport);
             this.navbar.Controls.Add(this.pictureBox5);
             this.navbar.Controls.Add(this.pictureBox4);
             this.navbar.Controls.Add(this.pictureBox3);
@@ -187,6 +191,26 @@
             this.navbar.Name = "navbar";
             this.navbar.Size = new System.Drawing.Size(199, 567);
             this.navbar.TabIndex = 28;
+            // 
+            // btnTransport
+            // 
+            this.btnTransport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
+            this.btnTransport.CausesValidation = false;
+            this.btnTransport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTransport.FlatAppearance.BorderSize = 0;
+            this.btnTransport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.btnTransport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTransport.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTransport.ForeColor = System.Drawing.Color.White;
+            this.btnTransport.Location = new System.Drawing.Point(0, 474);
+            this.btnTransport.Name = "btnTransport";
+            this.btnTransport.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnTransport.Size = new System.Drawing.Size(199, 48);
+            this.btnTransport.TabIndex = 28;
+            this.btnTransport.TabStop = false;
+            this.btnTransport.Text = "Transport";
+            this.btnTransport.UseVisualStyleBackColor = false;
+            this.btnTransport.Click += new System.EventHandler(this.btnTransport_Click);
             // 
             // pictureBox5
             // 
@@ -269,6 +293,14 @@
             this.customer1.Size = new System.Drawing.Size(867, 567);
             this.customer1.TabIndex = 1;
             // 
+            // transportManagement1
+            // 
+            this.transportManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.transportManagement1.Location = new System.Drawing.Point(0, 0);
+            this.transportManagement1.Name = "transportManagement1";
+            this.transportManagement1.Size = new System.Drawing.Size(867, 567);
+            this.transportManagement1.TabIndex = 3;
+            // 
             // AdminManagement
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -313,5 +345,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private TourManagement tourManagement1;
+        private System.Windows.Forms.Button btnTransport;
+        private tour.TransportManagement transportManagement1;
     }
 }
