@@ -79,3 +79,7 @@ D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.CopyComplete
 D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.exe
 D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.pdb
+D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.tour.TransportManagement.resources
+D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.FormTest.resources
+D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.tour.TransportItem.resources
+D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.tour.FormAddTransport.resources

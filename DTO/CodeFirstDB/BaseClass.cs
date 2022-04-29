@@ -21,7 +21,7 @@ namespace DTO.CodeFirstDB
         public double price { get; set; }
         
         [Column(TypeName = "image")]
-        public byte[] image { get; set; }
+        public Byte[] image { get; set; }
         public ICollection<Tour> Tours { get; set; }
     }
 }

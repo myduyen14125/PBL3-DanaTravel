@@ -7,3 +7,12 @@ E:\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.GenerateResource.cache
 E:\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.CoreCompileInputs.cache
 E:\PBL3-DanaTravel\Util\obj\Debug\Util.exe
 E:\PBL3-DanaTravel\Util\obj\Debug\Util.pdb
+D:\PBL\PBL3-DanaTravel\Util\bin\Debug\Util.exe.config
+D:\PBL\PBL3-DanaTravel\Util\bin\Debug\Util.exe
+D:\PBL\PBL3-DanaTravel\Util\bin\Debug\Util.pdb
+D:\PBL\PBL3-DanaTravel\Util\obj\Debug\Util.csprojAssemblyReference.cache
+D:\PBL\PBL3-DanaTravel\Util\obj\Debug\Util.Properties.Resources.resources
+D:\PBL\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.GenerateResource.cache
+D:\PBL\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.CoreCompileInputs.cache
+D:\PBL\PBL3-DanaTravel\Util\obj\Debug\Util.exe
+D:\PBL\PBL3-DanaTravel\Util\obj\Debug\Util.pdb

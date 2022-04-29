@@ -1,4 +1,5 @@
-﻿using PBL3.View.admin;
+﻿using PBL3.View;
+using PBL3.View.admin;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace PBL3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoadingScr());
+            Application.Run(new FormTest());
         }
     }
 }
