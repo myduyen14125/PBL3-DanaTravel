@@ -43,9 +43,10 @@ namespace PBL3.View.tour
             // 
             // pictureTransport
             // 
-            this.pictureTransport.Location = new System.Drawing.Point(19, 22);
+            this.pictureTransport.Location = new System.Drawing.Point(14, 18);
+            this.pictureTransport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureTransport.Name = "pictureTransport";
-            this.pictureTransport.Size = new System.Drawing.Size(130, 121);
+            this.pictureTransport.Size = new System.Drawing.Size(98, 98);
             this.pictureTransport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureTransport.TabIndex = 0;
             this.pictureTransport.TabStop = false;
@@ -53,17 +54,19 @@ namespace PBL3.View.tour
             // txtName
             // 
             this.txtName.Enabled = false;
-            this.txtName.Location = new System.Drawing.Point(195, 22);
+            this.txtName.Location = new System.Drawing.Point(146, 18);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(515, 22);
+            this.txtName.Size = new System.Drawing.Size(387, 20);
             this.txtName.TabIndex = 1;
             // 
             // txtPrice
             // 
             this.txtPrice.Enabled = false;
-            this.txtPrice.Location = new System.Drawing.Point(195, 66);
+            this.txtPrice.Location = new System.Drawing.Point(146, 54);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(515, 22);
+            this.txtPrice.Size = new System.Drawing.Size(387, 20);
             this.txtPrice.TabIndex = 2;
             // 
             // btnUpdate
@@ -71,9 +74,10 @@ namespace PBL3.View.tour
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdate.Location = new System.Drawing.Point(258, 115);
+            this.btnUpdate.Location = new System.Drawing.Point(194, 93);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(105, 40);
+            this.btnUpdate.Size = new System.Drawing.Size(79, 32);
             this.btnUpdate.TabIndex = 3;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -86,9 +90,10 @@ namespace PBL3.View.tour
             this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
             this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdit.Location = new System.Drawing.Point(429, 114);
+            this.btnEdit.Location = new System.Drawing.Point(322, 93);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(90, 41);
+            this.btnEdit.Size = new System.Drawing.Size(68, 33);
             this.btnEdit.TabIndex = 4;
             this.btnEdit.Text = "Edit";
             this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -100,9 +105,10 @@ namespace PBL3.View.tour
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
             this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDelete.Location = new System.Drawing.Point(609, 115);
+            this.btnDelete.Location = new System.Drawing.Point(457, 93);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(101, 40);
+            this.btnDelete.Size = new System.Drawing.Size(76, 32);
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "Delete";
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -112,9 +118,10 @@ namespace PBL3.View.tour
             // lbId
             // 
             this.lbId.AutoSize = true;
-            this.lbId.Location = new System.Drawing.Point(192, 126);
+            this.lbId.Location = new System.Drawing.Point(144, 102);
+            this.lbId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbId.Name = "lbId";
-            this.lbId.Size = new System.Drawing.Size(46, 17);
+            this.lbId.Size = new System.Drawing.Size(35, 13);
             this.lbId.TabIndex = 6;
             this.lbId.Text = "label1";
             this.lbId.Visible = false;
@@ -123,9 +130,10 @@ namespace PBL3.View.tour
             // 
             this.btnChooseImage.BackColor = System.Drawing.Color.White;
             this.btnChooseImage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnChooseImage.Location = new System.Drawing.Point(34, 149);
+            this.btnChooseImage.Location = new System.Drawing.Point(26, 121);
+            this.btnChooseImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnChooseImage.Name = "btnChooseImage";
-            this.btnChooseImage.Size = new System.Drawing.Size(90, 32);
+            this.btnChooseImage.Size = new System.Drawing.Size(68, 26);
             this.btnChooseImage.TabIndex = 7;
             this.btnChooseImage.Text = "Choose";
             this.btnChooseImage.UseVisualStyleBackColor = false;
@@ -134,9 +142,9 @@ namespace PBL3.View.tour
             // 
             // TransportItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.btnChooseImage);
             this.Controls.Add(this.lbId);
@@ -146,8 +154,9 @@ namespace PBL3.View.tour
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.pictureTransport);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "TransportItem";
-            this.Size = new System.Drawing.Size(753, 185);
+            this.Size = new System.Drawing.Size(565, 150);
             this.MouseEnter += new System.EventHandler(this.TransportItem_MouseEnter);
             this.MouseLeave += new System.EventHandler(this.TransportItem_MouseLeave);
             ((System.ComponentModel.ISupportInitialize)(this.pictureTransport)).EndInit();

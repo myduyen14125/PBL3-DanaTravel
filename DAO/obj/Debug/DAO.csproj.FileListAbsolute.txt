@@ -41,3 +41,25 @@ D:\PBL\PBL3-DanaTravel\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
 D:\PBL\PBL3-DanaTravel\DAO\obj\Debug\DAO.csproj.CopyComplete
 D:\PBL\PBL3-DanaTravel\DAO\obj\Debug\DAO.exe
 D:\PBL\PBL3-DanaTravel\DAO\obj\Debug\DAO.pdb
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\DAO\bin\Debug\DAO.exe.config
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\DAO\bin\Debug\DAO.exe
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\DAO\bin\Debug\DAO.pdb
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\DAO\bin\Debug\DTO.exe
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\DAO\bin\Debug\EntityFramework.dll
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\DAO\bin\Debug\EntityFramework.SqlServer.dll
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\DAO\bin\Debug\Util.exe
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\DAO\bin\Debug\DTO.pdb
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\DAO\bin\Debug\DTO.exe.config
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\DAO\bin\Debug\EntityFramework.xml
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\DAO\bin\Debug\EntityFramework.SqlServer.xml
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\DAO\bin\Debug\Util.pdb
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\DAO\bin\Debug\Util.exe.config
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\DAO\obj\Debug\DAO.csproj.SuggestedBindingRedirects.cache
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\DAO\obj\Debug\DAO.Form1.resources
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\DAO\obj\Debug\DAO.Properties.Resources.resources
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\DAO\obj\Debug\DAO.csproj.GenerateResource.cache
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\DAO\obj\Debug\DAO.csproj.CopyComplete
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\DAO\obj\Debug\DAO.exe
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\DAO\obj\Debug\DAO.pdb
