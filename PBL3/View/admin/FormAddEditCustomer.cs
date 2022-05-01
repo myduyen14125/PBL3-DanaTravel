@@ -70,6 +70,7 @@ namespace PBL3
                 txtPhone.Text = customer.phone;
                 txtEmail.Text = customer.email;
                 txtAddress.Text = customer.address;
+                cbbCustomerType.SelectedIndex = cbbCustomerType.FindStringExact(customer.customer_type_name);
             }
             this.Show();
         }

@@ -13,7 +13,6 @@ namespace PBL3.View.tour
         public TransportManagement()
         {
             InitializeComponent();
-            Show();
         }
 
         private void TransportManagement_Load(object sender, EventArgs e)
@@ -30,7 +29,7 @@ namespace PBL3.View.tour
             FlowLayoutTransport.Controls.Clear();
             foreach (Transport t in transports)
             {
-                Image image = Image.FromStream(new MemoryStream(t.image));
+                Image image = t.image == null ? null : Image.FromStream(new MemoryStream(t.image));
                 FlowLayoutTransport.Controls.Add(new TransportItem(t.id, t.name, t.price, image, this));
             }
         }

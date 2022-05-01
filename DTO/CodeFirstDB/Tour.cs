@@ -23,7 +23,6 @@ namespace DTO
         public DateTime departureDate { get; set; }
         [Required]
         public DateTime returnDate { get; set; }
-        public double percent_discount { get; set; } = 0;
         public double percent_VAT { get; set; } = 0;
         public double percent_profit { get; set; } = 0;
         public double percent_adult_price { get; set; } = 100;

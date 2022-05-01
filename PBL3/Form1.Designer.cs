@@ -1,7 +1,7 @@
 ﻿
-namespace PBL3.View
+namespace PBL3
 {
-    partial class FormTest
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -29,31 +29,31 @@ namespace PBL3.View
         /// </summary>
         private void InitializeComponent()
         {
-            this.transportManagement1 = new PBL3.View.tour.TransportManagement();
+            this.hotelManagement1 = new PBL3.View.tour.HotelManagement();
             this.SuspendLayout();
             // 
-            // transportManagement1
+            // hotelManagement1
             // 
-            this.transportManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.transportManagement1.Location = new System.Drawing.Point(0, 0);
-            this.transportManagement1.Name = "transportManagement1";
-            this.transportManagement1.Size = new System.Drawing.Size(800, 450);
-            this.transportManagement1.TabIndex = 0;
+            this.hotelManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.hotelManagement1.Location = new System.Drawing.Point(0, 0);
+            this.hotelManagement1.Name = "hotelManagement1";
+            this.hotelManagement1.Size = new System.Drawing.Size(800, 450);
+            this.hotelManagement1.TabIndex = 0;
             // 
-            // FormTest
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.transportManagement1);
-            this.Name = "FormTest";
-            this.Text = "FormTest";
+            this.Controls.Add(this.hotelManagement1);
+            this.Name = "Form1";
+            this.Text = "Form1";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private tour.TransportManagement transportManagement1;
+        private View.tour.HotelManagement hotelManagement1;
     }
 }

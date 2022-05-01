@@ -42,11 +42,13 @@ namespace DTO
         public virtual DbSet<Customer> Customers { get; set; }
         public virtual DbSet<CustomerType> CustomerTypes { get; set; }
         public virtual DbSet<Tour> Tours { get; set; }
+        public virtual DbSet<Site> Sites { get; set; }
         public virtual DbSet<Hotel> Hotels { get; set; }
         public virtual DbSet<Service> Services { get; set; }
         public virtual DbSet<Transport> Transports { get; set; }
         public virtual DbSet<TourCategory> TourCategories { get; set; }
         public virtual DbSet<TourPrice> TourPrices { get; set; }
         public virtual DbSet<TourStatus> TourStatuses { get; set; }
+        public virtual DbSet<HotelType> HotelTypes { get; set; }
     }
 }

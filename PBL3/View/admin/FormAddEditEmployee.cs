@@ -57,10 +57,10 @@ namespace PBL3.View.admin
                 txtEmail.Text = employee.email;
                 txtPassword.Text = "";
                 txtAddress.Text = employee.address;
-                txtSalary.Text = employee.salary.ToString();
-                cbbPosition.SelectedItem = employee.position_name;
-                cbbDivision.SelectedItem = employee.division_name;
-                cbbEducation.SelectedItem = employee.education_degree_name;
+                txtSalary.Text = employee.salary.ToString(); 
+                cbbPosition.SelectedIndex = cbbPosition.FindStringExact(employee.position_name);
+                cbbDivision.SelectedIndex = cbbDivision.FindStringExact(employee.division_name); 
+                cbbEducation.SelectedIndex = cbbEducation.FindStringExact(employee.education_degree_name);
                 txtAccount.Text = employee.email;
 
                 int size = checkListBoxRole.Items.Count;

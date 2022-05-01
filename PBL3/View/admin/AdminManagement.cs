@@ -25,6 +25,8 @@ namespace PBL3.View.admin
             customer1.Visible = false;
             tourManagement1.Visible = false;
             transportManagement1.Visible = false;
+            hotelManagement1.Visible = false;
+            siteManagement1.Visible = false;
             control.Visible = true;
         }
 
@@ -51,6 +53,16 @@ namespace PBL3.View.admin
         private void btnTransport_Click(object sender, EventArgs e)
         {
             SetActivePanel(transportManagement1);
+        }
+
+        private void btnHotel_Click(object sender, EventArgs e)
+        {
+            SetActivePanel(hotelManagement1);
+        }
+
+        private void btnSite_Click(object sender, EventArgs e)
+        {
+            SetActivePanel(siteManagement1);
         }
     }
 }

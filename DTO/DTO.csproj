@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CodeFirstDB\Account.cs" />
+    <Compile Include="CodeFirstDB\HotelType.cs" />
     <Compile Include="CodeFirstDB\Service.cs" />
     <Compile Include="CodeFirstDB\BaseClass.cs" />
     <Compile Include="CodeFirstDB\CreateDB.cs" />
@@ -83,6 +84,7 @@
     </Compile>
     <Compile Include="CodeFirstDB\Permission.cs" />
     <Compile Include="CodeFirstDB\Position.cs" />
+    <Compile Include="HotelDTO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CodeFirstDB\Role.cs" />

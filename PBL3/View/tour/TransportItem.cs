@@ -43,6 +43,7 @@ namespace PBL3.View.tour
             txtPrice.Enabled = true;
             btnChooseImage.Visible = true;
             btnUpdate.Visible = true;
+            btnEdit.Visible = false;
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -62,6 +63,7 @@ namespace PBL3.View.tour
             txtName.Enabled = false;
             txtPrice.Enabled = false;
             btnUpdate.Visible = false;
+            btnEdit.Visible = true;
             btnChooseImage.Visible = false;
             MessageBox.Show("Update transport successful");
         }

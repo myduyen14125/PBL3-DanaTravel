@@ -133,8 +133,20 @@ namespace DAO
             foreach (int id in listId)
             {
                 var result = db.Customers.Single(c => c.id == id);
+                var account = from c in db.Customers
+                              join ac in db.Accounts
+                              on c.account_id equals ac.id
+                              where c.id == id
+                              select new
+                              {
+                                  ac.username
+                              };
+
                 db.Customers.Remove(result);
-                AccountDAO.Instance.DeleteAccount(result.email);
+                if (account.FirstOrDefault() != null)
+                {
+                    AccountDAO.Instance.DeleteAccount(account.FirstOrDefault().username);
+                }
             }
             db.SaveChanges();
         }

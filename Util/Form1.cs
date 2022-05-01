@@ -16,5 +16,10 @@ namespace Util
         {
             InitializeComponent();
         }
+
+        private void btnHash_Click(object sender, EventArgs e)
+        {
+            txtHash.Text = HashPassword.GetHash(txtPass.Text);
+        }
     }
 }

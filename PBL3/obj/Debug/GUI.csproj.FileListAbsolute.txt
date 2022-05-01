@@ -80,51 +80,12 @@ D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.CopyComplete
 D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.exe
 D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.pdb
 D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.tour.TransportManagement.resources
-D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.FormTest.resources
 D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.tour.TransportItem.resources
 D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.tour.FormAddTransport.resources
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\bin\Debug\PBL3.exe.config
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\bin\Debug\PBL3.exe
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\bin\Debug\PBL3.pdb
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\bin\Debug\BUS.exe
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\bin\Debug\DAO.exe
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\bin\Debug\DTO.exe
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\bin\Debug\Util.exe
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\bin\Debug\EntityFramework.dll
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\bin\Debug\BUS.pdb
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\bin\Debug\BUS.exe.config
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\bin\Debug\DAO.pdb
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\bin\Debug\DAO.exe.config
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\bin\Debug\DTO.pdb
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\bin\Debug\DTO.exe.config
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\bin\Debug\Util.pdb
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\bin\Debug\Util.exe.config
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\bin\Debug\EntityFramework.xml
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.AssemblyReference.cache
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.BookTour.resources
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.FormAddEditCustomer.resources
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.admin.CustomerManagement.resources
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.EmployeeManagement.resources
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.admin.AdminManagement.resources
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.admin.FormAddEditEmployee.resources
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.admin.FormAddRole.resources
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.FormAddEditTour.resources
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.FormTest.resources
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.ChangePassword.resources
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.ForgetPass.resources
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.Homepage.resources
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.LoadingScr.resources
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.LoginForm.resources
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.LoginScr.resources
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.Properties.Resources.resources
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.SignupForm.resources
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.TourManagement.resources
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.tour.FormAddTransport.resources
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.tour.TransportItem.resources
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.tour.TransportManagement.resources
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.GenerateResource.cache
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.CoreCompileInputs.cache
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.CopyComplete
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.exe
-E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.pdb
+D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.tour.HotelItem.resources
+D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.tour.HotelManagement.resources
+D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.Form1.resources
+D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.tour.FormAddHotel.resources
+D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.tour.SiteItem.resources
+D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.tour.SiteManagement.resources
+D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.tour.FormAddSite.resources

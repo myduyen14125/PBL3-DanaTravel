@@ -18,7 +18,7 @@ namespace DTO.CodeFirstDB
         [Required]
         public string name { get; set; }
         [Required]
-        public double price { get; set; }
+        public double price { get; set; } = 0;
         
         [Column(TypeName = "image")]
         public Byte[] image { get; set; }

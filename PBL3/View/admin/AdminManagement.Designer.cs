@@ -32,6 +32,7 @@
             this.fileSystemWatcher2 = new System.IO.FileSystemWatcher();
             this.name = new System.Windows.Forms.Label();
             this.panelContent = new System.Windows.Forms.Panel();
+            this.hotelManagement1 = new PBL3.View.tour.HotelManagement();
             this.transportManagement1 = new PBL3.View.tour.TransportManagement();
             this.tourManagement1 = new PBL3.View.TourManagement();
             this.employeeManagement1 = new PBL3.EmployeeManagement();
@@ -41,20 +42,19 @@
             this.btnStatistic = new System.Windows.Forms.Button();
             this.btnCustomer = new System.Windows.Forms.Button();
             this.navbar = new System.Windows.Forms.Panel();
+            this.btnSite = new System.Windows.Forms.Button();
+            this.btnHotel = new System.Windows.Forms.Button();
             this.btnTransport = new System.Windows.Forms.Button();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.siteManagement1 = new PBL3.View.tour.SiteManagement();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher2)).BeginInit();
             this.panelContent.SuspendLayout();
             this.navbar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -80,12 +80,14 @@
             this.name.ForeColor = System.Drawing.Color.White;
             this.name.Location = new System.Drawing.Point(56, 178);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(94, 21);
+            this.name.Size = new System.Drawing.Size(115, 28);
             this.name.TabIndex = 27;
             this.name.Text = "Admin Yuu";
             // 
             // panelContent
             // 
+            this.panelContent.Controls.Add(this.siteManagement1);
+            this.panelContent.Controls.Add(this.hotelManagement1);
             this.panelContent.Controls.Add(this.transportManagement1);
             this.panelContent.Controls.Add(this.tourManagement1);
             this.panelContent.Controls.Add(this.employeeManagement1);
@@ -96,11 +98,18 @@
             this.panelContent.Size = new System.Drawing.Size(867, 567);
             this.panelContent.TabIndex = 30;
             // 
+            // hotelManagement1
+            // 
+            this.hotelManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.hotelManagement1.Location = new System.Drawing.Point(0, 0);
+            this.hotelManagement1.Name = "hotelManagement1";
+            this.hotelManagement1.Size = new System.Drawing.Size(867, 567);
+            this.hotelManagement1.TabIndex = 4;
+            // 
             // transportManagement1
             // 
             this.transportManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.transportManagement1.Location = new System.Drawing.Point(0, 0);
-            this.transportManagement1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.transportManagement1.Name = "transportManagement1";
             this.transportManagement1.Size = new System.Drawing.Size(867, 567);
             this.transportManagement1.TabIndex = 3;
@@ -109,7 +118,6 @@
             // 
             this.tourManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tourManagement1.Location = new System.Drawing.Point(0, 0);
-            this.tourManagement1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tourManagement1.Name = "tourManagement1";
             this.tourManagement1.Size = new System.Drawing.Size(867, 567);
             this.tourManagement1.TabIndex = 2;
@@ -184,7 +192,7 @@
             this.btnStatistic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStatistic.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStatistic.ForeColor = System.Drawing.Color.White;
-            this.btnStatistic.Location = new System.Drawing.Point(0, 438);
+            this.btnStatistic.Location = new System.Drawing.Point(0, 389);
             this.btnStatistic.Name = "btnStatistic";
             this.btnStatistic.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnStatistic.Size = new System.Drawing.Size(199, 48);
@@ -216,7 +224,8 @@
             // navbar
             // 
             this.navbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
-            this.navbar.Controls.Add(this.pictureBox6);
+            this.navbar.Controls.Add(this.btnSite);
+            this.navbar.Controls.Add(this.btnHotel);
             this.navbar.Controls.Add(this.btnTransport);
             this.navbar.Controls.Add(this.pictureBox5);
             this.navbar.Controls.Add(this.pictureBox4);
@@ -228,12 +237,51 @@
             this.navbar.Controls.Add(this.btnStatistic);
             this.navbar.Controls.Add(this.btnEmployee);
             this.navbar.Controls.Add(this.btnTour);
-            this.navbar.Controls.Add(this.pictureBox7);
             this.navbar.Dock = System.Windows.Forms.DockStyle.Left;
             this.navbar.Location = new System.Drawing.Point(0, 0);
             this.navbar.Name = "navbar";
             this.navbar.Size = new System.Drawing.Size(199, 567);
             this.navbar.TabIndex = 28;
+            // 
+            // btnSite
+            // 
+            this.btnSite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
+            this.btnSite.CausesValidation = false;
+            this.btnSite.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSite.FlatAppearance.BorderSize = 0;
+            this.btnSite.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.btnSite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSite.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSite.ForeColor = System.Drawing.Color.White;
+            this.btnSite.Location = new System.Drawing.Point(0, 516);
+            this.btnSite.Name = "btnSite";
+            this.btnSite.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnSite.Size = new System.Drawing.Size(199, 48);
+            this.btnSite.TabIndex = 30;
+            this.btnSite.TabStop = false;
+            this.btnSite.Text = "Site";
+            this.btnSite.UseVisualStyleBackColor = false;
+            this.btnSite.Click += new System.EventHandler(this.btnSite_Click);
+            // 
+            // btnHotel
+            // 
+            this.btnHotel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
+            this.btnHotel.CausesValidation = false;
+            this.btnHotel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHotel.FlatAppearance.BorderSize = 0;
+            this.btnHotel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.btnHotel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHotel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHotel.ForeColor = System.Drawing.Color.White;
+            this.btnHotel.Location = new System.Drawing.Point(0, 473);
+            this.btnHotel.Name = "btnHotel";
+            this.btnHotel.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnHotel.Size = new System.Drawing.Size(199, 48);
+            this.btnHotel.TabIndex = 29;
+            this.btnHotel.TabStop = false;
+            this.btnHotel.Text = "Hotel";
+            this.btnHotel.UseVisualStyleBackColor = false;
+            this.btnHotel.Click += new System.EventHandler(this.btnHotel_Click);
             // 
             // btnTransport
             // 
@@ -245,7 +293,7 @@
             this.btnTransport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTransport.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTransport.ForeColor = System.Drawing.Color.White;
-            this.btnTransport.Location = new System.Drawing.Point(0, 389);
+            this.btnTransport.Location = new System.Drawing.Point(0, 431);
             this.btnTransport.Name = "btnTransport";
             this.btnTransport.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnTransport.Size = new System.Drawing.Size(199, 48);
@@ -254,27 +302,6 @@
             this.btnTransport.Text = "Transport";
             this.btnTransport.UseVisualStyleBackColor = false;
             this.btnTransport.Click += new System.EventHandler(this.btnTransport_Click);
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::PBL3.Properties.Resources.Rectangle_21;
-            this.pictureBox7.Location = new System.Drawing.Point(0, 153);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(199, 414);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 4;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.pictureBox6.Image = global::PBL3.Properties.Resources.Group_1307__1_;
-            this.pictureBox6.Location = new System.Drawing.Point(12, 396);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(35, 29);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 29;
-            this.pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
@@ -291,7 +318,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.pictureBox4.Image = global::PBL3.Properties.Resources.Group_1402;
-            this.pictureBox4.Location = new System.Drawing.Point(12, 447);
+            this.pictureBox4.Location = new System.Drawing.Point(12, 396);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(35, 29);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -330,6 +357,14 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // siteManagement1
+            // 
+            this.siteManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.siteManagement1.Location = new System.Drawing.Point(0, 0);
+            this.siteManagement1.Name = "siteManagement1";
+            this.siteManagement1.Size = new System.Drawing.Size(867, 567);
+            this.siteManagement1.TabIndex = 5;
+            // 
             // AdminManagement
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -346,8 +381,6 @@
             this.panelContent.ResumeLayout(false);
             this.navbar.ResumeLayout(false);
             this.navbar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -378,7 +411,9 @@
         private TourManagement tourManagement1;
         private System.Windows.Forms.Button btnTransport;
         private tour.TransportManagement transportManagement1;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Button btnHotel;
+        private tour.HotelManagement hotelManagement1;
+        private System.Windows.Forms.Button btnSite;
+        private tour.SiteManagement siteManagement1;
     }
 }
