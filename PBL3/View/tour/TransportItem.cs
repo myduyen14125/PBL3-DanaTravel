@@ -29,12 +29,12 @@ namespace PBL3.View.tour
 
         private void TransportItem_MouseEnter(object sender, EventArgs e)
         {
-            this.BackColor = Color.Cornsilk;
+            this.BackColor = Color.SkyBlue;
         }
 
         private void TransportItem_MouseLeave(object sender, EventArgs e)
         {
-            this.BackColor = Color.White;
+            this.BackColor = Color.Wheat;
         }
 
         private void btnEdit_Click(object sender, EventArgs e)

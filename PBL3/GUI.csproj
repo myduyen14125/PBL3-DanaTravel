@@ -465,5 +465,77 @@
   <ItemGroup>
     <None Include="Resources\Group 1405.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 1308.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touric.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hotel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\site.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statistic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tour1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picture_file_image_photo_gallery_icon_219497.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_3622.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 164.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486485557-add-create-new-more-plus_81188.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_file_disk_open_searsh_loading_clipboard_1513.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_find_locate_1542.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486504830-delete-dustbin-empty-recycle-recycling-remove-trash_81361.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gui_edit_icon_157165.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cinema_display_isight_monitor_19607.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_40972.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\choose-1_102356.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -18,13 +18,14 @@ namespace PBL3
         public Homepage(Account ac)
         {
             InitializeComponent();
+            pnChoice.Visible = false;
             this.account = ac;
-            if(account.Roles.FirstOrDefault().name.ToLower() == "customer")
+            if (account.Roles.FirstOrDefault().name.ToLower() == "customer")
             {
                 // Customer
-                choiceAdmin.Visible = false;
+                btnAdmin.Visible = false;
             }
-            else choiceAdmin.Visible = true;
+            else btnAdmin.Visible = true;
         }
 
         private void txtSearch_Click(object sender, EventArgs e)
@@ -32,22 +33,26 @@ namespace PBL3
             txtSearch.Text = "";
         }
 
-        private void choiceAdmin_Click(object sender, EventArgs e)
+        
+
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
-            //this.Hide();
+            pnChoice.Visible = true;
+        }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
             AdminManagement f = new AdminManagement();
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
 
-        private void choiceLogout_Click(object sender, EventArgs e)
+        private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Hide();
             LoginForm f = new LoginForm();
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
-
-       
     }
 }

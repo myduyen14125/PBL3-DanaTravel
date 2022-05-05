@@ -189,22 +189,26 @@ namespace PBL3.View.admin
             // 
             // btnCreateRole
             // 
-            this.btnCreateRole.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.btnCreateRole.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.btnCreateRole.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateRole.ForeColor = System.Drawing.Color.White;
-            this.btnCreateRole.Location = new System.Drawing.Point(855, 267);
+            this.btnCreateRole.Image = global::PBL3.Properties.Resources._1486485557_add_create_new_more_plus_81188;
+            this.btnCreateRole.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCreateRole.Location = new System.Drawing.Point(827, 267);
             this.btnCreateRole.Margin = new System.Windows.Forms.Padding(2);
             this.btnCreateRole.Name = "btnCreateRole";
-            this.btnCreateRole.Size = new System.Drawing.Size(69, 28);
+            this.btnCreateRole.Size = new System.Drawing.Size(104, 38);
             this.btnCreateRole.TabIndex = 26;
-            this.btnCreateRole.Text = "Create Role";
+            this.btnCreateRole.Text = "Create ";
+            this.btnCreateRole.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCreateRole.UseVisualStyleBackColor = false;
             this.btnCreateRole.Click += new System.EventHandler(this.btnCreateRole_Click);
             // 
             // dataGridViewPer
             // 
+            this.dataGridViewPer.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
             this.dataGridViewPer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPer.Location = new System.Drawing.Point(600, 315);
+            this.dataGridViewPer.Location = new System.Drawing.Point(600, 327);
             this.dataGridViewPer.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewPer.Name = "dataGridViewPer";
             this.dataGridViewPer.ReadOnly = true;
@@ -240,29 +244,35 @@ namespace PBL3.View.admin
             // 
             // btnCancel
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.btnCancel.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Image = global::PBL3.Properties.Resources.Cancel_40972;
+            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancel.Location = new System.Drawing.Point(688, 522);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(68, 32);
+            this.btnCancel.Size = new System.Drawing.Size(101, 43);
             this.btnCancel.TabIndex = 32;
             this.btnCancel.Text = "Cancel";
+            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.btnSave.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(365, 521);
+            this.btnSave.Image = global::PBL3.Properties.Resources.save_file_disk_open_searsh_loading_clipboard_1513;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(365, 522);
             this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(68, 32);
+            this.btnSave.Size = new System.Drawing.Size(98, 43);
             this.btnSave.TabIndex = 33;
             this.btnSave.Text = "Save";
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -278,13 +288,14 @@ namespace PBL3.View.admin
             // 
             // checkListBoxRole
             // 
+            this.checkListBoxRole.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
             this.checkListBoxRole.CheckOnClick = true;
             this.checkListBoxRole.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkListBoxRole.FormattingEnabled = true;
-            this.checkListBoxRole.Location = new System.Drawing.Point(639, 275);
+            this.checkListBoxRole.Location = new System.Drawing.Point(639, 269);
             this.checkListBoxRole.Margin = new System.Windows.Forms.Padding(2);
             this.checkListBoxRole.Name = "checkListBoxRole";
-            this.checkListBoxRole.Size = new System.Drawing.Size(150, 21);
+            this.checkListBoxRole.Size = new System.Drawing.Size(150, 55);
             this.checkListBoxRole.TabIndex = 35;
             this.checkListBoxRole.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkListBoxRole_ItemCheck);
             // 

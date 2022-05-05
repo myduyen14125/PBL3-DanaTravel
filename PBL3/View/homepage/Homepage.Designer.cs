@@ -38,11 +38,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.tsmenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.choiceAdmin = new System.Windows.Forms.ToolStripMenuItem();
-            this.gHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.choiceLogout = new System.Windows.Forms.ToolStripMenuItem();
             this.pbPrice = new System.Windows.Forms.PictureBox();
             this.pbTour = new System.Windows.Forms.PictureBox();
             this.pbLocation = new System.Windows.Forms.PictureBox();
@@ -53,6 +48,9 @@
             this.toolTip4 = new System.Windows.Forms.ToolTip(this.components);
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.myTextBox1 = new MyLibrary.MyTextBox();
+            this.pnChoice = new System.Windows.Forms.Panel();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.btnAdmin = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbBanahills)).BeginInit();
             this.panel2.SuspendLayout();
@@ -60,11 +58,11 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbHoiAn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPrice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbTour)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLocation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbTransport)).BeginInit();
+            this.pnChoice.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -135,7 +133,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
             this.label2.Location = new System.Drawing.Point(28, 194);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 24);
+            this.label2.Size = new System.Drawing.Size(72, 18);
             this.label2.TabIndex = 4;
             this.label2.Text = "PLACES";
             // 
@@ -147,12 +145,13 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
             this.label3.Location = new System.Drawing.Point(27, 388);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(173, 24);
+            this.label3.Size = new System.Drawing.Size(142, 18);
             this.label3.TabIndex = 5;
             this.label3.Text = "RECOMMENDED";
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::PBL3.Properties.Resources.User_icon;
             this.pictureBox4.Location = new System.Drawing.Point(917, 25);
             this.pictureBox4.Name = "pictureBox4";
@@ -160,64 +159,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 8;
             this.pictureBox4.TabStop = false;
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.menuStrip1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.menuStrip1.BackgroundImage = global::PBL3.Properties.Resources.Group_1405;
-            this.menuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmenu});
-            this.menuStrip1.Location = new System.Drawing.Point(783, 67);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(172, 28);
-            this.menuStrip1.TabIndex = 9;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // tsmenu
-            // 
-            this.tsmenu.BackColor = System.Drawing.Color.RoyalBlue;
-            this.tsmenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tsmenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.choiceAdmin,
-            this.gHToolStripMenuItem,
-            this.choiceLogout});
-            this.tsmenu.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.tsmenu.Name = "tsmenu";
-            this.tsmenu.Size = new System.Drawing.Size(14, 24);
-            this.tsmenu.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
-            // 
-            // choiceAdmin
-            // 
-            this.choiceAdmin.BackColor = System.Drawing.Color.Gray;
-            this.choiceAdmin.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.choiceAdmin.Image = global::PBL3.Properties.Resources.Admin;
-            this.choiceAdmin.Name = "choiceAdmin";
-            this.choiceAdmin.Size = new System.Drawing.Size(224, 26);
-            this.choiceAdmin.Text = "Admin";
-            this.choiceAdmin.Click += new System.EventHandler(this.choiceAdmin_Click);
-            // 
-            // gHToolStripMenuItem
-            // 
-            this.gHToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
-            this.gHToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.gHToolStripMenuItem.Image = global::PBL3.Properties.Resources.Settingicon;
-            this.gHToolStripMenuItem.Name = "gHToolStripMenuItem";
-            this.gHToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.gHToolStripMenuItem.Text = "Setting";
-            // 
-            // choiceLogout
-            // 
-            this.choiceLogout.BackColor = System.Drawing.Color.Gray;
-            this.choiceLogout.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.choiceLogout.Image = global::PBL3.Properties.Resources.LogOut;
-            this.choiceLogout.Name = "choiceLogout";
-            this.choiceLogout.Size = new System.Drawing.Size(224, 26);
-            this.choiceLogout.Text = "Log out";
-            this.choiceLogout.Click += new System.EventHandler(this.choiceLogout_Click);
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pbPrice
             // 
@@ -270,7 +212,7 @@
             this.txtSearch.ForeColor = System.Drawing.Color.Gray;
             this.txtSearch.Location = new System.Drawing.Point(321, 160);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(494, 23);
+            this.txtSearch.Size = new System.Drawing.Size(494, 19);
             this.txtSearch.TabIndex = 15;
             this.txtSearch.Text = "Search place";
             this.txtSearch.Click += new System.EventHandler(this.txtSearch_Click);
@@ -292,10 +234,54 @@
             this.myTextBox1.PasswordChar = false;
             this.myTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.myTextBox1.PlaceholderText = "";
-            this.myTextBox1.Size = new System.Drawing.Size(607, 35);
+            this.myTextBox1.Size = new System.Drawing.Size(607, 31);
             this.myTextBox1.TabIndex = 16;
             this.myTextBox1.Texts = "Search places";
             this.myTextBox1.UnderlinedStyle = false;
+            // 
+            // pnChoice
+            // 
+            this.pnChoice.Controls.Add(this.btnLogout);
+            this.pnChoice.Controls.Add(this.btnAdmin);
+            this.pnChoice.Location = new System.Drawing.Point(918, 73);
+            this.pnChoice.Name = "pnChoice";
+            this.pnChoice.Size = new System.Drawing.Size(112, 69);
+            this.pnChoice.TabIndex = 17;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Image = global::PBL3.Properties.Resources.Group_164;
+            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.Location = new System.Drawing.Point(0, 34);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(112, 34);
+            this.btnLogout.TabIndex = 1;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // btnAdmin
+            // 
+            this.btnAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
+            this.btnAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdmin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnAdmin.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdmin.ForeColor = System.Drawing.Color.White;
+            this.btnAdmin.Image = global::PBL3.Properties.Resources.Group_3;
+            this.btnAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdmin.Location = new System.Drawing.Point(0, 1);
+            this.btnAdmin.Name = "btnAdmin";
+            this.btnAdmin.Size = new System.Drawing.Size(112, 34);
+            this.btnAdmin.TabIndex = 0;
+            this.btnAdmin.Text = "Admin";
+            this.btnAdmin.UseVisualStyleBackColor = false;
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
             // Homepage
             // 
@@ -304,6 +290,7 @@
             this.BackgroundImage = global::PBL3.Properties.Resources.HomeBack;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1032, 565);
+            this.Controls.Add(this.pnChoice);
             this.Controls.Add(this.myTextBox1);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.pbTransport);
@@ -311,7 +298,6 @@
             this.Controls.Add(this.pbTour);
             this.Controls.Add(this.pbPrice);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel3);
@@ -328,12 +314,11 @@
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbHoiAn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPrice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbTour)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLocation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbTransport)).EndInit();
+            this.pnChoice.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -350,11 +335,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem tsmenu;
-        private System.Windows.Forms.ToolStripMenuItem choiceAdmin;
-        private System.Windows.Forms.ToolStripMenuItem gHToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem choiceLogout;
         private System.Windows.Forms.PictureBox pbPrice;
         private System.Windows.Forms.PictureBox pbTour;
         private System.Windows.Forms.PictureBox pbLocation;
@@ -365,5 +345,8 @@
         private System.Windows.Forms.ToolTip toolTip4;
         private System.Windows.Forms.TextBox txtSearch;
         private MyLibrary.MyTextBox myTextBox1;
+        private System.Windows.Forms.Panel pnChoice;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnAdmin;
     }
 }
