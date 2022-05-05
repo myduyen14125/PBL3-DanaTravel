@@ -100,11 +100,11 @@ namespace PBL3.View.tour
             // txtDesc
             // 
             this.txtDesc.Enabled = false;
-            this.txtDesc.Location = new System.Drawing.Point(218, 72);
+            this.txtDesc.Location = new System.Drawing.Point(218, 69);
             this.txtDesc.Margin = new System.Windows.Forms.Padding(2);
             this.txtDesc.Multiline = true;
             this.txtDesc.Name = "txtDesc";
-            this.txtDesc.Size = new System.Drawing.Size(456, 42);
+            this.txtDesc.Size = new System.Drawing.Size(456, 72);
             this.txtDesc.TabIndex = 16;
             // 
             // cbbHotelType
@@ -172,7 +172,7 @@ namespace PBL3.View.tour
             this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
             this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDelete.Location = new System.Drawing.Point(530, 126);
+            this.btnDelete.Location = new System.Drawing.Point(530, 148);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(76, 32);
@@ -189,7 +189,7 @@ namespace PBL3.View.tour
             this.btnEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
             this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdit.Location = new System.Drawing.Point(354, 126);
+            this.btnEdit.Location = new System.Drawing.Point(354, 148);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(2);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(68, 33);
@@ -206,7 +206,7 @@ namespace PBL3.View.tour
             this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdate.Location = new System.Drawing.Point(352, 126);
+            this.btnUpdate.Location = new System.Drawing.Point(352, 148);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(79, 32);

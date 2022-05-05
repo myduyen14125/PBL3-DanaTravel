@@ -214,6 +214,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\admin\AdminManagement.resx">
+      <DependentUpon>AdminManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\admin\FormAddEditCustomer.resx">
       <DependentUpon>FormAddEditCustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -222,9 +225,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\admin\EmployeeManagement.resx">
       <DependentUpon>EmployeeManagement.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\admin\AdminManagement.resx">
-      <DependentUpon>AdminManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\admin\FormAddEditEmployee.resx">
       <DependentUpon>FormAddEditEmployee.cs</DependentUpon>
@@ -536,6 +536,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\choose-1_102356.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 164 %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

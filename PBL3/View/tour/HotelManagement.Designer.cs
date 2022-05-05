@@ -46,10 +46,10 @@ namespace PBL3.View.tour
             this.flowLayoutHotel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
             this.flowLayoutHotel.BackgroundImage = global::PBL3.Properties.Resources.Logo;
             this.flowLayoutHotel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.flowLayoutHotel.Location = new System.Drawing.Point(41, 141);
+            this.flowLayoutHotel.Location = new System.Drawing.Point(20, 141);
             this.flowLayoutHotel.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutHotel.Name = "flowLayoutHotel";
-            this.flowLayoutHotel.Size = new System.Drawing.Size(782, 385);
+            this.flowLayoutHotel.Size = new System.Drawing.Size(829, 385);
             this.flowLayoutHotel.TabIndex = 1;
             // 
             // btnCreate
