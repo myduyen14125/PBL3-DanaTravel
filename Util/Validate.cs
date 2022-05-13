@@ -23,5 +23,9 @@ namespace Util
         {
             return Regex.IsMatch(idCard, AppConstant.regexIdCard);
         }
+        public bool ValidateNumber(string number)
+        {
+            return Regex.IsMatch(number, AppConstant.regexNumber);
+        }
     }
 }

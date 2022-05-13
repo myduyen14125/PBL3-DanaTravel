@@ -1,5 +1,4 @@
-﻿use DanaTravel;
-
+use DanaTravel;
 -- Data Permissions
 insert into Permissions(name)
 values	('Create Employee'), ('View Employee'), ('Edit Employee'), ('Delete Employee'),
@@ -43,14 +42,6 @@ values	('Standard'),
 		('Platinum'),
 		('Diamond');
 
--- Data HotelTypes
-insert into HotelTypes(name)
-values	('1 sao'),
-		('2 sao'),
-		('3 sao'),
-		('4 sao'),
-		('5 sao');
-
 -- Data Roles
 insert into Roles(name) 
 values	('Admin'), ('Customer'), ('Employee');
@@ -66,7 +57,7 @@ values	(3, 2), (3, 5), (3,6), (3,7), (3,8), (3,9), (3,10), (3, 14);
 
 -- Create account admin: Password: admin
 insert into Accounts(username, password, status)
-values	('daitoan2000@gmail.com', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', 1)
+values	('daitoan2000@gmail.com', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', 1);
 insert into RoleAccounts(Account_id, Role_id) values (1, 1);
 
 -- Create account customer
@@ -124,34 +115,16 @@ insert into Employees (name, birthday, email, gender, phone, address, idCard, ac
 insert into Employees (name, birthday, email, gender, phone, address, idCard, account_id, position_id, division_id, education_degree_id, salary) values ('Cobbled', '2022/01/16', 'mcobbledd@usa.gov', 0, '9424300807', 'Suslonger', '150155608111', 16, 2, 5, 5, 3799);
 insert into Employees (name, birthday, email, gender, phone, address, idCard, account_id, position_id, division_id, education_degree_id, salary) values ('Pennycock', '2020/01/17', 'cpennycocke@about.com', 0, '1048337489', 'Gaoxiang', '636073296585', 17, 4, 2, 6, 9781);
 
--- Dữ liệu demo transport
-insert into Transports(name, price)
-values  ('Cyclo', 20000),
-		('Bicycle', 50000),
-		('Motorbike', 100000),
-		('Bus', 30000),
-		('Plane', 1000000),
-		('Yacht', 2000000);
--- Dữ liệu demo hotel
-insert into Hotels(name, price, address, description, hotel_type_id)
-values  ('Monarque Hotel', 600000, N'238 Võ Nguyên Giáp, Phước Mỹ, Sơn Trà', N'Khách sạn sang trạng, view biển đẹp, phục vụ tốt', 4),
-		('Trendy Hotel', 1200000, N'Bờ đông sông Hàn, B2-B3 Trần Hưng Đạo, An Hải Bắc, Sơn Trà', N'Nhiều tiện ích, ngắm trọn sự nhộn nhịp của thành phố biển trong không khí trong lành, thoáng đãng', 3),
-		('Brilliant Hotel', 800000, N'62 Bạch Đằng, Hải Châu', N'Nhân viên nhiệt tình, phục vụ tốt, các món ăn ngon, giá rẻ', 5),
-		('Night Sky Hotel', 400000, N'65 Xuân Diệu, Thuận Phước, Hải Châu', N'Phòng rộng rãi thoáng mát, View đẹp. Lễ tân nhiệt tình và lịch sự.', 3),
-		(N'Đại Á Hotel', 700000, N'51 Yên Bái, Hải Châu', N'Phòng rộng rãi, thoáng mát, free wifi, gần khu ẩm thực, cầu rồng. Cách sân bay 2km', 4),
-		('Princess Hotel', 440000, N'Lô E2-20 Phan Bôi, An Hải Bắc, Sơn Trà', N'Khách sạn ở vị trí trung tâm, gần bãi biển, phòng có tiện ích đầy đủ. Lễ tân phục vụ chu đáo, nhiệt tình', 4);
--- Dữ liệu demo site
-insert into Sites(name, price, address, description)
-values	(N'Bà Nà Hill', 500000, N'Hòa Ninh, Hòa Vang', N'Đến với khu du lịch Bà Nà, du khách có cơ hội trải nghiệm ngồi trên cáp treo ngắm cảnh. Hệ thống cáp treo Bà Nà là một trong 10 tuyến cáp treo ấn tượng nhất thế giới. Ngồi trên cabin của cáp treo, du khách sẽ được nhìn thấy một bức tranh tuyệt hảo đầy màu sắc của mây núi, cây rừng và biển cả. Ngoài ra, đi du lịch Bà Nà du khách còn được tham quan nhiều điểm đến hấp dẫn'),
-		(N'Bán Đảo Sơn Trà', 100000, N'Thọ Quang, Sơn Trà', N'Rừng nguyên sinh, biển xanh cùng với các tảng đá kết hợp với nhau tạo nên một địa điểm khám phá, nghỉ dưỡng và chụp ảnh lý tưởng'),
-		(N'Ngũ Hành Sơn', 50000, N'81 Huyền Trân Công Chúa, Hoà Hải, Ngũ Hành Sơn', N'Ngũ Hành Sơn là một danh thắng gồm 5 ngọn núi đá vôi nhô lên trên một bãi cát ven biển, với hệ sinh thái phong phú, đa dạng'),
-		(N'Núi Thần Tài', 300000, N'QL14G, Hoà Phú, Hòa Vang', N'Công viên nổi tiếng này nằm giữa không gian xanh, có hồ tạo sóng, sông lười, đường trượt nước và suối nước nóng'),
-		(N'Bảo Tàng Điêu Khắc Chăm', 50000, N'Số 02 Đ. 2 Tháng 9, Bình Hiên, Hải Châu', N'Bảo tàng Nghệ thuật Điêu khắc Chăm Đà Nẵng là bảo tàng trưng bày hiện vật Chăm quy mô nhất ở Việt Nam, trực thuộc Bảo tàng Đà Nẵng'),
-		(N'Phố Cổ Hội An', 100000, N'Phường Minh An, Hội An, Quảng Nam', N'Hội An nổi tiếng bởi vẻ đẹp kiến trúc truyền thống, hài hòa của những ngôi nhà, bức tường và cả những con đường'),
-		(N'Cù Lao Chàm', 200000, N'Thành phố Hội An, Quảng Nam', N'Cù Lao Chàm không chỉ nổi tiếng tại Việt Nam mà còn được thế giới công nhận với môi trường tự nhiên phong phú, cảnh vật đa dạng và không khí trong lành. Với các bãi biển đẹp tuyệt vời nước trong xanh ngọc bích như: Biển bãi Xếp, biển bãi Ông, Biển bãi Hương… cùng các di tích điểm tham quan mang dấu ấn đậm nét của văn hóa'),
-		(N'Thánh Địa Mỹ Sơn', 100000, N'Duy Phú, Duy Xuyên, Quảng Nam', N'Cách thành phố Đà Nẵng khoảng 69 km và gần thành cổ Trà Kiệu, bao gồm nhiều đền đài Chăm Pa, trong một thung lũng đường kính khoảng 2 km, bao quanh bởi đồi núi. Đây từng là nơi tổ chức cúng tế của vương triều Chăm Pa'),
-		(N'Suối Mơ', 50000, N'Hòa Ninh, Hòa Vang', N'Mang trong mình vẻ đẹp hoang sơ nhưng cũng thật mơ mộng, quyến rũ, nơi đây chắc chắn sẽ đem đến cho du khách những trải nghiệm cực kỳ thú vị'),
-		(N'Đỉnh Bàn Cờ', 200000, N'Thọ Quang, Sơn Trà', N'Đỉnh Bàn Cờ nổi tiếng với vẻ đẹp gợi chút cảm giác hoài cổ giữa cuộc sống hiện đại. Từ Đỉnh Bàn Cờ, toàn bộ khung cảnh Đà Nẵng như được quy tụ, tạo cảm giác như lạc vào chốn bồng lai tiên cảnh.'),
-		(N'Bảo tàng Đà Nẵng', 150000, N'24 Đ. Trần Phú, Thạch Thang, Hải Châu', N'Bảo tàng về lịch sử Đà Nẵng, nơi trưng bày hiện vật văn hóa và quân sự trong một không gian hiện đại.'),
-		(N'Bảo tàng 3D Trick Eye', 200000, N'Lô 10, Trần Nhân Tông, Thọ Quang, Sơn Trà', N'Bảo tàng tương tác cho du khách tạo dáng chụp ảnh vui nhộn trước những bức tranh 3D theo chủ đề.');
+-- Data tour status
+insert into TourStatus(name)
+values	(N'Sắp bắt đầu'),
+		(N'Đang diễn ra'),
+		(N'Đã kết thúc'),
+		(N'Đã hủy');
+-- Data tour category
+insert into TourCategories(name)
+values	(N'Tour về gia đình'),
+		(N'Tour về thám hiểm'),
+		(N'Tour về tự nhiên'),
+		(N'Tour về tôn giáo');
 -- Dữ liệu demo tour

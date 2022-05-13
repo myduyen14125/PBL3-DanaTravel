@@ -1,14 +1,9 @@
 ﻿using BUS;
 using DTO;
+using DTO.CodeFirstDB;
+using PBL3.View.tour;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PBL3.View
@@ -18,6 +13,7 @@ namespace PBL3.View
         public TourManagement()
         {
             InitializeComponent();
+            SetComboboxTourCategory();
         }
         private void TourManagement_Load(object sender, EventArgs e)
         {
@@ -25,19 +21,79 @@ namespace PBL3.View
             {
                 ShowDataTour();
             }
-            btnEdit.Enabled = false;
-            btnDelete.Enabled = false;
+        }
+        private void SetComboboxTourCategory()
+        {
+            cbbTourCategory.DisplayMember = "Text";
+            cbbTourCategory.ValueMember = "Value";
+            List<TourCategory> tourCategories = TourBUS.Instance.GetListTourCategory();
+            List<object> items = new List<object>();
+            items.Add(new
+            {
+                Text = "All",
+                Value = 0
+            });
+            foreach (TourCategory tc in tourCategories)
+            {
+                items.Add(new
+                {
+                    Text = tc.name,
+                    Value = tc.id
+                });
+            }
+            cbbTourCategory.DataSource = items;
         }
         private void ShowDataTour()
         {
-            //string searchKey = txtSearch.Text;
-            //dataGridViewCustomer.DataSource = TourBUS.Instance.GetDataTableTour(TourBUS.Instance.GetListTours(searchKey));
-            //txtTotal.Text = (dataGridViewCustomer.Rows.Count - 1).ToString();
-            //btnEdit.Enabled = false;
-            //btnDelete.Enabled = false;
+            flowLayoutTours.Controls.Clear();
+            string searchKey = txtSearch.Text;
+            int category_id = (cbbTourCategory.SelectedItem as dynamic).Value;
+            List<TourDTO> tourDTOs = TourBUS.Instance.GetTourDTOs(category_id, searchKey);
+            if(tourDTOs != null)
+            {
+                foreach(TourDTO tourDTO in tourDTOs)
+                {
+                    flowLayoutTours.Controls.Add(new TourItem(tourDTO, this));
+                }
+            }
+            txtTotal.Text = tourDTOs.Count.ToString();
         }
-        private void btnShow_Click(object sender, EventArgs e)
+
+        private void btnAdd_Click(object sender, EventArgs e)
         {
+            FormAddEditTour form = new FormAddEditTour(new TourDTO { id = 0}, this);
+            form.Dock = DockStyle.Fill;
+            this.Controls.Add(form);
+            HideTourManagement();
+        }
+        public void HideTourManagement()
+        {
+            btnAdd.Visible = false;
+            btnSearch.Visible = false;
+            txtSearch.Visible = false;
+            txtTotal.Visible = false;
+            totalLb.Visible = false;
+            pictureBox1.Visible = false;
+            panel2.Visible = false;
+            panel3.Visible = false;
+            flowLayoutTours.Visible = false;
+            lbCategory.Visible = false;
+            cbbTourCategory.Visible = false;
+        }
+        public void Reload()
+        {
+            btnAdd.Visible = true;
+            flowLayoutTours.Visible = true;
+            pictureBox1.Visible = true;
+            totalLb.Visible = true;
+            txtTotal.Visible = true;
+            txtSearch.Visible = true;
+            btnSearch.Visible = true;
+            flowLayoutTours.Enabled = true;
+            lbCategory.Visible = true;
+            cbbTourCategory.Visible = true;
+            txtSearch.Text = "";
+            cbbTourCategory.SelectedIndex = 0;
             ShowDataTour();
         }
 
@@ -45,51 +101,9 @@ namespace PBL3.View
         {
             ShowDataTour();
         }
-
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void cbbTourCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //FormAddEditTour f = new FormAddEditTour();
-            //f.myDel = new FormAddEditTour.MyDel(ShowDataTour);
-            //f.Show();
-        }
-
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
-            //int id = Convert.ToInt32(dataGridViewCustomer.CurrentRow.Cells[0].Value.ToString());
-            //FormAddEditTour f = new FormAddEditTour(id);
-            //f.myDel = new FormAddEditTour.MyDel(ShowDataTour);
-            //f.Show();
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Do you want delete?", "Confirm", MessageBoxButtons.YesNo);
-            if (result == DialogResult.Yes)
-            {
-
-                List<int> list = new List<int>();
-                foreach (DataGridViewRow row in dataGridViewCustomer.SelectedRows)
-                {
-                    list.Add(Convert.ToInt32(row.Cells["ID"].Value));
-                }
-                //TourBUS.Instance.Delete(list);
-                ShowDataTour();
-            }
-        }
-
-        private void dataGridViewCustomer_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            if (dataGridViewCustomer.SelectedRows.Count == 1)
-            {
-                btnEdit.Enabled = true;
-            }
-            else btnEdit.Enabled = false;
-
-            if (dataGridViewCustomer.SelectedRows.Count >= 1)
-            {
-                btnDelete.Enabled = true;
-            }
-            else btnDelete.Enabled = false;
+            ShowDataTour();
         }
     }
 }

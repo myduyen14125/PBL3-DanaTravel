@@ -27,8 +27,6 @@ D:\PBL\PBL3-DanaTravel\DTO\bin\Debug\Util.pdb
 D:\PBL\PBL3-DanaTravel\DTO\bin\Debug\Util.exe.config
 D:\PBL\PBL3-DanaTravel\DTO\bin\Debug\EntityFramework.xml
 D:\PBL\PBL3-DanaTravel\DTO\bin\Debug\EntityFramework.SqlServer.xml
-D:\PBL\PBL3-DanaTravel\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
-D:\PBL\PBL3-DanaTravel\DTO\obj\Debug\DTO.Form1.resources
 D:\PBL\PBL3-DanaTravel\DTO\obj\Debug\DTO.Properties.Resources.resources
 D:\PBL\PBL3-DanaTravel\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
 D:\PBL\PBL3-DanaTravel\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
@@ -54,3 +52,5 @@ E:\Nam 2\NET_WF\pbl3\PBL3-DanaTravel\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.
 E:\Nam 2\NET_WF\pbl3\PBL3-DanaTravel\DTO\obj\Debug\DTO.csproj.CopyComplete
 E:\Nam 2\NET_WF\pbl3\PBL3-DanaTravel\DTO\obj\Debug\DTO.exe
 E:\Nam 2\NET_WF\pbl3\PBL3-DanaTravel\DTO\obj\Debug\DTO.pdb
+D:\PBL\PBL3-DanaTravel\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\PBL\PBL3-DanaTravel\DTO\obj\Debug\DTO.csproj.SuggestedBindingRedirects.cache

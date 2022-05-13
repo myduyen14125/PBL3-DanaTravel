@@ -20,7 +20,6 @@ namespace DTO
         public int id { get; set; }
         [Required]
         public string name { get; set; }
-
         public virtual ICollection<Customer> Customers { get; set; }
     }
 }

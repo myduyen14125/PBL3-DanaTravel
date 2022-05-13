@@ -10,7 +10,7 @@ using Util;
 
 namespace DTO
 {
-    class CreateDB : DropCreateDatabaseAlways<EntityManager>
+    class CreateDB : CreateDatabaseIfNotExists<EntityManager>
     {
         protected override void Seed(EntityManager context)
         {

@@ -33,12 +33,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="MyLibrary">
       <HintPath>..\..\MyLibrary\MyLibrary\bin\Debug\MyLibrary.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,17 +54,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BookTour.cs">
+    <Compile Include="viewHtml\Editor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="viewHtml\Editor.Designer.cs">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewHtml\EditorForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BookTour.Designer.cs">
-      <DependentUpon>BookTour.cs</DependentUpon>
+    <Compile Include="viewHtml\EditorForm.Designer.cs">
+      <DependentUpon>EditorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="viewHtml\SearchDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="viewHtml\SearchDialog.Designer.cs">
+      <DependentUpon>SearchDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewHtml\TextInsertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewHtml\TextInsertForm.Designer.cs">
+      <DependentUpon>TextInsertForm.cs</DependentUpon>
     </Compile>
     <Compile Include="View\admin\FormAddEditCustomer.cs">
       <SubType>Form</SubType>
@@ -97,24 +113,6 @@
     </Compile>
     <Compile Include="View\admin\FormAddRole.Designer.cs">
       <DependentUpon>FormAddRole.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\admin\FormAddEditTour.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\admin\FormAddEditTour.Designer.cs">
-      <DependentUpon>FormAddEditTour.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\tour\FormAddSite.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View\tour\FormAddSite.Designer.cs">
-      <DependentUpon>FormAddSite.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\tour\SiteItem.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View\tour\SiteItem.Designer.cs">
-      <DependentUpon>SiteItem.cs</DependentUpon>
     </Compile>
     <Compile Include="View\login\ChangePassword.cs">
       <SubType>Form</SubType>
@@ -166,53 +164,38 @@
     <Compile Include="View\TourManagement.Designer.cs">
       <DependentUpon>TourManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\tour\FormAddHotel.cs">
+    <Compile Include="View\tour\FormAddEditTour.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\tour\FormAddHotel.Designer.cs">
-      <DependentUpon>FormAddHotel.cs</DependentUpon>
+    <Compile Include="View\tour\FormAddEditTour.Designer.cs">
+      <DependentUpon>FormAddEditTour.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\tour\FormAddTransport.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\tour\FormAddTransport.Designer.cs">
-      <DependentUpon>FormAddTransport.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\tour\HotelItem.cs">
+    <Compile Include="View\tour\FormTourDetail.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\tour\HotelItem.Designer.cs">
-      <DependentUpon>HotelItem.cs</DependentUpon>
+    <Compile Include="View\tour\FormTourDetail.Designer.cs">
+      <DependentUpon>FormTourDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\tour\HotelManagement.cs">
+    <Compile Include="View\tour\SliderImage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\tour\HotelManagement.Designer.cs">
-      <DependentUpon>HotelManagement.cs</DependentUpon>
+    <Compile Include="View\tour\SliderImage.Designer.cs">
+      <DependentUpon>SliderImage.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\tour\SiteManagement.cs">
+    <Compile Include="View\tour\TourItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\tour\SiteManagement.Designer.cs">
-      <DependentUpon>SiteManagement.cs</DependentUpon>
+    <Compile Include="View\tour\TourItem.Designer.cs">
+      <DependentUpon>TourItem.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\tour\TransportItem.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View\tour\TransportItem.Designer.cs">
-      <DependentUpon>TransportItem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\tour\TransportManagement.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View\tour\TransportManagement.Designer.cs">
-      <DependentUpon>TransportManagement.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="BookTour.resx">
-      <DependentUpon>BookTour.cs</DependentUpon>
+    <EmbeddedResource Include="viewHtml\Editor.resx">
+      <DependentUpon>Editor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="viewHtml\SearchDialog.resx">
+      <DependentUpon>SearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewHtml\TextInsertForm.resx">
+      <DependentUpon>TextInsertForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\admin\AdminManagement.resx">
       <DependentUpon>AdminManagement.cs</DependentUpon>
@@ -231,15 +214,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\admin\FormAddRole.resx">
       <DependentUpon>FormAddRole.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\admin\FormAddEditTour.resx">
-      <DependentUpon>FormAddEditTour.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\tour\FormAddSite.resx">
-      <DependentUpon>FormAddSite.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\tour\SiteItem.resx">
-      <DependentUpon>SiteItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\login\ChangePassword.resx">
       <DependentUpon>ChangePassword.cs</DependentUpon>
@@ -275,26 +249,17 @@
     <EmbeddedResource Include="View\TourManagement.resx">
       <DependentUpon>TourManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\tour\FormAddHotel.resx">
-      <DependentUpon>FormAddHotel.cs</DependentUpon>
+    <EmbeddedResource Include="View\tour\FormAddEditTour.resx">
+      <DependentUpon>FormAddEditTour.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\tour\FormAddTransport.resx">
-      <DependentUpon>FormAddTransport.cs</DependentUpon>
+    <EmbeddedResource Include="View\tour\FormTourDetail.resx">
+      <DependentUpon>FormTourDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\tour\HotelItem.resx">
-      <DependentUpon>HotelItem.cs</DependentUpon>
+    <EmbeddedResource Include="View\tour\SliderImage.resx">
+      <DependentUpon>SliderImage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\tour\HotelManagement.resx">
-      <DependentUpon>HotelManagement.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\tour\SiteManagement.resx">
-      <DependentUpon>SiteManagement.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\tour\TransportItem.resx">
-      <DependentUpon>TransportItem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\tour\TransportManagement.resx">
-      <DependentUpon>TransportManagement.cs</DependentUpon>
+    <EmbeddedResource Include="View\tour\TourItem.resx">
+      <DependentUpon>TourItem.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -539,6 +504,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Group 164 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\backcolor.bmp" />
+    <Content Include="Resources\bold.bmp" />
+    <Content Include="Resources\cj.bmp" />
+    <Content Include="Resources\color.bmp" />
+    <Content Include="Resources\fj.bmp" />
+    <None Include="Resources\image.png" />
+    <Content Include="Resources\indent.bmp" />
+    <Content Include="Resources\italic.bmp" />
+    <Content Include="Resources\link.bmp" />
+    <Content Include="Resources\lj.bmp" />
+    <Content Include="Resources\ol.bmp" />
+    <Content Include="Resources\outdent.bmp" />
+    <Content Include="Resources\right_arrow.bmp" />
+    <Content Include="Resources\rj.bmp" />
+    <Content Include="Resources\underscore.bmp" />
+    <Content Include="Resources\uol.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

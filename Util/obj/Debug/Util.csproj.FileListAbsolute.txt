@@ -10,7 +10,6 @@ E:\PBL3-DanaTravel\Util\obj\Debug\Util.pdb
 D:\PBL\PBL3-DanaTravel\Util\bin\Debug\Util.exe.config
 D:\PBL\PBL3-DanaTravel\Util\bin\Debug\Util.exe
 D:\PBL\PBL3-DanaTravel\Util\bin\Debug\Util.pdb
-D:\PBL\PBL3-DanaTravel\Util\obj\Debug\Util.csprojAssemblyReference.cache
 D:\PBL\PBL3-DanaTravel\Util\obj\Debug\Util.Properties.Resources.resources
 D:\PBL\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.GenerateResource.cache
 D:\PBL\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.CoreCompileInputs.cache
@@ -28,3 +27,5 @@ E:\Nam 2\NET_WF\pbl3\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.GenerateResource
 E:\Nam 2\NET_WF\pbl3\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.CoreCompileInputs.cache
 E:\Nam 2\NET_WF\pbl3\PBL3-DanaTravel\Util\obj\Debug\Util.exe
 E:\Nam 2\NET_WF\pbl3\PBL3-DanaTravel\Util\obj\Debug\Util.pdb
+D:\PBL\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.AssemblyReference.cache
+D:\PBL\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.SuggestedBindingRedirects.cache

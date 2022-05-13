@@ -1,9 +1,7 @@
-﻿using PBL3.View;
-using PBL3.View.admin;
+﻿using PBL3.View.admin;
+using PBL3.View.tour;
+using PBL3.viewHtml;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PBL3
@@ -18,7 +16,7 @@ namespace PBL3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            Application.Run(new AdminManagement());
         }
     }
 }

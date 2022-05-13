@@ -3,9 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 
 namespace DTO
@@ -18,40 +15,32 @@ namespace DTO
         [Required]
         public string name { get; set; }
         [Required]
-        public string desc { get; set; }
+        public string short_desc { get; set; }
+        [Required]
+        public string detail_desc { get; set; }
         [Required]
         public DateTime departureDate { get; set; }
         [Required]
         public DateTime returnDate { get; set; }
+        public double total_price_service { get; set; }
         public double percent_VAT { get; set; } = 0;
         public double percent_profit { get; set; } = 0;
-        public double percent_adult_price { get; set; } = 100;
-        public double percent_children_price { get; set; } = 100;
-
+        public double percent_price_children { get; set; } = 100;
+        public double price_adult_one_ticket { get; set; }
+        public double price_children_one_ticket { get; set; }
         public int tour_status_id { get; set; }
-        public int tour_price_id { get; set; }
         public int tour_category_id { get; set; }
 
         [ForeignKey("tour_status_id")]
         public virtual TourStatus TourStatus { get; set; }
 
-        [ForeignKey("tour_price_id")]
-        public virtual TourPrice TourPrice { get; set; }
-
         [ForeignKey("tour_category_id")]
         public virtual TourCategory TourCategory { get; set; }
 
-        public ICollection<Hotel> Hotels { get; set; }
-        public ICollection<Service> Services { get; set; }
-        public ICollection<Transport> Transports { get; set; }
-        public ICollection<Site> Sites { get; set; }
-
+        public ICollection<TourImage> TourImages { get; set; } = null;
         public Tour()
         {
-            Hotels = new List<Hotel>();
-            Services = new List<Service>();
-            Transports = new List<Transport>();
-            Sites = new List<Site>();
+            TourImages = new List<TourImage>();
         }
     }
 }
