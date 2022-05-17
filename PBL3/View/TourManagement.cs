@@ -13,12 +13,12 @@ namespace PBL3.View
         public TourManagement()
         {
             InitializeComponent();
-            SetComboboxTourCategory();
         }
         private void TourManagement_Load(object sender, EventArgs e)
         {
             if (!this.DesignMode)
             {
+                SetComboboxTourCategory();
                 ShowDataTour();
             }
         }

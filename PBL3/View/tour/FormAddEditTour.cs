@@ -29,7 +29,10 @@ namespace PBL3.View.tour
             InitializeComponent();
             this.tour = tour;
             this.tourManagement = tourManagement;
-            SetGUIForm();
+            if(!this.DesignMode)
+            {
+                SetGUIForm();
+            }
         }
 
         private void SetGUIForm()
