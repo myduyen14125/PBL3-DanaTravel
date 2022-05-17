@@ -114,6 +114,7 @@ namespace DAO
                              e.email,
                              e.address,
                              e.salary,
+                             e.image,
                              d_id = d.id,
                              d_name = d.name,
                              p_id = p.id,
@@ -136,6 +137,7 @@ namespace DAO
                 phone = i.phone,
                 address = i.address,
                 salary = i.salary,
+                image = i.image,
                 division_id = i.d_id,
                 division_name = i.d_name,
                 position_id = i.p_id,
@@ -169,6 +171,7 @@ namespace DAO
                 data.position_id = e.position_id;
                 data.education_degree_id = e.education_degree_id;
                 data.account_id = e.account_id;
+                data.image = e.image;
             }
             db.SaveChanges();
         }

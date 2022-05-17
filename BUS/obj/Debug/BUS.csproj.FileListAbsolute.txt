@@ -50,5 +50,4 @@ E:\Nam 2\NET_WF\pbl3\PBL3-DanaTravel\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.
 E:\Nam 2\NET_WF\pbl3\PBL3-DanaTravel\BUS\obj\Debug\BUS.csproj.CopyComplete
 E:\Nam 2\NET_WF\pbl3\PBL3-DanaTravel\BUS\obj\Debug\BUS.exe
 E:\Nam 2\NET_WF\pbl3\PBL3-DanaTravel\BUS\obj\Debug\BUS.pdb
-D:\PBL\PBL3-DanaTravel\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
-D:\PBL\PBL3-DanaTravel\BUS\obj\Debug\BUS.csproj.SuggestedBindingRedirects.cache
+D:\PBL\PBL3-DanaTravel\BUS\obj\Debug\BUS.csprojAssemblyReference.cache

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -62,7 +63,8 @@ namespace PBL3.View.admin
                 cbbDivision.SelectedIndex = cbbDivision.FindStringExact(employee.division_name); 
                 cbbEducation.SelectedIndex = cbbEducation.FindStringExact(employee.education_degree_name);
                 txtAccount.Text = employee.email;
-
+               if(employee.image != null)
+                    picturebox.Image = Image.FromStream(new MemoryStream(employee.image));
                 int size = checkListBoxRole.Items.Count;
                 for (int i = 0; i < size; i++)
                 {
@@ -189,6 +191,10 @@ namespace PBL3.View.admin
             
             ac = AccountBUS.Instance.GetAccountByUsername(email);
 
+            MemoryStream stream = new MemoryStream();
+            Image image = picturebox.Image;
+            image.Save(stream, image.RawFormat);
+
             // Add employee
             Employee epl = new Employee
             {
@@ -204,14 +210,16 @@ namespace PBL3.View.admin
                 position_id = (cbbPosition.SelectedItem as dynamic).Value,
                 division_id = (cbbDivision.SelectedItem as dynamic).Value,
                 education_degree_id = (cbbEducation.SelectedItem as dynamic).Value,
-                account_id = ac.id
+                account_id = ac.id,
+                image = stream.ToArray()
             };
             EmployeeBUS.Instance.Save(epl);
             if (employeeId != 0 && email != employee.email)
             {
                 AccountBUS.Instance.DeleteAccount(employee.account_name);
             }
-            MessageBox.Show("Addition successful");
+            if(employeeId == 0) MessageBox.Show("Addition successful");
+            else MessageBox.Show("Edit successful");
             d();
             this.Hide();
         }
@@ -278,6 +286,18 @@ namespace PBL3.View.admin
         {
             d();
             this.Hide();
+        }
+
+        private void btnChooseImage_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.ShowDialog();
+            string file = ofd.FileName;
+            if (string.IsNullOrEmpty(file))
+            {
+                return;
+            }
+            picturebox.Image = Image.FromFile(file);
         }
     }
 }

@@ -68,7 +68,7 @@ namespace PBL3.View.tour
             this.TourCategory.AutoSize = true;
             this.TourCategory.Location = new System.Drawing.Point(40, 197);
             this.TourCategory.Name = "TourCategory";
-            this.TourCategory.Size = new System.Drawing.Size(93, 16);
+            this.TourCategory.Size = new System.Drawing.Size(99, 17);
             this.TourCategory.TabIndex = 71;
             this.TourCategory.Text = "Tour Category";
             // 
@@ -103,7 +103,7 @@ namespace PBL3.View.tour
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(577, 114);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 16);
+            this.label4.Size = new System.Drawing.Size(142, 17);
             this.label4.TabIndex = 64;
             this.label4.Text = "Price (%) By Children";
             // 
@@ -120,7 +120,7 @@ namespace PBL3.View.tour
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(858, 157);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 16);
+            this.label3.Size = new System.Drawing.Size(104, 17);
             this.label3.TabIndex = 62;
             this.label3.Text = "Price / Children";
             // 
@@ -129,7 +129,7 @@ namespace PBL3.View.tour
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(858, 68);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 16);
+            this.label2.Size = new System.Drawing.Size(63, 17);
             this.label2.TabIndex = 61;
             this.label2.Text = "Profit(%)";
             // 
@@ -138,7 +138,7 @@ namespace PBL3.View.tour
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(858, 117);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 16);
+            this.label1.Size = new System.Drawing.Size(57, 17);
             this.label1.TabIndex = 60;
             this.label1.Text = "VAT(%)";
             // 
@@ -201,7 +201,7 @@ namespace PBL3.View.tour
             this.lbTotal.AutoSize = true;
             this.lbTotal.Location = new System.Drawing.Point(577, 154);
             this.lbTotal.Name = "lbTotal";
-            this.lbTotal.Size = new System.Drawing.Size(78, 16);
+            this.lbTotal.Size = new System.Drawing.Size(84, 17);
             this.lbTotal.TabIndex = 53;
             this.lbTotal.Text = "Price / Adult";
             // 
@@ -210,7 +210,7 @@ namespace PBL3.View.tour
             this.lbDescription.AutoSize = true;
             this.lbDescription.Location = new System.Drawing.Point(46, 443);
             this.lbDescription.Name = "lbDescription";
-            this.lbDescription.Size = new System.Drawing.Size(75, 16);
+            this.lbDescription.Size = new System.Drawing.Size(79, 17);
             this.lbDescription.TabIndex = 51;
             this.lbDescription.Text = "Description";
             // 
@@ -226,7 +226,7 @@ namespace PBL3.View.tour
             this.lbReturnDate.AutoSize = true;
             this.lbReturnDate.Location = new System.Drawing.Point(40, 149);
             this.lbReturnDate.Name = "lbReturnDate";
-            this.lbReturnDate.Size = new System.Drawing.Size(78, 16);
+            this.lbReturnDate.Size = new System.Drawing.Size(85, 17);
             this.lbReturnDate.TabIndex = 46;
             this.lbReturnDate.Text = "Return Date";
             // 
@@ -242,7 +242,7 @@ namespace PBL3.View.tour
             this.lbDepartureDate.AutoSize = true;
             this.lbDepartureDate.Location = new System.Drawing.Point(40, 106);
             this.lbDepartureDate.Name = "lbDepartureDate";
-            this.lbDepartureDate.Size = new System.Drawing.Size(99, 16);
+            this.lbDepartureDate.Size = new System.Drawing.Size(106, 17);
             this.lbDepartureDate.TabIndex = 44;
             this.lbDepartureDate.Text = "Departure Date";
             // 
@@ -258,7 +258,7 @@ namespace PBL3.View.tour
             this.lbTourName.AutoSize = true;
             this.lbTourName.Location = new System.Drawing.Point(37, 62);
             this.lbTourName.Name = "lbTourName";
-            this.lbTourName.Size = new System.Drawing.Size(75, 16);
+            this.lbTourName.Size = new System.Drawing.Size(79, 17);
             this.lbTourName.TabIndex = 42;
             this.lbTourName.Text = "Tour Name";
             // 
@@ -267,7 +267,7 @@ namespace PBL3.View.tour
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(40, 245);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 16);
+            this.label5.Size = new System.Drawing.Size(117, 17);
             this.label5.TabIndex = 72;
             this.label5.Text = "Short Description";
             // 
@@ -284,7 +284,7 @@ namespace PBL3.View.tour
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(577, 68);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(118, 16);
+            this.label6.Size = new System.Drawing.Size(124, 17);
             this.label6.TabIndex = 74;
             this.label6.Text = "Total price service";
             // 
@@ -298,11 +298,12 @@ namespace PBL3.View.tour
             // 
             // btnOpen
             // 
-            this.btnOpen.Location = new System.Drawing.Point(31, 483);
+            this.btnOpen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOpen.Location = new System.Drawing.Point(43, 479);
             this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(115, 48);
+            this.btnOpen.Size = new System.Drawing.Size(94, 50);
             this.btnOpen.TabIndex = 76;
-            this.btnOpen.Text = "Open Edit HTML";
+            this.btnOpen.Text = "Edit";
             this.btnOpen.UseVisualStyleBackColor = true;
             this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
@@ -319,7 +320,7 @@ namespace PBL3.View.tour
             this.txtImage.AutoSize = true;
             this.txtImage.Location = new System.Drawing.Point(580, 204);
             this.txtImage.Name = "txtImage";
-            this.txtImage.Size = new System.Drawing.Size(45, 16);
+            this.txtImage.Size = new System.Drawing.Size(46, 17);
             this.txtImage.TabIndex = 78;
             this.txtImage.Text = "Image";
             // 
@@ -333,7 +334,8 @@ namespace PBL3.View.tour
             // 
             // btnAddImage
             // 
-            this.btnAddImage.Location = new System.Drawing.Point(580, 258);
+            this.btnAddImage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddImage.Location = new System.Drawing.Point(564, 245);
             this.btnAddImage.Name = "btnAddImage";
             this.btnAddImage.Size = new System.Drawing.Size(97, 36);
             this.btnAddImage.TabIndex = 80;

@@ -112,6 +112,7 @@ namespace DAO
                 data.tour_status_id = t.tour_status_id;
                 data.tour_category_id = t.tour_category_id;
                 data.tour_category_id = t.tour_category_id;
+                data.TourImages = t.TourImages;
             }
             db.SaveChanges();
         }

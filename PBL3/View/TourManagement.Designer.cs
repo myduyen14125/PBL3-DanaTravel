@@ -47,6 +47,7 @@
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.White;
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold);
             this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnAdd.Location = new System.Drawing.Point(22, 165);
@@ -61,6 +62,7 @@
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSearch.FlatAppearance.BorderSize = 0;
             this.btnSearch.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold);
             this.btnSearch.ForeColor = System.Drawing.Color.White;
@@ -159,6 +161,7 @@
             // flowLayoutTours
             // 
             this.flowLayoutTours.AutoScroll = true;
+            this.flowLayoutTours.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutTours.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutTours.Location = new System.Drawing.Point(22, 244);
             this.flowLayoutTours.Name = "flowLayoutTours";
@@ -170,7 +173,7 @@
             this.lbCategory.AutoSize = true;
             this.lbCategory.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold);
             this.lbCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.lbCategory.Location = new System.Drawing.Point(312, 180);
+            this.lbCategory.Location = new System.Drawing.Point(315, 188);
             this.lbCategory.Name = "lbCategory";
             this.lbCategory.Size = new System.Drawing.Size(155, 25);
             this.lbCategory.TabIndex = 32;
@@ -179,7 +182,7 @@
             // cbbTourCategory
             // 
             this.cbbTourCategory.FormattingEnabled = true;
-            this.cbbTourCategory.Location = new System.Drawing.Point(476, 180);
+            this.cbbTourCategory.Location = new System.Drawing.Point(476, 191);
             this.cbbTourCategory.Name = "cbbTourCategory";
             this.cbbTourCategory.Size = new System.Drawing.Size(150, 24);
             this.cbbTourCategory.TabIndex = 33;

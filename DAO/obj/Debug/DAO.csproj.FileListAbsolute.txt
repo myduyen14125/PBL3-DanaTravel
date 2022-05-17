@@ -56,5 +56,4 @@ E:\Nam 2\NET_WF\pbl3\PBL3-DanaTravel\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.
 E:\Nam 2\NET_WF\pbl3\PBL3-DanaTravel\DAO\obj\Debug\DAO.csproj.CopyComplete
 E:\Nam 2\NET_WF\pbl3\PBL3-DanaTravel\DAO\obj\Debug\DAO.exe
 E:\Nam 2\NET_WF\pbl3\PBL3-DanaTravel\DAO\obj\Debug\DAO.pdb
-D:\PBL\PBL3-DanaTravel\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
-D:\PBL\PBL3-DanaTravel\DAO\obj\Debug\DAO.csproj.SuggestedBindingRedirects.cache
+D:\PBL\PBL3-DanaTravel\DAO\obj\Debug\DAO.csprojAssemblyReference.cache

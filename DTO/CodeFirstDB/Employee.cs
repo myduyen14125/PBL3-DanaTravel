@@ -11,24 +11,6 @@ namespace DTO
 {
     public class Employee : Person
     {
-        //[Key]
-        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        //public int id { get; set; }
-
-        //public string name { get; set; }
-
-        //public DateTime birthday { get; set; }
-
-        //public bool gender { get; set; }
-
-        //public string idCard { get; set; }
-
-        //public string phone { get; set; }
-
-        //public string address { get; set; } = null;
-
-        //public string email { get; set; }
-
         public double salary { get; set; }
 
         public int position_id { get; set; }
@@ -38,6 +20,8 @@ namespace DTO
         public int education_degree_id { get; set; }
 
         public int account_id { get; set; }
+
+        public byte[] image { get; set; } = null;
 
         [ForeignKey("division_id")]
         public virtual Division Division { get; set; }

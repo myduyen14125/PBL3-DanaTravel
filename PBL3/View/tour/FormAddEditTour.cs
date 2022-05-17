@@ -116,6 +116,8 @@ namespace PBL3.View.tour
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            if (!ValidateForm())   return;
+
             MemoryStream stream = new MemoryStream();
   
             List<TourImage> tourImages = new List<TourImage>();
@@ -153,7 +155,8 @@ namespace PBL3.View.tour
                 TourImages = tourImages
             };
             TourBUS.Instance.Save(t);
-            MessageBox.Show("Add new tour successful");
+            if(tour.id == 0) MessageBox.Show("Add new tour successful");
+            else MessageBox.Show("Edit tour successful");
             btnBack.PerformClick();
         }
         private void txtTextChange(object sender, EventArgs e)
@@ -195,6 +198,47 @@ namespace PBL3.View.tour
         {
             this.Hide();
             tourManagement.Reload();
+        }
+        private bool ValidateForm()
+        {
+            Validate validate = new Validate();
+            if (txtTourName.Text == "")
+            {
+                MessageBox.Show("Tour's name can't null");
+                txtTourName.Focus();
+                return false;
+            }
+            if(!validate.ValidateNumber(txtTotalPriceService.Text))
+            {
+                MessageBox.Show("Total price service must be number");
+                txtTotalPriceService.Focus();
+                return false;
+            }
+            if (!validate.ValidateNumber(txtProfit.Text))
+            {
+                MessageBox.Show("Profit (%) must be number");
+                txtProfit.Focus();
+                return false;
+            }
+            if (!validate.ValidateNumber(txtVAT.Text))
+            {
+                MessageBox.Show("VAT (%) must be number");
+                txtVAT.Focus();
+                return false;
+            }
+            if (!validate.ValidateNumber(txtPricePercentChildren.Text))
+            {
+                MessageBox.Show("Price Percent Children (%) must be number");
+                txtPricePercentChildren.Focus();
+                return false;
+            }
+            if(string.IsNullOrEmpty(rtbShortDesc.Text))
+            {
+                MessageBox.Show("Please enter short description");
+                rtbShortDesc.Focus();
+                return false;
+            }
+            return true;
         }
     }
 }
