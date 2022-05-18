@@ -33,9 +33,6 @@
             this.fileSystemWatcher2 = new System.IO.FileSystemWatcher();
             this.name = new System.Windows.Forms.Label();
             this.panelContent = new System.Windows.Forms.Panel();
-            this.tourManagement1 = new PBL3.View.TourManagement();
-            this.employeeManagement1 = new PBL3.EmployeeManagement();
-            this.customer1 = new PBL3.View.admin.CustomerManagement();
             this.btnEmployee = new System.Windows.Forms.Button();
             this.btnStatistic = new System.Windows.Forms.Button();
             this.btnCustomer = new System.Windows.Forms.Button();
@@ -56,7 +53,11 @@
             this.toolTip7 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip8 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip9 = new System.Windows.Forms.ToolTip(this.components);
+            this.btnBackHomepage = new System.Windows.Forms.Button();
             this.accountEmployee1 = new PBL3.View.AccountEmployee();
+            this.tourManagement1 = new PBL3.View.TourManagement();
+            this.employeeManagement1 = new PBL3.EmployeeManagement();
+            this.customer1 = new PBL3.View.admin.CustomerManagement();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher2)).BeginInit();
             this.panelContent.SuspendLayout();
@@ -99,35 +100,6 @@
             this.panelContent.Name = "panelContent";
             this.panelContent.Size = new System.Drawing.Size(867, 567);
             this.panelContent.TabIndex = 30;
-            // 
-            // tourManagement1
-            // 
-            this.tourManagement1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
-            this.tourManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tourManagement1.Location = new System.Drawing.Point(0, 0);
-            this.tourManagement1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tourManagement1.Name = "tourManagement1";
-            this.tourManagement1.Size = new System.Drawing.Size(867, 567);
-            this.tourManagement1.TabIndex = 2;
-            // 
-            // employeeManagement1
-            // 
-            this.employeeManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.employeeManagement1.Location = new System.Drawing.Point(0, 0);
-            this.employeeManagement1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.employeeManagement1.Name = "employeeManagement1";
-            this.employeeManagement1.Size = new System.Drawing.Size(867, 567);
-            this.employeeManagement1.TabIndex = 0;
-            // 
-            // customer1
-            // 
-            this.customer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
-            this.customer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customer1.Location = new System.Drawing.Point(0, 0);
-            this.customer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.customer1.Name = "customer1";
-            this.customer1.Size = new System.Drawing.Size(867, 567);
-            this.customer1.TabIndex = 1;
             // 
             // btnEmployee
             // 
@@ -201,6 +173,7 @@
             // navbar
             // 
             this.navbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
+            this.navbar.Controls.Add(this.btnBackHomepage);
             this.navbar.Controls.Add(this.btnAccountEmployee);
             this.navbar.Controls.Add(this.btnTour);
             this.navbar.Controls.Add(this.label1);
@@ -316,6 +289,29 @@
             this.SidebarTimer.Interval = 10;
             this.SidebarTimer.Tick += new System.EventHandler(this.SidebarTimer_Click);
             // 
+            // btnBackHomepage
+            // 
+            this.btnBackHomepage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
+            this.btnBackHomepage.CausesValidation = false;
+            this.btnBackHomepage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBackHomepage.FlatAppearance.BorderSize = 0;
+            this.btnBackHomepage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.btnBackHomepage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBackHomepage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBackHomepage.ForeColor = System.Drawing.Color.White;
+            this.btnBackHomepage.Image = global::PBL3.Properties.Resources.customer;
+            this.btnBackHomepage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBackHomepage.Location = new System.Drawing.Point(0, 491);
+            this.btnBackHomepage.Name = "btnBackHomepage";
+            this.btnBackHomepage.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnBackHomepage.Size = new System.Drawing.Size(199, 40);
+            this.btnBackHomepage.TabIndex = 34;
+            this.btnBackHomepage.TabStop = false;
+            this.btnBackHomepage.Text = "Back home";
+            this.toolTip3.SetToolTip(this.btnBackHomepage, "Customer");
+            this.btnBackHomepage.UseVisualStyleBackColor = false;
+            this.btnBackHomepage.Click += new System.EventHandler(this.btnBackHomepage_Click);
+            // 
             // accountEmployee1
             // 
             this.accountEmployee1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -323,6 +319,35 @@
             this.accountEmployee1.Name = "accountEmployee1";
             this.accountEmployee1.Size = new System.Drawing.Size(867, 567);
             this.accountEmployee1.TabIndex = 3;
+            // 
+            // tourManagement1
+            // 
+            this.tourManagement1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
+            this.tourManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tourManagement1.Location = new System.Drawing.Point(0, 0);
+            this.tourManagement1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tourManagement1.Name = "tourManagement1";
+            this.tourManagement1.Size = new System.Drawing.Size(867, 567);
+            this.tourManagement1.TabIndex = 2;
+            // 
+            // employeeManagement1
+            // 
+            this.employeeManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.employeeManagement1.Location = new System.Drawing.Point(0, 0);
+            this.employeeManagement1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.employeeManagement1.Name = "employeeManagement1";
+            this.employeeManagement1.Size = new System.Drawing.Size(867, 567);
+            this.employeeManagement1.TabIndex = 0;
+            // 
+            // customer1
+            // 
+            this.customer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
+            this.customer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customer1.Location = new System.Drawing.Point(0, 0);
+            this.customer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.customer1.Name = "customer1";
+            this.customer1.Size = new System.Drawing.Size(867, 567);
+            this.customer1.TabIndex = 1;
             // 
             // AdminManagement
             // 
@@ -377,5 +402,6 @@
         private TourManagement tourManagement1;
         private System.Windows.Forms.Button btnAccountEmployee;
         private AccountEmployee accountEmployee1;
+        private System.Windows.Forms.Button btnBackHomepage;
     }
 }

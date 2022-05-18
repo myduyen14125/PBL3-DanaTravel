@@ -117,5 +117,11 @@ namespace DAO
         {
             return EntityManager.Instance.Accounts.Where(a => a.username == username).FirstOrDefault();
         }
+        public void ChangeStatusAccount(int id, bool status)
+        {
+            var account = EntityManager.Instance.Accounts.Single(ac => ac.id == id);
+            account.status = status;
+            EntityManager.Instance.SaveChanges();
+        }
     }
 }

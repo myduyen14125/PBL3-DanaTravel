@@ -22,12 +22,17 @@ namespace PBL3.View
         {
             if(!this.DesignMode)
             {
-                dataAccount.DataSource = AccountBUS.Instance.GetDataTableEmployeeAccounts();
                 btnLock.Enabled = false;
                 btnUnlock.Enabled = false;
+                ShowDataAccount();
             }
         }
-
+        private void ShowDataAccount()
+        {
+            dataAccount.DataSource = AccountBUS.Instance.GetDataTableEmployeeAccounts();
+            dataAccount.Columns["ID"].Visible = false;
+            txtTotal.Text = (dataAccount.Rows.Count - 1).ToString();
+        }
         private void dataAccount_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             btnLock.Enabled = true;
@@ -36,21 +41,40 @@ namespace PBL3.View
 
         private void btnLock_Click(object sender, EventArgs e)
         {
-            // Lock: khóa
-            if(!Convert.ToBoolean(dataAccount.CurrentRow.Cells[4].Value))
+            DialogResult result = MessageBox.Show("Do you want to lock account " + dataAccount.CurrentRow.Cells[4].Value, "Notify", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
             {
-                
-            }
-            MessageBox.Show("Account " + dataAccount.CurrentRow.Cells[3].Value + " has been lock");
+                if (Convert.ToBoolean(dataAccount.CurrentRow.Cells[5].Value))
+                {
+                    AccountBUS.Instance.ChangeStatusAccount(Convert.ToInt32(dataAccount.CurrentRow.Cells[1].Value), false);
+                    dataAccount.CurrentRow.Cells[5].Value = false;
+                }
+                MessageBox.Show("Account " + dataAccount.CurrentRow.Cells[4].Value + " has been lock");
+            } 
+            btnLock.Enabled = false;
+            btnUnlock.Enabled = false;
+
         }
 
         private void btnUnlock_Click(object sender, EventArgs e)
         {
-            if (Convert.ToBoolean(dataAccount.CurrentRow.Cells[4].Value))
+            DialogResult result = MessageBox.Show("Do you want to lock account " + dataAccount.CurrentRow.Cells[4].Value, "Notify", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
             {
-                
+                if (!Convert.ToBoolean(dataAccount.CurrentRow.Cells[5].Value))
+                {
+                    AccountBUS.Instance.ChangeStatusAccount(Convert.ToInt32(dataAccount.CurrentRow.Cells[1].Value), true);
+                    dataAccount.CurrentRow.Cells[5].Value = true;
+                }
+                MessageBox.Show("Account " + dataAccount.CurrentRow.Cells[4].Value + " has been unlock");
             }
-            MessageBox.Show("Account " + dataAccount.CurrentRow.Cells[3].Value + " has been unlock");
+            btnLock.Enabled = false;
+            btnUnlock.Enabled = false;
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

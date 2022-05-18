@@ -42,7 +42,8 @@ namespace PBL3
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
-            AdminManagement f = new AdminManagement();
+            this.Hide();
+            AdminManagement f = new AdminManagement(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
         }

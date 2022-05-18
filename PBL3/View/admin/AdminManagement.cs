@@ -8,17 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Sql;
+using DTO;
 
 namespace PBL3.View.admin
 {
     public partial class AdminManagement : Form
     {
         bool sidebarExpand;
-        public AdminManagement()
+        private Account account;
+        public AdminManagement(Account ac)
         {
             InitializeComponent();
             Load += AdminManagement_Load;
             btnStatistic.Location = new Point(0, 362);
+            account = ac;
         }
         public void SetActivePanel(UserControl control)
         {
@@ -81,5 +84,12 @@ namespace PBL3.View.admin
             SidebarTimer.Start();
         }
 
+        private void btnBackHomepage_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Homepage homepage = new Homepage(account);
+            homepage.Closed += (s, args) => this.Close();
+            homepage.Show();
+        }
     }
 }

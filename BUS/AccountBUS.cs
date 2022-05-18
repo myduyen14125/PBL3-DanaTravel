@@ -31,16 +31,18 @@ namespace BUS
 
             dt.Columns.AddRange(new DataColumn[]
             {
+                new DataColumn {ColumnName = "STT", DataType = typeof(int)},
                 new DataColumn {ColumnName="ID", DataType = typeof(int)},
                 new DataColumn {ColumnName = "Name", DataType = typeof(string)},
                 new DataColumn {ColumnName = "Identity Card", DataType = typeof(string)},
                 new DataColumn {ColumnName = "Account", DataType = typeof(string)},
                 new DataColumn {ColumnName = "Status", DataType = typeof(bool)}
             });
-
+            int i = 1;
             foreach (AccountDTO ac in accounts)
             {
-                dt.Rows.Add(ac.id, ac.name, ac.idCard, ac.username, ac.status);
+                dt.Rows.Add(i, ac.id, ac.name, ac.idCard, ac.username, ac.status);
+                i++;
             }
             return dt;
         }
@@ -75,6 +77,10 @@ namespace BUS
         public Account GetAccountByUsername(string username)
         {
             return AccountDAO.Instance.GetAccountByUsername(username);
+        }
+        public void ChangeStatusAccount(int id, bool status)
+        {
+            AccountDAO.Instance.ChangeStatusAccount(id, status);
         }
     }
 }
