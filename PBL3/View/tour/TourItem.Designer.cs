@@ -84,6 +84,7 @@ namespace PBL3.View.tour
             this.btnDetail.TabIndex = 41;
             this.btnDetail.Text = "Detail";
             this.btnDetail.UseVisualStyleBackColor = true;
+            this.btnDetail.Click += new System.EventHandler(this.btnDetail_Click);
             // 
             // panelPicture
             // 

@@ -29,3 +29,14 @@ E:\Nam 2\NET_WF\pbl3\PBL3-DanaTravel\Util\obj\Debug\Util.exe
 E:\Nam 2\NET_WF\pbl3\PBL3-DanaTravel\Util\obj\Debug\Util.pdb
 D:\PBL\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.AssemblyReference.cache
 D:\PBL\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.SuggestedBindingRedirects.cache
+C:\Users\Laptop\source\repos\PBL3-DanaTravel\Util\bin\Debug\Util.exe.config
+C:\Users\Laptop\source\repos\PBL3-DanaTravel\Util\bin\Debug\Util.exe
+C:\Users\Laptop\source\repos\PBL3-DanaTravel\Util\bin\Debug\Util.pdb
+C:\Users\Laptop\source\repos\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.AssemblyReference.cache
+C:\Users\Laptop\source\repos\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.SuggestedBindingRedirects.cache
+C:\Users\Laptop\source\repos\PBL3-DanaTravel\Util\obj\Debug\Util.Form1.resources
+C:\Users\Laptop\source\repos\PBL3-DanaTravel\Util\obj\Debug\Util.Properties.Resources.resources
+C:\Users\Laptop\source\repos\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.GenerateResource.cache
+C:\Users\Laptop\source\repos\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.CoreCompileInputs.cache
+C:\Users\Laptop\source\repos\PBL3-DanaTravel\Util\obj\Debug\Util.exe
+C:\Users\Laptop\source\repos\PBL3-DanaTravel\Util\obj\Debug\Util.pdb
