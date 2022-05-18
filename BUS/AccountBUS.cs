@@ -24,9 +24,9 @@ namespace BUS
                 return _Instance;
             }
         }
-        public DataTable GetDataTableEmployeeAccounts()
+        public DataTable GetDataTableEmployeeAccounts(string search = "")
         {
-            List<AccountDTO> accounts = GetEmployeeAccounts();
+            List<AccountDTO> accounts = GetEmployeeAccounts(search);
             DataTable dt = new DataTable();
 
             dt.Columns.AddRange(new DataColumn[]
@@ -66,9 +66,9 @@ namespace BUS
             return AccountDAO.Instance.DeleteAccount(username);
         }
 
-        public List<AccountDTO> GetEmployeeAccounts()
+        public List<AccountDTO> GetEmployeeAccounts(string search)
         {
-            return AccountDAO.Instance.GetEmployeeAccounts();
+            return AccountDAO.Instance.GetEmployeeAccounts(search);
         }
         public List<AccountDTO> GetCustomerAccounts()
         {

@@ -29,7 +29,7 @@ namespace PBL3.View
         }
         private void ShowDataAccount()
         {
-            dataAccount.DataSource = AccountBUS.Instance.GetDataTableEmployeeAccounts();
+            dataAccount.DataSource = AccountBUS.Instance.GetDataTableEmployeeAccounts(txtSearch.Text);
             dataAccount.Columns["ID"].Visible = false;
             txtTotal.Text = (dataAccount.Rows.Count - 1).ToString();
         }
@@ -74,7 +74,7 @@ namespace PBL3.View
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-
+            ShowDataAccount();
         }
     }
 }

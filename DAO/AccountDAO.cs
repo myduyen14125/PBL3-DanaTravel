@@ -73,11 +73,13 @@ namespace DAO
             }
             return true;
         }
-        public List<AccountDTO> GetEmployeeAccounts()
+        public List<AccountDTO> GetEmployeeAccounts(string search)
         {
             EntityManager db = EntityManager.Instance;
             var result =  from ac in db.Accounts
                           join e in db.Employees on ac.id equals e.account_id
+                          where (ac.username.ToLower().Contains(search) 
+                          || e.name.ToLower().Contains(search) || e.idCard.ToLower().Contains(search))
                           select new { ac.id, ac.username, ac.status, e.name, e.idCard};
             List<AccountDTO> accounts = new List<AccountDTO>();
             foreach(var i in result)
