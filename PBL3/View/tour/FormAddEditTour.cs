@@ -66,8 +66,9 @@ namespace PBL3.View.tour
                 txtPricePercentChildren.Text = tour.percent_price_children.ToString();
                 txtTotalAdult.Text = tour.price_adult_one_ticket.ToString();
                 txtTotalChildren.Text = tour.price_children_one_ticket.ToString();
+                txtTransport.Text = tour.transport;
             }
-            slider = new SliderImage(imageTours);
+            slider = new SliderImage(imageTours, true);
             panelPicture.Controls.Add(slider);
             slider.Dock = DockStyle.Fill;
         }
@@ -124,15 +125,17 @@ namespace PBL3.View.tour
             MemoryStream stream = new MemoryStream();
   
             List<TourImage> tourImages = new List<TourImage>();
-            foreach(Image image in imageTours)
+            foreach(Image image in slider.images)
             {
                 stream = new MemoryStream();
                 image.Save(stream, image.RawFormat);
                 tourImages.Add(new TourImage
                 {
-                    image = stream.ToArray()
+                    image = stream.ToArray(),
+                    tour_id = tour.id
                 });
             }
+
             double total_price_service = Convert.ToDouble(txtTotalPriceService.Text);
             double percent_profit = Convert.ToDouble(txtProfit.Text);
             double percent_VAT = Convert.ToDouble(txtVAT.Text);
@@ -155,6 +158,7 @@ namespace PBL3.View.tour
                 price_children_one_ticket = price_adult_one_ticket * Convert.ToDouble(txtPricePercentChildren.Text) / 100,
                 short_desc = rtbShortDesc.Text,
                 detail_desc = htmlDescription.DocumentText,
+                transport = txtTransport.Text,
                 TourImages = tourImages
             };
             TourBUS.Instance.Save(t);
@@ -187,6 +191,7 @@ namespace PBL3.View.tour
             txtTourName.Text = "";
             txtProfit.Text = "";
             txtVAT.Text = "";
+            txtTransport.Text = "";
             txtTotalPriceService.Text = "";
             txtPricePercentChildren.Text = "";
             txtTotalAdult.Text = "0";

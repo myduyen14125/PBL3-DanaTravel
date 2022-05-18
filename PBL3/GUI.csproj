@@ -78,6 +78,12 @@
     <Compile Include="viewHtml\TextInsertForm.Designer.cs">
       <DependentUpon>TextInsertForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\AccountEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\AccountEmployee.Designer.cs">
+      <DependentUpon>AccountEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\admin\FormAddEditCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="viewHtml\TextInsertForm.resx">
       <DependentUpon>TextInsertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AccountEmployee.resx">
+      <DependentUpon>AccountEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\admin\AdminManagement.resx">
       <DependentUpon>AdminManagement.cs</DependentUpon>

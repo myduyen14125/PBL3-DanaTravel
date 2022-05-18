@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountDTO.cs" />
     <Compile Include="CodeFirstDB\Account.cs" />
     <Compile Include="CodeFirstDB\BaseClass.cs" />
     <Compile Include="CodeFirstDB\CreateDB.cs" />

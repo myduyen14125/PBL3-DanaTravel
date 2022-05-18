@@ -61,6 +61,8 @@ namespace PBL3.View.tour
             this.txtImage = new System.Windows.Forms.Label();
             this.panelPicture = new System.Windows.Forms.Panel();
             this.btnAddImage = new System.Windows.Forms.Button();
+            this.lbTransport = new System.Windows.Forms.Label();
+            this.txtTransport = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // TourCategory
@@ -84,7 +86,7 @@ namespace PBL3.View.tour
             // 
             this.lbTitle.AutoSize = true;
             this.lbTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbTitle.Location = new System.Drawing.Point(509, 16);
+            this.lbTitle.Location = new System.Drawing.Point(530, 17);
             this.lbTitle.Name = "lbTitle";
             this.lbTitle.Size = new System.Drawing.Size(96, 31);
             this.lbTitle.TabIndex = 66;
@@ -92,7 +94,7 @@ namespace PBL3.View.tour
             // 
             // txtPricePercentChildren
             // 
-            this.txtPricePercentChildren.Location = new System.Drawing.Point(712, 114);
+            this.txtPricePercentChildren.Location = new System.Drawing.Point(712, 146);
             this.txtPricePercentChildren.Name = "txtPricePercentChildren";
             this.txtPricePercentChildren.Size = new System.Drawing.Size(125, 22);
             this.txtPricePercentChildren.TabIndex = 65;
@@ -101,7 +103,7 @@ namespace PBL3.View.tour
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(577, 114);
+            this.label4.Location = new System.Drawing.Point(559, 146);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(142, 17);
             this.label4.TabIndex = 64;
@@ -110,7 +112,7 @@ namespace PBL3.View.tour
             // txtTotalChildren
             // 
             this.txtTotalChildren.Enabled = false;
-            this.txtTotalChildren.Location = new System.Drawing.Point(968, 154);
+            this.txtTotalChildren.Location = new System.Drawing.Point(968, 192);
             this.txtTotalChildren.Name = "txtTotalChildren";
             this.txtTotalChildren.Size = new System.Drawing.Size(144, 22);
             this.txtTotalChildren.TabIndex = 63;
@@ -118,7 +120,7 @@ namespace PBL3.View.tour
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(858, 157);
+            this.label3.Location = new System.Drawing.Point(858, 192);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 17);
             this.label3.TabIndex = 62;
@@ -127,7 +129,7 @@ namespace PBL3.View.tour
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(858, 68);
+            this.label2.Location = new System.Drawing.Point(858, 101);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 17);
             this.label2.TabIndex = 61;
@@ -136,7 +138,7 @@ namespace PBL3.View.tour
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(858, 117);
+            this.label1.Location = new System.Drawing.Point(858, 146);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 17);
             this.label1.TabIndex = 60;
@@ -144,7 +146,7 @@ namespace PBL3.View.tour
             // 
             // txtProfit
             // 
-            this.txtProfit.Location = new System.Drawing.Point(968, 68);
+            this.txtProfit.Location = new System.Drawing.Point(968, 96);
             this.txtProfit.Name = "txtProfit";
             this.txtProfit.Size = new System.Drawing.Size(144, 22);
             this.txtProfit.TabIndex = 59;
@@ -152,7 +154,7 @@ namespace PBL3.View.tour
             // 
             // txtVAT
             // 
-            this.txtVAT.Location = new System.Drawing.Point(968, 114);
+            this.txtVAT.Location = new System.Drawing.Point(968, 146);
             this.txtVAT.Name = "txtVAT";
             this.txtVAT.Size = new System.Drawing.Size(144, 22);
             this.txtVAT.TabIndex = 58;
@@ -160,7 +162,7 @@ namespace PBL3.View.tour
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(379, 651);
+            this.btnBack.Location = new System.Drawing.Point(368, 653);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(75, 33);
             this.btnBack.TabIndex = 57;
@@ -191,7 +193,7 @@ namespace PBL3.View.tour
             // txtTotalAdult
             // 
             this.txtTotalAdult.Enabled = false;
-            this.txtTotalAdult.Location = new System.Drawing.Point(712, 154);
+            this.txtTotalAdult.Location = new System.Drawing.Point(712, 192);
             this.txtTotalAdult.Name = "txtTotalAdult";
             this.txtTotalAdult.Size = new System.Drawing.Size(125, 22);
             this.txtTotalAdult.TabIndex = 54;
@@ -199,7 +201,7 @@ namespace PBL3.View.tour
             // lbTotal
             // 
             this.lbTotal.AutoSize = true;
-            this.lbTotal.Location = new System.Drawing.Point(577, 154);
+            this.lbTotal.Location = new System.Drawing.Point(559, 200);
             this.lbTotal.Name = "lbTotal";
             this.lbTotal.Size = new System.Drawing.Size(84, 17);
             this.lbTotal.TabIndex = 53;
@@ -208,7 +210,7 @@ namespace PBL3.View.tour
             // lbDescription
             // 
             this.lbDescription.AutoSize = true;
-            this.lbDescription.Location = new System.Drawing.Point(46, 443);
+            this.lbDescription.Location = new System.Drawing.Point(46, 465);
             this.lbDescription.Name = "lbDescription";
             this.lbDescription.Size = new System.Drawing.Size(79, 17);
             this.lbDescription.TabIndex = 51;
@@ -265,7 +267,7 @@ namespace PBL3.View.tour
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(40, 245);
+            this.label5.Location = new System.Drawing.Point(559, 266);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(117, 17);
             this.label5.TabIndex = 72;
@@ -273,16 +275,16 @@ namespace PBL3.View.tour
             // 
             // rtbShortDesc
             // 
-            this.rtbShortDesc.Location = new System.Drawing.Point(173, 245);
+            this.rtbShortDesc.Location = new System.Drawing.Point(712, 245);
             this.rtbShortDesc.Name = "rtbShortDesc";
-            this.rtbShortDesc.Size = new System.Drawing.Size(307, 92);
+            this.rtbShortDesc.Size = new System.Drawing.Size(400, 148);
             this.rtbShortDesc.TabIndex = 73;
             this.rtbShortDesc.Text = "";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(577, 68);
+            this.label6.Location = new System.Drawing.Point(559, 106);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(124, 17);
             this.label6.TabIndex = 74;
@@ -290,7 +292,7 @@ namespace PBL3.View.tour
             // 
             // txtTotalPriceService
             // 
-            this.txtTotalPriceService.Location = new System.Drawing.Point(712, 62);
+            this.txtTotalPriceService.Location = new System.Drawing.Point(712, 101);
             this.txtTotalPriceService.Name = "txtTotalPriceService";
             this.txtTotalPriceService.Size = new System.Drawing.Size(125, 22);
             this.txtTotalPriceService.TabIndex = 75;
@@ -299,7 +301,7 @@ namespace PBL3.View.tour
             // btnOpen
             // 
             this.btnOpen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOpen.Location = new System.Drawing.Point(43, 479);
+            this.btnOpen.Location = new System.Drawing.Point(40, 504);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(94, 50);
             this.btnOpen.TabIndex = 76;
@@ -309,16 +311,16 @@ namespace PBL3.View.tour
             // 
             // htmlDescription
             // 
-            this.htmlDescription.Location = new System.Drawing.Point(173, 362);
+            this.htmlDescription.Location = new System.Drawing.Point(173, 414);
             this.htmlDescription.MinimumSize = new System.Drawing.Size(20, 20);
             this.htmlDescription.Name = "htmlDescription";
-            this.htmlDescription.Size = new System.Drawing.Size(939, 262);
+            this.htmlDescription.Size = new System.Drawing.Size(939, 222);
             this.htmlDescription.TabIndex = 77;
             // 
             // txtImage
             // 
             this.txtImage.AutoSize = true;
-            this.txtImage.Location = new System.Drawing.Point(580, 204);
+            this.txtImage.Location = new System.Drawing.Point(58, 285);
             this.txtImage.Name = "txtImage";
             this.txtImage.Size = new System.Drawing.Size(46, 17);
             this.txtImage.TabIndex = 78;
@@ -327,26 +329,44 @@ namespace PBL3.View.tour
             // panelPicture
             // 
             this.panelPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelPicture.Location = new System.Drawing.Point(712, 197);
+            this.panelPicture.Location = new System.Drawing.Point(173, 242);
             this.panelPicture.Name = "panelPicture";
-            this.panelPicture.Size = new System.Drawing.Size(295, 159);
+            this.panelPicture.Size = new System.Drawing.Size(185, 151);
             this.panelPicture.TabIndex = 79;
             // 
             // btnAddImage
             // 
             this.btnAddImage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddImage.Location = new System.Drawing.Point(564, 245);
+            this.btnAddImage.Location = new System.Drawing.Point(40, 315);
             this.btnAddImage.Name = "btnAddImage";
-            this.btnAddImage.Size = new System.Drawing.Size(97, 36);
+            this.btnAddImage.Size = new System.Drawing.Size(94, 40);
             this.btnAddImage.TabIndex = 80;
-            this.btnAddImage.Text = "Add Image";
+            this.btnAddImage.Text = "Add";
             this.btnAddImage.UseVisualStyleBackColor = true;
             this.btnAddImage.Click += new System.EventHandler(this.btnAddImage_Click);
+            // 
+            // lbTransport
+            // 
+            this.lbTransport.AutoSize = true;
+            this.lbTransport.Location = new System.Drawing.Point(556, 65);
+            this.lbTransport.Name = "lbTransport";
+            this.lbTransport.Size = new System.Drawing.Size(70, 17);
+            this.lbTransport.TabIndex = 81;
+            this.lbTransport.Text = "Transport";
+            // 
+            // txtTransport
+            // 
+            this.txtTransport.Location = new System.Drawing.Point(712, 62);
+            this.txtTransport.Name = "txtTransport";
+            this.txtTransport.Size = new System.Drawing.Size(400, 22);
+            this.txtTransport.TabIndex = 82;
             // 
             // FormAddEditTour
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtTransport);
+            this.Controls.Add(this.lbTransport);
             this.Controls.Add(this.btnAddImage);
             this.Controls.Add(this.panelPicture);
             this.Controls.Add(this.txtImage);
@@ -420,5 +440,7 @@ namespace PBL3.View.tour
         private System.Windows.Forms.Label txtImage;
         private System.Windows.Forms.Panel panelPicture;
         private System.Windows.Forms.Button btnAddImage;
+        private System.Windows.Forms.Label lbTransport;
+        private System.Windows.Forms.TextBox txtTransport;
     }
 }

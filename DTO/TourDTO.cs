@@ -13,6 +13,7 @@ namespace DTO
         public string name { get; set; }
         public string short_desc { get; set; }
         public string detail_desc { get; set; }
+        public string transport { get; set; }
         public DateTime departureDate { get; set; }
         public DateTime returnDate { get; set; }
         public double total_price_service { get; set; }

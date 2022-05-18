@@ -30,7 +30,7 @@ namespace PBL3.View.tour
         {
             List<Image> images = new List<Image>();
             foreach (TourImage tourImage in tourDTO.TourImages) images.Add(Image.FromStream(new MemoryStream(tourImage.image)));
-            SliderImage sliderImage = new SliderImage(images);
+            SliderImage sliderImage = new SliderImage(images, false);
             panelPicture.Controls.Add(sliderImage);
             sliderImage.Dock = DockStyle.Fill;
 

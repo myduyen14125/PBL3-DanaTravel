@@ -14,6 +14,7 @@ namespace DTO
         public int id { get; set; }
         [Required]
         public string name { get; set; }
+        public string transport { get; set; }
         [Required]
         public string short_desc { get; set; }
         [Required]

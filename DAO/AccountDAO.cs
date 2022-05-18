@@ -26,29 +26,7 @@ namespace DAO
 
         public Account CheckAccount(Account ac)
         {
-            EntityManager db = EntityManager.Instance;
-            var resultAccount = (from a in db.Accounts
-                                where a.username == ac.username && a.password == ac.password
-                                select a).FirstOrDefault();
-
-            if (resultAccount == null) return null;
-
-            var resultRole = from r in db.Roles
-                             where r.Accounts.Any(t => t.username == resultAccount.username)
-                             select r;
-
-
-            List < Role > roles = new List<Role>();
-            foreach (var i in resultRole)   roles.Add(new Role { id = i.id, name = i.name });
-
-            return new Account
-            {
-                id = resultAccount.id,
-                username = resultAccount.username,
-                password = resultAccount.password,
-                status = resultAccount.status,
-                Roles = roles
-            };
+            return EntityManager.Instance.Accounts.Where(t => t.username == ac.username && t.password == ac.password).FirstOrDefault();
         }
 
         public bool ChangePassword(Account account)
@@ -95,7 +73,46 @@ namespace DAO
             }
             return true;
         }
-
+        public List<AccountDTO> GetEmployeeAccounts()
+        {
+            EntityManager db = EntityManager.Instance;
+            var result =  from ac in db.Accounts
+                          join e in db.Employees on ac.id equals e.account_id
+                          select new { ac.id, ac.username, ac.status, e.name, e.idCard};
+            List<AccountDTO> accounts = new List<AccountDTO>();
+            foreach(var i in result)
+            {
+                accounts.Add(new AccountDTO
+                {
+                    id = i.id,
+                    username = i.username,
+                    status = i.status,
+                    name = i.name,
+                    idCard = i.idCard
+                }) ;
+            }
+            return accounts;
+        }
+        public List<AccountDTO> GetCustomerAccounts()
+        {
+            EntityManager db = EntityManager.Instance;
+            var result = from ac in db.Accounts
+                         join c in db.Customers on ac.id equals c.account_id
+                         select new { ac.id, ac.username, ac.status, c.name, c.idCard };
+            List<AccountDTO> accounts = new List<AccountDTO>();
+            foreach (var i in result)
+            {
+                accounts.Add(new AccountDTO
+                {
+                    id = i.id,
+                    username = i.username,
+                    status = i.status,
+                    name = i.name,
+                    idCard = i.idCard
+                });
+            }
+            return accounts;
+        }
         public Account GetAccountByUsername(string username)
         {
             return EntityManager.Instance.Accounts.Where(a => a.username == username).FirstOrDefault();

@@ -94,3 +94,4 @@ D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.viewHtml.SearchDialog.resources
 D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.viewHtml.TextInsertForm.resources
 D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.tour.SliderImage.resources
 D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csprojAssemblyReference.cache
+D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.AccountEmployee.resources

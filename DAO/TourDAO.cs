@@ -42,6 +42,7 @@ namespace DAO
                              t.name,
                              t.short_desc,
                              t.detail_desc,
+                             t.transport,
                              t.departureDate,
                              t.returnDate,
                              ts_id = ts.id,
@@ -67,6 +68,7 @@ namespace DAO
                     name = i.name,
                     short_desc = i.short_desc,
                     detail_desc = i.detail_desc,
+                    transport = i.transport,
                     departureDate = i.departureDate,
                     returnDate = i.returnDate,
                     tour_category_id = i.tc_id,
@@ -91,6 +93,10 @@ namespace DAO
         public void Save(Tour t)
         {
             EntityManager db = EntityManager.Instance;
+            List<TourImage> tourImages = db.TourImages.Where(ti => ti.tour_id == t.id).ToList();
+            db.TourImages.RemoveRange(tourImages);
+            db.TourImages.AddRange(t.TourImages);
+
             if (t.id == 0)
             {
                 db.Tours.Add(t);
@@ -101,6 +107,7 @@ namespace DAO
                 data.name = t.name;
                 data.short_desc = t.short_desc;
                 data.detail_desc = t.detail_desc;
+                data.transport = t.transport;
                 data.departureDate = t.departureDate;
                 data.returnDate = t.returnDate;
                 data.total_price_service = t.total_price_service;
@@ -112,7 +119,6 @@ namespace DAO
                 data.tour_status_id = t.tour_status_id;
                 data.tour_category_id = t.tour_category_id;
                 data.tour_category_id = t.tour_category_id;
-                data.TourImages = t.TourImages;
             }
             db.SaveChanges();
         }
@@ -120,7 +126,7 @@ namespace DAO
         public void Delete(int id)
         {
             EntityManager db = EntityManager.Instance;
-            var data = db.Tours.Single(s => s.id == id);
+            var data = db.Tours.Single(t => t.id == id);
             db.Tours.Remove(data);
             db.SaveChanges();
         }

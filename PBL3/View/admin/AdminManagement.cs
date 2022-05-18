@@ -26,6 +26,7 @@ namespace PBL3.View.admin
             employeeManagement1.Visible = false;
             customer1.Visible = false;
             tourManagement1.Visible = false;
+            accountEmployee1.Visible = false;
             control.Visible = true;
         }
 
@@ -48,7 +49,10 @@ namespace PBL3.View.admin
         {
             SetActivePanel(tourManagement1);
         }
-
+        private void btnAccountEmployee_Click(object sender, EventArgs e)
+        {
+            SetActivePanel(accountEmployee1);
+        }
         private void SidebarTimer_Click(object sender, EventArgs e)
         {
             if (sidebarExpand)
@@ -76,5 +80,6 @@ namespace PBL3.View.admin
         {
             SidebarTimer.Start();
         }
+
     }
 }
