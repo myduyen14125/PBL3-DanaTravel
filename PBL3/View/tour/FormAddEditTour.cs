@@ -29,7 +29,7 @@ namespace PBL3.View.tour
             InitializeComponent();
             this.tour = tour;
             this.tourManagement = tourManagement;
-            if(!this.DesignMode)
+            if (!this.DesignMode)
             {
                 SetGUIForm();
             }
@@ -55,8 +55,8 @@ namespace PBL3.View.tour
                 }
                 lbTitle.Text = "EDIT TOUR";
                 txtTourName.Text = tour.name;
-                dtpNgayDen.Value = tour.departureDate;
-                dtpNgayDi.Value = tour.returnDate;
+                dtpDepartureDate.Value = tour.departureDate;
+                dtpReturnDate.Value = tour.returnDate;
                 cbbTourCategory.SelectedIndex = cbbTourCategory.FindStringExact(tour.tour_category_name);
                 rtbShortDesc.Text = tour.short_desc;
                 htmlDescription.DocumentText = tour.detail_desc;
@@ -120,12 +120,12 @@ namespace PBL3.View.tour
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (!ValidateForm())   return;
+            if (!ValidateForm()) return;
 
             MemoryStream stream = new MemoryStream();
-  
+
             List<TourImage> tourImages = new List<TourImage>();
-            foreach(Image image in slider.images)
+            foreach (Image image in slider.images)
             {
                 stream = new MemoryStream();
                 image.Save(stream, image.RawFormat);
@@ -146,8 +146,8 @@ namespace PBL3.View.tour
             {
                 id = tour.id,
                 name = txtTourName.Text,
-                departureDate = Convert.ToDateTime(dtpNgayDen.Value.ToString()),
-                returnDate = Convert.ToDateTime(dtpNgayDi.Value.ToString()),
+                departureDate = Convert.ToDateTime(dtpDepartureDate.Value.ToString()),
+                returnDate = Convert.ToDateTime(dtpReturnDate.Value.ToString()),
                 tour_category_id = (cbbTourCategory.SelectedItem as dynamic).Value,
                 tour_status_id = 1,
                 total_price_service = total_price_service,
@@ -162,7 +162,7 @@ namespace PBL3.View.tour
                 TourImages = tourImages
             };
             TourBUS.Instance.Save(t);
-            if(tour.id == 0) MessageBox.Show("Add new tour successful");
+            if (tour.id == 0) MessageBox.Show("Add new tour successful");
             else MessageBox.Show("Edit tour successful");
             btnBack.PerformClick();
         }
@@ -197,8 +197,8 @@ namespace PBL3.View.tour
             txtTotalAdult.Text = "0";
             txtTotalChildren.Text = "0";
             rtbShortDesc.Text = "";
-            dtpNgayDen.Value = DateTime.Today;
-            dtpNgayDi.Value = DateTime.Today;
+            dtpDepartureDate.Value = DateTime.Today;
+            dtpReturnDate.Value = DateTime.Today;
             SetHTMLDescription("");
         }
 
@@ -216,7 +216,7 @@ namespace PBL3.View.tour
                 txtTourName.Focus();
                 return false;
             }
-            if(!validate.ValidateNumber(txtTotalPriceService.Text))
+            if (!validate.ValidateNumber(txtTotalPriceService.Text))
             {
                 MessageBox.Show("Total price service must be number");
                 txtTotalPriceService.Focus();
@@ -240,7 +240,7 @@ namespace PBL3.View.tour
                 txtPricePercentChildren.Focus();
                 return false;
             }
-            if(string.IsNullOrEmpty(rtbShortDesc.Text))
+            if (string.IsNullOrEmpty(rtbShortDesc.Text))
             {
                 MessageBox.Show("Please enter short description");
                 rtbShortDesc.Focus();

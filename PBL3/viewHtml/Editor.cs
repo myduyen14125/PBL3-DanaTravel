@@ -201,7 +201,7 @@ namespace PBL3.viewHtml
                 else
                 {
                     webBrowser1.Document.Write(value);
-                    fontComboBox.SelectedIndex = 317;
+                    fontComboBox.SelectedIndex = 217;
                     fontSizeComboBox.SelectedIndex = 3;
                 }
             }

@@ -46,9 +46,9 @@ namespace PBL3.View.tour
             this.txtTotalAdult = new System.Windows.Forms.TextBox();
             this.lbTotal = new System.Windows.Forms.Label();
             this.lbDescription = new System.Windows.Forms.Label();
-            this.dtpNgayDen = new System.Windows.Forms.DateTimePicker();
+            this.dtpDepartureDate = new System.Windows.Forms.DateTimePicker();
             this.lbReturnDate = new System.Windows.Forms.Label();
-            this.dtpNgayDi = new System.Windows.Forms.DateTimePicker();
+            this.dtpReturnDate = new System.Windows.Forms.DateTimePicker();
             this.lbDepartureDate = new System.Windows.Forms.Label();
             this.txtTourName = new System.Windows.Forms.TextBox();
             this.lbTourName = new System.Windows.Forms.Label();
@@ -77,7 +77,7 @@ namespace PBL3.View.tour
             // cbbTourCategory
             // 
             this.cbbTourCategory.FormattingEnabled = true;
-            this.cbbTourCategory.Location = new System.Drawing.Point(173, 197);
+            this.cbbTourCategory.Location = new System.Drawing.Point(173, 194);
             this.cbbTourCategory.Name = "cbbTourCategory";
             this.cbbTourCategory.Size = new System.Drawing.Size(307, 24);
             this.cbbTourCategory.TabIndex = 70;
@@ -216,12 +216,12 @@ namespace PBL3.View.tour
             this.lbDescription.TabIndex = 51;
             this.lbDescription.Text = "Description";
             // 
-            // dtpNgayDen
+            // dtpDepartureDate
             // 
-            this.dtpNgayDen.Location = new System.Drawing.Point(173, 149);
-            this.dtpNgayDen.Name = "dtpNgayDen";
-            this.dtpNgayDen.Size = new System.Drawing.Size(307, 22);
-            this.dtpNgayDen.TabIndex = 47;
+            this.dtpDepartureDate.Location = new System.Drawing.Point(173, 106);
+            this.dtpDepartureDate.Name = "dtpDepartureDate";
+            this.dtpDepartureDate.Size = new System.Drawing.Size(307, 22);
+            this.dtpDepartureDate.TabIndex = 47;
             // 
             // lbReturnDate
             // 
@@ -232,12 +232,12 @@ namespace PBL3.View.tour
             this.lbReturnDate.TabIndex = 46;
             this.lbReturnDate.Text = "Return Date";
             // 
-            // dtpNgayDi
+            // dtpReturnDate
             // 
-            this.dtpNgayDi.Location = new System.Drawing.Point(173, 106);
-            this.dtpNgayDi.Name = "dtpNgayDi";
-            this.dtpNgayDi.Size = new System.Drawing.Size(307, 22);
-            this.dtpNgayDi.TabIndex = 45;
+            this.dtpReturnDate.Location = new System.Drawing.Point(173, 149);
+            this.dtpReturnDate.Name = "dtpReturnDate";
+            this.dtpReturnDate.Size = new System.Drawing.Size(307, 22);
+            this.dtpReturnDate.TabIndex = 45;
             // 
             // lbDepartureDate
             // 
@@ -393,9 +393,9 @@ namespace PBL3.View.tour
             this.Controls.Add(this.txtTotalAdult);
             this.Controls.Add(this.lbTotal);
             this.Controls.Add(this.lbDescription);
-            this.Controls.Add(this.dtpNgayDen);
+            this.Controls.Add(this.dtpDepartureDate);
             this.Controls.Add(this.lbReturnDate);
-            this.Controls.Add(this.dtpNgayDi);
+            this.Controls.Add(this.dtpReturnDate);
             this.Controls.Add(this.lbDepartureDate);
             this.Controls.Add(this.txtTourName);
             this.Controls.Add(this.lbTourName);
@@ -425,9 +425,9 @@ namespace PBL3.View.tour
         private System.Windows.Forms.TextBox txtTotalAdult;
         private System.Windows.Forms.Label lbTotal;
         private System.Windows.Forms.Label lbDescription;
-        private System.Windows.Forms.DateTimePicker dtpNgayDen;
+        private System.Windows.Forms.DateTimePicker dtpDepartureDate;
         private System.Windows.Forms.Label lbReturnDate;
-        private System.Windows.Forms.DateTimePicker dtpNgayDi;
+        private System.Windows.Forms.DateTimePicker dtpReturnDate;
         private System.Windows.Forms.Label lbDepartureDate;
         private System.Windows.Forms.TextBox txtTourName;
         private System.Windows.Forms.Label lbTourName;

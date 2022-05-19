@@ -59,5 +59,14 @@ namespace PBL3.View.tour
             }
             tourManagement.Reload();
         }
+
+        private void btnDetail_Click(object sender, EventArgs e)
+        {
+            FormTourDetail formTourDetail = new FormTourDetail(tourDTO, false);
+            formTourDetail.d = new FormTourDetail.Mydel(tourManagement.Reload);
+            formTourDetail.Dock = DockStyle.Fill;
+            tourManagement.Controls.Add(formTourDetail);
+            tourManagement.HideTourManagement();
+        }
     }
 }

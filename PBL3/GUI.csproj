@@ -176,6 +176,12 @@
     <Compile Include="View\tour\FormAddEditTour.Designer.cs">
       <DependentUpon>FormAddEditTour.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\tour\FormBookTour.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\tour\FormBookTour.Designer.cs">
+      <DependentUpon>FormBookTour.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\tour\FormTourDetail.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -260,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\tour\FormAddEditTour.resx">
       <DependentUpon>FormAddEditTour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\tour\FormBookTour.resx">
+      <DependentUpon>FormBookTour.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\tour\FormTourDetail.resx">
       <DependentUpon>FormTourDetail.cs</DependentUpon>
