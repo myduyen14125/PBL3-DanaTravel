@@ -33,6 +33,14 @@ namespace PBL3.View.tour
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnBack = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtPriceChildren = new System.Windows.Forms.Label();
+            this.txtPriceAdult = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lbTime = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.lbTourName1 = new System.Windows.Forms.Label();
@@ -41,14 +49,6 @@ namespace PBL3.View.tour
             this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.lbDepartureDate1 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.txtPriceAdult = new System.Windows.Forms.Label();
-            this.txtPriceChildren = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lbName = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -67,30 +67,33 @@ namespace PBL3.View.tour
             this.txtNumberChildrens = new System.Windows.Forms.TextBox();
             this.txtTotalPrice = new System.Windows.Forms.TextBox();
             this.btnBookTour = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(42, 70);
+            this.panel1.Location = new System.Drawing.Point(119, 82);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(350, 292);
+            this.panel1.Size = new System.Drawing.Size(364, 292);
             this.panel1.TabIndex = 3;
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(262, 645);
+            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBack.Location = new System.Drawing.Point(338, 640);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(93, 40);
             this.btnBack.TabIndex = 9;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // panel2
             // 
@@ -111,10 +114,90 @@ namespace PBL3.View.tour
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.lbDepartureDate1);
-            this.panel2.Location = new System.Drawing.Point(475, 70);
+            this.panel2.Location = new System.Drawing.Point(570, 82);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(381, 292);
             this.panel2.TabIndex = 10;
+            // 
+            // txtPriceChildren
+            // 
+            this.txtPriceChildren.AutoSize = true;
+            this.txtPriceChildren.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPriceChildren.Location = new System.Drawing.Point(155, 254);
+            this.txtPriceChildren.Name = "txtPriceChildren";
+            this.txtPriceChildren.Size = new System.Drawing.Size(74, 20);
+            this.txtPriceChildren.TabIndex = 16;
+            this.txtPriceChildren.Text = "100VNĐ";
+            // 
+            // txtPriceAdult
+            // 
+            this.txtPriceAdult.AutoSize = true;
+            this.txtPriceAdult.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPriceAdult.Location = new System.Drawing.Point(155, 210);
+            this.txtPriceAdult.Name = "txtPriceAdult";
+            this.txtPriceAdult.Size = new System.Drawing.Size(74, 20);
+            this.txtPriceAdult.TabIndex = 15;
+            this.txtPriceAdult.Text = "100VNĐ";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(-1, 45);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(379, 2);
+            this.pictureBox3.TabIndex = 14;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 152);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(379, 2);
+            this.pictureBox2.TabIndex = 13;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1, 99);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(379, 2);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(22, 210);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(108, 20);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Giá người lớn";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.White;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(1, 196);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(379, 2);
+            this.pictureBox5.TabIndex = 10;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.White;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(0, 242);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(379, 2);
+            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabStop = false;
             // 
             // lbTime
             // 
@@ -122,7 +205,7 @@ namespace PBL3.View.tour
             this.lbTime.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTime.Location = new System.Drawing.Point(155, 116);
             this.lbTime.Name = "lbTime";
-            this.lbTime.Size = new System.Drawing.Size(53, 21);
+            this.lbTime.Size = new System.Drawing.Size(51, 20);
             this.lbTime.TabIndex = 4;
             this.lbTime.Text = "label2";
             // 
@@ -132,7 +215,7 @@ namespace PBL3.View.tour
             this.label8.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(22, 62);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 21);
+            this.label8.Size = new System.Drawing.Size(67, 20);
             this.label8.TabIndex = 1;
             this.label8.Text = "Mã tour";
             // 
@@ -140,7 +223,7 @@ namespace PBL3.View.tour
             // 
             this.lbTourName1.AutoSize = true;
             this.lbTourName1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTourName1.ForeColor = System.Drawing.Color.Tomato;
+            this.lbTourName1.ForeColor = System.Drawing.Color.DarkRed;
             this.lbTourName1.Location = new System.Drawing.Point(22, 14);
             this.lbTourName1.Name = "lbTourName1";
             this.lbTourName1.Size = new System.Drawing.Size(55, 19);
@@ -153,7 +236,7 @@ namespace PBL3.View.tour
             this.lbTourID.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTourID.Location = new System.Drawing.Point(155, 62);
             this.lbTourID.Name = "lbTourID";
-            this.lbTourID.Size = new System.Drawing.Size(53, 21);
+            this.lbTourID.Size = new System.Drawing.Size(51, 20);
             this.lbTourID.TabIndex = 2;
             this.lbTourID.Text = "label2";
             // 
@@ -163,7 +246,7 @@ namespace PBL3.View.tour
             this.label10.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(22, 116);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(80, 21);
+            this.label10.Size = new System.Drawing.Size(78, 20);
             this.label10.TabIndex = 3;
             this.label10.Text = "Thời gian";
             // 
@@ -173,7 +256,7 @@ namespace PBL3.View.tour
             this.label14.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(22, 254);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(87, 21);
+            this.label14.Size = new System.Drawing.Size(85, 20);
             this.label14.TabIndex = 7;
             this.label14.Text = "Giá trẻ em";
             // 
@@ -183,7 +266,7 @@ namespace PBL3.View.tour
             this.label12.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(22, 163);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(86, 21);
+            this.label12.Size = new System.Drawing.Size(85, 20);
             this.label12.TabIndex = 5;
             this.label12.Text = "Khởi hành";
             // 
@@ -193,241 +276,176 @@ namespace PBL3.View.tour
             this.lbDepartureDate1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDepartureDate1.Location = new System.Drawing.Point(155, 163);
             this.lbDepartureDate1.Name = "lbDepartureDate1";
-            this.lbDepartureDate1.Size = new System.Drawing.Size(53, 21);
+            this.lbDepartureDate1.Size = new System.Drawing.Size(51, 20);
             this.lbDepartureDate1.TabIndex = 6;
             this.lbDepartureDate1.Text = "label4";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.White;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(0, 242);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(379, 2);
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.White;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(1, 196);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(379, 2);
-            this.pictureBox5.TabIndex = 10;
-            this.pictureBox5.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 210);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 21);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Giá người lớn";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1, 99);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(379, 2);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 152);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(379, 2);
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(-1, 45);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(379, 2);
-            this.pictureBox3.TabIndex = 14;
-            this.pictureBox3.TabStop = false;
-            // 
-            // txtPriceAdult
-            // 
-            this.txtPriceAdult.AutoSize = true;
-            this.txtPriceAdult.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPriceAdult.Location = new System.Drawing.Point(155, 210);
-            this.txtPriceAdult.Name = "txtPriceAdult";
-            this.txtPriceAdult.Size = new System.Drawing.Size(77, 21);
-            this.txtPriceAdult.TabIndex = 15;
-            this.txtPriceAdult.Text = "100VNĐ";
-            // 
-            // txtPriceChildren
-            // 
-            this.txtPriceChildren.AutoSize = true;
-            this.txtPriceChildren.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPriceChildren.Location = new System.Drawing.Point(155, 254);
-            this.txtPriceChildren.Name = "txtPriceChildren";
-            this.txtPriceChildren.Size = new System.Drawing.Size(77, 21);
-            this.txtPriceChildren.TabIndex = 16;
-            this.txtPriceChildren.Text = "100VNĐ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(339, 390);
+            this.label2.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DarkRed;
+            this.label2.Location = new System.Drawing.Point(412, 404);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(218, 25);
+            this.label2.Size = new System.Drawing.Size(255, 25);
             this.label2.TabIndex = 11;
             this.label2.Text = "THÔNG TIN LIÊN HỆ";
             // 
             // lbName
             // 
             this.lbName.AutoSize = true;
-            this.lbName.Location = new System.Drawing.Point(39, 433);
+            this.lbName.Location = new System.Drawing.Point(116, 461);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(69, 17);
+            this.lbName.Size = new System.Drawing.Size(64, 16);
             this.lbName.TabIndex = 12;
             this.lbName.Text = "Họ và tên";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(39, 488);
+            this.label3.Location = new System.Drawing.Point(116, 513);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 17);
+            this.label3.Size = new System.Drawing.Size(85, 16);
             this.label3.TabIndex = 13;
             this.label3.Text = "Số điện thoại";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(39, 532);
+            this.label4.Location = new System.Drawing.Point(116, 555);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 17);
+            this.label4.Size = new System.Drawing.Size(41, 16);
             this.label4.TabIndex = 14;
             this.label4.Text = "Email";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(39, 578);
+            this.label5.Location = new System.Drawing.Point(116, 602);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 17);
+            this.label5.Size = new System.Drawing.Size(47, 16);
             this.label5.TabIndex = 15;
             this.label5.Text = "Địa chỉ";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(496, 436);
+            this.label6.Location = new System.Drawing.Point(567, 461);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 17);
+            this.label6.Size = new System.Drawing.Size(51, 16);
             this.label6.TabIndex = 16;
             this.label6.Text = "Ghi chú";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(491, 488);
+            this.label7.Location = new System.Drawing.Point(567, 510);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(87, 17);
+            this.label7.Size = new System.Drawing.Size(81, 16);
             this.label7.TabIndex = 17;
             this.label7.Text = "Số người lớn";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(488, 532);
+            this.label9.Location = new System.Drawing.Point(566, 561);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(69, 17);
+            this.label9.Size = new System.Drawing.Size(64, 16);
             this.label9.TabIndex = 18;
             this.label9.Text = "Số trẻ em";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(488, 578);
+            this.label13.Location = new System.Drawing.Point(562, 605);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(91, 17);
+            this.label13.Size = new System.Drawing.Size(85, 16);
             this.label13.TabIndex = 19;
             this.label13.Text = "Tổng giá tiền";
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(155, 433);
+            this.txtName.Location = new System.Drawing.Point(231, 461);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(252, 22);
             this.txtName.TabIndex = 20;
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(155, 488);
+            this.txtPhone.Location = new System.Drawing.Point(231, 510);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(252, 22);
             this.txtPhone.TabIndex = 21;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(155, 532);
+            this.txtEmail.Location = new System.Drawing.Point(231, 555);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(252, 22);
             this.txtEmail.TabIndex = 22;
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(155, 578);
+            this.txtAddress.Location = new System.Drawing.Point(231, 599);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(252, 22);
             this.txtAddress.TabIndex = 23;
             // 
             // txtNote
             // 
-            this.txtNote.Location = new System.Drawing.Point(604, 433);
+            this.txtNote.Location = new System.Drawing.Point(696, 461);
             this.txtNote.Name = "txtNote";
             this.txtNote.Size = new System.Drawing.Size(252, 22);
             this.txtNote.TabIndex = 24;
             // 
             // txtNumberAdults
             // 
-            this.txtNumberAdults.Location = new System.Drawing.Point(602, 488);
+            this.txtNumberAdults.Location = new System.Drawing.Point(698, 510);
             this.txtNumberAdults.Name = "txtNumberAdults";
             this.txtNumberAdults.Size = new System.Drawing.Size(252, 22);
             this.txtNumberAdults.TabIndex = 25;
             // 
             // txtNumberChildrens
             // 
-            this.txtNumberChildrens.Location = new System.Drawing.Point(604, 532);
+            this.txtNumberChildrens.Location = new System.Drawing.Point(696, 555);
             this.txtNumberChildrens.Name = "txtNumberChildrens";
             this.txtNumberChildrens.Size = new System.Drawing.Size(252, 22);
             this.txtNumberChildrens.TabIndex = 26;
             // 
             // txtTotalPrice
             // 
-            this.txtTotalPrice.Location = new System.Drawing.Point(604, 578);
+            this.txtTotalPrice.Enabled = false;
+            this.txtTotalPrice.Location = new System.Drawing.Point(696, 599);
             this.txtTotalPrice.Name = "txtTotalPrice";
             this.txtTotalPrice.Size = new System.Drawing.Size(252, 22);
             this.txtTotalPrice.TabIndex = 27;
             // 
             // btnBookTour
             // 
-            this.btnBookTour.Location = new System.Drawing.Point(569, 645);
+            this.btnBookTour.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBookTour.Location = new System.Drawing.Point(730, 640);
             this.btnBookTour.Name = "btnBookTour";
             this.btnBookTour.Size = new System.Drawing.Size(87, 40);
             this.btnBookTour.TabIndex = 28;
             this.btnBookTour.Text = "Book Tour";
             this.btnBookTour.UseVisualStyleBackColor = true;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Modern No. 20", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.DarkRed;
+            this.label11.Location = new System.Drawing.Point(352, 23);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(447, 35);
+            this.label11.TabIndex = 29;
+            this.label11.Text = "Book Tour Cùng Dana Travel";
+            // 
             // FormBookTour
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.btnBookTour);
             this.Controls.Add(this.txtTotalPrice);
             this.Controls.Add(this.txtNumberChildrens);
@@ -450,14 +468,14 @@ namespace PBL3.View.tour
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.panel1);
             this.Name = "FormBookTour";
-            this.Size = new System.Drawing.Size(902, 738);
+            this.Size = new System.Drawing.Size(1056, 728);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -502,5 +520,6 @@ namespace PBL3.View.tour
         private System.Windows.Forms.TextBox txtNumberChildrens;
         private System.Windows.Forms.TextBox txtTotalPrice;
         private System.Windows.Forms.Button btnBookTour;
+        private System.Windows.Forms.Label label11;
     }
 }

@@ -63,17 +63,18 @@ namespace PBL3.View.tour
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -81,6 +82,7 @@ namespace PBL3.View.tour
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbTourName
@@ -90,7 +92,7 @@ namespace PBL3.View.tour
             this.lbTourName.ForeColor = System.Drawing.Color.OrangeRed;
             this.lbTourName.Location = new System.Drawing.Point(372, 23);
             this.lbTourName.Name = "lbTourName";
-            this.lbTourName.Size = new System.Drawing.Size(146, 32);
+            this.lbTourName.Size = new System.Drawing.Size(145, 32);
             this.lbTourName.TabIndex = 0;
             this.lbTourName.Text = "Tour Name";
             // 
@@ -108,7 +110,7 @@ namespace PBL3.View.tour
             this.lbTourCategory.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTourCategory.Location = new System.Drawing.Point(181, 71);
             this.lbTourCategory.Name = "lbTourCategory";
-            this.lbTourCategory.Size = new System.Drawing.Size(53, 21);
+            this.lbTourCategory.Size = new System.Drawing.Size(51, 20);
             this.lbTourCategory.TabIndex = 4;
             this.lbTourCategory.Text = "label1";
             // 
@@ -179,7 +181,7 @@ namespace PBL3.View.tour
             this.lbTime.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTime.Location = new System.Drawing.Point(155, 116);
             this.lbTime.Name = "lbTime";
-            this.lbTime.Size = new System.Drawing.Size(53, 21);
+            this.lbTime.Size = new System.Drawing.Size(51, 20);
             this.lbTime.TabIndex = 4;
             this.lbTime.Text = "label2";
             // 
@@ -189,7 +191,7 @@ namespace PBL3.View.tour
             this.label8.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(22, 62);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 21);
+            this.label8.Size = new System.Drawing.Size(67, 20);
             this.label8.TabIndex = 1;
             this.label8.Text = "Mã tour";
             // 
@@ -210,7 +212,7 @@ namespace PBL3.View.tour
             this.lbTourID.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTourID.Location = new System.Drawing.Point(155, 62);
             this.lbTourID.Name = "lbTourID";
-            this.lbTourID.Size = new System.Drawing.Size(53, 21);
+            this.lbTourID.Size = new System.Drawing.Size(51, 20);
             this.lbTourID.TabIndex = 2;
             this.lbTourID.Text = "label2";
             // 
@@ -220,7 +222,7 @@ namespace PBL3.View.tour
             this.lbTransport.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTransport.Location = new System.Drawing.Point(155, 214);
             this.lbTransport.Name = "lbTransport";
-            this.lbTransport.Size = new System.Drawing.Size(161, 21);
+            this.lbTransport.Size = new System.Drawing.Size(157, 20);
             this.lbTransport.TabIndex = 8;
             this.lbTransport.Text = "Xe du lịch, Máy bay";
             // 
@@ -230,7 +232,7 @@ namespace PBL3.View.tour
             this.label10.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(22, 116);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(80, 21);
+            this.label10.Size = new System.Drawing.Size(78, 20);
             this.label10.TabIndex = 3;
             this.label10.Text = "Thời gian";
             // 
@@ -240,7 +242,7 @@ namespace PBL3.View.tour
             this.label14.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(22, 214);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(98, 21);
+            this.label14.Size = new System.Drawing.Size(95, 20);
             this.label14.TabIndex = 7;
             this.label14.Text = "Vận chuyển";
             // 
@@ -250,7 +252,7 @@ namespace PBL3.View.tour
             this.label12.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(22, 163);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(86, 21);
+            this.label12.Size = new System.Drawing.Size(85, 20);
             this.label12.TabIndex = 5;
             this.label12.Text = "Khởi hành";
             // 
@@ -260,7 +262,7 @@ namespace PBL3.View.tour
             this.lbDepartureDate1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDepartureDate1.Location = new System.Drawing.Point(155, 163);
             this.lbDepartureDate1.Name = "lbDepartureDate1";
-            this.lbDepartureDate1.Size = new System.Drawing.Size(53, 21);
+            this.lbDepartureDate1.Size = new System.Drawing.Size(51, 20);
             this.lbDepartureDate1.TabIndex = 6;
             this.lbDepartureDate1.Text = "label4";
             // 
@@ -295,7 +297,7 @@ namespace PBL3.View.tour
             this.lbPrice.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPrice.Location = new System.Drawing.Point(107, 18);
             this.lbPrice.Name = "lbPrice";
-            this.lbPrice.Size = new System.Drawing.Size(74, 26);
+            this.lbPrice.Size = new System.Drawing.Size(70, 25);
             this.lbPrice.TabIndex = 1;
             this.lbPrice.Text = "label2";
             // 
@@ -305,7 +307,7 @@ namespace PBL3.View.tour
             this.label1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(25, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 21);
+            this.label1.Size = new System.Drawing.Size(54, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Giá từ";
             // 
@@ -327,7 +329,7 @@ namespace PBL3.View.tour
             this.lbShortDescription.Location = new System.Drawing.Point(181, 102);
             this.lbShortDescription.MaximumSize = new System.Drawing.Size(380, 0);
             this.lbShortDescription.Name = "lbShortDescription";
-            this.lbShortDescription.Size = new System.Drawing.Size(53, 21);
+            this.lbShortDescription.Size = new System.Drawing.Size(51, 20);
             this.lbShortDescription.TabIndex = 9;
             this.lbShortDescription.Text = "label2";
             // 
@@ -337,7 +339,7 @@ namespace PBL3.View.tour
             this.label4.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(15, 71);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 21);
+            this.label4.Size = new System.Drawing.Size(75, 20);
             this.label4.TabIndex = 12;
             this.label4.Text = "Loại tour";
             // 
@@ -347,7 +349,7 @@ namespace PBL3.View.tour
             this.label5.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(15, 102);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 21);
+            this.label5.Size = new System.Drawing.Size(56, 20);
             this.label5.TabIndex = 13;
             this.label5.Text = "Mô tả:";
             // 
@@ -380,7 +382,7 @@ namespace PBL3.View.tour
             this.lbTime1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTime1.Location = new System.Drawing.Point(181, 39);
             this.lbTime1.Name = "lbTime1";
-            this.lbTime1.Size = new System.Drawing.Size(53, 21);
+            this.lbTime1.Size = new System.Drawing.Size(51, 20);
             this.lbTime1.TabIndex = 16;
             this.lbTime1.Text = "label2";
             // 
@@ -390,7 +392,7 @@ namespace PBL3.View.tour
             this.lbDepartTime.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDepartTime.Location = new System.Drawing.Point(181, 9);
             this.lbDepartTime.Name = "lbDepartTime";
-            this.lbDepartTime.Size = new System.Drawing.Size(53, 21);
+            this.lbDepartTime.Size = new System.Drawing.Size(51, 20);
             this.lbDepartTime.TabIndex = 15;
             this.lbDepartTime.Text = "label2";
             // 
@@ -400,7 +402,7 @@ namespace PBL3.View.tour
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(13, 39);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 21);
+            this.label3.Size = new System.Drawing.Size(78, 20);
             this.label3.TabIndex = 14;
             this.label3.Text = "Thời gian";
             // 
@@ -410,7 +412,7 @@ namespace PBL3.View.tour
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 21);
+            this.label2.Size = new System.Drawing.Size(85, 20);
             this.label2.TabIndex = 10;
             this.label2.Text = "Khởi hành";
             // 
@@ -436,54 +438,6 @@ namespace PBL3.View.tour
             this.label7.TabIndex = 17;
             this.label7.Text = "Lịch trình";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label9.Location = new System.Drawing.Point(76, 1046);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(289, 20);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "Công ty cổ phần việt Dana Travel";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label11.Location = new System.Drawing.Point(76, 1084);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(342, 18);
-            this.label11.TabIndex = 20;
-            this.label11.Text = "Trụ sở chính: 9999 Bạch Đằng, Hải Châu, Đà Nẵng";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label13.Location = new System.Drawing.Point(77, 1123);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(216, 18);
-            this.label13.TabIndex = 21;
-            this.label13.Text = "Điện thoại liên hệ: 0999.999.999";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(76, 1158);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(185, 17);
-            this.label15.TabIndex = 22;
-            this.label15.Text = "Website: danaTrave.com.vn";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(76, 1194);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(194, 17);
-            this.label16.TabIndex = 23;
-            this.label16.Text = "Email: danatravel@gmail.com";
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
@@ -494,71 +448,127 @@ namespace PBL3.View.tour
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // label17
+            // panel5
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label17.Location = new System.Drawing.Point(548, 1046);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(491, 20);
-            this.label17.TabIndex = 25;
-            this.label17.Text = "GIẤY PHÉP KINH DOANH DỊCH VỤ LỮ HÀNH QUỐC TẾ";
+            this.panel5.Controls.Add(this.label21);
+            this.panel5.Controls.Add(this.label20);
+            this.panel5.Controls.Add(this.label19);
+            this.panel5.Controls.Add(this.label18);
+            this.panel5.Controls.Add(this.label17);
+            this.panel5.Controls.Add(this.label16);
+            this.panel5.Controls.Add(this.label15);
+            this.panel5.Controls.Add(this.label13);
+            this.panel5.Controls.Add(this.label11);
+            this.panel5.Controls.Add(this.label9);
+            this.panel5.Location = new System.Drawing.Point(76, 1049);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(998, 185);
+            this.panel5.TabIndex = 30;
             // 
-            // label18
+            // label21
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label18.Location = new System.Drawing.Point(549, 1084);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(295, 18);
-            this.label18.TabIndex = 26;
-            this.label18.Text = "Số GP/ No: 99-999/ 2022/ TCDL – GPLHQT";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label19.Location = new System.Drawing.Point(549, 1123);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(290, 18);
-            this.label19.TabIndex = 27;
-            this.label19.Text = "Do Tổng Cục Du Lịch cấp ngày 18/05/2022";
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(491, 122);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(287, 16);
+            this.label21.TabIndex = 39;
+            this.label21.Text = "Số ĐKKD: 999 9999 999 được cấp bởi Tổng cục ";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label20.Location = new System.Drawing.Point(549, 1192);
+            this.label20.Location = new System.Drawing.Point(491, 156);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(201, 18);
-            this.label20.TabIndex = 28;
+            this.label20.TabIndex = 38;
             this.label20.Text = "Copyright © 2022 DanaTravel";
             // 
-            // label21
+            // label19
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(549, 1158);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(315, 17);
-            this.label21.TabIndex = 29;
-            this.label21.Text = "Số ĐKKD: 999 9999 999 được cấp bởi Tổng cục ";
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label19.Location = new System.Drawing.Point(491, 87);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(290, 18);
+            this.label19.TabIndex = 37;
+            this.label19.Text = "Do Tổng Cục Du Lịch cấp ngày 18/05/2022";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label18.Location = new System.Drawing.Point(491, 48);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(295, 18);
+            this.label18.TabIndex = 36;
+            this.label18.Text = "Số GP/ No: 99-999/ 2022/ TCDL – GPLHQT";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label17.Location = new System.Drawing.Point(490, 10);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(491, 20);
+            this.label17.TabIndex = 35;
+            this.label17.Text = "GIẤY PHÉP KINH DOANH DỊCH VỤ LỮ HÀNH QUỐC TẾ";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(18, 158);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(187, 16);
+            this.label16.TabIndex = 34;
+            this.label16.Text = "Email: danatravel@gmail.com";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(18, 122);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(176, 16);
+            this.label15.TabIndex = 33;
+            this.label15.Text = "Website: danaTrave.com.vn";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label13.Location = new System.Drawing.Point(19, 87);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(216, 18);
+            this.label13.TabIndex = 32;
+            this.label13.Text = "Điện thoại liên hệ: 0999.999.999";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label11.Location = new System.Drawing.Point(18, 48);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(342, 18);
+            this.label11.TabIndex = 31;
+            this.label11.Text = "Trụ sở chính: 9999 Bạch Đằng, Hải Châu, Đà Nẵng";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label9.Location = new System.Drawing.Point(18, 10);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(289, 20);
+            this.label9.TabIndex = 30;
+            this.label9.Text = "Công ty cổ phần việt Dana Travel";
             // 
             // FormTourDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label17);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel4);
@@ -569,7 +579,7 @@ namespace PBL3.View.tour
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbTourName);
             this.Name = "FormTourDetail";
-            this.Size = new System.Drawing.Size(1106, 827);
+            this.Size = new System.Drawing.Size(1085, 806);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -580,6 +590,8 @@ namespace PBL3.View.tour
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -620,16 +632,17 @@ namespace PBL3.View.tour
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label9;
     }
 }

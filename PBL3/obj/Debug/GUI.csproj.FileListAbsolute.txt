@@ -43,5 +43,6 @@ D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.CopyComplete
 D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.exe
 D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.pdb
-D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csprojAssemblyReference.cache
 D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.tour.FormBookTour.resources
+D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.AssemblyReference.cache
+D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache

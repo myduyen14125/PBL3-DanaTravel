@@ -25,7 +25,7 @@ namespace PBL3.View.tour
         private IHTMLDocument2 documentDesc;
 
         public delegate void Mydel();
-        public Mydel d { get; set; }
+        public Mydel showParent { get; set; }
         public FormTourDetail(TourDTO tour, bool isBooktour)
         {
             InitializeComponent();
@@ -33,7 +33,6 @@ namespace PBL3.View.tour
             this.isBooktour = isBooktour;
             GUI();
         }
-
         public void GUI()
         {
             htmlDescription.DocumentText = "<html><body></body></html>";
@@ -66,16 +65,48 @@ namespace PBL3.View.tour
                 //btnOrderTour.Visible = false;
             }
         }
-
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            d();
+            showParent();
         }
-
+        private void HideTourDetail()
+        {
+            lbTourName.Visible = false;
+            panel1.Visible = false;
+            panel2.Visible = false;
+            panel3.Visible = false;
+            panel4.Visible = false;
+            panel5.Visible = false;
+            htmlDescription.Visible = false;
+            btnBack.Visible = false;
+            btnOrderTour.Visible = false;
+            label6.Visible = false;
+            label7.Visible = false;
+            this.AutoScroll = false;
+        }
+        public void ShowTourDetail()
+        {
+            lbTourName.Visible = true;
+            panel1.Visible = true;
+            panel2.Visible = true;
+            panel3.Visible = true;
+            panel4.Visible = true;
+            panel5.Visible = true;
+            htmlDescription.Visible = true;
+            btnBack.Visible = true;
+            btnOrderTour.Visible = true;
+            label6.Visible = true;
+            label7.Visible = true;
+            this.AutoScroll = true;
+        }
         private void btnOrderTour_Click(object sender, EventArgs e)
         {
             FormBookTour f = new FormBookTour();
+            f.Dock = DockStyle.Fill;
+            f.showParent = ShowTourDetail;
+            this.Controls.Add(f);
+            HideTourDetail();
         }
     }
 }

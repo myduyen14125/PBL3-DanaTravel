@@ -400,7 +400,7 @@ namespace PBL3.View.tour
             this.Controls.Add(this.txtTourName);
             this.Controls.Add(this.lbTourName);
             this.Name = "FormAddEditTour";
-            this.Size = new System.Drawing.Size(1156, 761);
+            this.Size = new System.Drawing.Size(1156, 698);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -12,9 +12,17 @@ namespace PBL3.View.tour
 {
     public partial class FormBookTour : UserControl
     {
+        public delegate void Mydel();
+        public Mydel showParent { get; set; }
         public FormBookTour()
         {
             InitializeComponent();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            showParent();
         }
     }
 }
