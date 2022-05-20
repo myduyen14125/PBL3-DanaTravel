@@ -20,12 +20,12 @@ namespace PBL3
             InitializeComponent();
             pnChoice.Visible = false;
             this.account = ac;
-            if (account.Roles.FirstOrDefault().name.ToLower() == "customer")
-            {
-                // Customer
-                btnAdmin.Visible = false;
-            }
-            else btnAdmin.Visible = true;
+            //if (account.Roles.FirstOrDefault().name.ToLower() == "customer")
+            //{
+            //    // Customer
+            //    btnAdmin.Visible = false;
+            //}
+            //else btnAdmin.Visible = true;
         }
          private void btnAdmin_Click(object sender, EventArgs e)
         {
@@ -48,6 +48,13 @@ namespace PBL3
             pnChoice.Visible = true;
         }
 
-    
-     }
+        private void lbHome_MouseHover(object sender, EventArgs e)
+        {
+            lbHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
+        }
+        private void lbHome_MouseLeave(object sender, EventArgs e)
+        {
+            lbHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(91)))), ((int)(((byte)(132)))));
+        }
+    }
 }

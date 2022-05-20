@@ -9,7 +9,6 @@ E:\PBL3-DanaTravel\DTO\bin\Debug\Util.exe.config
 E:\PBL3-DanaTravel\DTO\bin\Debug\EntityFramework.xml
 E:\PBL3-DanaTravel\DTO\bin\Debug\EntityFramework.SqlServer.xml
 E:\PBL3-DanaTravel\DTO\obj\Debug\DTO.csproj.SuggestedBindingRedirects.cache
-E:\PBL3-DanaTravel\DTO\obj\Debug\DTO.Form1.resources
 E:\PBL3-DanaTravel\DTO\obj\Debug\DTO.Properties.Resources.resources
 E:\PBL3-DanaTravel\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
 E:\PBL3-DanaTravel\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
