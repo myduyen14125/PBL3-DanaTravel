@@ -14,13 +14,14 @@ namespace PBL3.View.admin
 {
     public partial class AdminManagement : Form
     {
-        bool sidebarExpand;
+        
         private Account account;
         public AdminManagement(Account ac)
         {
             InitializeComponent();
             Load += AdminManagement_Load;
-            btnStatistic.Location = new Point(0, 362);
+            manacontainer.Visible = false;
+            btnStatistic.Location = new Point(0, 387);
             account = ac;
         }
         public void SetActivePanel(UserControl control)
@@ -30,6 +31,8 @@ namespace PBL3.View.admin
             customer1.Visible = false;
             tourManagement1.Visible = false;
             accountEmployee1.Visible = false;
+            customerAccount1.Visible = false;
+            roleAccount1.Visible = false;
             control.Visible = true;
         }
 
@@ -55,41 +58,57 @@ namespace PBL3.View.admin
         private void btnAccountEmployee_Click(object sender, EventArgs e)
         {
             SetActivePanel(accountEmployee1);
+            hidesubmenu();
+            btnStatistic.Location = new Point(0, 387);
         }
-        private void SidebarTimer_Click(object sender, EventArgs e)
+        private void hidesubmenu()
         {
-            if (sidebarExpand)
+            if (manacontainer.Visible == true)
             {
-                navbar.Width -= 10;
-                if (navbar.Width == navbar.MinimumSize.Width)
-                {
-                    sidebarExpand = false;
-                    SidebarTimer.Stop();
-                }
+                manacontainer.Visible = false;
+            }
+
+        }
+        private void showsubmenu(Panel submenu)
+        {
+            if (submenu.Visible == false)
+            {
+                hidesubmenu();
+                submenu.Visible = true;
+                btnStatistic.Location = new Point(0, 489);
             }
             else
             {
-                navbar.Width += 10;
-                if (navbar.Width == navbar.MaximumSize.Width)
-                {
-                    sidebarExpand = true;
-                    SidebarTimer.Stop();
-                }
-
+                submenu.Visible = false;
+                btnStatistic.Location = new Point(0, 387);
             }
-        }
 
-        private void pcMenu_Click(object sender, EventArgs e)
-        {
-            SidebarTimer.Start();
         }
-
         private void btnBackHomepage_Click(object sender, EventArgs e)
         {
             this.Hide();
             Homepage homepage = new Homepage(account);
             homepage.Closed += (s, args) => this.Close();
             homepage.Show();
+        }
+
+        private void btnAccount_Click(object sender, EventArgs e)
+        {
+            showsubmenu(manacontainer);
+        }
+
+        private void btnCustomerAcc_Click(object sender, EventArgs e)
+        {
+            hidesubmenu();
+            btnStatistic.Location = new Point(0, 387);
+            SetActivePanel(customerAccount1);
+        }
+
+        private void btnRoleAcc_Click(object sender, EventArgs e)
+        {
+            hidesubmenu();
+            btnStatistic.Location = new Point(0, 387);
+            SetActivePanel(roleAccount1);
         }
     }
 }

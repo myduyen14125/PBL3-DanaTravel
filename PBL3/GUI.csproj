@@ -54,6 +54,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="viewHtml\Editor.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -120,6 +125,12 @@
     <Compile Include="View\admin\FormAddRole.Designer.cs">
       <DependentUpon>FormAddRole.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\CustomerAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\CustomerAccount.Designer.cs">
+      <DependentUpon>CustomerAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\login\ChangePassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +174,12 @@
     </Compile>
     <Compile Include="View\login\SignupForm.Designer.cs">
       <DependentUpon>SignupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RoleAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\RoleAccount.Designer.cs">
+      <DependentUpon>RoleAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="View\TourManagement.cs">
       <SubType>UserControl</SubType>
@@ -230,6 +247,9 @@
     <EmbeddedResource Include="View\admin\FormAddRole.resx">
       <DependentUpon>FormAddRole.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\CustomerAccount.resx">
+      <DependentUpon>CustomerAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\login\ChangePassword.resx">
       <DependentUpon>ChangePassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -250,16 +270,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="View\login\SignupForm.resx">
       <DependentUpon>SignupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RoleAccount.resx">
+      <DependentUpon>RoleAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\TourManagement.resx">
       <DependentUpon>TourManagement.cs</DependentUpon>
@@ -384,9 +402,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\BaNaHills.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Thanhdiamyson.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MySon.png" />
@@ -524,21 +539,34 @@
     <None Include="Resources\Group 164 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\account1.png" />
+    <None Include="Resources\back.png" />
     <Content Include="Resources\backcolor.bmp" />
+    <None Include="Resources\biYn_mY_khe_1.jpg" />
     <Content Include="Resources\bold.bmp" />
+    <None Include="Resources\circles1.png" />
     <Content Include="Resources\cj.bmp" />
     <Content Include="Resources\color.bmp" />
+    <None Include="Resources\cu-lao-cham-11.jpg" />
     <Content Include="Resources\fj.bmp" />
     <None Include="Resources\image.png" />
+    <None Include="Resources\imagecar1.png" />
+    <None Include="Resources\greencircles1.png" />
     <Content Include="Resources\indent.bmp" />
     <Content Include="Resources\italic.bmp" />
     <Content Include="Resources\link.bmp" />
     <Content Include="Resources\lj.bmp" />
+    <None Include="Resources\map1.png" />
+    <None Include="Resources\Lock.png" />
     <Content Include="Resources\ol.bmp" />
     <Content Include="Resources\outdent.bmp" />
+    <None Include="Resources\planehome1.png" />
+    <None Include="Resources\Rectangle 101.png" />
     <Content Include="Resources\right_arrow.bmp" />
     <Content Include="Resources\rj.bmp" />
+    <None Include="Resources\Star1.png" />
     <Content Include="Resources\underscore.bmp" />
+    <None Include="Resources\UnLock.png" />
     <Content Include="Resources\uol.bmp" />
   </ItemGroup>
   <ItemGroup>

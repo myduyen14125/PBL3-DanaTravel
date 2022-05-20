@@ -27,23 +27,10 @@ namespace PBL3
             }
             else btnAdmin.Visible = true;
         }
-
-        private void txtSearch_Click(object sender, EventArgs e)
-        {
-            txtSearch.Text = "";
-        }
-
-        
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            pnChoice.Visible = true;
-        }
-
-        private void btnAdmin_Click(object sender, EventArgs e)
+         private void btnAdmin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AdminManagement f = new AdminManagement(account);
+            AdminManagement f = new AdminManagement(null);
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
@@ -55,5 +42,12 @@ namespace PBL3
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
-    }
+
+        private void pictureBox28_Click(object sender, EventArgs e)
+        {
+            pnChoice.Visible = true;
+        }
+
+    
+     }
 }
