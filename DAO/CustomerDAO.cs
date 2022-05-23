@@ -49,23 +49,27 @@ namespace DAO
             List<CustomerDTO> list = new List<CustomerDTO>();
             foreach (var i in result)
             {
-                list.Add(new CustomerDTO
+                CustomerDTO c = new CustomerDTO
                 {
                     id = i.id,
                     name = i.name,
-                    birthday = i.birthday,
-                    gender = i.gender,
                     idCard = i.idCard,
                     email = i.email,
                     phone = i.phone,
                     address = i.address,
                     customer_type_id = i.ct_id,
                     customer_type_name = i.ct_name
-                });
+                };
+                if (i.birthday != null) c.birthday = (DateTime)i.birthday;
+                if (i.gender != null) c.gender = (bool)i.gender;
+                list.Add(c);
             }
             return list;
         }
-
+        public Customer GetCustomerByIdCard(string id_card)
+        {
+            return EntityManager.Instance.Customers.Where(c => c.idCard == id_card).FirstOrDefault();
+        }
         public List<CustomerType> GetListCustomerType()
         {
             return EntityManager.Instance.CustomerTypes.ToList();
@@ -91,12 +95,10 @@ namespace DAO
                          };
             var i = result.FirstOrDefault();
             List<CustomerType> customerTypes = db.CustomerTypes.Where(r => r.Customers.Any(c => c.id == i.ct_id)).ToList();
-            return new CustomerDTO
+            CustomerDTO cus = new CustomerDTO
             {
                 id = i.id,
                 name = i.name,
-                birthday = i.birthday,
-                gender = i.gender,
                 idCard = i.idCard,
                 email = i.email,
                 phone = i.phone,
@@ -104,6 +106,9 @@ namespace DAO
                 customer_type_id = i.ct_id,
                 customer_type_name = i.ct_name,
             };
+            if (i.birthday != null) cus.birthday = (DateTime)i.birthday;
+            if (i.gender != null) cus.gender = (bool)i.gender;
+            return cus;
         }
 
         public void Save(Customer c)
@@ -123,7 +128,7 @@ namespace DAO
                 data.address = c.address;
                 data.phone = c.phone;
                 data.email = c.email;
-                //data.customer_type_id = c.customer_type_id;
+                data.customer_type_id = c.customer_type_id;
             }
             db.SaveChanges();
         }

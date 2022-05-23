@@ -49,40 +49,39 @@ namespace PBL3.View
             this.lbTotal.AutoSize = true;
             this.lbTotal.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold);
             this.lbTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.lbTotal.Location = new System.Drawing.Point(142, 84);
-            this.lbTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbTotal.Location = new System.Drawing.Point(189, 103);
             this.lbTotal.Name = "lbTotal";
-            this.lbTotal.Size = new System.Drawing.Size(52, 19);
+            this.lbTotal.Size = new System.Drawing.Size(67, 25);
             this.lbTotal.TabIndex = 0;
             this.lbTotal.Text = "Total:";
             // 
             // txtTotal
             // 
             this.txtTotal.Enabled = false;
-            this.txtTotal.Location = new System.Drawing.Point(195, 81);
-            this.txtTotal.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTotal.Location = new System.Drawing.Point(260, 100);
+            this.txtTotal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(76, 20);
+            this.txtTotal.Size = new System.Drawing.Size(100, 22);
             this.txtTotal.TabIndex = 1;
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(549, 84);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSearch.Location = new System.Drawing.Point(732, 103);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(96, 20);
+            this.txtSearch.Size = new System.Drawing.Size(127, 22);
             this.txtSearch.TabIndex = 2;
             // 
             // dataAccount
             // 
             this.dataAccount.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
             this.dataAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataAccount.Location = new System.Drawing.Point(145, 174);
-            this.dataAccount.Margin = new System.Windows.Forms.Padding(2);
+            this.dataAccount.Location = new System.Drawing.Point(193, 214);
+            this.dataAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataAccount.Name = "dataAccount";
             this.dataAccount.RowHeadersWidth = 51;
             this.dataAccount.RowTemplate.Height = 24;
-            this.dataAccount.Size = new System.Drawing.Size(562, 288);
+            this.dataAccount.Size = new System.Drawing.Size(749, 354);
             this.dataAccount.TabIndex = 4;
             this.dataAccount.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataAccount_RowHeaderMouseClick);
             // 
@@ -91,8 +90,9 @@ namespace PBL3.View
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
             this.panel3.Controls.Add(this.myTextBox1);
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(991, 43);
+            this.panel3.Size = new System.Drawing.Size(1321, 53);
             this.panel3.TabIndex = 29;
             // 
             // myTextBox1
@@ -104,15 +104,15 @@ namespace PBL3.View
             this.myTextBox1.BorderSize = 2;
             this.myTextBox1.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox1.ForeColor = System.Drawing.Color.White;
-            this.myTextBox1.Location = new System.Drawing.Point(30, 5);
-            this.myTextBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.myTextBox1.Location = new System.Drawing.Point(40, 6);
+            this.myTextBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.myTextBox1.Multiline = false;
             this.myTextBox1.Name = "myTextBox1";
-            this.myTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.myTextBox1.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
             this.myTextBox1.PasswordChar = false;
             this.myTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.myTextBox1.PlaceholderText = "";
-            this.myTextBox1.Size = new System.Drawing.Size(269, 34);
+            this.myTextBox1.Size = new System.Drawing.Size(359, 44);
             this.myTextBox1.TabIndex = 1;
             this.myTextBox1.Texts = "Account Employee Management";
             this.myTextBox1.UnderlinedStyle = true;
@@ -125,10 +125,10 @@ namespace PBL3.View
             this.btnLock.ForeColor = System.Drawing.Color.White;
             this.btnLock.Image = global::PBL3.Properties.Resources.Lock;
             this.btnLock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLock.Location = new System.Drawing.Point(143, 483);
-            this.btnLock.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLock.Location = new System.Drawing.Point(193, 594);
+            this.btnLock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLock.Name = "btnLock";
-            this.btnLock.Size = new System.Drawing.Size(118, 31);
+            this.btnLock.Size = new System.Drawing.Size(157, 38);
             this.btnLock.TabIndex = 6;
             this.btnLock.Text = "Lock Account";
             this.btnLock.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -143,10 +143,10 @@ namespace PBL3.View
             this.btnUnlock.ForeColor = System.Drawing.Color.White;
             this.btnUnlock.Image = global::PBL3.Properties.Resources.UnLock;
             this.btnUnlock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUnlock.Location = new System.Drawing.Point(589, 483);
-            this.btnUnlock.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUnlock.Location = new System.Drawing.Point(785, 594);
+            this.btnUnlock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUnlock.Name = "btnUnlock";
-            this.btnUnlock.Size = new System.Drawing.Size(118, 31);
+            this.btnUnlock.Size = new System.Drawing.Size(157, 38);
             this.btnUnlock.TabIndex = 5;
             this.btnUnlock.Text = "Unlock Account";
             this.btnUnlock.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -161,10 +161,10 @@ namespace PBL3.View
             this.btnSearch.ForeColor = System.Drawing.Color.White;
             this.btnSearch.Image = global::PBL3.Properties.Resources.Search_find_locate_1542;
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.Location = new System.Drawing.Point(651, 76);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearch.Location = new System.Drawing.Point(868, 94);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(91, 33);
+            this.btnSearch.Size = new System.Drawing.Size(121, 41);
             this.btnSearch.TabIndex = 3;
             this.btnSearch.Text = "Search";
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -173,16 +173,17 @@ namespace PBL3.View
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(336, 49);
+            this.pictureBox1.Location = new System.Drawing.Point(448, 60);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(154, 99);
+            this.pictureBox1.Size = new System.Drawing.Size(205, 122);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 31;
             this.pictureBox1.TabStop = false;
             // 
             // AccountEmployee
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
             this.Controls.Add(this.pictureBox1);
@@ -194,9 +195,9 @@ namespace PBL3.View
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.lbTotal);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AccountEmployee";
-            this.Size = new System.Drawing.Size(867, 567);
+            this.Size = new System.Drawing.Size(1156, 698);
             this.Load += new System.EventHandler(this.AccountEmployee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataAccount)).EndInit();
             this.panel3.ResumeLayout(false);

@@ -77,8 +77,8 @@ namespace DAO
                 {
                     id = i.id,
                     name = i.name,
-                    birthday = i.birthday,
-                    gender = i.gender,
+                    birthday = (DateTime)i.birthday,
+                    gender = (bool)i.gender,
                     idCard = i.idCard,
                     email = i.email,
                     phone = i.phone,
@@ -130,8 +130,8 @@ namespace DAO
             {
                 id = i.id,
                 name = i.name,
-                birthday = i.birthday,
-                gender = i.gender,
+                birthday = (DateTime)i.birthday,
+                gender = (bool)i.gender,
                 idCard = i.idCard,
                 email = i.email,
                 phone = i.phone,

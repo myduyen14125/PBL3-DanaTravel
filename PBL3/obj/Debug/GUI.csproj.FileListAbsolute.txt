@@ -43,7 +43,6 @@ D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.CopyComplete
 D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.exe
 D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.pdb
-D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.tour.FormBookTour.resources
 D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.AssemblyReference.cache
 D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
 E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3\bin\Debug\PBL3.exe.config
@@ -98,3 +97,8 @@ E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.exe
 E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.pdb
 E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.CustomerAccount.resources
 E:\Nam 2\NET_WF\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.RoleAccount.resources
+D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.CustomerAccount.resources
+D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.RoleAccount.resources
+D:\PBL\PBL3-DanaTravel\PBL3\bin\Debug\MyLibrary.pdb
+D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.homepage.TourItemView.resources
+D:\PBL\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.homepage.FormBookTour.resources

@@ -14,7 +14,7 @@ namespace PBL3.View.admin
 {
     public partial class AdminManagement : Form
     {
-        
+
         private Account account;
         public AdminManagement(Account ac)
         {

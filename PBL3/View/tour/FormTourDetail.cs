@@ -2,6 +2,7 @@
 using DTO;
 using DTO.CodeFirstDB;
 using mshtml;
+using PBL3.View.homepage;
 using PBL3.viewHtml;
 using System;
 using System.Collections.Generic;
@@ -45,9 +46,12 @@ namespace PBL3.View.tour
             panel1.Controls.Add(sliderImage);
             sliderImage.Dock = DockStyle.Fill;
 
+            TimeSpan timeSpan = tourDTO.returnDate - tourDTO.departureDate;
             string departDate = tourDTO.departureDate.Day + "/" + tourDTO.departureDate.Month + "/" + tourDTO.departureDate.Year;
-            string time = (tourDTO.returnDate.Day - tourDTO.departureDate.Day).ToString() + " ngày "
-                + (tourDTO.returnDate.Day - tourDTO.departureDate.Day - 1).ToString() + " đêm";
+            string time = "";
+            if (timeSpan.Days == 0) time = "1 ngày 0 đêm";
+            else time = (timeSpan.Days).ToString() + " ngày " + (timeSpan.Days - 1).ToString() + " đêm";
+
             lbTourName.Text = tourDTO.name;
             lbDepartTime.Text = departDate;
             lbTourCategory.Text = tourDTO.tour_category_name;
@@ -62,7 +66,7 @@ namespace PBL3.View.tour
 
             if (!isBooktour)
             {
-                //btnOrderTour.Visible = false;
+                btnOrderTour.Visible = false;
             }
         }
         private void btnBack_Click(object sender, EventArgs e)
@@ -70,43 +74,15 @@ namespace PBL3.View.tour
             this.Hide();
             showParent();
         }
-        private void HideTourDetail()
-        {
-            lbTourName.Visible = false;
-            panel1.Visible = false;
-            panel2.Visible = false;
-            panel3.Visible = false;
-            panel4.Visible = false;
-            panel5.Visible = false;
-            htmlDescription.Visible = false;
-            btnBack.Visible = false;
-            btnOrderTour.Visible = false;
-            label6.Visible = false;
-            label7.Visible = false;
-            this.AutoScroll = false;
-        }
-        public void ShowTourDetail()
-        {
-            lbTourName.Visible = true;
-            panel1.Visible = true;
-            panel2.Visible = true;
-            panel3.Visible = true;
-            panel4.Visible = true;
-            panel5.Visible = true;
-            htmlDescription.Visible = true;
-            btnBack.Visible = true;
-            btnOrderTour.Visible = true;
-            label6.Visible = true;
-            label7.Visible = true;
-            this.AutoScroll = true;
-        }
         private void btnOrderTour_Click(object sender, EventArgs e)
         {
-            FormBookTour f = new FormBookTour();
-            f.Dock = DockStyle.Fill;
-            f.showParent = ShowTourDetail;
-            this.Controls.Add(f);
-            HideTourDetail();
+            FormBookTour f = new FormBookTour(tourDTO);
+            f.Show();
+        }
+
+        private void FormTourDetail_Load(object sender, EventArgs e)
+        {
+            //panelMain.Left = (this.Width - panelMain.Width) / 2;
         }
     }
 }

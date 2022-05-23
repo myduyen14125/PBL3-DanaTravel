@@ -44,12 +44,14 @@ namespace BUS
 
             foreach (CustomerDTO c in customers)
             {
-                string birthday = c.birthday.Day + "/" + c.birthday.Month + "/" + c.birthday.Year;
-                dt.Rows.Add(c.id, c.name, birthday, c.gender ? "Nam" : "Nữ", c.idCard, c.phone, c.address, c.email, c.customer_type_name);
+                dt.Rows.Add(c.id, c.name, c.birthday, c.gender, c.idCard, c.phone, c.address, c.email, c.customer_type_name);
             }
             return dt;
         }
-
+        public Customer GetCustomerByIdCard(string id_card)
+        {
+            return CustomerDAO.Instance.GetCustomerByIdCard(id_card);
+        }
         public List<CustomerDTO> GetListCustomers(int typeID, string searchKey = "")
         {
             return CustomerDAO.Instance.GetListCustomers(typeID, searchKey);

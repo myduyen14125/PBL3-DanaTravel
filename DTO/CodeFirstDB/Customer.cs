@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DTO.CodeFirstDB;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -18,5 +19,10 @@ namespace DTO
 
         [ForeignKey("account_id")]
         public virtual Account Account { get; set; }
+        public ICollection<TourTicket> TourTickets { get; set; } = null;
+        public Customer()
+        {
+            TourTickets = new List<TourTicket>();
+        }
     }
 }

@@ -140,8 +140,8 @@ namespace PBL3.View.tour
             double percent_profit = Convert.ToDouble(txtProfit.Text);
             double percent_VAT = Convert.ToDouble(txtVAT.Text);
             double percent_price_children = Convert.ToDouble(txtPricePercentChildren.Text);
-            double price_adult_one_ticket = total_price_service + total_price_service * percent_profit;
-            price_adult_one_ticket += price_adult_one_ticket * percent_VAT;
+            double price_adult_one_ticket = total_price_service + total_price_service * percent_profit / 100;
+            price_adult_one_ticket += price_adult_one_ticket * percent_VAT / 100;
             Tour t = new Tour
             {
                 id = tour.id,

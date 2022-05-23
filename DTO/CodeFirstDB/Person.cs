@@ -17,11 +17,9 @@ namespace DTO.CodeFirstDB
         [Required]
         public string name { get; set; }
 
-        [Required]
-        public DateTime birthday { get; set; }
+        public DateTime? birthday { get; set; }
 
-        [Required]
-        public bool gender { get; set; }
+        public bool? gender { get; set; }
 
         [Required]
         public string idCard { get; set; }

@@ -11,7 +11,6 @@ namespace DAO
     public class AccountDAO
     {
         private static AccountDAO _Instance;
-
         public static AccountDAO Instance
         {
             get

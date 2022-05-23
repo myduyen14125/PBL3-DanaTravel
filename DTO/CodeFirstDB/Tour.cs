@@ -37,11 +37,12 @@ namespace DTO
 
         [ForeignKey("tour_category_id")]
         public virtual TourCategory TourCategory { get; set; }
-
         public ICollection<TourImage> TourImages { get; set; } = null;
+        public ICollection<TourTicket> TourTickets { get; set; } = null;
         public Tour()
         {
             TourImages = new List<TourImage>();
+            TourTickets = new List<TourTicket>();
         }
     }
 }

@@ -1,5 +1,7 @@
-﻿using DTO;
+﻿using BUS;
+using DTO;
 using PBL3.View.admin;
+using PBL3.View.homepage;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +16,9 @@ namespace PBL3
 {
     public partial class Homepage : Form
     {
+        private List<TourDTO> tours;
         private Account account;
+        private int index_start = 0;
         public Homepage(Account ac)
         {
             InitializeComponent();
@@ -30,7 +34,7 @@ namespace PBL3
          private void btnAdmin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AdminManagement f = new AdminManagement(null);
+            AdminManagement f = new AdminManagement(account);
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
@@ -48,6 +52,44 @@ namespace PBL3
             pnChoice.Visible = true;
         }
 
-    
-     }
+        private void Homepage_Load(object sender, EventArgs e)
+        {
+            if (!this.DesignMode)
+            {
+                tours = TourBUS.Instance.GetTourDTOs(0, "");
+                if (tours.Count == 0) return;
+                TourItemView t;
+                t = new TourItemView(tours[index_start], this);
+                t.Dock = DockStyle.Fill;
+                panel1.Controls.Add(t);
+                
+                if (tours.Count == 1) return;
+                t = new TourItemView(tours[index_start + 1], this);
+                panel2.Controls.Add(t);
+                t.Dock = DockStyle.Fill;
+                if (tours.Count == 2) return;
+                t = new TourItemView(tours[index_start + 2], this);
+                panel3.Controls.Add(t);
+                t.Dock = DockStyle.Fill;
+                if (tours.Count == 3) return;
+                t = new TourItemView(tours[index_start + 3], this);
+                panel4.Controls.Add(t);
+                t.Dock = DockStyle.Fill;
+            }
+        }
+        public void HideHomePage()
+        {
+            panelHomepage.Visible = false;
+            this.Size = new System.Drawing.Size(880, 820);
+            this.AutoScrollMinSize = new System.Drawing.Size(0, 1050);
+        }
+
+        public void ShowHomePage()
+        {
+            panelHomepage.Visible = true;
+            this.Size = new System.Drawing.Size(1115, 820);
+            this.AutoScrollMinSize = new System.Drawing.Size(0, 1500);
+        }
+
+    }
 }

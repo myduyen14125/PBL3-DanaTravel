@@ -131,6 +131,18 @@
     <Compile Include="View\CustomerAccount.Designer.cs">
       <DependentUpon>CustomerAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\homepage\FormBookTour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\homepage\FormBookTour.Designer.cs">
+      <DependentUpon>FormBookTour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\homepage\TourItemView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\homepage\TourItemView.Designer.cs">
+      <DependentUpon>TourItemView.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\login\ChangePassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +193,12 @@
     <Compile Include="View\RoleAccount.Designer.cs">
       <DependentUpon>RoleAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\ticket\TicketManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ticket\TicketManagement.Designer.cs">
+      <DependentUpon>TicketManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\TourManagement.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -192,12 +210,6 @@
     </Compile>
     <Compile Include="View\tour\FormAddEditTour.Designer.cs">
       <DependentUpon>FormAddEditTour.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\tour\FormBookTour.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View\tour\FormBookTour.Designer.cs">
-      <DependentUpon>FormBookTour.cs</DependentUpon>
     </Compile>
     <Compile Include="View\tour\FormTourDetail.cs">
       <SubType>UserControl</SubType>
@@ -250,6 +262,12 @@
     <EmbeddedResource Include="View\CustomerAccount.resx">
       <DependentUpon>CustomerAccount.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\homepage\FormBookTour.resx">
+      <DependentUpon>FormBookTour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\homepage\TourItemView.resx">
+      <DependentUpon>TourItemView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\login\ChangePassword.resx">
       <DependentUpon>ChangePassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -284,9 +302,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\tour\FormAddEditTour.resx">
       <DependentUpon>FormAddEditTour.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\tour\FormBookTour.resx">
-      <DependentUpon>FormBookTour.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\tour\FormTourDetail.resx">
       <DependentUpon>FormTourDetail.cs</DependentUpon>
@@ -541,6 +556,8 @@
   <ItemGroup>
     <None Include="Resources\account1.png" />
     <None Include="Resources\back.png" />
+    <Content Include="Resources\arrow-left1.png" />
+    <Content Include="Resources\arrow-right1.png" />
     <Content Include="Resources\backcolor.bmp" />
     <None Include="Resources\biYn_mY_khe_1.jpg" />
     <Content Include="Resources\bold.bmp" />
@@ -572,5 +589,6 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

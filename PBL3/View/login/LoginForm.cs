@@ -45,6 +45,7 @@ namespace PBL3
             }
             Account account = new Account(username, HashPassword.GetHash(password));
             account = AccountBUS.Instance.CheckAccount(account);
+
             if (account != null)
             {
                 if (!account.status)

@@ -56,7 +56,7 @@ namespace DAO
                              t.price_adult_one_ticket,
                              t.price_children_one_ticket
                          };
-            
+            if(result == null) return tourDTOs;
             foreach (var i in result)
             {
                 int id = i.id;

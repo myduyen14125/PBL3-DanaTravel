@@ -1,8 +1,11 @@
-﻿using PBL3.View.admin;
+﻿using BUS;
+using DTO;
+using PBL3.View.admin;
 using PBL3.View.tour;
 using PBL3.viewHtml;
 using System;
 using System.Windows.Forms;
+using Util;
 
 namespace PBL3
 {
@@ -16,7 +19,12 @@ namespace PBL3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            Account account = AccountBUS.Instance.CheckAccount(new Account
+            {
+                username = "daitoan2000@gmail.com",
+                password = HashPassword.GetHash("admin")
+            }); ;
+            Application.Run(new Homepage(account));
         }
     }
 }

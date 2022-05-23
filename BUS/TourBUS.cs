@@ -32,6 +32,7 @@ namespace BUS
         {
             return TourDAO.Instance.GetListTourCategory();
         }
+
         public void Save(Tour t)
         {
             TourDAO.Instance.Save(t);

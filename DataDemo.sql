@@ -127,4 +127,6 @@ values	(N'Tour về gia đình'),
 		(N'Tour về thám hiểm'),
 		(N'Tour về tự nhiên'),
 		(N'Tour về tôn giáo');
--- Dữ liệu demo tour
+-- Data tour ticket status
+insert into TourTicketStatus(name)
+values	(N'Đang chờ xác nhận'), (N'Đã xác nhận'), (N'Đã hủy');

@@ -40,11 +40,6 @@ namespace PBL3
             cbbCustomerType.ValueMember = "Value";
             List<CustomerType> customerTypes = CustomerBUS.Instance.GetListCustomerType();
             List<Object> items = new List<object>();
-            items.Add(new
-            {
-                Text = "All",
-                Value = 0
-            });
             foreach (CustomerType ct in customerTypes)
             {
                 items.Add(new
@@ -63,9 +58,9 @@ namespace PBL3
             if (customerID != 0)
             {
                 txtName.Text = customer.name;
-                dateTimePicker1.Value = customer.birthday;
-                radioMale.Checked = customer.gender;
-                radioFemale.Checked = !customer.gender;
+                dateTimePicker1.Value = customer.birthday == null ? DateTime.Now : (DateTime)customer.birthday;
+                radioMale.Checked = customer.gender == null ? false : (bool)customer.gender;
+                radioFemale.Checked = customer.gender == null ? false : (bool)!customer.gender;
                 txtCCCD.Text = customer.idCard;
                 txtPhone.Text = customer.phone;
                 txtEmail.Text = customer.email;
@@ -95,17 +90,23 @@ namespace PBL3
             {
                 id = customerID,
                 name = txtName.Text,
-                birthday = dateTimePicker1.Value,
-                gender = radioMale.Checked ? true : false,
                 idCard = txtCCCD.Text,
                 phone = txtPhone.Text,
                 email = txtEmail.Text,
                 address = txtAddress.Text,
                 customer_type_id = (cbbCustomerType.SelectedItem as dynamic).Value
             };
+            if (radioMale.Checked) cus.gender = true;
+            else if(radioFemale.Checked) cus.gender = false;
+            if(dateTimePicker1.Value.Day != DateTime.Now.Day ||
+               dateTimePicker1.Value.Month != DateTime.Now.Month ||
+               dateTimePicker1.Value.Year != DateTime.Now.Year)
+            {
+                cus.birthday = dateTimePicker1.Value;
+            }
             CustomerBUS.Instance.Save(cus);
-
-            MessageBox.Show("Addition customer successful");
+            if(customerID == 0)     MessageBox.Show("Addition customer successful");
+            else MessageBox.Show("Edition customer successful");
             d();
             this.Hide();
         }
@@ -121,11 +122,6 @@ namespace PBL3
                 return false;
             }
 
-            if (!radioFemale.Checked && !radioMale.Checked)
-            {
-                MessageBox.Show("Please choose gender");
-                return false;
-            }
 
             if (!validate.ValidateIdCard(txtCCCD.Text))
             {
