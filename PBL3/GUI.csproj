@@ -33,11 +33,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="MyLibrary">
       <HintPath>..\..\MyLibrary\MyLibrary\bin\Debug\MyLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Frameworks, Version=4.6.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\NuGet.Frameworks.4.6.4\lib\net46\NuGet.Frameworks.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -193,6 +202,12 @@
     <Compile Include="View\RoleAccount.Designer.cs">
       <DependentUpon>RoleAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\statistic\Statistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\statistic\Statistic.Designer.cs">
+      <DependentUpon>Statistic.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\ticket\TicketManagement.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -297,6 +312,9 @@
     <EmbeddedResource Include="View\RoleAccount.resx">
       <DependentUpon>RoleAccount.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\statistic\Statistic.resx">
+      <DependentUpon>Statistic.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\TourManagement.resx">
       <DependentUpon>TourManagement.cs</DependentUpon>
     </EmbeddedResource>
@@ -312,6 +330,7 @@
     <EmbeddedResource Include="View\tour\TourItem.resx">
       <DependentUpon>TourItem.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

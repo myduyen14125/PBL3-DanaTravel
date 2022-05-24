@@ -24,12 +24,12 @@ namespace PBL3
             InitializeComponent();
             pnChoice.Visible = false;
             this.account = ac;
-            if (account.Roles.FirstOrDefault().name.ToLower() == "customer")
-            {
-                // Customer
-                btnAdmin.Visible = false;
-            }
-            else btnAdmin.Visible = true;
+            //if (account.Roles.FirstOrDefault().name.ToLower() == "customer")
+            //{
+            //    // Customer
+            //    btnAdmin.Visible = false;
+            //}
+            //else btnAdmin.Visible = true;
         }
          private void btnAdmin_Click(object sender, EventArgs e)
         {
@@ -91,5 +91,14 @@ namespace PBL3
             this.AutoScrollMinSize = new System.Drawing.Size(0, 1500);
         }
 
+        private void lbHomepage_MouseLeave(object sender, EventArgs e)
+        {
+            lbHomepage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(91)))), ((int)(((byte)(132)))));
+        }
+
+        private void lbHomepage_MouseHover(object sender, EventArgs e)
+        {
+            lbHomepage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
+        }
     }
 }

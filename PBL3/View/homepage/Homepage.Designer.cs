@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Homepage));
             this.panelHomepage = new System.Windows.Forms.Panel();
             this.btnNel = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
@@ -62,8 +61,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnRight = new System.Windows.Forms.Button();
             this.btnleft = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -93,11 +90,9 @@
             this.myPictureBox1 = new MyLibrary.MyPictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.btnSearch = new MyLibrary.MyButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnChoice = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnAdmin = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.myButton2 = new MyLibrary.MyButton();
             this.myButton5 = new MyLibrary.MyButton();
             this.myButton7 = new MyLibrary.MyButton();
@@ -108,6 +103,11 @@
             this.myButton12 = new MyLibrary.MyButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lbHomepage = new System.Windows.Forms.Label();
+            this.lbAbout = new System.Windows.Forms.Label();
+            this.lbContact = new System.Windows.Forms.Label();
             this.panelHomepage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
@@ -131,11 +131,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnChoice.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHomepage
@@ -214,7 +214,7 @@
             this.panelHomepage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelHomepage.Location = new System.Drawing.Point(0, 0);
             this.panelHomepage.Name = "panelHomepage";
-            this.panelHomepage.Size = new System.Drawing.Size(1076, 1500);
+            this.panelHomepage.Size = new System.Drawing.Size(1065, 1500);
             this.panelHomepage.TabIndex = 0;
             // 
             // btnNel
@@ -225,19 +225,6 @@
             this.btnNel.TabIndex = 238;
             this.btnNel.Text = "button1";
             this.btnNel.UseVisualStyleBackColor = true;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(843, 20);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(153, 27);
-            this.textBox2.TabIndex = 234;
-            this.textBox2.Text = "Hi, Toan Nguyen";
             // 
             // label32
             // 
@@ -614,28 +601,6 @@
             this.label4.TabIndex = 174;
             this.label4.Text = "BEST DESTINATION AROUND THE WORLD";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(91)))), ((int)(((byte)(132)))));
-            this.label3.Location = new System.Drawing.Point(536, 19);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 28);
-            this.label3.TabIndex = 173;
-            this.label3.Text = "Contacts";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(91)))), ((int)(((byte)(132)))));
-            this.label2.Location = new System.Drawing.Point(363, 19);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 28);
-            this.label2.TabIndex = 172;
-            this.label2.Text = "About us";
-            // 
             // btnRight
             // 
             this.btnRight.Image = ((System.Drawing.Image)(resources.GetObject("btnRight.Image")));
@@ -932,16 +897,6 @@
             this.btnSearch.TextColor = System.Drawing.Color.White;
             this.btnSearch.UseVisualStyleBackColor = false;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::PBL3.Properties.Resources.Logo;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(87, 55);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 170;
-            this.pictureBox2.TabStop = false;
-            // 
             // pnChoice
             // 
             this.pnChoice.Controls.Add(this.btnLogout);
@@ -955,7 +910,7 @@
             // 
             this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
             this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = global::PBL3.Properties.Resources.Group_164;
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -971,7 +926,7 @@
             // 
             this.btnAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
             this.btnAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdmin.ForeColor = System.Drawing.Color.White;
             this.btnAdmin.Image = global::PBL3.Properties.Resources.Group_3;
             this.btnAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -982,17 +937,6 @@
             this.btnAdmin.Text = "Admin";
             this.btnAdmin.UseVisualStyleBackColor = false;
             this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
-            this.label1.Location = new System.Drawing.Point(223, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 28);
-            this.label1.TabIndex = 171;
-            this.label1.Text = "Home";
             // 
             // myButton2
             // 
@@ -1150,13 +1094,75 @@
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(219)))));
             this.panel5.Controls.Add(this.pictureBox2);
             this.panel5.Controls.Add(this.textBox2);
-            this.panel5.Controls.Add(this.label1);
-            this.panel5.Controls.Add(this.label2);
-            this.panel5.Controls.Add(this.label3);
+            this.panel5.Controls.Add(this.lbHomepage);
+            this.panel5.Controls.Add(this.lbAbout);
+            this.panel5.Controls.Add(this.lbContact);
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1073, 61);
+            this.panel5.Size = new System.Drawing.Size(1097, 61);
             this.panel5.TabIndex = 244;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PBL3.Properties.Resources.Logo;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(87, 55);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 170;
+            this.pictureBox2.TabStop = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(220)))), ((int)(((byte)(219)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(91)))), ((int)(((byte)(132)))));
+            this.textBox2.Location = new System.Drawing.Point(843, 20);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(153, 27);
+            this.textBox2.TabIndex = 234;
+            this.textBox2.Text = "Hi, Toan Nguyen";
+            // 
+            // lbHomepage
+            // 
+            this.lbHomepage.AutoSize = true;
+            this.lbHomepage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbHomepage.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHomepage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
+            this.lbHomepage.Location = new System.Drawing.Point(223, 19);
+            this.lbHomepage.Name = "lbHomepage";
+            this.lbHomepage.Size = new System.Drawing.Size(101, 28);
+            this.lbHomepage.TabIndex = 171;
+            this.lbHomepage.Text = "Trang chủ";
+            this.lbHomepage.MouseLeave += new System.EventHandler(this.lbHomepage_MouseLeave);
+            this.lbHomepage.MouseHover += new System.EventHandler(this.lbHomepage_MouseHover);
+            // 
+            // lbAbout
+            // 
+            this.lbAbout.AutoSize = true;
+            this.lbAbout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbAbout.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(91)))), ((int)(((byte)(132)))));
+            this.lbAbout.Location = new System.Drawing.Point(363, 19);
+            this.lbAbout.Name = "lbAbout";
+            this.lbAbout.Size = new System.Drawing.Size(140, 28);
+            this.lbAbout.TabIndex = 172;
+            this.lbAbout.Text = "Về DanaTravel";
+            // 
+            // lbContact
+            // 
+            this.lbContact.AutoSize = true;
+            this.lbContact.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbContact.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbContact.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(91)))), ((int)(((byte)(132)))));
+            this.lbContact.Location = new System.Drawing.Point(536, 19);
+            this.lbContact.Name = "lbContact";
+            this.lbContact.Size = new System.Drawing.Size(79, 28);
+            this.lbContact.TabIndex = 173;
+            this.lbContact.Text = "Liên hệ";
             // 
             // Homepage
             // 
@@ -1165,7 +1171,7 @@
             this.AutoScrollMinSize = new System.Drawing.Size(1008, 1500);
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1097, 797);
+            this.ClientSize = new System.Drawing.Size(1086, 797);
             this.Controls.Add(this.panelHomepage);
             this.DoubleBuffered = true;
             this.Name = "Homepage";
@@ -1196,12 +1202,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnChoice.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1244,8 +1250,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbContact;
+        private System.Windows.Forms.Label lbAbout;
         private System.Windows.Forms.Button btnRight;
         private System.Windows.Forms.Button btnleft;
         private System.Windows.Forms.Panel panel4;
@@ -1279,7 +1285,7 @@
         private System.Windows.Forms.Panel pnChoice;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnAdmin;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbHomepage;
         private MyLibrary.MyButton myButton2;
         private MyLibrary.MyButton myButton5;
         private MyLibrary.MyButton myButton7;
