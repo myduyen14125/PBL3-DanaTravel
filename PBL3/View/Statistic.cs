@@ -1,4 +1,5 @@
-﻿using LiveCharts;
+﻿using DTO;
+using LiveCharts;
 using LiveCharts.Wpf;
 using PBL3.View.statistic;
 using System;
@@ -16,6 +17,7 @@ namespace PBL3.View
 {
     public partial class Statistic : UserControl
     {
+        private TourDTO tourDTO;
         public Statistic()
         {
             InitializeComponent();

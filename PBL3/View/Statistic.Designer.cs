@@ -30,32 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
-            this.pieChart1 = new LiveCharts.WinForms.PieChart();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnLoad = new System.Windows.Forms.Button();
             this.yearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.monthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.revenueBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.btnLoad = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.revenueBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // cartesianChart1
             // 
-            this.cartesianChart1.Location = new System.Drawing.Point(63, 78);
+            this.cartesianChart1.Location = new System.Drawing.Point(38, 22);
             this.cartesianChart1.Name = "cartesianChart1";
-            this.cartesianChart1.Size = new System.Drawing.Size(545, 316);
+            this.cartesianChart1.Size = new System.Drawing.Size(939, 347);
             this.cartesianChart1.TabIndex = 0;
             this.cartesianChart1.Text = "cartesianChart1";
-            // 
-            // pieChart1
-            // 
-            this.pieChart1.Location = new System.Drawing.Point(648, 73);
-            this.pieChart1.Name = "pieChart1";
-            this.pieChart1.Size = new System.Drawing.Size(436, 330);
-            this.pieChart1.TabIndex = 1;
-            this.pieChart1.Text = "pieChart1";
             // 
             // dataGridView1
             // 
@@ -66,12 +57,22 @@
             this.monthDataGridViewTextBoxColumn,
             this.valueDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.revenueBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(38, 424);
+            this.dataGridView1.Location = new System.Drawing.Point(66, 393);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(597, 253);
+            this.dataGridView1.Size = new System.Drawing.Size(911, 253);
             this.dataGridView1.TabIndex = 2;
+            // 
+            // btnLoad
+            // 
+            this.btnLoad.Location = new System.Drawing.Point(1013, 304);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(104, 38);
+            this.btnLoad.TabIndex = 3;
+            this.btnLoad.Text = "Load";
+            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // yearDataGridViewTextBoxColumn
             // 
@@ -101,23 +102,12 @@
             // 
             this.revenueBindingSource.DataSource = typeof(PBL3.View.statistic.Revenue);
             // 
-            // btnLoad
-            // 
-            this.btnLoad.Location = new System.Drawing.Point(744, 563);
-            this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(75, 23);
-            this.btnLoad.TabIndex = 3;
-            this.btnLoad.Text = "Load";
-            this.btnLoad.UseVisualStyleBackColor = true;
-            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
-            // 
             // Statistic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.pieChart1);
             this.Controls.Add(this.cartesianChart1);
             this.Name = "Statistic";
             this.Size = new System.Drawing.Size(1156, 698);
@@ -131,7 +121,6 @@
         #endregion
 
         private LiveCharts.WinForms.CartesianChart cartesianChart1;
-        private LiveCharts.WinForms.PieChart pieChart1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn yearDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn monthDataGridViewTextBoxColumn;
