@@ -33,6 +33,7 @@ namespace PBL3.View.admin
             accountEmployee1.Visible = false;
             customerAccount1.Visible = false;
             roleAccount1.Visible = false;
+            statistic1.Visible = false;
             control.Visible = true;
         }
 
@@ -54,6 +55,10 @@ namespace PBL3.View.admin
         private void btnTour_Click(object sender, EventArgs e)
         {
             SetActivePanel(tourManagement1);
+        }
+        private void btnStatistic_Click(object sender, EventArgs e)
+        {
+            SetActivePanel(statistic1);
         }
         private void btnAccountEmployee_Click(object sender, EventArgs e)
         {
@@ -110,5 +115,7 @@ namespace PBL3.View.admin
             btnStatistic.Location = new Point(0, 387);
             SetActivePanel(roleAccount1);
         }
+
+        
     }
 }

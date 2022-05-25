@@ -525,22 +525,26 @@
             // 
             // txtSearch
             // 
-            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSearch.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(91)))), ((int)(((byte)(132)))));
-            this.txtSearch.Location = new System.Drawing.Point(114, 321);
+            this.txtSearch.Location = new System.Drawing.Point(99, 315);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(289, 26);
+            this.txtSearch.Size = new System.Drawing.Size(289, 37);
             this.txtSearch.TabIndex = 180;
-            this.txtSearch.Text = "    Search";
+            this.txtSearch.Text = "Tìm kiếm tour du lịch...";
+            this.txtSearch.Click += new System.EventHandler(this.txtSearch_Click);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(91)))), ((int)(((byte)(132)))));
-            this.label9.Location = new System.Drawing.Point(65, 287);
+            this.label9.Location = new System.Drawing.Point(65, 283);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(529, 15);
             this.label9.TabIndex = 179;
@@ -686,7 +690,7 @@
             // pictureBox43
             // 
             this.pictureBox43.Image = global::PBL3.Properties.Resources.circles;
-            this.pictureBox43.Location = new System.Drawing.Point(44, 320);
+            this.pictureBox43.Location = new System.Drawing.Point(27, 329);
             this.pictureBox43.Name = "pictureBox43";
             this.pictureBox43.Size = new System.Drawing.Size(50, 47);
             this.pictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -890,7 +894,7 @@
             this.btnSearch.FlatAppearance.BorderSize = 0;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(423, 320);
+            this.btnSearch.Location = new System.Drawing.Point(414, 315);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(55, 32);
             this.btnSearch.TabIndex = 181;
@@ -1171,7 +1175,7 @@
             this.AutoScrollMinSize = new System.Drawing.Size(1008, 1500);
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1086, 797);
+            this.ClientSize = new System.Drawing.Size(1086, 668);
             this.Controls.Add(this.panelHomepage);
             this.DoubleBuffered = true;
             this.Name = "Homepage";

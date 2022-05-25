@@ -32,13 +32,8 @@
             this.fileSystemWatcher2 = new System.IO.FileSystemWatcher();
             this.name = new System.Windows.Forms.Label();
             this.panelContent = new System.Windows.Forms.Panel();
-            this.roleAccount1 = new PBL3.View.RoleAccount();
-            this.customerAccount1 = new PBL3.View.CustomerAccount();
-            this.accountEmployee1 = new PBL3.View.AccountEmployee();
-            this.tourManagement1 = new PBL3.View.TourManagement();
-            this.employeeManagement1 = new PBL3.EmployeeManagement();
-            this.customer1 = new PBL3.View.admin.CustomerManagement();
             this.navbar = new System.Windows.Forms.Panel();
+            this.btnStatistic = new System.Windows.Forms.Button();
             this.manacontainer = new System.Windows.Forms.Panel();
             this.btnRoleAcc = new System.Windows.Forms.Button();
             this.btnAccountEmployee = new System.Windows.Forms.Button();
@@ -49,8 +44,14 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCustomer = new System.Windows.Forms.Button();
-            this.btnStatistic = new System.Windows.Forms.Button();
             this.btnEmployee = new System.Windows.Forms.Button();
+            this.roleAccount1 = new PBL3.View.RoleAccount();
+            this.customerAccount1 = new PBL3.View.CustomerAccount();
+            this.accountEmployee1 = new PBL3.View.AccountEmployee();
+            this.tourManagement1 = new PBL3.View.TourManagement();
+            this.employeeManagement1 = new PBL3.EmployeeManagement();
+            this.customer1 = new PBL3.View.admin.CustomerManagement();
+            this.statistic1 = new PBL3.View.Statistic();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher2)).BeginInit();
             this.panelContent.SuspendLayout();
@@ -78,7 +79,7 @@
             this.name.ForeColor = System.Drawing.Color.White;
             this.name.Location = new System.Drawing.Point(56, 171);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(94, 21);
+            this.name.Size = new System.Drawing.Size(115, 28);
             this.name.TabIndex = 27;
             this.name.Text = "Admin Yuu";
             // 
@@ -90,64 +91,12 @@
             this.panelContent.Controls.Add(this.tourManagement1);
             this.panelContent.Controls.Add(this.employeeManagement1);
             this.panelContent.Controls.Add(this.customer1);
+            this.panelContent.Controls.Add(this.statistic1);
             this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContent.Location = new System.Drawing.Point(199, 0);
             this.panelContent.Name = "panelContent";
             this.panelContent.Size = new System.Drawing.Size(867, 567);
             this.panelContent.TabIndex = 30;
-            // 
-            // roleAccount1
-            // 
-            this.roleAccount1.Location = new System.Drawing.Point(-3, 0);
-            this.roleAccount1.Name = "roleAccount1";
-            this.roleAccount1.Size = new System.Drawing.Size(867, 567);
-            this.roleAccount1.TabIndex = 5;
-            // 
-            // customerAccount1
-            // 
-            this.customerAccount1.Location = new System.Drawing.Point(-3, 2);
-            this.customerAccount1.Name = "customerAccount1";
-            this.customerAccount1.Size = new System.Drawing.Size(867, 567);
-            this.customerAccount1.TabIndex = 4;
-            // 
-            // accountEmployee1
-            // 
-            this.accountEmployee1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
-            this.accountEmployee1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.accountEmployee1.Location = new System.Drawing.Point(0, 0);
-            this.accountEmployee1.Margin = new System.Windows.Forms.Padding(2);
-            this.accountEmployee1.Name = "accountEmployee1";
-            this.accountEmployee1.Size = new System.Drawing.Size(867, 567);
-            this.accountEmployee1.TabIndex = 3;
-            // 
-            // tourManagement1
-            // 
-            this.tourManagement1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
-            this.tourManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tourManagement1.Location = new System.Drawing.Point(0, 0);
-            this.tourManagement1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tourManagement1.Name = "tourManagement1";
-            this.tourManagement1.Size = new System.Drawing.Size(867, 567);
-            this.tourManagement1.TabIndex = 2;
-            // 
-            // employeeManagement1
-            // 
-            this.employeeManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.employeeManagement1.Location = new System.Drawing.Point(0, 0);
-            this.employeeManagement1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.employeeManagement1.Name = "employeeManagement1";
-            this.employeeManagement1.Size = new System.Drawing.Size(867, 567);
-            this.employeeManagement1.TabIndex = 0;
-            // 
-            // customer1
-            // 
-            this.customer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
-            this.customer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customer1.Location = new System.Drawing.Point(0, 0);
-            this.customer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.customer1.Name = "customer1";
-            this.customer1.Size = new System.Drawing.Size(867, 567);
-            this.customer1.TabIndex = 1;
             // 
             // navbar
             // 
@@ -169,6 +118,28 @@
             this.navbar.Name = "navbar";
             this.navbar.Size = new System.Drawing.Size(199, 567);
             this.navbar.TabIndex = 28;
+            // 
+            // btnStatistic
+            // 
+            this.btnStatistic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
+            this.btnStatistic.CausesValidation = false;
+            this.btnStatistic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStatistic.FlatAppearance.BorderSize = 0;
+            this.btnStatistic.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.btnStatistic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStatistic.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStatistic.ForeColor = System.Drawing.Color.White;
+            this.btnStatistic.Image = global::PBL3.Properties.Resources.statistic;
+            this.btnStatistic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStatistic.Location = new System.Drawing.Point(0, 489);
+            this.btnStatistic.Name = "btnStatistic";
+            this.btnStatistic.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnStatistic.Size = new System.Drawing.Size(199, 40);
+            this.btnStatistic.TabIndex = 26;
+            this.btnStatistic.TabStop = false;
+            this.btnStatistic.Text = "Statistic";
+            this.btnStatistic.UseVisualStyleBackColor = false;
+            this.btnStatistic.Click += new System.EventHandler(this.btnStatistic_Click);
             // 
             // manacontainer
             // 
@@ -359,27 +330,6 @@
             this.btnCustomer.UseVisualStyleBackColor = false;
             this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
             // 
-            // btnStatistic
-            // 
-            this.btnStatistic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.btnStatistic.CausesValidation = false;
-            this.btnStatistic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnStatistic.FlatAppearance.BorderSize = 0;
-            this.btnStatistic.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
-            this.btnStatistic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStatistic.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStatistic.ForeColor = System.Drawing.Color.White;
-            this.btnStatistic.Image = global::PBL3.Properties.Resources.statistic;
-            this.btnStatistic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStatistic.Location = new System.Drawing.Point(0, 489);
-            this.btnStatistic.Name = "btnStatistic";
-            this.btnStatistic.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnStatistic.Size = new System.Drawing.Size(199, 40);
-            this.btnStatistic.TabIndex = 26;
-            this.btnStatistic.TabStop = false;
-            this.btnStatistic.Text = "Statistic";
-            this.btnStatistic.UseVisualStyleBackColor = false;
-            // 
             // btnEmployee
             // 
             this.btnEmployee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
@@ -402,6 +352,70 @@
             this.btnEmployee.Text = "Employee";
             this.btnEmployee.UseVisualStyleBackColor = false;
             this.btnEmployee.Click += new System.EventHandler(this.btnEmployee_Click);
+            // 
+            // roleAccount1
+            // 
+            this.roleAccount1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.roleAccount1.Location = new System.Drawing.Point(0, 0);
+            this.roleAccount1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.roleAccount1.Name = "roleAccount1";
+            this.roleAccount1.Size = new System.Drawing.Size(867, 567);
+            this.roleAccount1.TabIndex = 5;
+            // 
+            // customerAccount1
+            // 
+            this.customerAccount1.Location = new System.Drawing.Point(-3, 2);
+            this.customerAccount1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.customerAccount1.Name = "customerAccount1";
+            this.customerAccount1.Size = new System.Drawing.Size(867, 567);
+            this.customerAccount1.TabIndex = 4;
+            // 
+            // accountEmployee1
+            // 
+            this.accountEmployee1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
+            this.accountEmployee1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.accountEmployee1.Location = new System.Drawing.Point(0, 0);
+            this.accountEmployee1.Margin = new System.Windows.Forms.Padding(2);
+            this.accountEmployee1.Name = "accountEmployee1";
+            this.accountEmployee1.Size = new System.Drawing.Size(867, 567);
+            this.accountEmployee1.TabIndex = 3;
+            // 
+            // tourManagement1
+            // 
+            this.tourManagement1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
+            this.tourManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tourManagement1.Location = new System.Drawing.Point(0, 0);
+            this.tourManagement1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tourManagement1.Name = "tourManagement1";
+            this.tourManagement1.Size = new System.Drawing.Size(867, 567);
+            this.tourManagement1.TabIndex = 2;
+            // 
+            // employeeManagement1
+            // 
+            this.employeeManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.employeeManagement1.Location = new System.Drawing.Point(0, 0);
+            this.employeeManagement1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.employeeManagement1.Name = "employeeManagement1";
+            this.employeeManagement1.Size = new System.Drawing.Size(867, 567);
+            this.employeeManagement1.TabIndex = 0;
+            // 
+            // customer1
+            // 
+            this.customer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
+            this.customer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customer1.Location = new System.Drawing.Point(0, 0);
+            this.customer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.customer1.Name = "customer1";
+            this.customer1.Size = new System.Drawing.Size(867, 567);
+            this.customer1.TabIndex = 1;
+            // 
+            // statistic1
+            // 
+            this.statistic1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.statistic1.Location = new System.Drawing.Point(0, 0);
+            this.statistic1.Name = "statistic1";
+            this.statistic1.Size = new System.Drawing.Size(867, 567);
+            this.statistic1.TabIndex = 6;
             // 
             // AdminManagement
             // 
@@ -451,5 +465,6 @@
         private System.Windows.Forms.Button btnAccount;
         private CustomerAccount customerAccount1;
         private RoleAccount roleAccount1;
+        private Statistic statistic1;
     }
 }

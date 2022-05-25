@@ -118,7 +118,6 @@ E:\PBL3-DanaTravel\PBL3\bin\Debug\DTO.pdb
 E:\PBL3-DanaTravel\PBL3\bin\Debug\DTO.exe.config
 E:\PBL3-DanaTravel\PBL3\bin\Debug\Util.pdb
 E:\PBL3-DanaTravel\PBL3\bin\Debug\Util.exe.config
-E:\PBL3-DanaTravel\PBL3\bin\Debug\MyLibrary.pdb
 E:\PBL3-DanaTravel\PBL3\bin\Debug\EntityFramework.xml
 E:\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.AssemblyReference.cache
 E:\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
@@ -154,3 +153,17 @@ E:\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 E:\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.CopyComplete
 E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.exe
 E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.pdb
+E:\PBL3-DanaTravel\PBL3\bin\Debug\LiveCharts.dll
+E:\PBL3-DanaTravel\PBL3\bin\Debug\Newtonsoft.Json.dll
+E:\PBL3-DanaTravel\PBL3\bin\Debug\NuGet.Frameworks.dll
+E:\PBL3-DanaTravel\PBL3\bin\Debug\LiveCharts.pdb
+E:\PBL3-DanaTravel\PBL3\bin\Debug\LiveCharts.xml
+E:\PBL3-DanaTravel\PBL3\bin\Debug\Newtonsoft.Json.xml
+E:\PBL3-DanaTravel\PBL3\bin\Debug\NuGet.Frameworks.xml
+E:\PBL3-DanaTravel\PBL3\bin\Debug\LiveCharts.WinForms.dll
+E:\PBL3-DanaTravel\PBL3\bin\Debug\LiveCharts.Wpf.dll
+E:\PBL3-DanaTravel\PBL3\bin\Debug\LiveCharts.WinForms.pdb
+E:\PBL3-DanaTravel\PBL3\bin\Debug\LiveCharts.WinForms.xml
+E:\PBL3-DanaTravel\PBL3\bin\Debug\LiveCharts.Wpf.pdb
+E:\PBL3-DanaTravel\PBL3\bin\Debug\LiveCharts.Wpf.xml
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.Statistic.resources

@@ -100,5 +100,10 @@ namespace PBL3
         {
             lbHomepage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
         }
+
+        private void txtSearch_Click(object sender, EventArgs e)
+        {
+            txtSearch.Text = "";
+        }
     }
 }
