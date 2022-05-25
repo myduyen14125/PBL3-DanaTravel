@@ -35,26 +35,25 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
+            this.lbCmt3 = new System.Windows.Forms.Label();
+            this.lbCmt2 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
+            this.lbName3 = new System.Windows.Forms.Label();
+            this.lbName2 = new System.Windows.Forms.Label();
+            this.lbCmt1 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
+            this.lbName1 = new System.Windows.Forms.Label();
+            this.lbFeedback = new System.Windows.Forms.Label();
             this.myButton8 = new MyLibrary.MyButton();
             this.myButton6 = new MyLibrary.MyButton();
             this.myButton4 = new MyLibrary.MyButton();
             this.myButton3 = new MyLibrary.MyButton();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.lbTypeTravel = new System.Windows.Forms.Label();
+            this.lbTittle22 = new System.Windows.Forms.Label();
+            this.lbTitle2 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtSearch = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -88,7 +87,7 @@
             this.pictureBox31 = new System.Windows.Forms.PictureBox();
             this.pictureBox32 = new System.Windows.Forms.PictureBox();
             this.myPictureBox1 = new MyLibrary.MyPictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pbThumbnail = new System.Windows.Forms.PictureBox();
             this.btnSearch = new MyLibrary.MyButton();
             this.pnChoice = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
@@ -108,6 +107,7 @@
             this.lbHomepage = new System.Windows.Forms.Label();
             this.lbAbout = new System.Windows.Forms.Label();
             this.lbContact = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.panelHomepage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
@@ -130,7 +130,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbThumbnail)).BeginInit();
             this.pnChoice.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -145,23 +145,23 @@
             this.panelHomepage.Controls.Add(this.label20);
             this.panelHomepage.Controls.Add(this.label31);
             this.panelHomepage.Controls.Add(this.label30);
-            this.panelHomepage.Controls.Add(this.label29);
-            this.panelHomepage.Controls.Add(this.label28);
+            this.panelHomepage.Controls.Add(this.lbCmt3);
+            this.panelHomepage.Controls.Add(this.lbCmt2);
             this.panelHomepage.Controls.Add(this.label27);
             this.panelHomepage.Controls.Add(this.label26);
-            this.panelHomepage.Controls.Add(this.label25);
-            this.panelHomepage.Controls.Add(this.label24);
-            this.panelHomepage.Controls.Add(this.label23);
+            this.panelHomepage.Controls.Add(this.lbName3);
+            this.panelHomepage.Controls.Add(this.lbName2);
+            this.panelHomepage.Controls.Add(this.lbCmt1);
             this.panelHomepage.Controls.Add(this.label22);
-            this.panelHomepage.Controls.Add(this.label21);
-            this.panelHomepage.Controls.Add(this.label19);
+            this.panelHomepage.Controls.Add(this.lbName1);
+            this.panelHomepage.Controls.Add(this.lbFeedback);
             this.panelHomepage.Controls.Add(this.myButton8);
             this.panelHomepage.Controls.Add(this.myButton6);
             this.panelHomepage.Controls.Add(this.myButton4);
             this.panelHomepage.Controls.Add(this.myButton3);
-            this.panelHomepage.Controls.Add(this.label18);
-            this.panelHomepage.Controls.Add(this.label17);
-            this.panelHomepage.Controls.Add(this.label16);
+            this.panelHomepage.Controls.Add(this.lbTypeTravel);
+            this.panelHomepage.Controls.Add(this.lbTittle22);
+            this.panelHomepage.Controls.Add(this.lbTitle2);
             this.panelHomepage.Controls.Add(this.label11);
             this.panelHomepage.Controls.Add(this.label10);
             this.panelHomepage.Controls.Add(this.txtSearch);
@@ -198,7 +198,7 @@
             this.panelHomepage.Controls.Add(this.pictureBox31);
             this.panelHomepage.Controls.Add(this.pictureBox32);
             this.panelHomepage.Controls.Add(this.myPictureBox1);
-            this.panelHomepage.Controls.Add(this.pictureBox7);
+            this.panelHomepage.Controls.Add(this.pbThumbnail);
             this.panelHomepage.Controls.Add(this.btnSearch);
             this.panelHomepage.Controls.Add(this.pnChoice);
             this.panelHomepage.Controls.Add(this.myButton2);
@@ -243,11 +243,11 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(91)))), ((int)(((byte)(132)))));
-            this.label20.Location = new System.Drawing.Point(380, 1309);
+            this.label20.Location = new System.Drawing.Point(354, 1309);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(360, 26);
+            this.label20.Size = new System.Drawing.Size(407, 26);
             this.label20.TabIndex = 197;
-            this.label20.Text = "What Our Clients Say About Us?";
+            this.label20.Text = "Khách du lịch nghĩ gì về DanaTravel?";
             // 
             // label31
             // 
@@ -273,29 +273,29 @@
             this.label30.TabIndex = 228;
             this.label30.Text = ",,";
             // 
-            // label29
+            // lbCmt3
             // 
-            this.label29.AutoSize = true;
-            this.label29.BackColor = System.Drawing.Color.White;
-            this.label29.Font = new System.Drawing.Font("Times New Roman", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label29.Location = new System.Drawing.Point(713, 1448);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(174, 15);
-            this.label29.TabIndex = 227;
-            this.label29.Text = "It\'s beautiful, fresh atmosphere.";
+            this.lbCmt3.AutoSize = true;
+            this.lbCmt3.BackColor = System.Drawing.Color.White;
+            this.lbCmt3.Font = new System.Drawing.Font("Times New Roman", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCmt3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbCmt3.Location = new System.Drawing.Point(713, 1448);
+            this.lbCmt3.Name = "lbCmt3";
+            this.lbCmt3.Size = new System.Drawing.Size(259, 15);
+            this.lbCmt3.TabIndex = 227;
+            this.lbCmt3.Text = "Mình thích ở nhà nhưng mình book DanaTravel";
             // 
-            // label28
+            // lbCmt2
             // 
-            this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.Color.White;
-            this.label28.Font = new System.Drawing.Font("Times New Roman", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label28.Location = new System.Drawing.Point(432, 1448);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(174, 15);
-            this.label28.TabIndex = 226;
-            this.label28.Text = "It\'s beautiful, fresh atmosphere.";
+            this.lbCmt2.AutoSize = true;
+            this.lbCmt2.BackColor = System.Drawing.Color.White;
+            this.lbCmt2.Font = new System.Drawing.Font("Times New Roman", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCmt2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbCmt2.Location = new System.Drawing.Point(432, 1448);
+            this.lbCmt2.Name = "lbCmt2";
+            this.lbCmt2.Size = new System.Drawing.Size(235, 15);
+            this.lbCmt2.TabIndex = 226;
+            this.lbCmt2.Text = "Rất thích hợp cho các cặp đôi đi với nhau <3";
             // 
             // label27
             // 
@@ -321,41 +321,41 @@
             this.label26.TabIndex = 224;
             this.label26.Text = "BaNaHills, Da Nang";
             // 
-            // label25
+            // lbName3
             // 
-            this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.White;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label25.Location = new System.Drawing.Point(764, 1378);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(44, 17);
-            this.label25.TabIndex = 223;
-            this.label25.Text = "Leon";
+            this.lbName3.AutoSize = true;
+            this.lbName3.BackColor = System.Drawing.Color.White;
+            this.lbName3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbName3.Location = new System.Drawing.Point(764, 1378);
+            this.lbName3.Name = "lbName3";
+            this.lbName3.Size = new System.Drawing.Size(36, 17);
+            this.lbName3.TabIndex = 223;
+            this.lbName3.Text = "Ton";
             // 
-            // label24
+            // lbName2
             // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.White;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label24.Location = new System.Drawing.Point(476, 1377);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(49, 17);
-            this.label24.TabIndex = 222;
-            this.label24.Text = "KiChii";
+            this.lbName2.AutoSize = true;
+            this.lbName2.BackColor = System.Drawing.Color.White;
+            this.lbName2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbName2.Location = new System.Drawing.Point(476, 1377);
+            this.lbName2.Name = "lbName2";
+            this.lbName2.Size = new System.Drawing.Size(64, 17);
+            this.lbName2.TabIndex = 222;
+            this.lbName2.Text = "VyHung";
             // 
-            // label23
+            // lbCmt1
             // 
-            this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.White;
-            this.label23.Font = new System.Drawing.Font("Times New Roman", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label23.Location = new System.Drawing.Point(156, 1448);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(174, 15);
-            this.label23.TabIndex = 204;
-            this.label23.Text = "It\'s beautiful, fresh atmosphere.";
+            this.lbCmt1.AutoSize = true;
+            this.lbCmt1.BackColor = System.Drawing.Color.White;
+            this.lbCmt1.Font = new System.Drawing.Font("Times New Roman", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCmt1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbCmt1.Location = new System.Drawing.Point(156, 1448);
+            this.lbCmt1.Name = "lbCmt1";
+            this.lbCmt1.Size = new System.Drawing.Size(162, 15);
+            this.lbCmt1.TabIndex = 204;
+            this.lbCmt1.Text = "Quá tuyệt zời, xuất sắc 100đ !";
             // 
             // label22
             // 
@@ -369,28 +369,28 @@
             this.label22.TabIndex = 203;
             this.label22.Text = "BaNaHills, Da Nang";
             // 
-            // label21
+            // lbName1
             // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.White;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label21.Location = new System.Drawing.Point(204, 1382);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(48, 17);
-            this.label21.TabIndex = 202;
-            this.label21.Text = "HaNa";
+            this.lbName1.AutoSize = true;
+            this.lbName1.BackColor = System.Drawing.Color.White;
+            this.lbName1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbName1.Location = new System.Drawing.Point(204, 1382);
+            this.lbName1.Name = "lbName1";
+            this.lbName1.Size = new System.Drawing.Size(36, 17);
+            this.lbName1.TabIndex = 202;
+            this.lbName1.Text = "Yuu";
             // 
-            // label19
+            // lbFeedback
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
-            this.label19.Location = new System.Drawing.Point(475, 1290);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(124, 19);
-            this.label19.TabIndex = 196;
-            this.label19.Text = "TESTIMONIAL";
+            this.lbFeedback.AutoSize = true;
+            this.lbFeedback.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFeedback.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
+            this.lbFeedback.Location = new System.Drawing.Point(493, 1290);
+            this.lbFeedback.Name = "lbFeedback";
+            this.lbFeedback.Size = new System.Drawing.Size(101, 19);
+            this.lbFeedback.TabIndex = 196;
+            this.lbFeedback.Text = "FEEDBACK";
             // 
             // myButton8
             // 
@@ -468,49 +468,49 @@
             this.myButton3.TextColor = System.Drawing.Color.White;
             this.myButton3.UseVisualStyleBackColor = false;
             // 
-            // label18
+            // lbTypeTravel
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
-            this.label18.Location = new System.Drawing.Point(180, 832);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(119, 19);
-            this.label18.TabIndex = 187;
-            this.label18.Text = "TRAVEL TYPE";
+            this.lbTypeTravel.AutoSize = true;
+            this.lbTypeTravel.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTypeTravel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
+            this.lbTypeTravel.Location = new System.Drawing.Point(180, 832);
+            this.lbTypeTravel.Name = "lbTypeTravel";
+            this.lbTypeTravel.Size = new System.Drawing.Size(162, 19);
+            this.lbTypeTravel.TabIndex = 187;
+            this.lbTypeTravel.Text = "Các loại hình du lịch";
             // 
-            // label17
+            // lbTittle22
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label17.Location = new System.Drawing.Point(170, 922);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(482, 57);
-            this.label17.TabIndex = 186;
-            this.label17.Text = "Do We Specialeze In?";
+            this.lbTittle22.AutoSize = true;
+            this.lbTittle22.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTittle22.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.lbTittle22.Location = new System.Drawing.Point(170, 922);
+            this.lbTittle22.Name = "lbTittle22";
+            this.lbTittle22.Size = new System.Drawing.Size(648, 57);
+            this.lbTittle22.TabIndex = 186;
+            this.lbTittle22.Text = "Những loại hình du lịch nào?";
             // 
-            // label16
+            // lbTitle2
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label16.Location = new System.Drawing.Point(174, 865);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(489, 57);
-            this.label16.TabIndex = 185;
-            this.label16.Text = "What Type Of Travel ";
+            this.lbTitle2.AutoSize = true;
+            this.lbTitle2.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitle2.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.lbTitle2.Location = new System.Drawing.Point(174, 865);
+            this.lbTitle2.Name = "lbTitle2";
+            this.lbTitle2.Size = new System.Drawing.Size(510, 57);
+            this.lbTitle2.TabIndex = 185;
+            this.lbTitle2.Text = "DanaTravel mang đến ";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(91)))), ((int)(((byte)(132)))));
-            this.label11.Location = new System.Drawing.Point(409, 387);
+            this.label11.Location = new System.Drawing.Point(304, 387);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(266, 26);
+            this.label11.Size = new System.Drawing.Size(474, 26);
             this.label11.TabIndex = 183;
-            this.label11.Text = "Explore Top Destination";
+            this.label11.Text = "KHÁM PHÁ NHỮNG ĐỊA ĐIỂM HÀNG ĐẦU";
             // 
             // label10
             // 
@@ -519,25 +519,9 @@
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
             this.label10.Location = new System.Drawing.Point(452, 372);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(128, 15);
+            this.label10.Size = new System.Drawing.Size(142, 15);
             this.label10.TabIndex = 182;
-            this.label10.Text = "TOP DESTINATION";
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(91)))), ((int)(((byte)(132)))));
-            this.txtSearch.Location = new System.Drawing.Point(99, 315);
-            this.txtSearch.Multiline = true;
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(289, 37);
-            this.txtSearch.TabIndex = 180;
-            this.txtSearch.Text = "Tìm kiếm tour du lịch...";
-            this.txtSearch.Click += new System.EventHandler(this.txtSearch_Click);
+            this.label10.Text = "ĐỊA ĐIỂM HÀNG ĐẦU";
             // 
             // label9
             // 
@@ -546,20 +530,20 @@
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(91)))), ((int)(((byte)(132)))));
             this.label9.Location = new System.Drawing.Point(65, 283);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(529, 15);
+            this.label9.Size = new System.Drawing.Size(536, 15);
             this.label9.TabIndex = 179;
-            this.label9.Text = "WE CAN BUILD THE HOLIDAY YOR DREAMS AND MAKE THEM UNFORGETTABLE";
+            this.label9.Text = "CHÚNG TA CÓ THỂ TRẢI NGHIỆM NHỮNG KÌ NGHỈ ĐÁNG NHỚ VÀ THƯ GIÃN NHẤT";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
-            this.label8.Location = new System.Drawing.Point(140, 215);
+            this.label8.Location = new System.Drawing.Point(163, 215);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(241, 57);
+            this.label8.Size = new System.Drawing.Size(304, 57);
             this.label8.TabIndex = 178;
-            this.label8.Text = "the world.";
+            this.label8.Text = "DanaTravel !";
             // 
             // label7
             // 
@@ -568,9 +552,9 @@
             this.label7.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.label7.Location = new System.Drawing.Point(94, 215);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(66, 57);
+            this.label7.Size = new System.Drawing.Size(92, 57);
             this.label7.TabIndex = 177;
-            this.label7.Text = "of";
+            this.label7.Text = "với";
             // 
             // label6
             // 
@@ -579,9 +563,9 @@
             this.label6.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.label6.Location = new System.Drawing.Point(94, 170);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(255, 57);
+            this.label6.Size = new System.Drawing.Size(171, 57);
             this.label6.TabIndex = 176;
-            this.label6.Text = "any corner";
+            this.label6.Text = "du lịch";
             // 
             // label5
             // 
@@ -590,9 +574,9 @@
             this.label5.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.label5.Location = new System.Drawing.Point(89, 129);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(295, 57);
+            this.label5.Size = new System.Drawing.Size(264, 57);
             this.label5.TabIndex = 175;
-            this.label5.Text = "Travel to the";
+            this.label5.Text = "Cùng nhau";
             // 
             // label4
             // 
@@ -601,9 +585,9 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
             this.label4.Location = new System.Drawing.Point(99, 86);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(346, 18);
+            this.label4.Size = new System.Drawing.Size(304, 18);
             this.label4.TabIndex = 174;
-            this.label4.Text = "BEST DESTINATION AROUND THE WORLD";
+            this.label4.Text = "Những địa điểm nổi tiếng khắp đất nước";
             // 
             // btnRight
             // 
@@ -628,7 +612,7 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Location = new System.Drawing.Point(777, 439);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(205, 336);
+            this.panel4.Size = new System.Drawing.Size(205, 342);
             this.panel4.TabIndex = 241;
             // 
             // panel3
@@ -636,7 +620,7 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Location = new System.Drawing.Point(541, 439);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(220, 336);
+            this.panel3.Size = new System.Drawing.Size(220, 342);
             this.panel3.TabIndex = 240;
             // 
             // panel2
@@ -871,15 +855,15 @@
             this.myPictureBox1.TabIndex = 201;
             this.myPictureBox1.TabStop = false;
             // 
-            // pictureBox7
+            // pbThumbnail
             // 
-            this.pictureBox7.Image = global::PBL3.Properties.Resources.imagecar;
-            this.pictureBox7.Location = new System.Drawing.Point(720, 781);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(276, 222);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 184;
-            this.pictureBox7.TabStop = false;
+            this.pbThumbnail.Image = global::PBL3.Properties.Resources.imagecar;
+            this.pbThumbnail.Location = new System.Drawing.Point(723, 797);
+            this.pbThumbnail.Name = "pbThumbnail";
+            this.pbThumbnail.Size = new System.Drawing.Size(273, 206);
+            this.pbThumbnail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbThumbnail.TabIndex = 184;
+            this.pbThumbnail.TabStop = false;
             // 
             // btnSearch
             // 
@@ -1128,7 +1112,7 @@
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(153, 27);
             this.textBox2.TabIndex = 234;
-            this.textBox2.Text = "Hi, Toan Nguyen";
+            this.textBox2.Text = "Chào, Toan Nguyen";
             // 
             // lbHomepage
             // 
@@ -1168,6 +1152,23 @@
             this.lbContact.TabIndex = 173;
             this.lbContact.Text = "Liên hệ";
             // 
+            // txtSearch
+            // 
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(91)))), ((int)(((byte)(132)))));
+            this.txtSearch.Location = new System.Drawing.Point(99, 315);
+            this.txtSearch.Multiline = true;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(289, 37);
+            this.txtSearch.TabIndex = 180;
+            this.txtSearch.Text = "Tìm kiếm tour du lịch...";
+            this.txtSearch.WordWrap = false;
+            this.txtSearch.Click += new System.EventHandler(this.txtSearch_Click);
+            // 
             // Homepage
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1205,7 +1206,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbThumbnail)).EndInit();
             this.pnChoice.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1225,29 +1226,28 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label lbCmt3;
+        private System.Windows.Forms.Label lbCmt2;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label lbName3;
+        private System.Windows.Forms.Label lbName2;
+        private System.Windows.Forms.Label lbCmt1;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label lbName1;
         private MyLibrary.MyButton myButton12;
         private MyLibrary.MyButton myButton11;
         private MyLibrary.MyButton myButton10;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label lbFeedback;
         private MyLibrary.MyButton myButton8;
         private MyLibrary.MyButton myButton6;
         private MyLibrary.MyButton myButton4;
         private MyLibrary.MyButton myButton3;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lbTypeTravel;
+        private System.Windows.Forms.Label lbTittle22;
+        private System.Windows.Forms.Label lbTitle2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
@@ -1283,7 +1283,7 @@
         private System.Windows.Forms.PictureBox pictureBox31;
         private System.Windows.Forms.PictureBox pictureBox32;
         private MyLibrary.MyPictureBox myPictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pbThumbnail;
         private MyLibrary.MyButton btnSearch;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel pnChoice;
@@ -1297,5 +1297,6 @@
         private System.Windows.Forms.PictureBox pictureBox47;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.TextBox txtSearch;
     }
 }
