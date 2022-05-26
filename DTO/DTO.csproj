@@ -56,7 +56,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountDTO.cs" />
+    <Compile Include="BillDTO.cs" />
     <Compile Include="CodeFirstDB\Account.cs" />
+    <Compile Include="CodeFirstDB\Bill.cs" />
+    <Compile Include="CodeFirstDB\BillStatus.cs" />
     <Compile Include="CodeFirstDB\CreateDB.cs" />
     <Compile Include="CodeFirstDB\Division.cs" />
     <Compile Include="CodeFirstDB\Education_degree.cs" />

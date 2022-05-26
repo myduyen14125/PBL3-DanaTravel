@@ -47,7 +47,7 @@ namespace PBL3.View.tour
             sliderImage.Dock = DockStyle.Fill;
 
             TimeSpan timeSpan = tourDTO.returnDate - tourDTO.departureDate;
-            string departDate = tourDTO.departureDate.Day + "/" + tourDTO.departureDate.Month + "/" + tourDTO.departureDate.Year;
+            string departDate = tourDTO.departureDate.ToShortDateString();
             string time = "";
             if (timeSpan.Days == 0) time = "1 ngày 0 đêm";
             else time = (timeSpan.Days).ToString() + " ngày " + (timeSpan.Days - 1).ToString() + " đêm";
@@ -82,7 +82,7 @@ namespace PBL3.View.tour
 
         private void FormTourDetail_Load(object sender, EventArgs e)
         {
-            //panelMain.Left = (this.Width - panelMain.Width) / 2;
+
         }
     }
 }

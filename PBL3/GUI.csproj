@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.3.2, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.2\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
@@ -54,6 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -125,6 +134,18 @@
     <Compile Include="View\admin\FormAddRole.Designer.cs">
       <DependentUpon>FormAddRole.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\bill\BillItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\bill\BillItem.Designer.cs">
+      <DependentUpon>BillItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\bill\BillManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\bill\BillManagement.Designer.cs">
+      <DependentUpon>BillManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\CustomerAccount.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -193,16 +214,22 @@
     <Compile Include="View\RoleAccount.Designer.cs">
       <DependentUpon>RoleAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\ticket\TicketItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ticket\TicketItem.Designer.cs">
+      <DependentUpon>TicketItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\ticket\TicketManagement.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="View\ticket\TicketManagement.Designer.cs">
       <DependentUpon>TicketManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\TourManagement.cs">
+    <Compile Include="View\tour\TourManagement.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\TourManagement.Designer.cs">
+    <Compile Include="View\tour\TourManagement.Designer.cs">
       <DependentUpon>TourManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="View\tour\FormAddEditTour.cs">
@@ -229,6 +256,9 @@
     <Compile Include="View\tour\TourItem.Designer.cs">
       <DependentUpon>TourItem.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="viewHtml\Editor.resx">
       <DependentUpon>Editor.cs</DependentUpon>
     </EmbeddedResource>
@@ -258,6 +288,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\admin\FormAddRole.resx">
       <DependentUpon>FormAddRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\bill\BillItem.resx">
+      <DependentUpon>BillItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\bill\BillManagement.resx">
+      <DependentUpon>BillManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\CustomerAccount.resx">
       <DependentUpon>CustomerAccount.cs</DependentUpon>
@@ -297,7 +333,13 @@
     <EmbeddedResource Include="View\RoleAccount.resx">
       <DependentUpon>RoleAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\TourManagement.resx">
+    <EmbeddedResource Include="View\ticket\TicketItem.resx">
+      <DependentUpon>TicketItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ticket\TicketManagement.resx">
+      <DependentUpon>TicketManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\tour\TourManagement.resx">
       <DependentUpon>TourManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\tour\FormAddEditTour.resx">
@@ -312,6 +354,7 @@
     <EmbeddedResource Include="View\tour\TourItem.resx">
       <DependentUpon>TourItem.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -569,6 +612,8 @@
     <None Include="Resources\image.png" />
     <None Include="Resources\imagecar1.png" />
     <None Include="Resources\greencircles1.png" />
+    <Content Include="Resources\icon_khoa.png" />
+    <Content Include="Resources\icon_success.png" />
     <Content Include="Resources\indent.bmp" />
     <Content Include="Resources\italic.bmp" />
     <Content Include="Resources\link.bmp" />

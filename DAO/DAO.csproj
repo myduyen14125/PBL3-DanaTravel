@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountDAO.cs" />
+    <Compile Include="BillDAO.cs" />
     <Compile Include="CustomerDAO.cs" />
     <Compile Include="EmployeeDAO.cs" />
     <Compile Include="Form1.cs">

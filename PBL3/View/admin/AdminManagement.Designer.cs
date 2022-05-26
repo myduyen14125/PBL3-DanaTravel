@@ -32,6 +32,7 @@
             this.fileSystemWatcher2 = new System.IO.FileSystemWatcher();
             this.name = new System.Windows.Forms.Label();
             this.panelContent = new System.Windows.Forms.Panel();
+            this.ticketManagement1 = new PBL3.View.ticket.TicketManagement();
             this.roleAccount1 = new PBL3.View.RoleAccount();
             this.customerAccount1 = new PBL3.View.CustomerAccount();
             this.accountEmployee1 = new PBL3.View.AccountEmployee();
@@ -39,6 +40,8 @@
             this.employeeManagement1 = new PBL3.EmployeeManagement();
             this.customer1 = new PBL3.View.admin.CustomerManagement();
             this.navbar = new System.Windows.Forms.Panel();
+            this.btnTicket = new System.Windows.Forms.Button();
+            this.btnStatistic = new System.Windows.Forms.Button();
             this.manacontainer = new System.Windows.Forms.Panel();
             this.btnRoleAcc = new System.Windows.Forms.Button();
             this.btnAccountEmployee = new System.Windows.Forms.Button();
@@ -49,8 +52,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCustomer = new System.Windows.Forms.Button();
-            this.btnStatistic = new System.Windows.Forms.Button();
             this.btnEmployee = new System.Windows.Forms.Button();
+            this.billManagement1 = new PBL3.View.bill.BillManagement();
+            this.btnBill = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher2)).BeginInit();
             this.panelContent.SuspendLayout();
@@ -78,12 +82,14 @@
             this.name.ForeColor = System.Drawing.Color.White;
             this.name.Location = new System.Drawing.Point(56, 171);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(94, 21);
+            this.name.Size = new System.Drawing.Size(115, 28);
             this.name.TabIndex = 27;
             this.name.Text = "Admin Yuu";
             // 
             // panelContent
             // 
+            this.panelContent.Controls.Add(this.billManagement1);
+            this.panelContent.Controls.Add(this.ticketManagement1);
             this.panelContent.Controls.Add(this.roleAccount1);
             this.panelContent.Controls.Add(this.customerAccount1);
             this.panelContent.Controls.Add(this.accountEmployee1);
@@ -96,9 +102,19 @@
             this.panelContent.Size = new System.Drawing.Size(867, 567);
             this.panelContent.TabIndex = 30;
             // 
+            // ticketManagement1
+            // 
+            this.ticketManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ticketManagement1.Location = new System.Drawing.Point(0, 0);
+            this.ticketManagement1.Name = "ticketManagement1";
+            this.ticketManagement1.Size = new System.Drawing.Size(867, 567);
+            this.ticketManagement1.TabIndex = 6;
+            // 
             // roleAccount1
             // 
-            this.roleAccount1.Location = new System.Drawing.Point(-3, 0);
+            this.roleAccount1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.roleAccount1.Location = new System.Drawing.Point(0, 0);
+            this.roleAccount1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.roleAccount1.Name = "roleAccount1";
             this.roleAccount1.Size = new System.Drawing.Size(867, 567);
             this.roleAccount1.TabIndex = 5;
@@ -106,6 +122,7 @@
             // customerAccount1
             // 
             this.customerAccount1.Location = new System.Drawing.Point(-3, 2);
+            this.customerAccount1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.customerAccount1.Name = "customerAccount1";
             this.customerAccount1.Size = new System.Drawing.Size(867, 567);
             this.customerAccount1.TabIndex = 4;
@@ -152,6 +169,8 @@
             // navbar
             // 
             this.navbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
+            this.navbar.Controls.Add(this.btnBill);
+            this.navbar.Controls.Add(this.btnTicket);
             this.navbar.Controls.Add(this.btnStatistic);
             this.navbar.Controls.Add(this.manacontainer);
             this.navbar.Controls.Add(this.btnAccount);
@@ -164,11 +183,55 @@
             this.navbar.Controls.Add(this.btnEmployee);
             this.navbar.Dock = System.Windows.Forms.DockStyle.Left;
             this.navbar.Location = new System.Drawing.Point(0, 0);
-            this.navbar.MaximumSize = new System.Drawing.Size(199, 567);
+            this.navbar.MaximumSize = new System.Drawing.Size(199, 680);
             this.navbar.MinimumSize = new System.Drawing.Size(44, 567);
             this.navbar.Name = "navbar";
             this.navbar.Size = new System.Drawing.Size(199, 567);
             this.navbar.TabIndex = 28;
+            // 
+            // btnTicket
+            // 
+            this.btnTicket.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
+            this.btnTicket.CausesValidation = false;
+            this.btnTicket.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTicket.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnTicket.FlatAppearance.BorderSize = 0;
+            this.btnTicket.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.btnTicket.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTicket.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTicket.ForeColor = System.Drawing.Color.White;
+            this.btnTicket.Image = global::PBL3.Properties.Resources.employee;
+            this.btnTicket.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTicket.Location = new System.Drawing.Point(3, 115);
+            this.btnTicket.Name = "btnTicket";
+            this.btnTicket.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnTicket.Size = new System.Drawing.Size(199, 40);
+            this.btnTicket.TabIndex = 18;
+            this.btnTicket.TabStop = false;
+            this.btnTicket.Text = "Ticket";
+            this.btnTicket.UseVisualStyleBackColor = false;
+            this.btnTicket.Click += new System.EventHandler(this.btnTicket_Click);
+            // 
+            // btnStatistic
+            // 
+            this.btnStatistic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
+            this.btnStatistic.CausesValidation = false;
+            this.btnStatistic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStatistic.FlatAppearance.BorderSize = 0;
+            this.btnStatistic.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.btnStatistic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStatistic.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStatistic.ForeColor = System.Drawing.Color.White;
+            this.btnStatistic.Image = global::PBL3.Properties.Resources.statistic;
+            this.btnStatistic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStatistic.Location = new System.Drawing.Point(0, 489);
+            this.btnStatistic.Name = "btnStatistic";
+            this.btnStatistic.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnStatistic.Size = new System.Drawing.Size(199, 40);
+            this.btnStatistic.TabIndex = 26;
+            this.btnStatistic.TabStop = false;
+            this.btnStatistic.Text = "Statistic";
+            this.btnStatistic.UseVisualStyleBackColor = false;
             // 
             // manacontainer
             // 
@@ -359,27 +422,6 @@
             this.btnCustomer.UseVisualStyleBackColor = false;
             this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
             // 
-            // btnStatistic
-            // 
-            this.btnStatistic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.btnStatistic.CausesValidation = false;
-            this.btnStatistic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnStatistic.FlatAppearance.BorderSize = 0;
-            this.btnStatistic.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
-            this.btnStatistic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStatistic.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStatistic.ForeColor = System.Drawing.Color.White;
-            this.btnStatistic.Image = global::PBL3.Properties.Resources.statistic;
-            this.btnStatistic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStatistic.Location = new System.Drawing.Point(0, 489);
-            this.btnStatistic.Name = "btnStatistic";
-            this.btnStatistic.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnStatistic.Size = new System.Drawing.Size(199, 40);
-            this.btnStatistic.TabIndex = 26;
-            this.btnStatistic.TabStop = false;
-            this.btnStatistic.Text = "Statistic";
-            this.btnStatistic.UseVisualStyleBackColor = false;
-            // 
             // btnEmployee
             // 
             this.btnEmployee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
@@ -402,6 +444,37 @@
             this.btnEmployee.Text = "Employee";
             this.btnEmployee.UseVisualStyleBackColor = false;
             this.btnEmployee.Click += new System.EventHandler(this.btnEmployee_Click);
+            // 
+            // billManagement1
+            // 
+            this.billManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.billManagement1.Location = new System.Drawing.Point(0, 0);
+            this.billManagement1.Name = "billManagement1";
+            this.billManagement1.Size = new System.Drawing.Size(867, 567);
+            this.billManagement1.TabIndex = 7;
+            // 
+            // btnBill
+            // 
+            this.btnBill.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
+            this.btnBill.CausesValidation = false;
+            this.btnBill.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBill.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnBill.FlatAppearance.BorderSize = 0;
+            this.btnBill.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.btnBill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBill.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBill.ForeColor = System.Drawing.Color.White;
+            this.btnBill.Image = global::PBL3.Properties.Resources.employee;
+            this.btnBill.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBill.Location = new System.Drawing.Point(0, 161);
+            this.btnBill.Name = "btnBill";
+            this.btnBill.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnBill.Size = new System.Drawing.Size(199, 40);
+            this.btnBill.TabIndex = 36;
+            this.btnBill.TabStop = false;
+            this.btnBill.Text = "Bill";
+            this.btnBill.UseVisualStyleBackColor = false;
+            this.btnBill.Click += new System.EventHandler(this.btnBill_Click);
             // 
             // AdminManagement
             // 
@@ -451,5 +524,9 @@
         private System.Windows.Forms.Button btnAccount;
         private CustomerAccount customerAccount1;
         private RoleAccount roleAccount1;
+        private System.Windows.Forms.Button btnTicket;
+        private ticket.TicketManagement ticketManagement1;
+        private bill.BillManagement billManagement1;
+        private System.Windows.Forms.Button btnBill;
     }
 }

@@ -1,8 +1,6 @@
 ﻿using BUS;
 using DTO;
 using PBL3.View.admin;
-using PBL3.View.tour;
-using PBL3.viewHtml;
 using System;
 using System.Windows.Forms;
 using Util;
@@ -24,7 +22,8 @@ namespace PBL3
                 username = "daitoan2000@gmail.com",
                 password = HashPassword.GetHash("admin")
             }); ;
-            Application.Run(new Homepage(account));
+            Application.Run(new AdminManagement(account));
+            //Application.Run(new LoginForm());
         }
     }
 }

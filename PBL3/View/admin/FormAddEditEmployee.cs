@@ -183,10 +183,11 @@ namespace PBL3.View.admin
                 };
                 AccountBUS.Instance.RegisterAccount(ac);
                 SendEmailHelper send = new SendEmailHelper();
-                send.SendNotifyEmail(email, "<h1>DanaTravel send your account for login Danatravel Application.</h1> " +
-                    "<h3> Your account: " + email + "</h3>"
+                string header = "DanaTravel send your account for login Danatravel Application";
+                string body = "<h3> Your account: " + email + "</h3>"
                     + "<h3>Password: " + email + "</h3>"
-                    + "<h3>Please login to change your password</h3>");
+                    + "<h3>Please login to change your password</h3>";
+                new SendEmailHelper().SendEmail(email, header, body);
             }
             
             ac = AccountBUS.Instance.GetAccountByUsername(email);

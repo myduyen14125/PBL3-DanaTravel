@@ -16,7 +16,7 @@ namespace PBL3
 {
     public partial class SignupForm : Form
     {
-        private int code = 0;
+        private int code;
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
             (
@@ -43,7 +43,7 @@ namespace PBL3
 
         private void usernameInput_Click(object sender, EventArgs e)
         {
-            if(usernameInput.Text == "E-mail address")
+            if (usernameInput.Text == "E-mail address")
                 usernameInput.Text = "";
             if (passInput.Text == "")
             {
@@ -55,7 +55,7 @@ namespace PBL3
                 confirmPassInput.Text = "Confirm password";
                 confirmPassInput.PasswordChar = '\0';
             }
-            if(txtOTP.Text == "")
+            if (txtOTP.Text == "")
             {
                 txtOTP.Text = "Input OTP";
             }
@@ -108,7 +108,7 @@ namespace PBL3
 
         private void txtOTP_Click(object sender, EventArgs e)
         {
-            if(txtOTP.Text == "Input OTP")
+            if (txtOTP.Text == "Input OTP")
             {
                 txtOTP.Text = "";
             }
@@ -128,21 +128,18 @@ namespace PBL3
             }
         }
 
-        private void SetTextboxIfEmpty()
-        {
-
-        }
-
 
         private void btnGetOTP_Click(object sender, EventArgs e)
         {
             if (!ValidateEmail()) return;
-            this.BeginInvoke((MethodInvoker)delegate {
-                SendEmailHelper send = new SendEmailHelper();
-                send.SendCodeToEmail(usernameInput.Text, "DanaTravel send your code for register account");
-                code = send.GetCode();
+            this.BeginInvoke((MethodInvoker)delegate
+            {
+                this.code = Convert.ToInt32(new Random().Next(100000, 999999));
+                string sendTo = usernameInput.Text;
+                string subject = "DanaTravel send your code for register account";
+                string body = "<h3>Please do not share the code to ensure safety and security.</h3> <h1> Your code: " + this.code.ToString() + "</h1>";
+                new SendEmailHelper().SendEmail(sendTo, subject, body);
             });
-            
         }
 
         private void signupBtn_Click(object sender, EventArgs e)
@@ -155,11 +152,17 @@ namespace PBL3
             {
                 return;
             }
-
+            if (txtOTP.Text != code.ToString())
+            {
+                MessageBox.Show("OTP invalid");
+                return;
+            }
+                
             Account account = new Account(user, HashPassword.GetHash(pass), true);
             bool success = AccountBUS.Instance.RegisterAccount(account);
             if (success)
             {
+                MessageBox.Show("Register account success");
                 LoginForm loginForm = new LoginForm();
                 this.Hide();
                 loginForm.Show();
@@ -181,7 +184,7 @@ namespace PBL3
                 return false;
             }
 
-            if (string.IsNullOrEmpty(confirmPassInput.Text) || confirmPassInput.Text == "Confirm password") 
+            if (string.IsNullOrEmpty(confirmPassInput.Text) || confirmPassInput.Text == "Confirm password")
             {
                 MessageBox.Show("Please enter confirm password");
                 confirmPassInput.Focus();
@@ -194,12 +197,12 @@ namespace PBL3
                 confirmPassInput.Focus();
                 return false;
             }
-            if(txtOTP.Text == "Input OTP" || txtOTP.Text == "")
+            if (txtOTP.Text == "Input OTP" || txtOTP.Text == "")
             {
                 MessageBox.Show("Enter code OTP to register account.");
                 return false;
             }
-            
+
             return true;
         }
 

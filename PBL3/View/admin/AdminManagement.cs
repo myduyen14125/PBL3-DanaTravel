@@ -33,6 +33,8 @@ namespace PBL3.View.admin
             accountEmployee1.Visible = false;
             customerAccount1.Visible = false;
             roleAccount1.Visible = false;
+            ticketManagement1.Visible = false;
+            billManagement1.Visible = false;
             control.Visible = true;
         }
 
@@ -109,6 +111,16 @@ namespace PBL3.View.admin
             hidesubmenu();
             btnStatistic.Location = new Point(0, 387);
             SetActivePanel(roleAccount1);
+        }
+
+        private void btnTicket_Click(object sender, EventArgs e)
+        {
+            SetActivePanel(ticketManagement1);
+        }
+
+        private void btnBill_Click(object sender, EventArgs e)
+        {
+            SetActivePanel(billManagement1);
         }
     }
 }

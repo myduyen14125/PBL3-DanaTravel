@@ -1,6 +1,7 @@
 ﻿using DAO;
 using DTO;
 using DTO.CodeFirstDB;
+using System.Collections.Generic;
 
 namespace BUS
 {
@@ -18,6 +19,10 @@ namespace BUS
                 }
                 return _Instance;
             }
+        }
+        public List<TourTicket> GetTourTickets(string search, int tour_ticket_status_id)
+        {
+            return TourTicketDAO.Instance.GetTourTickets(search, tour_ticket_status_id);
         }
         public void Save(TourTicket tourTicket)
         {
