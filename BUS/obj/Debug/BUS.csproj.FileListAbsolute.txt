@@ -7,7 +7,6 @@ E:\PBL3-DanaTravel\BUS\bin\Debug\DAO.pdb
 E:\PBL3-DanaTravel\BUS\bin\Debug\DAO.exe.config
 E:\PBL3-DanaTravel\BUS\bin\Debug\DTO.pdb
 E:\PBL3-DanaTravel\BUS\bin\Debug\DTO.exe.config
-E:\PBL3-DanaTravel\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
 E:\PBL3-DanaTravel\BUS\obj\Debug\BUS.csproj.SuggestedBindingRedirects.cache
 E:\PBL3-DanaTravel\BUS\obj\Debug\BUS.Properties.Resources.resources
 E:\PBL3-DanaTravel\BUS\obj\Debug\BUS.csproj.GenerateResource.cache
@@ -66,3 +65,4 @@ C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\BUS\obj\Debug\BUS.exe
 C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\BUS\obj\Debug\BUS.pdb
 D:\PBL\PBL3-DanaTravel\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
 D:\PBL\PBL3-DanaTravel\BUS\obj\Debug\BUS.csproj.SuggestedBindingRedirects.cache
+E:\PBL3-DanaTravel\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache

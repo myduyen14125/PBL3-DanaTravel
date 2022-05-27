@@ -22,7 +22,12 @@ namespace PBL3.View
         {
             InitializeComponent();
         }
+        //tạo dữ liệu cứng cho năm 2020, 2021
+        //sau đó lấy total_prece của tourDTO ra -> tính toán để cộng lại cho 2022
+        public void generateData()
+        {
 
+        }
         private void Statistic_Load(object sender, EventArgs e)
         {
             revenueBindingSource.DataSource = new List<Revenue>();
@@ -50,6 +55,7 @@ namespace PBL3.View
             foreach(var year in years)
             {
                 List<double> values = new List<double>();
+                //code để inout vô -> là hiện bảng dữ liệu 
                 for(int month = 1; month <= 12; month++)
                 {
                     double value = 0;

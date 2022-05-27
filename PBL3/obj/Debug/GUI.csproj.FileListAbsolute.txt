@@ -166,4 +166,5 @@ E:\PBL3-DanaTravel\PBL3\bin\Debug\LiveCharts.WinForms.pdb
 E:\PBL3-DanaTravel\PBL3\bin\Debug\LiveCharts.WinForms.xml
 E:\PBL3-DanaTravel\PBL3\bin\Debug\LiveCharts.Wpf.pdb
 E:\PBL3-DanaTravel\PBL3\bin\Debug\LiveCharts.Wpf.xml
-E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.Statistic.resources
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.StatisticMoney.resources
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.StatisticTour.resources

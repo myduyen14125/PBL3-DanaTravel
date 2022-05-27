@@ -214,11 +214,17 @@
     <Compile Include="View\RoleAccount.Designer.cs">
       <DependentUpon>RoleAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Statistic.cs">
+    <Compile Include="View\StatisticMoney.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\Statistic.Designer.cs">
-      <DependentUpon>Statistic.cs</DependentUpon>
+    <Compile Include="View\StatisticMoney.Designer.cs">
+      <DependentUpon>StatisticMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\StatisticTour.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\StatisticTour.Designer.cs">
+      <DependentUpon>StatisticTour.cs</DependentUpon>
     </Compile>
     <Compile Include="View\statistic\Revenue.cs" />
     <Compile Include="View\ticket\TicketManagement.cs">
@@ -325,8 +331,11 @@
     <EmbeddedResource Include="View\RoleAccount.resx">
       <DependentUpon>RoleAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Statistic.resx">
-      <DependentUpon>Statistic.cs</DependentUpon>
+    <EmbeddedResource Include="View\StatisticMoney.resx">
+      <DependentUpon>StatisticMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\StatisticTour.resx">
+      <DependentUpon>StatisticTour.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\TourManagement.resx">
       <DependentUpon>TourManagement.cs</DependentUpon>
