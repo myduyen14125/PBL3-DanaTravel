@@ -1,4 +1,5 @@
 ﻿using DAO;
+using DTO;
 using DTO.CodeFirstDB;
 using System;
 using System.Collections.Generic;
@@ -26,6 +27,11 @@ namespace BUS
         public void Save(Bill bill)
         {
             BillDAO.Instance.Save(bill);
+        }
+
+        public List<BillDTO> GetBillDTOs(string search, int bill_status_id)
+        {
+            return BillDAO.Instance.GetBillDTOs(search, bill_status_id);
         }
     }
 }

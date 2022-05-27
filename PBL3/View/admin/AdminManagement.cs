@@ -21,7 +21,7 @@ namespace PBL3.View.admin
             InitializeComponent();
             Load += AdminManagement_Load;
             manacontainer.Visible = false;
-            btnStatistic.Location = new Point(0, 387);
+            btnStatistic.Location = new Point(0, 496);
             account = ac;
         }
         public void SetActivePanel(UserControl control)
@@ -61,7 +61,7 @@ namespace PBL3.View.admin
         {
             SetActivePanel(accountEmployee1);
             hidesubmenu();
-            btnStatistic.Location = new Point(0, 387);
+            btnStatistic.Location = new Point(0, 496);
         }
         private void hidesubmenu()
         {
@@ -77,12 +77,12 @@ namespace PBL3.View.admin
             {
                 hidesubmenu();
                 submenu.Visible = true;
-                btnStatistic.Location = new Point(0, 489);
+                btnStatistic.Location = new Point(0, 602);
             }
             else
             {
                 submenu.Visible = false;
-                btnStatistic.Location = new Point(0, 387);
+                btnStatistic.Location = new Point(0, 496);
             }
 
         }
@@ -102,14 +102,14 @@ namespace PBL3.View.admin
         private void btnCustomerAcc_Click(object sender, EventArgs e)
         {
             hidesubmenu();
-            btnStatistic.Location = new Point(0, 387);
+            btnStatistic.Location = new Point(0, 496);
             SetActivePanel(customerAccount1);
         }
 
         private void btnRoleAcc_Click(object sender, EventArgs e)
         {
             hidesubmenu();
-            btnStatistic.Location = new Point(0, 387);
+            btnStatistic.Location = new Point(0, 496);
             SetActivePanel(roleAccount1);
         }
 
@@ -120,7 +120,7 @@ namespace PBL3.View.admin
 
         private void btnBill_Click(object sender, EventArgs e)
         {
-            SetActivePanel(billManagement1);
+             SetActivePanel(billManagement1);
         }
     }
 }

@@ -522,7 +522,7 @@
             this.Controls.Add(this.tabStatus);
             this.Controls.Add(this.label1);
             this.Name = "TicketManagement";
-            this.Size = new System.Drawing.Size(1167, 731);
+            this.Size = new System.Drawing.Size(1158, 710);
             this.Load += new System.EventHandler(this.TicketManagement_Load);
             this.tabStatus.ResumeLayout(false);
             this.tabStatusWait.ResumeLayout(false);

@@ -32,14 +32,8 @@
             this.fileSystemWatcher2 = new System.IO.FileSystemWatcher();
             this.name = new System.Windows.Forms.Label();
             this.panelContent = new System.Windows.Forms.Panel();
-            this.ticketManagement1 = new PBL3.View.ticket.TicketManagement();
-            this.roleAccount1 = new PBL3.View.RoleAccount();
-            this.customerAccount1 = new PBL3.View.CustomerAccount();
-            this.accountEmployee1 = new PBL3.View.AccountEmployee();
-            this.tourManagement1 = new PBL3.View.TourManagement();
-            this.employeeManagement1 = new PBL3.EmployeeManagement();
-            this.customer1 = new PBL3.View.admin.CustomerManagement();
             this.navbar = new System.Windows.Forms.Panel();
+            this.btnBill = new System.Windows.Forms.Button();
             this.btnTicket = new System.Windows.Forms.Button();
             this.btnStatistic = new System.Windows.Forms.Button();
             this.manacontainer = new System.Windows.Forms.Panel();
@@ -54,7 +48,13 @@
             this.btnCustomer = new System.Windows.Forms.Button();
             this.btnEmployee = new System.Windows.Forms.Button();
             this.billManagement1 = new PBL3.View.bill.BillManagement();
-            this.btnBill = new System.Windows.Forms.Button();
+            this.ticketManagement1 = new PBL3.View.ticket.TicketManagement();
+            this.roleAccount1 = new PBL3.View.RoleAccount();
+            this.customerAccount1 = new PBL3.View.CustomerAccount();
+            this.accountEmployee1 = new PBL3.View.AccountEmployee();
+            this.tourManagement1 = new PBL3.View.TourManagement();
+            this.employeeManagement1 = new PBL3.EmployeeManagement();
+            this.customer1 = new PBL3.View.admin.CustomerManagement();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher2)).BeginInit();
             this.panelContent.SuspendLayout();
@@ -80,7 +80,7 @@
             this.name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
             this.name.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.name.ForeColor = System.Drawing.Color.White;
-            this.name.Location = new System.Drawing.Point(56, 171);
+            this.name.Location = new System.Drawing.Point(52, 188);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(115, 28);
             this.name.TabIndex = 27;
@@ -99,72 +99,8 @@
             this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContent.Location = new System.Drawing.Point(199, 0);
             this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(867, 567);
+            this.panelContent.Size = new System.Drawing.Size(1120, 709);
             this.panelContent.TabIndex = 30;
-            // 
-            // ticketManagement1
-            // 
-            this.ticketManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ticketManagement1.Location = new System.Drawing.Point(0, 0);
-            this.ticketManagement1.Name = "ticketManagement1";
-            this.ticketManagement1.Size = new System.Drawing.Size(867, 567);
-            this.ticketManagement1.TabIndex = 6;
-            // 
-            // roleAccount1
-            // 
-            this.roleAccount1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.roleAccount1.Location = new System.Drawing.Point(0, 0);
-            this.roleAccount1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.roleAccount1.Name = "roleAccount1";
-            this.roleAccount1.Size = new System.Drawing.Size(867, 567);
-            this.roleAccount1.TabIndex = 5;
-            // 
-            // customerAccount1
-            // 
-            this.customerAccount1.Location = new System.Drawing.Point(-3, 2);
-            this.customerAccount1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.customerAccount1.Name = "customerAccount1";
-            this.customerAccount1.Size = new System.Drawing.Size(867, 567);
-            this.customerAccount1.TabIndex = 4;
-            // 
-            // accountEmployee1
-            // 
-            this.accountEmployee1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
-            this.accountEmployee1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.accountEmployee1.Location = new System.Drawing.Point(0, 0);
-            this.accountEmployee1.Margin = new System.Windows.Forms.Padding(2);
-            this.accountEmployee1.Name = "accountEmployee1";
-            this.accountEmployee1.Size = new System.Drawing.Size(867, 567);
-            this.accountEmployee1.TabIndex = 3;
-            // 
-            // tourManagement1
-            // 
-            this.tourManagement1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
-            this.tourManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tourManagement1.Location = new System.Drawing.Point(0, 0);
-            this.tourManagement1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tourManagement1.Name = "tourManagement1";
-            this.tourManagement1.Size = new System.Drawing.Size(867, 567);
-            this.tourManagement1.TabIndex = 2;
-            // 
-            // employeeManagement1
-            // 
-            this.employeeManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.employeeManagement1.Location = new System.Drawing.Point(0, 0);
-            this.employeeManagement1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.employeeManagement1.Name = "employeeManagement1";
-            this.employeeManagement1.Size = new System.Drawing.Size(867, 567);
-            this.employeeManagement1.TabIndex = 0;
-            // 
-            // customer1
-            // 
-            this.customer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
-            this.customer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customer1.Location = new System.Drawing.Point(0, 0);
-            this.customer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.customer1.Name = "customer1";
-            this.customer1.Size = new System.Drawing.Size(867, 567);
-            this.customer1.TabIndex = 1;
             // 
             // navbar
             // 
@@ -183,11 +119,33 @@
             this.navbar.Controls.Add(this.btnEmployee);
             this.navbar.Dock = System.Windows.Forms.DockStyle.Left;
             this.navbar.Location = new System.Drawing.Point(0, 0);
-            this.navbar.MaximumSize = new System.Drawing.Size(199, 680);
-            this.navbar.MinimumSize = new System.Drawing.Size(44, 567);
             this.navbar.Name = "navbar";
-            this.navbar.Size = new System.Drawing.Size(199, 567);
+            this.navbar.Size = new System.Drawing.Size(199, 709);
             this.navbar.TabIndex = 28;
+            // 
+            // btnBill
+            // 
+            this.btnBill.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
+            this.btnBill.CausesValidation = false;
+            this.btnBill.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBill.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnBill.FlatAppearance.BorderSize = 0;
+            this.btnBill.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.btnBill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBill.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBill.ForeColor = System.Drawing.Color.White;
+            this.btnBill.Image = global::PBL3.Properties.Resources.employee;
+            this.btnBill.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBill.Location = new System.Drawing.Point(0, 416);
+            this.btnBill.Name = "btnBill";
+            this.btnBill.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnBill.Size = new System.Drawing.Size(199, 40);
+            this.btnBill.TabIndex = 36;
+            this.btnBill.TabStop = false;
+            this.btnBill.Text = "       Bill";
+            this.btnBill.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBill.UseVisualStyleBackColor = false;
+            this.btnBill.Click += new System.EventHandler(this.btnBill_Click);
             // 
             // btnTicket
             // 
@@ -202,13 +160,14 @@
             this.btnTicket.ForeColor = System.Drawing.Color.White;
             this.btnTicket.Image = global::PBL3.Properties.Resources.employee;
             this.btnTicket.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTicket.Location = new System.Drawing.Point(3, 115);
+            this.btnTicket.Location = new System.Drawing.Point(0, 376);
             this.btnTicket.Name = "btnTicket";
             this.btnTicket.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnTicket.Size = new System.Drawing.Size(199, 40);
             this.btnTicket.TabIndex = 18;
             this.btnTicket.TabStop = false;
-            this.btnTicket.Text = "Ticket";
+            this.btnTicket.Text = "       Ticket";
+            this.btnTicket.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTicket.UseVisualStyleBackColor = false;
             this.btnTicket.Click += new System.EventHandler(this.btnTicket_Click);
             // 
@@ -224,13 +183,14 @@
             this.btnStatistic.ForeColor = System.Drawing.Color.White;
             this.btnStatistic.Image = global::PBL3.Properties.Resources.statistic;
             this.btnStatistic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStatistic.Location = new System.Drawing.Point(0, 489);
+            this.btnStatistic.Location = new System.Drawing.Point(0, 602);
             this.btnStatistic.Name = "btnStatistic";
             this.btnStatistic.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnStatistic.Size = new System.Drawing.Size(199, 40);
             this.btnStatistic.TabIndex = 26;
             this.btnStatistic.TabStop = false;
-            this.btnStatistic.Text = "Statistic";
+            this.btnStatistic.Text = "       Statistic";
+            this.btnStatistic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStatistic.UseVisualStyleBackColor = false;
             // 
             // manacontainer
@@ -239,7 +199,7 @@
             this.manacontainer.Controls.Add(this.btnRoleAcc);
             this.manacontainer.Controls.Add(this.btnAccountEmployee);
             this.manacontainer.Controls.Add(this.btnCustomerAcc);
-            this.manacontainer.Location = new System.Drawing.Point(0, 389);
+            this.manacontainer.Location = new System.Drawing.Point(0, 500);
             this.manacontainer.Name = "manacontainer";
             this.manacontainer.Size = new System.Drawing.Size(199, 101);
             this.manacontainer.TabIndex = 4;
@@ -263,6 +223,7 @@
             this.btnRoleAcc.TabIndex = 37;
             this.btnRoleAcc.TabStop = false;
             this.btnRoleAcc.Text = "     Role Account";
+            this.btnRoleAcc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRoleAcc.UseVisualStyleBackColor = false;
             this.btnRoleAcc.Click += new System.EventHandler(this.btnRoleAcc_Click);
             // 
@@ -284,8 +245,8 @@
             this.btnAccountEmployee.Size = new System.Drawing.Size(199, 33);
             this.btnAccountEmployee.TabIndex = 33;
             this.btnAccountEmployee.TabStop = false;
-            this.btnAccountEmployee.Text = " Employee Account";
-            this.btnAccountEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAccountEmployee.Text = "     Employee Account";
+            this.btnAccountEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAccountEmployee.UseVisualStyleBackColor = false;
             this.btnAccountEmployee.Click += new System.EventHandler(this.btnAccountEmployee_Click);
             // 
@@ -307,8 +268,8 @@
             this.btnCustomerAcc.Size = new System.Drawing.Size(199, 33);
             this.btnCustomerAcc.TabIndex = 36;
             this.btnCustomerAcc.TabStop = false;
-            this.btnCustomerAcc.Text = "Customer Account";
-            this.btnCustomerAcc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCustomerAcc.Text = "     Customer Account";
+            this.btnCustomerAcc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCustomerAcc.UseVisualStyleBackColor = false;
             this.btnCustomerAcc.Click += new System.EventHandler(this.btnCustomerAcc_Click);
             // 
@@ -324,13 +285,13 @@
             this.btnAccount.ForeColor = System.Drawing.Color.White;
             this.btnAccount.Image = global::PBL3.Properties.Resources.account;
             this.btnAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAccount.Location = new System.Drawing.Point(0, 347);
+            this.btnAccount.Location = new System.Drawing.Point(0, 456);
             this.btnAccount.Name = "btnAccount";
             this.btnAccount.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnAccount.Size = new System.Drawing.Size(199, 40);
             this.btnAccount.TabIndex = 35;
             this.btnAccount.TabStop = false;
-            this.btnAccount.Text = "             Account";
+            this.btnAccount.Text = "       Account";
             this.btnAccount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAccount.UseVisualStyleBackColor = false;
             this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
@@ -347,7 +308,7 @@
             this.btnBackHomepage.ForeColor = System.Drawing.Color.White;
             this.btnBackHomepage.Image = global::PBL3.Properties.Resources.back;
             this.btnBackHomepage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBackHomepage.Location = new System.Drawing.Point(0, 532);
+            this.btnBackHomepage.Location = new System.Drawing.Point(2, 676);
             this.btnBackHomepage.Name = "btnBackHomepage";
             this.btnBackHomepage.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnBackHomepage.Size = new System.Drawing.Size(43, 28);
@@ -368,13 +329,13 @@
             this.btnTour.ForeColor = System.Drawing.Color.White;
             this.btnTour.Image = global::PBL3.Properties.Resources.tour1;
             this.btnTour.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTour.Location = new System.Drawing.Point(0, 307);
+            this.btnTour.Location = new System.Drawing.Point(0, 336);
             this.btnTour.Name = "btnTour";
             this.btnTour.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnTour.Size = new System.Drawing.Size(199, 40);
             this.btnTour.TabIndex = 28;
             this.btnTour.TabStop = false;
-            this.btnTour.Text = "             Tour";
+            this.btnTour.Text = "       Tour";
             this.btnTour.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTour.UseVisualStyleBackColor = false;
             this.btnTour.Click += new System.EventHandler(this.btnTour_Click);
@@ -412,7 +373,7 @@
             this.btnCustomer.ForeColor = System.Drawing.Color.White;
             this.btnCustomer.Image = global::PBL3.Properties.Resources.customer;
             this.btnCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCustomer.Location = new System.Drawing.Point(0, 267);
+            this.btnCustomer.Location = new System.Drawing.Point(0, 296);
             this.btnCustomer.Name = "btnCustomer";
             this.btnCustomer.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnCustomer.Size = new System.Drawing.Size(199, 40);
@@ -435,7 +396,7 @@
             this.btnEmployee.ForeColor = System.Drawing.Color.White;
             this.btnEmployee.Image = global::PBL3.Properties.Resources.employee;
             this.btnEmployee.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmployee.Location = new System.Drawing.Point(0, 227);
+            this.btnEmployee.Location = new System.Drawing.Point(0, 256);
             this.btnEmployee.Name = "btnEmployee";
             this.btnEmployee.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnEmployee.Size = new System.Drawing.Size(199, 40);
@@ -450,36 +411,77 @@
             this.billManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.billManagement1.Location = new System.Drawing.Point(0, 0);
             this.billManagement1.Name = "billManagement1";
-            this.billManagement1.Size = new System.Drawing.Size(867, 567);
+            this.billManagement1.Size = new System.Drawing.Size(1120, 709);
             this.billManagement1.TabIndex = 7;
             // 
-            // btnBill
+            // ticketManagement1
             // 
-            this.btnBill.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.btnBill.CausesValidation = false;
-            this.btnBill.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBill.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnBill.FlatAppearance.BorderSize = 0;
-            this.btnBill.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
-            this.btnBill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBill.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBill.ForeColor = System.Drawing.Color.White;
-            this.btnBill.Image = global::PBL3.Properties.Resources.employee;
-            this.btnBill.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBill.Location = new System.Drawing.Point(0, 161);
-            this.btnBill.Name = "btnBill";
-            this.btnBill.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnBill.Size = new System.Drawing.Size(199, 40);
-            this.btnBill.TabIndex = 36;
-            this.btnBill.TabStop = false;
-            this.btnBill.Text = "Bill";
-            this.btnBill.UseVisualStyleBackColor = false;
-            this.btnBill.Click += new System.EventHandler(this.btnBill_Click);
+            this.ticketManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ticketManagement1.Location = new System.Drawing.Point(0, 0);
+            this.ticketManagement1.Name = "ticketManagement1";
+            this.ticketManagement1.Size = new System.Drawing.Size(1120, 709);
+            this.ticketManagement1.TabIndex = 6;
+            // 
+            // roleAccount1
+            // 
+            this.roleAccount1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.roleAccount1.Location = new System.Drawing.Point(0, 0);
+            this.roleAccount1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.roleAccount1.Name = "roleAccount1";
+            this.roleAccount1.Size = new System.Drawing.Size(1120, 709);
+            this.roleAccount1.TabIndex = 5;
+            // 
+            // customerAccount1
+            // 
+            this.customerAccount1.Location = new System.Drawing.Point(-3, 2);
+            this.customerAccount1.Margin = new System.Windows.Forms.Padding(4);
+            this.customerAccount1.Name = "customerAccount1";
+            this.customerAccount1.Size = new System.Drawing.Size(867, 567);
+            this.customerAccount1.TabIndex = 4;
+            // 
+            // accountEmployee1
+            // 
+            this.accountEmployee1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
+            this.accountEmployee1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.accountEmployee1.Location = new System.Drawing.Point(0, 0);
+            this.accountEmployee1.Margin = new System.Windows.Forms.Padding(2);
+            this.accountEmployee1.Name = "accountEmployee1";
+            this.accountEmployee1.Size = new System.Drawing.Size(1120, 709);
+            this.accountEmployee1.TabIndex = 3;
+            // 
+            // tourManagement1
+            // 
+            this.tourManagement1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
+            this.tourManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tourManagement1.Location = new System.Drawing.Point(0, 0);
+            this.tourManagement1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tourManagement1.Name = "tourManagement1";
+            this.tourManagement1.Size = new System.Drawing.Size(1120, 709);
+            this.tourManagement1.TabIndex = 2;
+            // 
+            // employeeManagement1
+            // 
+            this.employeeManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.employeeManagement1.Location = new System.Drawing.Point(0, 0);
+            this.employeeManagement1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.employeeManagement1.Name = "employeeManagement1";
+            this.employeeManagement1.Size = new System.Drawing.Size(1120, 709);
+            this.employeeManagement1.TabIndex = 0;
+            // 
+            // customer1
+            // 
+            this.customer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
+            this.customer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customer1.Location = new System.Drawing.Point(0, 0);
+            this.customer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.customer1.Name = "customer1";
+            this.customer1.Size = new System.Drawing.Size(1120, 709);
+            this.customer1.TabIndex = 1;
             // 
             // AdminManagement
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1066, 567);
+            this.ClientSize = new System.Drawing.Size(1319, 709);
             this.Controls.Add(this.panelContent);
             this.Controls.Add(this.navbar);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
