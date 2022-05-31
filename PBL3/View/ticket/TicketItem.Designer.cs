@@ -52,7 +52,7 @@
             // lbDate
             // 
             this.lbDate.AutoSize = true;
-            this.lbDate.Location = new System.Drawing.Point(537, 12);
+            this.lbDate.Location = new System.Drawing.Point(564, 12);
             this.lbDate.Name = "lbDate";
             this.lbDate.Size = new System.Drawing.Size(36, 16);
             this.lbDate.TabIndex = 1;
@@ -61,7 +61,7 @@
             // lbNumberAdults
             // 
             this.lbNumberAdults.AutoSize = true;
-            this.lbNumberAdults.Location = new System.Drawing.Point(629, 12);
+            this.lbNumberAdults.Location = new System.Drawing.Point(654, 12);
             this.lbNumberAdults.Name = "lbNumberAdults";
             this.lbNumberAdults.Size = new System.Drawing.Size(30, 16);
             this.lbNumberAdults.TabIndex = 2;
@@ -70,7 +70,7 @@
             // lbNumberChildren
             // 
             this.lbNumberChildren.AutoSize = true;
-            this.lbNumberChildren.Location = new System.Drawing.Point(682, 12);
+            this.lbNumberChildren.Location = new System.Drawing.Point(708, 12);
             this.lbNumberChildren.Name = "lbNumberChildren";
             this.lbNumberChildren.Size = new System.Drawing.Size(33, 16);
             this.lbNumberChildren.TabIndex = 3;
@@ -88,7 +88,7 @@
             // lbCCCD
             // 
             this.lbCCCD.AutoSize = true;
-            this.lbCCCD.Location = new System.Drawing.Point(332, 12);
+            this.lbCCCD.Location = new System.Drawing.Point(350, 12);
             this.lbCCCD.Name = "lbCCCD";
             this.lbCCCD.Size = new System.Drawing.Size(44, 16);
             this.lbCCCD.TabIndex = 5;
@@ -97,7 +97,7 @@
             // lbPhone
             // 
             this.lbPhone.AutoSize = true;
-            this.lbPhone.Location = new System.Drawing.Point(443, 12);
+            this.lbPhone.Location = new System.Drawing.Point(465, 12);
             this.lbPhone.Name = "lbPhone";
             this.lbPhone.Size = new System.Drawing.Size(46, 16);
             this.lbPhone.TabIndex = 6;
@@ -115,7 +115,7 @@
             this.btnAccept.ForeColor = System.Drawing.Color.White;
             this.btnAccept.Image = ((System.Drawing.Image)(resources.GetObject("btnAccept.Image")));
             this.btnAccept.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAccept.Location = new System.Drawing.Point(727, 0);
+            this.btnAccept.Location = new System.Drawing.Point(758, 0);
             this.btnAccept.Name = "btnAccept";
             this.btnAccept.Size = new System.Drawing.Size(40, 40);
             this.btnAccept.TabIndex = 7;
@@ -133,7 +133,7 @@
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
             this.btnCancel.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCancel.Location = new System.Drawing.Point(773, 0);
+            this.btnCancel.Location = new System.Drawing.Point(820, 0);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(40, 40);
             this.btnCancel.TabIndex = 8;
@@ -155,7 +155,7 @@
             this.Controls.Add(this.lbName);
             this.Margin = new System.Windows.Forms.Padding(2, 0, 0, 0);
             this.Name = "TicketItem";
-            this.Size = new System.Drawing.Size(815, 40);
+            this.Size = new System.Drawing.Size(863, 40);
             this.ResumeLayout(false);
             this.PerformLayout();
 

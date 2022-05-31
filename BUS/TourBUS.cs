@@ -37,9 +37,9 @@ namespace BUS
         {
             TourDAO.Instance.Save(t);
         }
-        public void Delete(int id)
+        public void DeleteById(int id)
         {
-            TourDAO.Instance.Delete(id);
+            TourDAO.Instance.DeleteById(id);
         }
     }
 }

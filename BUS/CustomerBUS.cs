@@ -44,7 +44,10 @@ namespace BUS
 
             foreach (CustomerDTO c in customers)
             {
-                dt.Rows.Add(c.id, c.name, c.birthday, c.gender, c.idCard, c.phone, c.address, c.email, c.customer_type_name);
+                string birthday = c.birthday == null ? null : ((DateTime)c.birthday).ToString("dd/MM/yyyy");
+                string gender = c.gender == null ? null : Convert.ToBoolean(c.gender) ? "Nam" : "Nữ";
+
+                dt.Rows.Add(c.id, c.name, birthday, gender, c.idCard, c.phone, c.address, c.email, c.customer_type_name);
             }
             return dt;
         }

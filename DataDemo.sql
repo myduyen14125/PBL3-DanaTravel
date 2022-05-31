@@ -138,7 +138,7 @@ values	(N'Đang chờ thanh toán'), (N'Đã thanh toán'), (N'Đã hủy');
 -- Data tour
 /****** Script for SelectTopNRows command from SSMS  ******/
   SET IDENTITY_INSERT Tours ON;
-  INSERT INTO Tours(id, name, transport, short_desc, detail_desc, departureDate, returnDate, total_price_service, percent_VAT, percent_profit, percent_price_children, price_adult_one_ticket, price_children_one_ticket, tour_status_id, tour_category_id) VALUES (
+  INSERT INTO Tours(id, name, transport, short_desc, detail_desc, departureDate, returnDate, price_adult_one_ticket, price_children_one_ticket, tour_status_id, tour_category_id) VALUES (
   '1', 
   N'Du lịch Phú Quốc - Grand World - Checkin Dòng Sông Venice - Vinwonders từ Sài Gòn 2022', 
   N'Xe du lịch, máy bay',
@@ -354,17 +354,13 @@ biết thêm chi tiết.</P></DIV></DIV></DIV></DIV></DIV></BODY></HTML>
 ',
 CONVERT(DATETIME, '2022-05-26 21:09:30.000'),
 CONVERT(DATETIME, '2022-05-28 21:09:30.000'),
-'5299000',
-'2',
-'10',
-'5',
 '5945478',
-'297273.9',
+'297273',
 '1',
 '3'
 );
 
-INSERT INTO Tours(id, name, transport, short_desc, detail_desc, departureDate, returnDate, total_price_service, percent_VAT, percent_profit, percent_price_children, price_adult_one_ticket, price_children_one_ticket, tour_status_id, tour_category_id) VALUES (
+INSERT INTO Tours(id, name, transport, short_desc, detail_desc, departureDate, returnDate, price_adult_one_ticket, price_children_one_ticket, tour_status_id, tour_category_id) VALUES (
   '2', 
   N'Du lịch Miền Trung - Đà Nẵng - Hội An - Huế từ Sài Gòn giá tốt 2022', 
   N'Xe du lịch, máy bay',
@@ -556,17 +552,13 @@ biết thêm chi tiết.</DIV></DIV></DIV></DIV></DIV><FONT
 size=4></FONT></BODY></HTML>',
 CONVERT(DATETIME, '2022-05-24 21:16:29.000'),
 CONVERT(DATETIME, '2022-05-24 21:16:29.000'),
-'5699000',
-'2',
-'15',
-'5',
 '6684927',
-'334246.35',
+'334246',
 '1',
 '1'
 );
 
-INSERT INTO Tours(id, name, transport, short_desc, detail_desc, departureDate, returnDate, total_price_service, percent_VAT, percent_profit, percent_price_children, price_adult_one_ticket, price_children_one_ticket, tour_status_id, tour_category_id) VALUES (
+INSERT INTO Tours(id, name, transport, short_desc, detail_desc, departureDate, returnDate, price_adult_one_ticket, price_children_one_ticket, tour_status_id, tour_category_id) VALUES (
   '3', 
   N'Du lịch Hè - Tour Du lịch Quy Nhơn - Phú Yên', 
   N'Xe du lịch, máy bay',
@@ -759,17 +751,13 @@ size=4></FONT></BODY></HTML>
 ',
 CONVERT(DATETIME, '2022-05-24 21:16:29.000'),
 CONVERT(DATETIME, '2022-05-24 21:16:29.000'),
-'5699000',
-'2',
-'15',
-'5',
 '6684927',
-'334246.35',
+'334246',
 '1',
 '1'
 );
 
-INSERT INTO Tours(id, name, transport, short_desc, detail_desc, departureDate, returnDate, total_price_service, percent_VAT, percent_profit, percent_price_children, price_adult_one_ticket, price_children_one_ticket, tour_status_id, tour_category_id) VALUES (
+INSERT INTO Tours(id, name, transport, short_desc, detail_desc, departureDate, returnDate, price_adult_one_ticket, price_children_one_ticket, tour_status_id, tour_category_id) VALUES (
   '4', 
   N'Du lịch Nha Trang - Đà Lạt', 
   N'Xe du lịch, máy bay',
@@ -975,17 +963,13 @@ lại.</LI></UL></DIV></DIV></DIV></DIV></DIV></BODY></HTML>
 ',
 CONVERT(DATETIME, '2022-06-02 22:27:53.000'),
 CONVERT(DATETIME, '2022-06-04 22:27:53.000'),
-'4099000',
-'3',
-'10',
-'6',
 '4644167',
-'278650.02',
+'278650',
 '1',
 '3'
 );
 
-INSERT INTO Tours(id, name, transport, short_desc, detail_desc, departureDate, returnDate, total_price_service, percent_VAT, percent_profit, percent_price_children, price_adult_one_ticket, price_children_one_ticket, tour_status_id, tour_category_id) VALUES (
+INSERT INTO Tours(id, name, transport, short_desc, detail_desc, departureDate, returnDate, price_adult_one_ticket, price_children_one_ticket, tour_status_id, tour_category_id) VALUES (
   '5', 
   N'Du lịch Châu Đốc - Hà Tiên - Cần Thơ', 
   N'Xe du lịch, máy bay',
@@ -1217,17 +1201,13 @@ class=Apple-interchange-newline></DIV></DIV></DIV></DIV></DIV></BODY></HTML>
 ',
 CONVERT(DATETIME, '2022-05-24 22:31:03.000'),
 CONVERT(DATETIME, '2022-05-24 22:31:03.000'),
-'3099000',
-'2',
-'10',
-'5',
 '3477078',
-'173853.9',
+'173853',
 '1',
 '1'
 );
 
-INSERT INTO Tours(id, name, transport, short_desc, detail_desc, departureDate, returnDate, total_price_service, percent_VAT, percent_profit, percent_price_children, price_adult_one_ticket, price_children_one_ticket, tour_status_id, tour_category_id) VALUES (
+INSERT INTO Tours(id, name, transport, short_desc, detail_desc, departureDate, returnDate, price_adult_one_ticket, price_children_one_ticket, tour_status_id, tour_category_id) VALUES (
   '6', 
   N'Du lịch Quảng Ngãi - Đảo Lý Sơn - Đảo Bé - Vương Quốc Tỏi', 
   N'Xe du lịch, máy bay',
@@ -1410,18 +1390,14 @@ lại.</LI></UL></DIV></DIV></DIV></DIV></DIV></BODY></HTML>
 ',
 CONVERT(DATETIME, '2022-07-06 22:33:16.000'),
 CONVERT(DATETIME, '2022-07-08 22:33:16.000'),
-'5599000',
-'3',
-'8',
-'7',
-'6228327.6',
-'435982.932',
+'6228327',
+'4359821',
 '1',
 '2'
 );
 
 
-INSERT INTO Tours(id, name, transport, short_desc, detail_desc, departureDate, returnDate, total_price_service, percent_VAT, percent_profit, percent_price_children, price_adult_one_ticket, price_children_one_ticket, tour_status_id, tour_category_id) VALUES (
+INSERT INTO Tours(id, name, transport, short_desc, detail_desc, departureDate, returnDate, price_adult_one_ticket, price_children_one_ticket, tour_status_id, tour_category_id) VALUES (
   '7', 
   N'Du lịch Hè - Tour Du lịch Đà Nẵng - Huế - Thánh Địa La Vang - Động Thiên Đường', 
   N'Xe du lịch, máy bay',
@@ -1647,17 +1623,13 @@ lại.</LI></UL></DIV></DIV></DIV></DIV></DIV></BODY></HTML>
 ',
 CONVERT(DATETIME, '2022-06-13 22:35:17.000'),
 CONVERT(DATETIME, '2022-05-16 22:35:17.000'),
-'5899000',
-'4',
-'12',
-'8',
-'6871155.2',
-'549692.416',
+'6871155',
+'5496921',
 '1',
 '3'
 );
 
-INSERT INTO Tours(id, name, transport, short_desc, detail_desc, departureDate, returnDate, total_price_service, percent_VAT, percent_profit, percent_price_children, price_adult_one_ticket, price_children_one_ticket, tour_status_id, tour_category_id) VALUES (
+INSERT INTO Tours(id, name, transport, short_desc, detail_desc, departureDate, returnDate, price_adult_one_ticket, price_children_one_ticket, tour_status_id, tour_category_id) VALUES (
   '8', 
   N'Du lịch Hè - Tour Du lịch Buôn Ma Thuột - Làng Cà Phê Trung Nguyên', 
   N'Xe du lịch, máy bay',
@@ -1816,17 +1788,13 @@ khách.</DIV></DIV></DIV></DIV></DIV></DIV></BODY></HTML>
 ',
 CONVERT(DATETIME, '2022-07-11 22:37:19.000'),
 CONVERT(DATETIME, '2022-07-13 22:37:19.000'),
-'2699000',
-'2',
-'8',
-'4',
-'2973218.4',
-'118928.736',
+'2973218',
+'1189280',
 '1',
 '2'
 );
 
-INSERT INTO Tours(id, name, transport, short_desc, detail_desc, departureDate, returnDate, total_price_service, percent_VAT, percent_profit, percent_price_children, price_adult_one_ticket, price_children_one_ticket, tour_status_id, tour_category_id) VALUES (
+INSERT INTO Tours(id, name, transport, short_desc, detail_desc, departureDate, returnDate, price_adult_one_ticket, price_children_one_ticket, tour_status_id, tour_category_id) VALUES (
   '9', 
   N'Tour Du lịch Sapa - Bản Cát Cát - Hàm Rồng - Fansipan', 
   N'Xe du lịch, máy bay',
@@ -2036,17 +2004,13 @@ lại.</LI></UL></DIV></DIV></DIV></DIV></DIV></BODY></HTML>
 ',
 CONVERT(DATETIME, '2022-05-26 22:40:00.000'),
 CONVERT(DATETIME, '2022-05-29 22:40:00.000'),
-'5799000',
-'2',
-'10',
-'5',
 '6506478',
-'325323.9',
+'3253230',
 '1',
 '4'
 );
 
-INSERT INTO Tours(id, name, transport, short_desc, detail_desc, departureDate, returnDate, total_price_service, percent_VAT, percent_profit, percent_price_children, price_adult_one_ticket, price_children_one_ticket, tour_status_id, tour_category_id) VALUES (
+INSERT INTO Tours(id, name, transport, short_desc, detail_desc, departureDate, returnDate, price_adult_one_ticket, price_children_one_ticket, tour_status_id, tour_category_id) VALUES (
   '10', 
   N'Du lịch Hồ Chí Minh - Dinh Độc Lập - Bảo Tàng Lịch Sử', 
   N'Xe du lịch, máy bay',
@@ -2156,12 +2120,8 @@ khách về lại điểm đón ban đầu.</DIV></DIV></DIV></DIV></DIV></DIV><
 ',
 CONVERT(DATETIME, '2022-06-22 22:42:34.000'),
 CONVERT(DATETIME, '2022-06-24 22:42:34.000'),
-'3299000',
-'2',
-'7',
-'3',
-'3600528.6',
-'108015.858',
+'36005280',
+'10801500',
 '1',
 '4'
 );

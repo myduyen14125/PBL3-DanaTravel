@@ -45,9 +45,6 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.myButton12 = new MyLibrary.MyButton();
-            this.myButton11 = new MyLibrary.MyButton();
-            this.myButton10 = new MyLibrary.MyButton();
             this.label19 = new System.Windows.Forms.Label();
             this.myButton8 = new MyLibrary.MyButton();
             this.myButton6 = new MyLibrary.MyButton();
@@ -106,6 +103,9 @@
             this.myButton7 = new MyLibrary.MyButton();
             this.myButton9 = new MyLibrary.MyButton();
             this.pictureBox47 = new System.Windows.Forms.PictureBox();
+            this.myButton10 = new MyLibrary.MyButton();
+            this.myButton11 = new MyLibrary.MyButton();
+            this.myButton12 = new MyLibrary.MyButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelHomepage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
@@ -395,60 +395,6 @@
             this.label21.TabIndex = 202;
             this.label21.Text = "HaNa";
             // 
-            // myButton12
-            // 
-            this.myButton12.BackColor = System.Drawing.Color.White;
-            this.myButton12.BackgroundColor = System.Drawing.Color.White;
-            this.myButton12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.myButton12.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.myButton12.BorderRadius = 20;
-            this.myButton12.BorderSize = 0;
-            this.myButton12.FlatAppearance.BorderSize = 0;
-            this.myButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.myButton12.ForeColor = System.Drawing.Color.White;
-            this.myButton12.Location = new System.Drawing.Point(690, 1363);
-            this.myButton12.Name = "myButton12";
-            this.myButton12.Size = new System.Drawing.Size(176, 185);
-            this.myButton12.TabIndex = 200;
-            this.myButton12.TextColor = System.Drawing.Color.White;
-            this.myButton12.UseVisualStyleBackColor = false;
-            // 
-            // myButton11
-            // 
-            this.myButton11.BackColor = System.Drawing.Color.White;
-            this.myButton11.BackgroundColor = System.Drawing.Color.White;
-            this.myButton11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.myButton11.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.myButton11.BorderRadius = 20;
-            this.myButton11.BorderSize = 0;
-            this.myButton11.FlatAppearance.BorderSize = 0;
-            this.myButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.myButton11.ForeColor = System.Drawing.Color.White;
-            this.myButton11.Location = new System.Drawing.Point(410, 1363);
-            this.myButton11.Name = "myButton11";
-            this.myButton11.Size = new System.Drawing.Size(176, 185);
-            this.myButton11.TabIndex = 199;
-            this.myButton11.TextColor = System.Drawing.Color.White;
-            this.myButton11.UseVisualStyleBackColor = false;
-            // 
-            // myButton10
-            // 
-            this.myButton10.BackColor = System.Drawing.Color.White;
-            this.myButton10.BackgroundColor = System.Drawing.Color.White;
-            this.myButton10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.myButton10.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.myButton10.BorderRadius = 20;
-            this.myButton10.BorderSize = 0;
-            this.myButton10.FlatAppearance.BorderSize = 0;
-            this.myButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.myButton10.ForeColor = System.Drawing.Color.White;
-            this.myButton10.Location = new System.Drawing.Point(142, 1362);
-            this.myButton10.Name = "myButton10";
-            this.myButton10.Size = new System.Drawing.Size(176, 185);
-            this.myButton10.TabIndex = 198;
-            this.myButton10.TextColor = System.Drawing.Color.White;
-            this.myButton10.UseVisualStyleBackColor = false;
-            // 
             // label19
             // 
             this.label19.AutoSize = true;
@@ -601,7 +547,8 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(289, 26);
             this.txtSearch.TabIndex = 180;
-            this.txtSearch.Text = "    Search";
+            this.txtSearch.Text = "Search";
+            this.txtSearch.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtSearch_MouseClick);
             // 
             // label9
             // 
@@ -699,6 +646,7 @@
             this.btnRight.Size = new System.Drawing.Size(50, 45);
             this.btnRight.TabIndex = 243;
             this.btnRight.UseVisualStyleBackColor = true;
+            this.btnRight.Click += new System.EventHandler(this.btnRight_Click);
             // 
             // btnleft
             // 
@@ -708,6 +656,7 @@
             this.btnleft.Size = new System.Drawing.Size(50, 45);
             this.btnleft.TabIndex = 242;
             this.btnleft.UseVisualStyleBackColor = true;
+            this.btnleft.Click += new System.EventHandler(this.btnleft_Click);
             // 
             // panel4
             // 
@@ -986,6 +935,7 @@
             this.btnSearch.TabIndex = 181;
             this.btnSearch.TextColor = System.Drawing.Color.White;
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // pictureBox2
             // 
@@ -1135,6 +1085,60 @@
             this.pictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox47.TabIndex = 236;
             this.pictureBox47.TabStop = false;
+            // 
+            // myButton10
+            // 
+            this.myButton10.BackColor = System.Drawing.Color.White;
+            this.myButton10.BackgroundColor = System.Drawing.Color.White;
+            this.myButton10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.myButton10.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.myButton10.BorderRadius = 20;
+            this.myButton10.BorderSize = 0;
+            this.myButton10.FlatAppearance.BorderSize = 0;
+            this.myButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.myButton10.ForeColor = System.Drawing.Color.White;
+            this.myButton10.Location = new System.Drawing.Point(142, 1362);
+            this.myButton10.Name = "myButton10";
+            this.myButton10.Size = new System.Drawing.Size(176, 185);
+            this.myButton10.TabIndex = 198;
+            this.myButton10.TextColor = System.Drawing.Color.White;
+            this.myButton10.UseVisualStyleBackColor = false;
+            // 
+            // myButton11
+            // 
+            this.myButton11.BackColor = System.Drawing.Color.White;
+            this.myButton11.BackgroundColor = System.Drawing.Color.White;
+            this.myButton11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.myButton11.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.myButton11.BorderRadius = 20;
+            this.myButton11.BorderSize = 0;
+            this.myButton11.FlatAppearance.BorderSize = 0;
+            this.myButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.myButton11.ForeColor = System.Drawing.Color.White;
+            this.myButton11.Location = new System.Drawing.Point(410, 1363);
+            this.myButton11.Name = "myButton11";
+            this.myButton11.Size = new System.Drawing.Size(176, 185);
+            this.myButton11.TabIndex = 199;
+            this.myButton11.TextColor = System.Drawing.Color.White;
+            this.myButton11.UseVisualStyleBackColor = false;
+            // 
+            // myButton12
+            // 
+            this.myButton12.BackColor = System.Drawing.Color.White;
+            this.myButton12.BackgroundColor = System.Drawing.Color.White;
+            this.myButton12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.myButton12.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.myButton12.BorderRadius = 20;
+            this.myButton12.BorderSize = 0;
+            this.myButton12.FlatAppearance.BorderSize = 0;
+            this.myButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.myButton12.ForeColor = System.Drawing.Color.White;
+            this.myButton12.Location = new System.Drawing.Point(690, 1363);
+            this.myButton12.Name = "myButton12";
+            this.myButton12.Size = new System.Drawing.Size(176, 185);
+            this.myButton12.TabIndex = 200;
+            this.myButton12.TextColor = System.Drawing.Color.White;
+            this.myButton12.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 

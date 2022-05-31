@@ -164,39 +164,23 @@ namespace PBL3.View.admin
             {
                 return;
             }
-            Account ac;
-            string email = txtEmail.Text;
+
             // Add account if add employee or change email (because username === email)
-            if (employeeId == 0 || email != employee.email)
+            if (employeeId == 0 || txtEmail.Text != employee.email)
             {
-                List<Role> roles = new List<Role>();
-                foreach (var r in checkListBoxRole.CheckedItems)
-                {
-                    roles.Add(RoleBUS.Instance.GetRoleByName(r.ToString()));
-                }
-                ac = new Account
-                {
-                    username = email,
-                    password = HashPassword.GetHash(email),
-                    status = true,
-                    Roles = roles
-                };
-                AccountBUS.Instance.RegisterAccount(ac);
-                SendEmailHelper send = new SendEmailHelper();
-                string header = "DanaTravel send your account for login Danatravel Application";
-                string body = "<h3> Your account: " + email + "</h3>"
-                    + "<h3>Password: " + email + "</h3>"
-                    + "<h3>Please login to change your password</h3>";
-                new SendEmailHelper().SendEmail(email, header, body);
+                RegisterAccount();
             }
-            
-            ac = AccountBUS.Instance.GetAccountByUsername(email);
+
+            Account ac = AccountBUS.Instance.GetAccountByUsername(txtEmail.Text);
 
             MemoryStream stream = new MemoryStream();
-            Image image = picturebox.Image;
-            image.Save(stream, image.RawFormat);
+            Image image;
+            if (picturebox.Image != null)
+            {
+                image = picturebox.Image;
+                image.Save(stream, image.RawFormat);
+            }
 
-            // Add employee
             Employee epl = new Employee
             {
                 id = employeeId,
@@ -212,17 +196,43 @@ namespace PBL3.View.admin
                 division_id = (cbbDivision.SelectedItem as dynamic).Value,
                 education_degree_id = (cbbEducation.SelectedItem as dynamic).Value,
                 account_id = ac.id,
-                image = stream.ToArray()
             };
+            if(picturebox.Image != null) epl.image = stream.ToArray();
             EmployeeBUS.Instance.Save(epl);
-            if (employeeId != 0 && email != employee.email)
+
+            // If change email => lock old email
+            if (employeeId != 0 && txtEmail.Text != employee.email)
             {
-                AccountBUS.Instance.DeleteAccount(employee.account_name);
+                AccountBUS.Instance.DeleteAccount(employee.email);
             }
             if(employeeId == 0) MessageBox.Show("Addition successful");
             else MessageBox.Show("Edit successful");
             d();
             this.Hide();
+        }
+
+        private void RegisterAccount()
+        {
+            List<Role> roles = new List<Role>();
+            foreach (var r in checkListBoxRole.CheckedItems)
+            {
+                roles.Add(RoleBUS.Instance.GetRoleByName(r.ToString()));
+            }
+            Account ac = new Account
+            {
+                username = txtEmail.Text,
+                password = HashPassword.GetHash(txtEmail.Text),
+                status = true,
+                Roles = roles
+            };
+            AccountBUS.Instance.RegisterAccount(ac);
+
+            SendEmailHelper send = new SendEmailHelper();
+            string header = "DanaTravel send your account for login Danatravel Application";
+            string body = "<h3> Your account: " + txtEmail.Text + "</h3>"
+                + "<h3>Password: " + txtEmail.Text + "</h3>"
+                + "<h3>Please login to change your password</h3>";
+            new SendEmailHelper().SendEmail(txtEmail.Text, header, body);
         }
 
         private bool ValidateFormSave()

@@ -67,6 +67,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -136,7 +137,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Modern No. 20", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.DarkRed;
-            this.label11.Location = new System.Drawing.Point(307, 12);
+            this.label11.Location = new System.Drawing.Point(261, 9);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(447, 35);
             this.label11.TabIndex = 51;
@@ -145,7 +146,7 @@
             // btnBookTour
             // 
             this.btnBookTour.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBookTour.Location = new System.Drawing.Point(685, 629);
+            this.btnBookTour.Location = new System.Drawing.Point(668, 629);
             this.btnBookTour.Name = "btnBookTour";
             this.btnBookTour.Size = new System.Drawing.Size(87, 40);
             this.btnBookTour.TabIndex = 50;
@@ -443,11 +444,23 @@
             this.label9.TabIndex = 41;
             this.label9.Text = "Số trẻ em";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label5.ForeColor = System.Drawing.Color.DarkRed;
+            this.label5.Location = new System.Drawing.Point(549, 366);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(232, 18);
+            this.label5.TabIndex = 54;
+            this.label5.Text = "* Giá trên không bao gồm phí VAT";
+            // 
             // FormBookTour
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(977, 681);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.txtCCCD);
             this.Controls.Add(this.CCCD);
             this.Controls.Add(this.label11);
@@ -525,5 +538,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label5;
     }
 }

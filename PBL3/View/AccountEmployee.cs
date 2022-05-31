@@ -27,7 +27,7 @@ namespace PBL3.View
                 ShowDataAccount();
             }
         }
-        private void ShowDataAccount()
+        public void ShowDataAccount()
         {
             dataAccount.DataSource = AccountBUS.Instance.GetDataTableEmployeeAccounts(txtSearch.Text);
             dataAccount.Columns["ID"].Visible = false;

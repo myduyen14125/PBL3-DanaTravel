@@ -32,7 +32,7 @@
             this.lbPhone = new System.Windows.Forms.Label();
             this.lbCCCD = new System.Windows.Forms.Label();
             this.lbEmail = new System.Windows.Forms.Label();
-            this.lbNumberChildren = new System.Windows.Forms.Label();
+            this.lbTotalPrice = new System.Windows.Forms.Label();
             this.lbName = new System.Windows.Forms.Label();
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.btnAccept = new Guna.UI2.WinForms.Guna2Button();
@@ -42,7 +42,7 @@
             // lbPhone
             // 
             this.lbPhone.AutoSize = true;
-            this.lbPhone.Location = new System.Drawing.Point(442, 12);
+            this.lbPhone.Location = new System.Drawing.Point(512, 12);
             this.lbPhone.Name = "lbPhone";
             this.lbPhone.Size = new System.Drawing.Size(46, 16);
             this.lbPhone.TabIndex = 15;
@@ -51,7 +51,7 @@
             // lbCCCD
             // 
             this.lbCCCD.AutoSize = true;
-            this.lbCCCD.Location = new System.Drawing.Point(331, 12);
+            this.lbCCCD.Location = new System.Drawing.Point(393, 12);
             this.lbCCCD.Name = "lbCCCD";
             this.lbCCCD.Size = new System.Drawing.Size(44, 16);
             this.lbCCCD.TabIndex = 14;
@@ -60,20 +60,20 @@
             // lbEmail
             // 
             this.lbEmail.AutoSize = true;
-            this.lbEmail.Location = new System.Drawing.Point(169, 12);
+            this.lbEmail.Location = new System.Drawing.Point(198, 12);
             this.lbEmail.Name = "lbEmail";
             this.lbEmail.Size = new System.Drawing.Size(41, 16);
             this.lbEmail.TabIndex = 13;
             this.lbEmail.Text = "Email";
             // 
-            // lbNumberChildren
+            // lbTotalPrice
             // 
-            this.lbNumberChildren.AutoSize = true;
-            this.lbNumberChildren.Location = new System.Drawing.Point(592, 12);
-            this.lbNumberChildren.Name = "lbNumberChildren";
-            this.lbNumberChildren.Size = new System.Drawing.Size(63, 16);
-            this.lbNumberChildren.TabIndex = 12;
-            this.lbNumberChildren.Text = "Tổng tiền";
+            this.lbTotalPrice.AutoSize = true;
+            this.lbTotalPrice.Location = new System.Drawing.Point(623, 12);
+            this.lbTotalPrice.Name = "lbTotalPrice";
+            this.lbTotalPrice.Size = new System.Drawing.Size(63, 16);
+            this.lbTotalPrice.TabIndex = 12;
+            this.lbTotalPrice.Text = "Tổng tiền";
             // 
             // lbName
             // 
@@ -96,10 +96,11 @@
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
             this.btnCancel.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCancel.Location = new System.Drawing.Point(772, 0);
+            this.btnCancel.Location = new System.Drawing.Point(815, -1);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(40, 40);
             this.btnCancel.TabIndex = 17;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnAccept
             // 
@@ -113,10 +114,11 @@
             this.btnAccept.ForeColor = System.Drawing.Color.White;
             this.btnAccept.Image = ((System.Drawing.Image)(resources.GetObject("btnAccept.Image")));
             this.btnAccept.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAccept.Location = new System.Drawing.Point(726, 0);
+            this.btnAccept.Location = new System.Drawing.Point(738, -1);
             this.btnAccept.Name = "btnAccept";
             this.btnAccept.Size = new System.Drawing.Size(40, 40);
             this.btnAccept.TabIndex = 16;
+            this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
             // 
             // btnViewDetail
             // 
@@ -130,25 +132,28 @@
             this.btnViewDetail.ForeColor = System.Drawing.Color.White;
             this.btnViewDetail.Image = ((System.Drawing.Image)(resources.GetObject("btnViewDetail.Image")));
             this.btnViewDetail.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnViewDetail.Location = new System.Drawing.Point(750, 0);
+            this.btnViewDetail.Location = new System.Drawing.Point(784, -1);
             this.btnViewDetail.Name = "btnViewDetail";
             this.btnViewDetail.Size = new System.Drawing.Size(40, 40);
             this.btnViewDetail.TabIndex = 18;
+            this.btnViewDetail.Click += new System.EventHandler(this.btnViewDetail_Click);
             // 
             // BillItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.btnViewDetail);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnAccept);
             this.Controls.Add(this.lbPhone);
             this.Controls.Add(this.lbCCCD);
             this.Controls.Add(this.lbEmail);
-            this.Controls.Add(this.lbNumberChildren);
+            this.Controls.Add(this.lbTotalPrice);
             this.Controls.Add(this.lbName);
+            this.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.Name = "BillItem";
-            this.Size = new System.Drawing.Size(815, 40);
+            this.Size = new System.Drawing.Size(868, 38);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,7 +166,7 @@
         private System.Windows.Forms.Label lbPhone;
         private System.Windows.Forms.Label lbCCCD;
         private System.Windows.Forms.Label lbEmail;
-        private System.Windows.Forms.Label lbNumberChildren;
+        private System.Windows.Forms.Label lbTotalPrice;
         private System.Windows.Forms.Label lbName;
         private Guna.UI2.WinForms.Guna2Button btnViewDetail;
     }

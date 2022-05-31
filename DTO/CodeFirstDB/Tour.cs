@@ -23,11 +23,9 @@ namespace DTO
         public DateTime departureDate { get; set; }
         [Required]
         public DateTime returnDate { get; set; }
-        public double total_price_service { get; set; }
-        public double percent_VAT { get; set; } = 0;
-        public double percent_profit { get; set; } = 0;
-        public double percent_price_children { get; set; } = 100;
+        [Required]
         public double price_adult_one_ticket { get; set; }
+        [Required]
         public double price_children_one_ticket { get; set; }
         public int tour_status_id { get; set; }
         public int tour_category_id { get; set; }

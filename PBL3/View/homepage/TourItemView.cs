@@ -31,8 +31,8 @@ namespace PBL3.View.homepage
 
             TimeSpan timeSpan = tour.returnDate - tour.departureDate;
             lbTime.Text = timeSpan.Days == 0 ? "1 ngày 0 đêm" : timeSpan.Days + " ngày " + (timeSpan.Days - 1) + " đêm";
-            lbDepart.Text = tour.departureDate.ToString();
-            lbPrice.Text = tour.price_adult_one_ticket.ToString() + "VNĐ";
+            lbDepart.Text = tour.departureDate.ToString("dd/MM/yyyy");
+            lbPrice.Text = tour.price_adult_one_ticket.ToString("###,###,###,###") + " VNĐ";
 
             List<Image> images = new List<Image>();
             foreach (TourImage tourImage in tour.TourImages) images.Add(Image.FromStream(new MemoryStream(tourImage.image)));

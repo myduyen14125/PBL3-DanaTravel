@@ -56,7 +56,6 @@ namespace PBL3.View.ticket
                     tourTicket.tour_ticket_status_id = 2;
                     btnAccept.Image = Resources.icon_success;
                     SendEmailAcceptTicket();
-
                     CreateBill();
                 }
             }
@@ -127,7 +126,7 @@ namespace PBL3.View.ticket
                 + "<b>Số điện thoại:</b> " + tourTicket.phone + "<br>"
                 + "<b>Số người lớn:</b> " + tourTicket.number_adult.ToString() + "<br>"
                 + "<b>Số trẻ em:</b> " + tourTicket.number_children.ToString() + "<br>"
-                + "<b>Tổng tiền:</b> " + tourTicket.total_price.ToString() + "VNĐ" + "<br>"
+                + "<b>Tổng tiền:</b> " + tourTicket.total_price.ToString("###,###,###,###") + " VNĐ" + "<br>"
                 + "Vui lòng thanh toán hóa đơn trước ngày diễn ra tour <br>"
                 + "Nếu thông tin có sai xót vui lòng bạn liên hệ đến bộ phận chăm sóc khách hàng qua hotline: 1900.9999 để được tư vấn <br>"
                 + "Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi.";

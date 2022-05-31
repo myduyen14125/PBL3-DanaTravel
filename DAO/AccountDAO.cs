@@ -47,7 +47,7 @@ namespace DAO
                 {
                     return false;
                 }
-                db.Accounts.Add(ac);
+                else db.Accounts.Add(ac);
             }
             catch (Exception)
             {
@@ -76,7 +76,7 @@ namespace DAO
         {
             EntityManager db = EntityManager.Instance;
             var result =  from ac in db.Accounts
-                          join e in db.Employees on ac.id equals e.account_id
+                          join e in db.Employees on ac.id equals e.account_id 
                           where (ac.username.ToLower().Contains(search) 
                           || e.name.ToLower().Contains(search) || e.idCard.ToLower().Contains(search))
                           select new { ac.id, ac.username, ac.status, e.name, e.idCard};

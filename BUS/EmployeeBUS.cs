@@ -48,8 +48,7 @@ namespace BUS
 
             foreach (EmployeeDTO e in employees)
             {
-                string birthday = e.birthday.Day + "/" + e.birthday.Month + "/" + e.birthday.Year;
-                dt.Rows.Add(e.id, e.name, birthday, e.gender ? "Nam" : "Nữ", e.idCard, e.phone, e.address, e.email, e.salary,
+                dt.Rows.Add(e.id, e.name, e.birthday.ToString("dd/MM/yyyy"), e.gender ? "Nam" : "Nữ", e.idCard, e.phone, e.address, e.email, e.salary,
                     e.education_degree_name, e.division_name, e.position_name);
             }
             return dt;

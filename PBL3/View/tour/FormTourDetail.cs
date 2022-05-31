@@ -47,7 +47,7 @@ namespace PBL3.View.tour
             sliderImage.Dock = DockStyle.Fill;
 
             TimeSpan timeSpan = tourDTO.returnDate - tourDTO.departureDate;
-            string departDate = tourDTO.departureDate.ToShortDateString();
+            string departDate = tourDTO.departureDate.ToString("dd/MM/yyyy");
             string time = "";
             if (timeSpan.Days == 0) time = "1 ngày 0 đêm";
             else time = (timeSpan.Days).ToString() + " ngày " + (timeSpan.Days - 1).ToString() + " đêm";
@@ -58,7 +58,7 @@ namespace PBL3.View.tour
             lbTourName1.Text = tourDTO.name;
             lbTourID.Text = tourDTO.id.ToString();
             lbDepartureDate1.Text = departDate;
-            lbPrice.Text = tourDTO.price_adult_one_ticket.ToString() + "VNĐ";
+            lbPrice.Text = tourDTO.price_adult_one_ticket.ToString("###,###,###,###") + " VNĐ";
             lbShortDescription.Text = tourDTO.short_desc;
             lbTime.Text = time;
             lbTime1.Text = time;

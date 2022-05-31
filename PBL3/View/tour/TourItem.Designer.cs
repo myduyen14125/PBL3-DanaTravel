@@ -98,7 +98,7 @@ namespace PBL3.View.tour
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(657, 75);
+            this.label3.Location = new System.Drawing.Point(747, 75);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 16);
             this.label3.TabIndex = 33;
@@ -116,7 +116,7 @@ namespace PBL3.View.tour
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(657, 26);
+            this.label2.Location = new System.Drawing.Point(747, 26);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 16);
             this.label2.TabIndex = 31;
@@ -134,7 +134,8 @@ namespace PBL3.View.tour
             // txtName
             // 
             this.txtName.AutoSize = true;
-            this.txtName.Location = new System.Drawing.Point(396, 26);
+            this.txtName.Location = new System.Drawing.Point(377, 26);
+            this.txtName.MaximumSize = new System.Drawing.Size(350, 0);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(44, 16);
             this.txtName.TabIndex = 44;
@@ -143,7 +144,7 @@ namespace PBL3.View.tour
             // txtPriceAdult
             // 
             this.txtPriceAdult.AutoSize = true;
-            this.txtPriceAdult.Location = new System.Drawing.Point(396, 75);
+            this.txtPriceAdult.Location = new System.Drawing.Point(377, 75);
             this.txtPriceAdult.Name = "txtPriceAdult";
             this.txtPriceAdult.Size = new System.Drawing.Size(44, 16);
             this.txtPriceAdult.TabIndex = 45;
@@ -152,7 +153,7 @@ namespace PBL3.View.tour
             // txtCategory
             // 
             this.txtCategory.AutoSize = true;
-            this.txtCategory.Location = new System.Drawing.Point(807, 26);
+            this.txtCategory.Location = new System.Drawing.Point(856, 26);
             this.txtCategory.Name = "txtCategory";
             this.txtCategory.Size = new System.Drawing.Size(44, 16);
             this.txtCategory.TabIndex = 46;
@@ -161,7 +162,7 @@ namespace PBL3.View.tour
             // txtPriceChildren
             // 
             this.txtPriceChildren.AutoSize = true;
-            this.txtPriceChildren.Location = new System.Drawing.Point(807, 75);
+            this.txtPriceChildren.Location = new System.Drawing.Point(857, 75);
             this.txtPriceChildren.Name = "txtPriceChildren";
             this.txtPriceChildren.Size = new System.Drawing.Size(44, 16);
             this.txtPriceChildren.TabIndex = 47;
@@ -180,9 +181,9 @@ namespace PBL3.View.tour
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.txtShortDesc);
-            this.panel1.Location = new System.Drawing.Point(399, 119);
+            this.panel1.Location = new System.Drawing.Point(380, 119);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(531, 86);
+            this.panel1.Size = new System.Drawing.Size(575, 86);
             this.panel1.TabIndex = 49;
             // 
             // txtShortDesc
@@ -214,7 +215,7 @@ namespace PBL3.View.tour
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbName);
             this.Name = "TourItem";
-            this.Size = new System.Drawing.Size(991, 277);
+            this.Size = new System.Drawing.Size(1084, 286);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

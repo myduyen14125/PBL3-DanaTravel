@@ -23,7 +23,7 @@ namespace PBL3
                 password = HashPassword.GetHash("admin")
             }); ;
             Application.Run(new AdminManagement(account));
-            //Application.Run(new LoginForm());
+           // Application.Run(new Homepage(account));
         }
     }
 }

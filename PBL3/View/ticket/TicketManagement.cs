@@ -24,7 +24,7 @@ namespace PBL3.View.ticket
             ShowData();
         }
 
-        private void ShowData()
+        public void ShowData()
         {
             List<TourTicket> tourTickets;
             if (tabStatus.SelectedTab == tabStatus.TabPages["tabStatusWait"])
@@ -71,6 +71,11 @@ namespace PBL3.View.ticket
             {
                 ShowData();
             }
+        }
+
+        private void btnReload_Click(object sender, EventArgs e)
+        {
+            ShowData();
         }
     }
 }

@@ -16,10 +16,6 @@ namespace DTO
         public string transport { get; set; }
         public DateTime departureDate { get; set; }
         public DateTime returnDate { get; set; }
-        public double total_price_service { get; set; }
-        public double percent_VAT { get; set; } = 0;
-        public double percent_profit { get; set; } = 0;
-        public double percent_price_children { get; set; } = 100;
         public double price_adult_one_ticket { get; set; }
         public double price_children_one_ticket { get; set; }
         public int tour_status_id { get; set; }

@@ -31,27 +31,27 @@ namespace PBL3.View.tour
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTourDetail));
             this.panelMain = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.lbTime1 = new System.Windows.Forms.Label();
-            this.lbDepartTime = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.htmlDescription = new System.Windows.Forms.WebBrowser();
-            this.lbTourCategory = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lbTime1 = new System.Windows.Forms.Label();
+            this.lbDepartTime = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbTourCategory = new System.Windows.Forms.Label();
             this.lbShortDescription = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -105,55 +105,22 @@ namespace PBL3.View.tour
             this.panelMain.Size = new System.Drawing.Size(1051, 1261);
             this.panelMain.TabIndex = 0;
             // 
-            // label11
+            // panel5
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label11.Location = new System.Drawing.Point(18, 48);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(342, 18);
-            this.label11.TabIndex = 31;
-            this.label11.Text = "Trụ sở chính: 9999 Bạch Đằng, Hải Châu, Đà Nẵng";
-            // 
-            // lbTime1
-            // 
-            this.lbTime1.AutoSize = true;
-            this.lbTime1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTime1.Location = new System.Drawing.Point(181, 39);
-            this.lbTime1.Name = "lbTime1";
-            this.lbTime1.Size = new System.Drawing.Size(51, 20);
-            this.lbTime1.TabIndex = 16;
-            this.lbTime1.Text = "label2";
-            // 
-            // lbDepartTime
-            // 
-            this.lbDepartTime.AutoSize = true;
-            this.lbDepartTime.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDepartTime.Location = new System.Drawing.Point(181, 9);
-            this.lbDepartTime.Name = "lbDepartTime";
-            this.lbDepartTime.Size = new System.Drawing.Size(51, 20);
-            this.lbDepartTime.TabIndex = 15;
-            this.lbDepartTime.Text = "label2";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(13, 39);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 20);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Thời gian";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 20);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Khởi hành";
+            this.panel5.Controls.Add(this.label21);
+            this.panel5.Controls.Add(this.label20);
+            this.panel5.Controls.Add(this.label19);
+            this.panel5.Controls.Add(this.label18);
+            this.panel5.Controls.Add(this.label17);
+            this.panel5.Controls.Add(this.label16);
+            this.panel5.Controls.Add(this.label15);
+            this.panel5.Controls.Add(this.label13);
+            this.panel5.Controls.Add(this.label11);
+            this.panel5.Controls.Add(this.label9);
+            this.panel5.Location = new System.Drawing.Point(36, 1047);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(998, 185);
+            this.panel5.TabIndex = 41;
             // 
             // label21
             // 
@@ -173,23 +140,6 @@ namespace PBL3.View.tour
             this.label20.Size = new System.Drawing.Size(201, 18);
             this.label20.TabIndex = 38;
             this.label20.Text = "Copyright © 2022 DanaTravel";
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.label21);
-            this.panel5.Controls.Add(this.label20);
-            this.panel5.Controls.Add(this.label19);
-            this.panel5.Controls.Add(this.label18);
-            this.panel5.Controls.Add(this.label17);
-            this.panel5.Controls.Add(this.label16);
-            this.panel5.Controls.Add(this.label15);
-            this.panel5.Controls.Add(this.label13);
-            this.panel5.Controls.Add(this.label11);
-            this.panel5.Controls.Add(this.label9);
-            this.panel5.Location = new System.Drawing.Point(36, 1047);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(998, 185);
-            this.panel5.TabIndex = 41;
             // 
             // label19
             // 
@@ -249,6 +199,16 @@ namespace PBL3.View.tour
             this.label13.TabIndex = 32;
             this.label13.Text = "Điện thoại liên hệ: 0999.999.999";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label11.Location = new System.Drawing.Point(18, 48);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(342, 18);
+            this.label11.TabIndex = 31;
+            this.label11.Text = "Trụ sở chính: 9999 Bạch Đằng, Hải Châu, Đà Nẵng";
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -299,16 +259,6 @@ namespace PBL3.View.tour
             this.htmlDescription.Size = new System.Drawing.Size(998, 391);
             this.htmlDescription.TabIndex = 36;
             // 
-            // lbTourCategory
-            // 
-            this.lbTourCategory.AutoSize = true;
-            this.lbTourCategory.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTourCategory.Location = new System.Drawing.Point(181, 71);
-            this.lbTourCategory.Name = "lbTourCategory";
-            this.lbTourCategory.Size = new System.Drawing.Size(51, 20);
-            this.lbTourCategory.TabIndex = 4;
-            this.lbTourCategory.Text = "label1";
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.lbTime1);
@@ -323,6 +273,56 @@ namespace PBL3.View.tour
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(590, 227);
             this.panel3.TabIndex = 37;
+            // 
+            // lbTime1
+            // 
+            this.lbTime1.AutoSize = true;
+            this.lbTime1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTime1.Location = new System.Drawing.Point(181, 39);
+            this.lbTime1.Name = "lbTime1";
+            this.lbTime1.Size = new System.Drawing.Size(51, 20);
+            this.lbTime1.TabIndex = 16;
+            this.lbTime1.Text = "label2";
+            // 
+            // lbDepartTime
+            // 
+            this.lbDepartTime.AutoSize = true;
+            this.lbDepartTime.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDepartTime.Location = new System.Drawing.Point(181, 9);
+            this.lbDepartTime.Name = "lbDepartTime";
+            this.lbDepartTime.Size = new System.Drawing.Size(51, 20);
+            this.lbDepartTime.TabIndex = 15;
+            this.lbDepartTime.Text = "label2";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(13, 39);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(78, 20);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Thời gian";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 20);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Khởi hành";
+            // 
+            // lbTourCategory
+            // 
+            this.lbTourCategory.AutoSize = true;
+            this.lbTourCategory.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTourCategory.Location = new System.Drawing.Point(181, 71);
+            this.lbTourCategory.Name = "lbTourCategory";
+            this.lbTourCategory.Size = new System.Drawing.Size(51, 20);
+            this.lbTourCategory.TabIndex = 4;
+            this.lbTourCategory.Text = "label1";
             // 
             // lbShortDescription
             // 
@@ -520,7 +520,7 @@ namespace PBL3.View.tour
             this.lbTourName.AutoSize = true;
             this.lbTourName.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbTourName.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lbTourName.Location = new System.Drawing.Point(332, 21);
+            this.lbTourName.Location = new System.Drawing.Point(225, 21);
             this.lbTourName.Name = "lbTourName";
             this.lbTourName.Size = new System.Drawing.Size(145, 32);
             this.lbTourName.TabIndex = 31;
@@ -589,7 +589,7 @@ namespace PBL3.View.tour
             this.AutoScroll = true;
             this.Controls.Add(this.panelMain);
             this.Name = "FormTourDetail";
-            this.Size = new System.Drawing.Size(1116, 830);
+            this.Size = new System.Drawing.Size(1095, 830);
             this.Load += new System.EventHandler(this.FormTourDetail_Load);
             this.panelMain.ResumeLayout(false);
             this.panelMain.PerformLayout();

@@ -23,7 +23,7 @@ namespace DAO
                 return _Instance;
             }
         }
-        public List<TourDTO> GetTourDTOs(int tour_category_id, string searchKey = "")
+        public List<TourDTO> GetTourDTOs(int tour_category_id, string searchKey)
         {
             List<TourDTO> tourDTOs = new List<TourDTO>();
             EntityManager db = EntityManager.Instance;
@@ -49,10 +49,6 @@ namespace DAO
                              ts_name = ts.name,
                              tc_id = tc.id,
                              tc_name = tc.name,
-                             t.total_price_service,
-                             t.percent_VAT,
-                             t.percent_profit,
-                             t.percent_price_children,
                              t.price_adult_one_ticket,
                              t.price_children_one_ticket
                          };
@@ -75,10 +71,6 @@ namespace DAO
                     tour_category_name = i.tc_name,
                     tour_status_id = i.ts_id,
                     tour_status_name = i.ts_name,
-                    total_price_service = i.total_price_service,
-                    percent_VAT = i.percent_VAT,
-                    percent_profit = i.percent_profit,
-                    percent_price_children = i.percent_price_children,
                     price_adult_one_ticket = i.price_adult_one_ticket,
                     price_children_one_ticket = i.price_children_one_ticket,
                     TourImages = tourImages
@@ -110,10 +102,6 @@ namespace DAO
                 data.transport = t.transport;
                 data.departureDate = t.departureDate;
                 data.returnDate = t.returnDate;
-                data.total_price_service = t.total_price_service;
-                data.percent_VAT = t.percent_VAT;
-                data.percent_profit = t.percent_profit;
-                data.percent_price_children = t.percent_price_children;
                 data.price_adult_one_ticket = t.price_adult_one_ticket;
                 data.price_children_one_ticket = t.price_children_one_ticket;
                 data.tour_status_id = t.tour_status_id;
@@ -123,7 +111,7 @@ namespace DAO
             db.SaveChanges();
         }
 
-        public void Delete(int id)
+        public void DeleteById(int id)
         {
             EntityManager db = EntityManager.Instance;
             var data = db.Tours.Single(t => t.id == id);

@@ -56,25 +56,7 @@ namespace PBL3
         {
             if (!this.DesignMode)
             {
-                tours = TourBUS.Instance.GetTourDTOs(0, "");
-                if (tours.Count == 0) return;
-                TourItemView t;
-                t = new TourItemView(tours[index_start], this);
-                t.Dock = DockStyle.Fill;
-                panel1.Controls.Add(t);
-                
-                if (tours.Count == 1) return;
-                t = new TourItemView(tours[index_start + 1], this);
-                panel2.Controls.Add(t);
-                t.Dock = DockStyle.Fill;
-                if (tours.Count == 2) return;
-                t = new TourItemView(tours[index_start + 2], this);
-                panel3.Controls.Add(t);
-                t.Dock = DockStyle.Fill;
-                if (tours.Count == 3) return;
-                t = new TourItemView(tours[index_start + 3], this);
-                panel4.Controls.Add(t);
-                t.Dock = DockStyle.Fill;
+                ShowTour();
             }
         }
         public void HideHomePage()
@@ -91,5 +73,65 @@ namespace PBL3
             this.AutoScrollMinSize = new System.Drawing.Size(0, 1500);
         }
 
+        private void btnRight_Click(object sender, EventArgs e)
+        {
+            if(index_start < tours.Count - 1)
+            {
+                index_start++;
+                ShowTour();
+            }        
+        }
+
+        private void btnleft_Click(object sender, EventArgs e)
+        {
+            if (index_start > 0)
+            {
+                index_start--;
+                ShowTour();
+            }
+        }
+        private void ShowTour()
+        {
+            string search = txtSearch.Text == "Search" ? "" : txtSearch.Text;
+            tours = TourBUS.Instance.GetTourDTOs(0, search);
+
+            panel1.Controls.Clear();
+            panel2.Controls.Clear();
+            panel3.Controls.Clear();
+            panel4.Controls.Clear();
+
+            if (tours.Count == 0) return;
+            TourItemView t;
+            t = new TourItemView(tours[index_start], this);
+            t.Dock = DockStyle.Fill;
+            panel1.Controls.Add(t);
+
+            if (index_start + 1 >= tours.Count) return;
+            t = new TourItemView(tours[index_start + 1], this);
+            t.Dock = DockStyle.Fill;
+            panel2.Controls.Add(t);
+
+
+            if (index_start + 2 >= tours.Count) return;
+            t = new TourItemView(tours[index_start + 2], this);
+            panel3.Controls.Add(t);
+            t.Dock = DockStyle.Fill;
+
+
+            if (index_start + 3 >= tours.Count) return;
+            t = new TourItemView(tours[index_start + 3], this);
+            panel4.Controls.Add(t);
+            t.Dock = DockStyle.Fill;
+        }
+
+        private void txtSearch_MouseClick(object sender, MouseEventArgs e)
+        {
+            txtSearch.Text = "";
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            ShowTour();
+        }
     }
 }

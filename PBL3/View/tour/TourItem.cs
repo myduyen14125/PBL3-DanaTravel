@@ -36,8 +36,8 @@ namespace PBL3.View.tour
 
             txtName.Text = tourDTO.name;
             txtCategory.Text = tourDTO.tour_category_name;
-            txtPriceAdult.Text = tourDTO.price_adult_one_ticket.ToString();
-            txtPriceChildren.Text = tourDTO.price_children_one_ticket.ToString();
+            txtPriceAdult.Text = tourDTO.price_adult_one_ticket.ToString("###,###,###,###") + " VNĐ";
+            txtPriceChildren.Text = tourDTO.price_children_one_ticket.ToString("###,###,###,###") + " VNĐ";
             txtShortDesc.Text = tourDTO.short_desc;
         }
         private void btnEdit_Click(object sender, EventArgs e)
@@ -53,7 +53,7 @@ namespace PBL3.View.tour
             DialogResult result = MessageBox.Show("Do you want to delete tour " + tourDTO.name, "Notify", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                TourBUS.Instance.Delete(Convert.ToInt32(tourDTO.id));
+                TourBUS.Instance.DeleteById(Convert.ToInt32(tourDTO.id));
                 MessageBox.Show("Delete tour " + tourDTO.name + " successful");
             }
             tourManagement.Reload();

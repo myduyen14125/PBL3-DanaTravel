@@ -41,16 +41,16 @@ namespace PBL3.View.homepage
             lbTourName1.Text = tourDTO.name;
             lbTourID.Text = tourDTO.id.ToString();
 
-            lbDepartureDate1.Text = tourDTO.departureDate.Day.ToString() + "/" + tourDTO.departureDate.Month.ToString()
-                                 + "/" + tourDTO.departureDate.Year.ToString();
+
+            lbDepartureDate1.Text = tourDTO.departureDate.ToString("dd/MM/yyyy");
             TimeSpan timeSpan = tourDTO.returnDate - tourDTO.departureDate;
             string time = "";
             if (timeSpan.Days == 0) time = "1 ngày 0 đêm";
             else time = (timeSpan.Days).ToString() + " ngày " + (timeSpan.Days - 1).ToString() + " đêm";
             lbTime.Text = time;
 
-            txtPriceAdult.Text = tourDTO.price_adult_one_ticket.ToString();
-            txtPriceChildren.Text = tourDTO.price_children_one_ticket.ToString();
+            txtPriceAdult.Text = tourDTO.price_adult_one_ticket.ToString("###,###,###,###") + " VNĐ";
+            txtPriceChildren.Text = tourDTO.price_children_one_ticket.ToString("###,###,###,###") + " VNĐ";
         }
         private void textChange(object sender, EventArgs e)
         {
@@ -60,7 +60,7 @@ namespace PBL3.View.homepage
             int number_children = txtNumberChildrens.Text == "" || !validate.ValidateNumber(txtNumberChildrens.Text)
                                     ? 0 : Convert.ToInt32(txtNumberChildrens.Text);
             txtTotalPrice.Text = (number_adult * tourDTO.price_adult_one_ticket
-                                + number_children * tourDTO.price_children_one_ticket).ToString();
+                                + number_children * tourDTO.price_children_one_ticket).ToString("###,###,###,###");
         }
         private void btnBookTour_Click(object sender, EventArgs e)
         {

@@ -31,11 +31,11 @@ namespace PBL3.View.tour
             this.tourManagement = tourManagement;
             if (!this.DesignMode)
             {
-                SetGUIForm();
+                GUI();
             }
         }
 
-        private void SetGUIForm()
+        private void GUI()
         {
             SetComboboxCategoryTour();
             // Thêm mới
@@ -60,10 +60,6 @@ namespace PBL3.View.tour
                 cbbTourCategory.SelectedIndex = cbbTourCategory.FindStringExact(tour.tour_category_name);
                 rtbShortDesc.Text = tour.short_desc;
                 htmlDescription.DocumentText = tour.detail_desc;
-                txtTotalPriceService.Text = tour.total_price_service.ToString();
-                txtProfit.Text = tour.percent_profit.ToString();
-                txtVAT.Text = tour.percent_VAT.ToString();
-                txtPricePercentChildren.Text = tour.percent_price_children.ToString();
                 txtTotalAdult.Text = tour.price_adult_one_ticket.ToString();
                 txtTotalChildren.Text = tour.price_children_one_ticket.ToString();
                 txtTransport.Text = tour.transport;
@@ -136,12 +132,6 @@ namespace PBL3.View.tour
                 });
             }
 
-            double total_price_service = Convert.ToDouble(txtTotalPriceService.Text);
-            double percent_profit = Convert.ToDouble(txtProfit.Text);
-            double percent_VAT = Convert.ToDouble(txtVAT.Text);
-            double percent_price_children = Convert.ToDouble(txtPricePercentChildren.Text);
-            double price_adult_one_ticket = total_price_service + total_price_service * percent_profit / 100;
-            price_adult_one_ticket += price_adult_one_ticket * percent_VAT / 100;
             Tour t = new Tour
             {
                 id = tour.id,
@@ -150,12 +140,8 @@ namespace PBL3.View.tour
                 returnDate = Convert.ToDateTime(dtpReturnDate.Value.ToString()),
                 tour_category_id = (cbbTourCategory.SelectedItem as dynamic).Value,
                 tour_status_id = 1,
-                total_price_service = total_price_service,
-                percent_profit = percent_profit,
-                percent_VAT = percent_VAT,
-                percent_price_children = percent_price_children,
-                price_adult_one_ticket = price_adult_one_ticket,
-                price_children_one_ticket = price_adult_one_ticket * Convert.ToDouble(txtPricePercentChildren.Text) / 100,
+                price_adult_one_ticket = Convert.ToDouble(txtTotalAdult.Text),
+                price_children_one_ticket = Convert.ToDouble(txtTotalChildren.Text),
                 short_desc = rtbShortDesc.Text,
                 detail_desc = htmlDescription.DocumentText,
                 transport = txtTransport.Text,
@@ -166,34 +152,11 @@ namespace PBL3.View.tour
             else MessageBox.Show("Edit tour successful");
             btnBack.PerformClick();
         }
-        private void txtTextChange(object sender, EventArgs e)
-        {
-            Validate validate = new Validate();
-            double total_price = 0;
-            double percent_profit = txtProfit.Text == "" || !validate.ValidateNumber(txtProfit.Text)
-                                    ? 0 : Convert.ToDouble(txtProfit.Text);
-            double percent_VAT = txtVAT.Text == "" || !validate.ValidateNumber(txtVAT.Text)
-                                    ? 0 : Convert.ToDouble(txtVAT.Text);
-
-            total_price = txtTotalPriceService.Text == "" || !validate.ValidateNumber(txtTotalPriceService.Text)
-                                    ? 0 : Convert.ToDouble(txtTotalPriceService.Text);
-            total_price = total_price * (1 + percent_profit / 100);
-            total_price = total_price * (1 + percent_VAT / 100);
-
-            txtTotalAdult.Text = total_price.ToString();
-
-            txtTotalChildren.Text = txtPricePercentChildren.Text == "" || !validate.ValidateNumber(txtPricePercentChildren.Text)
-                ? total_price.ToString() : (total_price * Convert.ToDouble(txtPricePercentChildren.Text) / 100).ToString();
-        }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
             txtTourName.Text = "";
-            txtProfit.Text = "";
-            txtVAT.Text = "";
             txtTransport.Text = "";
-            txtTotalPriceService.Text = "";
-            txtPricePercentChildren.Text = "";
             txtTotalAdult.Text = "0";
             txtTotalChildren.Text = "0";
             rtbShortDesc.Text = "";
@@ -216,28 +179,16 @@ namespace PBL3.View.tour
                 txtTourName.Focus();
                 return false;
             }
-            if (!validate.ValidateNumber(txtTotalPriceService.Text))
+            if (!validate.ValidateNumber(txtTotalAdult.Text))
             {
-                MessageBox.Show("Total price service must be number");
-                txtTotalPriceService.Focus();
+                MessageBox.Show("Price Adult service must be number");
+                txtTotalAdult.Focus();
                 return false;
             }
-            if (!validate.ValidateNumber(txtProfit.Text))
+            if (!validate.ValidateNumber(txtTotalChildren.Text))
             {
-                MessageBox.Show("Profit (%) must be number");
-                txtProfit.Focus();
-                return false;
-            }
-            if (!validate.ValidateNumber(txtVAT.Text))
-            {
-                MessageBox.Show("VAT (%) must be number");
-                txtVAT.Focus();
-                return false;
-            }
-            if (!validate.ValidateNumber(txtPricePercentChildren.Text))
-            {
-                MessageBox.Show("Price Percent Children (%) must be number");
-                txtPricePercentChildren.Focus();
+                MessageBox.Show("Price Children service must be number");
+                txtTotalAdult.Focus();
                 return false;
             }
             if (string.IsNullOrEmpty(rtbShortDesc.Text))
