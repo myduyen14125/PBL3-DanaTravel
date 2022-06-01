@@ -22,8 +22,8 @@ namespace PBL3
                 username = "daitoan2000@gmail.com",
                 password = HashPassword.GetHash("admin")
             }); ;
-            Application.Run(new AdminManagement(account));
-           // Application.Run(new Homepage(account));
+            //Application.Run(new AdminManagement(account));
+            Application.Run(new Homepage(account));
         }
     }
 }

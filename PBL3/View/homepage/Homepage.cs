@@ -24,12 +24,12 @@ namespace PBL3
             InitializeComponent();
             pnChoice.Visible = false;
             this.account = ac;
-            if (account.Roles.FirstOrDefault().name.ToLower() == "customer")
-            {
-                // Customer
-                btnAdmin.Visible = false;
-            }
-            else btnAdmin.Visible = true;
+            //if (account.Roles.FirstOrDefault().name.ToLower() == "customer")
+            //{
+            //    // Customer
+            //    btnAdmin.Visible = false;
+            //}
+            //else btnAdmin.Visible = true;
         }
          private void btnAdmin_Click(object sender, EventArgs e)
         {

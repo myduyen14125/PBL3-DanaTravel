@@ -40,3 +40,5 @@ C:\Users\Laptop\source\repos\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.Generate
 C:\Users\Laptop\source\repos\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.CoreCompileInputs.cache
 C:\Users\Laptop\source\repos\PBL3-DanaTravel\Util\obj\Debug\Util.exe
 C:\Users\Laptop\source\repos\PBL3-DanaTravel\Util\obj\Debug\Util.pdb
+E:\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.AssemblyReference.cache
+E:\PBL3-DanaTravel\Util\obj\Debug\Util.Form1.resources
