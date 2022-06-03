@@ -64,12 +64,18 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lbAbout = new System.Windows.Forms.Label();
-            this.btnRight = new System.Windows.Forms.Button();
-            this.btnleft = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pnChoice = new System.Windows.Forms.Panel();
+            this.lbHome = new System.Windows.Forms.Label();
+            this.myButton10 = new MyLibrary.MyButton();
+            this.myButton11 = new MyLibrary.MyButton();
+            this.myButton12 = new MyLibrary.MyButton();
+            this.navbar = new System.Windows.Forms.Panel();
+            this.btnRight = new System.Windows.Forms.Button();
+            this.btnleft = new System.Windows.Forms.Button();
             this.pictureBox28 = new System.Windows.Forms.PictureBox();
             this.pictureBox45 = new System.Windows.Forms.PictureBox();
             this.pictureBox44 = new System.Windows.Forms.PictureBox();
@@ -93,22 +99,18 @@
             this.myPictureBox1 = new MyLibrary.MyPictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.btnSearch = new MyLibrary.MyButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pnChoice = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnAdmin = new System.Windows.Forms.Button();
-            this.lbHome = new System.Windows.Forms.Label();
             this.myButton2 = new MyLibrary.MyButton();
             this.myButton5 = new MyLibrary.MyButton();
             this.myButton7 = new MyLibrary.MyButton();
             this.myButton9 = new MyLibrary.MyButton();
             this.pictureBox47 = new System.Windows.Forms.PictureBox();
-            this.myButton10 = new MyLibrary.MyButton();
-            this.myButton11 = new MyLibrary.MyButton();
-            this.myButton12 = new MyLibrary.MyButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.navbar = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelHomepage.SuspendLayout();
+            this.pnChoice.SuspendLayout();
+            this.navbar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
@@ -131,11 +133,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.pnChoice.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.navbar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHomepage
@@ -638,26 +638,6 @@
             this.lbAbout.TabIndex = 172;
             this.lbAbout.Text = "About us";
             // 
-            // btnRight
-            // 
-            this.btnRight.Image = ((System.Drawing.Image)(resources.GetObject("btnRight.Image")));
-            this.btnRight.Location = new System.Drawing.Point(988, 595);
-            this.btnRight.Name = "btnRight";
-            this.btnRight.Size = new System.Drawing.Size(50, 45);
-            this.btnRight.TabIndex = 243;
-            this.btnRight.UseVisualStyleBackColor = true;
-            this.btnRight.Click += new System.EventHandler(this.btnRight_Click);
-            // 
-            // btnleft
-            // 
-            this.btnleft.Image = ((System.Drawing.Image)(resources.GetObject("btnleft.Image")));
-            this.btnleft.Location = new System.Drawing.Point(27, 595);
-            this.btnleft.Name = "btnleft";
-            this.btnleft.Size = new System.Drawing.Size(50, 45);
-            this.btnleft.TabIndex = 242;
-            this.btnleft.UseVisualStyleBackColor = true;
-            this.btnleft.Click += new System.EventHandler(this.btnleft_Click);
-            // 
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -689,6 +669,114 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(205, 342);
             this.panel1.TabIndex = 237;
+            // 
+            // pnChoice
+            // 
+            this.pnChoice.Controls.Add(this.btnLogout);
+            this.pnChoice.Controls.Add(this.btnAdmin);
+            this.pnChoice.Location = new System.Drawing.Point(881, 46);
+            this.pnChoice.Name = "pnChoice";
+            this.pnChoice.Size = new System.Drawing.Size(173, 68);
+            this.pnChoice.TabIndex = 235;
+            // 
+            // lbHome
+            // 
+            this.lbHome.AutoSize = true;
+            this.lbHome.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
+            this.lbHome.Location = new System.Drawing.Point(189, 13);
+            this.lbHome.Name = "lbHome";
+            this.lbHome.Size = new System.Drawing.Size(77, 31);
+            this.lbHome.TabIndex = 171;
+            this.lbHome.Text = "Home";
+            // 
+            // myButton10
+            // 
+            this.myButton10.BackColor = System.Drawing.Color.White;
+            this.myButton10.BackgroundColor = System.Drawing.Color.White;
+            this.myButton10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.myButton10.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.myButton10.BorderRadius = 20;
+            this.myButton10.BorderSize = 0;
+            this.myButton10.FlatAppearance.BorderSize = 0;
+            this.myButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.myButton10.ForeColor = System.Drawing.Color.White;
+            this.myButton10.Location = new System.Drawing.Point(142, 1362);
+            this.myButton10.Name = "myButton10";
+            this.myButton10.Size = new System.Drawing.Size(176, 185);
+            this.myButton10.TabIndex = 198;
+            this.myButton10.TextColor = System.Drawing.Color.White;
+            this.myButton10.UseVisualStyleBackColor = false;
+            // 
+            // myButton11
+            // 
+            this.myButton11.BackColor = System.Drawing.Color.White;
+            this.myButton11.BackgroundColor = System.Drawing.Color.White;
+            this.myButton11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.myButton11.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.myButton11.BorderRadius = 20;
+            this.myButton11.BorderSize = 0;
+            this.myButton11.FlatAppearance.BorderSize = 0;
+            this.myButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.myButton11.ForeColor = System.Drawing.Color.White;
+            this.myButton11.Location = new System.Drawing.Point(410, 1363);
+            this.myButton11.Name = "myButton11";
+            this.myButton11.Size = new System.Drawing.Size(176, 185);
+            this.myButton11.TabIndex = 199;
+            this.myButton11.TextColor = System.Drawing.Color.White;
+            this.myButton11.UseVisualStyleBackColor = false;
+            // 
+            // myButton12
+            // 
+            this.myButton12.BackColor = System.Drawing.Color.White;
+            this.myButton12.BackgroundColor = System.Drawing.Color.White;
+            this.myButton12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.myButton12.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.myButton12.BorderRadius = 20;
+            this.myButton12.BorderSize = 0;
+            this.myButton12.FlatAppearance.BorderSize = 0;
+            this.myButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.myButton12.ForeColor = System.Drawing.Color.White;
+            this.myButton12.Location = new System.Drawing.Point(690, 1363);
+            this.myButton12.Name = "myButton12";
+            this.myButton12.Size = new System.Drawing.Size(176, 185);
+            this.myButton12.TabIndex = 200;
+            this.myButton12.TextColor = System.Drawing.Color.White;
+            this.myButton12.UseVisualStyleBackColor = false;
+            // 
+            // navbar
+            // 
+            this.navbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(231)))), ((int)(((byte)(236)))));
+            this.navbar.Controls.Add(this.pictureBox2);
+            this.navbar.Controls.Add(this.textBox2);
+            this.navbar.Controls.Add(this.lbHome);
+            this.navbar.Controls.Add(this.lbAbout);
+            this.navbar.Controls.Add(this.label3);
+            this.navbar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.navbar.Location = new System.Drawing.Point(0, 0);
+            this.navbar.Name = "navbar";
+            this.navbar.Size = new System.Drawing.Size(1076, 58);
+            this.navbar.TabIndex = 244;
+            // 
+            // btnRight
+            // 
+            this.btnRight.Image = ((System.Drawing.Image)(resources.GetObject("btnRight.Image")));
+            this.btnRight.Location = new System.Drawing.Point(988, 595);
+            this.btnRight.Name = "btnRight";
+            this.btnRight.Size = new System.Drawing.Size(50, 45);
+            this.btnRight.TabIndex = 243;
+            this.btnRight.UseVisualStyleBackColor = true;
+            this.btnRight.Click += new System.EventHandler(this.btnRight_Click);
+            // 
+            // btnleft
+            // 
+            this.btnleft.Image = ((System.Drawing.Image)(resources.GetObject("btnleft.Image")));
+            this.btnleft.Location = new System.Drawing.Point(27, 595);
+            this.btnleft.Name = "btnleft";
+            this.btnleft.Size = new System.Drawing.Size(50, 45);
+            this.btnleft.TabIndex = 242;
+            this.btnleft.UseVisualStyleBackColor = true;
+            this.btnleft.Click += new System.EventHandler(this.btnleft_Click);
             // 
             // pictureBox28
             // 
@@ -937,25 +1025,6 @@
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::PBL3.Properties.Resources.Logo;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(87, 55);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 170;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pnChoice
-            // 
-            this.pnChoice.Controls.Add(this.btnLogout);
-            this.pnChoice.Controls.Add(this.btnAdmin);
-            this.pnChoice.Location = new System.Drawing.Point(881, 46);
-            this.pnChoice.Name = "pnChoice";
-            this.pnChoice.Size = new System.Drawing.Size(173, 68);
-            this.pnChoice.TabIndex = 235;
-            // 
             // btnLogout
             // 
             this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
@@ -987,17 +1056,6 @@
             this.btnAdmin.Text = "Admin";
             this.btnAdmin.UseVisualStyleBackColor = false;
             this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
-            // 
-            // lbHome
-            // 
-            this.lbHome.AutoSize = true;
-            this.lbHome.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
-            this.lbHome.Location = new System.Drawing.Point(189, 13);
-            this.lbHome.Name = "lbHome";
-            this.lbHome.Size = new System.Drawing.Size(77, 31);
-            this.lbHome.TabIndex = 171;
-            this.lbHome.Text = "Home";
             // 
             // myButton2
             // 
@@ -1086,60 +1144,6 @@
             this.pictureBox47.TabIndex = 236;
             this.pictureBox47.TabStop = false;
             // 
-            // myButton10
-            // 
-            this.myButton10.BackColor = System.Drawing.Color.White;
-            this.myButton10.BackgroundColor = System.Drawing.Color.White;
-            this.myButton10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.myButton10.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.myButton10.BorderRadius = 20;
-            this.myButton10.BorderSize = 0;
-            this.myButton10.FlatAppearance.BorderSize = 0;
-            this.myButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.myButton10.ForeColor = System.Drawing.Color.White;
-            this.myButton10.Location = new System.Drawing.Point(142, 1362);
-            this.myButton10.Name = "myButton10";
-            this.myButton10.Size = new System.Drawing.Size(176, 185);
-            this.myButton10.TabIndex = 198;
-            this.myButton10.TextColor = System.Drawing.Color.White;
-            this.myButton10.UseVisualStyleBackColor = false;
-            // 
-            // myButton11
-            // 
-            this.myButton11.BackColor = System.Drawing.Color.White;
-            this.myButton11.BackgroundColor = System.Drawing.Color.White;
-            this.myButton11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.myButton11.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.myButton11.BorderRadius = 20;
-            this.myButton11.BorderSize = 0;
-            this.myButton11.FlatAppearance.BorderSize = 0;
-            this.myButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.myButton11.ForeColor = System.Drawing.Color.White;
-            this.myButton11.Location = new System.Drawing.Point(410, 1363);
-            this.myButton11.Name = "myButton11";
-            this.myButton11.Size = new System.Drawing.Size(176, 185);
-            this.myButton11.TabIndex = 199;
-            this.myButton11.TextColor = System.Drawing.Color.White;
-            this.myButton11.UseVisualStyleBackColor = false;
-            // 
-            // myButton12
-            // 
-            this.myButton12.BackColor = System.Drawing.Color.White;
-            this.myButton12.BackgroundColor = System.Drawing.Color.White;
-            this.myButton12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.myButton12.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.myButton12.BorderRadius = 20;
-            this.myButton12.BorderSize = 0;
-            this.myButton12.FlatAppearance.BorderSize = 0;
-            this.myButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.myButton12.ForeColor = System.Drawing.Color.White;
-            this.myButton12.Location = new System.Drawing.Point(690, 1363);
-            this.myButton12.Name = "myButton12";
-            this.myButton12.Size = new System.Drawing.Size(176, 185);
-            this.myButton12.TabIndex = 200;
-            this.myButton12.TextColor = System.Drawing.Color.White;
-            this.myButton12.UseVisualStyleBackColor = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PBL3.Properties.Resources.planehome;
@@ -1150,19 +1154,15 @@
             this.pictureBox1.TabIndex = 169;
             this.pictureBox1.TabStop = false;
             // 
-            // navbar
+            // pictureBox2
             // 
-            this.navbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(231)))), ((int)(((byte)(236)))));
-            this.navbar.Controls.Add(this.pictureBox2);
-            this.navbar.Controls.Add(this.textBox2);
-            this.navbar.Controls.Add(this.lbHome);
-            this.navbar.Controls.Add(this.lbAbout);
-            this.navbar.Controls.Add(this.label3);
-            this.navbar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.navbar.Location = new System.Drawing.Point(0, 0);
-            this.navbar.Name = "navbar";
-            this.navbar.Size = new System.Drawing.Size(1076, 58);
-            this.navbar.TabIndex = 244;
+            this.pictureBox2.Image = global::PBL3.Properties.Resources.Logo;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(87, 55);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 170;
+            this.pictureBox2.TabStop = false;
             // 
             // Homepage
             // 
@@ -1180,6 +1180,9 @@
             this.Load += new System.EventHandler(this.Homepage_Load);
             this.panelHomepage.ResumeLayout(false);
             this.panelHomepage.PerformLayout();
+            this.pnChoice.ResumeLayout(false);
+            this.navbar.ResumeLayout(false);
+            this.navbar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
@@ -1202,12 +1205,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.pnChoice.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.navbar.ResumeLayout(false);
-            this.navbar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

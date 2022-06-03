@@ -163,11 +163,11 @@
             // flowLayoutTours
             // 
             this.flowLayoutTours.AutoScroll = true;
-            this.flowLayoutTours.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutTours.BackColor = System.Drawing.Color.White;
             this.flowLayoutTours.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutTours.Location = new System.Drawing.Point(22, 244);
             this.flowLayoutTours.Name = "flowLayoutTours";
-            this.flowLayoutTours.Size = new System.Drawing.Size(1219, 494);
+            this.flowLayoutTours.Size = new System.Drawing.Size(1219, 539);
             this.flowLayoutTours.TabIndex = 31;
             // 
             // lbCategory

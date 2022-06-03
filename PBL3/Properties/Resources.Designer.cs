@@ -303,6 +303,36 @@ namespace PBL3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cancelBtn {
+            get {
+                object obj = ResourceManager.GetObject("cancelBtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cancelBtn1 {
+            get {
+                object obj = ResourceManager.GetObject("cancelBtn1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cashIcon {
+            get {
+                object obj = ResourceManager.GetObject("cashIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ChangePassword {
             get {
                 object obj = ResourceManager.GetObject("ChangePassword", resourceCulture);
@@ -896,6 +926,16 @@ namespace PBL3.Properties {
         internal static System.Drawing.Bitmap Rectangle_10 {
             get {
                 object obj = ResourceManager.GetObject("Rectangle 10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap redAcceptBtn {
+            get {
+                object obj = ResourceManager.GetObject("redAcceptBtn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

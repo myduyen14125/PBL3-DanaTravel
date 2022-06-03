@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TicketItem));
             this.lbName = new System.Windows.Forms.Label();
             this.lbDate = new System.Windows.Forms.Label();
             this.lbNumberAdults = new System.Windows.Forms.Label();
@@ -36,8 +35,8 @@
             this.lbEmail = new System.Windows.Forms.Label();
             this.lbCCCD = new System.Windows.Forms.Label();
             this.lbPhone = new System.Windows.Forms.Label();
-            this.btnAccept = new Guna.UI2.WinForms.Guna2Button();
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAccept = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // lbName
@@ -103,24 +102,6 @@
             this.lbPhone.TabIndex = 6;
             this.lbPhone.Text = "Phone";
             // 
-            // btnAccept
-            // 
-            this.btnAccept.BorderRadius = 20;
-            this.btnAccept.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAccept.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAccept.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAccept.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAccept.FillColor = System.Drawing.Color.Transparent;
-            this.btnAccept.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnAccept.ForeColor = System.Drawing.Color.White;
-            this.btnAccept.Image = ((System.Drawing.Image)(resources.GetObject("btnAccept.Image")));
-            this.btnAccept.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAccept.Location = new System.Drawing.Point(758, 0);
-            this.btnAccept.Name = "btnAccept";
-            this.btnAccept.Size = new System.Drawing.Size(40, 40);
-            this.btnAccept.TabIndex = 7;
-            this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
-            // 
             // btnCancel
             // 
             this.btnCancel.BorderRadius = 20;
@@ -131,13 +112,31 @@
             this.btnCancel.FillColor = System.Drawing.Color.Transparent;
             this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
+            this.btnCancel.Image = global::PBL3.Properties.Resources.cancelBtn;
             this.btnCancel.ImageSize = new System.Drawing.Size(30, 30);
             this.btnCancel.Location = new System.Drawing.Point(820, 0);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(40, 40);
             this.btnCancel.TabIndex = 8;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // btnAccept
+            // 
+            this.btnAccept.BorderRadius = 20;
+            this.btnAccept.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAccept.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAccept.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAccept.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAccept.FillColor = System.Drawing.Color.Transparent;
+            this.btnAccept.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAccept.ForeColor = System.Drawing.Color.White;
+            this.btnAccept.Image = global::PBL3.Properties.Resources.redAcceptBtn;
+            this.btnAccept.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnAccept.Location = new System.Drawing.Point(758, 0);
+            this.btnAccept.Name = "btnAccept";
+            this.btnAccept.Size = new System.Drawing.Size(40, 40);
+            this.btnAccept.TabIndex = 7;
+            this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
             // 
             // TicketItem
             // 
