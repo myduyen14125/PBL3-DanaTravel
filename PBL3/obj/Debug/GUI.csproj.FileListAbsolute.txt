@@ -204,7 +204,6 @@ E:\PBL3-DanaTravel\PBL3\bin\Debug\Microsoft.ReportViewer.WebDesign.DLL
 E:\PBL3-DanaTravel\PBL3\bin\Debug\Microsoft.ReportViewer.WinForms.dll
 E:\PBL3-DanaTravel\PBL3\bin\Debug\Microsoft.SqlServer.Types.dll
 E:\PBL3-DanaTravel\PBL3\bin\Debug\Util.exe
-E:\PBL3-DanaTravel\PBL3\bin\Debug\EntityFramework.dll
 E:\PBL3-DanaTravel\PBL3\bin\Debug\EnvDTE.dll
 E:\PBL3-DanaTravel\PBL3\bin\Debug\Microsoft.ReportViewer.WebForms.dll
 E:\PBL3-DanaTravel\PBL3\bin\Debug\EnvDTE80.dll
@@ -217,7 +216,6 @@ E:\PBL3-DanaTravel\PBL3\bin\Debug\DTO.pdb
 E:\PBL3-DanaTravel\PBL3\bin\Debug\DTO.exe.config
 E:\PBL3-DanaTravel\PBL3\bin\Debug\Util.pdb
 E:\PBL3-DanaTravel\PBL3\bin\Debug\Util.exe.config
-E:\PBL3-DanaTravel\PBL3\bin\Debug\EntityFramework.xml
 E:\PBL3-DanaTravel\PBL3\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
 E:\PBL3-DanaTravel\PBL3\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
 E:\PBL3-DanaTravel\PBL3\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
@@ -327,3 +325,4 @@ E:\PBL3-DanaTravel\PBL3\bin\Debug\LiveCharts.WinForms.pdb
 E:\PBL3-DanaTravel\PBL3\bin\Debug\LiveCharts.WinForms.xml
 E:\PBL3-DanaTravel\PBL3\bin\Debug\LiveCharts.Wpf.pdb
 E:\PBL3-DanaTravel\PBL3\bin\Debug\LiveCharts.Wpf.xml
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.statistics.Statistic.resources

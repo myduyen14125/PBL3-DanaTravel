@@ -32,6 +32,14 @@
             this.fileSystemWatcher2 = new System.IO.FileSystemWatcher();
             this.name = new System.Windows.Forms.Label();
             this.panelContent = new System.Windows.Forms.Panel();
+            this.billManagement1 = new PBL3.View.bill.BillManagement();
+            this.ticketManagement1 = new PBL3.View.ticket.TicketManagement();
+            this.roleAccount1 = new PBL3.View.RoleAccount();
+            this.customerAccount1 = new PBL3.View.CustomerAccount();
+            this.accountEmployee1 = new PBL3.View.AccountEmployee();
+            this.tourManagement1 = new PBL3.View.TourManagement();
+            this.employeeManagement1 = new PBL3.EmployeeManagement();
+            this.customer1 = new PBL3.View.admin.CustomerManagement();
             this.navbar = new System.Windows.Forms.Panel();
             this.btnBill = new System.Windows.Forms.Button();
             this.btnTicket = new System.Windows.Forms.Button();
@@ -47,14 +55,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCustomer = new System.Windows.Forms.Button();
             this.btnEmployee = new System.Windows.Forms.Button();
-            this.billManagement1 = new PBL3.View.bill.BillManagement();
-            this.ticketManagement1 = new PBL3.View.ticket.TicketManagement();
-            this.roleAccount1 = new PBL3.View.RoleAccount();
-            this.customerAccount1 = new PBL3.View.CustomerAccount();
-            this.accountEmployee1 = new PBL3.View.AccountEmployee();
-            this.tourManagement1 = new PBL3.View.TourManagement();
-            this.employeeManagement1 = new PBL3.EmployeeManagement();
-            this.customer1 = new PBL3.View.admin.CustomerManagement();
+            this.statistic1 = new PBL3.View.statistics.Statistic();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher2)).BeginInit();
             this.panelContent.SuspendLayout();
@@ -96,11 +97,84 @@
             this.panelContent.Controls.Add(this.tourManagement1);
             this.panelContent.Controls.Add(this.employeeManagement1);
             this.panelContent.Controls.Add(this.customer1);
+            this.panelContent.Controls.Add(this.statistic1);
             this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContent.Location = new System.Drawing.Point(199, 0);
             this.panelContent.Name = "panelContent";
             this.panelContent.Size = new System.Drawing.Size(1047, 712);
             this.panelContent.TabIndex = 30;
+            // 
+            // billManagement1
+            // 
+            this.billManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.billManagement1.Location = new System.Drawing.Point(0, 0);
+            this.billManagement1.Name = "billManagement1";
+            this.billManagement1.Size = new System.Drawing.Size(1047, 712);
+            this.billManagement1.TabIndex = 7;
+            // 
+            // ticketManagement1
+            // 
+            this.ticketManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ticketManagement1.Location = new System.Drawing.Point(0, 0);
+            this.ticketManagement1.Name = "ticketManagement1";
+            this.ticketManagement1.Size = new System.Drawing.Size(1047, 712);
+            this.ticketManagement1.TabIndex = 6;
+            // 
+            // roleAccount1
+            // 
+            this.roleAccount1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.roleAccount1.Location = new System.Drawing.Point(0, 0);
+            this.roleAccount1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.roleAccount1.Name = "roleAccount1";
+            this.roleAccount1.Size = new System.Drawing.Size(1047, 712);
+            this.roleAccount1.TabIndex = 5;
+            // 
+            // customerAccount1
+            // 
+            this.customerAccount1.Location = new System.Drawing.Point(-3, 2);
+            this.customerAccount1.Margin = new System.Windows.Forms.Padding(4);
+            this.customerAccount1.Name = "customerAccount1";
+            this.customerAccount1.Size = new System.Drawing.Size(867, 567);
+            this.customerAccount1.TabIndex = 4;
+            // 
+            // accountEmployee1
+            // 
+            this.accountEmployee1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
+            this.accountEmployee1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.accountEmployee1.Location = new System.Drawing.Point(0, 0);
+            this.accountEmployee1.Margin = new System.Windows.Forms.Padding(2);
+            this.accountEmployee1.Name = "accountEmployee1";
+            this.accountEmployee1.Size = new System.Drawing.Size(1047, 712);
+            this.accountEmployee1.TabIndex = 3;
+            // 
+            // tourManagement1
+            // 
+            this.tourManagement1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
+            this.tourManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tourManagement1.Location = new System.Drawing.Point(0, 0);
+            this.tourManagement1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tourManagement1.Name = "tourManagement1";
+            this.tourManagement1.Size = new System.Drawing.Size(1047, 712);
+            this.tourManagement1.TabIndex = 2;
+            // 
+            // employeeManagement1
+            // 
+            this.employeeManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.employeeManagement1.Location = new System.Drawing.Point(0, 0);
+            this.employeeManagement1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.employeeManagement1.Name = "employeeManagement1";
+            this.employeeManagement1.Size = new System.Drawing.Size(1047, 712);
+            this.employeeManagement1.TabIndex = 0;
+            // 
+            // customer1
+            // 
+            this.customer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
+            this.customer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customer1.Location = new System.Drawing.Point(0, 0);
+            this.customer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.customer1.Name = "customer1";
+            this.customer1.Size = new System.Drawing.Size(1047, 712);
+            this.customer1.TabIndex = 1;
             // 
             // navbar
             // 
@@ -192,6 +266,7 @@
             this.btnStatistic.Text = "       Statistic";
             this.btnStatistic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStatistic.UseVisualStyleBackColor = false;
+            this.btnStatistic.Click += new System.EventHandler(this.btnStatistic_Click);
             // 
             // manacontainer
             // 
@@ -406,77 +481,13 @@
             this.btnEmployee.UseVisualStyleBackColor = false;
             this.btnEmployee.Click += new System.EventHandler(this.btnEmployee_Click);
             // 
-            // billManagement1
+            // statistic1
             // 
-            this.billManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.billManagement1.Location = new System.Drawing.Point(0, 0);
-            this.billManagement1.Name = "billManagement1";
-            this.billManagement1.Size = new System.Drawing.Size(1047, 712);
-            this.billManagement1.TabIndex = 7;
-            // 
-            // ticketManagement1
-            // 
-            this.ticketManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ticketManagement1.Location = new System.Drawing.Point(0, 0);
-            this.ticketManagement1.Name = "ticketManagement1";
-            this.ticketManagement1.Size = new System.Drawing.Size(1047, 712);
-            this.ticketManagement1.TabIndex = 6;
-            // 
-            // roleAccount1
-            // 
-            this.roleAccount1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.roleAccount1.Location = new System.Drawing.Point(0, 0);
-            this.roleAccount1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.roleAccount1.Name = "roleAccount1";
-            this.roleAccount1.Size = new System.Drawing.Size(1047, 712);
-            this.roleAccount1.TabIndex = 5;
-            // 
-            // customerAccount1
-            // 
-            this.customerAccount1.Location = new System.Drawing.Point(-3, 2);
-            this.customerAccount1.Margin = new System.Windows.Forms.Padding(4);
-            this.customerAccount1.Name = "customerAccount1";
-            this.customerAccount1.Size = new System.Drawing.Size(867, 567);
-            this.customerAccount1.TabIndex = 4;
-            // 
-            // accountEmployee1
-            // 
-            this.accountEmployee1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
-            this.accountEmployee1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.accountEmployee1.Location = new System.Drawing.Point(0, 0);
-            this.accountEmployee1.Margin = new System.Windows.Forms.Padding(2);
-            this.accountEmployee1.Name = "accountEmployee1";
-            this.accountEmployee1.Size = new System.Drawing.Size(1047, 712);
-            this.accountEmployee1.TabIndex = 3;
-            // 
-            // tourManagement1
-            // 
-            this.tourManagement1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
-            this.tourManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tourManagement1.Location = new System.Drawing.Point(0, 0);
-            this.tourManagement1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tourManagement1.Name = "tourManagement1";
-            this.tourManagement1.Size = new System.Drawing.Size(1047, 712);
-            this.tourManagement1.TabIndex = 2;
-            // 
-            // employeeManagement1
-            // 
-            this.employeeManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.employeeManagement1.Location = new System.Drawing.Point(0, 0);
-            this.employeeManagement1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.employeeManagement1.Name = "employeeManagement1";
-            this.employeeManagement1.Size = new System.Drawing.Size(1047, 712);
-            this.employeeManagement1.TabIndex = 0;
-            // 
-            // customer1
-            // 
-            this.customer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
-            this.customer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customer1.Location = new System.Drawing.Point(0, 0);
-            this.customer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.customer1.Name = "customer1";
-            this.customer1.Size = new System.Drawing.Size(1047, 712);
-            this.customer1.TabIndex = 1;
+            this.statistic1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.statistic1.Location = new System.Drawing.Point(0, 0);
+            this.statistic1.Name = "statistic1";
+            this.statistic1.Size = new System.Drawing.Size(1047, 712);
+            this.statistic1.TabIndex = 8;
             // 
             // AdminManagement
             // 
@@ -530,5 +541,6 @@
         private ticket.TicketManagement ticketManagement1;
         private bill.BillManagement billManagement1;
         private System.Windows.Forms.Button btnBill;
+        private statistics.Statistic statistic1;
     }
 }

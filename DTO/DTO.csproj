@@ -65,6 +65,7 @@
     <Compile Include="CodeFirstDB\Education_degree.cs" />
     <Compile Include="CodeFirstDB\Employee.cs" />
     <Compile Include="CodeFirstDB\EntityManager.cs" />
+    <Compile Include="CodeFirstDB\Statistic.cs" />
     <Compile Include="CodeFirstDB\TourImage.cs" />
     <Compile Include="CodeFirstDB\Person.cs" />
     <Compile Include="CodeFirstDB\Customer.cs" />
@@ -92,6 +93,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="StatisticDTO.cs" />
     <Compile Include="TourDTO.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -135,6 +135,10 @@ values	(N'Đang chờ xác nhận'), (N'Đã xác nhận'), (N'Đã hủy');
 insert into BillStatus(name)
 values	(N'Đang chờ thanh toán'), (N'Đã thanh toán'), (N'Đã hủy');
 
+-- Data statistic for months 
+insert into Statistics(month, totalMoney, totalTour)
+values ('Jan', 130, 4);
+
 -- Data tour
 /****** Script for SelectTopNRows command from SSMS  ******/
   SET IDENTITY_INSERT Tours ON;
