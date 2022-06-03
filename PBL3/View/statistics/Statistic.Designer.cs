@@ -47,7 +47,7 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(617, 76);
+            this.chart1.Location = new System.Drawing.Point(635, 127);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
@@ -65,7 +65,7 @@
             // 
             this.btnLoad.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(114)))), ((int)(((byte)(250)))));
-            this.btnLoad.Location = new System.Drawing.Point(203, 613);
+            this.btnLoad.Location = new System.Drawing.Point(203, 649);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(239, 56);
             this.btnLoad.TabIndex = 3;
@@ -78,7 +78,7 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView1.Location = new System.Drawing.Point(25, 109);
+            this.dataGridView1.Location = new System.Drawing.Point(25, 163);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -90,7 +90,7 @@
             this.lbNameChart.AutoSize = true;
             this.lbNameChart.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNameChart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.lbNameChart.Location = new System.Drawing.Point(727, 23);
+            this.lbNameChart.Location = new System.Drawing.Point(763, 58);
             this.lbNameChart.Name = "lbNameChart";
             this.lbNameChart.Size = new System.Drawing.Size(395, 30);
             this.lbNameChart.TabIndex = 17;
@@ -101,7 +101,7 @@
             this.lbTable.AutoSize = true;
             this.lbTable.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.lbTable.Location = new System.Drawing.Point(206, 23);
+            this.lbTable.Location = new System.Drawing.Point(198, 58);
             this.lbTable.Name = "lbTable";
             this.lbTable.Size = new System.Drawing.Size(236, 30);
             this.lbTable.TabIndex = 18;

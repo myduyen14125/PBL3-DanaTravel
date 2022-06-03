@@ -40,6 +40,7 @@
             this.tourManagement1 = new PBL3.View.TourManagement();
             this.employeeManagement1 = new PBL3.EmployeeManagement();
             this.customer1 = new PBL3.View.admin.CustomerManagement();
+            this.statistic1 = new PBL3.View.statistics.Statistic();
             this.navbar = new System.Windows.Forms.Panel();
             this.btnBill = new System.Windows.Forms.Button();
             this.btnTicket = new System.Windows.Forms.Button();
@@ -55,7 +56,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCustomer = new System.Windows.Forms.Button();
             this.btnEmployee = new System.Windows.Forms.Button();
-            this.statistic1 = new PBL3.View.statistics.Statistic();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher2)).BeginInit();
             this.panelContent.SuspendLayout();
@@ -176,6 +176,15 @@
             this.customer1.Size = new System.Drawing.Size(1047, 712);
             this.customer1.TabIndex = 1;
             // 
+            // statistic1
+            // 
+            this.statistic1.BackColor = System.Drawing.Color.White;
+            this.statistic1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.statistic1.Location = new System.Drawing.Point(0, 0);
+            this.statistic1.Name = "statistic1";
+            this.statistic1.Size = new System.Drawing.Size(1047, 712);
+            this.statistic1.TabIndex = 8;
+            // 
             // navbar
             // 
             this.navbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
@@ -216,7 +225,7 @@
             this.btnBill.Size = new System.Drawing.Size(199, 40);
             this.btnBill.TabIndex = 36;
             this.btnBill.TabStop = false;
-            this.btnBill.Text = "       Bill";
+            this.btnBill.Text = "          Bill";
             this.btnBill.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBill.UseVisualStyleBackColor = false;
             this.btnBill.Click += new System.EventHandler(this.btnBill_Click);
@@ -240,7 +249,7 @@
             this.btnTicket.Size = new System.Drawing.Size(199, 40);
             this.btnTicket.TabIndex = 18;
             this.btnTicket.TabStop = false;
-            this.btnTicket.Text = "       Ticket";
+            this.btnTicket.Text = "          Ticket";
             this.btnTicket.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTicket.UseVisualStyleBackColor = false;
             this.btnTicket.Click += new System.EventHandler(this.btnTicket_Click);
@@ -263,7 +272,7 @@
             this.btnStatistic.Size = new System.Drawing.Size(199, 40);
             this.btnStatistic.TabIndex = 26;
             this.btnStatistic.TabStop = false;
-            this.btnStatistic.Text = "       Statistic";
+            this.btnStatistic.Text = "          Statistic";
             this.btnStatistic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStatistic.UseVisualStyleBackColor = false;
             this.btnStatistic.Click += new System.EventHandler(this.btnStatistic_Click);
@@ -366,7 +375,7 @@
             this.btnAccount.Size = new System.Drawing.Size(199, 40);
             this.btnAccount.TabIndex = 35;
             this.btnAccount.TabStop = false;
-            this.btnAccount.Text = "       Account";
+            this.btnAccount.Text = "          Account";
             this.btnAccount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAccount.UseVisualStyleBackColor = false;
             this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
@@ -410,7 +419,7 @@
             this.btnTour.Size = new System.Drawing.Size(199, 40);
             this.btnTour.TabIndex = 28;
             this.btnTour.TabStop = false;
-            this.btnTour.Text = "       Tour";
+            this.btnTour.Text = "          Tour";
             this.btnTour.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTour.UseVisualStyleBackColor = false;
             this.btnTour.Click += new System.EventHandler(this.btnTour_Click);
@@ -428,7 +437,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::PBL3.Properties.Resources.Group_1404;
+            this.pictureBox1.Image = global::PBL3.Properties.Resources._56986749_694943527575452_6002140096634028032_n1;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(199, 155);
@@ -454,7 +463,8 @@
             this.btnCustomer.Size = new System.Drawing.Size(199, 40);
             this.btnCustomer.TabIndex = 27;
             this.btnCustomer.TabStop = false;
-            this.btnCustomer.Text = "Customer";
+            this.btnCustomer.Text = "          Customer";
+            this.btnCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCustomer.UseVisualStyleBackColor = false;
             this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
             // 
@@ -477,17 +487,10 @@
             this.btnEmployee.Size = new System.Drawing.Size(199, 40);
             this.btnEmployee.TabIndex = 17;
             this.btnEmployee.TabStop = false;
-            this.btnEmployee.Text = "Employee";
+            this.btnEmployee.Text = "          Employee";
+            this.btnEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEmployee.UseVisualStyleBackColor = false;
             this.btnEmployee.Click += new System.EventHandler(this.btnEmployee_Click);
-            // 
-            // statistic1
-            // 
-            this.statistic1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.statistic1.Location = new System.Drawing.Point(0, 0);
-            this.statistic1.Name = "statistic1";
-            this.statistic1.Size = new System.Drawing.Size(1047, 712);
-            this.statistic1.TabIndex = 8;
             // 
             // AdminManagement
             // 
