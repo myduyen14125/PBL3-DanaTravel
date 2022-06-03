@@ -621,7 +621,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(91)))), ((int)(((byte)(132)))));
-            this.label3.Location = new System.Drawing.Point(465, 13);
+            this.label3.Location = new System.Drawing.Point(476, 13);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 31);
             this.label3.TabIndex = 173;
@@ -632,7 +632,7 @@
             this.lbAbout.AutoSize = true;
             this.lbAbout.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(91)))), ((int)(((byte)(132)))));
-            this.lbAbout.Location = new System.Drawing.Point(312, 13);
+            this.lbAbout.Location = new System.Drawing.Point(319, 13);
             this.lbAbout.Name = "lbAbout";
             this.lbAbout.Size = new System.Drawing.Size(107, 31);
             this.lbAbout.TabIndex = 172;
@@ -960,7 +960,7 @@
             // 
             this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
             this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = global::PBL3.Properties.Resources.Group_164;
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -976,7 +976,7 @@
             // 
             this.btnAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
             this.btnAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdmin.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdmin.ForeColor = System.Drawing.Color.White;
             this.btnAdmin.Image = global::PBL3.Properties.Resources.Group_3;
             this.btnAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -993,7 +993,7 @@
             this.lbHome.AutoSize = true;
             this.lbHome.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
-            this.lbHome.Location = new System.Drawing.Point(184, 13);
+            this.lbHome.Location = new System.Drawing.Point(189, 13);
             this.lbHome.Name = "lbHome";
             this.lbHome.Size = new System.Drawing.Size(77, 31);
             this.lbHome.TabIndex = 171;
