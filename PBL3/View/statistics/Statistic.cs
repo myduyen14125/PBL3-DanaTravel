@@ -55,6 +55,7 @@ namespace PBL3.View.statistics
         {
             List<Revenue> revenues = StatisticBUS.Instance.GetRevenuesTourOutStanding(monthFrom, monthTo, year);
             if (revenues.Count == 0) return;
+            dataTourOutStanding.Rows.Clear();
             double total_price = revenues.Sum(r => r.total);
             lbTotalPrice.Text = total_price.ToString("###,###,###,###") + " VNĐ";
 

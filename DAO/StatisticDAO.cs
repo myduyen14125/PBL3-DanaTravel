@@ -56,16 +56,17 @@ namespace DAO
             EntityManager db = EntityManager.Instance;
 
             var result = from b in db.Bills
-                         join tk in db.TourTickets on b.tour_ticket_id equals tk.id
-                         join t in db.Tours on tk.tour_id equals t.id
-                         where b.date.Value.Month >= monthFrom && b.date.Value.Month <= monthTo
-                         && b.date.Value.Year == year
-                         group b by new { month = b.date.Value.Month, name = t.name } into m
-                         select new
-                         {
-                             text = m.Key.name,
-                             total = m.Sum(t => t.TourTicket.total_price)
-                         };
+                          join tk in db.TourTickets on b.tour_ticket_id equals tk.id
+                          join t in db.Tours on tk.tour_id equals t.id
+                          where b.date.Value.Month >= monthFrom && b.date.Value.Month <= monthTo
+                          && b.date.Value.Year == year
+                          group b by new { id = t.id, name = t.name } into m
+                          select new
+                          {
+                              text = m.Key.name,
+                              total = m.Sum(t => t.TourTicket.total_price)
+                          };
+            result = result.OrderByDescending(t => t.total);
             foreach (var i in result)
             {
                 revenues.Add(new Revenue
