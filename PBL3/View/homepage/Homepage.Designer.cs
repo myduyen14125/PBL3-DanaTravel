@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Homepage));
             this.panelHomepage = new System.Windows.Forms.Panel();
             this.btnNel = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
@@ -57,13 +56,10 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lbAbout = new System.Windows.Forms.Label();
             this.btnRight = new System.Windows.Forms.Button();
             this.btnleft = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -93,21 +89,27 @@
             this.myPictureBox1 = new MyLibrary.MyPictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.btnSearch = new MyLibrary.MyButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnChoice = new System.Windows.Forms.Panel();
+            this.btnChangePassword = new System.Windows.Forms.Button();
+            this.btnHistoryTransaction = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.btnAdmin = new System.Windows.Forms.Button();
-            this.lbHome = new System.Windows.Forms.Label();
             this.myButton2 = new MyLibrary.MyButton();
             this.myButton5 = new MyLibrary.MyButton();
             this.myButton7 = new MyLibrary.MyButton();
             this.myButton9 = new MyLibrary.MyButton();
-            this.pictureBox47 = new System.Windows.Forms.PictureBox();
             this.myButton10 = new MyLibrary.MyButton();
             this.myButton11 = new MyLibrary.MyButton();
             this.myButton12 = new MyLibrary.MyButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.navbar = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnAdmin = new System.Windows.Forms.Button();
+            this.lbHome = new System.Windows.Forms.Label();
+            this.lbAbout = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox47 = new System.Windows.Forms.PictureBox();
             this.panelHomepage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
@@ -131,11 +133,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnChoice.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.navbar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHomepage
@@ -167,7 +169,6 @@
             this.panelHomepage.Controls.Add(this.label10);
             this.panelHomepage.Controls.Add(this.txtSearch);
             this.panelHomepage.Controls.Add(this.label9);
-            this.panelHomepage.Controls.Add(this.label8);
             this.panelHomepage.Controls.Add(this.label7);
             this.panelHomepage.Controls.Add(this.label6);
             this.panelHomepage.Controls.Add(this.label5);
@@ -206,16 +207,17 @@
             this.panelHomepage.Controls.Add(this.myButton5);
             this.panelHomepage.Controls.Add(this.myButton7);
             this.panelHomepage.Controls.Add(this.myButton9);
-            this.panelHomepage.Controls.Add(this.pictureBox47);
             this.panelHomepage.Controls.Add(this.myButton10);
             this.panelHomepage.Controls.Add(this.myButton11);
             this.panelHomepage.Controls.Add(this.myButton12);
             this.panelHomepage.Controls.Add(this.pictureBox1);
             this.panelHomepage.Controls.Add(this.navbar);
+            this.panelHomepage.Controls.Add(this.label8);
+            this.panelHomepage.Controls.Add(this.pictureBox47);
             this.panelHomepage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelHomepage.Location = new System.Drawing.Point(0, 0);
             this.panelHomepage.Name = "panelHomepage";
-            this.panelHomepage.Size = new System.Drawing.Size(1076, 1500);
+            this.panelHomepage.Size = new System.Drawing.Size(1097, 1500);
             this.panelHomepage.TabIndex = 0;
             // 
             // btnNel
@@ -226,19 +228,6 @@
             this.btnNel.TabIndex = 238;
             this.btnNel.Text = "button1";
             this.btnNel.UseVisualStyleBackColor = true;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(231)))), ((int)(((byte)(236)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(91)))), ((int)(((byte)(132)))));
-            this.textBox2.Location = new System.Drawing.Point(837, 14);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(180, 30);
-            this.textBox2.TabIndex = 234;
-            this.textBox2.Text = "Hi, Toan Nguyen";
             // 
             // label32
             // 
@@ -561,17 +550,6 @@
             this.label9.TabIndex = 179;
             this.label9.Text = "WE CAN BUILD THE HOLIDAY YOR DREAMS AND MAKE THEM UNFORGETTABLE";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
-            this.label8.Location = new System.Drawing.Point(140, 215);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(241, 57);
-            this.label8.TabIndex = 178;
-            this.label8.Text = "the world.";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -616,34 +594,12 @@
             this.label4.TabIndex = 174;
             this.label4.Text = "BEST DESTINATION AROUND THE WORLD";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(91)))), ((int)(((byte)(132)))));
-            this.label3.Location = new System.Drawing.Point(476, 13);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 31);
-            this.label3.TabIndex = 173;
-            this.label3.Text = "Contacts";
-            // 
-            // lbAbout
-            // 
-            this.lbAbout.AutoSize = true;
-            this.lbAbout.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(91)))), ((int)(((byte)(132)))));
-            this.lbAbout.Location = new System.Drawing.Point(319, 13);
-            this.lbAbout.Name = "lbAbout";
-            this.lbAbout.Size = new System.Drawing.Size(107, 31);
-            this.lbAbout.TabIndex = 172;
-            this.lbAbout.Text = "About us";
-            // 
             // btnRight
             // 
             this.btnRight.Image = ((System.Drawing.Image)(resources.GetObject("btnRight.Image")));
             this.btnRight.Location = new System.Drawing.Point(988, 595);
             this.btnRight.Name = "btnRight";
-            this.btnRight.Size = new System.Drawing.Size(50, 45);
+            this.btnRight.Size = new System.Drawing.Size(38, 45);
             this.btnRight.TabIndex = 243;
             this.btnRight.UseVisualStyleBackColor = true;
             this.btnRight.Click += new System.EventHandler(this.btnRight_Click);
@@ -651,9 +607,9 @@
             // btnleft
             // 
             this.btnleft.Image = ((System.Drawing.Image)(resources.GetObject("btnleft.Image")));
-            this.btnleft.Location = new System.Drawing.Point(27, 595);
+            this.btnleft.Location = new System.Drawing.Point(37, 595);
             this.btnleft.Name = "btnleft";
-            this.btnleft.Size = new System.Drawing.Size(50, 45);
+            this.btnleft.Size = new System.Drawing.Size(40, 45);
             this.btnleft.TabIndex = 242;
             this.btnleft.UseVisualStyleBackColor = true;
             this.btnleft.Click += new System.EventHandler(this.btnleft_Click);
@@ -937,24 +893,48 @@
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::PBL3.Properties.Resources.Logo;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(87, 55);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 170;
-            this.pictureBox2.TabStop = false;
-            // 
             // pnChoice
             // 
+            this.pnChoice.Controls.Add(this.btnChangePassword);
+            this.pnChoice.Controls.Add(this.btnHistoryTransaction);
             this.pnChoice.Controls.Add(this.btnLogout);
-            this.pnChoice.Controls.Add(this.btnAdmin);
-            this.pnChoice.Location = new System.Drawing.Point(881, 46);
+            this.pnChoice.Location = new System.Drawing.Point(824, 50);
             this.pnChoice.Name = "pnChoice";
-            this.pnChoice.Size = new System.Drawing.Size(173, 68);
+            this.pnChoice.Size = new System.Drawing.Size(230, 104);
             this.pnChoice.TabIndex = 235;
+            // 
+            // btnChangePassword
+            // 
+            this.btnChangePassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
+            this.btnChangePassword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnChangePassword.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangePassword.ForeColor = System.Drawing.Color.White;
+            this.btnChangePassword.Image = global::PBL3.Properties.Resources.Group_164;
+            this.btnChangePassword.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChangePassword.Location = new System.Drawing.Point(2, 32);
+            this.btnChangePassword.Name = "btnChangePassword";
+            this.btnChangePassword.Size = new System.Drawing.Size(227, 35);
+            this.btnChangePassword.TabIndex = 4;
+            this.btnChangePassword.Text = "Change Password";
+            this.btnChangePassword.UseVisualStyleBackColor = false;
+            this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
+            // 
+            // btnHistoryTransaction
+            // 
+            this.btnHistoryTransaction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
+            this.btnHistoryTransaction.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHistoryTransaction.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHistoryTransaction.ForeColor = System.Drawing.Color.White;
+            this.btnHistoryTransaction.Image = global::PBL3.Properties.Resources.Group_3;
+            this.btnHistoryTransaction.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHistoryTransaction.Location = new System.Drawing.Point(0, 1);
+            this.btnHistoryTransaction.Name = "btnHistoryTransaction";
+            this.btnHistoryTransaction.Size = new System.Drawing.Size(227, 35);
+            this.btnHistoryTransaction.TabIndex = 3;
+            this.btnHistoryTransaction.Text = "History Transaction";
+            this.btnHistoryTransaction.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnHistoryTransaction.UseVisualStyleBackColor = false;
+            this.btnHistoryTransaction.Click += new System.EventHandler(this.btnHistoryTransaction_Click);
             // 
             // btnLogout
             // 
@@ -964,40 +944,13 @@
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = global::PBL3.Properties.Resources.Group_164;
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(0, 32);
+            this.btnLogout.Location = new System.Drawing.Point(0, 65);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(172, 35);
+            this.btnLogout.Size = new System.Drawing.Size(227, 35);
             this.btnLogout.TabIndex = 1;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
-            // 
-            // btnAdmin
-            // 
-            this.btnAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
-            this.btnAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdmin.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdmin.ForeColor = System.Drawing.Color.White;
-            this.btnAdmin.Image = global::PBL3.Properties.Resources.Group_3;
-            this.btnAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdmin.Location = new System.Drawing.Point(1, 0);
-            this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(172, 35);
-            this.btnAdmin.TabIndex = 0;
-            this.btnAdmin.Text = "Admin";
-            this.btnAdmin.UseVisualStyleBackColor = false;
-            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
-            // 
-            // lbHome
-            // 
-            this.lbHome.AutoSize = true;
-            this.lbHome.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
-            this.lbHome.Location = new System.Drawing.Point(189, 13);
-            this.lbHome.Name = "lbHome";
-            this.lbHome.Size = new System.Drawing.Size(77, 31);
-            this.lbHome.TabIndex = 171;
-            this.lbHome.Text = "Home";
             // 
             // myButton2
             // 
@@ -1075,17 +1028,6 @@
             this.myButton9.TextColor = System.Drawing.Color.White;
             this.myButton9.UseVisualStyleBackColor = false;
             // 
-            // pictureBox47
-            // 
-            this.pictureBox47.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox47.Image = global::PBL3.Properties.Resources.map;
-            this.pictureBox47.Location = new System.Drawing.Point(44, 79);
-            this.pictureBox47.Name = "pictureBox47";
-            this.pictureBox47.Size = new System.Drawing.Size(560, 282);
-            this.pictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox47.TabIndex = 236;
-            this.pictureBox47.TabStop = false;
-            // 
             // myButton10
             // 
             this.myButton10.BackColor = System.Drawing.Color.White;
@@ -1155,14 +1097,109 @@
             this.navbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(231)))), ((int)(((byte)(236)))));
             this.navbar.Controls.Add(this.pictureBox2);
             this.navbar.Controls.Add(this.textBox2);
+            this.navbar.Controls.Add(this.btnAdmin);
             this.navbar.Controls.Add(this.lbHome);
             this.navbar.Controls.Add(this.lbAbout);
             this.navbar.Controls.Add(this.label3);
             this.navbar.Dock = System.Windows.Forms.DockStyle.Top;
             this.navbar.Location = new System.Drawing.Point(0, 0);
             this.navbar.Name = "navbar";
-            this.navbar.Size = new System.Drawing.Size(1076, 58);
+            this.navbar.Size = new System.Drawing.Size(1097, 58);
             this.navbar.TabIndex = 244;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PBL3.Properties.Resources.Logo;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(87, 55);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 170;
+            this.pictureBox2.TabStop = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(231)))), ((int)(((byte)(236)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(91)))), ((int)(((byte)(132)))));
+            this.textBox2.Location = new System.Drawing.Point(837, 14);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(180, 30);
+            this.textBox2.TabIndex = 234;
+            this.textBox2.Text = "Hi, Toan Nguyen";
+            // 
+            // btnAdmin
+            // 
+            this.btnAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
+            this.btnAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdmin.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdmin.ForeColor = System.Drawing.Color.White;
+            this.btnAdmin.Image = global::PBL3.Properties.Resources.Group_3;
+            this.btnAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdmin.Location = new System.Drawing.Point(581, 14);
+            this.btnAdmin.Name = "btnAdmin";
+            this.btnAdmin.Size = new System.Drawing.Size(227, 35);
+            this.btnAdmin.TabIndex = 0;
+            this.btnAdmin.Text = "Admin";
+            this.btnAdmin.UseVisualStyleBackColor = false;
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
+            // 
+            // lbHome
+            // 
+            this.lbHome.AutoSize = true;
+            this.lbHome.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
+            this.lbHome.Location = new System.Drawing.Point(189, 13);
+            this.lbHome.Name = "lbHome";
+            this.lbHome.Size = new System.Drawing.Size(73, 30);
+            this.lbHome.TabIndex = 171;
+            this.lbHome.Text = "Home";
+            // 
+            // lbAbout
+            // 
+            this.lbAbout.AutoSize = true;
+            this.lbAbout.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(91)))), ((int)(((byte)(132)))));
+            this.lbAbout.Location = new System.Drawing.Point(319, 13);
+            this.lbAbout.Name = "lbAbout";
+            this.lbAbout.Size = new System.Drawing.Size(103, 30);
+            this.lbAbout.TabIndex = 172;
+            this.lbAbout.Text = "About us";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(91)))), ((int)(((byte)(132)))));
+            this.label3.Location = new System.Drawing.Point(476, 13);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 30);
+            this.label3.TabIndex = 173;
+            this.label3.Text = "Contacts";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
+            this.label8.Location = new System.Drawing.Point(152, 227);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(241, 57);
+            this.label8.TabIndex = 178;
+            this.label8.Text = "the world.";
+            // 
+            // pictureBox47
+            // 
+            this.pictureBox47.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox47.Image = global::PBL3.Properties.Resources.map;
+            this.pictureBox47.Location = new System.Drawing.Point(44, 79);
+            this.pictureBox47.Name = "pictureBox47";
+            this.pictureBox47.Size = new System.Drawing.Size(560, 282);
+            this.pictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox47.TabIndex = 236;
+            this.pictureBox47.TabStop = false;
             // 
             // Homepage
             // 
@@ -1171,7 +1208,7 @@
             this.AutoScrollMinSize = new System.Drawing.Size(1008, 1500);
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(221)))), ((int)(((byte)(236)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1097, 797);
+            this.ClientSize = new System.Drawing.Size(1118, 797);
             this.Controls.Add(this.panelHomepage);
             this.DoubleBuffered = true;
             this.Name = "Homepage";
@@ -1202,12 +1239,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnChoice.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.navbar.ResumeLayout(false);
             this.navbar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1293,5 +1330,7 @@
         private System.Windows.Forms.PictureBox pictureBox47;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel navbar;
+        private System.Windows.Forms.Button btnHistoryTransaction;
+        private System.Windows.Forms.Button btnChangePassword;
     }
 }

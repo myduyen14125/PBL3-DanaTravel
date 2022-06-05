@@ -1,4 +1,5 @@
-﻿using DTO.CodeFirstDB;
+﻿using AutoMapper;
+using DTO.CodeFirstDB;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
+    [AutoMap(typeof(Tour))]
     public class TourDTO
     {
         public int id { get; set; }

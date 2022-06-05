@@ -1,6 +1,8 @@
 ﻿using BUS;
 using DTO;
 using PBL3.View.admin;
+using PBL3.View.homepage;
+using PBL3.View.statistics;
 using System;
 using System.Windows.Forms;
 using Util;

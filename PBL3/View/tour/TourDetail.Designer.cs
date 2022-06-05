@@ -1,7 +1,7 @@
 ﻿
 namespace PBL3.View.tour
 {
-    partial class FormTourDetail
+    partial class TourDetail
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace PBL3.View.tour
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTourDetail));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TourDetail));
             this.panelMain = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();

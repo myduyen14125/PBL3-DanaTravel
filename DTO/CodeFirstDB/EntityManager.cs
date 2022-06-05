@@ -49,6 +49,5 @@ namespace DTO
         public virtual DbSet<TourTicketStatus> TourTicketStatuses { get; set; }
         public virtual DbSet<Bill> Bills { get; set; }
         public virtual DbSet<BillStatus> BillStatuses { get; set; }
-        public virtual DbSet<Statistic> Statistics { get; set; }
     }
 }

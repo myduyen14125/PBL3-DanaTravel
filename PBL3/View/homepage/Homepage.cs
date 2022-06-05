@@ -4,12 +4,6 @@ using PBL3.View.admin;
 using PBL3.View.homepage;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PBL3
@@ -17,19 +11,15 @@ namespace PBL3
     public partial class Homepage : Form
     {
         private List<TourDTO> tours;
-        private Account account;
+        public Account account { get; set; }
         private int index_start = 0;
         public Homepage(Account ac)
         {
             InitializeComponent();
             pnChoice.Visible = false;
             this.account = ac;
-            //if (account.Roles.FirstOrDefault().name.ToLower() == "customer")
-            //{
-            //    // Customer
-            //    btnAdmin.Visible = false;
-            //}
-            //else btnAdmin.Visible = true;
+
+            btnAdmin.Visible = AccountBUS.Instance.IsRoleCustomer(account) ? false : true;
         }
          private void btnAdmin_Click(object sender, EventArgs e)
         {
@@ -132,6 +122,19 @@ namespace PBL3
         private void btnSearch_Click(object sender, EventArgs e)
         {
             ShowTour();
+        }
+
+        private void btnHistoryTransaction_Click(object sender, EventArgs e)
+        {
+            FormHistoryTransaction f = new FormHistoryTransaction();
+            f.account_id = account.id;
+            f.Show();
+        }
+
+        private void btnChangePassword_Click(object sender, EventArgs e)
+        {
+           ForgetPass f = new ForgetPass();
+            f.Show();
         }
     }
 }

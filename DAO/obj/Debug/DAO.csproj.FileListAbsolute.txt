@@ -74,3 +74,6 @@ C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\DAO\obj\Debug\DAO.exe
 C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\DAO\obj\Debug\DAO.pdb
 D:\PBL\PBL3-DanaTravel\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
 D:\PBL\PBL3-DanaTravel\DAO\obj\Debug\DAO.csproj.SuggestedBindingRedirects.cache
+D:\PBL\PBL3-DanaTravel\DAO\bin\Debug\AutoMapper.dll
+D:\PBL\PBL3-DanaTravel\DAO\bin\Debug\AutoMapper.pdb
+D:\PBL\PBL3-DanaTravel\DAO\bin\Debug\AutoMapper.xml

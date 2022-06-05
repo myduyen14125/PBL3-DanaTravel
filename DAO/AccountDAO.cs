@@ -36,7 +36,10 @@ namespace DAO
             db.SaveChanges();
             return true;
         }
-
+        public bool IsRoleCustomer(Account ac)
+        {
+            return ac.Roles.FirstOrDefault().name.ToLower() == "customer";
+        }
         public bool RegisterAccount(Account ac)
         {
             EntityManager db = EntityManager.Instance;

@@ -19,32 +19,41 @@ using Util;
 
 namespace PBL3.View.tour
 {
-    public partial class FormTourDetail : UserControl
+    public partial class TourDetail : UserControl
     {
         private TourDTO tourDTO;
-        private bool isBooktour;
+        private bool isBookTour;
+        private int account_id;
+        private bool isHideBtnBack;
+
         private IHTMLDocument2 documentDesc;
 
         public delegate void Mydel();
         public Mydel showParent { get; set; }
-        public FormTourDetail(TourDTO tour, bool isBooktour)
+        public TourDetail(TourDTO tour, int account_id, bool isHideBtnBack, bool isBookTour)
         {
             InitializeComponent();
             this.tourDTO = tour;
-            this.isBooktour = isBooktour;
+            this.account_id = account_id;
+            this.isHideBtnBack = isHideBtnBack;
+            this.isBookTour = isBookTour;
             GUI();
         }
         public void GUI()
         {
+            btnBack.Visible = !isHideBtnBack;
             htmlDescription.DocumentText = "<html><body></body></html>";
             documentDesc = htmlDescription.Document.DomDocument as IHTMLDocument2;
             documentDesc.designMode = "On";
-            
-            List<Image> images = new List<Image>();
-            foreach (TourImage tourImage in tourDTO.TourImages) images.Add(Image.FromStream(new MemoryStream(tourImage.image)));
-            SliderImage sliderImage = new SliderImage(images, false);
-            panel1.Controls.Add(sliderImage);
-            sliderImage.Dock = DockStyle.Fill;
+
+            if (tourDTO.TourImages != null)
+            {
+                List<Image> images = new List<Image>();
+                foreach (TourImage tourImage in tourDTO.TourImages) images.Add(Image.FromStream(new MemoryStream(tourImage.image)));
+                SliderImage sliderImage = new SliderImage(images, false);
+                panel1.Controls.Add(sliderImage);
+                sliderImage.Dock = DockStyle.Fill;
+            }
 
             TimeSpan timeSpan = tourDTO.returnDate - tourDTO.departureDate;
             string departDate = tourDTO.departureDate.ToString("dd/MM/yyyy");
@@ -64,10 +73,7 @@ namespace PBL3.View.tour
             lbTime1.Text = time;
             htmlDescription.DocumentText = tourDTO.detail_desc;
 
-            if (!isBooktour)
-            {
-                btnOrderTour.Visible = false;
-            }
+            btnOrderTour.Visible = isBookTour;
         }
         private void btnBack_Click(object sender, EventArgs e)
         {
@@ -76,7 +82,7 @@ namespace PBL3.View.tour
         }
         private void btnOrderTour_Click(object sender, EventArgs e)
         {
-            FormBookTour f = new FormBookTour(tourDTO);
+            FormBookTour f = new FormBookTour(tourDTO, account_id);
             f.Show();
         }
 

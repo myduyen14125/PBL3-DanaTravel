@@ -28,6 +28,10 @@ namespace BUS
         {
             return TourDAO.Instance.GetTourDTOs(tour_category_id, searchKey);
         }
+        public TourDTO GetTourDTOById(int tour_id)
+        {
+            return TourDAO.Instance.GetTourDTOById(tour_id);
+        }
         public List<TourCategory> GetListTourCategory()
         {
             return TourDAO.Instance.GetListTourCategory();

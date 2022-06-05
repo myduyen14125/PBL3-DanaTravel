@@ -36,14 +36,14 @@ namespace PBL3.View.homepage
 
             List<Image> images = new List<Image>();
             foreach (TourImage tourImage in tour.TourImages) images.Add(Image.FromStream(new MemoryStream(tourImage.image)));
-            SliderImage sliderImage = new SliderImage(images, false);
+            SliderImage sliderImage = new SliderImage(images, false, true);
             panelPicture.Controls.Add(sliderImage);
             sliderImage.Dock = DockStyle.Fill;
         }
 
         private void btnViewDetail_Click(object sender, EventArgs e)
         {
-            FormTourDetail f = new FormTourDetail(tour, true);
+            TourDetail f = new TourDetail(tour, homepage.account.id, false, true);
             f.Dock = DockStyle.Fill;
             f.showParent = homepage.ShowHomePage;
             homepage.HideHomePage();

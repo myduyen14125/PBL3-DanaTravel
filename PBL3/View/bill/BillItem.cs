@@ -68,7 +68,7 @@ namespace PBL3.View.bill
                 {
                     id = bill.id,
                     bill_status_id = 2,
-                    date = DateTime.Now,
+                    date = Convert.ToDateTime(DateTime.Now.ToString("yyyy/MM/dd")),
                 });
                 LoadDataParent();
                 SendEmail();

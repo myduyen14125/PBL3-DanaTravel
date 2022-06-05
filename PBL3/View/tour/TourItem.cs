@@ -30,7 +30,7 @@ namespace PBL3.View.tour
         {
             List<Image> images = new List<Image>();
             foreach (TourImage tourImage in tourDTO.TourImages) images.Add(Image.FromStream(new MemoryStream(tourImage.image)));
-            SliderImage sliderImage = new SliderImage(images, false);
+            SliderImage sliderImage = new SliderImage(images, false, true);
             panelPicture.Controls.Add(sliderImage);
             sliderImage.Dock = DockStyle.Fill;
 
@@ -60,10 +60,10 @@ namespace PBL3.View.tour
         }
         private void btnDetail_Click(object sender, EventArgs e)
         {
-            FormTourDetail formTourDetail = new FormTourDetail(tourDTO, false);
-            formTourDetail.showParent = new FormTourDetail.Mydel(tourManagement.Reload);
-            formTourDetail.Dock = DockStyle.Fill;
-            tourManagement.Controls.Add(formTourDetail);
+            TourDetail f = new TourDetail(tourDTO, 0, false, false);
+            f.showParent = new TourDetail.Mydel(tourManagement.Reload);
+            f.Dock = DockStyle.Fill;
+            tourManagement.Controls.Add(f);
             tourManagement.HideTourManagement();
         }
     }

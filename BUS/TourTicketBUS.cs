@@ -24,6 +24,10 @@ namespace BUS
         {
             return TourTicketDAO.Instance.GetTourTickets(search, tour_ticket_status_id);
         }
+        public List<TourTicketDTO> GetTourTicketsByAccount(int account_id, int tour_ticket_status_id, int bill_status_id)
+        {
+            return TourTicketDAO.Instance.GetTourTicketsByAccount(account_id, tour_ticket_status_id, bill_status_id);
+        }
         public void Save(TourTicket tourTicket)
         {
             Customer customer = CustomerBUS.Instance.GetCustomerByIdCard(tourTicket.identity_card);

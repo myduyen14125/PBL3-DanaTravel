@@ -1,10 +1,7 @@
 ﻿using DTO;
 using DTO.CodeFirstDB;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DAO
 {
@@ -45,19 +42,19 @@ namespace DAO
                              t.transport,
                              t.departureDate,
                              t.returnDate,
-                             ts_id = ts.id,
-                             ts_name = ts.name,
-                             tc_id = tc.id,
-                             tc_name = tc.name,
+                             tour_status_id = ts.id,
+                             tour_status_name = ts.name,
+                             tour_category_id = tc.id,
+                             tour_category_name = tc.name,
                              t.price_adult_one_ticket,
                              t.price_children_one_ticket
                          };
-            if(result == null) return tourDTOs;
+
+            if (result == null) return tourDTOs;
+
             foreach (var i in result)
             {
-                int id = i.id;
-                List<TourImage> tourImages = db.TourImages.Where(ti => ti.tour_id == id).ToList();
-                
+                List<TourImage> tourImages = db.TourImages.Where(ti => ti.tour_id == i.id).ToList();
                 tourDTOs.Add(new TourDTO
                 {
                     id = i.id,
@@ -67,16 +64,61 @@ namespace DAO
                     transport = i.transport,
                     departureDate = i.departureDate,
                     returnDate = i.returnDate,
-                    tour_category_id = i.tc_id,
-                    tour_category_name = i.tc_name,
-                    tour_status_id = i.ts_id,
-                    tour_status_name = i.ts_name,
+                    tour_category_id = i.tour_category_id,
+                    tour_category_name = i.tour_category_name,
+                    tour_status_id = i.tour_status_id,
+                    tour_status_name = i.tour_status_name,
                     price_adult_one_ticket = i.price_adult_one_ticket,
                     price_children_one_ticket = i.price_children_one_ticket,
                     TourImages = tourImages
                 });
             }
             return tourDTOs;
+        }
+
+        public TourDTO GetTourDTOById(int tour_id)
+        {
+            EntityManager db = EntityManager.Instance;
+
+            List<TourImage> tourImages = db.TourImages.Where(ti => ti.tour_id == tour_id).ToList();
+            var result = from t in db.Tours
+                         join ts in db.TourStatuses on t.tour_status_id equals ts.id
+                         join tc in db.TourCategories on t.tour_category_id equals tc.id
+                         where t.id == tour_id
+                         select new
+                         {
+                             t.id,
+                             t.name,
+                             t.short_desc,
+                             t.detail_desc,
+                             t.transport,
+                             t.departureDate,
+                             t.returnDate,
+                             tour_status_id = ts.id,
+                             tour_status_name = ts.name,
+                             tour_category_id = tc.id,
+                             tour_category_name = tc.name,
+                             t.price_adult_one_ticket,
+                             t.price_children_one_ticket
+                         };
+            var i = result.FirstOrDefault();
+            return new TourDTO
+            {
+                id = i.id,
+                name = i.name,
+                short_desc = i.short_desc,
+                detail_desc = i.detail_desc,
+                transport = i.transport,
+                departureDate = i.departureDate,
+                returnDate = i.returnDate,
+                tour_category_id = i.tour_category_id,
+                tour_category_name = i.tour_category_name,
+                tour_status_id = i.tour_status_id,
+                tour_status_name = i.tour_status_name,
+                price_adult_one_ticket = i.price_adult_one_ticket,
+                price_children_one_ticket = i.price_children_one_ticket,
+                TourImages = tourImages
+            };
         }
         public List<TourCategory> GetListTourCategory()
         {

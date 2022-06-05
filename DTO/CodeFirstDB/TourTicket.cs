@@ -24,9 +24,14 @@ namespace DTO.CodeFirstDB
         public string identity_card { get; set; }
         public int customer_id { get; set; }
         public int tour_id { get; set; }
+        public int account_id { get; set; }
         public int tour_ticket_status_id { get; set; }
+
         [ForeignKey("customer_id")]
         public virtual Customer Customer { get; set; }
+
+        [ForeignKey("account_id")]
+        public virtual Account Account { get; set; }
 
         [ForeignKey("tour_ticket_status_id")]
         public virtual TourTicketStatus TourTicketStatus { get; set; }

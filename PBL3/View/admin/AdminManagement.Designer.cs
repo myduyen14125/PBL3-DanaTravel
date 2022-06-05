@@ -40,7 +40,6 @@
             this.tourManagement1 = new PBL3.View.TourManagement();
             this.employeeManagement1 = new PBL3.EmployeeManagement();
             this.customer1 = new PBL3.View.admin.CustomerManagement();
-            this.statistic1 = new PBL3.View.statistics.Statistic();
             this.navbar = new System.Windows.Forms.Panel();
             this.btnBill = new System.Windows.Forms.Button();
             this.btnTicket = new System.Windows.Forms.Button();
@@ -56,6 +55,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCustomer = new System.Windows.Forms.Button();
             this.btnEmployee = new System.Windows.Forms.Button();
+            this.statistic1 = new PBL3.View.statistics.Statistic();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher2)).BeginInit();
             this.panelContent.SuspendLayout();
@@ -89,6 +89,7 @@
             // 
             // panelContent
             // 
+            this.panelContent.Controls.Add(this.statistic1);
             this.panelContent.Controls.Add(this.billManagement1);
             this.panelContent.Controls.Add(this.ticketManagement1);
             this.panelContent.Controls.Add(this.roleAccount1);
@@ -97,7 +98,6 @@
             this.panelContent.Controls.Add(this.tourManagement1);
             this.panelContent.Controls.Add(this.employeeManagement1);
             this.panelContent.Controls.Add(this.customer1);
-            this.panelContent.Controls.Add(this.statistic1);
             this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContent.Location = new System.Drawing.Point(199, 0);
             this.panelContent.Name = "panelContent";
@@ -175,15 +175,6 @@
             this.customer1.Name = "customer1";
             this.customer1.Size = new System.Drawing.Size(1047, 712);
             this.customer1.TabIndex = 1;
-            // 
-            // statistic1
-            // 
-            this.statistic1.BackColor = System.Drawing.Color.White;
-            this.statistic1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.statistic1.Location = new System.Drawing.Point(0, 0);
-            this.statistic1.Name = "statistic1";
-            this.statistic1.Size = new System.Drawing.Size(1047, 712);
-            this.statistic1.TabIndex = 8;
             // 
             // navbar
             // 
@@ -491,6 +482,14 @@
             this.btnEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEmployee.UseVisualStyleBackColor = false;
             this.btnEmployee.Click += new System.EventHandler(this.btnEmployee_Click);
+            // 
+            // statistic1
+            // 
+            this.statistic1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.statistic1.Location = new System.Drawing.Point(0, 0);
+            this.statistic1.Name = "statistic1";
+            this.statistic1.Size = new System.Drawing.Size(1047, 712);
+            this.statistic1.TabIndex = 8;
             // 
             // AdminManagement
             // 

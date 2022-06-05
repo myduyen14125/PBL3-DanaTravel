@@ -15,11 +15,13 @@ namespace PBL3.View.tour
         public List<Image> images { get; set; }
         private int indexImage = 0;
         private bool isEdit;
-        public SliderImage(List<Image> images, bool isEdit)
+        public SliderImage(List<Image> images, bool isEdit, bool isHideArrow = false)
         {
             InitializeComponent();
             this.images = images;
             this.isEdit = isEdit;
+            btnLeft.Visible = !isHideArrow;
+            btnRight.Visible = !isHideArrow;
         }
 
         private void LoadNextImage()

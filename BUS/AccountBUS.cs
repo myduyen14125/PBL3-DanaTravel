@@ -50,6 +50,10 @@ namespace BUS
         {
             return AccountDAO.Instance.CheckAccount(ac);
         }
+        public bool IsRoleCustomer(Account ac)
+        {
+            return AccountDAO.Instance.IsRoleCustomer(ac);
+        }
 
         public bool ChangePassword(Account ac)
         {

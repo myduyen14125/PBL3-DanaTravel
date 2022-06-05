@@ -451,9 +451,9 @@
             this.label5.ForeColor = System.Drawing.Color.DarkRed;
             this.label5.Location = new System.Drawing.Point(549, 366);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(232, 18);
+            this.label5.Size = new System.Drawing.Size(241, 18);
             this.label5.TabIndex = 54;
-            this.label5.Text = "* Giá trên không bao gồm phí VAT";
+            this.label5.Text = "* Giá trên không bao gồm thuế VAT";
             // 
             // FormBookTour
             // 

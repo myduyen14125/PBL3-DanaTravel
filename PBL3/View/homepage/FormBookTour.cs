@@ -19,10 +19,12 @@ namespace PBL3.View.homepage
     public partial class FormBookTour : Form
     {
         private TourDTO tourDTO;
-        public FormBookTour(TourDTO tourDTO)
+        private int account_id;
+        public FormBookTour(TourDTO tourDTO, int account_id)
         {
             InitializeComponent();
             this.tourDTO = tourDTO;
+            this.account_id = account_id;
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -82,9 +84,10 @@ namespace PBL3.View.homepage
                 number_adult = number_adult,
                 number_children = number_children,
                 total_price = total_price,
-                date = DateTime.Now,
+                date = Convert.ToDateTime(DateTime.Now.ToString("yyyy/MM/dd")),
                 tour_ticket_status_id = 1,
-                tour_id = tourDTO.id
+                tour_id = tourDTO.id,
+                account_id = account_id
             };
             TourTicketBUS.Instance.Save(ticket);
             this.Hide();

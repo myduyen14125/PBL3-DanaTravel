@@ -66,3 +66,6 @@ C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\BUS\obj\Debug\BUS.exe
 C:\Users\Laptop\Source\Repos\PBL3-DanaTravel\BUS\obj\Debug\BUS.pdb
 D:\PBL\PBL3-DanaTravel\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
 D:\PBL\PBL3-DanaTravel\BUS\obj\Debug\BUS.csproj.SuggestedBindingRedirects.cache
+D:\PBL\PBL3-DanaTravel\BUS\bin\Debug\AutoMapper.dll
+D:\PBL\PBL3-DanaTravel\BUS\bin\Debug\AutoMapper.pdb
+D:\PBL\PBL3-DanaTravel\BUS\bin\Debug\AutoMapper.xml
