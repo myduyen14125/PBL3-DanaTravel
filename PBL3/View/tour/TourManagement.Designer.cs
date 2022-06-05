@@ -36,10 +36,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.myTextBox1 = new MyLibrary.MyTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutTours = new System.Windows.Forms.FlowLayoutPanel();
             this.lbCategory = new System.Windows.Forms.Label();
             this.cbbTourCategory = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -48,12 +48,12 @@
             // 
             this.btnAdd.BackColor = System.Drawing.Color.White;
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold);
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAdd.Location = new System.Drawing.Point(22, 160);
+            this.btnAdd.Location = new System.Drawing.Point(40, 177);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(161, 53);
+            this.btnAdd.Size = new System.Drawing.Size(214, 42);
             this.btnAdd.TabIndex = 18;
             this.btnAdd.Text = "Add new tour";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -66,10 +66,10 @@
             this.btnSearch.FlatAppearance.BorderSize = 0;
             this.btnSearch.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold);
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(1105, 164);
+            this.btnSearch.Location = new System.Drawing.Point(1151, 163);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(136, 44);
+            this.btnSearch.Size = new System.Drawing.Size(169, 44);
             this.btnSearch.TabIndex = 16;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
@@ -79,7 +79,7 @@
             // 
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSearch.Font = new System.Drawing.Font("Microsoft YaHei UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(871, 170);
+            this.txtSearch.Location = new System.Drawing.Point(883, 170);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(218, 35);
@@ -87,11 +87,12 @@
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(99, 92);
+            this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotal.Location = new System.Drawing.Point(150, 86);
             this.txtTotal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
-            this.txtTotal.Size = new System.Drawing.Size(84, 22);
+            this.txtTotal.Size = new System.Drawing.Size(84, 28);
             this.txtTotal.TabIndex = 12;
             // 
             // totalLb
@@ -99,7 +100,7 @@
             this.totalLb.AutoSize = true;
             this.totalLb.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold);
             this.totalLb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.totalLb.Location = new System.Drawing.Point(17, 89);
+            this.totalLb.Location = new System.Drawing.Point(35, 89);
             this.totalLb.Name = "totalLb";
             this.totalLb.Size = new System.Drawing.Size(67, 25);
             this.totalLb.TabIndex = 11;
@@ -143,31 +144,20 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
             this.panel2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel2.Location = new System.Drawing.Point(0, 716);
+            this.panel2.Location = new System.Drawing.Point(0, 811);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1638, 40);
+            this.panel2.Size = new System.Drawing.Size(1750, 40);
             this.panel2.TabIndex = 29;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PBL3.Properties.Resources.Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(552, 52);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(205, 104);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 30;
-            this.pictureBox1.TabStop = false;
             // 
             // flowLayoutTours
             // 
             this.flowLayoutTours.AutoScroll = true;
-            this.flowLayoutTours.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutTours.BackColor = System.Drawing.Color.White;
             this.flowLayoutTours.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutTours.Location = new System.Drawing.Point(22, 244);
+            this.flowLayoutTours.Location = new System.Drawing.Point(40, 246);
             this.flowLayoutTours.Name = "flowLayoutTours";
-            this.flowLayoutTours.Size = new System.Drawing.Size(1219, 494);
+            this.flowLayoutTours.Size = new System.Drawing.Size(1300, 558);
             this.flowLayoutTours.TabIndex = 31;
             // 
             // lbCategory
@@ -175,7 +165,7 @@
             this.lbCategory.AutoSize = true;
             this.lbCategory.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold);
             this.lbCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.lbCategory.Location = new System.Drawing.Point(396, 174);
+            this.lbCategory.Location = new System.Drawing.Point(406, 180);
             this.lbCategory.Name = "lbCategory";
             this.lbCategory.Size = new System.Drawing.Size(155, 25);
             this.lbCategory.TabIndex = 32;
@@ -183,12 +173,24 @@
             // 
             // cbbTourCategory
             // 
+            this.cbbTourCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbTourCategory.FormattingEnabled = true;
-            this.cbbTourCategory.Location = new System.Drawing.Point(578, 177);
+            this.cbbTourCategory.Location = new System.Drawing.Point(607, 177);
             this.cbbTourCategory.Name = "cbbTourCategory";
-            this.cbbTourCategory.Size = new System.Drawing.Size(150, 24);
+            this.cbbTourCategory.Size = new System.Drawing.Size(150, 30);
             this.cbbTourCategory.TabIndex = 33;
             this.cbbTourCategory.SelectedIndexChanged += new System.EventHandler(this.cbbTourCategory_SelectedIndexChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PBL3.Properties.Resources.Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(552, 52);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(205, 83);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 30;
+            this.pictureBox1.TabStop = false;
             // 
             // TourManagement
             // 
@@ -208,7 +210,7 @@
             this.Controls.Add(this.flowLayoutTours);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TourManagement";
-            this.Size = new System.Drawing.Size(1274, 756);
+            this.Size = new System.Drawing.Size(1386, 851);
             this.Load += new System.EventHandler(this.TourManagement_Load);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

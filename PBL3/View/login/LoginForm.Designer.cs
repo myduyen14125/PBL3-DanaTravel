@@ -125,7 +125,7 @@
             this.lbTitle.BackColor = System.Drawing.Color.Transparent;
             this.lbTitle.Font = new System.Drawing.Font("Cooper Black", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
-            this.lbTitle.Location = new System.Drawing.Point(566, 85);
+            this.lbTitle.Location = new System.Drawing.Point(541, 88);
             this.lbTitle.Name = "lbTitle";
             this.lbTitle.Size = new System.Drawing.Size(472, 42);
             this.lbTitle.TabIndex = 6;
@@ -147,11 +147,10 @@
             // 
             // bgPicBox
             // 
-            this.bgPicBox.Image = global::PBL3.Properties.Resources.BienMyKheScrew;
-            this.bgPicBox.Location = new System.Drawing.Point(-2, -1);
+            this.bgPicBox.Image = global::PBL3.Properties.Resources.bgForgetPass;
+            this.bgPicBox.Location = new System.Drawing.Point(-170, -2);
             this.bgPicBox.Name = "bgPicBox";
-            this.bgPicBox.Size = new System.Drawing.Size(587, 570);
-            this.bgPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bgPicBox.Size = new System.Drawing.Size(845, 570);
             this.bgPicBox.TabIndex = 0;
             this.bgPicBox.TabStop = false;
             // 

@@ -94,7 +94,7 @@
             this.btnCancel.FillColor = System.Drawing.Color.Transparent;
             this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
+            this.btnCancel.Image = global::PBL3.Properties.Resources.cancelBtn;
             this.btnCancel.ImageSize = new System.Drawing.Size(30, 30);
             this.btnCancel.Location = new System.Drawing.Point(815, -1);
             this.btnCancel.Name = "btnCancel";
@@ -112,7 +112,7 @@
             this.btnAccept.FillColor = System.Drawing.Color.Transparent;
             this.btnAccept.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnAccept.ForeColor = System.Drawing.Color.White;
-            this.btnAccept.Image = ((System.Drawing.Image)(resources.GetObject("btnAccept.Image")));
+            this.btnAccept.Image = global::PBL3.Properties.Resources.icon_success;
             this.btnAccept.ImageSize = new System.Drawing.Size(30, 30);
             this.btnAccept.Location = new System.Drawing.Point(738, -1);
             this.btnAccept.Name = "btnAccept";

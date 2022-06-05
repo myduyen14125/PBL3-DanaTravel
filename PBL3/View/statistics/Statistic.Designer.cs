@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.chartSale = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btnStatistic = new Guna.UI2.WinForms.Guna2Button();
             this.txtYear = new System.Windows.Forms.TextBox();
@@ -55,24 +55,24 @@
             // 
             // chartSale
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chartSale.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chartSale.Legends.Add(legend5);
+            chartArea4.Name = "ChartArea1";
+            this.chartSale.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chartSale.Legends.Add(legend4);
             this.chartSale.Location = new System.Drawing.Point(36, 551);
             this.chartSale.Name = "chartSale";
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.LegendText = "Doanh thu";
-            series5.Name = "chartSale";
-            this.chartSale.Series.Add(series5);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.LegendText = "Doanh thu";
+            series4.Name = "chartSale";
+            this.chartSale.Series.Add(series4);
             this.chartSale.Size = new System.Drawing.Size(1310, 283);
             this.chartSale.TabIndex = 2;
             this.chartSale.Text = "chart1";
-            title5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            title5.Name = "Title1";
-            title5.Text = "Biểu đồ thống kê doanh thu";
-            this.chartSale.Titles.Add(title5);
+            title4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            title4.Name = "Title1";
+            title4.Text = "Biểu đồ thống kê doanh thu";
+            this.chartSale.Titles.Add(title4);
             // 
             // btnStatistic
             // 
@@ -145,7 +145,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.ForeColor = System.Drawing.Color.DarkRed;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.label4.Location = new System.Drawing.Point(598, 26);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(177, 39);
@@ -164,7 +164,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.label5.Location = new System.Drawing.Point(193, 109);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(196, 29);
@@ -204,6 +204,7 @@
             this.PercentSale.HeaderText = "Phần trăm";
             this.PercentSale.MinimumWidth = 6;
             this.PercentSale.Name = "PercentSale";
+            this.PercentSale.Width = 125;
             // 
             // label6
             // 
@@ -230,6 +231,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.lbTotalPrice);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dataTourOutStanding);

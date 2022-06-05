@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBookTour));
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.txtCCCD = new System.Windows.Forms.TextBox();
             this.CCCD = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -44,7 +40,6 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtPriceChildren = new System.Windows.Forms.Label();
@@ -68,75 +63,43 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(-1, 45);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(379, 2);
-            this.pictureBox3.TabIndex = 14;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 152);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(379, 2);
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1, 99);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(379, 2);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.White;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(0, 242);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(379, 2);
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
             // 
             // txtCCCD
             // 
-            this.txtCCCD.Location = new System.Drawing.Point(186, 591);
+            this.txtCCCD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCCCD.Location = new System.Drawing.Point(198, 649);
             this.txtCCCD.Name = "txtCCCD";
-            this.txtCCCD.Size = new System.Drawing.Size(252, 22);
+            this.txtCCCD.Size = new System.Drawing.Size(252, 27);
             this.txtCCCD.TabIndex = 53;
             // 
             // CCCD
             // 
             this.CCCD.AutoSize = true;
-            this.CCCD.Location = new System.Drawing.Point(71, 591);
+            this.CCCD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CCCD.Location = new System.Drawing.Point(83, 649);
             this.CCCD.Name = "CCCD";
-            this.CCCD.Size = new System.Drawing.Size(44, 16);
+            this.CCCD.Size = new System.Drawing.Size(58, 20);
             this.CCCD.TabIndex = 52;
             this.CCCD.Text = "CCCD";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.White;
             this.label11.Font = new System.Drawing.Font("Modern No. 20", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.DarkRed;
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.label11.Location = new System.Drawing.Point(261, 9);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(447, 35);
@@ -145,88 +108,90 @@
             // 
             // btnBookTour
             // 
+            this.btnBookTour.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.btnBookTour.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBookTour.Location = new System.Drawing.Point(668, 629);
+            this.btnBookTour.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookTour.ForeColor = System.Drawing.Color.White;
+            this.btnBookTour.Location = new System.Drawing.Point(680, 687);
             this.btnBookTour.Name = "btnBookTour";
-            this.btnBookTour.Size = new System.Drawing.Size(87, 40);
+            this.btnBookTour.Size = new System.Drawing.Size(134, 40);
             this.btnBookTour.TabIndex = 50;
             this.btnBookTour.Text = "Book Tour";
-            this.btnBookTour.UseVisualStyleBackColor = true;
+            this.btnBookTour.UseVisualStyleBackColor = false;
             this.btnBookTour.Click += new System.EventHandler(this.btnBookTour_Click);
             // 
             // txtTotalPrice
             // 
             this.txtTotalPrice.Enabled = false;
-            this.txtTotalPrice.Location = new System.Drawing.Point(651, 581);
+            this.txtTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalPrice.Location = new System.Drawing.Point(663, 639);
             this.txtTotalPrice.Name = "txtTotalPrice";
-            this.txtTotalPrice.Size = new System.Drawing.Size(252, 22);
+            this.txtTotalPrice.Size = new System.Drawing.Size(252, 27);
             this.txtTotalPrice.TabIndex = 49;
             // 
             // txtNumberChildrens
             // 
-            this.txtNumberChildrens.Location = new System.Drawing.Point(651, 537);
+            this.txtNumberChildrens.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumberChildrens.Location = new System.Drawing.Point(663, 595);
             this.txtNumberChildrens.Name = "txtNumberChildrens";
-            this.txtNumberChildrens.Size = new System.Drawing.Size(252, 22);
+            this.txtNumberChildrens.Size = new System.Drawing.Size(252, 27);
             this.txtNumberChildrens.TabIndex = 48;
             this.txtNumberChildrens.TextChanged += new System.EventHandler(this.textChange);
             // 
             // txtNumberAdults
             // 
-            this.txtNumberAdults.Location = new System.Drawing.Point(653, 492);
+            this.txtNumberAdults.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumberAdults.Location = new System.Drawing.Point(665, 550);
             this.txtNumberAdults.Name = "txtNumberAdults";
-            this.txtNumberAdults.Size = new System.Drawing.Size(252, 22);
+            this.txtNumberAdults.Size = new System.Drawing.Size(252, 27);
             this.txtNumberAdults.TabIndex = 47;
             this.txtNumberAdults.TextChanged += new System.EventHandler(this.textChange);
             // 
             // txtNote
             // 
-            this.txtNote.Location = new System.Drawing.Point(651, 443);
+            this.txtNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNote.Location = new System.Drawing.Point(663, 501);
             this.txtNote.Name = "txtNote";
-            this.txtNote.Size = new System.Drawing.Size(252, 22);
+            this.txtNote.Size = new System.Drawing.Size(252, 27);
             this.txtNote.TabIndex = 46;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(186, 540);
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(198, 598);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(252, 22);
+            this.txtEmail.Size = new System.Drawing.Size(252, 27);
             this.txtEmail.TabIndex = 45;
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(186, 492);
+            this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhone.Location = new System.Drawing.Point(198, 550);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(252, 22);
+            this.txtPhone.Size = new System.Drawing.Size(252, 27);
             this.txtPhone.TabIndex = 44;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(186, 443);
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Location = new System.Drawing.Point(198, 501);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(252, 22);
+            this.txtName.Size = new System.Drawing.Size(252, 27);
             this.txtName.TabIndex = 43;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.White;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(1, 196);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(379, 2);
-            this.pictureBox5.TabIndex = 10;
-            this.pictureBox5.TabStop = false;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(522, 587);
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(534, 645);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(85, 16);
+            this.label13.Size = new System.Drawing.Size(105, 20);
             this.label13.TabIndex = 42;
             this.label13.Text = "Tổng giá tiền";
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(231)))), ((int)(((byte)(220)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.txtPriceChildren);
             this.panel2.Controls.Add(this.txtPriceAdult);
@@ -303,7 +268,7 @@
             // 
             this.lbTourName1.AutoSize = true;
             this.lbTourName1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTourName1.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbTourName1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.lbTourName1.Location = new System.Drawing.Point(22, 14);
             this.lbTourName1.Name = "lbTourName1";
             this.lbTourName1.Size = new System.Drawing.Size(109, 19);
@@ -362,17 +327,21 @@
             // 
             // btnBack
             // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBack.Location = new System.Drawing.Point(293, 629);
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(267, 687);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(93, 40);
+            this.btnBack.Size = new System.Drawing.Size(119, 40);
             this.btnBack.TabIndex = 33;
             this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // panelPicture
             // 
+            this.panelPicture.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(231)))), ((int)(((byte)(220)))));
             this.panelPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelPicture.Location = new System.Drawing.Point(74, 71);
             this.panelPicture.Name = "panelPicture";
@@ -382,45 +351,50 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(71, 543);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(83, 601);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 16);
+            this.label4.Size = new System.Drawing.Size(51, 20);
             this.label4.TabIndex = 38;
             this.label4.Text = "Email";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(71, 492);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(83, 550);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 16);
+            this.label3.Size = new System.Drawing.Size(106, 20);
             this.label3.TabIndex = 37;
             this.label3.Text = "Số điện thoại";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(522, 492);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(534, 550);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(81, 16);
+            this.label7.Size = new System.Drawing.Size(101, 20);
             this.label7.TabIndex = 40;
             this.label7.Text = "Số người lớn";
             // 
             // lbName
             // 
             this.lbName.AutoSize = true;
-            this.lbName.Location = new System.Drawing.Point(71, 443);
+            this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName.Location = new System.Drawing.Point(83, 501);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(64, 16);
+            this.lbName.Size = new System.Drawing.Size(81, 20);
             this.lbName.TabIndex = 36;
             this.lbName.Text = "Họ và tên";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(522, 443);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(534, 501);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 16);
+            this.label6.Size = new System.Drawing.Size(67, 20);
             this.label6.TabIndex = 39;
             this.label6.Text = "Ghi chú";
             // 
@@ -428,8 +402,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkRed;
-            this.label2.Location = new System.Drawing.Point(367, 393);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
+            this.label2.Location = new System.Drawing.Point(383, 450);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(255, 25);
             this.label2.TabIndex = 35;
@@ -438,9 +412,10 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(524, 543);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(536, 601);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(64, 16);
+            this.label9.Size = new System.Drawing.Size(82, 20);
             this.label9.TabIndex = 41;
             this.label9.Text = "Số trẻ em";
             // 
@@ -448,18 +423,69 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.ForeColor = System.Drawing.Color.DarkRed;
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.label5.Location = new System.Drawing.Point(549, 366);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(241, 18);
             this.label5.TabIndex = 54;
             this.label5.Text = "* Giá trên không bao gồm thuế VAT";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(-1, 45);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(379, 2);
+            this.pictureBox3.TabIndex = 14;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 152);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(379, 2);
+            this.pictureBox2.TabIndex = 13;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1, 99);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(379, 2);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.White;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(1, 196);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(379, 2);
+            this.pictureBox5.TabIndex = 10;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.White;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(0, 242);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(379, 2);
+            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabStop = false;
+            // 
             // FormBookTour
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(977, 681);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1013, 753);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtCCCD);
             this.Controls.Add(this.CCCD);
@@ -484,15 +510,16 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label9);
             this.Name = "FormBookTour";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormBookTour";
             this.Load += new System.EventHandler(this.FormBookTour_Load);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

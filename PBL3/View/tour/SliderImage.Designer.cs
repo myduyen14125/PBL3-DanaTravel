@@ -31,10 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SliderImage));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnDeleteImage = new System.Windows.Forms.Button();
             this.btnRight = new System.Windows.Forms.Button();
             this.btnLeft = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnDeleteImage = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,6 +43,18 @@
             this.timer1.Enabled = true;
             this.timer1.Interval = 2000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // btnDeleteImage
+            // 
+            this.btnDeleteImage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDeleteImage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDeleteImage.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteImage.Image")));
+            this.btnDeleteImage.Location = new System.Drawing.Point(248, 185);
+            this.btnDeleteImage.Name = "btnDeleteImage";
+            this.btnDeleteImage.Size = new System.Drawing.Size(42, 34);
+            this.btnDeleteImage.TabIndex = 8;
+            this.btnDeleteImage.UseVisualStyleBackColor = true;
+            this.btnDeleteImage.Click += new System.EventHandler(this.btnDeleteImage_Click);
             // 
             // btnRight
             // 
@@ -71,6 +83,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
@@ -78,18 +91,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
-            // 
-            // btnDeleteImage
-            // 
-            this.btnDeleteImage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDeleteImage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDeleteImage.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteImage.Image")));
-            this.btnDeleteImage.Location = new System.Drawing.Point(229, 172);
-            this.btnDeleteImage.Name = "btnDeleteImage";
-            this.btnDeleteImage.Size = new System.Drawing.Size(42, 34);
-            this.btnDeleteImage.TabIndex = 8;
-            this.btnDeleteImage.UseVisualStyleBackColor = true;
-            this.btnDeleteImage.Click += new System.EventHandler(this.btnDeleteImage_Click);
             // 
             // SliderImage
             // 

@@ -44,7 +44,7 @@
             // 
             this.matchCase.AutoSize = true;
             this.matchCase.Location = new System.Drawing.Point(19, 90);
-            this.matchCase.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.matchCase.Margin = new System.Windows.Forms.Padding(4);
             this.matchCase.Name = "matchCase";
             this.matchCase.Size = new System.Drawing.Size(98, 20);
             this.matchCase.TabIndex = 13;
@@ -55,7 +55,7 @@
             // 
             this.matchWholeWord.AutoSize = true;
             this.matchWholeWord.Location = new System.Drawing.Point(19, 58);
-            this.matchWholeWord.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.matchWholeWord.Margin = new System.Windows.Forms.Padding(4);
             this.matchWholeWord.Name = "matchWholeWord";
             this.matchWholeWord.Size = new System.Drawing.Size(163, 20);
             this.matchWholeWord.TabIndex = 12;
@@ -67,9 +67,9 @@
             this.groupBox1.Controls.Add(this.downButton);
             this.groupBox1.Controls.Add(this.upButton);
             this.groupBox1.Location = new System.Drawing.Point(207, 53);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(149, 58);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
@@ -79,7 +79,7 @@
             // 
             this.downButton.AutoSize = true;
             this.downButton.Location = new System.Drawing.Point(68, 23);
-            this.downButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.downButton.Margin = new System.Windows.Forms.Padding(4);
             this.downButton.Name = "downButton";
             this.downButton.Size = new System.Drawing.Size(62, 20);
             this.downButton.TabIndex = 1;
@@ -91,7 +91,7 @@
             // 
             this.upButton.AutoSize = true;
             this.upButton.Location = new System.Drawing.Point(8, 23);
-            this.upButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.upButton.Margin = new System.Windows.Forms.Padding(4);
             this.upButton.Name = "upButton";
             this.upButton.Size = new System.Drawing.Size(46, 20);
             this.upButton.TabIndex = 0;
@@ -103,7 +103,7 @@
             // 
             this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cancelButton.Location = new System.Drawing.Point(376, 53);
-            this.cancelButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cancelButton.Margin = new System.Windows.Forms.Padding(4);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(100, 28);
             this.cancelButton.TabIndex = 10;
@@ -114,7 +114,7 @@
             // findButton
             // 
             this.findButton.Location = new System.Drawing.Point(376, 16);
-            this.findButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.findButton.Margin = new System.Windows.Forms.Padding(4);
             this.findButton.Name = "findButton";
             this.findButton.Size = new System.Drawing.Size(100, 28);
             this.findButton.TabIndex = 9;
@@ -125,7 +125,7 @@
             // searchString
             // 
             this.searchString.Location = new System.Drawing.Point(103, 17);
-            this.searchString.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.searchString.Margin = new System.Windows.Forms.Padding(4);
             this.searchString.Name = "searchString";
             this.searchString.Size = new System.Drawing.Size(252, 22);
             this.searchString.TabIndex = 8;
@@ -156,8 +156,9 @@
             this.Controls.Add(this.searchString);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SearchDialog";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SearchDialog";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

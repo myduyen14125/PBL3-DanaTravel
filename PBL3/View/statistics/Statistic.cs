@@ -74,7 +74,7 @@ namespace PBL3.View.statistics
                 });
                 dataTourOutStanding.Rows.Add(revenues[i].name, revenues[i].total.ToString("###,###,###,###"), percent);
             }
-            double percent_res = Convert.ToDouble((total_res * 100.0 / total_price).ToString("##.##"));
+            double percent_res = Convert.ToDouble((total_res * 100.0 / total_price).ToString("###.###"));
             if (percent_res >= 0.001)
             {
                 series.Add(new PieSeries()

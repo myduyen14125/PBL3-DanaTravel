@@ -333,6 +333,9 @@
     <EmbeddedResource Include="viewHtml\Editor.resx">
       <DependentUpon>Editor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="viewHtml\EditorForm.resx">
+      <DependentUpon>EditorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="viewHtml\SearchDialog.resx">
       <DependentUpon>SearchDialog.cs</DependentUpon>
     </EmbeddedResource>
@@ -689,6 +692,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\56986749_694943527575452_6002140096634028032_n1.jpg" />
+    <None Include="Resources\avatar.jpg" />
+    <None Include="Resources\cancelBtn.png" />
     <Content Include="Resources\reload.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">

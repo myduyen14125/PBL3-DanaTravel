@@ -41,3 +41,4 @@ C:\Users\Laptop\source\repos\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.CoreComp
 C:\Users\Laptop\source\repos\PBL3-DanaTravel\Util\obj\Debug\Util.exe
 C:\Users\Laptop\source\repos\PBL3-DanaTravel\Util\obj\Debug\Util.pdb
 E:\PBL3-DanaTravel\Util\obj\Debug\Util.Form1.resources
+E:\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.AssemblyReference.cache

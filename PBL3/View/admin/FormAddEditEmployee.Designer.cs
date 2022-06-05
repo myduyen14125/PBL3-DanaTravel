@@ -61,27 +61,27 @@ namespace PBL3.View.admin
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(69, 305);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 17);
+            this.label6.Size = new System.Drawing.Size(0, 16);
             this.label6.TabIndex = 5;
             // 
             // txtName
             // 
-            this.txtName.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
             this.txtName.Location = new System.Drawing.Point(411, 82);
             this.txtName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(293, 26);
+            this.txtName.Size = new System.Drawing.Size(293, 30);
             this.txtName.TabIndex = 8;
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.CalendarTrailingForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Location = new System.Drawing.Point(411, 150);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(293, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(293, 30);
             this.dateTimePicker1.TabIndex = 9;
             // 
             // radioMale
@@ -108,43 +108,43 @@ namespace PBL3.View.admin
             // 
             // txtPhone
             // 
-            this.txtPhone.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
             this.txtPhone.Location = new System.Drawing.Point(404, 340);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(300, 26);
+            this.txtPhone.Size = new System.Drawing.Size(300, 30);
             this.txtPhone.TabIndex = 13;
             // 
             // txtEmail
             // 
-            this.txtEmail.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
             this.txtEmail.Location = new System.Drawing.Point(404, 401);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(300, 26);
+            this.txtEmail.Size = new System.Drawing.Size(300, 30);
             this.txtEmail.TabIndex = 14;
             this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // txtAddress
             // 
-            this.txtAddress.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
             this.txtAddress.Location = new System.Drawing.Point(404, 464);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(300, 26);
+            this.txtAddress.Size = new System.Drawing.Size(300, 30);
             this.txtAddress.TabIndex = 15;
             // 
             // txtSalary
             // 
-            this.txtSalary.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSalary.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSalary.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
             this.txtSalary.Location = new System.Drawing.Point(404, 529);
             this.txtSalary.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSalary.Name = "txtSalary";
-            this.txtSalary.Size = new System.Drawing.Size(300, 26);
+            this.txtSalary.Size = new System.Drawing.Size(300, 30);
             this.txtSalary.TabIndex = 16;
             // 
             // splitter1
@@ -158,35 +158,35 @@ namespace PBL3.View.admin
             // 
             // cbbDivision
             // 
-            this.cbbDivision.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbDivision.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbDivision.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
             this.cbbDivision.FormattingEnabled = true;
             this.cbbDivision.Location = new System.Drawing.Point(917, 150);
             this.cbbDivision.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbDivision.Name = "cbbDivision";
-            this.cbbDivision.Size = new System.Drawing.Size(300, 27);
+            this.cbbDivision.Size = new System.Drawing.Size(300, 31);
             this.cbbDivision.TabIndex = 18;
             // 
             // cbbPosition
             // 
-            this.cbbPosition.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbPosition.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbPosition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
             this.cbbPosition.FormattingEnabled = true;
             this.cbbPosition.Location = new System.Drawing.Point(917, 213);
             this.cbbPosition.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbPosition.Name = "cbbPosition";
-            this.cbbPosition.Size = new System.Drawing.Size(300, 27);
+            this.cbbPosition.Size = new System.Drawing.Size(300, 31);
             this.cbbPosition.TabIndex = 21;
             // 
             // cbbEducation
             // 
-            this.cbbEducation.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbEducation.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbEducation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
             this.cbbEducation.FormattingEnabled = true;
             this.cbbEducation.Location = new System.Drawing.Point(1019, 272);
             this.cbbEducation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbEducation.Name = "cbbEducation";
-            this.cbbEducation.Size = new System.Drawing.Size(199, 27);
+            this.cbbEducation.Size = new System.Drawing.Size(199, 31);
             this.cbbEducation.TabIndex = 23;
             // 
             // btnCreateRole
@@ -209,7 +209,7 @@ namespace PBL3.View.admin
             // 
             // dataGridViewPer
             // 
-            this.dataGridViewPer.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
+            this.dataGridViewPer.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewPer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewPer.Location = new System.Drawing.Point(800, 402);
             this.dataGridViewPer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -223,13 +223,13 @@ namespace PBL3.View.admin
             // txtAccount
             // 
             this.txtAccount.Enabled = false;
-            this.txtAccount.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAccount.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
             this.txtAccount.Location = new System.Drawing.Point(404, 592);
             this.txtAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAccount.Name = "txtAccount";
             this.txtAccount.ReadOnly = true;
-            this.txtAccount.Size = new System.Drawing.Size(300, 26);
+            this.txtAccount.Size = new System.Drawing.Size(300, 30);
             this.txtAccount.TabIndex = 30;
             // 
             // btnCancel
@@ -268,19 +268,19 @@ namespace PBL3.View.admin
             // 
             // txtCCCD
             // 
-            this.txtCCCD.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCCCD.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCCCD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
             this.txtCCCD.Location = new System.Drawing.Point(404, 273);
             this.txtCCCD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCCCD.Name = "txtCCCD";
-            this.txtCCCD.Size = new System.Drawing.Size(300, 26);
+            this.txtCCCD.Size = new System.Drawing.Size(300, 30);
             this.txtCCCD.TabIndex = 12;
             // 
             // checkListBoxRole
             // 
             this.checkListBoxRole.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
             this.checkListBoxRole.CheckOnClick = true;
-            this.checkListBoxRole.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkListBoxRole.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkListBoxRole.FormattingEnabled = true;
             this.checkListBoxRole.Location = new System.Drawing.Point(852, 331);
             this.checkListBoxRole.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -292,35 +292,39 @@ namespace PBL3.View.admin
             // txtPassword
             // 
             this.txtPassword.Enabled = false;
-            this.txtPassword.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
             this.txtPassword.Location = new System.Drawing.Point(917, 80);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.ReadOnly = true;
-            this.txtPassword.Size = new System.Drawing.Size(300, 26);
+            this.txtPassword.Size = new System.Drawing.Size(300, 30);
             this.txtPassword.TabIndex = 31;
             // 
             // picturebox
             // 
+            this.picturebox.BackColor = System.Drawing.Color.White;
             this.picturebox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picturebox.Location = new System.Drawing.Point(27, 82);
             this.picturebox.Name = "picturebox";
-            this.picturebox.Size = new System.Drawing.Size(202, 181);
+            this.picturebox.Size = new System.Drawing.Size(219, 203);
             this.picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picturebox.TabIndex = 36;
             this.picturebox.TabStop = false;
             // 
             // btnChooseImage
             // 
+            this.btnChooseImage.BackColor = System.Drawing.Color.White;
             this.btnChooseImage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnChooseImage.Location = new System.Drawing.Point(72, 288);
+            this.btnChooseImage.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChooseImage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
+            this.btnChooseImage.Location = new System.Drawing.Point(49, 305);
             this.btnChooseImage.Name = "btnChooseImage";
-            this.btnChooseImage.Size = new System.Drawing.Size(115, 34);
+            this.btnChooseImage.Size = new System.Drawing.Size(164, 34);
             this.btnChooseImage.TabIndex = 37;
             this.btnChooseImage.Text = "Choose Image";
-            this.btnChooseImage.UseVisualStyleBackColor = true;
+            this.btnChooseImage.UseVisualStyleBackColor = false;
             this.btnChooseImage.Click += new System.EventHandler(this.btnChooseImage_Click);
             // 
             // FormAddEditEmployee

@@ -56,10 +56,6 @@ namespace PBL3.View.tour
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbTime = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.lbTourName1 = new System.Windows.Forms.Label();
@@ -76,15 +72,19 @@ namespace PBL3.View.tour
             this.btnOrderTour = new System.Windows.Forms.Button();
             this.lbPrice = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMain.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMain
@@ -100,9 +100,9 @@ namespace PBL3.View.tour
             this.panelMain.Controls.Add(this.lbTourName);
             this.panelMain.Controls.Add(this.btnBack);
             this.panelMain.Controls.Add(this.panel6);
-            this.panelMain.Location = new System.Drawing.Point(37, 19);
+            this.panelMain.Location = new System.Drawing.Point(37, 919);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1051, 1261);
+            this.panelMain.Size = new System.Drawing.Size(1087, 1261);
             this.panelMain.TabIndex = 0;
             // 
             // panel5
@@ -119,7 +119,7 @@ namespace PBL3.View.tour
             this.panel5.Controls.Add(this.label9);
             this.panel5.Location = new System.Drawing.Point(36, 1047);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(998, 185);
+            this.panel5.Size = new System.Drawing.Size(1024, 185);
             this.panel5.TabIndex = 41;
             // 
             // label21
@@ -233,7 +233,7 @@ namespace PBL3.View.tour
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Rockwell", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.label7.Location = new System.Drawing.Point(36, 593);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(143, 34);
@@ -244,7 +244,7 @@ namespace PBL3.View.tour
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Rockwell", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.label6.Location = new System.Drawing.Point(30, 317);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(309, 34);
@@ -256,7 +256,7 @@ namespace PBL3.View.tour
             this.htmlDescription.Location = new System.Drawing.Point(36, 630);
             this.htmlDescription.MinimumSize = new System.Drawing.Size(20, 20);
             this.htmlDescription.Name = "htmlDescription";
-            this.htmlDescription.Size = new System.Drawing.Size(998, 391);
+            this.htmlDescription.Size = new System.Drawing.Size(1024, 391);
             this.htmlDescription.TabIndex = 36;
             // 
             // panel3
@@ -373,48 +373,8 @@ namespace PBL3.View.tour
             this.panel2.Controls.Add(this.lbDepartureDate1);
             this.panel2.Location = new System.Drawing.Point(644, 83);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(371, 250);
+            this.panel2.Size = new System.Drawing.Size(416, 250);
             this.panel2.TabIndex = 33;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.White;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(0, 199);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(370, 2);
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(0, 148);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(370, 2);
-            this.pictureBox3.TabIndex = 9;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-1, 98);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(370, 2);
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 47);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(370, 2);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
             // 
             // lbTime
             // 
@@ -440,7 +400,7 @@ namespace PBL3.View.tour
             // 
             this.lbTourName1.AutoSize = true;
             this.lbTourName1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTourName1.ForeColor = System.Drawing.Color.Tomato;
+            this.lbTourName1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.lbTourName1.Location = new System.Drawing.Point(22, 14);
             this.lbTourName1.Name = "lbTourName1";
             this.lbTourName1.Size = new System.Drawing.Size(55, 19);
@@ -519,7 +479,7 @@ namespace PBL3.View.tour
             // 
             this.lbTourName.AutoSize = true;
             this.lbTourName.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbTourName.ForeColor = System.Drawing.Color.OrangeRed;
+            this.lbTourName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.lbTourName.Location = new System.Drawing.Point(225, 21);
             this.lbTourName.Name = "lbTourName";
             this.lbTourName.Size = new System.Drawing.Size(145, 32);
@@ -539,22 +499,24 @@ namespace PBL3.View.tour
             // 
             // panel6
             // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(231)))), ((int)(((byte)(220)))));
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.btnOrderTour);
             this.panel6.Controls.Add(this.lbPrice);
             this.panel6.Controls.Add(this.label1);
             this.panel6.Location = new System.Drawing.Point(645, 363);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(369, 135);
+            this.panel6.Size = new System.Drawing.Size(415, 135);
             this.panel6.TabIndex = 34;
             // 
             // btnOrderTour
             // 
-            this.btnOrderTour.BackColor = System.Drawing.Color.Coral;
+            this.btnOrderTour.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.btnOrderTour.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOrderTour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrderTour.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrderTour.Location = new System.Drawing.Point(29, 70);
+            this.btnOrderTour.ForeColor = System.Drawing.Color.White;
+            this.btnOrderTour.Location = new System.Drawing.Point(112, 81);
             this.btnOrderTour.Name = "btnOrderTour";
             this.btnOrderTour.Size = new System.Drawing.Size(229, 40);
             this.btnOrderTour.TabIndex = 2;
@@ -566,7 +528,7 @@ namespace PBL3.View.tour
             // 
             this.lbPrice.AutoSize = true;
             this.lbPrice.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPrice.Location = new System.Drawing.Point(107, 18);
+            this.lbPrice.Location = new System.Drawing.Point(180, 17);
             this.lbPrice.Name = "lbPrice";
             this.lbPrice.Size = new System.Drawing.Size(70, 25);
             this.lbPrice.TabIndex = 1;
@@ -576,20 +538,61 @@ namespace PBL3.View.tour
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 21);
+            this.label1.Location = new System.Drawing.Point(28, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Giá từ";
             // 
-            // FormTourDetail
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.White;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(0, 199);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(370, 2);
+            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(0, 148);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(370, 2);
+            this.pictureBox3.TabIndex = 9;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(-1, 98);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(370, 2);
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Black;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 47);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(370, 2);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
+            // TourDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panelMain);
-            this.Name = "FormTourDetail";
-            this.Size = new System.Drawing.Size(1095, 830);
+            this.Name = "TourDetail";
+            this.Size = new System.Drawing.Size(1154, 830);
             this.Load += new System.EventHandler(this.FormTourDetail_Load);
             this.panelMain.ResumeLayout(false);
             this.panelMain.PerformLayout();
@@ -599,12 +602,12 @@ namespace PBL3.View.tour
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }

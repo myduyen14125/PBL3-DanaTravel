@@ -38,7 +38,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
             this.panel3.Controls.Add(this.myTextBox1);
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1163, 53);
             this.panel3.TabIndex = 29;
@@ -53,7 +53,7 @@
             this.myTextBox1.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myTextBox1.ForeColor = System.Drawing.Color.White;
             this.myTextBox1.Location = new System.Drawing.Point(40, 6);
-            this.myTextBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.myTextBox1.Margin = new System.Windows.Forms.Padding(5);
             this.myTextBox1.Multiline = false;
             this.myTextBox1.Name = "myTextBox1";
             this.myTextBox1.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
@@ -69,8 +69,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel3);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CustomerAccount";
             this.Size = new System.Drawing.Size(1158, 710);
             this.panel3.ResumeLayout(false);

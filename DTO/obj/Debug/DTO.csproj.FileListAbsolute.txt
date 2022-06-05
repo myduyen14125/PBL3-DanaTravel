@@ -74,3 +74,6 @@ D:\PBL\PBL3-DanaTravel\DTO\obj\Debug\DTO.csproj.SuggestedBindingRedirects.cache
 D:\PBL\PBL3-DanaTravel\DTO\bin\Debug\AutoMapper.dll
 D:\PBL\PBL3-DanaTravel\DTO\bin\Debug\AutoMapper.pdb
 D:\PBL\PBL3-DanaTravel\DTO\bin\Debug\AutoMapper.xml
+E:\PBL3-DanaTravel\DTO\bin\Debug\AutoMapper.dll
+E:\PBL3-DanaTravel\DTO\bin\Debug\AutoMapper.pdb
+E:\PBL3-DanaTravel\DTO\bin\Debug\AutoMapper.xml

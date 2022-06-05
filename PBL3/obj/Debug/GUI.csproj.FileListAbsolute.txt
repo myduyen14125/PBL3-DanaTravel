@@ -305,7 +305,6 @@ E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.ticket.TicketItem.resources
 E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.ticket.TicketManagement.resources
 E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.TourManagement.resources
 E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.tour.FormAddEditTour.resources
-E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.tour.FormTourDetail.resources
 E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.tour.SliderImage.resources
 E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.tour.TourItem.resources
 E:\PBL3-DanaTravel\PBL3\obj\Debug\GUI.csproj.GenerateResource.cache
@@ -340,3 +339,11 @@ D:\PBL\PBL3-DanaTravel\PBL3\bin\Debug\LiveCharts.WinForms.pdb
 D:\PBL\PBL3-DanaTravel\PBL3\bin\Debug\LiveCharts.WinForms.xml
 D:\PBL\PBL3-DanaTravel\PBL3\bin\Debug\LiveCharts.Wpf.pdb
 D:\PBL\PBL3-DanaTravel\PBL3\bin\Debug\LiveCharts.Wpf.xml
+E:\PBL3-DanaTravel\PBL3\bin\Debug\AutoMapper.dll
+E:\PBL3-DanaTravel\PBL3\bin\Debug\AutoMapper.pdb
+E:\PBL3-DanaTravel\PBL3\bin\Debug\AutoMapper.xml
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.homepage.FormHistoryTransaction.resources
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.homepage.FormTourDetail.resources
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.homepage.TourTicketItemView.resources
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.View.tour.TourDetail.resources
+E:\PBL3-DanaTravel\PBL3\obj\Debug\PBL3.viewHtml.EditorForm.resources

@@ -45,24 +45,27 @@
             // txtName
             // 
             this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(240)))), ((int)(((byte)(243)))));
+            this.txtName.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
-            this.txtName.Location = new System.Drawing.Point(535, 89);
+            this.txtName.Location = new System.Drawing.Point(535, 88);
             this.txtName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(273, 22);
+            this.txtName.Size = new System.Drawing.Size(273, 30);
             this.txtName.TabIndex = 7;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(535, 170);
+            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(535, 173);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(273, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(273, 30);
             this.dateTimePicker1.TabIndex = 8;
             // 
             // radioMale
             // 
             this.radioMale.AutoSize = true;
+            this.radioMale.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioMale.Location = new System.Drawing.Point(868, 268);
             this.radioMale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioMale.Name = "radioMale";
@@ -74,6 +77,7 @@
             // radioFemale
             // 
             this.radioFemale.AutoSize = true;
+            this.radioFemale.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioFemale.Location = new System.Drawing.Point(601, 268);
             this.radioFemale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioFemale.Name = "radioFemale";
@@ -85,37 +89,41 @@
             // txtCCCD
             // 
             this.txtCCCD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(240)))), ((int)(((byte)(243)))));
+            this.txtCCCD.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCCCD.Location = new System.Drawing.Point(535, 343);
             this.txtCCCD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCCCD.Name = "txtCCCD";
-            this.txtCCCD.Size = new System.Drawing.Size(273, 22);
+            this.txtCCCD.Size = new System.Drawing.Size(273, 30);
             this.txtCCCD.TabIndex = 11;
             // 
             // txtPhone
             // 
             this.txtPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(240)))), ((int)(((byte)(243)))));
+            this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhone.Location = new System.Drawing.Point(535, 425);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(273, 22);
+            this.txtPhone.Size = new System.Drawing.Size(273, 30);
             this.txtPhone.TabIndex = 12;
             // 
             // txtEmail
             // 
             this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(240)))), ((int)(((byte)(243)))));
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(535, 512);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(273, 22);
+            this.txtEmail.Size = new System.Drawing.Size(273, 30);
             this.txtEmail.TabIndex = 13;
             // 
             // txtAddress
             // 
             this.txtAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(240)))), ((int)(((byte)(243)))));
+            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddress.Location = new System.Drawing.Point(535, 598);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(273, 22);
+            this.txtAddress.Size = new System.Drawing.Size(273, 30);
             this.txtAddress.TabIndex = 14;
             // 
             // btnSave
@@ -128,7 +136,7 @@
             this.btnSave.Location = new System.Drawing.Point(429, 644);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(109, 47);
+            this.btnSave.Size = new System.Drawing.Size(125, 47);
             this.btnSave.TabIndex = 15;
             this.btnSave.Text = "Save";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -155,11 +163,12 @@
             // cbbCustomerType
             // 
             this.cbbCustomerType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(240)))), ((int)(((byte)(243)))));
+            this.cbbCustomerType.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbCustomerType.FormattingEnabled = true;
             this.cbbCustomerType.Location = new System.Drawing.Point(1097, 342);
             this.cbbCustomerType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbCustomerType.Name = "cbbCustomerType";
-            this.cbbCustomerType.Size = new System.Drawing.Size(157, 24);
+            this.cbbCustomerType.Size = new System.Drawing.Size(157, 31);
             this.cbbCustomerType.TabIndex = 17;
             // 
             // label1

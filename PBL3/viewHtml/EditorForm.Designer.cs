@@ -248,7 +248,7 @@
             this.editor.BodyHtml = null;
             this.editor.BodyText = null;
             this.editor.Dock = System.Windows.Forms.DockStyle.Fill;
-            //this.editor.DocumentText = resources.GetString("editor.DocumentText");
+            this.editor.DocumentText = resources.GetString("editor.DocumentText");
             this.editor.EditorBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.editor.EditorForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.editor.FontSize = PBL3.viewHtml.FontSize.Three;
@@ -270,6 +270,7 @@
             this.MainMenuStrip = this.menuStrip;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EditorForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditorForm";
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();

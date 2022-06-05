@@ -32,6 +32,7 @@
             this.fileSystemWatcher2 = new System.IO.FileSystemWatcher();
             this.name = new System.Windows.Forms.Label();
             this.panelContent = new System.Windows.Forms.Panel();
+            this.statistic1 = new PBL3.View.statistics.Statistic();
             this.billManagement1 = new PBL3.View.bill.BillManagement();
             this.ticketManagement1 = new PBL3.View.ticket.TicketManagement();
             this.roleAccount1 = new PBL3.View.RoleAccount();
@@ -55,7 +56,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCustomer = new System.Windows.Forms.Button();
             this.btnEmployee = new System.Windows.Forms.Button();
-            this.statistic1 = new PBL3.View.statistics.Statistic();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher2)).BeginInit();
             this.panelContent.SuspendLayout();
@@ -103,6 +103,14 @@
             this.panelContent.Name = "panelContent";
             this.panelContent.Size = new System.Drawing.Size(1047, 712);
             this.panelContent.TabIndex = 30;
+            // 
+            // statistic1
+            // 
+            this.statistic1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.statistic1.Location = new System.Drawing.Point(0, 0);
+            this.statistic1.Name = "statistic1";
+            this.statistic1.Size = new System.Drawing.Size(1047, 712);
+            this.statistic1.TabIndex = 8;
             // 
             // billManagement1
             // 
@@ -483,17 +491,9 @@
             this.btnEmployee.UseVisualStyleBackColor = false;
             this.btnEmployee.Click += new System.EventHandler(this.btnEmployee_Click);
             // 
-            // statistic1
-            // 
-            this.statistic1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.statistic1.Location = new System.Drawing.Point(0, 0);
-            this.statistic1.Name = "statistic1";
-            this.statistic1.Size = new System.Drawing.Size(1047, 712);
-            this.statistic1.TabIndex = 8;
-            // 
             // AdminManagement
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(1246, 712);
             this.Controls.Add(this.panelContent);
             this.Controls.Add(this.navbar);

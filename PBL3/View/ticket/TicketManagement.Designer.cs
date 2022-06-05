@@ -32,14 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabStatus = new System.Windows.Forms.TabControl();
             this.tabStatusWait = new System.Windows.Forms.TabPage();
-            this.flowLayoutTabWait = new System.Windows.Forms.FlowLayoutPanel();
-            this.tabStatusOK = new System.Windows.Forms.TabPage();
-            this.flowLayouthTabOK = new System.Windows.Forms.FlowLayoutPanel();
-            this.tabStatusCancel = new System.Windows.Forms.TabPage();
-            this.flowLayoutTabCancel = new System.Windows.Forms.FlowLayoutPanel();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.btnReload = new Guna.UI2.WinForms.Guna2Button();
             this.headerFlowLayout = new Guna.UI2.WinForms.Guna2Panel();
             this.lbDate = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,6 +42,8 @@
             this.lbEmail = new System.Windows.Forms.Label();
             this.lbCCCD = new System.Windows.Forms.Label();
             this.lbName = new System.Windows.Forms.Label();
+            this.flowLayoutTabWait = new System.Windows.Forms.FlowLayoutPanel();
+            this.tabStatusOK = new System.Windows.Forms.TabPage();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -60,6 +54,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.flowLayouthTabOK = new System.Windows.Forms.FlowLayoutPanel();
+            this.tabStatusCancel = new System.Windows.Forms.TabPage();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -70,12 +66,16 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
+            this.flowLayoutTabCancel = new System.Windows.Forms.FlowLayoutPanel();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnReload = new Guna.UI2.WinForms.Guna2Button();
             this.tabStatus.SuspendLayout();
             this.tabStatusWait.SuspendLayout();
-            this.tabStatusOK.SuspendLayout();
-            this.tabStatusCancel.SuspendLayout();
             this.headerFlowLayout.SuspendLayout();
+            this.tabStatusOK.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
+            this.tabStatusCancel.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,8 +83,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkRed;
-            this.label1.Location = new System.Drawing.Point(510, 26);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
+            this.label1.Location = new System.Drawing.Point(510, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(356, 44);
             this.label1.TabIndex = 0;
@@ -99,7 +99,7 @@
             this.tabStatus.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.tabStatus.ImeMode = System.Windows.Forms.ImeMode.On;
             this.tabStatus.ItemSize = new System.Drawing.Size(150, 30);
-            this.tabStatus.Location = new System.Drawing.Point(75, 95);
+            this.tabStatus.Location = new System.Drawing.Point(96, 160);
             this.tabStatus.Name = "tabStatus";
             this.tabStatus.SelectedIndex = 0;
             this.tabStatus.Size = new System.Drawing.Size(1205, 644);
@@ -119,95 +119,11 @@
             this.tabStatusWait.Text = "Đang chờ xác nhận";
             this.tabStatusWait.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutTabWait
-            // 
-            this.flowLayoutTabWait.AutoScroll = true;
-            this.flowLayoutTabWait.Location = new System.Drawing.Point(12, 50);
-            this.flowLayoutTabWait.Name = "flowLayoutTabWait";
-            this.flowLayoutTabWait.Size = new System.Drawing.Size(1159, 538);
-            this.flowLayoutTabWait.TabIndex = 0;
-            // 
-            // tabStatusOK
-            // 
-            this.tabStatusOK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabStatusOK.Controls.Add(this.guna2Panel1);
-            this.tabStatusOK.Controls.Add(this.flowLayouthTabOK);
-            this.tabStatusOK.Location = new System.Drawing.Point(4, 34);
-            this.tabStatusOK.Name = "tabStatusOK";
-            this.tabStatusOK.Padding = new System.Windows.Forms.Padding(3);
-            this.tabStatusOK.Size = new System.Drawing.Size(1197, 606);
-            this.tabStatusOK.TabIndex = 1;
-            this.tabStatusOK.Text = "Đã xác nhận";
-            this.tabStatusOK.UseVisualStyleBackColor = true;
-            // 
-            // flowLayouthTabOK
-            // 
-            this.flowLayouthTabOK.Location = new System.Drawing.Point(12, 49);
-            this.flowLayouthTabOK.Name = "flowLayouthTabOK";
-            this.flowLayouthTabOK.Size = new System.Drawing.Size(1160, 533);
-            this.flowLayouthTabOK.TabIndex = 5;
-            // 
-            // tabStatusCancel
-            // 
-            this.tabStatusCancel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabStatusCancel.Controls.Add(this.guna2Panel2);
-            this.tabStatusCancel.Controls.Add(this.flowLayoutTabCancel);
-            this.tabStatusCancel.Location = new System.Drawing.Point(4, 34);
-            this.tabStatusCancel.Name = "tabStatusCancel";
-            this.tabStatusCancel.Size = new System.Drawing.Size(1197, 606);
-            this.tabStatusCancel.TabIndex = 2;
-            this.tabStatusCancel.Text = "Đã bị hủy";
-            this.tabStatusCancel.UseVisualStyleBackColor = true;
-            // 
-            // flowLayoutTabCancel
-            // 
-            this.flowLayoutTabCancel.Location = new System.Drawing.Point(3, 51);
-            this.flowLayoutTabCancel.Name = "flowLayoutTabCancel";
-            this.flowLayoutTabCancel.Size = new System.Drawing.Size(1165, 537);
-            this.flowLayoutTabCancel.TabIndex = 5;
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Location = new System.Drawing.Point(987, 77);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(189, 22);
-            this.txtSearch.TabIndex = 3;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(1187, 77);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch.TabIndex = 4;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            // 
-            // btnReload
-            // 
-            this.btnReload.BackColor = System.Drawing.SystemColors.Control;
-            this.btnReload.BorderColor = System.Drawing.Color.Transparent;
-            this.btnReload.BorderRadius = 18;
-            this.btnReload.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReload.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnReload.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnReload.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnReload.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnReload.FillColor = System.Drawing.Color.Transparent;
-            this.btnReload.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnReload.ForeColor = System.Drawing.Color.White;
-            this.btnReload.Image = ((System.Drawing.Image)(resources.GetObject("btnReload.Image")));
-            this.btnReload.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnReload.Location = new System.Drawing.Point(109, 39);
-            this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(50, 50);
-            this.btnReload.TabIndex = 10;
-            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
-            // 
             // headerFlowLayout
             // 
             this.headerFlowLayout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.headerFlowLayout.BackColor = System.Drawing.SystemColors.Info;
+            this.headerFlowLayout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
             this.headerFlowLayout.BorderColor = System.Drawing.Color.Black;
             this.headerFlowLayout.BorderThickness = 1;
             this.headerFlowLayout.Controls.Add(this.lbDate);
@@ -219,6 +135,7 @@
             this.headerFlowLayout.Controls.Add(this.lbEmail);
             this.headerFlowLayout.Controls.Add(this.lbCCCD);
             this.headerFlowLayout.Controls.Add(this.lbName);
+            this.headerFlowLayout.ForeColor = System.Drawing.Color.White;
             this.headerFlowLayout.Location = new System.Drawing.Point(12, 2);
             this.headerFlowLayout.Name = "headerFlowLayout";
             this.headerFlowLayout.Size = new System.Drawing.Size(1159, 42);
@@ -314,11 +231,32 @@
             this.lbName.TabIndex = 0;
             this.lbName.Text = "Họ và tên";
             // 
+            // flowLayoutTabWait
+            // 
+            this.flowLayoutTabWait.AutoScroll = true;
+            this.flowLayoutTabWait.Location = new System.Drawing.Point(12, 50);
+            this.flowLayoutTabWait.Name = "flowLayoutTabWait";
+            this.flowLayoutTabWait.Size = new System.Drawing.Size(1159, 538);
+            this.flowLayoutTabWait.TabIndex = 0;
+            // 
+            // tabStatusOK
+            // 
+            this.tabStatusOK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabStatusOK.Controls.Add(this.guna2Panel1);
+            this.tabStatusOK.Controls.Add(this.flowLayouthTabOK);
+            this.tabStatusOK.Location = new System.Drawing.Point(4, 34);
+            this.tabStatusOK.Name = "tabStatusOK";
+            this.tabStatusOK.Padding = new System.Windows.Forms.Padding(3);
+            this.tabStatusOK.Size = new System.Drawing.Size(1197, 606);
+            this.tabStatusOK.TabIndex = 1;
+            this.tabStatusOK.Text = "Đã xác nhận";
+            this.tabStatusOK.UseVisualStyleBackColor = true;
+            // 
             // guna2Panel1
             // 
             this.guna2Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Panel1.BackColor = System.Drawing.SystemColors.Info;
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
             this.guna2Panel1.BorderColor = System.Drawing.Color.Black;
             this.guna2Panel1.BorderThickness = 1;
             this.guna2Panel1.Controls.Add(this.label4);
@@ -330,6 +268,7 @@
             this.guna2Panel1.Controls.Add(this.label10);
             this.guna2Panel1.Controls.Add(this.label11);
             this.guna2Panel1.Controls.Add(this.label12);
+            this.guna2Panel1.ForeColor = System.Drawing.Color.White;
             this.guna2Panel1.Location = new System.Drawing.Point(13, 4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1159, 42);
@@ -425,11 +364,30 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "Họ và tên";
             // 
+            // flowLayouthTabOK
+            // 
+            this.flowLayouthTabOK.Location = new System.Drawing.Point(12, 49);
+            this.flowLayouthTabOK.Name = "flowLayouthTabOK";
+            this.flowLayouthTabOK.Size = new System.Drawing.Size(1160, 533);
+            this.flowLayouthTabOK.TabIndex = 5;
+            // 
+            // tabStatusCancel
+            // 
+            this.tabStatusCancel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabStatusCancel.Controls.Add(this.guna2Panel2);
+            this.tabStatusCancel.Controls.Add(this.flowLayoutTabCancel);
+            this.tabStatusCancel.Location = new System.Drawing.Point(4, 34);
+            this.tabStatusCancel.Name = "tabStatusCancel";
+            this.tabStatusCancel.Size = new System.Drawing.Size(1197, 606);
+            this.tabStatusCancel.TabIndex = 2;
+            this.tabStatusCancel.Text = "Đã bị hủy";
+            this.tabStatusCancel.UseVisualStyleBackColor = true;
+            // 
             // guna2Panel2
             // 
             this.guna2Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Panel2.BackColor = System.Drawing.SystemColors.Info;
+            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
             this.guna2Panel2.BorderColor = System.Drawing.Color.Black;
             this.guna2Panel2.BorderThickness = 1;
             this.guna2Panel2.Controls.Add(this.label13);
@@ -441,6 +399,7 @@
             this.guna2Panel2.Controls.Add(this.label19);
             this.guna2Panel2.Controls.Add(this.label20);
             this.guna2Panel2.Controls.Add(this.label21);
+            this.guna2Panel2.ForeColor = System.Drawing.Color.White;
             this.guna2Panel2.Location = new System.Drawing.Point(9, 3);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(1159, 42);
@@ -536,26 +495,75 @@
             this.label21.TabIndex = 0;
             this.label21.Text = "Họ và tên";
             // 
+            // flowLayoutTabCancel
+            // 
+            this.flowLayoutTabCancel.Location = new System.Drawing.Point(3, 51);
+            this.flowLayoutTabCancel.Name = "flowLayoutTabCancel";
+            this.flowLayoutTabCancel.Size = new System.Drawing.Size(1165, 537);
+            this.flowLayoutTabCancel.TabIndex = 5;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(965, 135);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(189, 27);
+            this.txtSearch.TabIndex = 3;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.Location = new System.Drawing.Point(1203, 127);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(98, 42);
+            this.btnSearch.TabIndex = 4;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            // 
+            // btnReload
+            // 
+            this.btnReload.BackColor = System.Drawing.SystemColors.Control;
+            this.btnReload.BorderColor = System.Drawing.Color.Transparent;
+            this.btnReload.BorderRadius = 18;
+            this.btnReload.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReload.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnReload.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnReload.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnReload.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnReload.FillColor = System.Drawing.Color.Transparent;
+            this.btnReload.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnReload.ForeColor = System.Drawing.Color.White;
+            this.btnReload.Image = ((System.Drawing.Image)(resources.GetObject("btnReload.Image")));
+            this.btnReload.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnReload.Location = new System.Drawing.Point(130, 104);
+            this.btnReload.Name = "btnReload";
+            this.btnReload.Size = new System.Drawing.Size(50, 50);
+            this.btnReload.TabIndex = 10;
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
+            // 
             // TicketManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnReload);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.tabStatus);
             this.Controls.Add(this.label1);
             this.Name = "TicketManagement";
-            this.Size = new System.Drawing.Size(1295, 757);
+            this.Size = new System.Drawing.Size(1386, 851);
             this.Load += new System.EventHandler(this.TicketManagement_Load);
             this.tabStatus.ResumeLayout(false);
             this.tabStatusWait.ResumeLayout(false);
-            this.tabStatusOK.ResumeLayout(false);
-            this.tabStatusCancel.ResumeLayout(false);
             this.headerFlowLayout.ResumeLayout(false);
             this.headerFlowLayout.PerformLayout();
+            this.tabStatusOK.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            this.tabStatusCancel.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             this.ResumeLayout(false);

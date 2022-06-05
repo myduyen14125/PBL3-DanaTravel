@@ -46,6 +46,7 @@
             this.ClientSize = new System.Drawing.Size(1171, 698);
             this.Controls.Add(this.ticketManagement1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
 

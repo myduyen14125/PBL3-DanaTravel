@@ -32,6 +32,13 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.flowLayouthTabOK = new System.Windows.Forms.FlowLayoutPanel();
             this.tabStatusCancel = new System.Windows.Forms.TabPage();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.flowLayoutTabCancel = new System.Windows.Forms.FlowLayoutPanel();
             this.btnSearch = new System.Windows.Forms.Button();
             this.tabStatus = new System.Windows.Forms.TabControl();
@@ -46,8 +53,6 @@
             this.lbName = new System.Windows.Forms.Label();
             this.flowLayoutTabWait = new System.Windows.Forms.FlowLayoutPanel();
             this.tabStatusOK = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnReload = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -55,27 +60,23 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnReload = new Guna.UI2.WinForms.Guna2Button();
             this.tabStatusCancel.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
             this.tabStatus.SuspendLayout();
             this.tabStatusWait.SuspendLayout();
             this.headerFlowLayout.SuspendLayout();
             this.tabStatusOK.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(749, 78);
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(821, 110);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(189, 22);
+            this.txtSearch.Size = new System.Drawing.Size(232, 27);
             this.txtSearch.TabIndex = 7;
             // 
             // flowLayouthTabOK
@@ -97,6 +98,85 @@
             this.tabStatusCancel.Text = "Đã bị hủy";
             this.tabStatusCancel.UseVisualStyleBackColor = true;
             // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
+            this.guna2Panel2.BorderColor = System.Drawing.Color.Black;
+            this.guna2Panel2.BorderThickness = 1;
+            this.guna2Panel2.Controls.Add(this.label5);
+            this.guna2Panel2.Controls.Add(this.label6);
+            this.guna2Panel2.Controls.Add(this.label11);
+            this.guna2Panel2.Controls.Add(this.label12);
+            this.guna2Panel2.Controls.Add(this.label13);
+            this.guna2Panel2.Controls.Add(this.label14);
+            this.guna2Panel2.ForeColor = System.Drawing.Color.White;
+            this.guna2Panel2.Location = new System.Drawing.Point(13, 3);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(1167, 42);
+            this.guna2Panel2.TabIndex = 7;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label5.Location = new System.Drawing.Point(1019, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(100, 19);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Xem chi tiết";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label6.Location = new System.Drawing.Point(834, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(79, 19);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Tổng tiền";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label11.Location = new System.Drawing.Point(703, 9);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(55, 19);
+            this.label11.TabIndex = 3;
+            this.label11.Text = "Phone";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label12.Location = new System.Drawing.Point(346, 9);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(54, 19);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "Email";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label13.Location = new System.Drawing.Point(560, 9);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(57, 19);
+            this.label13.TabIndex = 2;
+            this.label13.Text = "CCCD";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label14.Location = new System.Drawing.Point(51, 9);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(78, 19);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Họ và tên";
+            // 
             // flowLayoutTabCancel
             // 
             this.flowLayoutTabCancel.Location = new System.Drawing.Point(13, 51);
@@ -106,12 +186,15 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(1007, 78);
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.Location = new System.Drawing.Point(1115, 103);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.Size = new System.Drawing.Size(146, 40);
             this.btnSearch.TabIndex = 8;
             this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.UseVisualStyleBackColor = false;
             // 
             // tabStatus
             // 
@@ -122,10 +205,10 @@
             this.tabStatus.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.tabStatus.ImeMode = System.Windows.Forms.ImeMode.On;
             this.tabStatus.ItemSize = new System.Drawing.Size(150, 30);
-            this.tabStatus.Location = new System.Drawing.Point(14, 92);
+            this.tabStatus.Location = new System.Drawing.Point(61, 127);
             this.tabStatus.Name = "tabStatus";
             this.tabStatus.SelectedIndex = 0;
-            this.tabStatus.Size = new System.Drawing.Size(1208, 653);
+            this.tabStatus.Size = new System.Drawing.Size(1251, 675);
             this.tabStatus.TabIndex = 6;
             this.tabStatus.SelectedIndexChanged += new System.EventHandler(this.tabStatus_SelectedIndexChanged);
             // 
@@ -137,7 +220,7 @@
             this.tabStatusWait.Location = new System.Drawing.Point(4, 34);
             this.tabStatusWait.Name = "tabStatusWait";
             this.tabStatusWait.Padding = new System.Windows.Forms.Padding(3);
-            this.tabStatusWait.Size = new System.Drawing.Size(1200, 615);
+            this.tabStatusWait.Size = new System.Drawing.Size(1243, 637);
             this.tabStatusWait.TabIndex = 0;
             this.tabStatusWait.Text = "Đang chờ thanh toán";
             this.tabStatusWait.UseVisualStyleBackColor = true;
@@ -146,7 +229,7 @@
             // 
             this.headerFlowLayout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.headerFlowLayout.BackColor = System.Drawing.SystemColors.Info;
+            this.headerFlowLayout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
             this.headerFlowLayout.BorderColor = System.Drawing.Color.Black;
             this.headerFlowLayout.BorderThickness = 1;
             this.headerFlowLayout.Controls.Add(this.label3);
@@ -156,9 +239,10 @@
             this.headerFlowLayout.Controls.Add(this.lbEmail);
             this.headerFlowLayout.Controls.Add(this.lbCCCD);
             this.headerFlowLayout.Controls.Add(this.lbName);
+            this.headerFlowLayout.ForeColor = System.Drawing.Color.White;
             this.headerFlowLayout.Location = new System.Drawing.Point(12, 2);
             this.headerFlowLayout.Name = "headerFlowLayout";
-            this.headerFlowLayout.Size = new System.Drawing.Size(1167, 42);
+            this.headerFlowLayout.Size = new System.Drawing.Size(1210, 42);
             this.headerFlowLayout.TabIndex = 0;
             // 
             // label3
@@ -236,7 +320,7 @@
             this.flowLayoutTabWait.AutoScroll = true;
             this.flowLayoutTabWait.Location = new System.Drawing.Point(12, 50);
             this.flowLayoutTabWait.Name = "flowLayoutTabWait";
-            this.flowLayoutTabWait.Size = new System.Drawing.Size(1167, 557);
+            this.flowLayoutTabWait.Size = new System.Drawing.Size(1210, 557);
             this.flowLayoutTabWait.TabIndex = 0;
             // 
             // tabStatusOK
@@ -252,43 +336,11 @@
             this.tabStatusOK.Text = "Đã thanh toán";
             this.tabStatusOK.UseVisualStyleBackColor = true;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkRed;
-            this.label1.Location = new System.Drawing.Point(417, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(317, 44);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Bill Management";
-            // 
-            // btnReload
-            // 
-            this.btnReload.BackColor = System.Drawing.SystemColors.Control;
-            this.btnReload.BorderColor = System.Drawing.Color.Transparent;
-            this.btnReload.BorderRadius = 18;
-            this.btnReload.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReload.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnReload.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnReload.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnReload.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnReload.FillColor = System.Drawing.Color.Transparent;
-            this.btnReload.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnReload.ForeColor = System.Drawing.Color.White;
-            this.btnReload.Image = ((System.Drawing.Image)(resources.GetObject("btnReload.Image")));
-            this.btnReload.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnReload.Location = new System.Drawing.Point(45, 31);
-            this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(50, 50);
-            this.btnReload.TabIndex = 9;
-            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
-            // 
             // guna2Panel1
             // 
             this.guna2Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Panel1.BackColor = System.Drawing.SystemColors.Info;
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
             this.guna2Panel1.BorderColor = System.Drawing.Color.Black;
             this.guna2Panel1.BorderThickness = 1;
             this.guna2Panel1.Controls.Add(this.label4);
@@ -297,6 +349,7 @@
             this.guna2Panel1.Controls.Add(this.label9);
             this.guna2Panel1.Controls.Add(this.label10);
             this.guna2Panel1.Controls.Add(this.label16);
+            this.guna2Panel1.ForeColor = System.Drawing.Color.White;
             this.guna2Panel1.Location = new System.Drawing.Point(12, 6);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1167, 42);
@@ -362,97 +415,54 @@
             this.label16.TabIndex = 0;
             this.label16.Text = "Họ và tên";
             // 
-            // guna2Panel2
+            // label1
             // 
-            this.guna2Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Panel2.BackColor = System.Drawing.SystemColors.Info;
-            this.guna2Panel2.BorderColor = System.Drawing.Color.Black;
-            this.guna2Panel2.BorderThickness = 1;
-            this.guna2Panel2.Controls.Add(this.label5);
-            this.guna2Panel2.Controls.Add(this.label6);
-            this.guna2Panel2.Controls.Add(this.label11);
-            this.guna2Panel2.Controls.Add(this.label12);
-            this.guna2Panel2.Controls.Add(this.label13);
-            this.guna2Panel2.Controls.Add(this.label14);
-            this.guna2Panel2.Location = new System.Drawing.Point(13, 3);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1167, 42);
-            this.guna2Panel2.TabIndex = 7;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
+            this.label1.Location = new System.Drawing.Point(519, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(317, 44);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Bill Management";
             // 
-            // label5
+            // btnReload
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.Location = new System.Drawing.Point(1019, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 19);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Xem chi tiết";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label6.Location = new System.Drawing.Point(834, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 19);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Tổng tiền";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label11.Location = new System.Drawing.Point(703, 9);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(55, 19);
-            this.label11.TabIndex = 3;
-            this.label11.Text = "Phone";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label12.Location = new System.Drawing.Point(346, 9);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(54, 19);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Email";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label13.Location = new System.Drawing.Point(560, 9);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(57, 19);
-            this.label13.TabIndex = 2;
-            this.label13.Text = "CCCD";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label14.Location = new System.Drawing.Point(51, 9);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(78, 19);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "Họ và tên";
+            this.btnReload.BackColor = System.Drawing.SystemColors.Control;
+            this.btnReload.BorderColor = System.Drawing.Color.Transparent;
+            this.btnReload.BorderRadius = 18;
+            this.btnReload.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReload.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnReload.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnReload.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnReload.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnReload.FillColor = System.Drawing.Color.Transparent;
+            this.btnReload.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnReload.ForeColor = System.Drawing.Color.White;
+            this.btnReload.Image = ((System.Drawing.Image)(resources.GetObject("btnReload.Image")));
+            this.btnReload.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnReload.Location = new System.Drawing.Point(45, 31);
+            this.btnReload.Name = "btnReload";
+            this.btnReload.Size = new System.Drawing.Size(50, 50);
+            this.btnReload.TabIndex = 9;
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
             // 
             // BillManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnReload);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.tabStatus);
             this.Controls.Add(this.label1);
             this.Name = "BillManagement";
-            this.Size = new System.Drawing.Size(1244, 762);
+            this.Size = new System.Drawing.Size(1386, 851);
             this.Load += new System.EventHandler(this.BillManagement_Load);
             this.tabStatusCancel.ResumeLayout(false);
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel2.PerformLayout();
             this.tabStatus.ResumeLayout(false);
             this.tabStatusWait.ResumeLayout(false);
             this.headerFlowLayout.ResumeLayout(false);
@@ -460,8 +470,6 @@
             this.tabStatusOK.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            this.guna2Panel2.ResumeLayout(false);
-            this.guna2Panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
