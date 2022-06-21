@@ -26,7 +26,7 @@ namespace PBL3.View.statistics
             if(!this.DesignMode)
             {
                 DrawChartSale(1, 12, 2022);
-                DrawChartTourOutStanding(1, 12, 2022);
+                //DrawChartTourOutStanding(1, 12, 2022);
             }
         }
         private void btnStatistic_Click(object sender, EventArgs e)

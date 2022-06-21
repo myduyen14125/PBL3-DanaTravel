@@ -100,7 +100,7 @@ namespace PBL3.View.tour
             this.panelMain.Controls.Add(this.lbTourName);
             this.panelMain.Controls.Add(this.btnBack);
             this.panelMain.Controls.Add(this.panel6);
-            this.panelMain.Location = new System.Drawing.Point(37, 919);
+            this.panelMain.Location = new System.Drawing.Point(17, 54);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(1087, 1261);
             this.panelMain.TabIndex = 0;
