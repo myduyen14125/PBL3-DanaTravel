@@ -19,7 +19,6 @@ namespace PBL3.View.homepage
         {
             InitializeComponent();
         }
-
         private void FormHistoryTransaction_Load(object sender, EventArgs e)
         {
             ShowData();

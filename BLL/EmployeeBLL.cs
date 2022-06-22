@@ -56,9 +56,7 @@ namespace BLL
         public List<EmployeeDTO> GetListEmployee(int divisionId, string searchKey)
         {
             EntityManager db = EntityManager.Instance;
-
             searchKey = searchKey.ToLower();
-
             var result = from e in db.Employees
                          join d in db.Divisions on e.division_id equals d.id
                          join p in db.Positions on e.position_id equals p.id
@@ -83,7 +81,7 @@ namespace BLL
                              ed_id = ed.id,
                              edu_name = ed.name
                          };
-
+            
             List<EmployeeDTO> employeeDTOs = new List<EmployeeDTO>();
             foreach (var i in result)
             {
@@ -203,7 +201,7 @@ namespace BLL
                 data.account_id = e.account_id;
                 data.image = e.image;
             }
-            db.SaveChanges();
+            db.SaveChanges(); 
         }
 
         public void Delete(List<int> listId)

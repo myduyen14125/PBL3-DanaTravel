@@ -143,8 +143,11 @@ namespace PBL3.View.tour
                 TourImages = tourImages
             };
             TourBLL.Instance.Save(t);
-            if (tour.id == 0) MessageBox.Show("Add new tour successful");
-            else MessageBox.Show("Edit tour successful");
+
+            if (tour.id == 0) 
+                MessageBox.Show("Add new tour successful");
+            else 
+                MessageBox.Show("Edit tour successful");
             btnBack.PerformClick();
         }
 

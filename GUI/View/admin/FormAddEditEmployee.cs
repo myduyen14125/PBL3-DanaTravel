@@ -146,15 +146,17 @@ namespace PBL3.View.admin
                 AccountBLL.Instance.ChangeStatusAccount(employee.email, false);
                 RegisterAccount();
             }
-            Account account = AccountBLL.Instance.GetAccountByUsername(txtEmail.Text);
+            if(employee_id == 0) RegisterAccount();
 
+            Account account = AccountBLL.Instance.GetAccountByUsername(txtEmail.Text);
             EmployeeDTO employeeDTO = (EmployeeDTO)bindingEmployee.DataSource;
+
             Employee epl = new Employee
             {
                 id = employeeDTO.id,
                 name = employeeDTO.name,
                 birthday = employeeDTO.birthday,
-                gender = radioMale.Checked ? true : false,
+                gender = employeeDTO.gender,
                 idCard = employeeDTO.idCard,
                 phone = employeeDTO.phone,
                 email = employeeDTO.email,

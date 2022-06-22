@@ -55,6 +55,7 @@ namespace PBL3
                 });
             }
             cbbCustomerType.DataSource = items;
+            
             cbbCustomerType.SelectedIndex = 0;
         }
 
@@ -104,7 +105,6 @@ namespace PBL3
                 txtName.Focus();
                 return false;
             }
-
 
             if (!validate.ValidateIdCard(txtCCCD.Text))
             {

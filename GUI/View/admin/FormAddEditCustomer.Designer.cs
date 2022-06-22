@@ -42,9 +42,7 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.cbbCustomerType = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.bindingComboboxCusType = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.bindingCustomer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingComboboxCusType)).BeginInit();
             this.SuspendLayout();
             // 
             // txtName
@@ -104,7 +102,7 @@
             this.txtCCCD.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingCustomer, "idCard", true));
             this.txtCCCD.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.bindingCustomer, "idCard", true));
             this.txtCCCD.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCCCD.Location = new System.Drawing.Point(535, 343);
+            this.txtCCCD.Location = new System.Drawing.Point(535, 344);
             this.txtCCCD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCCCD.Name = "txtCCCD";
             this.txtCCCD.Size = new System.Drawing.Size(314, 30);
@@ -184,7 +182,7 @@
             this.cbbCustomerType.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.bindingCustomer, "customer_type_id", true));
             this.cbbCustomerType.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbCustomerType.FormattingEnabled = true;
-            this.cbbCustomerType.Location = new System.Drawing.Point(1174, 342);
+            this.cbbCustomerType.Location = new System.Drawing.Point(1162, 344);
             this.cbbCustomerType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbCustomerType.Name = "cbbCustomerType";
             this.cbbCustomerType.Size = new System.Drawing.Size(167, 31);
@@ -202,10 +200,6 @@
             this.label1.Size = new System.Drawing.Size(188, 31);
             this.label1.TabIndex = 18;
             this.label1.Text = "Customer type:";
-            // 
-            // bindingComboboxCusType
-            // 
-            this.bindingComboboxCusType.DataSource = typeof(DTO.CustomerType);
             // 
             // FormAddEditCustomer
             // 
@@ -233,7 +227,6 @@
             this.Text = "FormAddEditCustomer";
             this.Load += new System.EventHandler(this.FormAddEditCustomer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingCustomer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingComboboxCusType)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,6 +246,5 @@
         private System.Windows.Forms.ComboBox cbbCustomerType;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.BindingSource bindingCustomer;
-        private System.Windows.Forms.BindingSource bindingComboboxCusType;
     }
 }

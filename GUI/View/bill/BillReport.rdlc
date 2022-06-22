@@ -7,7 +7,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>313bac35-5a71-4592-a390-8e0b96f9f983</rd:DataSourceID>
+      <rd:DataSourceID>8ad54b93-40f0-42c1-b7ea-e4028b8b83a3</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -43,11 +43,11 @@
         </Field>
         <Field Name="number_adult">
           <DataField>number_adult</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="number_children">
           <DataField>number_children</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="phone">
           <DataField>phone</DataField>
@@ -60,6 +60,10 @@
         <Field Name="price_children">
           <DataField>price_children</DataField>
           <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="ticket_id">
+          <DataField>ticket_id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="total_price">
           <DataField>total_price</DataField>
@@ -100,10 +104,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox7</rd:DefaultName>
-            <Top>1.56056in</Top>
-            <Left>2.44667in</Left>
+            <Top>1.50278in</Top>
+            <Left>2.56667in</Left>
             <Height>0.3in</Height>
-            <Width>2.76666in</Width>
+            <Width>3.34999in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -204,8 +208,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox9</rd:DefaultName>
-            <Top>0.19667in</Top>
-            <Left>2.14667in</Left>
+            <Top>0.13889in</Top>
+            <Left>2.26667in</Left>
             <Height>1.23888in</Height>
             <Width>4.75833in</Width>
             <ZIndex>1</ZIndex>
@@ -223,8 +227,8 @@
             <Source>Embedded</Source>
             <Value>Logo</Value>
             <Sizing>FitProportional</Sizing>
-            <Top>0.18278in</Top>
-            <Left>0.255in</Left>
+            <Top>0.125in</Top>
+            <Left>0.375in</Left>
             <Height>1.29444in</Height>
             <Width>1.56667in</Width>
             <ZIndex>2</ZIndex>
@@ -235,8 +239,8 @@
             </Style>
           </Image>
           <Line Name="Line1">
-            <Top>1.49111in</Top>
-            <Left>0.255in</Left>
+            <Top>1.43333in</Top>
+            <Left>0.375in</Left>
             <Height>0in</Height>
             <Width>6.65in</Width>
             <ZIndex>3</ZIndex>
@@ -361,8 +365,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox11</rd:DefaultName>
-            <Top>2.02167in</Top>
-            <Left>0.255in</Left>
+            <Top>1.96389in</Top>
+            <Left>0.375in</Left>
             <Height>1in</Height>
             <Width>6.66666in</Width>
             <ZIndex>4</ZIndex>
@@ -1772,8 +1776,8 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>3.39667in</Top>
-            <Left>0.255in</Left>
+            <Top>3.33889in</Top>
+            <Left>0.375in</Left>
             <Height>2.41666in</Height>
             <Width>6.66666in</Width>
             <ZIndex>5</ZIndex>
@@ -1846,8 +1850,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox37</rd:DefaultName>
-            <Top>6.04111in</Top>
-            <Left>4.38833in</Left>
+            <Top>5.98333in</Top>
+            <Left>4.50833in</Left>
             <Height>1in</Height>
             <Width>2.51667in</Width>
             <ZIndex>6</ZIndex>
@@ -1924,8 +1928,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox37</rd:DefaultName>
-            <Top>6.04111in</Top>
-            <Left>0.78in</Left>
+            <Top>5.98333in</Top>
+            <Left>0.9in</Left>
             <Height>1in</Height>
             <Width>2.125in</Width>
             <ZIndex>7</ZIndex>
@@ -1964,7 +1968,6 @@
     </ReportParameter>
     <ReportParameter Name="priceVAT">
       <DataType>String</DataType>
-      <Nullable>true</Nullable>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
     <ReportParameter Name="total_price_pay">
@@ -1987,15 +1990,15 @@
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
-    <ReportParameter Name="identity_card">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
     <ReportParameter Name="price_adult">
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
     <ReportParameter Name="price_children">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="identity_card">
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
@@ -2052,17 +2055,17 @@
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>2</RowIndex>
-          <ParameterName>identity_card</ParameterName>
+          <ParameterName>price_adult</ParameterName>
         </CellDefinition>
         <CellDefinition>
           <ColumnIndex>1</ColumnIndex>
           <RowIndex>2</RowIndex>
-          <ParameterName>price_adult</ParameterName>
+          <ParameterName>price_children</ParameterName>
         </CellDefinition>
         <CellDefinition>
           <ColumnIndex>2</ColumnIndex>
           <RowIndex>2</RowIndex>
-          <ParameterName>price_children</ParameterName>
+          <ParameterName>identity_card</ParameterName>
         </CellDefinition>
         <CellDefinition>
           <ColumnIndex>3</ColumnIndex>
@@ -2109,5 +2112,5 @@ hAAhQAgQAoQAIUAIEAKEACFACBAChAAhQAgQAoQAIUAIEAKEACFACBAChAAhQAgQAoQAIUAIEAKEACFA
     </EmbeddedImage>
   </EmbeddedImages>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>11ed0de5-49d4-4ff9-ad87-9edf46e6ea36</rd:ReportID>
+  <rd:ReportID>e13c86c7-c18e-4b5a-987b-7d3de90a167b</rd:ReportID>
 </Report>

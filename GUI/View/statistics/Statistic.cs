@@ -74,9 +74,11 @@ namespace PBL3.View.statistics
                 });
                 dataTourOutStanding.Rows.Add(revenues[i].name, revenues[i].total.ToString("###,###,###,###"), percent);
             }
-            double percent_res = Convert.ToDouble((total_res * 100.0 / total_price).ToString("###.###"));
-            if (percent_res >= 0.001)
+
+            double percent_res = total_res * 100.0 / total_price;
+            if (percent_res >= 0.01)
             {
+                percent_res = Convert.ToDouble(percent_res.ToString("##.##"));
                 series.Add(new PieSeries()
                 {
                     Title = "Tour khác",

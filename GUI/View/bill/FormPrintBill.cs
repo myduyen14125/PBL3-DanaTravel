@@ -1,4 +1,5 @@
 ﻿using DTO;
+using Microsoft.Reporting.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,7 +24,7 @@ namespace PBL3.View.bill
         private void FormPrintBill_Load(object sender, EventArgs e)
         {
             receiptBindingSource.DataSource = bill;
-            
+
             Microsoft.Reporting.WinForms.ReportParameter[] reportParameters = new Microsoft.Reporting.WinForms.ReportParameter[]
             {
                 new Microsoft.Reporting.WinForms.ReportParameter("price_adult", bill.price_adult.ToString("###,###,###,###,###")),
@@ -39,7 +40,7 @@ namespace PBL3.View.bill
                 new Microsoft.Reporting.WinForms.ReportParameter("identity_card", bill.identity_card),
                 new Microsoft.Reporting.WinForms.ReportParameter("phone", bill.phone),
             };
-
+            
             this.reportViewer1.LocalReport.SetParameters(reportParameters);
             this.reportViewer1.RefreshReport();
         }

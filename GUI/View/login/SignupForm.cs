@@ -105,7 +105,6 @@ namespace PBL3
             }
         }
 
-
         private void txtOTP_Click(object sender, EventArgs e)
         {
             if (txtOTP.Text == "Input OTP")
@@ -146,31 +145,27 @@ namespace PBL3
         {
             string user = usernameInput.Text.Trim();
             string pass = passInput.Text.Trim();
-            string confirmPassword = confirmPassInput.Text.Trim();
 
-            if (!ValidateSignUpForm())
-            {
-                return;
-            }
-            if (txtOTP.Text != code.ToString())
-            {
-                MessageBox.Show("OTP invalid");
-                return;
-            }
-                
-            Account account = new Account(user, HashPassword.GetHash(pass), true);
-            bool success = AccountBLL.Instance.RegisterAccount(account);
-            if (success)
+            if (!ValidateSignUpForm())    return;
+            
+            List<Role> roles = new List<Role>();
+            roles.Add(RoleBLL.Instance.GetRoleByName("customer"));
+            Account account = new Account {
+                username = user,
+                password = HashPassword.GetHash(pass),
+                status = true,
+                Roles = roles
+            };
+
+            if (AccountBLL.Instance.RegisterAccount(account, false))
             {
                 MessageBox.Show("Register account success");
                 LoginForm loginForm = new LoginForm();
                 this.Hide();
                 loginForm.Show();
             }
-            else
-            {
-                MessageBox.Show("Email already exists");
-            }
+            else   MessageBox.Show("Email already exists");
+            
         }
 
         private bool ValidateSignUpForm()
@@ -202,20 +197,17 @@ namespace PBL3
                 MessageBox.Show("Enter code OTP to register account.");
                 return false;
             }
-
+            if (txtOTP.Text != code.ToString())
+            {
+                MessageBox.Show("OTP invalid");
+                return false;
+            }
             return true;
         }
 
         private bool ValidateEmail()
         {
             Validate validate = new Validate();
-            if (string.IsNullOrEmpty(usernameInput.Text))
-            {
-                MessageBox.Show("Please enter email");
-                usernameInput.Focus();
-                return false;
-            }
-
             if (!validate.ValidateEmail(usernameInput.Text))
             {
                 MessageBox.Show("Email invalid");

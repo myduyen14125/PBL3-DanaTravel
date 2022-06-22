@@ -98,6 +98,7 @@ namespace BLL
             // Save tour ticket
             EntityManager db = EntityManager.Instance;
             var ticket = db.TourTickets.Where(tk => tk.id == tourTicket.id).FirstOrDefault();
+
             if (ticket == null)
             {
                 db.TourTickets.Add(tourTicket);

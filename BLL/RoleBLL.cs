@@ -38,7 +38,6 @@ namespace BLL
         {
             if (roleNames == null)
                 return EntityManager.Instance.Permissions.ToList();
-
             return EntityManager.Instance.Permissions.Where(item => item.Roles.Any(r => roleNames.Contains(r.name))).ToList();
         }
 

@@ -1,4 +1,6 @@
-﻿namespace PBL3.View.bill
+﻿using Microsoft.Reporting.WinForms;
+
+namespace PBL3.View.bill
 {
     partial class FormPrintBill
     {
@@ -30,8 +32,8 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.receiptBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.receiptBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.receiptBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,7 +43,7 @@
             reportDataSource1.Name = "DataSet1";
             reportDataSource1.Value = this.receiptBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "PBL3.View.bill.BillReport.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "GUI.View.bill.BillReport.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
@@ -55,7 +57,6 @@
             this.ClientSize = new System.Drawing.Size(993, 808);
             this.Controls.Add(this.reportViewer1);
             this.Name = "FormPrintBill";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormPrintBill";
             this.Load += new System.EventHandler(this.FormPrintBill_Load);
             ((System.ComponentModel.ISupportInitialize)(this.receiptBindingSource)).EndInit();

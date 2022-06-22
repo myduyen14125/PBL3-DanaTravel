@@ -49,7 +49,7 @@
             this.btnDeleteImage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDeleteImage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDeleteImage.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteImage.Image")));
-            this.btnDeleteImage.Location = new System.Drawing.Point(248, 185);
+            this.btnDeleteImage.Location = new System.Drawing.Point(242, 185);
             this.btnDeleteImage.Name = "btnDeleteImage";
             this.btnDeleteImage.Size = new System.Drawing.Size(42, 34);
             this.btnDeleteImage.TabIndex = 8;
@@ -61,7 +61,7 @@
             this.btnRight.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnRight.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRight.Image = ((System.Drawing.Image)(resources.GetObject("btnRight.Image")));
-            this.btnRight.Location = new System.Drawing.Point(254, 83);
+            this.btnRight.Location = new System.Drawing.Point(248, 83);
             this.btnRight.Name = "btnRight";
             this.btnRight.Size = new System.Drawing.Size(39, 42);
             this.btnRight.TabIndex = 7;
@@ -87,7 +87,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(293, 222);
+            this.pictureBox1.Size = new System.Drawing.Size(287, 222);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -101,7 +101,7 @@
             this.Controls.Add(this.btnLeft);
             this.Controls.Add(this.pictureBox1);
             this.Name = "SliderImage";
-            this.Size = new System.Drawing.Size(293, 222);
+            this.Size = new System.Drawing.Size(287, 222);
             this.Load += new System.EventHandler(this.SliderImage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

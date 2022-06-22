@@ -97,6 +97,7 @@ namespace PBL3.View.admin
             // radioMale
             // 
             this.radioMale.AutoSize = true;
+            this.radioMale.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.bindingEmployee, "gender", true));
             this.radioMale.Location = new System.Drawing.Point(599, 217);
             this.radioMale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioMale.Name = "radioMale";

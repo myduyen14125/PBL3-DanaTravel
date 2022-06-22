@@ -369,10 +369,10 @@
     <EmbeddedResource Include="View\bill\BillManagement.resx">
       <DependentUpon>BillManagement.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\bill\BillReport.rdlc" />
     <EmbeddedResource Include="View\bill\FormPrintBill.resx">
       <DependentUpon>FormPrintBill.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\bill\BillReport.rdlc" />
     <EmbeddedResource Include="View\CustomerAccount.resx">
       <DependentUpon>CustomerAccount.cs</DependentUpon>
     </EmbeddedResource>

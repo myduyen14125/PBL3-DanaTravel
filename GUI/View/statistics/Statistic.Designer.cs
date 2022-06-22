@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.chartSale = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btnStatistic = new Guna.UI2.WinForms.Guna2Button();
             this.txtYear = new System.Windows.Forms.TextBox();
@@ -55,24 +55,24 @@
             // 
             // chartSale
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chartSale.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chartSale.Legends.Add(legend4);
+            chartArea2.Name = "ChartArea1";
+            this.chartSale.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartSale.Legends.Add(legend2);
             this.chartSale.Location = new System.Drawing.Point(36, 551);
             this.chartSale.Name = "chartSale";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.LegendText = "Doanh thu";
-            series4.Name = "chartSale";
-            this.chartSale.Series.Add(series4);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.LegendText = "Doanh thu";
+            series2.Name = "chartSale";
+            this.chartSale.Series.Add(series2);
             this.chartSale.Size = new System.Drawing.Size(1310, 283);
             this.chartSale.TabIndex = 2;
             this.chartSale.Text = "chart1";
-            title4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            title4.Name = "Title1";
-            title4.Text = "Biểu đồ thống kê doanh thu";
-            this.chartSale.Titles.Add(title4);
+            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            title2.Name = "Title1";
+            title2.Text = "Biểu đồ thống kê doanh thu";
+            this.chartSale.Titles.Add(title2);
             // 
             // btnStatistic
             // 

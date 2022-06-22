@@ -58,3 +58,4 @@ D:\PBL\PBL3-DanaTravel\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\PBL\PBL3-DanaTravel\BLL\bin\Debug\Util.exe
 D:\PBL\PBL3-DanaTravel\BLL\bin\Debug\Util.pdb
 D:\PBL\PBL3-DanaTravel\BLL\bin\Debug\Util.exe.config
+D:\PBL\PBL3-DanaTravel\BLL\bin\Debug\EASendMail.dll

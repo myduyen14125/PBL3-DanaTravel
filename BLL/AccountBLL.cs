@@ -66,7 +66,7 @@ namespace BLL
             return true;
         }
         
-        public bool RegisterAccount(Account ac)
+        public bool RegisterAccount(Account ac, bool isSendEmail = true)
         {
             EntityManager db = EntityManager.Instance;
 
@@ -77,13 +77,15 @@ namespace BLL
             }
             db.Accounts.Add(ac);
             db.SaveChanges();
-
-            SendEmailHelper send = new SendEmailHelper();
-            string header = "DanaTravel send your account for login Danatravel Application";
-            string body = "<h3> Your account: " + ac.username + "</h3>"
-                + "<h3>Password: " + ac.username + "</h3>"
-                + "<h3>Please login to change your password</h3>";
-            new SendEmailHelper().SendEmail(ac.username, header, body);
+            if(isSendEmail)
+            {
+                SendEmailHelper send = new SendEmailHelper();
+                string header = "DanaTravel send your account for login Danatravel Application";
+                string body = "<h3> Your account: " + ac.username + "</h3>"
+                    + "<h3>Password: " + ac.password + "</h3>"
+                    + "<h3>Please login to change your password</h3>";
+                new SendEmailHelper().SendEmail(ac.username, header, body);
+            }
             return true;
         }
         

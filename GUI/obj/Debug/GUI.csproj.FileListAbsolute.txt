@@ -488,3 +488,4 @@ D:\PBL\PBL3-DanaTravel\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 D:\PBL\PBL3-DanaTravel\GUI\obj\Debug\GUI.csproj.CopyComplete
 D:\PBL\PBL3-DanaTravel\GUI\obj\Debug\GUI.exe
 D:\PBL\PBL3-DanaTravel\GUI\obj\Debug\GUI.pdb
+D:\PBL\PBL3-DanaTravel\GUI\bin\Debug\EASendMail.dll

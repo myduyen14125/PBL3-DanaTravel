@@ -101,44 +101,50 @@
             this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContent.Location = new System.Drawing.Point(199, 0);
             this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(1047, 712);
+            this.panelContent.Size = new System.Drawing.Size(1120, 709);
             this.panelContent.TabIndex = 30;
             // 
             // statistic1
             // 
+            this.statistic1.AutoSize = true;
+            this.statistic1.BackColor = System.Drawing.Color.White;
             this.statistic1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.statistic1.Location = new System.Drawing.Point(0, 0);
             this.statistic1.Name = "statistic1";
-            this.statistic1.Size = new System.Drawing.Size(1047, 712);
+            this.statistic1.Size = new System.Drawing.Size(1120, 709);
             this.statistic1.TabIndex = 8;
             // 
             // billManagement1
             // 
+            this.billManagement1.BackColor = System.Drawing.Color.White;
             this.billManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.billManagement1.Location = new System.Drawing.Point(0, 0);
             this.billManagement1.Name = "billManagement1";
-            this.billManagement1.Size = new System.Drawing.Size(1047, 712);
+            this.billManagement1.Size = new System.Drawing.Size(1120, 709);
             this.billManagement1.TabIndex = 7;
             // 
             // ticketManagement1
             // 
+            this.ticketManagement1.BackColor = System.Drawing.Color.White;
             this.ticketManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ticketManagement1.Location = new System.Drawing.Point(0, 0);
             this.ticketManagement1.Name = "ticketManagement1";
-            this.ticketManagement1.Size = new System.Drawing.Size(1047, 712);
+            this.ticketManagement1.Size = new System.Drawing.Size(1120, 709);
             this.ticketManagement1.TabIndex = 6;
             // 
             // roleAccount1
             // 
+            this.roleAccount1.BackColor = System.Drawing.Color.White;
             this.roleAccount1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.roleAccount1.Location = new System.Drawing.Point(0, 0);
-            this.roleAccount1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.roleAccount1.Margin = new System.Windows.Forms.Padding(4);
             this.roleAccount1.Name = "roleAccount1";
-            this.roleAccount1.Size = new System.Drawing.Size(1047, 712);
+            this.roleAccount1.Size = new System.Drawing.Size(1120, 709);
             this.roleAccount1.TabIndex = 5;
             // 
             // customerAccount1
             // 
+            this.customerAccount1.BackColor = System.Drawing.Color.White;
             this.customerAccount1.Location = new System.Drawing.Point(-3, 2);
             this.customerAccount1.Margin = new System.Windows.Forms.Padding(4);
             this.customerAccount1.Name = "customerAccount1";
@@ -152,7 +158,7 @@
             this.accountEmployee1.Location = new System.Drawing.Point(0, 0);
             this.accountEmployee1.Margin = new System.Windows.Forms.Padding(2);
             this.accountEmployee1.Name = "accountEmployee1";
-            this.accountEmployee1.Size = new System.Drawing.Size(1047, 712);
+            this.accountEmployee1.Size = new System.Drawing.Size(1120, 709);
             this.accountEmployee1.TabIndex = 3;
             // 
             // tourManagement1
@@ -162,7 +168,7 @@
             this.tourManagement1.Location = new System.Drawing.Point(0, 0);
             this.tourManagement1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tourManagement1.Name = "tourManagement1";
-            this.tourManagement1.Size = new System.Drawing.Size(1047, 712);
+            this.tourManagement1.Size = new System.Drawing.Size(1120, 709);
             this.tourManagement1.TabIndex = 2;
             // 
             // employeeManagement1
@@ -171,7 +177,7 @@
             this.employeeManagement1.Location = new System.Drawing.Point(0, 0);
             this.employeeManagement1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.employeeManagement1.Name = "employeeManagement1";
-            this.employeeManagement1.Size = new System.Drawing.Size(1047, 712);
+            this.employeeManagement1.Size = new System.Drawing.Size(1120, 709);
             this.employeeManagement1.TabIndex = 0;
             // 
             // customer1
@@ -181,7 +187,7 @@
             this.customer1.Location = new System.Drawing.Point(0, 0);
             this.customer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.customer1.Name = "customer1";
-            this.customer1.Size = new System.Drawing.Size(1047, 712);
+            this.customer1.Size = new System.Drawing.Size(1120, 709);
             this.customer1.TabIndex = 1;
             // 
             // navbar
@@ -202,7 +208,7 @@
             this.navbar.Dock = System.Windows.Forms.DockStyle.Left;
             this.navbar.Location = new System.Drawing.Point(0, 0);
             this.navbar.Name = "navbar";
-            this.navbar.Size = new System.Drawing.Size(199, 712);
+            this.navbar.Size = new System.Drawing.Size(199, 709);
             this.navbar.TabIndex = 28;
             // 
             // btnBill
@@ -224,7 +230,7 @@
             this.btnBill.Size = new System.Drawing.Size(199, 40);
             this.btnBill.TabIndex = 36;
             this.btnBill.TabStop = false;
-            this.btnBill.Text = "          Bill";
+            this.btnBill.Text = "       Bill";
             this.btnBill.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBill.UseVisualStyleBackColor = false;
             this.btnBill.Click += new System.EventHandler(this.btnBill_Click);
@@ -248,7 +254,7 @@
             this.btnTicket.Size = new System.Drawing.Size(199, 40);
             this.btnTicket.TabIndex = 18;
             this.btnTicket.TabStop = false;
-            this.btnTicket.Text = "          Ticket";
+            this.btnTicket.Text = "       Ticket";
             this.btnTicket.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTicket.UseVisualStyleBackColor = false;
             this.btnTicket.Click += new System.EventHandler(this.btnTicket_Click);
@@ -271,7 +277,7 @@
             this.btnStatistic.Size = new System.Drawing.Size(199, 40);
             this.btnStatistic.TabIndex = 26;
             this.btnStatistic.TabStop = false;
-            this.btnStatistic.Text = "          Statistic";
+            this.btnStatistic.Text = "       Statistic";
             this.btnStatistic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStatistic.UseVisualStyleBackColor = false;
             this.btnStatistic.Click += new System.EventHandler(this.btnStatistic_Click);
@@ -374,7 +380,7 @@
             this.btnAccount.Size = new System.Drawing.Size(199, 40);
             this.btnAccount.TabIndex = 35;
             this.btnAccount.TabStop = false;
-            this.btnAccount.Text = "          Account";
+            this.btnAccount.Text = "       Account";
             this.btnAccount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAccount.UseVisualStyleBackColor = false;
             this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
@@ -418,7 +424,7 @@
             this.btnTour.Size = new System.Drawing.Size(199, 40);
             this.btnTour.TabIndex = 28;
             this.btnTour.TabStop = false;
-            this.btnTour.Text = "          Tour";
+            this.btnTour.Text = "       Tour";
             this.btnTour.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTour.UseVisualStyleBackColor = false;
             this.btnTour.Click += new System.EventHandler(this.btnTour_Click);
@@ -436,7 +442,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::GUI.Properties.Resources._56986749_694943527575452_6002140096634028032_n1;
+            this.pictureBox1.Image = global::GUI.Properties.Resources.Group_1404;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(199, 155);
@@ -462,8 +468,7 @@
             this.btnCustomer.Size = new System.Drawing.Size(199, 40);
             this.btnCustomer.TabIndex = 27;
             this.btnCustomer.TabStop = false;
-            this.btnCustomer.Text = "          Customer";
-            this.btnCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCustomer.Text = "Customer";
             this.btnCustomer.UseVisualStyleBackColor = false;
             this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
             // 
@@ -486,15 +491,14 @@
             this.btnEmployee.Size = new System.Drawing.Size(199, 40);
             this.btnEmployee.TabIndex = 17;
             this.btnEmployee.TabStop = false;
-            this.btnEmployee.Text = "          Employee";
-            this.btnEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEmployee.Text = "Employee";
             this.btnEmployee.UseVisualStyleBackColor = false;
             this.btnEmployee.Click += new System.EventHandler(this.btnEmployee_Click);
             // 
             // AdminManagement
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.ClientSize = new System.Drawing.Size(1246, 712);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(1319, 709);
             this.Controls.Add(this.panelContent);
             this.Controls.Add(this.navbar);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -505,6 +509,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher2)).EndInit();
             this.panelContent.ResumeLayout(false);
+            this.panelContent.PerformLayout();
             this.navbar.ResumeLayout(false);
             this.navbar.PerformLayout();
             this.manacontainer.ResumeLayout(false);

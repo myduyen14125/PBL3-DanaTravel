@@ -26,7 +26,7 @@ namespace PBL3.View.admin
         }
         public void SetActivePanel(UserControl control)
         {
-            //set all usercontrol false
+            // set all usercontrol false
             employeeManagement1.Visible = false;
             customer1.Visible = false;
             tourManagement1.Visible = false;
@@ -131,5 +131,6 @@ namespace PBL3.View.admin
              SetActivePanel(billManagement1);
             billManagement1.ShowData();
         }
+
     }
 }

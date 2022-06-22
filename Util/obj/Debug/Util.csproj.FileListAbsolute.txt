@@ -42,3 +42,5 @@ D:\PBL\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.GenerateResource.cache
 D:\PBL\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.CoreCompileInputs.cache
 D:\PBL\PBL3-DanaTravel\Util\obj\Debug\Util.exe
 D:\PBL\PBL3-DanaTravel\Util\obj\Debug\Util.pdb
+D:\PBL\PBL3-DanaTravel\Util\bin\Debug\EASendMail.dll
+D:\PBL\PBL3-DanaTravel\Util\obj\Debug\Util.csproj.CopyComplete

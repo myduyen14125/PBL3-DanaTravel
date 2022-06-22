@@ -537,7 +537,7 @@
             this.btnReload.ForeColor = System.Drawing.Color.White;
             this.btnReload.Image = ((System.Drawing.Image)(resources.GetObject("btnReload.Image")));
             this.btnReload.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnReload.Location = new System.Drawing.Point(130, 104);
+            this.btnReload.Location = new System.Drawing.Point(113, 79);
             this.btnReload.Name = "btnReload";
             this.btnReload.Size = new System.Drawing.Size(50, 50);
             this.btnReload.TabIndex = 10;

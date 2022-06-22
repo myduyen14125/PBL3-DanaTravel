@@ -1,47 +1,46 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Mail;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using EASendMail;
 
 namespace Util
 {
     public class SendEmailHelper
     {
-        private static readonly string _from = "daitoan2000@gmail.com";
-        private static readonly string _pass = "daitoan2002@123@321";
- 
-        SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+        private static readonly string _from = "102200035@sv1.dut.udn.vn";
+        private static readonly string _pass = "Daitoan2002.123";
 
         public bool SendEmail(string sendto, string subject, string body)
         {
-
             try
             {
                 Task task = Task.Factory.StartNew(() =>
                 {
-                    MailMessage mail = new MailMessage();
-                    mail.From = new MailAddress(_from);
-                    mail.To.Add(sendto);
+                    SmtpMail mail = new SmtpMail("TryIt");
+                    mail.From = _from;
+                    mail.To = sendto;
                     mail.Subject = subject;
-                    mail.IsBodyHtml = true;
-                    mail.Body = body;
+                    mail.HtmlBody = body;
 
-                    mail.Priority = MailPriority.High;
+                    SmtpServer server = new SmtpServer("smtp.office365.com");
+                    server.Port = 587;
+                    server.User = _from;
+                    server.Password = _pass;
+                    server.ConnectType = SmtpConnectType.ConnectSSLAuto;
 
-                    SmtpServer.Port = 587;
-                    SmtpServer.Credentials = new System.Net.NetworkCredential(_from, _pass);
-                    SmtpServer.EnableSsl = true;
-                    SmtpServer.Send(mail);
+                    SmtpClient smtp = new SmtpClient();
+                    smtp.SendMail(server, mail);
                 });
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 return false;
             }
             return true;
         }
-
     }
 }
+

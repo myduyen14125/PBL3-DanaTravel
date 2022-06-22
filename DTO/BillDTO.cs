@@ -12,8 +12,8 @@ namespace DTO
         public int bill_status_id { get; set; }
         public int ticket_id { get; set; }
         public string tour_name { get; set; }
-        public double number_adult { get; set; }
-        public double number_children { get; set; }
+        public int number_adult { get; set; }
+        public int number_children { get; set; }
         public double price_adult { get; set; }
         public double price_children { get; set; }
         public double total_price { get; set; }

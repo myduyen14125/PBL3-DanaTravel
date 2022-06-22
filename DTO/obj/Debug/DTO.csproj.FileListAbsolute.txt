@@ -77,3 +77,4 @@ D:\PBL\PBL3-DanaTravel\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\PBL\PBL3-DanaTravel\DTO\obj\Debug\DTO.csproj.CopyComplete
 D:\PBL\PBL3-DanaTravel\DTO\obj\Debug\DTO.exe
 D:\PBL\PBL3-DanaTravel\DTO\obj\Debug\DTO.pdb
+D:\PBL\PBL3-DanaTravel\DTO\bin\Debug\EASendMail.dll

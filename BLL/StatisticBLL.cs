@@ -26,7 +26,7 @@ namespace BLL
         {
             List<Revenue> revenues = new List<Revenue>();
             EntityManager db = EntityManager.Instance;
-
+            // bill -> date: ngày tháng năm
             var result = from b in db.Bills
                          join tk in db.TourTickets on b.tour_ticket_id equals tk.id
                          where b.date.Value.Month >= monthFrom && b.date.Value.Month <= monthTo

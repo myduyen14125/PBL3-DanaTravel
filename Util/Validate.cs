@@ -11,9 +11,9 @@ namespace Util
     {
         public bool ValidateEmail(string email)
         {
-            return Regex.IsMatch(email, AppConstant.regexEmail);
+            return !String.IsNullOrEmpty(email) 
+                && Regex.IsMatch(email, AppConstant.regexEmail);
         }
-
         public bool ValidatePhone(string phone)
         {
             return Regex.IsMatch(phone, AppConstant.regexPhone);
