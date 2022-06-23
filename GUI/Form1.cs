@@ -16,13 +16,11 @@ namespace PBL3
         public Form1()
         {
             InitializeComponent();
-            bindingSource1.DataSource = new EmployeeDTO();
         }
 
         private void btnShow_Click(object sender, EventArgs e)
         {
-            EmployeeDTO employee = (EmployeeDTO)bindingSource1.DataSource;
-            MessageBox.Show(employee.name + " || " + employee.email);
+
         }
     }
 }

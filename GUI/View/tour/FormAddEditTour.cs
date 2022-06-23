@@ -20,11 +20,11 @@ namespace PBL3.View.tour
     public partial class FormAddEditTour : UserControl
     {
         private TourManagement tourManagement;
-        private TourDTO tour;
+        private Tour tour;
         private List<Image> imageTours = new List<Image>();
         private SliderImage slider;
         private IHTMLDocument2 documentDesc;
-        public FormAddEditTour(TourDTO tour, TourManagement tourManagement)
+        public FormAddEditTour(Tour tour, TourManagement tourManagement)
         {
             InitializeComponent();
             this.tour = tour;
@@ -57,7 +57,7 @@ namespace PBL3.View.tour
                 txtTourName.Text = tour.name;
                 dtpDepartureDate.Value = tour.departureDate;
                 dtpReturnDate.Value = tour.returnDate;
-                cbbTourCategory.SelectedIndex = cbbTourCategory.FindStringExact(tour.tour_category_name);
+                cbbTourCategory.SelectedIndex = cbbTourCategory.FindStringExact(tour.TourCategory.name);
                 rtbShortDesc.Text = tour.short_desc;
                 htmlDescription.DocumentText = tour.detail_desc;
                 txtTotalAdult.Text = tour.price_adult_one_ticket.ToString();

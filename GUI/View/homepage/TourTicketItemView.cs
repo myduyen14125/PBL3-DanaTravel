@@ -11,10 +11,10 @@ namespace PBL3.View.homepage
 {
     public partial class TourTicketItemView : UserControl
     {
-        private TourTicketDTO ticket;
+        private TourTicket ticket;
         public delegate void LoadDataParent();
         public LoadDataParent loadDataParent { get; set; }
-        public TourTicketItemView(TourTicketDTO ticket, bool isHideCancel = true)
+        public TourTicketItemView(TourTicket ticket, bool isHideCancel = true)
         {
             InitializeComponent();
             btnCancel.Visible = !isHideCancel;
@@ -25,7 +25,7 @@ namespace PBL3.View.homepage
 
         private void GUI()
         {
-            lbTourName.Text = ticket.tour_name;
+            lbTourName.Text = ticket.Tour.name;
             lbNameUser.Text = ticket.name;
             lbEmail.Text = ticket.email;
             lbTotalPrice.Text = ticket.total_price.ToString("###,###,###,###");
@@ -34,10 +34,10 @@ namespace PBL3.View.homepage
             lbNumberChildren.Text = ticket.number_children.ToString();
 
            
-            if (ticket.TourImages != null) {
+            if (ticket.Tour.TourImages != null) {
                 panel1.Controls.Clear();
                 List<Image> images = new List<Image>();
-                foreach (TourImage tourImage in ticket.TourImages)
+                foreach (TourImage tourImage in ticket.Tour.TourImages)
                     images.Add(Image.FromStream(new MemoryStream(tourImage.image)));
                 SliderImage sliderImage = new SliderImage(images, false, true);
                 panel1.Controls.Add(sliderImage);

@@ -24,7 +24,7 @@ namespace BLL
             }
         }
 
-        public DataTable GetDataTableCustomer(List<CustomerDTO> customers)
+        public DataTable GetDataTableCustomer(List<Customer> customers)
         {
             DataTable dt = new DataTable();
 
@@ -41,12 +41,12 @@ namespace BLL
                 new DataColumn {ColumnName = "Loại khách hàng", DataType = typeof(string)},
             });
 
-            foreach (CustomerDTO c in customers)
+            foreach (Customer c in customers)
             {
                 string birthday = c.birthday == null ? null : ((DateTime)c.birthday).ToString("dd/MM/yyyy");
-                string gender = c.gender == null ? null : Convert.ToBoolean(c.gender) ? "Nam" : "Nữ";
+                //string gender = c.gender == null ? null : Convert.ToBoolean(c.gender) ? "Nam" : "Nữ";
 
-                dt.Rows.Add(c.id, c.name, birthday, gender, c.idCard, c.phone, c.address, c.email, c.customer_type_name);
+                dt.Rows.Add(c.id, c.name, birthday, c.gender, c.idCard, c.phone, c.address, c.email, c.CustomerType.name);
             }
             return dt;
         }
@@ -54,48 +54,15 @@ namespace BLL
         {
             return EntityManager.Instance.Customers.Where(c => c.idCard == id_card).FirstOrDefault();
         }
-        public List<CustomerDTO> GetListCustomers(int typeID, string searchKey = "")
+        public List<Customer> GetListCustomers(int typeID, string searchKey = "")
         {
             EntityManager db = EntityManager.Instance;
 
             searchKey = searchKey.ToLower();
 
-            var result = from c in db.Customers
-                         join ct in db.CustomerTypes on c.customer_type_id equals ct.id
-                         where ((typeID == 0) ? true : ct.id == typeID) &&
-                         (c.name.ToLower().Contains(searchKey) || c.address.ToLower().Contains(searchKey))
-                         select new
-                         {
-                             c.id,
-                             c.name,
-                             c.birthday,
-                             c.gender,
-                             c.idCard,
-                             c.phone,
-                             c.email,
-                             c.address,
-                             ct_id = ct.id,
-                             ct_name = ct.name,
-                         };
-            List<CustomerDTO> list = new List<CustomerDTO>();
-            foreach (var i in result)
-            {
-                CustomerDTO c = new CustomerDTO
-                {
-                    id = i.id,
-                    name = i.name,
-                    idCard = i.idCard,
-                    email = i.email,
-                    phone = i.phone,
-                    address = i.address,
-                    customer_type_id = i.ct_id,
-                    customer_type_name = i.ct_name
-                };
-                if (i.birthday != null) c.birthday = (DateTime)i.birthday;
-                if (i.gender != null) c.gender = (bool)i.gender;
-                list.Add(c);
-            }
-            return list;
+            return db.Customers.Where(c =>
+                       (typeID == 0 || c.CustomerType.id == typeID)
+                    && (c.name.Contains(searchKey) || c.address.Contains(searchKey))).ToList();
         }
 
         public List<CustomerType> GetListCustomerType()
@@ -103,41 +70,9 @@ namespace BLL
             return EntityManager.Instance.CustomerTypes.ToList();
         }
 
-        public CustomerDTO GetCustomerDTOById(int id)
+        public Customer GetCustomerDTOById(int id)
         {
-            EntityManager db = EntityManager.Instance;
-            var result = from c in db.Customers
-                         join ct in db.CustomerTypes on c.customer_type_id equals ct.id
-                         where c.id == id
-                         select new
-                         {
-                             c.id,
-                             c.name,
-                             c.birthday,
-                             c.gender,
-                             c.idCard,
-                             c.phone,
-                             c.email,
-                             c.address,
-                             ct_id = ct.id,
-                             ct_name = ct.name,
-                         };
-            var i = result.FirstOrDefault();
-            List<CustomerType> customerTypes = db.CustomerTypes.Where(r => r.Customers.Any(c => c.id == i.ct_id)).ToList();
-            CustomerDTO customer = new CustomerDTO
-            {
-                id = i.id,
-                name = i.name,
-                idCard = i.idCard,
-                email = i.email,
-                phone = i.phone,
-                address = i.address,
-                customer_type_id = i.ct_id,
-                customer_type_name = i.ct_name,
-            };
-            if (i.birthday != null) customer.birthday = (DateTime)i.birthday;
-            if (i.gender != null) customer.gender = (bool)i.gender;
-            return customer;
+            return EntityManager.Instance.Customers.SingleOrDefault(c => c.id == id);
         }
 
         public void Save(Customer c)

@@ -10,16 +10,6 @@ namespace PBL3.View.admin
 {
     public partial class CustomerManagement : UserControl
     {
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        private static extern IntPtr CreateRoundRectRgn
-            (
-                int nLeft,
-                int nTop,
-                int nRight,
-                int nBottom,
-                int nWidthEclipse,
-                int nHeightEclipse
-            );
         public CustomerManagement()
         {
             InitializeComponent();
@@ -33,12 +23,8 @@ namespace PBL3.View.admin
             }
             btnEdit.Enabled = false;
             btnDelete.Enabled = false;
-            btnShow.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnShow.Width, btnShow.Height, 30, 30));
-            btnAdd.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnAdd.Width, btnAdd.Height, 30, 30));
-            btnEdit.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnEdit.Width, btnEdit.Height, 30, 30));
-            btnDelete.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnDelete.Width, btnDelete.Height, 30, 30));
-            btnSearch.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnSearch.Width, btnSearch.Height, 30, 30));
         }
+
         private void SetComboboxCustomerType()
         {
             cbbCustomerType.DisplayMember = "Text";

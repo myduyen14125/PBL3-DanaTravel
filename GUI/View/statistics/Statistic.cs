@@ -31,9 +31,9 @@ namespace PBL3.View.statistics
         }
         private void btnStatistic_Click(object sender, EventArgs e)
         {
-            int monthFrom = Convert.ToInt32(txtMonthFrom.Text);
-            int monthTo = Convert.ToInt32(txtMonthTo.Text);
-            int year = Convert.ToInt32(txtYear.Text);
+            int monthFrom = txtMonthFrom.Text == "" ? 0 : Convert.ToInt32(txtMonthFrom.Text);
+            int monthTo = txtMonthTo.Text == "" ? 12 : Convert.ToInt32(txtMonthTo.Text);
+            int year = txtYear.Text == "" ? DateTime.Now.Year : Convert.ToInt32(txtYear.Text);
             DrawChartSale(monthFrom, monthTo, year);
             DrawChartTourOutStanding(monthFrom, monthTo, year);
         }

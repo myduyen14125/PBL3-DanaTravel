@@ -60,7 +60,7 @@
             // 
             // bindingCustomer
             // 
-            this.bindingCustomer.DataSource = typeof(DTO.CustomerDTO);
+            this.bindingCustomer.DataSource = typeof(DTO.Customer);
             // 
             // dateTimePicker1
             // 
@@ -178,14 +178,14 @@
             // cbbCustomerType
             // 
             this.cbbCustomerType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(240)))), ((int)(((byte)(243)))));
-            this.cbbCustomerType.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingCustomer, "customer_type_name", true));
             this.cbbCustomerType.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.bindingCustomer, "customer_type_id", true));
+            this.cbbCustomerType.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingCustomer, "CustomerType.name", true));
             this.cbbCustomerType.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbCustomerType.FormattingEnabled = true;
-            this.cbbCustomerType.Location = new System.Drawing.Point(1162, 344);
+            this.cbbCustomerType.Location = new System.Drawing.Point(1152, 344);
             this.cbbCustomerType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbCustomerType.Name = "cbbCustomerType";
-            this.cbbCustomerType.Size = new System.Drawing.Size(167, 31);
+            this.cbbCustomerType.Size = new System.Drawing.Size(177, 31);
             this.cbbCustomerType.TabIndex = 17;
             // 
             // label1

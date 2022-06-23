@@ -19,13 +19,13 @@ namespace PBL3
         public Mydel d { get; set; }
 
         private int customerID;
-        private CustomerDTO customer;
+        private Customer customer;
         public FormAddEditCustomer(int id = 0)
         {
             InitializeComponent();
             customerID = id;
             if (id != 0) customer = CustomerBLL.Instance.GetCustomerDTOById(customerID);
-            else customer = new CustomerDTO();
+            else customer = new Customer();
         }
 
         private void FormAddEditCustomer_Load(object sender, EventArgs e)
@@ -59,7 +59,6 @@ namespace PBL3
             cbbCustomerType.SelectedIndex = 0;
         }
 
-
         private void btnCancel_Click(object sender, EventArgs e)
         {
             d();
@@ -70,21 +69,11 @@ namespace PBL3
         {
             if (!ValidateFormSave())    return;
             
-            CustomerDTO customerDTO = (CustomerDTO)bindingCustomer.DataSource;
+            Customer customerDTO = (Customer)bindingCustomer.DataSource;
+            customer.customer_type_id = (cbbCustomerType.SelectedItem as dynamic).Value;
             if (radioMale.Checked) customerDTO.gender = true;
             if (radioFemale.Checked) customerDTO.gender = false;
-            Customer customer = new Customer
-            {
-                id = customerDTO.id,
-                name = customerDTO.name,
-                phone = customerDTO.phone,
-                gender = customerDTO.gender,
-                email = customerDTO.email,
-                idCard = customerDTO.idCard,
-                address = customerDTO.address,
-                birthday = customerDTO.birthday,
-                customer_type_id = (cbbCustomerType.SelectedItem as dynamic).Value
-            };
+            
             CustomerBLL.Instance.Save(customer);
 
             if(customerID == 0)     

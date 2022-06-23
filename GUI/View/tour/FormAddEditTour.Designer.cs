@@ -84,7 +84,7 @@ namespace PBL3.View.tour
             this.lbTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.lbTitle.Location = new System.Drawing.Point(633, 24);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(118, 39);
+            this.lbTitle.Size = new System.Drawing.Size(115, 38);
             this.lbTitle.TabIndex = 66;
             this.lbTitle.Text = "TOUR";
             // 
@@ -159,7 +159,7 @@ namespace PBL3.View.tour
             // 
             this.lbTotal.AutoSize = true;
             this.lbTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTotal.Location = new System.Drawing.Point(687, 186);
+            this.lbTotal.Location = new System.Drawing.Point(647, 186);
             this.lbTotal.Name = "lbTotal";
             this.lbTotal.Size = new System.Drawing.Size(101, 20);
             this.lbTotal.TabIndex = 53;
@@ -233,7 +233,7 @@ namespace PBL3.View.tour
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(659, 355);
+            this.label5.Location = new System.Drawing.Point(647, 352);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(140, 20);
             this.label5.TabIndex = 72;
@@ -295,7 +295,7 @@ namespace PBL3.View.tour
             this.btnAddImage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddImage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.btnAddImage.Location = new System.Drawing.Point(87, 403);
+            this.btnAddImage.Location = new System.Drawing.Point(94, 406);
             this.btnAddImage.Name = "btnAddImage";
             this.btnAddImage.Size = new System.Drawing.Size(94, 40);
             this.btnAddImage.TabIndex = 80;
@@ -307,7 +307,7 @@ namespace PBL3.View.tour
             // 
             this.lbTransport.AutoSize = true;
             this.lbTransport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTransport.Location = new System.Drawing.Point(687, 145);
+            this.lbTransport.Location = new System.Drawing.Point(647, 148);
             this.lbTransport.Name = "lbTransport";
             this.lbTransport.Size = new System.Drawing.Size(81, 20);
             this.lbTransport.TabIndex = 81;

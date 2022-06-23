@@ -48,20 +48,21 @@ namespace PBL3.View
             flowLayoutTours.Controls.Clear();
             string searchKey = txtSearch.Text;
             int category_id = (cbbTourCategory.SelectedItem as dynamic).Value;
-            List<TourDTO> tourDTOs = TourBLL.Instance.GetTourDTOs(category_id, searchKey);
-            if(tourDTOs != null)
+
+            List<Tour> tours = TourBLL.Instance.GetTours(category_id, searchKey);
+            if(tours != null)
             {
-                foreach(TourDTO tourDTO in tourDTOs)
+                foreach(Tour tour in tours)
                 {
-                    flowLayoutTours.Controls.Add(new TourItem(tourDTO, this));
+                    flowLayoutTours.Controls.Add(new TourItem(tour, this));
                 }
             }
-            txtTotal.Text = tourDTOs.Count.ToString();
+            txtTotal.Text = tours.Count.ToString();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            FormAddEditTour form = new FormAddEditTour(new TourDTO { id = 0}, this);
+            FormAddEditTour form = new FormAddEditTour(new Tour { id = 0}, this);
             form.Dock = DockStyle.Fill;
             this.Controls.Add(form);
             HideTourManagement();

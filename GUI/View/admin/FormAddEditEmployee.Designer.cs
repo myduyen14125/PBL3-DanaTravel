@@ -81,7 +81,7 @@ namespace PBL3.View.admin
             // 
             // bindingEmployee
             // 
-            this.bindingEmployee.DataSource = typeof(DTO.EmployeeDTO);
+            this.bindingEmployee.DataSource = typeof(DTO.Employee);
             // 
             // dateTimePicker1
             // 
@@ -173,8 +173,6 @@ namespace PBL3.View.admin
             // 
             // cbbDivision
             // 
-            this.cbbDivision.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingEmployee, "division_name", true));
-            this.cbbDivision.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.bindingEmployee, "division_id", true));
             this.cbbDivision.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbDivision.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
             this.cbbDivision.FormattingEnabled = true;
@@ -186,8 +184,6 @@ namespace PBL3.View.admin
             // 
             // cbbPosition
             // 
-            this.cbbPosition.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingEmployee, "position_name", true));
-            this.cbbPosition.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.bindingEmployee, "position_id", true));
             this.cbbPosition.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbPosition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
             this.cbbPosition.FormattingEnabled = true;
@@ -199,8 +195,6 @@ namespace PBL3.View.admin
             // 
             // cbbEducation
             // 
-            this.cbbEducation.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingEmployee, "education_degree_name", true));
-            this.cbbEducation.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.bindingEmployee, "education_degree_id", true));
             this.cbbEducation.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbEducation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
             this.cbbEducation.FormattingEnabled = true;
@@ -330,6 +324,7 @@ namespace PBL3.View.admin
             // 
             this.picturebox.BackColor = System.Drawing.Color.White;
             this.picturebox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picturebox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.bindingEmployee, "image", true));
             this.picturebox.Location = new System.Drawing.Point(27, 82);
             this.picturebox.Name = "picturebox";
             this.picturebox.Size = new System.Drawing.Size(219, 203);

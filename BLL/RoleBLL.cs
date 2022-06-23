@@ -26,7 +26,7 @@ namespace BLL
 
         public List<string> GetListRoleName()
         {
-            return EntityManager.Instance.Roles.Select(e => e.name).ToList();
+            return EntityManager.Instance.Roles.Select(r => r.name).ToList();
         }
 
         public Role GetRoleByName(string roleName)

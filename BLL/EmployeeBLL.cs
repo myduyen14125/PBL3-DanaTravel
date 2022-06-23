@@ -25,7 +25,7 @@ namespace BLL
             }
         }
 
-        public DataTable GetDataTableEmployee(List<EmployeeDTO> employees)
+        public DataTable GetDataTableEmployee(List<Employee> employees)
         {
             DataTable dt = new DataTable();
 
@@ -45,66 +45,47 @@ namespace BLL
                 new DataColumn {ColumnName = "Vị trí", DataType = typeof(string)},
             });
 
-            foreach (EmployeeDTO e in employees)
+            foreach (Employee e in employees)
             {
-                dt.Rows.Add(e.id, e.name, e.birthday.ToString("dd/MM/yyyy"), e.gender ? "Nam" : "Nữ", e.idCard, e.phone, e.address, e.email, e.salary,
-                    e.education_degree_name, e.division_name, e.position_name);
+                dt.Rows.Add(e.id, e.name, ((DateTime)e.birthday).ToString("dd/MM/yyyy"), (bool)e.gender ? "Nam" : "Nữ", e.idCard, e.phone, e.address, e.email, e.salary,
+                    e.Education_degree.name, e.Division.name, e.Position.name);
             }
             return dt;
         }
 
-        public List<EmployeeDTO> GetListEmployee(int divisionId, string searchKey)
+        public List<Employee> GetListEmployee(int divisionId, string searchKey, string sortBy, string sortDir)
         {
             EntityManager db = EntityManager.Instance;
-            searchKey = searchKey.ToLower();
-            var result = from e in db.Employees
-                         join d in db.Divisions on e.division_id equals d.id
-                         join p in db.Positions on e.position_id equals p.id
-                         join ed in db.Education_degrees on e.education_degree_id equals ed.id
-                         where ((divisionId == 0) ? true : d.id == divisionId)
-                               && (e.name.ToLower().Contains(searchKey) || e.address.ToLower().Contains(searchKey))
-                         select new
-                         {
-                             e.id,
-                             e.name,
-                             e.birthday,
-                             e.gender,
-                             e.idCard,
-                             e.phone,
-                             e.email,
-                             e.address,
-                             e.salary,
-                             d_id = d.id,
-                             d_name = d.name,
-                             p_id = p.id,
-                             p_name = p.name,
-                             ed_id = ed.id,
-                             edu_name = ed.name
-                         };
-            
-            List<EmployeeDTO> employeeDTOs = new List<EmployeeDTO>();
-            foreach (var i in result)
+
+            List<Employee> employees = (from e in db.Employees
+                                        where (divisionId == 0 || e.Division.id == divisionId)
+                                              && (e.name.Contains(searchKey) || e.address.Contains(searchKey)
+                                                 || e.email.Contains(searchKey))
+                                        select e).ToList();
+
+            return Sort(employees, sortBy, sortDir);
+        }
+        public List<Employee> Sort(List<Employee> employees, string sortBy, string sortDir)
+        {
+            if (sortBy.ToLower() == "nosort") 
+                return employees;
+            else
             {
-                employeeDTOs.Add(new EmployeeDTO
+                switch (sortBy.ToLower())
                 {
-                    id = i.id,
-                    name = i.name,
-                    birthday = (DateTime)i.birthday,
-                    gender = (bool)i.gender,
-                    idCard = i.idCard,
-                    email = i.email,
-                    phone = i.phone,
-                    address = i.address,
-                    salary = i.salary,
-                    division_id = i.d_id,
-                    division_name = i.d_name,
-                    position_id = i.p_id,
-                    position_name = i.p_name,
-                    education_degree_id = i.ed_id,
-                    education_degree_name = i.edu_name
-                });
+                    case "name":
+                        return (sortDir.ToLower() == "asc" ? employees.OrderBy(e => e.name)
+                                    : employees.OrderByDescending(e => e.name)).ToList();
+                    case "salary":
+                        return (sortDir.ToLower() == "asc" ? employees.OrderBy(e => e.salary)
+                                    : employees.OrderByDescending(e => e.salary)).ToList();
+                    case "birthday":
+                        return (sortDir.ToLower() == "asc" ? employees.OrderBy(e => e.birthday)
+                                    : employees.OrderByDescending(e => e.birthday)).ToList();
+                    default:
+                        return employees;
+                }
             }
-            return employeeDTOs;
         }
 
         public List<Division> GetListDivision()
@@ -122,60 +103,9 @@ namespace BLL
             return EntityManager.Instance.Education_degrees.ToList();
         }
 
-        public EmployeeDTO GetEmployeeDTOById(int id)
+        public Employee GetEmployeeById(int id)
         {
-            EntityManager db = EntityManager.Instance;
-            var result = from e in db.Employees
-                         join d in db.Divisions on e.division_id equals d.id
-                         join p in db.Positions on e.position_id equals p.id
-                         join ed in db.Education_degrees on e.education_degree_id equals ed.id
-                         join ac in db.Accounts on e.account_id equals ac.id
-                         where e.id == id
-                         select new
-                         {
-                             e.id,
-                             e.name,
-                             e.birthday,
-                             e.gender,
-                             e.idCard,
-                             e.phone,
-                             e.email,
-                             e.address,
-                             e.salary,
-                             e.image,
-                             d_id = d.id,
-                             d_name = d.name,
-                             p_id = p.id,
-                             p_name = p.name,
-                             ed_id = ed.id,
-                             edu_name = ed.name,
-                             ac_id = ac.id,
-                             username = ac.username
-                         };
-            var i = result.FirstOrDefault();
-            List<Role> dataRoles = db.Roles.Where(r => r.Accounts.Any(ac => ac.id == i.ac_id)).ToList();
-            return new EmployeeDTO
-            {
-                id = i.id,
-                name = i.name,
-                birthday = (DateTime)i.birthday,
-                gender = (bool)i.gender,
-                idCard = i.idCard,
-                email = i.email,
-                phone = i.phone,
-                address = i.address,
-                salary = i.salary,
-                image = i.image,
-                division_id = i.d_id,
-                division_name = i.d_name,
-                position_id = i.p_id,
-                position_name = i.p_name,
-                education_degree_id = i.ed_id,
-                education_degree_name = i.edu_name,
-                account_id = i.ac_id,
-                account_name = i.username,
-                roles = dataRoles
-            };
+            return EntityManager.Instance.Employees.Single(e => e.id == id);
         }
         public void Save(Employee e)
         {
@@ -201,7 +131,7 @@ namespace BLL
                 data.account_id = e.account_id;
                 data.image = e.image;
             }
-            db.SaveChanges(); 
+            db.SaveChanges();
         }
 
         public void Delete(List<int> listId)

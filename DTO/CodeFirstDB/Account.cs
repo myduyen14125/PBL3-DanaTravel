@@ -25,16 +25,5 @@ namespace DTO
         {
             Roles = new List<Role>();
         }
-
-        public Account(string username, string password)
-        {
-            this.username = username;
-            this.password = password;
-        }
-
-        public Account(string username, string password, bool status) : this(username, password)
-        {
-            this.status = status;
-        }
     }
 }

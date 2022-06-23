@@ -93,7 +93,7 @@
             this.tabStatusCancel.Controls.Add(this.flowLayoutTabCancel);
             this.tabStatusCancel.Location = new System.Drawing.Point(4, 34);
             this.tabStatusCancel.Name = "tabStatusCancel";
-            this.tabStatusCancel.Size = new System.Drawing.Size(1200, 615);
+            this.tabStatusCancel.Size = new System.Drawing.Size(1243, 637);
             this.tabStatusCancel.TabIndex = 2;
             this.tabStatusCancel.Text = "Đã bị hủy";
             this.tabStatusCancel.UseVisualStyleBackColor = true;
@@ -195,6 +195,7 @@
             this.btnSearch.TabIndex = 8;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // tabStatus
             // 
@@ -331,7 +332,7 @@
             this.tabStatusOK.Location = new System.Drawing.Point(4, 34);
             this.tabStatusOK.Name = "tabStatusOK";
             this.tabStatusOK.Padding = new System.Windows.Forms.Padding(3);
-            this.tabStatusOK.Size = new System.Drawing.Size(1200, 615);
+            this.tabStatusOK.Size = new System.Drawing.Size(1243, 637);
             this.tabStatusOK.TabIndex = 1;
             this.tabStatusOK.Text = "Đã thanh toán";
             this.tabStatusOK.UseVisualStyleBackColor = true;
@@ -441,7 +442,7 @@
             this.btnReload.ForeColor = System.Drawing.Color.White;
             this.btnReload.Image = ((System.Drawing.Image)(resources.GetObject("btnReload.Image")));
             this.btnReload.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnReload.Location = new System.Drawing.Point(45, 31);
+            this.btnReload.Location = new System.Drawing.Point(65, 47);
             this.btnReload.Name = "btnReload";
             this.btnReload.Size = new System.Drawing.Size(50, 50);
             this.btnReload.TabIndex = 9;
@@ -451,7 +452,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.btnReload);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnSearch);

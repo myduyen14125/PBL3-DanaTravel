@@ -448,8 +448,10 @@
     <None Include="Properties\DataSources\DTO.BillDTO.datasource" />
     <None Include="Properties\DataSources\DTO.CodeFirstDB.Statistic.datasource" />
     <None Include="Properties\DataSources\DTO.CodeFirstDB.TourTicket.datasource" />
+    <None Include="Properties\DataSources\DTO.Customer.datasource" />
     <None Include="Properties\DataSources\DTO.CustomerDTO.datasource" />
     <None Include="Properties\DataSources\DTO.CustomerType.datasource" />
+    <None Include="Properties\DataSources\DTO.Employee.datasource" />
     <None Include="Properties\DataSources\DTO.EmployeeDTO.datasource" />
     <None Include="Properties\DataSources\DTO.Receipt.datasource" />
     <None Include="Properties\Settings.settings">

@@ -14,8 +14,8 @@ namespace DTO.CodeFirstDB
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
         public DateTime date { get; set; }
-        public double number_adult { get; set; }
-        public double number_children { get; set; }
+        public int number_adult { get; set; }
+        public int number_children { get; set; }
         public double total_price { get; set; }
         public string note { get; set; }
         public string name { get; set; }
@@ -37,6 +37,6 @@ namespace DTO.CodeFirstDB
         public virtual TourTicketStatus TourTicketStatus { get; set; }
 
         [ForeignKey("tour_id")]
-        public virtual Tour tour { get; set; }
+        public virtual Tour Tour { get; set; }
     }
 }

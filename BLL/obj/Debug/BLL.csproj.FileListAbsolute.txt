@@ -49,11 +49,8 @@ D:\PBL\PBL3-DanaTravel\BLL\bin\Debug\BLL.exe.config
 D:\PBL\PBL3-DanaTravel\BLL\bin\Debug\BLL.exe
 D:\PBL\PBL3-DanaTravel\BLL\bin\Debug\BLL.pdb
 D:\PBL\PBL3-DanaTravel\BLL\bin\Debug\DTO.exe
-D:\PBL\PBL3-DanaTravel\BLL\bin\Debug\AutoMapper.dll
 D:\PBL\PBL3-DanaTravel\BLL\bin\Debug\DTO.pdb
 D:\PBL\PBL3-DanaTravel\BLL\bin\Debug\DTO.exe.config
-D:\PBL\PBL3-DanaTravel\BLL\bin\Debug\AutoMapper.pdb
-D:\PBL\PBL3-DanaTravel\BLL\bin\Debug\AutoMapper.xml
 D:\PBL\PBL3-DanaTravel\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\PBL\PBL3-DanaTravel\BLL\bin\Debug\Util.exe
 D:\PBL\PBL3-DanaTravel\BLL\bin\Debug\Util.pdb

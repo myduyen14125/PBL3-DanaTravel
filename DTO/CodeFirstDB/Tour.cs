@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DTO
 {
-    public class Tour 
+    public class Tour
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -35,8 +35,8 @@ namespace DTO
 
         [ForeignKey("tour_category_id")]
         public virtual TourCategory TourCategory { get; set; }
-        public ICollection<TourImage> TourImages { get; set; } = null;
-        public ICollection<TourTicket> TourTickets { get; set; } = null;
+        public ICollection<TourImage> TourImages { get; set; }
+        public ICollection<TourTicket> TourTickets { get; set; }
         public Tour()
         {
             TourImages = new List<TourImage>();

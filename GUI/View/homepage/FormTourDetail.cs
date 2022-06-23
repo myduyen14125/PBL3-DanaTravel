@@ -24,7 +24,7 @@ namespace PBL3.View.homepage
             this.account_id = account_id;
             if(!this.DesignMode)
             {
-                TourDTO tour = TourBLL.Instance.GetTourDTOById(tour_id);
+                Tour tour = TourBLL.Instance.GetTourById(tour_id);
                 TourDetail tourDetail = new TourDetail(tour, account_id, true, true);
                 this.Controls.Add(tourDetail);
             }

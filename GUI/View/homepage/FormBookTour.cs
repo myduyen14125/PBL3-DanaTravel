@@ -18,12 +18,12 @@ namespace PBL3.View.homepage
 {
     public partial class FormBookTour : Form
     {
-        private TourDTO tourDTO;
+        private Tour tour;
         private int account_id;
-        public FormBookTour(TourDTO tourDTO, int account_id)
+        public FormBookTour(Tour tour, int account_id)
         {
             InitializeComponent();
-            this.tourDTO = tourDTO;
+            this.tour = tour;
             this.account_id = account_id;
         }
 
@@ -35,24 +35,24 @@ namespace PBL3.View.homepage
         private void FormBookTour_Load(object sender, EventArgs e)
         {
             List<Image> images = new List<Image>();
-            foreach (TourImage tourImage in tourDTO.TourImages) images.Add(Image.FromStream(new MemoryStream(tourImage.image)));
+            foreach (TourImage tourImage in tour.TourImages) images.Add(Image.FromStream(new MemoryStream(tourImage.image)));
             SliderImage sliderImage = new SliderImage(images, false);
             panelPicture.Controls.Add(sliderImage);
             sliderImage.Dock = DockStyle.Fill;
 
-            lbTourName1.Text = tourDTO.name;
-            lbTourID.Text = tourDTO.id.ToString();
+            lbTourName1.Text = tour.name;
+            lbTourID.Text = tour.id.ToString();
 
 
-            lbDepartureDate1.Text = tourDTO.departureDate.ToString("dd/MM/yyyy");
-            TimeSpan timeSpan = tourDTO.returnDate - tourDTO.departureDate;
+            lbDepartureDate1.Text = tour.departureDate.ToString("dd/MM/yyyy");
+            TimeSpan timeSpan = tour.returnDate - tour.departureDate;
             string time = "";
             if (timeSpan.Days == 0) time = "1 ngày 0 đêm";
             else time = (timeSpan.Days).ToString() + " ngày " + (timeSpan.Days - 1).ToString() + " đêm";
             lbTime.Text = time;
 
-            txtPriceAdult.Text = tourDTO.price_adult_one_ticket.ToString("###,###,###,###") + " VNĐ";
-            txtPriceChildren.Text = tourDTO.price_children_one_ticket.ToString("###,###,###,###") + " VNĐ";
+            txtPriceAdult.Text = tour.price_adult_one_ticket.ToString("###,###,###,###") + " VNĐ";
+            txtPriceChildren.Text = tour.price_children_one_ticket.ToString("###,###,###,###") + " VNĐ";
         }
         private void textChange(object sender, EventArgs e)
         {
@@ -61,8 +61,8 @@ namespace PBL3.View.homepage
                                     ? 0 : Convert.ToInt32(txtNumberAdults.Text);
             int number_children = txtNumberChildrens.Text == "" || !validate.ValidateNumber(txtNumberChildrens.Text)
                                     ? 0 : Convert.ToInt32(txtNumberChildrens.Text);
-            txtTotalPrice.Text = (number_adult * tourDTO.price_adult_one_ticket
-                                + number_children * tourDTO.price_children_one_ticket).ToString("###,###,###,###");
+            txtTotalPrice.Text = (number_adult * tour.price_adult_one_ticket
+                                + number_children * tour.price_children_one_ticket).ToString("###,###,###,###");
         }
         private void btnBookTour_Click(object sender, EventArgs e)
         {
@@ -86,7 +86,7 @@ namespace PBL3.View.homepage
                 total_price = total_price,
                 date = Convert.ToDateTime(DateTime.Now.ToString("yyyy/MM/dd")),
                 tour_ticket_status_id = 1,
-                tour_id = tourDTO.id,
+                tour_id = tour.id,
                 account_id = account_id
             };
             TourTicketBLL.Instance.Save(ticket);

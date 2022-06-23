@@ -17,19 +17,11 @@ namespace PBL3
 {
     public partial class EmployeeManagement : UserControl
     {
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        private static extern IntPtr CreateRoundRectRgn
-            (
-                int nLeft,
-                int nTop,
-                int nRight,
-                int nBottom,
-                int nWidthEclipse,
-                int nHeightEclipse
-            );
         public EmployeeManagement()
         {
             InitializeComponent();
+            cbbSortBy.SelectedIndex = 0;
+            cbbSortDir.SelectedIndex = 0;
         }
 
         private void EmployeeManagement_Load(object sender, EventArgs e)
@@ -41,11 +33,6 @@ namespace PBL3
             }
             btnEdit.Enabled = false;
             btnDelete.Enabled = false;
-            btnShow.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnShow.Width, btnShow.Height, 30, 30));
-            btnAdd.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnAdd.Width, btnAdd.Height, 30, 30));
-            btnEdit.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnEdit.Width, btnEdit.Height, 30, 30));
-            btnDelete.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnDelete.Width, btnDelete.Height, 30, 30));
-            btnSearch.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnSearch.Width, btnSearch.Height, 30, 30));
         }
 
         private void SetComboboxDivision()
@@ -74,10 +61,11 @@ namespace PBL3
         private void ShowDataEmployee()
         {
             int divisionId = (cbbDivision.SelectedItem as dynamic).Value;
-
-            string searchKey = txtSearch.Text;
-
-            dataGridViewEmployee.DataSource = EmployeeBLL.Instance.GetDataTableEmployee(EmployeeBLL.Instance.GetListEmployee(divisionId, searchKey));
+            string searchKey = txtSearch.Text; 
+            string sortDir = cbbSortDir.SelectedItem.ToString();
+            string sortBy =  cbbSortBy.SelectedItem.ToString();
+            
+            dataGridViewEmployee.DataSource = EmployeeBLL.Instance.GetDataTableEmployee(EmployeeBLL.Instance.GetListEmployee(divisionId, searchKey, sortBy, sortDir));
             txtTotal.Text = (dataGridViewEmployee.Rows.Count - 1).ToString();
             btnEdit.Enabled = false;
             btnDelete.Enabled = false;
@@ -142,6 +130,11 @@ namespace PBL3
                 EmployeeBLL.Instance.Delete(list);
                 ShowDataEmployee();
             }
+        }
+
+        private void btnSort_Click(object sender, EventArgs e)
+        {
+            ShowDataEmployee();
         }
     }
 }

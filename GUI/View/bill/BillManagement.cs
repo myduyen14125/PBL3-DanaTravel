@@ -27,13 +27,13 @@ namespace PBL3.View.bill
         }
         public void ShowData()
         {
-            List<BillDTO> bills;
+            List<Bill> bills;
             if (tabStatus.SelectedTab == tabStatus.TabPages["tabStatusWait"])
             {
-                bills = BillBLL.Instance.GetBillDTOs("", 1);
+                bills = BillBLL.Instance.GetBills(txtSearch.Text, 1);
 
                 flowLayoutTabWait.Controls.Clear();
-                foreach (BillDTO bill in bills)
+                foreach (Bill bill in bills)
                 {
                     BillItem billItem = new BillItem(bill, true);
                     billItem.LoadDataParent = ShowData;
@@ -42,10 +42,10 @@ namespace PBL3.View.bill
             }
             else if (tabStatus.SelectedTab == tabStatus.TabPages["tabStatusOK"])
             {
-                bills = BillBLL.Instance.GetBillDTOs("", 2);
+                bills = BillBLL.Instance.GetBills(txtSearch.Text, 2);
 
                 flowLayouthTabOK.Controls.Clear();
-                foreach (BillDTO bill in bills)
+                foreach (Bill bill in bills)
                 {
                     BillItem billItem = new BillItem(bill, false);
                     billItem.LoadDataParent = ShowData;
@@ -54,10 +54,10 @@ namespace PBL3.View.bill
             }
             else if (tabStatus.SelectedTab == tabStatus.TabPages["tabStatusCancel"])
             {
-                bills = BillBLL.Instance.GetBillDTOs("", 3);
+                bills = BillBLL.Instance.GetBills(txtSearch.Text, 3);
 
                 flowLayoutTabCancel.Controls.Clear();
-                foreach (BillDTO bill in bills)
+                foreach (Bill bill in bills)
                 {
                     BillItem billItem = new BillItem(bill, false);
                     billItem.LoadDataParent = ShowData;
@@ -75,6 +75,11 @@ namespace PBL3.View.bill
         }
 
         private void btnReload_Click(object sender, EventArgs e)
+        {
+            ShowData();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
         {
             ShowData();
         }

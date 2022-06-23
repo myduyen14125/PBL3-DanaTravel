@@ -62,20 +62,20 @@ insert into RoleAccounts(Account_id, Role_id) values (1, 1);
 
 -- Create account customer
 -- Account: 102200035	Password: 123456
-insert into Accounts (username, password, status) values ('102200035@sv1.dut.udn.vn', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 1);
+insert into Accounts (username, password, status) values ('nguyentoan102002@gmail.com', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 1);
 insert into RoleAccounts values (2, 2);
-insert into Customers (name, birthday, gender, idCard, phone, address, email, customer_type_id, account_id) values ('Fear', '8/9/2021', 1, '858987786399', '927 972 8426', '60140 Arkansas Center', '102200035@sv1.dut.udn.vn', 2, 2);
+insert into Customers (name, birthday, gender, idCard, phone, address, email, customer_type_id, account_id) values (N'Nguyễn Phước Đại Toàn', '8/9/2021', 1, '999999999999', '9279728426', '60140 Arkansas Center', '102200035@sv1.dut.udn.vn', 2, 2);
 
 -- Các khách hàng chỉ có thông tin, không có account login
-insert into Customers (name, birthday, gender, idCard, phone, address, email, customer_type_id) values ('Chisolm', '10/9/1990', 1, '187185872305', '606 107 8940', '96989 Judy Parkway', 'schisolm1@admin.ch', 1);
-insert into Customers (name, birthday, gender, idCard, phone, address, email, customer_type_id) values ('Decourt', '6/14/1980', 1, '929182657806', '945 339 0859', '75 Pearson Park', 'ddecourt2@sciencedirect.com', 2);
-insert into Customers (name, birthday, gender, idCard, phone, address, email, customer_type_id) values ('Bythell', '11/8/1978', 1, '767999956432', '641 464 3117', '29 Sheridan Crossing', 'jbythell3@twitter.com', 1);
-insert into Customers (name, birthday, gender, idCard, phone, address, email, customer_type_id) values ('Ruit', '1/3/1989', 0, '793120071651', '848 125 4431', '93717 Miller Hill', 'truit4@macromedia.com', 4);
-insert into Customers (name, birthday, gender, idCard, phone, address, email, customer_type_id) values ('Fido', '9/27/2000', 1, '550050596371', '854 445 9164', '58 Walton Alley', 'bfido5@aboutads.info', 5);
-insert into Customers (name, birthday, gender, idCard, phone, address, email, customer_type_id) values ('Prantl', '3/8/1978', 1, '552330798215', '505 514 1710', '3 Dayton Place', 'sprantl6@sourceforge.net', 1);
-insert into Customers (name, birthday, gender, idCard, phone, address, email, customer_type_id) values ('Gadie', '4/27/1985', 0, '367085137620', '984 665 2183', '702 Stuart Road', 'tgadie7@mac.com', 1);
-insert into Customers (name, birthday, gender, idCard, phone, address, email, customer_type_id) values ('Eadmeads', '10/11/1976', 1, '617246818280', '621 553 0427', '36017 Bashford Pass', 'aeadmeads8@ed.gov', 3);
-insert into Customers (name, birthday, gender, idCard, phone, address, email, customer_type_id) values ('Atcock', '12/15/1989', 1, '869647702077', '950 570 8324', '6 Kedzie Center', 'oatcock9@home.pl', 3);
+insert into Customers (name, birthday, gender, idCard, phone, address, email, customer_type_id) values ('Chisolm', '10/9/1990', 1, '187185872305', '6061078940', '96989 Judy Parkway', 'schisolm1@admin.ch', 1);
+insert into Customers (name, birthday, gender, idCard, phone, address, email, customer_type_id) values ('Decourt', '6/14/1980', 1, '929182657806', '9453390859', '75 Pearson Park', 'ddecourt2@sciencedirect.com', 2);
+insert into Customers (name, birthday, gender, idCard, phone, address, email, customer_type_id) values ('Bythell', '11/8/1978', 1, '767999956432', '6414643117', '29 Sheridan Crossing', 'jbythell3@twitter.com', 1);
+insert into Customers (name, birthday, gender, idCard, phone, address, email, customer_type_id) values ('Ruit', '1/3/1989', 0, '793120071651', '8481254431', '93717 Miller Hill', 'truit4@macromedia.com', 4);
+insert into Customers (name, birthday, gender, idCard, phone, address, email, customer_type_id) values ('Fido', '9/27/2000', 1, '550050596371', '8544459164', '58 Walton Alley', 'bfido5@aboutads.info', 5);
+insert into Customers (name, birthday, gender, idCard, phone, address, email, customer_type_id) values ('Prantl', '3/8/1978', 1, '552330798215', '5055141710', '3 Dayton Place', 'sprantl6@sourceforge.net', 1);
+insert into Customers (name, birthday, gender, idCard, phone, address, email, customer_type_id) values ('Gadie', '4/27/1985', 0, '367085137620', '9846652183', '702 Stuart Road', 'tgadie7@mac.com', 1);
+insert into Customers (name, birthday, gender, idCard, phone, address, email, customer_type_id) values ('Eadmeads', '10/11/1976', 1, '617246818280', '6215530427', '36017 Bashford Pass', 'aeadmeads8@ed.gov', 3);
+insert into Customers (name, birthday, gender, idCard, phone, address, email, customer_type_id) values ('Atcock', '12/15/1989', 1, '869647702077', '9505708324', '6 Kedzie Center', 'oatcock9@home.pl', 3);
 
 -- Data account employee
 insert into Accounts(username, password, status)
@@ -2125,3 +2125,23 @@ CONVERT(DATETIME, '2022-06-24 22:42:34.000'),
 '1',
 '4'
 );
+
+  insert into TourTickets(date, number_adult, number_children, total_price, note, name, phone, email, identity_card, customer_id, tour_id, account_id, tour_ticket_status_id)
+  values	('2022/01/16', 2, 1, 12188229, N'Không', N'Nguyễn Toàn', '0967492536', 'nguyentoan102002@gmail.com', '999999999999', 1, 1, 1, 2),
+			('2022/06/16', 2, 3, 12782775, N'Không', N'Nguyễn Văn A', '0967492536', 'nguyentoan102002@gmail.com', '999999999999', 1, 1, 1, 2),			
+			('2022/07/08', 3, 2, 18430980, N'hé lô', N'Nguyễn Văn B', '0967492536', 'nguyentoan102002@gmail.com', '999999999999', 1, 1, 1, 2),			
+			('2022/04/16', 2, 3, 14372592, N'hé lô', N'Nguyễn Văn C', '0967492536', 'nguyentoan102002@gmail.com', '999999999999', 1, 2, 1, 2),
+			('2022/05/16', 3, 4, 21391765, N'không', N'Nguyễn Văn D', '0967492536', 'nguyentoan102002@gmail.com', '999999999999', 1, 3, 1, 2),
+			('2022/07/23', 1, 3, 5480117, N'không', N'Nguyễn Văn E', '0967492536', 'nguyentoan102002@gmail.com', '999999999999', 1, 4, 1, 1),
+			('2022/08/18', 3, 4, 11126646, N'không', N'Nguyễn Văn G', '0967492536', 'nguyentoan102002@gmail.com', '999999999999', 1, 5, 1, 2),
+			('2022/08/29', 3, 4, 36124265, N'không', N'Nguyễn Văn H', '0967492536', 'nguyentoan102002@gmail.com', '999999999999', 1, 6, 1, 2);
+
+
+insert into Bills(date, bill_status_id, tour_ticket_id)
+values	('2022/01/18', 1, 1),
+		('2022/06/18', 2, 2),
+		('2022/07/10', 2, 3),
+		('2022/04/20', 2, 4),
+		('2022/05/19', 2, 5),
+		('2022/08/19', 2, 7),
+		('2022/08/29', 3, 8);

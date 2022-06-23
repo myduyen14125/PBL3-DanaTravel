@@ -58,8 +58,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountDTO.cs" />
-    <Compile Include="BillDTO.cs" />
     <Compile Include="CodeFirstDB\Account.cs" />
     <Compile Include="CodeFirstDB\Bill.cs" />
     <Compile Include="CodeFirstDB\BillStatus.cs" />
@@ -77,8 +75,6 @@
     <Compile Include="CodeFirstDB\TourStatus.cs" />
     <Compile Include="CodeFirstDB\TourTicket.cs" />
     <Compile Include="CodeFirstDB\TourTicketStatus.cs" />
-    <Compile Include="CustomerDTO.cs" />
-    <Compile Include="EmployeeDTO.cs" />
     <Compile Include="CodeFirstDB\Permission.cs" />
     <Compile Include="CodeFirstDB\Position.cs" />
     <Compile Include="Form1.cs">
@@ -96,8 +92,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Revenue.cs" />
-    <Compile Include="TourDTO.cs" />
-    <Compile Include="TourTicketDTO.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>

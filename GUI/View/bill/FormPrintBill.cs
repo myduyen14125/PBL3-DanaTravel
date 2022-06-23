@@ -1,4 +1,5 @@
 ﻿using DTO;
+using DTO.CodeFirstDB;
 using Microsoft.Reporting.WinForms;
 using System;
 using System.Collections.Generic;
@@ -14,8 +15,8 @@ namespace PBL3.View.bill
 {
     public partial class FormPrintBill : Form
     {
-        BillDTO bill;
-        public FormPrintBill(BillDTO bill)
+        private Bill bill;
+        public FormPrintBill(Bill bill)
         {
             InitializeComponent();
             this.bill = bill;
@@ -27,18 +28,25 @@ namespace PBL3.View.bill
 
             Microsoft.Reporting.WinForms.ReportParameter[] reportParameters = new Microsoft.Reporting.WinForms.ReportParameter[]
             {
-                new Microsoft.Reporting.WinForms.ReportParameter("price_adult", bill.price_adult.ToString("###,###,###,###,###")),
-                new Microsoft.Reporting.WinForms.ReportParameter("price_children", bill.price_children.ToString("###,###,###,###,###")),
-                new Microsoft.Reporting.WinForms.ReportParameter("total_price_before_VAT", bill.total_price.ToString("###,###,###,###,###")),
-                new Microsoft.Reporting.WinForms.ReportParameter("total_price_adult", (bill.number_adult * bill.price_adult).ToString("###,###,###,###,###")),
-                new Microsoft.Reporting.WinForms.ReportParameter("total_price_children", (bill.number_children * bill.price_children).ToString("###,###,###,###,###")),
-                new Microsoft.Reporting.WinForms.ReportParameter("priceVAT", Convert.ToInt32(bill.total_price * 0.1).ToString("###,###,###,###,###")),
-                new Microsoft.Reporting.WinForms.ReportParameter("total_price_pay", Convert.ToInt32(bill.total_price * 1.1).ToString("###,###,###,###,###")),
-                new Microsoft.Reporting.WinForms.ReportParameter("tour_name", bill.tour_name),
-                new Microsoft.Reporting.WinForms.ReportParameter("name", bill.name),
-                new Microsoft.Reporting.WinForms.ReportParameter("email", bill.email),
-                new Microsoft.Reporting.WinForms.ReportParameter("identity_card", bill.identity_card),
-                new Microsoft.Reporting.WinForms.ReportParameter("phone", bill.phone),
+                new ReportParameter("price_adult", bill.TourTicket.Tour.price_adult_one_ticket
+                                    .ToString("###,###,###,###,###")),
+                new ReportParameter("price_children", bill.TourTicket.Tour.price_children_one_ticket
+                                    .ToString("###,###,###,###,###")),
+                new ReportParameter("total_price_before_VAT", bill.TourTicket.total_price
+                                    .ToString("###,###,###,###,###")),
+                new ReportParameter("total_price_adult", (bill.TourTicket.number_adult * bill.TourTicket.Tour.price_adult_one_ticket)
+                                    .ToString("###,###,###,###,###")),
+                new ReportParameter("total_price_children", (bill.TourTicket.number_children * bill.TourTicket.Tour.price_children_one_ticket)
+                                    .ToString("###,###,###,###,###")),
+                new ReportParameter("priceVAT", Convert.ToInt32(bill.TourTicket.total_price * 0.1)
+                                    .ToString("###,###,###,###,###")),
+                new ReportParameter("total_price_pay", Convert.ToInt32(bill.TourTicket.total_price * 1.1)
+                                    .ToString("###,###,###,###,###")),
+                new ReportParameter("tour_name", bill.TourTicket.Tour.name),
+                new ReportParameter("name", bill.TourTicket.Customer.name),
+                new ReportParameter("email", bill.TourTicket.Customer.email),
+                new ReportParameter("identity_card", bill.TourTicket.Customer.idCard),
+                new ReportParameter("phone", bill.TourTicket.Customer.phone),
             };
             
             this.reportViewer1.LocalReport.SetParameters(reportParameters);

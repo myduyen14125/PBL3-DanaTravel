@@ -20,13 +20,13 @@ namespace PBL3.View.admin
         public Mydel d { get; set; }
 
         private int employee_id;
-        private EmployeeDTO employee;
+        private Employee employee;
 
         public FormAddEditEmployee(int id = 0)
         {
             InitializeComponent();
             employee_id = id;
-            employee = id == 0 ? new EmployeeDTO() : EmployeeBLL.Instance.GetEmployeeDTOById(id);
+            employee = id == 0 ? new Employee() : EmployeeBLL.Instance.GetEmployeeById(id);
         }
 
         private void FormAddEditEmployee_Load(object sender, EventArgs e)
@@ -45,13 +45,17 @@ namespace PBL3.View.admin
             SetComboboxEducation();
             SetListCheckBoxRole();
             bindingEmployee.DataSource = employee;
+
             if (employee_id != 0)
             {
-                if (employee.image != null) picturebox.Image = Image.FromStream(new MemoryStream(employee.image));
+                cbbPosition.SelectedIndex = cbbPosition.FindStringExact(employee.Position.name);
+                cbbDivision.SelectedIndex = cbbDivision.FindStringExact(employee.Division.name);
+                cbbEducation.SelectedIndex = cbbEducation.FindStringExact(employee.Education_degree.name);
+
                 int size = checkListBoxRole.Items.Count;
                 for (int i = 0; i < size; i++)
                 {
-                    foreach (Role r in employee.roles)
+                    foreach (Role r in employee.Account.Roles)
                     {
                         if (r.name == checkListBoxRole.Items[i].ToString())
                         {
@@ -61,7 +65,6 @@ namespace PBL3.View.admin
                     }
                 }
             }
-            this.Show();
         }
 
         private void SetComboboxDivision()
@@ -149,27 +152,11 @@ namespace PBL3.View.admin
             if(employee_id == 0) RegisterAccount();
 
             Account account = AccountBLL.Instance.GetAccountByUsername(txtEmail.Text);
-            EmployeeDTO employeeDTO = (EmployeeDTO)bindingEmployee.DataSource;
-
-            Employee epl = new Employee
-            {
-                id = employeeDTO.id,
-                name = employeeDTO.name,
-                birthday = employeeDTO.birthday,
-                gender = employeeDTO.gender,
-                idCard = employeeDTO.idCard,
-                phone = employeeDTO.phone,
-                email = employeeDTO.email,
-                address = employeeDTO.address,
-                salary = employeeDTO.salary,
-                position_id = (cbbPosition.SelectedItem as dynamic).Value,
-                division_id = (cbbDivision.SelectedItem as dynamic).Value,
-                education_degree_id = (cbbEducation.SelectedItem as dynamic).Value,
-                account_id = account.id,
-            };
-            if (picturebox.Image != null)
-                epl.image = ImageHelper.GetBytesImage(picturebox.Image);
-
+            Employee epl = (Employee)bindingEmployee.DataSource;
+            epl.position_id = (cbbPosition.SelectedItem as dynamic).Value;
+            epl.division_id = (cbbDivision.SelectedItem as dynamic).Value;
+            epl.education_degree_id = (cbbEducation.SelectedItem as dynamic).Value;
+            epl.account_id = account.id;
             EmployeeBLL.Instance.Save(epl);
 
             if (employee_id == 0) MessageBox.Show("Addition successful");

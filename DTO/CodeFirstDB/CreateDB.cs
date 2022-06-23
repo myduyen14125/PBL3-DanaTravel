@@ -14,20 +14,6 @@ namespace DTO
     {
         protected override void Seed(EntityManager context)
         {
-            Account ac = new Account
-            {
-                username = "daitoan",
-                password = "123"
-            };
-            context.Accounts.Add(ac);
-            context.SaveChanges();
-            //SinhVien sv = new SinhVien
-            //{
-            //    name = "Nguyễn văn á",
-            //    age = 20
-            //};
-            //context.SinhVien.Add(sv);
-            //context.SaveChanges();
         }
     }
 }

@@ -27,7 +27,7 @@ namespace BLL
         
         public DataTable GetDataTableEmployeeAccounts(string search = "")
         {
-            List<AccountDTO> accounts = GetEmployeeAccounts(search);
+            List<Employee> employees = EmployeeBLL.Instance.GetListEmployee(0, search, "", "NoSort");
             DataTable dt = new DataTable();
 
             dt.Columns.AddRange(new DataColumn[]
@@ -39,9 +39,9 @@ namespace BLL
                 new DataColumn {ColumnName = "Status", DataType = typeof(bool)}
             });
             int i = 1;
-            foreach (AccountDTO ac in accounts)
+            foreach (Employee e in employees)
             {
-                dt.Rows.Add(i, ac.name, ac.idCard, ac.username, ac.status);
+                dt.Rows.Add(i, e.name, e.idCard, e.Account.username, e.Account.status);
                 i++;
             }
             return dt;
@@ -105,49 +105,6 @@ namespace BLL
             return true;
         }
 
-        public List<AccountDTO> GetEmployeeAccounts(string search)
-        {
-            EntityManager db = EntityManager.Instance;
-            var result = from ac in db.Accounts
-                         join e in db.Employees on ac.id equals e.account_id
-                         where (ac.username.ToLower().Contains(search)
-                         || e.name.ToLower().Contains(search) || e.idCard.ToLower().Contains(search))
-                         select new { ac.id, ac.username, ac.status, e.name, e.idCard };
-            List<AccountDTO> accounts = new List<AccountDTO>();
-            foreach (var i in result)
-            {
-                accounts.Add(new AccountDTO
-                {
-                    id = i.id,
-                    username = i.username,
-                    status = i.status,
-                    name = i.name,
-                    idCard = i.idCard
-                });
-            }
-            return accounts;
-        }
-        
-        public List<AccountDTO> GetCustomerAccounts()
-        {
-            EntityManager db = EntityManager.Instance;
-            var result = from ac in db.Accounts
-                         join c in db.Customers on ac.id equals c.account_id
-                         select new { ac.id, ac.username, ac.status, c.name, c.idCard };
-            List<AccountDTO> accounts = new List<AccountDTO>();
-            foreach (var i in result)
-            {
-                accounts.Add(new AccountDTO
-                {
-                    id = i.id,
-                    username = i.username,
-                    status = i.status,
-                    name = i.name,
-                    idCard = i.idCard
-                });
-            }
-            return accounts;
-        }
         
         public Account GetAccountByUsername(string username)
         {

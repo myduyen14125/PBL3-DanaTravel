@@ -13,7 +13,6 @@ namespace DTO
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
-
         public string name { get; set; }
         public virtual ICollection<Account> Accounts { get; set; }
         public virtual ICollection<Permission> Permissions { get; set; }

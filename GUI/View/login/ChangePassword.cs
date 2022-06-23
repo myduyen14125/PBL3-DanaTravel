@@ -95,13 +95,17 @@ namespace PBL3
         {
             string password = txtPass.Text.Trim();
             string confirmPass = txtConfirm.Text.Trim();
-            
-            if(!ValidateFormChange())
+
+            if (!ValidateFormChange())
             {
                 return;
             }
 
-            if (AccountBLL.Instance.ChangePassword(new Account(email, HashPassword.GetHash(txtPass.Text))))
+            if (AccountBLL.Instance.ChangePassword(new Account
+            {
+                username = email,
+                password = HashPassword.GetHash(txtPass.Text)
+            }))
             {
                 this.Hide();
                 LoginForm f = new LoginForm();
@@ -130,7 +134,7 @@ namespace PBL3
                 return false;
             }
 
-            if(txtCode.Text == "")
+            if (txtCode.Text == "")
             {
                 MessageBox.Show("Code is empty. Please re-enter code");
                 txtCode.Focus();

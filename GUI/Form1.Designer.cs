@@ -86,7 +86,7 @@
             // 
             // bindingSource1
             // 
-            this.bindingSource1.DataSource = typeof(DTO.EmployeeDTO);
+            this.bindingSource1.DataSource = typeof(DTO.Employee);
             // 
             // Form1
             // 

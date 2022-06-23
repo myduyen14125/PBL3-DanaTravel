@@ -42,7 +42,11 @@ namespace PBL3
             {
                 return;
             }
-            Account account = new Account(username, HashPassword.GetHash(password));
+            Account account = new Account
+            {
+                username = username, 
+                password = HashPassword.GetHash(password)
+            };
             account = AccountBLL.Instance.CheckAccount(account);
 
             if (account != null)

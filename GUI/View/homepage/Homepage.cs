@@ -10,7 +10,7 @@ namespace PBL3
 {
     public partial class Homepage : Form
     {
-        private List<TourDTO> tours;
+        private List<Tour> tours;
         public Account account { get; set; }
         private int index_start = 0;
         public Homepage(Account ac)
@@ -82,7 +82,7 @@ namespace PBL3
         private void ShowTour()
         {
             string search = txtSearch.Text == "Search" ? "" : txtSearch.Text;
-            tours = TourBLL.Instance.GetTourDTOs(0, search);
+            tours = TourBLL.Instance.GetTours(0, search);
 
             panel1.Controls.Clear();
             panel2.Controls.Clear();
