@@ -20,19 +20,14 @@ namespace PBL3.View.admin
         {
             InitializeComponent();
             Load += AdminManagement_Load;
-            manacontainer.Visible = false;
-            btnStatistic.Location = new Point(0, 496);
             account = ac;
         }
         public void SetActivePanel(UserControl control)
         {
-            // set all usercontrol false
             employeeManagement1.Visible = false;
             customer1.Visible = false;
             tourManagement1.Visible = false;
             accountEmployee1.Visible = false;
-            customerAccount1.Visible = false;
-            roleAccount1.Visible = false;
             ticketManagement1.Visible = false;
             billManagement1.Visible = false;
             statistic1.Visible = false;
@@ -67,32 +62,9 @@ namespace PBL3.View.admin
         {
             SetActivePanel(accountEmployee1);
             accountEmployee1.ShowDataAccount();
-            hidesubmenu();
-            btnStatistic.Location = new Point(0, 496);
+        
         }
-        private void hidesubmenu()
-        {
-            if (manacontainer.Visible == true)
-            {
-                manacontainer.Visible = false;
-            }
-
-        }
-        private void showsubmenu(Panel submenu)
-        {
-            if (submenu.Visible == false)
-            {
-                hidesubmenu();
-                submenu.Visible = true;
-                btnStatistic.Location = new Point(0, 602);
-            }
-            else
-            {
-                submenu.Visible = false;
-                btnStatistic.Location = new Point(0, 496);
-            }
-
-        }
+      
         private void btnBackHomepage_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -101,25 +73,7 @@ namespace PBL3.View.admin
             homepage.Show();
         }
 
-        private void btnAccount_Click(object sender, EventArgs e)
-        {
-            showsubmenu(manacontainer);
-        }
-
-        private void btnCustomerAcc_Click(object sender, EventArgs e)
-        {
-            hidesubmenu();
-            btnStatistic.Location = new Point(0, 496);
-            SetActivePanel(customerAccount1);
-        }
-
-        private void btnRoleAcc_Click(object sender, EventArgs e)
-        {
-            hidesubmenu();
-            btnStatistic.Location = new Point(0, 496);
-            SetActivePanel(roleAccount1);
-        }
-
+      
         private void btnTicket_Click(object sender, EventArgs e)
         {
             SetActivePanel(ticketManagement1);

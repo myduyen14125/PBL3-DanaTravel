@@ -44,7 +44,7 @@ namespace PBL3.View.tour
                 htmlDescription.DocumentText = "<html><body></body></html>";
                 documentDesc = htmlDescription.Document.DomDocument as IHTMLDocument2;
                 documentDesc.designMode = "On";
-                lbTitle.Text = "ADD NEW TOUR";
+                lbTitle.Texts = "ADD NEW TOUR";
             }
             else
             {
@@ -53,7 +53,7 @@ namespace PBL3.View.tour
                     foreach (TourImage t in tour.TourImages)
                         imageTours.Add(Image.FromStream(new MemoryStream(t.image)));
                 }
-                lbTitle.Text = "EDIT TOUR";
+                lbTitle.Texts = "EDIT TOUR";
                 txtTourName.Text = tour.name;
                 dtpDepartureDate.Value = tour.departureDate;
                 dtpReturnDate.Value = tour.returnDate;

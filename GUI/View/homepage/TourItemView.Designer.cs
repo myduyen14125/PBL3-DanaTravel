@@ -75,8 +75,9 @@
             this.guna2Panel1.Controls.Add(this.panelPicture);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(279, 415);
+            this.guna2Panel1.Size = new System.Drawing.Size(209, 337);
             this.guna2Panel1.TabIndex = 0;
             // 
             // btnView
@@ -88,12 +89,13 @@
             this.btnView.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnView.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnView.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnView.FillColor = System.Drawing.Color.Silver;
+            this.btnView.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.btnView.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnView.ForeColor = System.Drawing.Color.Black;
-            this.btnView.Location = new System.Drawing.Point(167, 367);
+            this.btnView.ForeColor = System.Drawing.Color.White;
+            this.btnView.Location = new System.Drawing.Point(125, 298);
+            this.btnView.Margin = new System.Windows.Forms.Padding(2);
             this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(90, 30);
+            this.btnView.Size = new System.Drawing.Size(68, 24);
             this.btnView.TabIndex = 55;
             this.btnView.Text = "View";
             this.btnView.Click += new System.EventHandler(this.btnViewDetail_Click);
@@ -102,9 +104,10 @@
             // 
             this.lbPrice.AutoSize = true;
             this.lbPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPrice.Location = new System.Drawing.Point(116, 338);
+            this.lbPrice.Location = new System.Drawing.Point(87, 275);
+            this.lbPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbPrice.Name = "lbPrice";
-            this.lbPrice.Size = new System.Drawing.Size(103, 18);
+            this.lbPrice.Size = new System.Drawing.Size(87, 15);
             this.lbPrice.TabIndex = 54;
             this.lbPrice.Text = "2.000.000VNĐ";
             // 
@@ -112,9 +115,10 @@
             // 
             this.lbDepart.AutoSize = true;
             this.lbDepart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDepart.Location = new System.Drawing.Point(118, 308);
+            this.lbDepart.Location = new System.Drawing.Point(88, 250);
+            this.lbDepart.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbDepart.Name = "lbDepart";
-            this.lbDepart.Size = new System.Drawing.Size(80, 18);
+            this.lbDepart.Size = new System.Drawing.Size(69, 15);
             this.lbDepart.TabIndex = 53;
             this.lbDepart.Text = "20/05/2022";
             // 
@@ -122,9 +126,10 @@
             // 
             this.lbTime.AutoSize = true;
             this.lbTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTime.Location = new System.Drawing.Point(118, 282);
+            this.lbTime.Location = new System.Drawing.Point(88, 229);
+            this.lbTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbTime.Name = "lbTime";
-            this.lbTime.Size = new System.Drawing.Size(96, 18);
+            this.lbTime.Size = new System.Drawing.Size(81, 15);
             this.lbTime.TabIndex = 52;
             this.lbTime.Text = "2 ngày 1 đêm";
             // 
@@ -132,9 +137,10 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.Controls.Add(this.lbName);
-            this.panel2.Location = new System.Drawing.Point(21, 198);
+            this.panel2.Location = new System.Drawing.Point(16, 161);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(236, 81);
+            this.panel2.Size = new System.Drawing.Size(177, 66);
             this.panel2.TabIndex = 51;
             // 
             // lbName
@@ -142,54 +148,65 @@
             this.lbName.AutoSize = true;
             this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.lbName.Location = new System.Drawing.Point(3, 3);
+            this.lbName.Location = new System.Drawing.Point(2, 2);
+            this.lbName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(85, 25);
+            this.lbName.Size = new System.Drawing.Size(68, 20);
             this.lbName.TabIndex = 3;
             this.lbName.Text = "Tên tour";
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::GUI.Properties.Resources.Star;
-            this.pictureBox4.Location = new System.Drawing.Point(124, 372);
+            this.pictureBox4.Location = new System.Drawing.Point(93, 302);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox4.Size = new System.Drawing.Size(19, 20);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 50;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::GUI.Properties.Resources.Star;
-            this.pictureBox3.Location = new System.Drawing.Point(99, 372);
+            this.pictureBox3.Location = new System.Drawing.Point(74, 302);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox3.Size = new System.Drawing.Size(19, 20);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 49;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::GUI.Properties.Resources.Star;
-            this.pictureBox2.Location = new System.Drawing.Point(74, 372);
+            this.pictureBox2.Location = new System.Drawing.Point(56, 302);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox2.Size = new System.Drawing.Size(19, 20);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 48;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::GUI.Properties.Resources.Star;
-            this.pictureBox1.Location = new System.Drawing.Point(49, 372);
+            this.pictureBox1.Location = new System.Drawing.Point(37, 302);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.Size = new System.Drawing.Size(19, 20);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 47;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox12
             // 
             this.pictureBox12.Image = global::GUI.Properties.Resources.Star;
-            this.pictureBox12.Location = new System.Drawing.Point(24, 372);
+            this.pictureBox12.Location = new System.Drawing.Point(18, 302);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox12.Size = new System.Drawing.Size(19, 20);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 46;
             this.pictureBox12.TabStop = false;
             // 
@@ -197,9 +214,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 338);
+            this.label3.Location = new System.Drawing.Point(16, 275);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 18);
+            this.label3.Size = new System.Drawing.Size(73, 15);
             this.label3.TabIndex = 44;
             this.label3.Text = "Giá khoảng:";
             // 
@@ -207,9 +225,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 308);
+            this.label2.Location = new System.Drawing.Point(16, 250);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 18);
+            this.label2.Size = new System.Drawing.Size(66, 15);
             this.label2.TabIndex = 43;
             this.label2.Text = "Khởi hành:";
             // 
@@ -217,9 +236,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(21, 282);
+            this.label1.Location = new System.Drawing.Point(16, 229);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 18);
+            this.label1.Size = new System.Drawing.Size(60, 15);
             this.label1.TabIndex = 42;
             this.label1.Text = "Lịch trình:";
             // 
@@ -227,19 +247,21 @@
             // 
             this.panelPicture.BackColor = System.Drawing.SystemColors.Control;
             this.panelPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelPicture.Location = new System.Drawing.Point(21, 17);
+            this.panelPicture.Location = new System.Drawing.Point(16, 14);
+            this.panelPicture.Margin = new System.Windows.Forms.Padding(2);
             this.panelPicture.Name = "panelPicture";
-            this.panelPicture.Size = new System.Drawing.Size(236, 181);
+            this.panelPicture.Size = new System.Drawing.Size(178, 147);
             this.panelPicture.TabIndex = 41;
             // 
             // TourItemView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.guna2Panel1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TourItemView";
-            this.Size = new System.Drawing.Size(279, 415);
+            this.Size = new System.Drawing.Size(209, 337);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

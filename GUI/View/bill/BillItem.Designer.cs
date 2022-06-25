@@ -42,51 +42,57 @@
             // lbPhone
             // 
             this.lbPhone.AutoSize = true;
-            this.lbPhone.Location = new System.Drawing.Point(512, 12);
+            this.lbPhone.Location = new System.Drawing.Point(384, 10);
+            this.lbPhone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbPhone.Name = "lbPhone";
-            this.lbPhone.Size = new System.Drawing.Size(46, 16);
+            this.lbPhone.Size = new System.Drawing.Size(38, 13);
             this.lbPhone.TabIndex = 15;
             this.lbPhone.Text = "Phone";
             // 
             // lbCCCD
             // 
             this.lbCCCD.AutoSize = true;
-            this.lbCCCD.Location = new System.Drawing.Point(393, 12);
+            this.lbCCCD.Location = new System.Drawing.Point(295, 10);
+            this.lbCCCD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbCCCD.Name = "lbCCCD";
-            this.lbCCCD.Size = new System.Drawing.Size(44, 16);
+            this.lbCCCD.Size = new System.Drawing.Size(36, 13);
             this.lbCCCD.TabIndex = 14;
             this.lbCCCD.Text = "CCCD";
             // 
             // lbEmail
             // 
             this.lbEmail.AutoSize = true;
-            this.lbEmail.Location = new System.Drawing.Point(198, 12);
+            this.lbEmail.Location = new System.Drawing.Point(148, 10);
+            this.lbEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(41, 16);
+            this.lbEmail.Size = new System.Drawing.Size(32, 13);
             this.lbEmail.TabIndex = 13;
             this.lbEmail.Text = "Email";
             // 
             // lbTotalPrice
             // 
             this.lbTotalPrice.AutoSize = true;
-            this.lbTotalPrice.Location = new System.Drawing.Point(623, 12);
+            this.lbTotalPrice.Location = new System.Drawing.Point(467, 10);
+            this.lbTotalPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbTotalPrice.Name = "lbTotalPrice";
-            this.lbTotalPrice.Size = new System.Drawing.Size(63, 16);
+            this.lbTotalPrice.Size = new System.Drawing.Size(52, 13);
             this.lbTotalPrice.TabIndex = 12;
             this.lbTotalPrice.Text = "Tổng tiền";
             // 
             // lbName
             // 
             this.lbName.AutoSize = true;
-            this.lbName.Location = new System.Drawing.Point(2, 12);
+            this.lbName.Location = new System.Drawing.Point(2, 10);
+            this.lbName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(44, 16);
+            this.lbName.Size = new System.Drawing.Size(35, 13);
             this.lbName.TabIndex = 9;
             this.lbName.Text = "Name";
             // 
             // btnCancel
             // 
             this.btnCancel.BorderRadius = 20;
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnCancel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCancel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -96,15 +102,17 @@
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.Image = global::GUI.Properties.Resources.cancelBtn;
             this.btnCancel.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCancel.Location = new System.Drawing.Point(815, -1);
+            this.btnCancel.Location = new System.Drawing.Point(641, -1);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(40, 40);
+            this.btnCancel.Size = new System.Drawing.Size(30, 32);
             this.btnCancel.TabIndex = 17;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnAccept
             // 
             this.btnAccept.BorderRadius = 20;
+            this.btnAccept.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAccept.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAccept.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAccept.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -114,15 +122,17 @@
             this.btnAccept.ForeColor = System.Drawing.Color.White;
             this.btnAccept.Image = global::GUI.Properties.Resources.icon_success;
             this.btnAccept.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAccept.Location = new System.Drawing.Point(738, -1);
+            this.btnAccept.Location = new System.Drawing.Point(554, -1);
+            this.btnAccept.Margin = new System.Windows.Forms.Padding(2);
             this.btnAccept.Name = "btnAccept";
-            this.btnAccept.Size = new System.Drawing.Size(40, 40);
+            this.btnAccept.Size = new System.Drawing.Size(30, 32);
             this.btnAccept.TabIndex = 16;
             this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
             // 
             // btnViewDetail
             // 
             this.btnViewDetail.BorderRadius = 20;
+            this.btnViewDetail.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnViewDetail.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnViewDetail.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnViewDetail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -132,15 +142,16 @@
             this.btnViewDetail.ForeColor = System.Drawing.Color.White;
             this.btnViewDetail.Image = ((System.Drawing.Image)(resources.GetObject("btnViewDetail.Image")));
             this.btnViewDetail.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnViewDetail.Location = new System.Drawing.Point(784, -1);
+            this.btnViewDetail.Location = new System.Drawing.Point(588, -1);
+            this.btnViewDetail.Margin = new System.Windows.Forms.Padding(2);
             this.btnViewDetail.Name = "btnViewDetail";
-            this.btnViewDetail.Size = new System.Drawing.Size(40, 40);
+            this.btnViewDetail.Size = new System.Drawing.Size(30, 32);
             this.btnViewDetail.TabIndex = 18;
             this.btnViewDetail.Click += new System.EventHandler(this.btnViewDetail_Click);
             // 
             // BillItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.btnViewDetail);
@@ -151,9 +162,9 @@
             this.Controls.Add(this.lbEmail);
             this.Controls.Add(this.lbTotalPrice);
             this.Controls.Add(this.lbName);
-            this.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Name = "BillItem";
-            this.Size = new System.Drawing.Size(868, 38);
+            this.Size = new System.Drawing.Size(709, 31);
             this.ResumeLayout(false);
             this.PerformLayout();
 

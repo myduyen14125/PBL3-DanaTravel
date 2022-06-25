@@ -473,6 +473,16 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Group_1306 {
+            get {
+                object obj = ResourceManager.GetObject("Group 1306", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Group_1308 {
             get {
                 object obj = ResourceManager.GetObject("Group 1308", resourceCulture);
@@ -653,6 +663,46 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_10_avatar_2754575_120521 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder-10-avatar-2754575_120521", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icongiohang {
+            get {
+                object obj = ResourceManager.GetObject("icongiohang", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconpass {
+            get {
+                object obj = ResourceManager.GetObject("iconpass", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconticket {
+            get {
+                object obj = ResourceManager.GetObject("iconticket", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap image {
             get {
                 object obj = ResourceManager.GetObject("image", resourceCulture);
@@ -803,6 +853,16 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mainCar {
+            get {
+                object obj = ResourceManager.GetObject("mainCar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mana {
             get {
                 object obj = ResourceManager.GetObject("mana", resourceCulture);
@@ -886,6 +946,16 @@ namespace GUI.Properties {
         internal static System.Drawing.Bitmap planehome {
             get {
                 object obj = ResourceManager.GetObject("planehome", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap planewhite {
+            get {
+                object obj = ResourceManager.GetObject("planewhite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1016,6 +1086,16 @@ namespace GUI.Properties {
         internal static System.Drawing.Bitmap Thanhdiamyson {
             get {
                 object obj = ResourceManager.GetObject("Thanhdiamyson", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ticket_86147 {
+            get {
+                object obj = ResourceManager.GetObject("ticket_86147", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -56,3 +56,21 @@ D:\PBL\PBL3-DanaTravel\BLL\bin\Debug\Util.exe
 D:\PBL\PBL3-DanaTravel\BLL\bin\Debug\Util.pdb
 D:\PBL\PBL3-DanaTravel\BLL\bin\Debug\Util.exe.config
 D:\PBL\PBL3-DanaTravel\BLL\bin\Debug\EASendMail.dll
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\BLL\bin\Debug\BLL.exe.config
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\BLL\bin\Debug\BLL.exe
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\BLL\bin\Debug\BLL.pdb
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\BLL\bin\Debug\DTO.exe
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\BLL\bin\Debug\Util.exe
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\BLL\bin\Debug\EASendMail.dll
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\BLL\bin\Debug\DTO.pdb
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\BLL\bin\Debug\DTO.exe.config
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\BLL\bin\Debug\Util.pdb
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\BLL\bin\Debug\Util.exe.config
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\BLL\obj\Debug\BLL.csproj.SuggestedBindingRedirects.cache
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\BLL\obj\Debug\BLL.Properties.Resources.resources
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\BLL\obj\Debug\BLL.csproj.GenerateResource.cache
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\BLL\obj\Debug\BLL.exe
+E:\Nam 2\NET_WF\nt-myduyen\PBL3-DanaTravel\BLL\obj\Debug\BLL.pdb

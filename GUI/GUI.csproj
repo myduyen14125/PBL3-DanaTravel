@@ -193,12 +193,6 @@
     <Compile Include="View\bill\FormPrintBill.Designer.cs">
       <DependentUpon>FormPrintBill.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\CustomerAccount.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View\CustomerAccount.Designer.cs">
-      <DependentUpon>CustomerAccount.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\homepage\FormBookTour.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -272,12 +266,6 @@
     </Compile>
     <Compile Include="View\login\SignupForm.Designer.cs">
       <DependentUpon>SignupForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\RoleAccount.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View\RoleAccount.Designer.cs">
-      <DependentUpon>RoleAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="View\statistics\Statistic.cs">
       <SubType>UserControl</SubType>
@@ -373,9 +361,6 @@
     <EmbeddedResource Include="View\bill\FormPrintBill.resx">
       <DependentUpon>FormPrintBill.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\CustomerAccount.resx">
-      <DependentUpon>CustomerAccount.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View\homepage\FormBookTour.resx">
       <DependentUpon>FormBookTour.cs</DependentUpon>
     </EmbeddedResource>
@@ -416,9 +401,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\login\SignupForm.resx">
       <DependentUpon>SignupForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\RoleAccount.resx">
-      <DependentUpon>RoleAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\statistics\Statistic.resx">
       <DependentUpon>Statistic.cs</DependentUpon>
@@ -695,7 +677,15 @@
     <None Include="Resources\56986749_694943527575452_6002140096634028032_n1.jpg" />
     <None Include="Resources\avatar.jpg" />
     <None Include="Resources\cancelBtn.png" />
+    <None Include="Resources\planewhite.png" />
+    <None Include="Resources\mainCar.png" />
+    <None Include="Resources\iconfinder-10-avatar-2754575_120521.png" />
+    <None Include="Resources\icongiohang.png" />
+    <None Include="Resources\iconpass.png" />
+    <None Include="Resources\iconticket.png" />
+    <None Include="Resources\Group 1306.png" />
     <Content Include="Resources\reload.png" />
+    <None Include="Resources\ticket_86147.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
