@@ -221,10 +221,10 @@
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.lbDepartureDate1);
-            this.panel2.Location = new System.Drawing.Point(394, 58);
+            this.panel2.Location = new System.Drawing.Point(369, 58);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(286, 238);
+            this.panel2.Size = new System.Drawing.Size(355, 238);
             this.panel2.TabIndex = 34;
             // 
             // txtPriceChildren
@@ -256,7 +256,7 @@
             this.pictureBox3.Location = new System.Drawing.Point(-1, 37);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(284, 2);
+            this.pictureBox3.Size = new System.Drawing.Size(352, 2);
             this.pictureBox3.TabIndex = 14;
             this.pictureBox3.TabStop = false;
             // 
@@ -267,7 +267,7 @@
             this.pictureBox2.Location = new System.Drawing.Point(0, 124);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(284, 2);
+            this.pictureBox2.Size = new System.Drawing.Size(352, 2);
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
             // 
@@ -278,7 +278,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(1, 80);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(284, 2);
+            this.pictureBox1.Size = new System.Drawing.Size(352, 2);
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
@@ -300,7 +300,7 @@
             this.pictureBox5.Location = new System.Drawing.Point(1, 159);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(284, 2);
+            this.pictureBox5.Size = new System.Drawing.Size(352, 2);
             this.pictureBox5.TabIndex = 10;
             this.pictureBox5.TabStop = false;
             // 
@@ -311,7 +311,7 @@
             this.pictureBox4.Location = new System.Drawing.Point(0, 197);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(284, 2);
+            this.pictureBox4.Size = new System.Drawing.Size(352, 2);
             this.pictureBox4.TabIndex = 9;
             this.pictureBox4.TabStop = false;
             // 
@@ -515,7 +515,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.label5.Location = new System.Drawing.Point(412, 297);
+            this.label5.Location = new System.Drawing.Point(368, 297);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(198, 15);

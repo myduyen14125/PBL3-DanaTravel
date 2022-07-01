@@ -33,13 +33,11 @@
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.BaNaLabel = new System.Windows.Forms.Label();
             this.pictureInside = new System.Windows.Forms.PictureBox();
-            this.dots = new System.Windows.Forms.PictureBox();
             this.logoBox = new System.Windows.Forms.PictureBox();
             this.loadingBox = new System.Windows.Forms.PictureBox();
             this.frameBox = new System.Windows.Forms.PictureBox();
             this.blurBg = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureInside)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dots)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loadingBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.frameBox)).BeginInit();
@@ -59,7 +57,7 @@
             this.BaNaLabel.Font = new System.Drawing.Font("Yu Gothic UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BaNaLabel.Location = new System.Drawing.Point(298, 436);
             this.BaNaLabel.Name = "BaNaLabel";
-            this.BaNaLabel.Size = new System.Drawing.Size(184, 41);
+            this.BaNaLabel.Size = new System.Drawing.Size(148, 32);
             this.BaNaLabel.TabIndex = 4;
             this.BaNaLabel.Text = "BA NA HILLS";
             this.BaNaLabel.Visible = false;
@@ -74,18 +72,6 @@
             this.pictureInside.TabIndex = 3;
             this.pictureInside.TabStop = false;
             this.pictureInside.Visible = false;
-            // 
-            // dots
-            // 
-            this.dots.BackColor = System.Drawing.Color.Transparent;
-            this.dots.Image = global::GUI.Properties.Resources.dots;
-            this.dots.Location = new System.Drawing.Point(103, 465);
-            this.dots.Name = "dots";
-            this.dots.Size = new System.Drawing.Size(210, 34);
-            this.dots.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.dots.TabIndex = 5;
-            this.dots.TabStop = false;
-            this.dots.Visible = false;
             // 
             // logoBox
             // 
@@ -124,9 +110,9 @@
             // 
             this.blurBg.Cursor = System.Windows.Forms.Cursors.Hand;
             this.blurBg.Image = global::GUI.Properties.Resources.exploreQuote;
-            this.blurBg.Location = new System.Drawing.Point(526, 398);
+            this.blurBg.Location = new System.Drawing.Point(88, 477);
             this.blurBg.Name = "blurBg";
-            this.blurBg.Size = new System.Drawing.Size(394, 79);
+            this.blurBg.Size = new System.Drawing.Size(432, 62);
             this.blurBg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.blurBg.TabIndex = 7;
             this.blurBg.TabStop = false;
@@ -135,14 +121,12 @@
             // 
             // LoadingScr
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(221)))), ((int)(((byte)(236)))));
             this.ClientSize = new System.Drawing.Size(1032, 565);
             this.Controls.Add(this.blurBg);
             this.Controls.Add(this.pictureInside);
             this.Controls.Add(this.BaNaLabel);
-            this.Controls.Add(this.dots);
             this.Controls.Add(this.logoBox);
             this.Controls.Add(this.loadingBox);
             this.Controls.Add(this.frameBox);
@@ -151,7 +135,6 @@
             this.Text = "DanaTravel";
             this.Load += new System.EventHandler(this.LoginForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureInside)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dots)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loadingBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.frameBox)).EndInit();
@@ -170,7 +153,6 @@
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.PictureBox pictureInside;
         private System.Windows.Forms.Label BaNaLabel;
-        private System.Windows.Forms.PictureBox dots;
         private System.Windows.Forms.PictureBox blurBg;
     }
 }

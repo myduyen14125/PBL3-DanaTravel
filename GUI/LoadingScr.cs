@@ -34,7 +34,7 @@ namespace PBL3
         {
             frameBox.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, frameBox.Width, frameBox.Height, 20, 20));
             pictureInside.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, pictureInside.Width, pictureInside.Height, 20, 20));
-            dots.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, dots.Width, dots.Height, 25, 25));
+           // dots.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, dots.Width, dots.Height, 25, 25));
             blurBg.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, blurBg.Width, blurBg.Height, 20, 20));
         }
         private void timer1_Tick(object sender, EventArgs e)
@@ -44,7 +44,7 @@ namespace PBL3
             this.loadingBox.Visible = false;
             this.frameBox.Visible = true;
             this.pictureInside.Visible = true;
-            this.dots.Visible = true;
+         //   this.dots.Visible = true;
             this.BaNaLabel.Visible = true;
             this.blurBg.Visible = true;
             //custom bgImage of form

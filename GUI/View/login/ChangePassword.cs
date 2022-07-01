@@ -16,17 +16,6 @@ namespace PBL3
 {
     public partial class ChangePassword : Form
     {
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        private static extern IntPtr CreateRoundRectRgn
-            (
-                int nLeft,
-                int nTop,
-                int nRight,
-                int nBottom,
-                int nWidthEclipse,
-                int nHeightEclipse
-            );
-
         private string email;
         private int code;
         public ChangePassword(string email, int code)
@@ -147,11 +136,6 @@ namespace PBL3
                 return false;
             }
             return true;
-        }
-
-        private void ChangePassword_Load(object sender, EventArgs e)
-        {
-            btnChange.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnChange.Width, btnChange.Height, 30, 30));
         }
     }
 }

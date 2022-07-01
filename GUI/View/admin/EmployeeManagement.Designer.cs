@@ -41,8 +41,8 @@ namespace PBL3
             this.label3 = new System.Windows.Forms.Label();
             this.cbbSortDir = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnShow = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -133,7 +133,6 @@ namespace PBL3
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.cbbSortDir);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.txtSearch);
             this.panel1.Controls.Add(this.labelDivision);
             this.panel1.Controls.Add(this.cbbDivision);
@@ -141,6 +140,7 @@ namespace PBL3
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.dataGridViewEmployee);
             this.panel1.Controls.Add(this.txtTotal);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
@@ -154,10 +154,10 @@ namespace PBL3
             this.btnSort.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSort.ForeColor = System.Drawing.Color.White;
-            this.btnSort.Location = new System.Drawing.Point(356, 129);
+            this.btnSort.Location = new System.Drawing.Point(354, 121);
             this.btnSort.Margin = new System.Windows.Forms.Padding(2);
             this.btnSort.Name = "btnSort";
-            this.btnSort.Size = new System.Drawing.Size(69, 28);
+            this.btnSort.Size = new System.Drawing.Size(101, 40);
             this.btnSort.TabIndex = 26;
             this.btnSort.Text = "Sort";
             this.btnSort.UseVisualStyleBackColor = false;
@@ -213,22 +213,11 @@ namespace PBL3
             this.label2.TabIndex = 22;
             this.label2.Text = "Sort Dir:";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GUI.Properties.Resources.Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(458, 35);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(152, 91);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
-            // 
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSearch.FlatAppearance.BorderSize = 0;
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnSearch.ForeColor = System.Drawing.Color.White;
             this.btnSearch.Image = global::GUI.Properties.Resources.Search_find_locate_1542;
@@ -236,12 +225,22 @@ namespace PBL3
             this.btnSearch.Location = new System.Drawing.Point(887, 118);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(107, 37);
+            this.btnSearch.Size = new System.Drawing.Size(101, 40);
             this.btnSearch.TabIndex = 20;
             this.btnSearch.Text = "Search";
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GUI.Properties.Resources.Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(442, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(158, 106);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -255,7 +254,7 @@ namespace PBL3
             this.panel2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel2.Location = new System.Drawing.Point(0, 652);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1120, 58);
+            this.panel2.Size = new System.Drawing.Size(1120, 57);
             this.panel2.TabIndex = 25;
             // 
             // btnShow
@@ -267,7 +266,7 @@ namespace PBL3
             this.btnShow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnShow.Image = global::GUI.Properties.Resources.cinema_display_isight_monitor_19607;
             this.btnShow.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShow.Location = new System.Drawing.Point(130, 11);
+            this.btnShow.Location = new System.Drawing.Point(130, 8);
             this.btnShow.Margin = new System.Windows.Forms.Padding(2);
             this.btnShow.Name = "btnShow";
             this.btnShow.Size = new System.Drawing.Size(100, 40);
@@ -286,7 +285,7 @@ namespace PBL3
             this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnAdd.Image = global::GUI.Properties.Resources._1486485557_add_create_new_more_plus_81188;
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(352, 12);
+            this.btnAdd.Location = new System.Drawing.Point(352, 8);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(100, 40);
@@ -305,7 +304,7 @@ namespace PBL3
             this.btnEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnEdit.Image = global::GUI.Properties.Resources.gui_edit_icon_157165;
             this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdit.Location = new System.Drawing.Point(594, 12);
+            this.btnEdit.Location = new System.Drawing.Point(594, 8);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(2);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(100, 40);
@@ -324,7 +323,7 @@ namespace PBL3
             this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnDelete.Image = global::GUI.Properties.Resources._1486504830_delete_dustbin_empty_recycle_recycling_remove_trash_81361;
             this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDelete.Location = new System.Drawing.Point(828, 11);
+            this.btnDelete.Location = new System.Drawing.Point(828, 7);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(100, 40);
@@ -404,11 +403,11 @@ namespace PBL3
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private MyLibrary.MyTextBox myTextBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbbSortDir;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbbSortBy;
         private System.Windows.Forms.Button btnSort;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -166,6 +166,7 @@ namespace PBL3.View.tour
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
+            lbTitle.Texts = "Tour";
             tourManagement.Reload();
         }
         private bool ValidateForm()
@@ -197,5 +198,7 @@ namespace PBL3.View.tour
             }
             return true;
         }
+
+      
     }
 }

@@ -17,17 +17,6 @@ namespace PBL3
     public partial class LoginForm : Form
     {
         private Validate validate = new Validate();
-
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        private static extern IntPtr CreateRoundRectRgn
-            (
-                int nLeft,
-                int nTop,
-                int nRight,
-                int nBottom,
-                int nWidthEclipse,
-                int nHeightEclipse
-            );
         public LoginForm()
         {
             InitializeComponent();
@@ -106,11 +95,6 @@ namespace PBL3
                 return false;
             }
             return true;
-        }
-
-        private void LoginForm_Load(object sender, EventArgs e)
-        {
-            loginBtn.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, loginBtn.Width, loginBtn.Height, 30, 30));
         }
     }
 }

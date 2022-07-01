@@ -13,16 +13,6 @@ namespace PBL3
 {
     public partial class LoginScr : Form
     {
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        private static extern IntPtr CreateRoundRectRgn
-            (
-                int nLeft,
-                int nTop,
-                int nRight,
-                int nBottom,
-                int nWidthEclipse,
-                int nHeightEclipse
-            );
         public LoginScr()
         {
             InitializeComponent();
@@ -42,12 +32,6 @@ namespace PBL3
             SignupForm f = new SignupForm();
             f.Closed += (s, args) => this.Close();
             f.Show();
-        }
-
-        private void LoginScr_Load(object sender, EventArgs e)
-        {
-            loginBtn.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, loginBtn.Width, loginBtn.Height, 30, 30));
-            signupBtn.Region =  Region.FromHrgn(CreateRoundRectRgn(0, 0, signupBtn.Width, signupBtn.Height, 30, 30));
         }
     }
 }

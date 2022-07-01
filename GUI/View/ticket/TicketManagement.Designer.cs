@@ -72,6 +72,7 @@
             this.myTextBox1 = new MyLibrary.MyTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnReload = new Guna.UI2.WinForms.Guna2Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabStatus.SuspendLayout();
             this.tabStatusWait.SuspendLayout();
             this.headerFlowLayout.SuspendLayout();
@@ -80,6 +81,7 @@
             this.tabStatusCancel.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabStatus
@@ -91,11 +93,11 @@
             this.tabStatus.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.tabStatus.ImeMode = System.Windows.Forms.ImeMode.On;
             this.tabStatus.ItemSize = new System.Drawing.Size(150, 30);
-            this.tabStatus.Location = new System.Drawing.Point(72, 130);
+            this.tabStatus.Location = new System.Drawing.Point(83, 130);
             this.tabStatus.Margin = new System.Windows.Forms.Padding(2);
             this.tabStatus.Name = "tabStatus";
             this.tabStatus.SelectedIndex = 0;
-            this.tabStatus.Size = new System.Drawing.Size(904, 523);
+            this.tabStatus.Size = new System.Drawing.Size(904, 499);
             this.tabStatus.TabIndex = 2;
             this.tabStatus.SelectedIndexChanged += new System.EventHandler(this.tabStatus_SelectedIndexChanged);
             // 
@@ -108,7 +110,7 @@
             this.tabStatusWait.Margin = new System.Windows.Forms.Padding(2);
             this.tabStatusWait.Name = "tabStatusWait";
             this.tabStatusWait.Padding = new System.Windows.Forms.Padding(2);
-            this.tabStatusWait.Size = new System.Drawing.Size(896, 485);
+            this.tabStatusWait.Size = new System.Drawing.Size(896, 461);
             this.tabStatusWait.TabIndex = 0;
             this.tabStatusWait.Text = "Đang chờ xác nhận";
             this.tabStatusWait.UseVisualStyleBackColor = true;
@@ -241,7 +243,7 @@
             this.flowLayoutTabWait.Location = new System.Drawing.Point(9, 41);
             this.flowLayoutTabWait.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutTabWait.Name = "flowLayoutTabWait";
-            this.flowLayoutTabWait.Size = new System.Drawing.Size(869, 437);
+            this.flowLayoutTabWait.Size = new System.Drawing.Size(869, 406);
             this.flowLayoutTabWait.TabIndex = 0;
             // 
             // tabStatusOK
@@ -253,7 +255,7 @@
             this.tabStatusOK.Margin = new System.Windows.Forms.Padding(2);
             this.tabStatusOK.Name = "tabStatusOK";
             this.tabStatusOK.Padding = new System.Windows.Forms.Padding(2);
-            this.tabStatusOK.Size = new System.Drawing.Size(896, 485);
+            this.tabStatusOK.Size = new System.Drawing.Size(896, 461);
             this.tabStatusOK.TabIndex = 1;
             this.tabStatusOK.Text = "Đã xác nhận";
             this.tabStatusOK.UseVisualStyleBackColor = true;
@@ -385,7 +387,7 @@
             this.flowLayouthTabOK.Location = new System.Drawing.Point(9, 40);
             this.flowLayouthTabOK.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayouthTabOK.Name = "flowLayouthTabOK";
-            this.flowLayouthTabOK.Size = new System.Drawing.Size(870, 433);
+            this.flowLayouthTabOK.Size = new System.Drawing.Size(870, 402);
             this.flowLayouthTabOK.TabIndex = 5;
             // 
             // tabStatusCancel
@@ -396,7 +398,7 @@
             this.tabStatusCancel.Location = new System.Drawing.Point(4, 34);
             this.tabStatusCancel.Margin = new System.Windows.Forms.Padding(2);
             this.tabStatusCancel.Name = "tabStatusCancel";
-            this.tabStatusCancel.Size = new System.Drawing.Size(896, 485);
+            this.tabStatusCancel.Size = new System.Drawing.Size(896, 461);
             this.tabStatusCancel.TabIndex = 2;
             this.tabStatusCancel.Text = "Đã bị hủy";
             this.tabStatusCancel.UseVisualStyleBackColor = true;
@@ -525,16 +527,16 @@
             // 
             // flowLayoutTabCancel
             // 
-            this.flowLayoutTabCancel.Location = new System.Drawing.Point(2, 41);
+            this.flowLayoutTabCancel.Location = new System.Drawing.Point(7, 41);
             this.flowLayoutTabCancel.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutTabCancel.Name = "flowLayoutTabCancel";
-            this.flowLayoutTabCancel.Size = new System.Drawing.Size(874, 436);
+            this.flowLayoutTabCancel.Size = new System.Drawing.Size(869, 436);
             this.flowLayoutTabCancel.TabIndex = 5;
             // 
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(724, 110);
+            this.txtSearch.Location = new System.Drawing.Point(735, 110);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(143, 23);
@@ -544,14 +546,14 @@
             // 
             this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold);
             this.btnSearch.ForeColor = System.Drawing.Color.White;
             this.btnSearch.Image = global::GUI.Properties.Resources.Search_find_locate_1542;
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.Location = new System.Drawing.Point(882, 98);
+            this.btnSearch.Location = new System.Drawing.Point(893, 98);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(94, 39);
+            this.btnSearch.Size = new System.Drawing.Size(101, 40);
             this.btnSearch.TabIndex = 4;
             this.btnSearch.Text = "Search";
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -595,9 +597,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
             this.panel2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel2.Location = new System.Drawing.Point(-136, 660);
+            this.panel2.Location = new System.Drawing.Point(0, 634);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1312, 32);
+            this.panel2.Size = new System.Drawing.Size(1120, 57);
             this.panel2.TabIndex = 30;
             // 
             // btnReload
@@ -615,12 +617,22 @@
             this.btnReload.ForeColor = System.Drawing.Color.White;
             this.btnReload.Image = ((System.Drawing.Image)(resources.GetObject("btnReload.Image")));
             this.btnReload.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnReload.Location = new System.Drawing.Point(72, 67);
+            this.btnReload.Location = new System.Drawing.Point(83, 67);
             this.btnReload.Margin = new System.Windows.Forms.Padding(2);
             this.btnReload.Name = "btnReload";
             this.btnReload.Size = new System.Drawing.Size(38, 41);
             this.btnReload.TabIndex = 10;
             this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GUI.Properties.Resources.Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(461, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(158, 106);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 31;
+            this.pictureBox1.TabStop = false;
             // 
             // TicketManagement
             // 
@@ -633,6 +645,7 @@
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.tabStatus);
+            this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TicketManagement";
             this.Size = new System.Drawing.Size(1040, 691);
@@ -648,6 +661,7 @@
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -697,5 +711,6 @@
         private MyLibrary.MyTextBox myTextBox1;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2Button btnReload;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

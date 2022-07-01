@@ -33,9 +33,7 @@ namespace PBL3.View.tour
             this.cbbTourCategory = new System.Windows.Forms.ComboBox();
             this.txtTotalChildren = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnBack = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
             this.txtTotalAdult = new System.Windows.Forms.TextBox();
             this.lbTotal = new System.Windows.Forms.Label();
             this.lbDescription = new System.Windows.Forms.Label();
@@ -47,15 +45,17 @@ namespace PBL3.View.tour
             this.lbTourName = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.rtbShortDesc = new System.Windows.Forms.RichTextBox();
-            this.btnOpen = new System.Windows.Forms.Button();
             this.htmlDescription = new System.Windows.Forms.WebBrowser();
             this.txtImage = new System.Windows.Forms.Label();
             this.panelPicture = new System.Windows.Forms.Panel();
-            this.btnAddImage = new System.Windows.Forms.Button();
             this.lbTransport = new System.Windows.Forms.Label();
             this.txtTransport = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lbTitle = new MyLibrary.MyTextBox();
+            this.btnAddImage = new System.Windows.Forms.Button();
+            this.btnOpen = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,56 +103,20 @@ namespace PBL3.View.tour
             this.label3.TabIndex = 62;
             this.label3.Text = "Price / Children:";
             // 
-            // btnBack
-            // 
-            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Image = global::GUI.Properties.Resources.back;
-            this.btnBack.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBack.Location = new System.Drawing.Point(47, 53);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(75, 37);
-            this.btnBack.TabIndex = 57;
-            this.btnBack.Text = "Back";
-            this.btnBack.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(370, 650);
+            this.btnClear.Location = new System.Drawing.Point(370, 643);
             this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(86, 36);
+            this.btnClear.Size = new System.Drawing.Size(88, 44);
             this.btnClear.TabIndex = 56;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Image = global::GUI.Properties.Resources.save_file_disk_open_searsh_loading_clipboard_1513;
-            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(682, 651);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(83, 36);
-            this.btnSave.TabIndex = 55;
-            this.btnSave.Text = "Save";
-            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtTotalAdult
             // 
@@ -181,12 +145,12 @@ namespace PBL3.View.tour
             this.lbDescription.AutoSize = true;
             this.lbDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.lbDescription.Location = new System.Drawing.Point(65, 489);
+            this.lbDescription.Location = new System.Drawing.Point(63, 489);
             this.lbDescription.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbDescription.Name = "lbDescription";
-            this.lbDescription.Size = new System.Drawing.Size(90, 17);
+            this.lbDescription.Size = new System.Drawing.Size(95, 17);
             this.lbDescription.TabIndex = 51;
-            this.lbDescription.Text = "Description";
+            this.lbDescription.Text = "Description:";
             // 
             // dtpDepartureDate
             // 
@@ -273,24 +237,6 @@ namespace PBL3.View.tour
             this.rtbShortDesc.TabIndex = 73;
             this.rtbShortDesc.Text = "";
             // 
-            // btnOpen
-            // 
-            this.btnOpen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.btnOpen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOpen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpen.ForeColor = System.Drawing.Color.White;
-            this.btnOpen.Image = global::GUI.Properties.Resources.gui_edit_icon_157165;
-            this.btnOpen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOpen.Location = new System.Drawing.Point(66, 519);
-            this.btnOpen.Margin = new System.Windows.Forms.Padding(2);
-            this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(78, 41);
-            this.btnOpen.TabIndex = 76;
-            this.btnOpen.Text = "Edit";
-            this.btnOpen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnOpen.UseVisualStyleBackColor = false;
-            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
-            // 
             // htmlDescription
             // 
             this.htmlDescription.Location = new System.Drawing.Point(191, 439);
@@ -303,14 +249,14 @@ namespace PBL3.View.tour
             // txtImage
             // 
             this.txtImage.AutoSize = true;
-            this.txtImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtImage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.txtImage.Location = new System.Drawing.Point(86, 304);
+            this.txtImage.Location = new System.Drawing.Point(61, 304);
             this.txtImage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtImage.Name = "txtImage";
-            this.txtImage.Size = new System.Drawing.Size(46, 17);
+            this.txtImage.Size = new System.Drawing.Size(56, 17);
             this.txtImage.TabIndex = 78;
-            this.txtImage.Text = "Image";
+            this.txtImage.Text = "Image:";
             // 
             // panelPicture
             // 
@@ -321,24 +267,6 @@ namespace PBL3.View.tour
             this.panelPicture.Name = "panelPicture";
             this.panelPicture.Size = new System.Drawing.Size(231, 123);
             this.panelPicture.TabIndex = 79;
-            // 
-            // btnAddImage
-            // 
-            this.btnAddImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.btnAddImage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddImage.ForeColor = System.Drawing.Color.White;
-            this.btnAddImage.Image = global::GUI.Properties.Resources._1486485557_add_create_new_more_plus_81188;
-            this.btnAddImage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddImage.Location = new System.Drawing.Point(70, 330);
-            this.btnAddImage.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAddImage.Name = "btnAddImage";
-            this.btnAddImage.Size = new System.Drawing.Size(77, 35);
-            this.btnAddImage.TabIndex = 80;
-            this.btnAddImage.Text = "Add";
-            this.btnAddImage.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAddImage.UseVisualStyleBackColor = false;
-            this.btnAddImage.Click += new System.EventHandler(this.btnAddImage_Click);
             // 
             // lbTransport
             // 
@@ -391,6 +319,78 @@ namespace PBL3.View.tour
             this.lbTitle.TabIndex = 1;
             this.lbTitle.Texts = "";
             this.lbTitle.UnderlinedStyle = true;
+            // 
+            // btnAddImage
+            // 
+            this.btnAddImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
+            this.btnAddImage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddImage.ForeColor = System.Drawing.Color.White;
+            this.btnAddImage.Image = global::GUI.Properties.Resources._1486485557_add_create_new_more_plus_81188;
+            this.btnAddImage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddImage.Location = new System.Drawing.Point(64, 330);
+            this.btnAddImage.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddImage.Name = "btnAddImage";
+            this.btnAddImage.Size = new System.Drawing.Size(88, 44);
+            this.btnAddImage.TabIndex = 80;
+            this.btnAddImage.Text = "Add";
+            this.btnAddImage.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAddImage.UseVisualStyleBackColor = false;
+            this.btnAddImage.Click += new System.EventHandler(this.btnAddImage_Click);
+            // 
+            // btnOpen
+            // 
+            this.btnOpen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
+            this.btnOpen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOpen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOpen.ForeColor = System.Drawing.Color.White;
+            this.btnOpen.Image = global::GUI.Properties.Resources.gui_edit_icon_157165;
+            this.btnOpen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOpen.Location = new System.Drawing.Point(66, 519);
+            this.btnOpen.Margin = new System.Windows.Forms.Padding(2);
+            this.btnOpen.Name = "btnOpen";
+            this.btnOpen.Size = new System.Drawing.Size(88, 44);
+            this.btnOpen.TabIndex = 76;
+            this.btnOpen.Text = "Edit";
+            this.btnOpen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnOpen.UseVisualStyleBackColor = false;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
+            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Image = global::GUI.Properties.Resources.back;
+            this.btnBack.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBack.Location = new System.Drawing.Point(47, 53);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 37);
+            this.btnBack.TabIndex = 57;
+            this.btnBack.Text = "Back";
+            this.btnBack.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Image = global::GUI.Properties.Resources.save_file_disk_open_searsh_loading_clipboard_1513;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(682, 643);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(88, 44);
+            this.btnSave.TabIndex = 55;
+            this.btnSave.Text = "Save";
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // FormAddEditTour
             // 

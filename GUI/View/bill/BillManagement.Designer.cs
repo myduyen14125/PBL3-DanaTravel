@@ -64,6 +64,7 @@
             this.btnReload = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabStatusCancel.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.tabStatus.SuspendLayout();
@@ -72,12 +73,13 @@
             this.tabStatusOK.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(616, 89);
+            this.txtSearch.Location = new System.Drawing.Point(631, 89);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(175, 23);
@@ -88,7 +90,7 @@
             this.flowLayouthTabOK.Location = new System.Drawing.Point(9, 44);
             this.flowLayouthTabOK.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayouthTabOK.Name = "flowLayouthTabOK";
-            this.flowLayouthTabOK.Size = new System.Drawing.Size(875, 439);
+            this.flowLayouthTabOK.Size = new System.Drawing.Size(898, 439);
             this.flowLayouthTabOK.TabIndex = 5;
             // 
             // tabStatusCancel
@@ -99,7 +101,7 @@
             this.tabStatusCancel.Location = new System.Drawing.Point(4, 34);
             this.tabStatusCancel.Margin = new System.Windows.Forms.Padding(2);
             this.tabStatusCancel.Name = "tabStatusCancel";
-            this.tabStatusCancel.Size = new System.Drawing.Size(930, 510);
+            this.tabStatusCancel.Size = new System.Drawing.Size(930, 488);
             this.tabStatusCancel.TabIndex = 2;
             this.tabStatusCancel.Text = "Đã bị hủy";
             this.tabStatusCancel.UseVisualStyleBackColor = true;
@@ -121,7 +123,7 @@
             this.guna2Panel2.Location = new System.Drawing.Point(10, 2);
             this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(875, 34);
+            this.guna2Panel2.Size = new System.Drawing.Size(898, 34);
             this.guna2Panel2.TabIndex = 7;
             // 
             // label5
@@ -195,7 +197,7 @@
             this.flowLayoutTabCancel.Location = new System.Drawing.Point(10, 41);
             this.flowLayoutTabCancel.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutTabCancel.Name = "flowLayoutTabCancel";
-            this.flowLayoutTabCancel.Size = new System.Drawing.Size(875, 446);
+            this.flowLayoutTabCancel.Size = new System.Drawing.Size(898, 431);
             this.flowLayoutTabCancel.TabIndex = 5;
             // 
             // tabStatus
@@ -207,11 +209,11 @@
             this.tabStatus.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.tabStatus.ImeMode = System.Windows.Forms.ImeMode.On;
             this.tabStatus.ItemSize = new System.Drawing.Size(150, 30);
-            this.tabStatus.Location = new System.Drawing.Point(46, 103);
+            this.tabStatus.Location = new System.Drawing.Point(61, 103);
             this.tabStatus.Margin = new System.Windows.Forms.Padding(2);
             this.tabStatus.Name = "tabStatus";
             this.tabStatus.SelectedIndex = 0;
-            this.tabStatus.Size = new System.Drawing.Size(938, 548);
+            this.tabStatus.Size = new System.Drawing.Size(938, 526);
             this.tabStatus.TabIndex = 6;
             this.tabStatus.SelectedIndexChanged += new System.EventHandler(this.tabStatus_SelectedIndexChanged);
             // 
@@ -224,7 +226,7 @@
             this.tabStatusWait.Margin = new System.Windows.Forms.Padding(2);
             this.tabStatusWait.Name = "tabStatusWait";
             this.tabStatusWait.Padding = new System.Windows.Forms.Padding(2);
-            this.tabStatusWait.Size = new System.Drawing.Size(930, 510);
+            this.tabStatusWait.Size = new System.Drawing.Size(930, 488);
             this.tabStatusWait.TabIndex = 0;
             this.tabStatusWait.Text = "Đang chờ thanh toán";
             this.tabStatusWait.UseVisualStyleBackColor = true;
@@ -333,7 +335,7 @@
             this.flowLayoutTabWait.Location = new System.Drawing.Point(9, 41);
             this.flowLayoutTabWait.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutTabWait.Name = "flowLayoutTabWait";
-            this.flowLayoutTabWait.Size = new System.Drawing.Size(908, 453);
+            this.flowLayoutTabWait.Size = new System.Drawing.Size(908, 431);
             this.flowLayoutTabWait.TabIndex = 0;
             // 
             // tabStatusOK
@@ -345,7 +347,7 @@
             this.tabStatusOK.Margin = new System.Windows.Forms.Padding(2);
             this.tabStatusOK.Name = "tabStatusOK";
             this.tabStatusOK.Padding = new System.Windows.Forms.Padding(2);
-            this.tabStatusOK.Size = new System.Drawing.Size(930, 510);
+            this.tabStatusOK.Size = new System.Drawing.Size(930, 488);
             this.tabStatusOK.TabIndex = 1;
             this.tabStatusOK.Text = "Đã thanh toán";
             this.tabStatusOK.UseVisualStyleBackColor = true;
@@ -367,7 +369,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(9, 5);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(875, 34);
+            this.guna2Panel1.Size = new System.Drawing.Size(898, 34);
             this.guna2Panel1.TabIndex = 6;
             // 
             // label4
@@ -482,7 +484,7 @@
             this.btnReload.ForeColor = System.Drawing.Color.White;
             this.btnReload.Image = ((System.Drawing.Image)(resources.GetObject("btnReload.Image")));
             this.btnReload.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnReload.Location = new System.Drawing.Point(49, 47);
+            this.btnReload.Location = new System.Drawing.Point(64, 47);
             this.btnReload.Margin = new System.Windows.Forms.Padding(2);
             this.btnReload.Name = "btnReload";
             this.btnReload.Size = new System.Drawing.Size(38, 41);
@@ -496,10 +498,10 @@
             this.btnSearch.ForeColor = System.Drawing.Color.White;
             this.btnSearch.Image = global::GUI.Properties.Resources.Search_find_locate_1542;
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.Location = new System.Drawing.Point(836, 78);
+            this.btnSearch.Location = new System.Drawing.Point(851, 78);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(110, 38);
+            this.btnSearch.Size = new System.Drawing.Size(101, 40);
             this.btnSearch.TabIndex = 8;
             this.btnSearch.Text = "Search";
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -512,10 +514,20 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
             this.panel2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel2.Location = new System.Drawing.Point(-1, 659);
+            this.panel2.Location = new System.Drawing.Point(-1, 634);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1312, 32);
+            this.panel2.Size = new System.Drawing.Size(1120, 57);
             this.panel2.TabIndex = 31;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GUI.Properties.Resources.Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(438, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(158, 106);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // BillManagement
             // 
@@ -528,6 +540,7 @@
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.tabStatus);
+            this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BillManagement";
             this.Size = new System.Drawing.Size(1040, 691);
@@ -543,6 +556,7 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -584,5 +598,6 @@
         private System.Windows.Forms.Panel panel3;
         private MyLibrary.MyTextBox myTextBox1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

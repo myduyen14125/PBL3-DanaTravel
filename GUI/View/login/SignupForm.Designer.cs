@@ -47,10 +47,10 @@
             loginLink.Cursor = System.Windows.Forms.Cursors.Hand;
             loginLink.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
             loginLink.Font = new System.Drawing.Font("Yu Gothic UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            loginLink.LinkColor = System.Drawing.Color.White;
-            loginLink.Location = new System.Drawing.Point(293, 509);
+            loginLink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
+            loginLink.Location = new System.Drawing.Point(757, 527);
             loginLink.Name = "loginLink";
-            loginLink.Size = new System.Drawing.Size(59, 25);
+            loginLink.Size = new System.Drawing.Size(47, 20);
             loginLink.TabIndex = 12;
             loginLink.TabStop = true;
             loginLink.Text = "Login";
@@ -64,10 +64,10 @@
             this.usernameInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.usernameInput.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
-            this.usernameInput.Location = new System.Drawing.Point(179, 180);
+            this.usernameInput.Location = new System.Drawing.Point(624, 212);
             this.usernameInput.Name = "usernameInput";
             this.usernameInput.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.usernameInput.Size = new System.Drawing.Size(314, 27);
+            this.usernameInput.Size = new System.Drawing.Size(314, 22);
             this.usernameInput.TabIndex = 8;
             this.usernameInput.Text = "E-mail address";
             this.usernameInput.Click += new System.EventHandler(this.usernameInput_Click);
@@ -80,26 +80,25 @@
             this.passInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.passInput.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
-            this.passInput.Location = new System.Drawing.Point(179, 243);
+            this.passInput.Location = new System.Drawing.Point(624, 282);
             this.passInput.Name = "passInput";
             this.passInput.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.passInput.Size = new System.Drawing.Size(314, 27);
+            this.passInput.Size = new System.Drawing.Size(314, 22);
             this.passInput.TabIndex = 10;
             this.passInput.Text = "Password";
             this.passInput.Click += new System.EventHandler(this.passInput_Click);
             // 
             // signupBtn
             // 
-            this.signupBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.signupBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.signupBtn.CausesValidation = false;
             this.signupBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signupBtn.FlatAppearance.BorderSize = 0;
-            this.signupBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.signupBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signupBtn.ForeColor = System.Drawing.Color.White;
-            this.signupBtn.Location = new System.Drawing.Point(243, 446);
+            this.signupBtn.Location = new System.Drawing.Point(694, 465);
             this.signupBtn.Name = "signupBtn";
-            this.signupBtn.Size = new System.Drawing.Size(149, 48);
+            this.signupBtn.Size = new System.Drawing.Size(176, 40);
             this.signupBtn.TabIndex = 11;
             this.signupBtn.TabStop = false;
             this.signupBtn.Text = "Sign up";
@@ -114,10 +113,10 @@
             this.confirmPassInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.confirmPassInput.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.confirmPassInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
-            this.confirmPassInput.Location = new System.Drawing.Point(179, 304);
+            this.confirmPassInput.Location = new System.Drawing.Point(624, 352);
             this.confirmPassInput.Name = "confirmPassInput";
             this.confirmPassInput.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.confirmPassInput.Size = new System.Drawing.Size(314, 27);
+            this.confirmPassInput.Size = new System.Drawing.Size(314, 22);
             this.confirmPassInput.TabIndex = 15;
             this.confirmPassInput.Text = "Confirm password";
             this.confirmPassInput.Click += new System.EventHandler(this.confirmPassInput_Click);
@@ -126,9 +125,9 @@
             // 
             this.OTPbox.BackColor = System.Drawing.Color.Transparent;
             this.OTPbox.Image = global::GUI.Properties.Resources.roundedInput;
-            this.OTPbox.Location = new System.Drawing.Point(160, 361);
+            this.OTPbox.Location = new System.Drawing.Point(611, 412);
             this.OTPbox.Name = "OTPbox";
-            this.OTPbox.Size = new System.Drawing.Size(216, 55);
+            this.OTPbox.Size = new System.Drawing.Size(227, 45);
             this.OTPbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.OTPbox.TabIndex = 16;
             this.OTPbox.TabStop = false;
@@ -141,25 +140,24 @@
             this.txtOTP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOTP.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOTP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
-            this.txtOTP.Location = new System.Drawing.Point(179, 372);
+            this.txtOTP.Location = new System.Drawing.Point(624, 419);
             this.txtOTP.Name = "txtOTP";
             this.txtOTP.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtOTP.Size = new System.Drawing.Size(173, 27);
+            this.txtOTP.Size = new System.Drawing.Size(173, 22);
             this.txtOTP.TabIndex = 17;
             this.txtOTP.Text = "Input OTP";
             this.txtOTP.Click += new System.EventHandler(this.txtOTP_Click);
             // 
             // btnGetOTP
             // 
-            this.btnGetOTP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.btnGetOTP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.btnGetOTP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGetOTP.FlatAppearance.BorderSize = 0;
-            this.btnGetOTP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGetOTP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnGetOTP.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGetOTP.Location = new System.Drawing.Point(382, 363);
+            this.btnGetOTP.Location = new System.Drawing.Point(863, 412);
             this.btnGetOTP.Name = "btnGetOTP";
-            this.btnGetOTP.Size = new System.Drawing.Size(122, 47);
+            this.btnGetOTP.Size = new System.Drawing.Size(83, 45);
             this.btnGetOTP.TabIndex = 18;
             this.btnGetOTP.Text = "Get OTP";
             this.btnGetOTP.UseVisualStyleBackColor = false;
@@ -169,7 +167,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(221)))), ((int)(((byte)(236)))));
-            this.BackgroundImage = global::GUI.Properties.Resources.bgSignup2;
+            this.BackgroundImage = global::GUI.Properties.Resources._18__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1032, 565);
             this.Controls.Add(this.btnGetOTP);
@@ -184,7 +182,6 @@
             this.Name = "SignupForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DanaTravel";
-            this.Load += new System.EventHandler(this.SignupForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.OTPbox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

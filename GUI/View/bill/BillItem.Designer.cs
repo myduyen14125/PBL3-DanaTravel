@@ -164,7 +164,7 @@
             this.Controls.Add(this.lbName);
             this.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Name = "BillItem";
-            this.Size = new System.Drawing.Size(709, 31);
+            this.Size = new System.Drawing.Size(672, 31);
             this.ResumeLayout(false);
             this.PerformLayout();
 

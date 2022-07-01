@@ -167,7 +167,7 @@
             this.Controls.Add(this.lbName);
             this.Margin = new System.Windows.Forms.Padding(2, 0, 0, 0);
             this.Name = "TicketItem";
-            this.Size = new System.Drawing.Size(654, 32);
+            this.Size = new System.Drawing.Size(651, 32);
             this.ResumeLayout(false);
             this.PerformLayout();
 

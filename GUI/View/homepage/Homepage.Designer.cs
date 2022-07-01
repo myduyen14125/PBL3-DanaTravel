@@ -31,13 +31,25 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Homepage));
             this.panelHomepage = new System.Windows.Forms.Panel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnNel = new System.Windows.Forms.Button();
             this.label32 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -83,7 +95,6 @@
             this.pictureBox31 = new System.Windows.Forms.PictureBox();
             this.pictureBox32 = new System.Windows.Forms.PictureBox();
             this.myPictureBox1 = new MyLibrary.MyPictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.btnSearch = new MyLibrary.MyButton();
             this.pnChoice = new System.Windows.Forms.Panel();
             this.btnChangePassword = new System.Windows.Forms.Button();
@@ -106,6 +117,8 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.panelHomepage.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
@@ -126,7 +139,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.pnChoice.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.navbar.SuspendLayout();
@@ -138,13 +150,15 @@
             // panelHomepage
             // 
             this.panelHomepage.BackColor = System.Drawing.Color.White;
+            this.panelHomepage.Controls.Add(this.label20);
+            this.panelHomepage.Controls.Add(this.panel5);
+            this.panelHomepage.Controls.Add(this.pictureBox7);
             this.panelHomepage.Controls.Add(this.panel4);
             this.panelHomepage.Controls.Add(this.panel3);
             this.panelHomepage.Controls.Add(this.panel2);
             this.panelHomepage.Controls.Add(this.panel1);
             this.panelHomepage.Controls.Add(this.btnNel);
             this.panelHomepage.Controls.Add(this.label32);
-            this.panelHomepage.Controls.Add(this.label20);
             this.panelHomepage.Controls.Add(this.label31);
             this.panelHomepage.Controls.Add(this.label30);
             this.panelHomepage.Controls.Add(this.label29);
@@ -190,7 +204,6 @@
             this.panelHomepage.Controls.Add(this.pictureBox31);
             this.panelHomepage.Controls.Add(this.pictureBox32);
             this.panelHomepage.Controls.Add(this.myPictureBox1);
-            this.panelHomepage.Controls.Add(this.pictureBox7);
             this.panelHomepage.Controls.Add(this.btnSearch);
             this.panelHomepage.Controls.Add(this.pnChoice);
             this.panelHomepage.Controls.Add(this.myButton10);
@@ -205,6 +218,146 @@
             this.panelHomepage.Name = "panelHomepage";
             this.panelHomepage.Size = new System.Drawing.Size(1075, 1550);
             this.panelHomepage.TabIndex = 0;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
+            this.label20.Location = new System.Drawing.Point(360, 1077);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(328, 20);
+            this.label20.TabIndex = 197;
+            this.label20.Text = "Khách Du Lịch Nghĩ Gì Về Dana Travel?";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(221)))), ((int)(((byte)(236)))));
+            this.panel5.Controls.Add(this.label37);
+            this.panel5.Controls.Add(this.label36);
+            this.panel5.Controls.Add(this.label34);
+            this.panel5.Controls.Add(this.label33);
+            this.panel5.Controls.Add(this.label15);
+            this.panel5.Controls.Add(this.label14);
+            this.panel5.Controls.Add(this.label13);
+            this.panel5.Controls.Add(this.label12);
+            this.panel5.Controls.Add(this.label2);
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Location = new System.Drawing.Point(0, 1312);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1075, 238);
+            this.panel5.TabIndex = 259;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.label37.Location = new System.Drawing.Point(583, 152);
+            this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(179, 16);
+            this.label37.TabIndex = 269;
+            this.label37.Text = "Copyright © 2022 DanaTravel";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(582, 119);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(286, 16);
+            this.label36.TabIndex = 268;
+            this.label36.Text = "Số ĐKKD: 999 9999 999 được cấp bởi Tổng cục";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(583, 56);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(270, 16);
+            this.label34.TabIndex = 266;
+            this.label34.Text = "Số GP/ No: 99 - 999/ 2022/ TCDL - GPLHQT";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(78, 119);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(167, 16);
+            this.label33.TabIndex = 265;
+            this.label33.Text = "Website: danaTravel.com.vn";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(582, 87);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(273, 16);
+            this.label15.TabIndex = 264;
+            this.label15.Text = "Do tổng công ty du lịch cấp ngày 18/ 05/ 2022";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(79, 55);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(299, 16);
+            this.label14.TabIndex = 263;
+            this.label14.Text = "Trụ sở chính: 9999 Bạch Đằng, Hải Châu, Đà Nẵng";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(78, 152);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(181, 16);
+            this.label13.TabIndex = 262;
+            this.label13.Text = "Email: danantravel@gmail.com";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(79, 86);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(189, 16);
+            this.label12.TabIndex = 261;
+            this.label12.Text = "Điện thoại liên hệ: 0999.999.999";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(582, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(413, 17);
+            this.label2.TabIndex = 260;
+            this.label2.Text = "GIẤY PHÉP KINH DOANH DỊCH VỤ LỮ HÀNH QUỐC TẾ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(79, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(226, 17);
+            this.label1.TabIndex = 259;
+            this.label1.Text = "Công ty cổ phần Việt Dana Travel";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::GUI.Properties.Resources.mainCar;
+            this.pictureBox7.Location = new System.Drawing.Point(696, 786);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(382, 303);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 184;
+            this.pictureBox7.TabStop = false;
             // 
             // panel4
             // 
@@ -262,22 +415,11 @@
             this.label32.BackColor = System.Drawing.Color.White;
             this.label32.Font = new System.Drawing.Font("Times New Roman", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
-            this.label32.Location = new System.Drawing.Point(875, 1092);
+            this.label32.Location = new System.Drawing.Point(894, 1062);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(59, 68);
             this.label32.TabIndex = 230;
             this.label32.Text = ",,";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.label20.Location = new System.Drawing.Point(383, 1090);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(302, 22);
-            this.label20.TabIndex = 197;
-            this.label20.Text = "What Our Clients Say About Us?";
             // 
             // label31
             // 
@@ -285,7 +427,7 @@
             this.label31.BackColor = System.Drawing.Color.White;
             this.label31.Font = new System.Drawing.Font("Times New Roman", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
-            this.label31.Location = new System.Drawing.Point(591, 1092);
+            this.label31.Location = new System.Drawing.Point(610, 1062);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(59, 68);
             this.label31.TabIndex = 229;
@@ -297,7 +439,7 @@
             this.label30.BackColor = System.Drawing.Color.White;
             this.label30.Font = new System.Drawing.Font("Times New Roman", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
-            this.label30.Location = new System.Drawing.Point(320, 1090);
+            this.label30.Location = new System.Drawing.Point(339, 1060);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(59, 68);
             this.label30.TabIndex = 228;
@@ -306,10 +448,10 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.BackColor = System.Drawing.Color.Gainsboro;
+            this.label29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label29.Font = new System.Drawing.Font("Times New Roman", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label29.Location = new System.Drawing.Point(716, 1229);
+            this.label29.Location = new System.Drawing.Point(735, 1199);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(145, 12);
             this.label29.TabIndex = 227;
@@ -318,10 +460,10 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.Color.Gainsboro;
+            this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label28.Font = new System.Drawing.Font("Times New Roman", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label28.Location = new System.Drawing.Point(435, 1229);
+            this.label28.Location = new System.Drawing.Point(454, 1199);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(145, 12);
             this.label28.TabIndex = 226;
@@ -330,10 +472,10 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.BackColor = System.Drawing.Color.Gainsboro;
+            this.label27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label27.Location = new System.Drawing.Point(754, 1174);
+            this.label27.Location = new System.Drawing.Point(773, 1144);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(99, 13);
             this.label27.TabIndex = 225;
@@ -342,10 +484,10 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.Color.Gainsboro;
+            this.label26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label26.Location = new System.Drawing.Point(471, 1174);
+            this.label26.Location = new System.Drawing.Point(490, 1144);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(99, 13);
             this.label26.TabIndex = 224;
@@ -354,10 +496,10 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.Gainsboro;
+            this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label25.Location = new System.Drawing.Point(767, 1159);
+            this.label25.Location = new System.Drawing.Point(786, 1129);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(35, 13);
             this.label25.TabIndex = 223;
@@ -366,10 +508,10 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.Gainsboro;
+            this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label24.Location = new System.Drawing.Point(479, 1158);
+            this.label24.Location = new System.Drawing.Point(498, 1128);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(39, 13);
             this.label24.TabIndex = 222;
@@ -378,10 +520,10 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.Gainsboro;
+            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label23.Font = new System.Drawing.Font("Times New Roman", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label23.Location = new System.Drawing.Point(159, 1229);
+            this.label23.Location = new System.Drawing.Point(178, 1199);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(145, 12);
             this.label23.TabIndex = 204;
@@ -390,10 +532,10 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.Gainsboro;
+            this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label22.Location = new System.Drawing.Point(199, 1181);
+            this.label22.Location = new System.Drawing.Point(218, 1151);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(99, 13);
             this.label22.TabIndex = 203;
@@ -402,10 +544,10 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.Gainsboro;
+            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label21.Location = new System.Drawing.Point(207, 1163);
+            this.label21.Location = new System.Drawing.Point(226, 1133);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(39, 13);
             this.label21.TabIndex = 202;
@@ -416,11 +558,11 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
-            this.label19.Location = new System.Drawing.Point(478, 1071);
+            this.label19.Location = new System.Drawing.Point(478, 1051);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(103, 17);
+            this.label19.Size = new System.Drawing.Size(81, 17);
             this.label19.TabIndex = 196;
-            this.label19.Text = "TESTIMONIAL";
+            this.label19.Text = "FEEDBACK";
             // 
             // label18
             // 
@@ -429,9 +571,9 @@
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
             this.label18.Location = new System.Drawing.Point(180, 832);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(98, 17);
+            this.label18.Size = new System.Drawing.Size(144, 17);
             this.label18.TabIndex = 187;
-            this.label18.Text = "TRAVEL TYPE";
+            this.label18.Text = "LOẠI HÌNH DU LỊCH";
             // 
             // label17
             // 
@@ -440,9 +582,9 @@
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.label17.Location = new System.Drawing.Point(170, 922);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(385, 45);
+            this.label17.Size = new System.Drawing.Size(435, 45);
             this.label17.TabIndex = 186;
-            this.label17.Text = "Do We Specialeze In?";
+            this.label17.Text = "Các Loại Hình Du Lịch?";
             // 
             // label16
             // 
@@ -451,31 +593,31 @@
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.label16.Location = new System.Drawing.Point(174, 865);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(391, 45);
+            this.label16.Size = new System.Drawing.Size(395, 45);
             this.label16.TabIndex = 185;
-            this.label16.Text = "What Type Of Travel ";
+            this.label16.Text = "Chúng Tôi Chuyên Về";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.label11.Location = new System.Drawing.Point(409, 387);
+            this.label11.Location = new System.Drawing.Point(386, 394);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(226, 22);
+            this.label11.Size = new System.Drawing.Size(312, 20);
             this.label11.TabIndex = 183;
-            this.label11.Text = "Explore Top Destination";
+            this.label11.Text = "Khám Phá Những Địa Điểm Hàng Đầu";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
             this.label10.Location = new System.Drawing.Point(452, 372);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(112, 13);
+            this.label10.Size = new System.Drawing.Size(167, 17);
             this.label10.TabIndex = 182;
-            this.label10.Text = "TOP DESTINATION";
+            this.label10.Text = "ĐỊA ĐIỂM HÀNG ĐẦU";
             // 
             // txtSearch
             // 
@@ -488,30 +630,31 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(303, 33);
             this.txtSearch.TabIndex = 180;
-            this.txtSearch.Text = "Search";
+            this.txtSearch.Text = "Tìm kiếm...";
             this.txtSearch.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtSearch_MouseClick);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(91)))), ((int)(((byte)(132)))));
-            this.label9.Location = new System.Drawing.Point(65, 287);
+            this.label9.Location = new System.Drawing.Point(48, 298);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(467, 13);
+            this.label9.Size = new System.Drawing.Size(688, 17);
             this.label9.TabIndex = 179;
-            this.label9.Text = "WE CAN BUILD THE HOLIDAY YOR DREAMS AND MAKE THEM UNFORGETTABLE";
+            this.label9.Text = "CHÚNG TÔI CÓ THỂ XÂY DỰNG KỲ NGHỈ CỦA BẠN THEO ƯỚC MUỐN VÀ CÓ TRẢI NGHIỆM TỐT NHẤ" +
+    "T.";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.label7.Location = new System.Drawing.Point(94, 215);
+            this.label7.Location = new System.Drawing.Point(95, 215);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 45);
+            this.label7.Size = new System.Drawing.Size(90, 45);
             this.label7.TabIndex = 177;
-            this.label7.Text = "of";
+            this.label7.Text = "trên";
             // 
             // label6
             // 
@@ -520,31 +663,31 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.label6.Location = new System.Drawing.Point(94, 170);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(202, 45);
+            this.label6.Size = new System.Drawing.Size(271, 45);
             this.label6.TabIndex = 176;
-            this.label6.Text = "any corner";
+            this.label6.Text = "bất kỳ nơi nào ";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.label5.Location = new System.Drawing.Point(89, 129);
+            this.label5.Location = new System.Drawing.Point(89, 125);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(235, 45);
+            this.label5.Size = new System.Drawing.Size(212, 45);
             this.label5.TabIndex = 175;
-            this.label5.Text = "Travel to the";
+            this.label5.Text = "Du lịch đến";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
             this.label4.Location = new System.Drawing.Point(99, 86);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(283, 15);
+            this.label4.Size = new System.Drawing.Size(311, 17);
             this.label4.TabIndex = 174;
-            this.label4.Text = "BEST DESTINATION AROUND THE WORLD";
+            this.label4.Text = "ĐIỂM ĐẾN DU LỊCH ĐẸP NHẤT THẾ GIỚI";
             // 
             // btnRight
             // 
@@ -568,9 +711,9 @@
             // 
             // pictureBox45
             // 
-            this.pictureBox45.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox45.Image = global::GUI.Properties.Resources.Star;
-            this.pictureBox45.Location = new System.Drawing.Point(540, 1271);
+            this.pictureBox45.Location = new System.Drawing.Point(559, 1241);
             this.pictureBox45.Name = "pictureBox45";
             this.pictureBox45.Size = new System.Drawing.Size(25, 25);
             this.pictureBox45.TabIndex = 233;
@@ -589,16 +732,16 @@
             // pictureBox43
             // 
             this.pictureBox43.Image = global::GUI.Properties.Resources.circles;
-            this.pictureBox43.Location = new System.Drawing.Point(44, 320);
+            this.pictureBox43.Location = new System.Drawing.Point(0, 367);
             this.pictureBox43.Name = "pictureBox43";
-            this.pictureBox43.Size = new System.Drawing.Size(50, 47);
+            this.pictureBox43.Size = new System.Drawing.Size(59, 73);
             this.pictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox43.TabIndex = 231;
             this.pictureBox43.TabStop = false;
             // 
             // myPictureBox3
             // 
-            this.myPictureBox3.BackColor = System.Drawing.Color.Gainsboro;
+            this.myPictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.myPictureBox3.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
             this.myPictureBox3.BorderColor = System.Drawing.Color.RoyalBlue;
             this.myPictureBox3.BorderColor2 = System.Drawing.Color.HotPink;
@@ -606,7 +749,7 @@
             this.myPictureBox3.BorderSize = 2;
             this.myPictureBox3.GradientAngle = 50F;
             this.myPictureBox3.Image = global::GUI.Properties.Resources.User_icon;
-            this.myPictureBox3.Location = new System.Drawing.Point(706, 1150);
+            this.myPictureBox3.Location = new System.Drawing.Point(725, 1120);
             this.myPictureBox3.Name = "myPictureBox3";
             this.myPictureBox3.Size = new System.Drawing.Size(41, 41);
             this.myPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -615,7 +758,7 @@
             // 
             // myPictureBox2
             // 
-            this.myPictureBox2.BackColor = System.Drawing.Color.Gainsboro;
+            this.myPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.myPictureBox2.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
             this.myPictureBox2.BorderColor = System.Drawing.Color.RoyalBlue;
             this.myPictureBox2.BorderColor2 = System.Drawing.Color.HotPink;
@@ -623,7 +766,7 @@
             this.myPictureBox2.BorderSize = 2;
             this.myPictureBox2.GradientAngle = 50F;
             this.myPictureBox2.Image = global::GUI.Properties.Resources.click;
-            this.myPictureBox2.Location = new System.Drawing.Point(426, 1151);
+            this.myPictureBox2.Location = new System.Drawing.Point(445, 1121);
             this.myPictureBox2.Name = "myPictureBox2";
             this.myPictureBox2.Size = new System.Drawing.Size(41, 41);
             this.myPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -634,7 +777,7 @@
             // 
             this.pictureBox38.BackColor = System.Drawing.Color.Gainsboro;
             this.pictureBox38.Image = global::GUI.Properties.Resources.Star;
-            this.pictureBox38.Location = new System.Drawing.Point(822, 1268);
+            this.pictureBox38.Location = new System.Drawing.Point(841, 1238);
             this.pictureBox38.Name = "pictureBox38";
             this.pictureBox38.Size = new System.Drawing.Size(25, 25);
             this.pictureBox38.TabIndex = 219;
@@ -644,7 +787,7 @@
             // 
             this.pictureBox39.BackColor = System.Drawing.Color.Gainsboro;
             this.pictureBox39.Image = global::GUI.Properties.Resources.Star;
-            this.pictureBox39.Location = new System.Drawing.Point(796, 1268);
+            this.pictureBox39.Location = new System.Drawing.Point(815, 1238);
             this.pictureBox39.Name = "pictureBox39";
             this.pictureBox39.Size = new System.Drawing.Size(25, 25);
             this.pictureBox39.TabIndex = 218;
@@ -654,7 +797,7 @@
             // 
             this.pictureBox40.BackColor = System.Drawing.Color.Gainsboro;
             this.pictureBox40.Image = global::GUI.Properties.Resources.Star;
-            this.pictureBox40.Location = new System.Drawing.Point(770, 1268);
+            this.pictureBox40.Location = new System.Drawing.Point(789, 1238);
             this.pictureBox40.Name = "pictureBox40";
             this.pictureBox40.Size = new System.Drawing.Size(25, 25);
             this.pictureBox40.TabIndex = 217;
@@ -662,9 +805,9 @@
             // 
             // pictureBox41
             // 
-            this.pictureBox41.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox41.Image = global::GUI.Properties.Resources.Star;
-            this.pictureBox41.Location = new System.Drawing.Point(744, 1268);
+            this.pictureBox41.Location = new System.Drawing.Point(763, 1238);
             this.pictureBox41.Name = "pictureBox41";
             this.pictureBox41.Size = new System.Drawing.Size(25, 25);
             this.pictureBox41.TabIndex = 216;
@@ -672,9 +815,9 @@
             // 
             // pictureBox42
             // 
-            this.pictureBox42.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox42.Image = global::GUI.Properties.Resources.Star;
-            this.pictureBox42.Location = new System.Drawing.Point(718, 1268);
+            this.pictureBox42.Location = new System.Drawing.Point(737, 1238);
             this.pictureBox42.Name = "pictureBox42";
             this.pictureBox42.Size = new System.Drawing.Size(25, 25);
             this.pictureBox42.TabIndex = 215;
@@ -682,9 +825,9 @@
             // 
             // pictureBox33
             // 
-            this.pictureBox33.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox33.Image = global::GUI.Properties.Resources.Star;
-            this.pictureBox33.Location = new System.Drawing.Point(272, 1273);
+            this.pictureBox33.Location = new System.Drawing.Point(291, 1243);
             this.pictureBox33.Name = "pictureBox33";
             this.pictureBox33.Size = new System.Drawing.Size(25, 25);
             this.pictureBox33.TabIndex = 214;
@@ -692,9 +835,9 @@
             // 
             // pictureBox34
             // 
-            this.pictureBox34.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox34.Image = global::GUI.Properties.Resources.Star;
-            this.pictureBox34.Location = new System.Drawing.Point(246, 1273);
+            this.pictureBox34.Location = new System.Drawing.Point(265, 1243);
             this.pictureBox34.Name = "pictureBox34";
             this.pictureBox34.Size = new System.Drawing.Size(25, 25);
             this.pictureBox34.TabIndex = 213;
@@ -702,9 +845,9 @@
             // 
             // pictureBox35
             // 
-            this.pictureBox35.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox35.Image = global::GUI.Properties.Resources.Star;
-            this.pictureBox35.Location = new System.Drawing.Point(220, 1273);
+            this.pictureBox35.Location = new System.Drawing.Point(239, 1243);
             this.pictureBox35.Name = "pictureBox35";
             this.pictureBox35.Size = new System.Drawing.Size(25, 25);
             this.pictureBox35.TabIndex = 212;
@@ -712,9 +855,9 @@
             // 
             // pictureBox36
             // 
-            this.pictureBox36.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox36.Image = global::GUI.Properties.Resources.Star;
-            this.pictureBox36.Location = new System.Drawing.Point(194, 1273);
+            this.pictureBox36.Location = new System.Drawing.Point(213, 1243);
             this.pictureBox36.Name = "pictureBox36";
             this.pictureBox36.Size = new System.Drawing.Size(25, 25);
             this.pictureBox36.TabIndex = 211;
@@ -722,9 +865,9 @@
             // 
             // pictureBox37
             // 
-            this.pictureBox37.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox37.Image = global::GUI.Properties.Resources.Star;
-            this.pictureBox37.Location = new System.Drawing.Point(168, 1273);
+            this.pictureBox37.Location = new System.Drawing.Point(187, 1243);
             this.pictureBox37.Name = "pictureBox37";
             this.pictureBox37.Size = new System.Drawing.Size(25, 25);
             this.pictureBox37.TabIndex = 210;
@@ -732,9 +875,9 @@
             // 
             // pictureBox29
             // 
-            this.pictureBox29.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox29.Image = global::GUI.Properties.Resources.Star;
-            this.pictureBox29.Location = new System.Drawing.Point(514, 1271);
+            this.pictureBox29.Location = new System.Drawing.Point(533, 1241);
             this.pictureBox29.Name = "pictureBox29";
             this.pictureBox29.Size = new System.Drawing.Size(25, 25);
             this.pictureBox29.TabIndex = 208;
@@ -742,9 +885,9 @@
             // 
             // pictureBox30
             // 
-            this.pictureBox30.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox30.Image = global::GUI.Properties.Resources.Star;
-            this.pictureBox30.Location = new System.Drawing.Point(488, 1271);
+            this.pictureBox30.Location = new System.Drawing.Point(507, 1241);
             this.pictureBox30.Name = "pictureBox30";
             this.pictureBox30.Size = new System.Drawing.Size(25, 25);
             this.pictureBox30.TabIndex = 207;
@@ -752,9 +895,9 @@
             // 
             // pictureBox31
             // 
-            this.pictureBox31.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox31.Image = global::GUI.Properties.Resources.Star;
-            this.pictureBox31.Location = new System.Drawing.Point(462, 1271);
+            this.pictureBox31.Location = new System.Drawing.Point(481, 1241);
             this.pictureBox31.Name = "pictureBox31";
             this.pictureBox31.Size = new System.Drawing.Size(25, 25);
             this.pictureBox31.TabIndex = 206;
@@ -762,9 +905,9 @@
             // 
             // pictureBox32
             // 
-            this.pictureBox32.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox32.Image = global::GUI.Properties.Resources.Star;
-            this.pictureBox32.Location = new System.Drawing.Point(436, 1271);
+            this.pictureBox32.Location = new System.Drawing.Point(455, 1241);
             this.pictureBox32.Name = "pictureBox32";
             this.pictureBox32.Size = new System.Drawing.Size(25, 25);
             this.pictureBox32.TabIndex = 205;
@@ -772,7 +915,7 @@
             // 
             // myPictureBox1
             // 
-            this.myPictureBox1.BackColor = System.Drawing.Color.Gainsboro;
+            this.myPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.myPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
             this.myPictureBox1.BorderColor = System.Drawing.Color.RoyalBlue;
             this.myPictureBox1.BorderColor2 = System.Drawing.Color.HotPink;
@@ -780,22 +923,12 @@
             this.myPictureBox1.BorderSize = 2;
             this.myPictureBox1.GradientAngle = 50F;
             this.myPictureBox1.Image = global::GUI.Properties.Resources._56986749_694943527575452_6002140096634028032_n;
-            this.myPictureBox1.Location = new System.Drawing.Point(152, 1155);
+            this.myPictureBox1.Location = new System.Drawing.Point(171, 1125);
             this.myPictureBox1.Name = "myPictureBox1";
             this.myPictureBox1.Size = new System.Drawing.Size(41, 41);
             this.myPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.myPictureBox1.TabIndex = 201;
             this.myPictureBox1.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::GUI.Properties.Resources.mainCar;
-            this.pictureBox7.Location = new System.Drawing.Point(737, 801);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(344, 270);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 184;
-            this.pictureBox7.TabStop = false;
             // 
             // btnSearch
             // 
@@ -839,7 +972,7 @@
             this.btnChangePassword.Name = "btnChangePassword";
             this.btnChangePassword.Size = new System.Drawing.Size(227, 35);
             this.btnChangePassword.TabIndex = 4;
-            this.btnChangePassword.Text = "Change Password";
+            this.btnChangePassword.Text = "Đổi mật khẩu";
             this.btnChangePassword.UseVisualStyleBackColor = false;
             this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
             // 
@@ -855,14 +988,14 @@
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(227, 35);
             this.btnLogout.TabIndex = 1;
-            this.btnLogout.Text = "Logout";
+            this.btnLogout.Text = "Thoát";
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // myButton10
             // 
-            this.myButton10.BackColor = System.Drawing.Color.Gainsboro;
-            this.myButton10.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.myButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.myButton10.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.myButton10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.myButton10.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.myButton10.BorderRadius = 20;
@@ -870,7 +1003,7 @@
             this.myButton10.FlatAppearance.BorderSize = 0;
             this.myButton10.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.myButton10.ForeColor = System.Drawing.Color.White;
-            this.myButton10.Location = new System.Drawing.Point(145, 1143);
+            this.myButton10.Location = new System.Drawing.Point(164, 1113);
             this.myButton10.Name = "myButton10";
             this.myButton10.Size = new System.Drawing.Size(176, 185);
             this.myButton10.TabIndex = 198;
@@ -879,8 +1012,8 @@
             // 
             // myButton11
             // 
-            this.myButton11.BackColor = System.Drawing.Color.Gainsboro;
-            this.myButton11.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.myButton11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.myButton11.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.myButton11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.myButton11.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.myButton11.BorderRadius = 20;
@@ -888,7 +1021,7 @@
             this.myButton11.FlatAppearance.BorderSize = 0;
             this.myButton11.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.myButton11.ForeColor = System.Drawing.Color.White;
-            this.myButton11.Location = new System.Drawing.Point(413, 1144);
+            this.myButton11.Location = new System.Drawing.Point(432, 1114);
             this.myButton11.Name = "myButton11";
             this.myButton11.Size = new System.Drawing.Size(176, 185);
             this.myButton11.TabIndex = 199;
@@ -897,8 +1030,8 @@
             // 
             // myButton12
             // 
-            this.myButton12.BackColor = System.Drawing.Color.Gainsboro;
-            this.myButton12.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.myButton12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.myButton12.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.myButton12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.myButton12.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.myButton12.BorderRadius = 20;
@@ -906,7 +1039,7 @@
             this.myButton12.FlatAppearance.BorderSize = 0;
             this.myButton12.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.myButton12.ForeColor = System.Drawing.Color.White;
-            this.myButton12.Location = new System.Drawing.Point(693, 1144);
+            this.myButton12.Location = new System.Drawing.Point(712, 1114);
             this.myButton12.Name = "myButton12";
             this.myButton12.Size = new System.Drawing.Size(176, 185);
             this.myButton12.TabIndex = 200;
@@ -953,9 +1086,9 @@
             this.btnAdmin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.btnAdmin.Location = new System.Drawing.Point(602, 8);
             this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(87, 35);
+            this.btnAdmin.Size = new System.Drawing.Size(96, 35);
             this.btnAdmin.TabIndex = 235;
-            this.btnAdmin.Text = "Admin";
+            this.btnAdmin.Text = "Quản lý";
             this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
             // pictureBox28
@@ -969,7 +1102,7 @@
             this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox28.TabIndex = 209;
             this.pictureBox28.TabStop = false;
-            this.toolTip2.SetToolTip(this.pictureBox28, "Account");
+            this.toolTip2.SetToolTip(this.pictureBox28, "Tài khoản");
             this.pictureBox28.Click += new System.EventHandler(this.pictureBox28_Click);
             // 
             // btnHistoryTransaction
@@ -985,7 +1118,7 @@
             this.btnHistoryTransaction.Name = "btnHistoryTransaction";
             this.btnHistoryTransaction.Size = new System.Drawing.Size(61, 59);
             this.btnHistoryTransaction.TabIndex = 3;
-            this.toolTip1.SetToolTip(this.btnHistoryTransaction, "History transaction");
+            this.toolTip1.SetToolTip(this.btnHistoryTransaction, "Lịch sử đặt tour");
             this.btnHistoryTransaction.UseVisualStyleBackColor = false;
             this.btnHistoryTransaction.Click += new System.EventHandler(this.btnHistoryTransaction_Click);
             // 
@@ -1007,11 +1140,11 @@
             this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.textBox2.Location = new System.Drawing.Point(875, 14);
+            this.textBox2.Location = new System.Drawing.Point(870, 14);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(57, 24);
+            this.textBox2.Size = new System.Drawing.Size(73, 24);
             this.textBox2.TabIndex = 234;
-            this.textBox2.Text = "Hi !";
+            this.textBox2.Text = "Xin chào !";
             // 
             // lbHome
             // 
@@ -1019,11 +1152,11 @@
             this.lbHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbHome.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
-            this.lbHome.Location = new System.Drawing.Point(189, 13);
+            this.lbHome.Location = new System.Drawing.Point(189, 14);
             this.lbHome.Name = "lbHome";
-            this.lbHome.Size = new System.Drawing.Size(62, 25);
+            this.lbHome.Size = new System.Drawing.Size(93, 25);
             this.lbHome.TabIndex = 171;
-            this.lbHome.Text = "Home";
+            this.lbHome.Text = "Trang chủ";
             // 
             // lbAbout
             // 
@@ -1031,11 +1164,11 @@
             this.lbAbout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbAbout.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.lbAbout.Location = new System.Drawing.Point(319, 13);
+            this.lbAbout.Location = new System.Drawing.Point(319, 14);
             this.lbAbout.Name = "lbAbout";
-            this.lbAbout.Size = new System.Drawing.Size(88, 25);
+            this.lbAbout.Size = new System.Drawing.Size(130, 25);
             this.lbAbout.TabIndex = 172;
-            this.lbAbout.Text = "About us";
+            this.lbAbout.Text = "Về DanaTravel";
             // 
             // label3
             // 
@@ -1043,30 +1176,30 @@
             this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.label3.Location = new System.Drawing.Point(476, 13);
+            this.label3.Location = new System.Drawing.Point(476, 14);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 25);
+            this.label3.Size = new System.Drawing.Size(72, 25);
             this.label3.TabIndex = 173;
-            this.label3.Text = "Contacts";
+            this.label3.Text = "Liên hệ";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(104)))), ((int)(((byte)(49)))));
-            this.label8.Location = new System.Drawing.Point(152, 227);
+            this.label8.Location = new System.Drawing.Point(185, 233);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(191, 45);
+            this.label8.Size = new System.Drawing.Size(156, 45);
             this.label8.TabIndex = 178;
-            this.label8.Text = "the world.";
+            this.label8.Text = "thế giới.";
             // 
             // pictureBox47
             // 
             this.pictureBox47.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox47.Image = global::GUI.Properties.Resources.map;
-            this.pictureBox47.Location = new System.Drawing.Point(44, 79);
+            this.pictureBox47.Location = new System.Drawing.Point(44, 14);
             this.pictureBox47.Name = "pictureBox47";
-            this.pictureBox47.Size = new System.Drawing.Size(560, 282);
+            this.pictureBox47.Size = new System.Drawing.Size(654, 347);
             this.pictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox47.TabIndex = 236;
             this.pictureBox47.TabStop = false;
@@ -1087,6 +1220,9 @@
             this.Load += new System.EventHandler(this.Homepage_Load);
             this.panelHomepage.ResumeLayout(false);
             this.panelHomepage.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
@@ -1107,7 +1243,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.pnChoice.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.navbar.ResumeLayout(false);
@@ -1196,5 +1331,16 @@
         private System.Windows.Forms.ToolTip toolTip2;
         private System.Windows.Forms.ToolTip toolTip1;
         private Guna.UI2.WinForms.Guna2Button btnAdmin;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label37;
     }
 }

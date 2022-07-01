@@ -44,7 +44,7 @@
             this.lbTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(83)))), ((int)(((byte)(83)))));
             this.lbTitle.Location = new System.Drawing.Point(703, 218);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(189, 31);
+            this.lbTitle.Size = new System.Drawing.Size(153, 25);
             this.lbTitle.TabIndex = 0;
             this.lbTitle.Text = "Forgot Password";
             // 
@@ -56,7 +56,7 @@
             this.lbDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(134)))), ((int)(((byte)(134)))));
             this.lbDescription.Location = new System.Drawing.Point(670, 262);
             this.lbDescription.Name = "lbDescription";
-            this.lbDescription.Size = new System.Drawing.Size(274, 25);
+            this.lbDescription.Size = new System.Drawing.Size(223, 20);
             this.lbDescription.TabIndex = 1;
             this.lbDescription.Text = "Enter your email address below";
             // 
@@ -68,7 +68,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(134)))), ((int)(((byte)(134)))));
             this.label1.Location = new System.Drawing.Point(718, 287);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 25);
+            this.label1.Size = new System.Drawing.Size(128, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "to reset password";
             // 
@@ -80,16 +80,15 @@
             this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
             this.txtEmail.Location = new System.Drawing.Point(631, 361);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(340, 27);
+            this.txtEmail.Size = new System.Drawing.Size(340, 22);
             this.txtEmail.TabIndex = 3;
             this.txtEmail.Text = "E-mail address";
             this.txtEmail.Click += new System.EventHandler(this.txtEmail_Click);
             // 
             // btnReset
             // 
-            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(141)))), ((int)(((byte)(165)))));
+            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.btnReset.FlatAppearance.BorderSize = 0;
-            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Font = new System.Drawing.Font("Yu Gothic UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.White;
             this.btnReset.Location = new System.Drawing.Point(723, 414);
@@ -108,7 +107,7 @@
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.linkLabel1.Location = new System.Drawing.Point(788, 469);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(59, 25);
+            this.linkLabel1.Size = new System.Drawing.Size(47, 20);
             this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Login";
@@ -131,7 +130,6 @@
             this.Name = "ForgetPass";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DanaTravel";
-            this.Load += new System.EventHandler(this.ForgetPass_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

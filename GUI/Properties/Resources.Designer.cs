@@ -83,6 +83,36 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _18 {
+            get {
+                object obj = ResourceManager.GetObject("18", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _18__1_ {
+            get {
+                object obj = ResourceManager.GetObject("18 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _18__2_ {
+            get {
+                object obj = ResourceManager.GetObject("18 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _56986749_694943527575452_6002140096634028032_n {
             get {
                 object obj = ResourceManager.GetObject("56986749_694943527575452_6002140096634028032_n", resourceCulture);
@@ -96,6 +126,26 @@ namespace GUI.Properties {
         internal static System.Drawing.Bitmap _56986749_694943527575452_6002140096634028032_n1 {
             get {
                 object obj = ResourceManager.GetObject("56986749_694943527575452_6002140096634028032_n1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _6 {
+            get {
+                object obj = ResourceManager.GetObject("6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _6__1_ {
+            get {
+                object obj = ResourceManager.GetObject("6 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -426,6 +476,16 @@ namespace GUI.Properties {
         internal static System.Drawing.Bitmap dots {
             get {
                 object obj = ResourceManager.GetObject("dots", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ellipse_3 {
+            get {
+                object obj = ResourceManager.GetObject("Ellipse 3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

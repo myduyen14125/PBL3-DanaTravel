@@ -17,17 +17,6 @@ namespace PBL3
     public partial class SignupForm : Form
     {
         private int code;
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        private static extern IntPtr CreateRoundRectRgn
-            (
-                int nLeft,
-                int nTop,
-                int nRight,
-                int nBottom,
-                int nWidthEclipse,
-                int nHeightEclipse
-            );
-
         public SignupForm()
         {
             InitializeComponent();
@@ -215,12 +204,6 @@ namespace PBL3
                 return false;
             }
             return true;
-        }
-
-        private void SignupForm_Load(object sender, EventArgs e)
-        {
-            btnGetOTP.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnGetOTP.Width, btnGetOTP.Height, 30, 30));
-            signupBtn.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, signupBtn.Width, signupBtn.Height, 30, 30));
         }
     }
 }

@@ -97,14 +97,14 @@
             this.txtSearch.Location = new System.Drawing.Point(740, 155);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(100, 20);
+            this.txtSearch.Size = new System.Drawing.Size(115, 20);
             this.txtSearch.TabIndex = 4;
             // 
             // dataGridViewCustomer
             // 
             this.dataGridViewCustomer.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.dataGridViewCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCustomer.Location = new System.Drawing.Point(124, 214);
+            this.dataGridViewCustomer.Location = new System.Drawing.Point(87, 214);
             this.dataGridViewCustomer.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewCustomer.Name = "dataGridViewCustomer";
             this.dataGridViewCustomer.RowHeadersWidth = 51;
@@ -137,10 +137,10 @@
             this.btnShow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnShow.Image = global::GUI.Properties.Resources.cinema_display_isight_monitor_19607;
             this.btnShow.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShow.Location = new System.Drawing.Point(163, 7);
+            this.btnShow.Location = new System.Drawing.Point(130, 8);
             this.btnShow.Margin = new System.Windows.Forms.Padding(2);
             this.btnShow.Name = "btnShow";
-            this.btnShow.Size = new System.Drawing.Size(99, 43);
+            this.btnShow.Size = new System.Drawing.Size(100, 40);
             this.btnShow.TabIndex = 6;
             this.btnShow.Text = "Show";
             this.btnShow.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -156,10 +156,10 @@
             this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnAdd.Image = global::GUI.Properties.Resources._1486485557_add_create_new_more_plus_81188;
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(377, 7);
+            this.btnAdd.Location = new System.Drawing.Point(352, 8);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(99, 43);
+            this.btnAdd.Size = new System.Drawing.Size(100, 40);
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "Add";
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -175,10 +175,10 @@
             this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnDelete.Image = global::GUI.Properties.Resources._1486504830_delete_dustbin_empty_recycle_recycling_remove_trash_81361;
             this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDelete.Location = new System.Drawing.Point(833, 7);
+            this.btnDelete.Location = new System.Drawing.Point(828, 8);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(99, 43);
+            this.btnDelete.Size = new System.Drawing.Size(100, 40);
             this.btnDelete.TabIndex = 9;
             this.btnDelete.Text = "Delete";
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -194,10 +194,10 @@
             this.btnEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnEdit.Image = global::GUI.Properties.Resources.gui_edit_icon_157165;
             this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdit.Location = new System.Drawing.Point(610, 8);
+            this.btnEdit.Location = new System.Drawing.Point(594, 8);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(2);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(99, 43);
+            this.btnEdit.Size = new System.Drawing.Size(100, 40);
             this.btnEdit.TabIndex = 8;
             this.btnEdit.Text = "Edit";
             this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -208,9 +208,9 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
             this.panel3.Controls.Add(this.myTextBox1);
-            this.panel3.Location = new System.Drawing.Point(-26, 1);
+            this.panel3.Location = new System.Drawing.Point(-26, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1135, 43);
+            this.panel3.Size = new System.Drawing.Size(1146, 43);
             this.panel3.TabIndex = 27;
             // 
             // myTextBox1
@@ -238,7 +238,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::GUI.Properties.Resources.Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(442, 44);
+            this.pictureBox1.Location = new System.Drawing.Point(442, 27);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(158, 106);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -269,7 +269,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dataGridViewCustomer);
@@ -279,6 +278,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CustomerManagement";
             this.Size = new System.Drawing.Size(1120, 709);

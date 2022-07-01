@@ -684,6 +684,12 @@
     <None Include="Resources\iconpass.png" />
     <None Include="Resources\iconticket.png" />
     <None Include="Resources\Group 1306.png" />
+    <None Include="Resources\18.png" />
+    <None Include="Resources\18 %281%29.png" />
+    <None Include="Resources\18 %282%29.png" />
+    <None Include="Resources\6.png" />
+    <None Include="Resources\6 %281%29.png" />
+    <None Include="Resources\Ellipse 3.png" />
     <Content Include="Resources\reload.png" />
     <None Include="Resources\ticket_86147.png" />
     <Content Include="SqlServerTypes\readme.htm" />

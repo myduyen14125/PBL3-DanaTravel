@@ -29,7 +29,6 @@ namespace PBL3.View
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccountEmployee));
             this.lbTotal = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
@@ -39,8 +38,8 @@ namespace PBL3.View
             this.btnLock = new System.Windows.Forms.Button();
             this.btnUnlock = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataAccount)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,7 +50,7 @@ namespace PBL3.View
             this.lbTotal.AutoSize = true;
             this.lbTotal.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold);
             this.lbTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
-            this.lbTotal.Location = new System.Drawing.Point(189, 94);
+            this.lbTotal.Location = new System.Drawing.Point(211, 94);
             this.lbTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbTotal.Name = "lbTotal";
             this.lbTotal.Size = new System.Drawing.Size(52, 19);
@@ -62,7 +61,7 @@ namespace PBL3.View
             // 
             this.txtTotal.Enabled = false;
             this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotal.Location = new System.Drawing.Point(250, 93);
+            this.txtTotal.Location = new System.Drawing.Point(272, 93);
             this.txtTotal.Margin = new System.Windows.Forms.Padding(2);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(76, 23);
@@ -71,7 +70,7 @@ namespace PBL3.View
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(594, 94);
+            this.txtSearch.Location = new System.Drawing.Point(616, 94);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(96, 23);
@@ -81,7 +80,7 @@ namespace PBL3.View
             // 
             this.dataAccount.BackgroundColor = System.Drawing.Color.White;
             this.dataAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataAccount.Location = new System.Drawing.Point(164, 154);
+            this.dataAccount.Location = new System.Drawing.Point(186, 154);
             this.dataAccount.Margin = new System.Windows.Forms.Padding(2);
             this.dataAccount.Name = "dataAccount";
             this.dataAccount.RowHeadersWidth = 51;
@@ -131,7 +130,7 @@ namespace PBL3.View
             this.btnLock.ForeColor = System.Drawing.Color.White;
             this.btnLock.Image = global::GUI.Properties.Resources.Lock;
             this.btnLock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLock.Location = new System.Drawing.Point(162, 500);
+            this.btnLock.Location = new System.Drawing.Point(172, 495);
             this.btnLock.Margin = new System.Windows.Forms.Padding(2);
             this.btnLock.Name = "btnLock";
             this.btnLock.Size = new System.Drawing.Size(133, 41);
@@ -148,7 +147,7 @@ namespace PBL3.View
             this.btnUnlock.ForeColor = System.Drawing.Color.White;
             this.btnUnlock.Image = global::GUI.Properties.Resources.UnLock;
             this.btnUnlock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUnlock.Location = new System.Drawing.Point(661, 500);
+            this.btnUnlock.Location = new System.Drawing.Point(672, 496);
             this.btnUnlock.Margin = new System.Windows.Forms.Padding(2);
             this.btnUnlock.Name = "btnUnlock";
             this.btnUnlock.Size = new System.Drawing.Size(143, 41);
@@ -166,25 +165,15 @@ namespace PBL3.View
             this.btnSearch.ForeColor = System.Drawing.Color.White;
             this.btnSearch.Image = global::GUI.Properties.Resources.Search_find_locate_1542;
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.Location = new System.Drawing.Point(702, 81);
+            this.btnSearch.Location = new System.Drawing.Point(724, 81);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(91, 40);
+            this.btnSearch.Size = new System.Drawing.Size(101, 40);
             this.btnSearch.TabIndex = 3;
             this.btnSearch.Text = "Search";
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(394, 50);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(154, 99);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 31;
-            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -192,10 +181,20 @@ namespace PBL3.View
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
             this.panel2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel2.Location = new System.Drawing.Point(-1, 574);
+            this.panel2.Location = new System.Drawing.Point(-1, 549);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1312, 32);
+            this.panel2.Size = new System.Drawing.Size(1120, 57);
             this.panel2.TabIndex = 32;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GUI.Properties.Resources.Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(424, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(158, 106);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // AccountEmployee
             // 
@@ -203,7 +202,6 @@ namespace PBL3.View
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(229)))));
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.btnLock);
             this.Controls.Add(this.btnUnlock);
@@ -212,6 +210,7 @@ namespace PBL3.View
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.lbTotal);
+            this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AccountEmployee";
             this.Size = new System.Drawing.Size(934, 606);
@@ -235,7 +234,7 @@ namespace PBL3.View
         private System.Windows.Forms.Button btnLock;
         private System.Windows.Forms.Panel panel3;
         private MyLibrary.MyTextBox myTextBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

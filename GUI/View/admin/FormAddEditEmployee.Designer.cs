@@ -32,6 +32,7 @@ namespace PBL3.View.admin
             this.components = new System.ComponentModel.Container();
             this.label6 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
+            this.bindingEmployee = new System.Windows.Forms.BindingSource(this.components);
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.radioMale = new System.Windows.Forms.RadioButton();
             this.radioFemale = new System.Windows.Forms.RadioButton();
@@ -69,10 +70,9 @@ namespace PBL3.View.admin
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.bindingEmployee = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingEmployee)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturebox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingEmployee)).BeginInit();
             this.SuspendLayout();
             // 
             // label6
@@ -95,6 +95,10 @@ namespace PBL3.View.admin
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(221, 26);
             this.txtName.TabIndex = 8;
+            // 
+            // bindingEmployee
+            // 
+            this.bindingEmployee.DataSource = typeof(DTO.Employee);
             // 
             // dateTimePicker1
             // 
@@ -221,17 +225,16 @@ namespace PBL3.View.admin
             // 
             this.btnCreateRole.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.btnCreateRole.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCreateRole.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreateRole.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateRole.ForeColor = System.Drawing.Color.White;
             this.btnCreateRole.Image = global::GUI.Properties.Resources._1486485557_add_create_new_more_plus_81188;
             this.btnCreateRole.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCreateRole.Location = new System.Drawing.Point(879, 269);
             this.btnCreateRole.Margin = new System.Windows.Forms.Padding(2);
             this.btnCreateRole.Name = "btnCreateRole";
-            this.btnCreateRole.Size = new System.Drawing.Size(104, 46);
+            this.btnCreateRole.Size = new System.Drawing.Size(98, 43);
             this.btnCreateRole.TabIndex = 26;
-            this.btnCreateRole.Text = "Create ";
-            this.btnCreateRole.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCreateRole.Text = "        Create ";
             this.btnCreateRole.UseVisualStyleBackColor = false;
             this.btnCreateRole.Click += new System.EventHandler(this.btnCreateRole_Click);
             // 
@@ -269,10 +272,10 @@ namespace PBL3.View.admin
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.Image = global::GUI.Properties.Resources.Cancel_40972;
             this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancel.Location = new System.Drawing.Point(738, 550);
+            this.btnCancel.Location = new System.Drawing.Point(742, 550);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(101, 43);
+            this.btnCancel.Size = new System.Drawing.Size(98, 43);
             this.btnCancel.TabIndex = 32;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -352,16 +355,16 @@ namespace PBL3.View.admin
             // 
             this.btnChooseImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(120)))), ((int)(((byte)(142)))));
             this.btnChooseImage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnChooseImage.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChooseImage.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btnChooseImage.ForeColor = System.Drawing.Color.White;
             this.btnChooseImage.Image = global::GUI.Properties.Resources.choose_1_102356;
             this.btnChooseImage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChooseImage.Location = new System.Drawing.Point(31, 215);
+            this.btnChooseImage.Location = new System.Drawing.Point(32, 215);
             this.btnChooseImage.Margin = new System.Windows.Forms.Padding(2);
             this.btnChooseImage.Name = "btnChooseImage";
-            this.btnChooseImage.Size = new System.Drawing.Size(139, 28);
+            this.btnChooseImage.Size = new System.Drawing.Size(126, 43);
             this.btnChooseImage.TabIndex = 37;
-            this.btnChooseImage.Text = "Choose Image";
+            this.btnChooseImage.Text = "Add Image";
             this.btnChooseImage.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnChooseImage.UseVisualStyleBackColor = false;
             this.btnChooseImage.Click += new System.EventHandler(this.btnChooseImage_Click);
@@ -558,10 +561,6 @@ namespace PBL3.View.admin
             this.label16.TabIndex = 53;
             this.label16.Text = "Role:";
             // 
-            // bindingEmployee
-            // 
-            this.bindingEmployee.DataSource = typeof(DTO.Employee);
-            // 
             // FormAddEditEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -613,9 +612,9 @@ namespace PBL3.View.admin
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAddEditEmployee";
             this.Load += new System.EventHandler(this.FormAddEditEmployee_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingEmployee)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturebox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingEmployee)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

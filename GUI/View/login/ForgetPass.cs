@@ -13,17 +13,7 @@ using Util;
 namespace PBL3
 {
     public partial class ForgetPass : Form
-    {
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        private static extern IntPtr CreateRoundRectRgn
-            (
-                int nLeft,
-                int nTop,
-                int nRight,
-                int nBottom,
-                int nWidthEclipse,
-                int nHeightEclipse
-            );
+    {       
         public ForgetPass()
         {
             InitializeComponent();
@@ -66,11 +56,6 @@ namespace PBL3
             {
                 MessageBox.Show("Email not found !!!");
             }
-        }
-
-        private void ForgetPass_Load(object sender, EventArgs e)
-        {
-            btnReset.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnReset.Width, btnReset.Height, 30, 30));
         }
     }
 }
