@@ -29,11 +29,14 @@ namespace Util
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.Pass = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtHash = new System.Windows.Forms.TextBox();
             this.btnHash = new System.Windows.Forms.Button();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPass
@@ -48,7 +51,7 @@ namespace Util
             this.Pass.AutoSize = true;
             this.Pass.Location = new System.Drawing.Point(152, 106);
             this.Pass.Name = "Pass";
-            this.Pass.Size = new System.Drawing.Size(39, 17);
+            this.Pass.Size = new System.Drawing.Size(38, 16);
             this.Pass.TabIndex = 1;
             this.Pass.Text = "Pass";
             // 
@@ -57,7 +60,7 @@ namespace Util
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(155, 174);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 17);
+            this.label1.Size = new System.Drawing.Size(70, 16);
             this.label1.TabIndex = 2;
             this.label1.Text = "HashPass";
             // 
@@ -90,6 +93,7 @@ namespace Util
             this.Controls.Add(this.txtPass);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -102,5 +106,6 @@ namespace Util
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtHash;
         private System.Windows.Forms.Button btnHash;
+        private System.Windows.Forms.BindingSource bindingSource1;
     }
 }

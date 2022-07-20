@@ -10,7 +10,7 @@ namespace Util
     public class SendEmailHelper
     {
         private static readonly string _from = "daitoan2000@gmail.com";
-        private static readonly string _pass = "daitoan2002.123";
+        private static readonly string _pass = "daitoan2002@123@321";
  
         SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
 
@@ -45,5 +45,3 @@ namespace Util
 
     }
 }
-// "<h3>Please do not share the code to ensure safety and security.</h3> <h1> Your code: " + code.ToString() + "</h1>";
-//"Your account to access the DanaTravel application";
